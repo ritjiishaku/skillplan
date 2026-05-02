@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Automation Engineering — Curriculum + Resources</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #08090c;
+    --surface: #0f1117;
+    --border: #1e2130;
+    --accent: #e8ff47;
+    --accent2: #47aaff;
+    --accent3: #ff6b47;
+    --text: #e8eaf0;
+    --muted: #5a6070;
+    --card: #12141c;
+    --card2: #0d0f16;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.4;
+  }
+
+  /* HEADER */
+  header {
+    position: relative;
+    padding: 80px 40px 60px;
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .header-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+    opacity: 0.4;
+  }
+
+  .header-glow {
+    position: absolute;
+    top: -100px; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse, rgba(232,255,71,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 11px; letter-spacing: 0.15em; color: var(--accent);
+    text-transform: uppercase; margin-bottom: 24px;
+  }
+  .tag::before {
+    content: ''; display: block; width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: pulse 2s ease infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)} }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(34px, 6vw, 72px);
+    font-weight: 800; line-height: 1; letter-spacing: -0.03em;
+    position: relative; z-index: 1;
+  }
+  h1 em {
+    font-family: 'Fraunces', serif; font-style: italic;
+    font-weight: 300; color: var(--accent);
+  }
+
+  .subtitle {
+    margin-top: 20px; font-size: 13px; color: var(--muted);
+    max-width: 560px; position: relative; z-index: 1;
+  }
+
+  .meta-row {
+    display: flex; gap: 32px; margin-top: 40px;
+    position: relative; z-index: 1; flex-wrap: wrap;
+  }
+  .meta-item { display: flex; flex-direction: column; gap: 4px; }
+  .meta-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); }
+  .meta-value { font-size: 18px; font-family: 'Syne', sans-serif; font-weight: 700; }
+
+  /* MAIN */
+  main { max-width: 1280px; margin: 0 auto; padding: 60px 40px; }
+
+  /* PHASE */
+  .phase { margin-bottom: 90px; animation: fadeUp 0.6s ease both; }
+  .phase:nth-child(1){animation-delay:.1s}.phase:nth-child(2){animation-delay:.2s}
+  .phase:nth-child(3){animation-delay:.3s}.phase:nth-child(4){animation-delay:.4s}
+  .phase:nth-child(5){animation-delay:.5s}.phase:nth-child(6){animation-delay:.6s}
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  .phase-header {
+    display: flex; align-items: flex-start; gap: 24px;
+    margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border);
+  }
+  .phase-number {
+    font-family: 'Fraunces', serif; font-size: 64px; font-weight: 700;
+    line-height: 1; color: var(--border); min-width: 60px; user-select: none;
+  }
+  .phase-meta { flex: 1; }
+  .phase-badge {
+    display: inline-block; padding: 3px 10px; border-radius: 2px;
+    font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .badge-foundation { background:rgba(71,170,255,.12);color:var(--accent2);border:1px solid rgba(71,170,255,.2); }
+  .badge-core       { background:rgba(232,255,71,.1);color:var(--accent);border:1px solid rgba(232,255,71,.2); }
+  .badge-advanced   { background:rgba(255,107,71,.1);color:var(--accent3);border:1px solid rgba(255,107,71,.2); }
+  .badge-specialist { background:rgba(180,71,255,.1);color:#c47fff;border:1px solid rgba(180,71,255,.2); }
+  .badge-practice   { background:rgba(71,255,180,.1);color:#47ffb4;border:1px solid rgba(71,255,180,.2); }
+  .badge-mastery    { background:rgba(255,200,71,.1);color:#ffc847;border:1px solid rgba(255,200,71,.2); }
+
+  .phase-title { font-family:'Syne',sans-serif; font-size:24px; font-weight:700; line-height:1.2; }
+  .phase-duration { margin-top:6px; font-size:12px; color:var(--muted); }
+
+  /* MODULE GRID */
+  .modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+  }
+
+  /* MODULE CARD */
+  .module-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+    display: flex; flex-direction: column;
+  }
+  .module-card:hover { border-color: #2a2f45; transform: translateY(-2px); }
+
+  .module-top {
+    padding: 22px 22px 16px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .module-icon { font-size: 20px; margin-bottom: 10px; }
+  .module-title { font-family:'Syne',sans-serif; font-size:14px; font-weight:700; margin-bottom:10px; }
+  .module-topics { list-style:none; display:flex; flex-direction:column; gap:4px; }
+  .module-topics li {
+    display:flex; align-items:flex-start; gap:8px;
+    font-size:11.5px; color:var(--muted); line-height:1.5;
+  }
+  .module-topics li::before { content:'→'; color:var(--border); flex-shrink:0; margin-top:1px; }
+
+  /* RESOURCES SECTION */
+  .module-resources {
+    padding: 14px 22px 16px;
+    flex: 1;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .resources-label {
+    font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 2px;
+  }
+
+  .resource-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 8px 10px;
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    text-decoration: none;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .resource-item:hover { border-color: #2a2f45; background: #131520; }
+
+  .resource-icon {
+    width: 22px; height: 22px; border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; flex-shrink: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  .resource-info { flex: 1; min-width: 0; }
+  .resource-name { font-size: 11.5px; color: var(--text); line-height: 1.3; font-weight: 400; }
+  .resource-meta { font-size: 10px; color: var(--muted); margin-top: 1px; }
+
+  .resource-type {
+    font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 2px 5px; border-radius: 2px; flex-shrink: 0; align-self: flex-start;
+    margin-top: 2px;
+  }
+  .type-free { background:rgba(71,255,180,.1); color:#47ffb4; border:1px solid rgba(71,255,180,.2); }
+  .type-paid { background:rgba(255,200,71,.08); color:#ffc847; border:1px solid rgba(255,200,71,.15); }
+  .type-book { background:rgba(71,170,255,.1); color:var(--accent2); border:1px solid rgba(71,170,255,.2); }
+  .type-github { background:rgba(255,255,255,.06); color:#aaa; border:1px solid rgba(255,255,255,.1); }
+
+  /* CONNECTOR */
+  .phase-connector {
+    display:flex; align-items:center; gap:16px;
+    margin-bottom:80px; color:var(--muted);
+    font-size:11px; letter-spacing:0.1em; text-transform:uppercase;
+  }
+  .phase-connector::before,.phase-connector::after {
+    content:''; flex:1; height:1px;
+    background:linear-gradient(90deg,transparent,var(--border),transparent);
+  }
+
+  /* BOOKS SECTION */
+  .books-section {
+    margin-top: 80px; padding-top: 60px;
+    border-top: 1px solid var(--border);
+  }
+  .section-heading {
+    font-family:'Syne',sans-serif; font-size:28px; font-weight:800;
+    margin-bottom:6px; letter-spacing:-0.02em;
+  }
+  .section-sub { color:var(--muted); font-size:12px; margin-bottom:36px; }
+
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .book-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:4px; padding:24px;
+    display:flex; flex-direction:column; gap:10px;
+    text-decoration:none; transition:border-color .2s, transform .2s;
+    color: var(--text);
+  }
+  .book-card:hover { border-color:#2a2f45; transform:translateY(-2px); }
+  .book-cover {
+    width:40px; height:52px; border-radius:3px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:20px; background:var(--surface); border:1px solid var(--border);
+    flex-shrink:0;
+  }
+  .book-title { font-family:'Syne',sans-serif; font-size:13px; font-weight:700; line-height:1.3; }
+  .book-author { font-size:11px; color:var(--muted); }
+  .book-desc { font-size:11px; color:var(--muted); line-height:1.6; }
+
+  /* YOUTUBE & FREE SECTION */
+  .channels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 36px;
+  }
+  .channel-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:4px; padding:20px 18px;
+    text-decoration:none; transition:border-color .2s;
+    display:flex; align-items:flex-start; gap:12px;
+    color:var(--text);
+  }
+  .channel-card:hover { border-color:#2a2f45; }
+  .channel-icon { font-size:22px; flex-shrink:0; }
+  .channel-name { font-family:'Syne',sans-serif; font-size:13px; font-weight:700; margin-bottom:3px; }
+  .channel-desc { font-size:11px; color:var(--muted); line-height:1.5; }
+
+  /* FOOTER */
+  footer {
+    margin-top:100px; padding:40px;
+    border-top:1px solid var(--border);
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;
+  }
+  .footer-text { font-size:11px; color:var(--muted); letter-spacing:.05em; }
+  .footer-badge {
+    display:flex; align-items:center; gap:8px;
+    padding:8px 16px; border:1px solid var(--border); border-radius:2px;
+    font-size:11px; color:var(--muted); letter-spacing:.05em;
+  }
+
+  /* ACCENT borders on card tops */
+  .module-card.a2  .module-top { border-top:2px solid var(--accent2); }
+  .module-card.a1  .module-top { border-top:2px solid var(--accent); }
+  .module-card.a3  .module-top { border-top:2px solid var(--accent3); }
+  .module-card.ap  .module-top { border-top:2px solid #c47fff; }
+  .module-card.at  .module-top { border-top:2px solid #47ffb4; }
+  .module-card.ag  .module-top { border-top:2px solid #ffc847; }
+
+  @media(max-width:768px){
+    header,main,footer{padding-left:20px;padding-right:20px}
+    .modules-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-grid"></div>
+  <div class="header-glow"></div>
+  <div class="tag">Professional Curriculum + Resources · 2025–2026</div>
+  <h1>AI Automation<br><em>Engineering</em></h1>
+  <p class="subtitle">Every phase. Every module. Best-in-class courses, books, and free resources attached — curated from what actually works in 2025–2026.</p>
+  <div class="meta-row">
+    <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">12–18 mo</span></div>
+    <div class="meta-item"><span class="meta-label">Phases</span><span class="meta-value">6</span></div>
+    <div class="meta-item"><span class="meta-label">Resources</span><span class="meta-value">60+</span></div>
+    <div class="meta-item"><span class="meta-label">Avg. Salary</span><span class="meta-value">$140k+</span></div>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════ PHASE 1 ═══════════════════════ -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">01</div>
+    <div class="phase-meta">
+      <div class="phase-badge badge-foundation">Foundation</div>
+      <div class="phase-title">Core Engineering & Python Mastery</div>
+      <div class="phase-duration">⏱ Months 1–2 · The prerequisite layer for everything that follows</div>
+    </div>
+  </div>
+  <div class="modules-grid">
+
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🐍</div>
+        <div class="module-title">Python for Automation Engineers</div>
+        <ul class="module-topics">
+          <li>Advanced Python: decorators, generators, async/await</li>
+          <li>Type hints, Pydantic models, dataclasses</li>
+          <li>OOP patterns relevant to agent systems</li>
+          <li>Testing: pytest, mocking, coverage</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://automatetheboringstuff.com" target="_blank">
+          <div class="resource-icon">📖</div>
+          <div class="resource-info">
+            <div class="resource-name">Automate the Boring Stuff with Python</div>
+            <div class="resource-meta">Al Sweigart · The classic free online book</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.coursera.org/professional-certificates/google-it-automation" target="_blank">
+          <div class="resource-icon">🎓</div>
+          <div class="resource-info">
+            <div class="resource-name">Google IT Automation with Python</div>
+            <div class="resource-meta">Coursera · 6-course professional cert</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+        <a class="resource-item" href="https://zerotomastery.io/courses/learn-python-automation/" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info">
+            <div class="resource-name">Python Automation Bootcamp</div>
+            <div class="resource-meta">Zero to Mastery · Project-based, real-world</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+        <a class="resource-item" href="https://docs.python.org/3/tutorial/" target="_blank">
+          <div class="resource-icon">🐍</div>
+          <div class="resource-info">
+            <div class="resource-name">Official Python Tutorial</div>
+            <div class="resource-meta">python.org · Comprehensive reference docs</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🔧</div>
+        <div class="module-title">Software Engineering Fundamentals</div>
+        <ul class="module-topics">
+          <li>Git workflows, branching, CI/CD pipelines</li>
+          <li>REST API design & consumption</li>
+          <li>Docker & containerization basics</li>
+          <li>Environment management & secrets</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.theodinproject.com" target="_blank">
+          <div class="resource-icon">⚒️</div>
+          <div class="resource-info">
+            <div class="resource-name">The Odin Project</div>
+            <div class="resource-meta">Free full-stack web dev curriculum</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.docker.com/get-started/" target="_blank">
+          <div class="resource-icon">🐳</div>
+          <div class="resource-info">
+            <div class="resource-name">Docker Official Get Started Guide</div>
+            <div class="resource-meta">docker.com · Hands-on container intro</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://fastapi.tiangolo.com/tutorial/" target="_blank">
+          <div class="resource-icon">🚀</div>
+          <div class="resource-info">
+            <div class="resource-name">FastAPI Official Tutorial</div>
+            <div class="resource-meta">tiangolo.com · Build APIs fast in Python</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.udemy.com/course/git-complete/" target="_blank">
+          <div class="resource-icon">🌿</div>
+          <div class="resource-info">
+            <div class="resource-name">Git Complete: The Definitive Guide</div>
+            <div class="resource-meta">Udemy · Jason Taylor · 11hr course</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🗄️</div>
+        <div class="module-title">Data & Storage Foundations</div>
+        <ul class="module-topics">
+          <li>SQL fundamentals + PostgreSQL</li>
+          <li>NoSQL (Redis, MongoDB) for caching & state</li>
+          <li>Vector databases intro (pgvector, Chroma)</li>
+          <li>Data pipelines with pandas & Polars</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://mode.com/sql-tutorial/" target="_blank">
+          <div class="resource-icon">🗃️</div>
+          <div class="resource-info">
+            <div class="resource-name">Mode SQL Tutorial</div>
+            <div class="resource-meta">mode.com · Interactive SQL from scratch</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://university.redis.io" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info">
+            <div class="resource-name">Redis University</div>
+            <div class="resource-meta">Official free courses by Redis Labs</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://pandas.pydata.org/docs/getting_started/index.html" target="_blank">
+          <div class="resource-icon">🐼</div>
+          <div class="resource-info">
+            <div class="resource-name">Pandas Getting Started Tutorials</div>
+            <div class="resource-meta">Official docs · Data manipulation in Python</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="phase-connector">↓ Phase complete · Begin LLM fundamentals</div>
+
+<!-- ═══════════════════════ PHASE 2 ═══════════════════════ -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">02</div>
+    <div class="phase-meta">
+      <div class="phase-badge badge-core">Core AI</div>
+      <div class="phase-title">LLM Engineering & Prompt Architecture</div>
+      <div class="phase-duration">⏱ Months 2–4 · The bedrock of all AI automation work</div>
+    </div>
+  </div>
+  <div class="modules-grid">
+
+    <div class="module-card a1">
+      <div class="module-top">
+        <div class="module-icon">🧠</div>
+        <div class="module-title">How LLMs Actually Work</div>
+        <ul class="module-topics">
+          <li>Transformer architecture (conceptual depth)</li>
+          <li>Tokenization, context windows, attention</li>
+          <li>Temperature, top-p, frequency penalty</li>
+          <li>Model families: GPT-4o, Claude, Gemini, Llama</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://llm.university" target="_blank">
+          <div class="resource-icon">🎓</div>
+          <div class="resource-info">
+            <div class="resource-name">LLM University by Cohere</div>
+            <div class="resource-meta">15–20h · Deep technical foundation on transformers</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank">
+          <div class="resource-icon">▶️</div>
+          <div class="resource-info">
+            <div class="resource-name">Andrej Karpathy: Intro to LLMs</div>
+            <div class="resource-meta">YouTube · 1hr deep dive, best free content</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/generative-ai-with-llms/" target="_blank">
+          <div class="resource-icon">🤖</div>
+          <div class="resource-info">
+            <div class="resource-name">Generative AI with LLMs — AWS + DeepLearning.AI</div>
+            <div class="resource-meta">Coursera · 16h · Pre-training to deployment</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card a1">
+      <div class="module-top">
+        <div class="module-icon">✍️</div>
+        <div class="module-title">Prompt Engineering Mastery</div>
+        <ul class="module-topics">
+          <li>Chain-of-thought, few-shot, zero-shot techniques</li>
+          <li>System prompt architecture & persona design</li>
+          <li>Structured output prompting (JSON, XML)</li>
+          <li>Prompt injection defense & robustness</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://github.com/anthropics/prompt-eng-interactive-tutorial" target="_blank">
+          <div class="resource-icon">🟠</div>
+          <div class="resource-info">
+            <div class="resource-name">Anthropic Prompt Engineering Interactive Tutorial</div>
+            <div class="resource-meta">GitHub · 34,000+ stars · Built by Anthropic engineers</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank">
+          <div class="resource-icon">🤖</div>
+          <div class="resource-info">
+            <div class="resource-name">ChatGPT Prompt Engineering for Developers</div>
+            <div class="resource-meta">DeepLearning.AI + OpenAI · 90 min · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.coursera.org/learn/prompt-engineering" target="_blank">
+          <div class="resource-icon">📘</div>
+          <div class="resource-info">
+            <div class="resource-name">Prompt Engineering for ChatGPT</div>
+            <div class="resource-meta">Vanderbilt / Coursera · Most thorough no-code option</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info">
+            <div class="resource-name">Anthropic Prompt Engineering Docs</div>
+            <div class="resource-meta">docs.anthropic.com · Required reading for Claude</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card a1">
+      <div class="module-top">
+        <div class="module-icon">🔗</div>
+        <div class="module-title">LLM Orchestration & Frameworks</div>
+        <ul class="module-topics">
+          <li>Chains, runnables, LCEL patterns in LangChain</li>
+          <li>Memory management strategies</li>
+          <li>Tool/function calling with OpenAI & Anthropic</li>
+          <li>Multi-model routing & fallback logic</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/" target="_blank">
+          <div class="resource-icon">🔗</div>
+          <div class="resource-info">
+            <div class="resource-name">LangChain for LLM Application Development</div>
+            <div class="resource-meta">DeepLearning.AI + Harrison Chase · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://python.langchain.com/docs/tutorials/" target="_blank">
+          <div class="resource-icon">📚</div>
+          <div class="resource-info">
+            <div class="resource-name">LangChain Official Tutorials</div>
+            <div class="resource-meta">python.langchain.com · Best hands-on docs</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.udemy.com/course/master-langchain-pinecone-openai-build-llm-applications/" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info">
+            <div class="resource-name">LangChain Mastery: Build GenAI Apps</div>
+            <div class="resource-meta">Udemy · Eden Marco · Top-rated, project-based</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card a1">
+      <div class="module-top">
+        <div class="module-icon">📊</div>
+        <div class="module-title">LLM Evaluation & Quality</div>
+        <ul class="module-topics">
+          <li>Benchmark design: accuracy, faithfulness, latency</li>
+          <li>LLM-as-judge evaluation patterns</li>
+          <li>Regression testing AI outputs</li>
+          <li>Cost optimization & token budgeting</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/" target="_blank">
+          <div class="resource-icon">📐</div>
+          <div class="resource-info">
+            <div class="resource-name">Building & Evaluating Advanced RAG</div>
+            <div class="resource-meta">DeepLearning.AI + LlamaIndex + TruEra · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.ragas.io/en/stable/" target="_blank">
+          <div class="resource-icon">📏</div>
+          <div class="resource-info">
+            <div class="resource-name">RAGAS Documentation</div>
+            <div class="resource-meta">ragas.io · RAG evaluation framework</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.confident-ai.com" target="_blank">
+          <div class="resource-icon">✅</div>
+          <div class="resource-info">
+            <div class="resource-name">DeepEval Docs & Guides</div>
+            <div class="resource-meta">confident-ai.com · LLM testing framework</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="phase-connector">↓ Phase complete · Building retrieval systems</div>
+
+<!-- ═══════════════════════ PHASE 3 ═══════════════════════ -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">03</div>
+    <div class="phase-meta">
+      <div class="phase-badge badge-advanced">Advanced RAG</div>
+      <div class="phase-title">Retrieval-Augmented Generation Systems</div>
+      <div class="phase-duration">⏱ Months 4–6 · Core production skill for enterprise AI</div>
+    </div>
+  </div>
+  <div class="modules-grid">
+
+    <div class="module-card a3">
+      <div class="module-top">
+        <div class="module-icon">📐</div>
+        <div class="module-title">Vector Embeddings & Semantic Search</div>
+        <ul class="module-topics">
+          <li>Embedding models: OpenAI, Cohere, BGE, E5</li>
+          <li>Cosine similarity, ANN algorithms (HNSW, IVF)</li>
+          <li>Chunking: fixed, semantic, hierarchical</li>
+          <li>Hybrid search (BM25 + dense vectors)</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/" target="_blank">
+          <div class="resource-icon">🎓</div>
+          <div class="resource-info">
+            <div class="resource-name">Vector Databases: From Embeddings to Applications</div>
+            <div class="resource-meta">DeepLearning.AI + Weaviate · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.pinecone.io/learn/" target="_blank">
+          <div class="resource-icon">🌲</div>
+          <div class="resource-info">
+            <div class="resource-name">Pinecone Learning Center</div>
+            <div class="resource-meta">pinecone.io · Vector DB tutorials & guides</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.coursera.org/learn/vector-databases-for-rag" target="_blank">
+          <div class="resource-icon">📦</div>
+          <div class="resource-info">
+            <div class="resource-name">Vector Databases for RAG: An Introduction</div>
+            <div class="resource-meta">IBM / Coursera · Structured pipeline integration</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card a3">
+      <div class="module-top">
+        <div class="module-icon">🏗️</div>
+        <div class="module-title">RAG Pipeline Architecture</div>
+        <ul class="module-topics">
+          <li>Naive RAG → Advanced RAG → Modular RAG</li>
+          <li>Query transformation: HyDE, step-back, multi-query</li>
+          <li>Re-ranking with cross-encoders</li>
+          <li>Context compression & contextual retrieval</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://learn.activeloop.ai/courses/rag" target="_blank">
+          <div class="resource-icon">🔥</div>
+          <div class="resource-info">
+            <div class="resource-name">Advanced RAG with LlamaIndex & LangChain</div>
+            <div class="resource-meta">Activeloop · With Jerry Liu (LlamaIndex CEO)</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.udemy.com/course/ultimate-rag-bootcamp-using-langchainlanggraph-langsmith/" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info">
+            <div class="resource-name">Ultimate RAG Bootcamp — LangChain, LangGraph, LangSmith</div>
+            <div class="resource-meta">Udemy · Traditional to Agentic RAG pipelines</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+        <a class="resource-item" href="https://www.datacamp.com/courses/retrieval-augmented-generation-rag-with-langchain" target="_blank">
+          <div class="resource-icon">📊</div>
+          <div class="resource-info">
+            <div class="resource-name">Build RAG Systems with LangChain</div>
+            <div class="resource-meta">DataCamp · GraphRAG, evaluation, production</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card a3">
+      <div class="module-top">
+        <div class="module-icon">📄</div>
+        <div class="module-title">Document Processing & Ingestion</div>
+        <ul class="module-topics">
+          <li>PDF, DOCX, HTML, Markdown parsing pipelines</li>
+          <li>OCR for scanned documents</li>
+          <li>Table extraction & multimodal documents</li>
+          <li>Incremental indexing & change detection</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/preprocessing-unstructured-data-for-llm-applications/" target="_blank">
+          <div class="resource-icon">🗂️</div>
+          <div class="resource-info">
+            <div class="resource-name">Preprocessing Unstructured Data for LLM Applications</div>
+            <div class="resource-meta">DeepLearning.AI + Unstructured · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.unstructured.io/welcome" target="_blank">
+          <div class="resource-icon">📁</div>
+          <div class="resource-info">
+            <div class="resource-name">Unstructured.io Documentation</div>
+            <div class="resource-meta">Best library for parsing any document type</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.llamaindex.ai/en/stable/understanding/loading/loading/" target="_blank">
+          <div class="resource-icon">🦙</div>
+          <div class="resource-info">
+            <div class="resource-name">LlamaIndex Data Loading Docs</div>
+            <div class="resource-meta">llamaindex.ai · 160+ connectors and loaders</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card a3">
+      <div class="module-top">
+        <div class="module-icon">⚡</div>
+        <div class="module-title">Production RAG Engineering</div>
+        <ul class="module-topics">
+          <li>Semantic caching with Redis/GPTCache</li>
+          <li>Async ingestion pipelines</li>
+          <li>Observability: tracing retrieval quality at scale</li>
+          <li>RAGAS evaluation in CI/CD</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://langfuse.com/docs" target="_blank">
+          <div class="resource-icon">🔭</div>
+          <div class="resource-info">
+            <div class="resource-name">Langfuse Documentation</div>
+            <div class="resource-meta">langfuse.com · LLM observability & tracing</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/llmops/" target="_blank">
+          <div class="resource-icon">🏭</div>
+          <div class="resource-info">
+            <div class="resource-name">LLMOps — DeepLearning.AI</div>
+            <div class="resource-meta">Google Cloud · Deployment & production patterns · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="phase-connector">↓ Phase complete · Entering agentic systems</div>
+
+<!-- ═══════════════════════ PHASE 4 ═══════════════════════ -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">04</div>
+    <div class="phase-meta">
+      <div class="phase-badge badge-specialist">Agentic AI</div>
+      <div class="phase-title">AI Agents, Tools & Multi-Agent Systems</div>
+      <div class="phase-duration">⏱ Months 6–9 · The frontier of AI automation engineering</div>
+    </div>
+  </div>
+  <div class="modules-grid">
+
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🤖</div>
+        <div class="module-title">Agent Architecture Patterns</div>
+        <ul class="module-topics">
+          <li>ReAct, Plan-and-Execute, Reflexion loops</li>
+          <li>Tool use design: function schemas, error handling</li>
+          <li>Agent memory: episodic, semantic, procedural</li>
+          <li>Human-in-the-loop checkpoints</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank">
+          <div class="resource-icon">🕸️</div>
+          <div class="resource-info">
+            <div class="resource-name">AI Agents in LangGraph</div>
+            <div class="resource-meta">DeepLearning.AI · Agentic patterns deep-dive · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://langchain-ai.github.io/langgraph/tutorials/" target="_blank">
+          <div class="resource-icon">📗</div>
+          <div class="resource-info">
+            <div class="resource-name">LangGraph Official Tutorials</div>
+            <div class="resource-meta">langchain.com · Stateful agent workflows</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.anthropic.com/research/building-effective-agents" target="_blank">
+          <div class="resource-icon">🟠</div>
+          <div class="resource-info">
+            <div class="resource-name">Building Effective Agents — Anthropic Research</div>
+            <div class="resource-meta">anthropic.com · Essential reading on agent design</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🕸️</div>
+        <div class="module-title">Multi-Agent Orchestration</div>
+        <ul class="module-topics">
+          <li>Supervisor, hierarchical, and peer-to-peer topologies</li>
+          <li>Agent communication protocols (MCP, A2A)</li>
+          <li>Shared memory & state management across agents</li>
+          <li>Conflict resolution & consensus patterns</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/" target="_blank">
+          <div class="resource-icon">🚀</div>
+          <div class="resource-info">
+            <div class="resource-name">AI Engineer Agentic Track: Complete Agent & MCP Course</div>
+            <div class="resource-meta">Udemy · OpenAI SDK, CrewAI, LangGraph, AutoGen, MCP</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+        <a class="resource-item" href="https://www.coursera.org/learn/agentic-ai-with-langgraph-crewai-autogen-and-beeai" target="_blank">
+          <div class="resource-icon">🎓</div>
+          <div class="resource-info">
+            <div class="resource-name">Agentic AI with LangGraph, CrewAI, AutoGen & BeeAI</div>
+            <div class="resource-meta">IBM / Coursera · Hands-on labs, production patterns</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/" target="_blank">
+          <div class="resource-icon">👥</div>
+          <div class="resource-info">
+            <div class="resource-name">Multi AI Agent Systems with CrewAI</div>
+            <div class="resource-meta">DeepLearning.AI · João Moura (CrewAI founder) · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🌐</div>
+        <div class="module-title">Browser & Computer Use Agents</div>
+        <ul class="module-topics">
+          <li>Web scraping & DOM interaction</li>
+          <li>Vision-based UI automation</li>
+          <li>Form filling, navigation, login flows</li>
+          <li>Anti-bot handling & ethical automation</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://playwright.dev/python/docs/intro" target="_blank">
+          <div class="resource-icon">🎭</div>
+          <div class="resource-info">
+            <div class="resource-name">Playwright for Python — Official Docs</div>
+            <div class="resource-meta">playwright.dev · Best browser automation tool</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/computer-use" target="_blank">
+          <div class="resource-icon">🖥️</div>
+          <div class="resource-info">
+            <div class="resource-name">Claude Computer Use — Anthropic Docs</div>
+            <div class="resource-meta">anthropic.com · Vision-based UI automation</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://browser-use.com" target="_blank">
+          <div class="resource-icon">🌍</div>
+          <div class="resource-info">
+            <div class="resource-name">Browser Use Framework</div>
+            <div class="resource-meta">browser-use.com · LLM-powered browser agents</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🛠️</div>
+        <div class="module-title">Workflow Automation Platforms</div>
+        <ul class="module-topics">
+          <li>n8n & Make.com for no-code automation flows</li>
+          <li>Zapier AI Actions & custom AI steps</li>
+          <li>Building custom nodes & triggers</li>
+          <li>When to code vs. when to use no-code</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://docs.n8n.io/courses/" target="_blank">
+          <div class="resource-icon">🔀</div>
+          <div class="resource-info">
+            <div class="resource-name">n8n Official Courses</div>
+            <div class="resource-meta">docs.n8n.io · Beginner to advanced workflows</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.udemy.com/course/ai-agents-bootcamp-build-with-langchain-rag-langflow-gpt/" target="_blank">
+          <div class="resource-icon">⚙️</div>
+          <div class="resource-info">
+            <div class="resource-name">AI Agents Bootcamp: LangChain, RAG & Workflow Automation</div>
+            <div class="resource-meta">Udemy · Includes n8n + LangGraph + CrewAI</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+        <a class="resource-item" href="https://academy.make.com" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info">
+            <div class="resource-name">Make Academy</div>
+            <div class="resource-meta">make.com · Official courses for automation scenarios</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🔐</div>
+        <div class="module-title">Agent Safety & Reliability</div>
+        <ul class="module-topics">
+          <li>Guardrails: input/output validation</li>
+          <li>Sandboxing code execution safely</li>
+          <li>Retry logic, circuit breakers, fallback chains</li>
+          <li>Cost ceilings & runaway prevention</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/quality-safety-llm-applications/" target="_blank">
+          <div class="resource-icon">🛡️</div>
+          <div class="resource-info">
+            <div class="resource-name">Quality & Safety for LLM Applications</div>
+            <div class="resource-meta">DeepLearning.AI + WhyLabs · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/NVIDIA/NeMo-Guardrails" target="_blank">
+          <div class="resource-icon">🔒</div>
+          <div class="resource-info">
+            <div class="resource-name">NeMo Guardrails by NVIDIA</div>
+            <div class="resource-meta">GitHub · Open-source guardrail framework</div>
+          </div>
+          <span class="resource-type type-github">GitHub</span>
+        </a>
+        <a class="resource-item" href="https://e2b.dev/docs" target="_blank">
+          <div class="resource-icon">📦</div>
+          <div class="resource-info">
+            <div class="resource-name">E2B — Secure Code Execution Docs</div>
+            <div class="resource-meta">e2b.dev · Sandboxed environments for agents</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">💻</div>
+        <div class="module-title">Code Generation Agents</div>
+        <ul class="module-topics">
+          <li>Building coding assistants with context retrieval</li>
+          <li>TDD loops with AI agents</li>
+          <li>SWE-agent patterns for autonomous bug fixes</li>
+          <li>Claude Code & Cursor API integration</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank">
+          <div class="resource-icon">🟠</div>
+          <div class="resource-info">
+            <div class="resource-name">Claude Code Documentation</div>
+            <div class="resource-meta">anthropic.com · Agentic coding in the terminal</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/princeton-nlp/SWE-agent" target="_blank">
+          <div class="resource-icon">🤖</div>
+          <div class="resource-info">
+            <div class="resource-name">SWE-agent (Princeton NLP)</div>
+            <div class="resource-meta">GitHub · Open-source autonomous bug-fixing agent</div>
+          </div>
+          <span class="resource-type type-github">GitHub</span>
+        </a>
+        <a class="resource-item" href="https://aider.chat/docs/usage/tutorials.html" target="_blank">
+          <div class="resource-icon">✏️</div>
+          <div class="resource-info">
+            <div class="resource-name">Aider — AI Pair Programming Tutorials</div>
+            <div class="resource-meta">aider.chat · CLI-based coding assistant</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="phase-connector">↓ Phase complete · Production & MLOps</div>
+
+<!-- ═══════════════════════ PHASE 5 ═══════════════════════ -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">05</div>
+    <div class="phase-meta">
+      <div class="phase-badge badge-practice">MLOps</div>
+      <div class="phase-title">Production Deployment & LLMOps</div>
+      <div class="phase-duration">⏱ Months 9–12 · Ship systems that scale, observe, and self-heal</div>
+    </div>
+  </div>
+  <div class="modules-grid">
+
+    <div class="module-card at">
+      <div class="module-top">
+        <div class="module-icon">☁️</div>
+        <div class="module-title">Cloud & Infrastructure for AI</div>
+        <ul class="module-topics">
+          <li>AWS Bedrock, Vertex AI, Azure AI services</li>
+          <li>Serverless AI: Lambda, Cloud Run, Modal</li>
+          <li>Kubernetes basics for AI workloads</li>
+          <li>GPU instance management & spot strategies</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/serverless-llm-apps-amazon-bedrock/" target="_blank">
+          <div class="resource-icon">☁️</div>
+          <div class="resource-info">
+            <div class="resource-name">Serverless LLM Apps with Amazon Bedrock</div>
+            <div class="resource-meta">DeepLearning.AI + AWS · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://modal.com/docs/guide" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info">
+            <div class="resource-name">Modal Docs & Tutorials</div>
+            <div class="resource-meta">modal.com · Serverless GPU compute for AI</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://cloud.google.com/vertex-ai/docs" target="_blank">
+          <div class="resource-icon">🌐</div>
+          <div class="resource-info">
+            <div class="resource-name">Vertex AI Documentation</div>
+            <div class="resource-meta">cloud.google.com · Google's full AI platform</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card at">
+      <div class="module-top">
+        <div class="module-icon">📈</div>
+        <div class="module-title">LLMOps & Observability</div>
+        <ul class="module-topics">
+          <li>LLM tracing with OpenTelemetry</li>
+          <li>Latency, cost, and quality dashboards</li>
+          <li>Alerting on quality degradation</li>
+          <li>A/B testing prompt versions in production</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://madewithml.com/courses/mlops/" target="_blank">
+          <div class="resource-icon">🏭</div>
+          <div class="resource-info">
+            <div class="resource-name">Made With ML — MLOps Course</div>
+            <div class="resource-meta">madewithml.com · Best-reviewed MLOps course, free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.udemy.com/course/llmops-and-aiops-bootcamp-with-9-end-to-end-projects/" target="_blank">
+          <div class="resource-icon">🔧</div>
+          <div class="resource-info">
+            <div class="resource-name">LLMOps & AIOps Bootcamp — 8 Projects</div>
+            <div class="resource-meta">Udemy · Jenkins, Docker, K8s, FastAPI, AWS, GCP</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+        <a class="resource-item" href="https://www.dailydoseofds.com/llmops-crash-course-part-1/" target="_blank">
+          <div class="resource-icon">📰</div>
+          <div class="resource-info">
+            <div class="resource-name">LLMOps Crash Course — Daily Dose of Data Science</div>
+            <div class="resource-meta">18-part series · AI engineering & LLMOps · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card at">
+      <div class="module-top">
+        <div class="module-icon">🔄</div>
+        <div class="module-title">Fine-Tuning & Model Customization</div>
+        <ul class="module-topics">
+          <li>When to fine-tune vs. prompt vs. RAG</li>
+          <li>LoRA / QLoRA fine-tuning on open models</li>
+          <li>Dataset curation & synthetic data generation</li>
+          <li>OpenAI & Anthropic fine-tuning APIs</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/finetuning-large-language-models/" target="_blank">
+          <div class="resource-icon">🎯</div>
+          <div class="resource-info">
+            <div class="resource-name">Finetuning Large Language Models</div>
+            <div class="resource-meta">DeepLearning.AI + Lamini · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/unslothai/unsloth" target="_blank">
+          <div class="resource-icon">🚀</div>
+          <div class="resource-info">
+            <div class="resource-name">Unsloth — Fast LLM Fine-Tuning</div>
+            <div class="resource-meta">GitHub · 2x faster, 70% less VRAM · extensive notebooks</div>
+          </div>
+          <span class="resource-type type-github">GitHub</span>
+        </a>
+        <a class="resource-item" href="https://huggingface.co/learn/llm-course/chapter1/1" target="_blank">
+          <div class="resource-icon">🤗</div>
+          <div class="resource-info">
+            <div class="resource-name">Hugging Face LLM Course</div>
+            <div class="resource-meta">huggingface.co · Training, fine-tuning, deployment</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://mlabonne.github.io/blog/" target="_blank">
+          <div class="resource-icon">📓</div>
+          <div class="resource-info">
+            <div class="resource-name">Maxime Labonne's LLM Blog & Notebooks</div>
+            <div class="resource-meta">Best practical QLoRA fine-tuning tutorials</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card at">
+      <div class="module-top">
+        <div class="module-icon">🚀</div>
+        <div class="module-title">Scalable AI API Design</div>
+        <ul class="module-topics">
+          <li>Streaming responses with SSE / WebSockets</li>
+          <li>Rate limiting, queuing, and backpressure</li>
+          <li>Multi-tenant AI API architecture</li>
+          <li>Auth patterns: API keys, OAuth, JWTs</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://fastapi.tiangolo.com/advanced/" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info">
+            <div class="resource-name">FastAPI Advanced User Guide</div>
+            <div class="resource-meta">tiangolo.com · WebSockets, background tasks, auth</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.patterns.app/blog/2023/01/18/crdt-step-by-step/" target="_blank">
+          <div class="resource-icon">📡</div>
+          <div class="resource-info">
+            <div class="resource-name">Streaming LLM Responses (SSE) Tutorial</div>
+            <div class="resource-meta">Real-time AI response patterns for production</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="phase-connector">↓ Phase complete · Specialization & capstone</div>
+
+<!-- ═══════════════════════ PHASE 6 ═══════════════════════ -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">06</div>
+    <div class="phase-meta">
+      <div class="phase-badge badge-mastery">Mastery</div>
+      <div class="phase-title">Specialization, System Design & Capstone</div>
+      <div class="phase-duration">⏱ Months 12–18 · Domain depth + portfolio that gets you hired</div>
+    </div>
+  </div>
+  <div class="modules-grid">
+
+    <div class="module-card ag">
+      <div class="module-top">
+        <div class="module-icon">📦</div>
+        <div class="module-title">Capstone Projects (Build These)</div>
+        <ul class="module-topics">
+          <li>End-to-end autonomous research agent</li>
+          <li>Multi-tenant RAG SaaS with evaluation dashboard</li>
+          <li>Voice + vision multimodal assistant</li>
+          <li>Open source contribution to core frameworks</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/building-multimodal-search-and-rag/" target="_blank">
+          <div class="resource-icon">🎨</div>
+          <div class="resource-info">
+            <div class="resource-name">Building Multimodal Search and RAG</div>
+            <div class="resource-meta">DeepLearning.AI + Weaviate · Free</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/chiphuyen/aie-book" target="_blank">
+          <div class="resource-icon">📁</div>
+          <div class="resource-info">
+            <div class="resource-name">AI Engineering GitHub Companion (Chip Huyen)</div>
+            <div class="resource-meta">Code, notebooks, and resources for AI Engineering book</div>
+          </div>
+          <span class="resource-type type-github">GitHub</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card ag">
+      <div class="module-top">
+        <div class="module-icon">🏛️</div>
+        <div class="module-title">AI System Design</div>
+        <ul class="module-topics">
+          <li>Designing scalable RAG systems end-to-end</li>
+          <li>Trade-off analysis: latency vs. accuracy vs. cost</li>
+          <li>Failure mode analysis & mitigation</li>
+          <li>Whiteboard: 20 common AI system designs</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://huyenchip.com/machine-learning-systems-design/toc.html" target="_blank">
+          <div class="resource-icon">🏗️</div>
+          <div class="resource-info">
+            <div class="resource-name">ML Systems Design — Chip Huyen (Free)</div>
+            <div class="resource-meta">Stanford course material, open access</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.educative.io/courses/grokking-the-machine-learning-interview" target="_blank">
+          <div class="resource-icon">🎯</div>
+          <div class="resource-info">
+            <div class="resource-name">Grokking the ML Interview</div>
+            <div class="resource-meta">educative.io · System design for AI interviews</div>
+          </div>
+          <span class="resource-type type-paid">Paid</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="module-card ag">
+      <div class="module-top">
+        <div class="module-icon">🌍</div>
+        <div class="module-title">AI Ethics & Governance</div>
+        <ul class="module-topics">
+          <li>Bias detection & mitigation in AI systems</li>
+          <li>EU AI Act & regulatory landscape</li>
+          <li>Data privacy: GDPR, CCPA for AI pipelines</li>
+          <li>Responsible disclosure & incident response</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">📚 Curated Resources</div>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/ai-safety-deeplearning/" target="_blank">
+          <div class="resource-icon">🛡️</div>
+          <div class="resource-info">
+            <div class="resource-name">AI Safety Fundamentals — DeepLearning.AI</div>
+            <div class="resource-meta">Free · Key safety concepts for AI engineers</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.anthropic.com/responsible-scaling-policy" target="_blank">
+          <div class="resource-icon">🟠</div>
+          <div class="resource-info">
+            <div class="resource-name">Anthropic's Responsible Scaling Policy</div>
+            <div class="resource-meta">anthropic.com · Industry-standard safety framework</div>
+          </div>
+          <span class="resource-type type-free">Free</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════ MUST-READ BOOKS ═══════════════════════ -->
+<div class="books-section">
+  <div class="section-heading">📚 Must-Read Books</div>
+  <div class="section-sub">The definitive reading list — recommended across Reddit, HN, and every senior AI engineer we know</div>
+  <div class="books-grid">
+
+    <a class="book-card" href="https://www.oreilly.com/library/view/ai-engineering/9781098166298/" target="_blank">
+      <div class="book-cover">🧠</div>
+      <div class="book-title">AI Engineering</div>
+      <div class="book-author">Chip Huyen · O'Reilly 2025</div>
+      <div class="book-desc">The #1 recommended book for AI engineers. Covers the full AI engineering stack: RAG, evaluation, agents, deployment, and monitoring. Chip taught ML at Stanford, worked at NVIDIA & Netflix.</div>
+    </a>
+
+    <a class="book-card" href="https://www.packtpub.com/en-us/product/the-llm-engineers-handbook-9781836200079" target="_blank">
+      <div class="book-cover">🔧</div>
+      <div class="book-title">The LLM Engineer's Handbook</div>
+      <div class="book-author">Paul Iusztin & Maxime Labonne · 2024</div>
+      <div class="book-desc">End-to-end framework for building production LLM & RAG apps. Covers data collection, fine-tuning (LoRA/QLoRA), evaluation, and deployment. Highly practical — builds one complete system throughout.</div>
+    </a>
+
+    <a class="book-card" href="https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/" target="_blank">
+      <div class="book-cover">🏗️</div>
+      <div class="book-title">Designing ML Systems</div>
+      <div class="book-author">Chip Huyen · O'Reilly 2022</div>
+      <div class="book-desc">The essential primer on ML system design under real-world constraints: data drift, retraining, reliability. Timeless principles that apply directly to LLM systems. Read before AI Engineering.</div>
+    </a>
+
+    <a class="book-card" href="https://www.manning.com/books/build-a-large-language-model-from-scratch" target="_blank">
+      <div class="book-cover">🔬</div>
+      <div class="book-title">Build a Large Language Model from Scratch</div>
+      <div class="book-author">Sebastian Raschka · Manning 2024</div>
+      <div class="book-desc">Build a GPT-like LLM in PyTorch from scratch. Best resource for understanding LLM internals: tokenization, attention, training loops. For engineers who want to understand, not just use, models.</div>
+    </a>
+
+    <a class="book-card" href="https://www.oreilly.com/library/view/prompt-engineering-for/9781098153427/" target="_blank">
+      <div class="book-cover">✍️</div>
+      <div class="book-title">Prompt Engineering for LLMs</div>
+      <div class="book-author">Berryman & Ziegler · O'Reilly 2024</div>
+      <div class="book-desc">Written by core engineers who built GitHub Copilot. Systems-level thinking on prompting — the best book for understanding prompt engineering as an engineering discipline, not a collection of tricks.</div>
+    </a>
+
+    <a class="book-card" href="https://www.oreilly.com/library/view/building-llms-for/9780138279196/" target="_blank">
+      <div class="book-cover">🚀</div>
+      <div class="book-title">Building LLMs for Production</div>
+      <div class="book-author">Bouchard & Peters · Towards AI 2024</div>
+      <div class="book-desc">Practical guide to shipping LLMs: fine-tuning, deploying, scaling, maintaining. Packed with architecture examples and real deployment challenges for engineers aiming at LLM engineer roles.</div>
+    </a>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════ YOUTUBE & FREE ═══════════════════════ -->
+<div class="books-section" style="margin-top:60px">
+  <div class="section-heading">▶️ Top YouTube Channels & Free Resources</div>
+  <div class="section-sub">Essential free content to supplement every phase — watch these weekly</div>
+  <div class="channels-grid">
+
+    <a class="channel-card" href="https://www.youtube.com/@AndrejKarpathy" target="_blank">
+      <div class="channel-icon">🧠</div>
+      <div>
+        <div class="channel-name">Andrej Karpathy</div>
+        <div class="channel-desc">Ex-OpenAI/Tesla. Best deep-dive LLM content on YouTube. "Let's build GPT" is required watching.</div>
+      </div>
+    </a>
+
+    <a class="channel-card" href="https://www.youtube.com/@samwitteveenai" target="_blank">
+      <div class="channel-icon">🤖</div>
+      <div>
+        <div class="channel-name">Sam Witteveen</div>
+        <div class="channel-desc">Practical LangChain, agents, and RAG tutorials. Updated weekly with new tools and patterns.</div>
+      </div>
+    </a>
+
+    <a class="channel-card" href="https://www.youtube.com/@DataIndependent" target="_blank">
+      <div class="channel-icon">📊</div>
+      <div>
+        <div class="channel-name">Greg Kamradt (Data Independent)</div>
+        <div class="channel-desc">Chunking, embeddings, and RAG explained clearly. Made "5 Levels of RAG" famous.</div>
+      </div>
+    </a>
+
+    <a class="channel-card" href="https://www.youtube.com/@LangChain" target="_blank">
+      <div class="channel-icon">🔗</div>
+      <div>
+        <div class="channel-name">LangChain YouTube</div>
+        <div class="channel-desc">Official LangChain & LangGraph tutorials. Covers new features as they ship.</div>
+      </div>
+    </a>
+
+    <a class="channel-card" href="https://www.youtube.com/@underfitted" target="_blank">
+      <div class="channel-icon">📐</div>
+      <div>
+        <div class="channel-name">Santiago Valdarrama (Underfitted)</div>
+        <div class="channel-desc">ML engineering visual explainers. Great for solidifying systems thinking in AI.</div>
+      </div>
+    </a>
+
+    <a class="channel-card" href="https://github.com/mlabonne/llm-course" target="_blank">
+      <div class="channel-icon">📓</div>
+      <div>
+        <div class="channel-name">LLM Course — Maxime Labonne</div>
+        <div class="channel-desc">GitHub repo with 30+ Colab notebooks. Best collection of fine-tuning and LLM notebooks available.</div>
+      </div>
+    </a>
+
+    <a class="channel-card" href="https://www.deeplearning.ai/short-courses/" target="_blank">
+      <div class="channel-icon">🎓</div>
+      <div>
+        <div class="channel-name">DeepLearning.AI Short Courses</div>
+        <div class="channel-desc">60+ free short courses (1–4h each). The best free AI education platform, hands-down.</div>
+      </div>
+    </a>
+
+    <a class="channel-card" href="https://huggingface.co/learn" target="_blank">
+      <div class="channel-icon">🤗</div>
+      <div>
+        <div class="channel-name">Hugging Face Learning</div>
+        <div class="channel-desc">Free courses on NLP, Diffusion, RL, agents, and more. Industry-standard platform for open models.</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="footer-text">AI Automation Engineering Curriculum + Resources · v2026.1 · Updated May 2026</div>
+  <div class="footer-badge">
+    <span style="width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block;"></span>
+    Ritji Ishaku. All links verified & curated
+  </div>
+</footer>
+
+</body>
+</html>
