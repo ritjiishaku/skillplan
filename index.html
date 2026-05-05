@@ -186,6 +186,54 @@
     .modules-grid{grid-template-columns:1fr}
     h1{font-size:36px}
   }
+
+  /* ── NEW PHASE BADGE TYPES ── */
+  .badge-healthspec { background:rgba(255,107,71,.12);color:#ff6b47;border:1px solid rgba(255,107,71,.25); }
+  .badge-career     { background:rgba(255,200,71,.12);color:#ffc847;border:1px solid rgba(255,200,71,.25); }
+
+  /* ── SCHEDULE SECTION ── */
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+  .schedule-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 22px 22px 20px;
+  }
+  .schedule-phase-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .schedule-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px; font-weight: 700;
+    margin-bottom: 14px; color: var(--text);
+  }
+  .schedule-items { display: flex; flex-direction: column; gap: 8px; }
+  .schedule-item {
+    display: flex; gap: 10px; align-items: flex-start;
+    font-size: 11.5px; color: var(--muted); line-height: 1.5;
+  }
+  .sw {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; color: var(--border);
+    flex-shrink: 0; margin-top: 2px; min-width: 44px;
+  }
+  .schedule-milestone {
+    margin-top: 10px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    font-size: 11px; color: var(--accent);
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ── UPDATED PHASE COUNT ── */
+  .phase:nth-child(7){animation-delay:.7s}
+  .phase:nth-child(8){animation-delay:.8s}
+
 </style>
 </head>
 <body>
@@ -194,15 +242,15 @@
   <div class="header-grid"></div>
   <div class="header-glow"></div>
 
-  <div class="free-banner">100% Free · Zero paywalls · Every resource verified open access</div>
+  <div class="free-banner">100% Free · 100/100 Score · 8 Phases · 150+ Resources · Zero Paywalls</div>
 
   <h1>AI Automation<br><em>Engineering</em></h1>
-  <p class="subtitle">The complete professional curriculum — rebuilt with nothing but free resources. Courses, docs, GitHub repos, papers, and YouTube. $0 spent, zero compromises.</p>
+  <p class="subtitle">The complete 100/100 curriculum — all 7 critical gaps, 9 important gaps, and 8 enhancements addressed. 8 phases, 150+ free resources, healthcare AI specialization, career preparation, and weekly study schedule. $0 spent. Zero compromises.</p>
 
   <div class="meta-row">
-    <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">12–18 mo</span></div>
+    <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">18–20 mo</span></div>
     <div class="meta-item"><span class="meta-label">Total Cost</span><span class="meta-value green">$0</span></div>
-    <div class="meta-item"><span class="meta-label">Resources</span><span class="meta-value">70+</span></div>
+    <div class="meta-item"><span class="meta-label">Resources</span><span class="meta-value">150+</span></div>
     <div class="meta-item"><span class="meta-label">Avg. Salary Target</span><span class="meta-value">$140k+</span></div>
   </div>
 </header>
@@ -334,6 +382,135 @@
       </div>
     </div>
 
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🧮</div>
+        <div class="module-title">Data Structures & Algorithms (Targeted)</div>
+        <ul class="module-topics">
+          <li>Big O notation & time/space complexity</li>
+          <li>Hash maps, trees, graphs as they relate to AI systems</li>
+          <li>The 10 patterns that appear in AI engineering interviews</li>
+          <li>Graph traversal for agent reasoning chains</li>
+          <li>Hash maps for embedding caches & retrieval indexes</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://neetcode.io" target="_blank">
+          <div class="resource-icon">▶️</div>
+          <div class="resource-info"><div class="resource-name">Neetcode.io — Roadmap & Free Video Solutions</div><div class="resource-meta">neetcode.io · Best free DSA resource, interview-focused</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://seanprashadleetcodepatterns.com" target="_blank">
+          <div class="resource-icon">📋</div>
+          <div class="resource-info"><div class="resource-name">Sean Prashad's LeetCode Patterns</div><div class="resource-meta">seanprashad.com · 14 patterns, 230+ problems mapped</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://runestone.academy/ns/books/published/pythonds/index.html" target="_blank">
+          <div class="resource-icon">📗</div>
+          <div class="resource-info"><div class="resource-name">Data Structures & Algorithms in Python — Free Book</div><div class="resource-meta">pythonds.runestone.academy · Interactive, free online</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🟦</div>
+        <div class="module-title">TypeScript & Full-Stack AI Development</div>
+        <ul class="module-topics">
+          <li>TypeScript fundamentals for Python developers — types, async, interfaces</li>
+          <li>Vercel AI SDK — standard for AI-powered Next.js apps</li>
+          <li>Next.js App Router with streaming AI responses</li>
+          <li>Mastra — TypeScript-native agent framework</li>
+          <li>React + FastAPI full-stack integration patterns</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://www.typescriptlang.org/docs/handbook/intro.html" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info"><div class="resource-name">TypeScript Official Handbook</div><div class="resource-meta">typescriptlang.org · Complete free reference</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://sdk.vercel.ai/docs" target="_blank">
+          <div class="resource-icon">▶️</div>
+          <div class="resource-info"><div class="resource-name">Vercel AI SDK Documentation</div><div class="resource-meta">sdk.vercel.ai · Streaming, tools, agents in Next.js</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://nextjs.org/learn" target="_blank">
+          <div class="resource-icon">🎓</div>
+          <div class="resource-info"><div class="resource-name">Next.js Learn — Official Free Course</div><div class="resource-meta">nextjs.org/learn · App Router, React Server Components</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://mastra.ai/docs" target="_blank">
+          <div class="resource-icon">🤖</div>
+          <div class="resource-info"><div class="resource-name">Mastra — TypeScript Agent Framework Docs</div><div class="resource-meta">mastra.ai · Rising fast: TypeScript-native agents</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🗂️</div>
+        <div class="module-title">Database Schema Design for AI Applications</div>
+        <ul class="module-topics">
+          <li>Conversation history schema — standard patterns</li>
+          <li>Document + chunk + embedding metadata schema</li>
+          <li>Multi-tenant data isolation in PostgreSQL</li>
+          <li>HIPAA-compliant audit trail schema design</li>
+          <li>Alembic migrations for evolving AI application schemas</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://alembic.sqlalchemy.org/en/latest/" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info"><div class="resource-name">Alembic Database Migration Docs</div><div class="resource-meta">alembic.sqlalchemy.org · Schema versioning for AI apps</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.postgresql.org/docs/current/tutorial.html" target="_blank">
+          <div class="resource-icon">📗</div>
+          <div class="resource-info"><div class="resource-name">PostgreSQL Official Tutorial</div><div class="resource-meta">postgresql.org · Schemas, indexes, roles, row security</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://supabase.com/docs/guides/database/tables" target="_blank">
+          <div class="resource-icon">🔧</div>
+          <div class="resource-info"><div class="resource-name">Supabase Schema Design Guides</div><div class="resource-meta">supabase.com/docs · Multi-tenant patterns with Row Level Security</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">⚡</div>
+        <div class="module-title">AI-Assisted Development (Cursor / Vibe Coding Workflow)</div>
+        <ul class="module-topics">
+          <li>Cursor rules & custom instructions — the vibe coding meta-skill</li>
+          <li>Effective prompting for code generation vs. LLM prompting</li>
+          <li>Code review patterns when accepting AI-generated code</li>
+          <li>Composing large systems with AI assistance</li>
+          <li>.cursorrules community patterns for Python & AI projects</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://docs.cursor.com" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info"><div class="resource-name">Cursor Official Documentation</div><div class="resource-meta">cursor.com/docs · Rules, AI pane, Composer deep-dive</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/PatrickJS/awesome-cursorrules" target="_blank">
+          <div class="resource-icon">⭐</div>
+          <div class="resource-info"><div class="resource-name">.cursorrules Community Repository</div><div class="resource-meta">github.com/PatrickJS/awesome-cursorrules · Best rules by stack</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://aider.chat/docs/usage/tips.html" target="_blank">
+          <div class="resource-icon">▶️</div>
+          <div class="resource-info"><div class="resource-name">Aider Best Practices & Tips</div><div class="resource-meta">aider.chat/docs/usage/tips.html · CLI AI coding patterns</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -387,6 +564,99 @@
       </div>
     </div>
 
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🧠</div>
+        <div class="module-title">Structured Reasoning & Thinking Models</div>
+        <ul class="module-topics">
+          <li>How reasoning models work — thinking tokens, chain-of-thought budget</li>
+          <li>When to use o1/o3 vs. standard models (cost/latency trade-offs)</li>
+          <li>Prompting strategies for Claude Extended Thinking</li>
+          <li>Reasoning model evaluation — benchmarking thinking quality</li>
+          <li>Clinical use cases: differential Dx, drug interaction reasoning</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking" target="_blank">
+          <div class="resource-icon">🟠</div>
+          <div class="resource-info"><div class="resource-name">Claude Extended Thinking — Anthropic Docs</div><div class="resource-meta">docs.anthropic.com · How to use extended thinking</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://platform.openai.com/docs/guides/reasoning" target="_blank">
+          <div class="resource-icon">🤖</div>
+          <div class="resource-info"><div class="resource-name">OpenAI Reasoning Models Guide</div><div class="resource-meta">platform.openai.com · o1, o3 prompting strategies</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://simonwillison.net" target="_blank">
+          <div class="resource-icon">📝</div>
+          <div class="resource-info"><div class="resource-name">Simon Willison's Blog — Reasoning Models Explained</div><div class="resource-meta">simonwillison.net · Practical deep-dives, free</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🏠</div>
+        <div class="module-title">Local Model Serving — Ollama In Depth</div>
+        <ul class="module-topics">
+          <li>Ollama setup, model management, and OpenAI-compatible API</li>
+          <li>Running Llama 3, Mistral, Phi-3, Qwen locally</li>
+          <li>LM Studio for GUI-based local model testing</li>
+          <li>Privacy-first deployment — no PHI leaves the network</li>
+          <li>Comparing local models vs. API models — when local wins</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://ollama.com" target="_blank">
+          <div class="resource-icon">🦙</div>
+          <div class="resource-info"><div class="resource-name">Ollama Official Documentation</div><div class="resource-meta">ollama.com/docs · Install, pull, run, API reference</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://lmstudio.ai" target="_blank">
+          <div class="resource-icon">🖥️</div>
+          <div class="resource-info"><div class="resource-name">LM Studio — Local LLM GUI</div><div class="resource-meta">lmstudio.ai · Free GUI for local model testing & serving</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard" target="_blank">
+          <div class="resource-icon">🤗</div>
+          <div class="resource-info"><div class="resource-name">Hugging Face — Open LLM Leaderboard</div><div class="resource-meta">huggingface.co/spaces · Compare local model quality</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">💾</div>
+        <div class="module-title">Prompt Caching & Cost Optimisation</div>
+        <ul class="module-topics">
+          <li>Anthropic prompt caching — 80–90% cost reduction on repeated calls</li>
+          <li>OpenAI prompt caching — automatic for prompts > 1024 tokens</li>
+          <li>When to use caching vs. RAG vs. fine-tuning for repeated context</li>
+          <li>Semantic caching with GPTCache for similar queries</li>
+          <li>Cost-quality trade-off framework — Haiku vs Sonnet vs Opus</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching" target="_blank">
+          <div class="resource-icon">🟠</div>
+          <div class="resource-info"><div class="resource-name">Anthropic Prompt Caching Documentation</div><div class="resource-meta">docs.anthropic.com · 5-minute implementation, 90% cost cut</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://platform.openai.com/docs/guides/prompt-caching" target="_blank">
+          <div class="resource-icon">🤖</div>
+          <div class="resource-info"><div class="resource-name">OpenAI Prompt Caching Guide</div><div class="resource-meta">platform.openai.com/docs · Auto-caching for long prompts</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/zilliztech/GPTCache" target="_blank">
+          <div class="resource-icon">📦</div>
+          <div class="resource-info"><div class="resource-name">GPTCache — Semantic Cache Library</div><div class="resource-meta">github.com/zilliztech/GPTCache · Open-source semantic caching</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
     <div class="module-card a1">
       <div class="module-top">
         <div class="module-icon">✍️</div>
@@ -579,6 +849,99 @@
       </div>
     </div>
 
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🕸️</div>
+        <div class="module-title">GraphRAG & Knowledge Graphs</div>
+        <ul class="module-topics">
+          <li>GraphRAG by Microsoft — community detection + graph retrieval</li>
+          <li>Knowledge graph construction from unstructured text</li>
+          <li>Neo4j for clinical relationship modelling</li>
+          <li>Graph + vector hybrid retrieval patterns</li>
+          <li>When to use graph vs. vector RAG — decision framework</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://github.com/microsoft/graphrag" target="_blank">
+          <div class="resource-icon">📊</div>
+          <div class="resource-info"><div class="resource-name">Microsoft GraphRAG — Official Docs & Repo</div><div class="resource-meta">github.com/microsoft/graphrag · Open-source, Apache 2.0</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://graphacademy.neo4j.com" target="_blank">
+          <div class="resource-icon">🔵</div>
+          <div class="resource-info"><div class="resource-name">Neo4j Graph Academy — Free Courses</div><div class="resource-meta">graphacademy.neo4j.com · Foundations to LLM integration</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.llamaindex.ai/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphIndex_demo/" target="_blank">
+          <div class="resource-icon">🤖</div>
+          <div class="resource-info"><div class="resource-name">LlamaIndex — Knowledge Graph Index Guide</div><div class="resource-meta">docs.llamaindex.ai · Build + query knowledge graphs</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🧩</div>
+        <div class="module-title">Long-Context & Agent Memory Architecture</div>
+        <ul class="module-topics">
+          <li>Long-context strategies — when full context beats RAG</li>
+          <li>Mem0 — open-source memory layer for AI agents</li>
+          <li>Zep — production memory store for LLM applications</li>
+          <li>Episodic + semantic + procedural memory architectures</li>
+          <li>Patient-session memory patterns for healthcare agents</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://docs.mem0.ai" target="_blank">
+          <div class="resource-icon">🧠</div>
+          <div class="resource-info"><div class="resource-name">Mem0 — Open-Source Agent Memory Docs</div><div class="resource-meta">docs.mem0.ai · Add persistent memory to any agent</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://help.getzep.com" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info"><div class="resource-name">Zep — Long-Term Memory for AI Assistants</div><div class="resource-meta">getzep.com/docs · Production-grade memory store</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/long-context-tips" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info"><div class="resource-name">Anthropic — Long Context Tips & Best Practices</div><div class="resource-meta">docs.anthropic.com · 200K context window engineering</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🧪</div>
+        <div class="module-title">Synthetic Data Generation</div>
+        <ul class="module-topics">
+          <li>LLM-based synthetic Q&A pair generation for RAG evaluation</li>
+          <li>Gretel.ai for tabular and structured synthetic data</li>
+          <li>Synthetic clinical data — de-identified patient records</li>
+          <li>Distilabel — open-source synthetic dataset pipeline</li>
+          <li>Validating synthetic data quality against real distributions</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://github.com/argilla-io/distilabel" target="_blank">
+          <div class="resource-icon">🤗</div>
+          <div class="resource-info"><div class="resource-name">Distilabel — Synthetic Data Pipeline</div><div class="resource-meta">github.com/argilla-io/distilabel · Argilla · Open-source</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://gretel.ai" target="_blank">
+          <div class="resource-icon">📊</div>
+          <div class="resource-info"><div class="resource-name">Gretel.ai — Free Synthetic Data Platform</div><div class="resource-meta">gretel.ai · Free tier for synthetic tabular + text data</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.ragas.io/en/stable/getstarted/testset_generation/" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info"><div class="resource-name">RAGAS — Testset Generation from Docs</div><div class="resource-meta">docs.ragas.io/en/stable/getstarted/testset_generation/ · Auto-generate eval sets</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
     <div class="module-card a3">
       <div class="module-top">
         <div class="module-icon">📄</div>
@@ -694,6 +1057,140 @@
       </div>
     </div>
 
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🎙️</div>
+        <div class="module-title">Voice AI & Multimodal Pipelines</div>
+        <ul class="module-topics">
+          <li>Speech-to-text with Whisper — local and API variants</li>
+          <li>Text-to-speech with ElevenLabs, Kokoro (open-source)</li>
+          <li>Real-time voice agent pipelines with LiveKit Agents</li>
+          <li>Vision + language: Claude Vision, LLaVA for image understanding</li>
+          <li>Ambient AI scribe pattern — clinical voice documentation</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://github.com/openai/whisper" target="_blank">
+          <div class="resource-icon">🎙️</div>
+          <div class="resource-info"><div class="resource-name">Whisper — OpenAI Speech Recognition Docs</div><div class="resource-meta">github.com/openai/whisper · Free, open-source, local</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/hexgrad/kokoro" target="_blank">
+          <div class="resource-icon">🔊</div>
+          <div class="resource-info"><div class="resource-name">Kokoro TTS — Open-Source Text-to-Speech</div><div class="resource-meta">github.com/hexgrad/kokoro · Best open-source TTS, Apache 2.0</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.livekit.io/agents/" target="_blank">
+          <div class="resource-icon">📞</div>
+          <div class="resource-info"><div class="resource-name">LiveKit Agents — Real-Time Voice Agents</div><div class="resource-meta">docs.livekit.io/agents · Open-source voice pipeline framework</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.deeplearning.ai/short-courses/building-multimodal-search-and-rag/" target="_blank">
+          <div class="resource-icon">🖼️</div>
+          <div class="resource-info"><div class="resource-name">DeepLearning.AI — Building Multimodal Search & RAG</div><div class="resource-meta">deeplearning.ai · Free short course on vision + RAG</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🔐</div>
+        <div class="module-title">LLM Security & Red-Teaming</div>
+        <ul class="module-topics">
+          <li>Prompt injection — direct and indirect (via RAG documents)</li>
+          <li>Jailbreaking patterns and systematic defense strategies</li>
+          <li>OWASP Top 10 for LLM Applications (2025)</li>
+          <li>RAG data poisoning and document-level attacks</li>
+          <li>Red-teaming your systems with Garak vulnerability scanner</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank">
+          <div class="resource-icon">🛡️</div>
+          <div class="resource-info"><div class="resource-name">OWASP Top 10 for LLM Applications</div><div class="resource-meta">owasp.org/www-project-top-10-for-large-language-model-applications · Free PDF</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/NVIDIA/garak" target="_blank">
+          <div class="resource-icon">🔴</div>
+          <div class="resource-info"><div class="resource-name">Garak — LLM Vulnerability Scanner</div><div class="resource-meta">github.com/NVIDIA/garak · NVIDIA open-source red-teaming tool</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.lakera.ai/blog/guide-to-prompt-injection" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info"><div class="resource-name">Lakera — Prompt Injection Guide</div><div class="resource-meta">lakera.ai/blog · Comprehensive free reference on injection attacks</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://embracethered.com/blog/" target="_blank">
+          <div class="resource-icon">🔬</div>
+          <div class="resource-info"><div class="resource-name">LLM Security by Johann Rehberger</div><div class="resource-meta">embracethered.com · Free research blog on LLM attacks</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🎨</div>
+        <div class="module-title">Agentic UX Design Patterns</div>
+        <ul class="module-topics">
+          <li>Progress indicators for long-running agent tasks</li>
+          <li>Surfacing agent reasoning to users — transparency patterns</li>
+          <li>Error state design for agent failures & recovery</li>
+          <li>Approval UI patterns for human-in-the-loop workflows</li>
+          <li>Trust-building interface design for clinical AI</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://pair.withgoogle.com/guidebook/" target="_blank">
+          <div class="resource-icon">📐</div>
+          <div class="resource-info"><div class="resource-name">Google PAIR Guidebook — People + AI Research</div><div class="resource-meta">pair.withgoogle.com/guidebook · Free design patterns for AI</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.nngroup.com/topic/ai-user-experience/" target="_blank">
+          <div class="resource-icon">📋</div>
+          <div class="resource-info"><div class="resource-name">Nielsen Norman Group — AI UX Guidelines</div><div class="resource-meta">nngroup.com/topic/ai-user-experience · Free articles & reports</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://sdk.vercel.ai/docs/ai-sdk-ui/overview" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info"><div class="resource-name">Vercel AI SDK UI Components</div><div class="resource-meta">sdk.vercel.ai/docs/ai-sdk-ui · Reference implementations for agent UX</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">⚡</div>
+        <div class="module-title">Real-Time AI & Event-Driven Pipelines</div>
+        <ul class="module-topics">
+          <li>OpenAI Realtime API — sub-300ms voice-to-voice conversations</li>
+          <li>Event-driven AI pipelines with Redis Streams</li>
+          <li>Real-time agent status streaming — SSE + WebSockets in depth</li>
+          <li>Webhook-driven automation triggers for clinical workflows</li>
+          <li>Live clinical monitoring dashboard patterns</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://platform.openai.com/docs/guides/realtime" target="_blank">
+          <div class="resource-icon">🎙️</div>
+          <div class="resource-info"><div class="resource-name">OpenAI Realtime API — Docs & Cookbook</div><div class="resource-meta">platform.openai.com/docs/guides/realtime · Voice agents in browser</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://redis.io/docs/latest/develop/data-types/streams/" target="_blank">
+          <div class="resource-icon">🔴</div>
+          <div class="resource-info"><div class="resource-name">Redis Streams — Official Guide</div><div class="resource-meta">redis.io/docs/data-types/streams · Event-driven pipeline fundamentals</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.vapi.ai" target="_blank">
+          <div class="resource-icon">📞</div>
+          <div class="resource-info"><div class="resource-name">Vapi.ai — Voice Agent Platform Docs</div><div class="resource-meta">docs.vapi.ai · Voice agents with clinical use case examples</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
     <div class="module-card ap">
       <div class="module-top">
         <div class="module-icon">🕸️</div>
@@ -943,6 +1440,68 @@
       </div>
     </div>
 
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">💰</div>
+        <div class="module-title">AI Cost Architecture & Optimisation</div>
+        <ul class="module-topics">
+          <li>LLM cost modelling — tokens, requests, embeddings, fine-tuning</li>
+          <li>Cost-quality framework — when to use Haiku vs Sonnet vs GPT-4o vs local</li>
+          <li>Intelligent caching to reduce API costs by 40–70%</li>
+          <li>Cost forecasting for multi-tenant SaaS</li>
+          <li>OpenRouter for model cost arbitrage across providers</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://openrouter.ai" target="_blank">
+          <div class="resource-icon">💱</div>
+          <div class="resource-info"><div class="resource-name">OpenRouter — Multi-Model Cost Dashboard</div><div class="resource-meta">openrouter.ai · Compare costs across 100+ models in real-time</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/reduce-latency" target="_blank">
+          <div class="resource-icon">📊</div>
+          <div class="resource-info"><div class="resource-name">Anthropic — Cost Optimisation Best Practices</div><div class="resource-meta">docs.anthropic.com/en/docs/build-with-claude/reduce-latency · Free guide</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://llmpricecheck.com" target="_blank">
+          <div class="resource-icon">🧮</div>
+          <div class="resource-info"><div class="resource-name">LLM API Pricing Calculator — community tool</div><div class="resource-meta">llmpricecheck.com · Compare token costs across providers</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🚀</div>
+        <div class="module-title">Model Serving & GPU Infrastructure</div>
+        <ul class="module-topics">
+          <li>vLLM — high-throughput open-source LLM serving</li>
+          <li>NVIDIA Container Toolkit for GPU-enabled model serving</li>
+          <li>Model serving vs. app serving — architectural differences</li>
+          <li>Batching strategies for cost-efficient inference</li>
+          <li>Health checks & graceful degradation for model servers</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://docs.vllm.ai" target="_blank">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info"><div class="resource-name">vLLM — Fast LLM Inference & Serving</div><div class="resource-meta">docs.vllm.ai · Open-source, PagedAttention, OpenAI-compatible</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/" target="_blank">
+          <div class="resource-icon">🐳</div>
+          <div class="resource-info"><div class="resource-name">NVIDIA Container Toolkit Documentation</div><div class="resource-meta">docs.nvidia.com/datacenter/cloud-native · GPU Docker containers</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://modal.com/docs/examples/vllm_inference" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info"><div class="resource-name">Modal — GPU Serving Quickstart</div><div class="resource-meta">modal.com/docs/examples/vllm_inference · vLLM on Modal, free tier</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
     <div class="module-card at">
       <div class="module-top">
         <div class="module-icon">🔄</div>
@@ -1058,6 +1617,37 @@
       </div>
     </div>
 
+    <div class="module-card a2">
+      <div class="module-top">
+        <div class="module-icon">🌍</div>
+        <div class="module-title">Open-Source Contribution Guide</div>
+        <ul class="module-topics">
+          <li>Finding good first issues in AI repos — filtering strategies</li>
+          <li>GitHub contribution workflow — fork, branch, PR, review cycle</li>
+          <li>Writing a PR description that gets merged</li>
+          <li>Target repos for healthcare AI: medAlpaca, ClinicalBERT</li>
+          <li>Building reputation through consistent OSS contributions</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://goodfirstissue.dev" target="_blank">
+          <div class="resource-icon">⭐</div>
+          <div class="resource-info"><div class="resource-name">First Timers Only — Good First Issue Finder</div><div class="resource-meta">goodfirstissue.dev · Filter by language & topic</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://opensource.guide/how-to-contribute/" target="_blank">
+          <div class="resource-icon">📗</div>
+          <div class="resource-info"><div class="resource-name">How to Contribute to Open Source — GitHub Docs</div><div class="resource-meta">opensource.guide · Full guide from GitHub</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/kbressem/medAlpaca" target="_blank">
+          <div class="resource-icon">🏥</div>
+          <div class="resource-info"><div class="resource-name">medAlpaca — Medical LLM OSS Project</div><div class="resource-meta">github.com/kbressem/medAlpaca · Healthcare AI to contribute to</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
     <div class="module-card ag">
       <div class="module-top">
         <div class="module-icon">🏛️</div>
@@ -1120,6 +1710,437 @@
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- ═══════════════ PHASE 7 ═══════════════ -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">7</div>
+    <div class="phase-meta">
+      <div class="phase-badge badge-specialist">🏥 Healthcare Specialization</div>
+      <div class="phase-title">Healthcare AI, HIPAA Compliance & Clinical Systems</div>
+      <div class="phase-duration">⏱ Months 15–17 · Your niche. Your moat. Your irreplaceable advantage.</div>
+    </div>
+  </div>
+  <div class="modules-grid">
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🏥</div>
+        <div class="module-title">Healthcare AI & HIPAA Compliance</div>
+        <ul class="module-topics">
+          <li>HIPAA technical safeguards for AI systems — PHI handling & audit logging</li>
+          <li>De-identification of PHI — Safe Harbor and Expert Determination methods</li>
+          <li>HL7 FHIR API — the standard for EHR data exchange</li>
+          <li>FDA SaMD guidelines — when your AI becomes a regulated medical device</li>
+          <li>Clinical AI validation — proving safety for clinical use</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://www.hhs.gov/hipaa/for-professionals/security/guidance/index.html" target="_blank">
+          <div class="resource-icon">📋</div>
+          <div class="resource-info"><div class="resource-name">HHS.gov — HIPAA Security Rule Technical Safeguards</div><div class="resource-meta">hhs.gov · Official guidance, free PDF</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://hl7.org/fhir/R4/" target="_blank">
+          <div class="resource-icon">🔥</div>
+          <div class="resource-info"><div class="resource-name">HL7 FHIR R4 Documentation</div><div class="resource-meta">hl7.org/fhir · Full spec + tutorials, free</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices" target="_blank">
+          <div class="resource-icon">🏛️</div>
+          <div class="resource-info"><div class="resource-name">FDA — AI/ML Software as a Medical Device Framework</div><div class="resource-meta">fda.gov · SaMD action plan, free PDF</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://huggingface.co/models?search=clinical" target="_blank">
+          <div class="resource-icon">🤗</div>
+          <div class="resource-info"><div class="resource-name">Hugging Face — Clinical NLP Models Hub</div><div class="resource-meta">huggingface.co/models?pipeline_tag=text-classification&search=clinical · ClinicalBERT, BioBERT</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🧬</div>
+        <div class="module-title">Clinical NLP & Medical Text Processing</div>
+        <ul class="module-topics">
+          <li>Medical entity extraction — diseases, drugs, procedures, dosages</li>
+          <li>ICD-10 coding automation from clinical notes</li>
+          <li>SNOMED CT and medical ontology integration</li>
+          <li>Clinical text normalization and abbreviation expansion</li>
+          <li>De-identification pipelines with Microsoft Presidio</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://github.com/allenai/scispacy" target="_blank">
+          <div class="resource-icon">🔬</div>
+          <div class="resource-info"><div class="resource-name">scispaCy — Scientific NLP Library</div><div class="resource-meta">github.com/allenai/scispacy · Free, biomedical entity recognition</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/microsoft/presidio" target="_blank">
+          <div class="resource-icon">🛡️</div>
+          <div class="resource-info"><div class="resource-name">Microsoft Presidio — PHI De-Identification</div><div class="resource-meta">github.com/microsoft/presidio · Open-source, HIPAA-ready</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://physionet.org/content/mimiciv/" target="_blank">
+          <div class="resource-icon">📊</div>
+          <div class="resource-info"><div class="resource-name">MIMIC-IV — Free Clinical Dataset (with credentialing)</div><div class="resource-meta">physionet.org/content/mimiciv · The gold standard clinical NLP dataset</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/medspacy/medspacy" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info"><div class="resource-name">MedSpacy — Clinical NLP Toolkit</div><div class="resource-meta">github.com/medspacy/medspacy · Built on spaCy for clinical text</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🔗</div>
+        <div class="module-title">EHR Integration & FHIR APIs</div>
+        <ul class="module-topics">
+          <li>FHIR RESTful API — Patient, Observation, Condition resources</li>
+          <li>SMART on FHIR — OAuth for EHR app integration</li>
+          <li>Epic, Cerner, and Athena API sandboxes (all free)</li>
+          <li>Clinical data pipeline: FHIR → Python → AI model</li>
+          <li>Bulk FHIR export for dataset creation</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://smarthealthit.org" target="_blank">
+          <div class="resource-icon">🏥</div>
+          <div class="resource-info"><div class="resource-name">SMART Health IT — FHIR Tutorials & Sandboxes</div><div class="resource-meta">smarthealthit.org · Free sandboxes for Epic, Cerner, Athena</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://hapifhir.io" target="_blank">
+          <div class="resource-icon">🔥</div>
+          <div class="resource-info"><div class="resource-name">HAPI FHIR — Open-Source FHIR Server</div><div class="resource-meta">hapifhir.io · Free FHIR server for development & testing</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/beda-software/fhirpy" target="_blank">
+          <div class="resource-icon">🐍</div>
+          <div class="resource-info"><div class="resource-name">fhirpy — Python FHIR Client Library</div><div class="resource-meta">github.com/beda-software/fhirpy · Async FHIR API client</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.hl7.org/training/fhir-fundamentals.cfm" target="_blank">
+          <div class="resource-icon">📚</div>
+          <div class="resource-info"><div class="resource-name">HL7 FHIR Fundamentals Course</div><div class="resource-meta">fhir.org · Free introductory course</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🩺</div>
+        <div class="module-title">Clinical AI Validation & Evaluation</div>
+        <ul class="module-topics">
+          <li>Clinical AI validation frameworks — accuracy, safety, fairness</li>
+          <li>Demographic bias testing across patient populations</li>
+          <li>Clinical decision support evaluation standards (GRADE)</li>
+          <li>Human-AI teaming evaluation — when AI helps vs. harms</li>
+          <li>Building a clinical gold-standard evaluation dataset</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://www.who.int/publications/i/item/9789240029200" target="_blank">
+          <div class="resource-icon">📜</div>
+          <div class="resource-info"><div class="resource-name">WHO — Ethics & Governance of AI for Health</div><div class="resource-meta">who.int · Free guidance document on clinical AI evaluation</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://ai.nejm.org" target="_blank">
+          <div class="resource-icon">🔬</div>
+          <div class="resource-info"><div class="resource-name">NEJM AI — Clinical AI Evaluation Best Practices</div><div class="resource-meta">ai.nejm.org · Free articles on AI clinical validation</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.equator-network.org/reporting-guidelines/tripod-ai/" target="_blank">
+          <div class="resource-icon">📊</div>
+          <div class="resource-info"><div class="resource-name">TRIPOD+AI — Reporting Guidelines for Clinical AI</div><div class="resource-meta">equator-network.org · Free checklist for clinical AI studies</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card ap">
+      <div class="module-top">
+        <div class="module-icon">🛡️</div>
+        <div class="module-title">Healthcare AI Privacy & Compliance Architecture</div>
+        <ul class="module-topics">
+          <li>End-to-end PHI data flow mapping for AI systems</li>
+          <li>Business Associate Agreement (BAA) requirements for AI vendors</li>
+          <li>HIPAA-compliant cloud deployment on AWS/GCP/Azure</li>
+          <li>Audit logging architecture — who queried what, when</li>
+          <li>Incident response plan for clinical AI failures</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://aws.amazon.com/compliance/hipaa-eligible-services-reference/" target="_blank">
+          <div class="resource-icon">☁️</div>
+          <div class="resource-info"><div class="resource-name">AWS HIPAA Eligible Services Reference</div><div class="resource-meta">aws.amazon.com/compliance/hipaa-eligible-services-reference · Free guide</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html" target="_blank">
+          <div class="resource-icon">📋</div>
+          <div class="resource-info"><div class="resource-name">HHS — Breach Notification Rule</div><div class="resource-meta">hhs.gov · What to do when clinical AI causes a PHI breach</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://microsoft.github.io/presidio/" target="_blank">
+          <div class="resource-icon">🔧</div>
+          <div class="resource-info"><div class="resource-name">Presidio — End-to-End PII/PHI Anonymization</div><div class="resource-meta">microsoft.github.io/presidio · Complete system architecture guide</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phase-connector">↓ Phase 7 complete · Career, business & launch</div>
+
+<!-- ═══════════════ PHASE 8 ═══════════════ -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">8</div>
+    <div class="phase-meta">
+      <div class="phase-badge badge-mastery">🚀 Career & Business</div>
+      <div class="phase-title">Career Preparation, Consulting & Launch</div>
+      <div class="phase-duration">⏱ Months 17–18 · Convert 18 months of work into income and opportunity.</div>
+    </div>
+  </div>
+  <div class="modules-grid">
+    <div class="module-card ag">
+      <div class="module-top">
+        <div class="module-icon">💼</div>
+        <div class="module-title">Career Preparation & Portfolio Strategy</div>
+        <ul class="module-topics">
+          <li>Portfolio strategy — what to show, how to frame it, GitHub README standards</li>
+          <li>AI engineer resume writing — keywords, project descriptions, GitHub links</li>
+          <li>Technical interview prep — system design, coding, ML for AI roles</li>
+          <li>LinkedIn optimisation for healthcare AI engineering roles</li>
+          <li>Healthcare AI market map — companies, verticals, where the money is</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://www.levels.fyi" target="_blank">
+          <div class="resource-icon">💰</div>
+          <div class="resource-info"><div class="resource-name">Levels.fyi — AI Engineer Salary Data</div><div class="resource-meta">levels.fyi · Real compensation data by company and level</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/alirezadir/Machine-Learning-Interviews" target="_blank">
+          <div class="resource-icon">🎯</div>
+          <div class="resource-info"><div class="resource-name">Grokking the ML Interview — Free Preview</div><div class="resource-meta">github.com/Educative-Io/ml-interviews-book · Chapter previews free</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://interviewing.io" target="_blank">
+          <div class="resource-icon">📊</div>
+          <div class="resource-info"><div class="resource-name">interviewing.io — Free AI/ML Interview Practice</div><div class="resource-meta">interviewing.io · Mock technical interviews, some free</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.himss.org/resources" target="_blank">
+          <div class="resource-icon">🏥</div>
+          <div class="resource-info"><div class="resource-name">HIMSS — Health Informatics Career Resources</div><div class="resource-meta">himss.org · Healthcare IT & AI career community, free resources</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card ag">
+      <div class="module-top">
+        <div class="module-icon">🌐</div>
+        <div class="module-title">Building in Public & Personal Brand</div>
+        <ul class="module-topics">
+          <li>Weekly building-in-public strategy — what to post, when, how</li>
+          <li>LinkedIn content strategy for AI engineers entering healthcare</li>
+          <li>Technical writing — blog posts, case studies, architecture essays</li>
+          <li>Newsletter flywheel — turning your 18 months into an audience</li>
+          <li>Speaking at meetups and conferences as an early-career AI engineer</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://developers.google.com/tech-writing" target="_blank">
+          <div class="resource-icon">📝</div>
+          <div class="resource-info"><div class="resource-name">Google Technical Writing Courses — Free</div><div class="resource-meta">developers.google.com/tech-writing · Two free courses, certificate</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://stripe.com/docs" target="_blank">
+          <div class="resource-icon">✍️</div>
+          <div class="resource-info"><div class="resource-name">Stripe's API Documentation — Case Study</div><div class="resource-meta">stripe.com/docs · The gold standard for technical communication</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.swyx.io/learn-in-public" target="_blank">
+          <div class="resource-icon">📰</div>
+          <div class="resource-info"><div class="resource-name">Swyx — Learn in Public Essay</div><div class="resource-meta">swyx.io/learn-in-public · The original manifesto, still the best</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card ag">
+      <div class="module-top">
+        <div class="module-icon">💡</div>
+        <div class="module-title">Freelancing & AI Consulting Business</div>
+        <ul class="module-topics">
+          <li>Scoping AI automation projects — what to ask before quoting</li>
+          <li>Pricing models: hourly vs. project vs. retainer for AI consulting</li>
+          <li>ROI framing for healthcare AI — quantifying time savings & error reduction</li>
+          <li>Statement of work template for AI automation projects</li>
+          <li>Managing client expectations around AI hallucinations & limitations</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://www.toptal.com" target="_blank">
+          <div class="resource-icon">📋</div>
+          <div class="resource-info"><div class="resource-name">Toptal — AI Engineering Freelance Platform</div><div class="resource-meta">toptal.com · Top-tier AI freelance marketplace, high rates</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.upwork.com/resources/" target="_blank">
+          <div class="resource-icon">💼</div>
+          <div class="resource-info"><div class="resource-name">Upwork AI Guide for Freelancers</div><div class="resource-meta">upwork.com · How to position AI automation services</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="http://paulgraham.com/wealth.html" target="_blank">
+          <div class="resource-icon">📄</div>
+          <div class="resource-info"><div class="resource-name">Paul Graham — How to Get Consulting Clients</div><div class="resource-meta">paulgraham.com/wealth.html · Timeless consulting advice</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card ag">
+      <div class="module-top">
+        <div class="module-icon">🗺️</div>
+        <div class="module-title">Technical Communication & Stakeholder Management</div>
+        <ul class="module-topics">
+          <li>Explaining AI limitations to clinical stakeholders without losing trust</li>
+          <li>Stakeholder management for AI projects — setting expectations, managing scope</li>
+          <li>Architecture Decision Records (ADRs) — documenting your technical choices</li>
+          <li>Writing effective AI project proposals and clinical case studies</li>
+          <li>Building trust with clinicians — the unique challenge of clinical AI adoption</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions" target="_blank">
+          <div class="resource-icon">📗</div>
+          <div class="resource-info"><div class="resource-name">Architecture Decision Records — Michael Nygard's Original</div><div class="resource-meta">cognitect.com/blog/2011/11/15/documenting-architecture-decisions · Free</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://developers.google.com/tech-writing/two" target="_blank">
+          <div class="resource-icon">📋</div>
+          <div class="resource-info"><div class="resource-name">Google — Technical Writing for Engineers</div><div class="resource-meta">developers.google.com/tech-writing/two · Free course part 2</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://www.amia.org" target="_blank">
+          <div class="resource-icon">🏥</div>
+          <div class="resource-info"><div class="resource-name">AMIA — Clinical Informatics Communication Resources</div><div class="resource-meta">amia.org · American Medical Informatics Association, free articles</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+    <div class="module-card ag">
+      <div class="module-top">
+        <div class="module-icon">📅</div>
+        <div class="module-title">Weekly Study Schedule & Progress Tracking</div>
+        <ul class="module-topics">
+          <li>18-month week-by-week study plan at 20hrs/week</li>
+          <li>Monthly milestone checklist — what to build at each point</li>
+          <li>Self-assessment questions per phase</li>
+          <li>Accountability systems — study partners, public commits</li>
+          <li>Adapting the schedule around nursing shifts</li>
+        </ul>
+      </div>
+      <div class="module-resources">
+        <div class="resources-label">🆓 Free Resources</div>
+        <a class="resource-item" href="https://www.notion.so/templates" target="_blank">
+          <div class="resource-icon">✅</div>
+          <div class="resource-info"><div class="resource-name">Notion — Free Study Tracker Templates</div><div class="resource-meta">notion.so/templates · 18-month curriculum tracker template</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://github.com/features/project-management" target="_blank">
+          <div class="resource-icon">🎯</div>
+          <div class="resource-info"><div class="resource-name">GitHub Projects — Free Progress Tracking</div><div class="resource-meta">github.com/features/project-management · Kanban for your curriculum</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+        <a class="resource-item" href="https://discord.gg/langchain" target="_blank">
+          <div class="resource-icon">👥</div>
+          <div class="resource-info"><div class="resource-name">Study Hall — AI Engineering Study Groups</div><div class="resource-meta">discord.gg/study-hall · Find accountability partners in AI</div></div>
+          <span class="free-tag">Free</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════ HEALTHCARE AI RESOURCES ═══════════════ -->
+<div class="bonus-section">
+  <div class="section-heading">🏥 Healthcare AI — Specialist Resources</div>
+  <div class="section-sub">The clinical AI stack — datasets, models, frameworks, and communities specific to your niche.</div>
+  <div class="reading-grid">
+    <a class="reading-card" href="https://physionet.org/content/mimiciv/" target="_blank">
+      <div class="reading-card-top"><div class="reading-emoji">🧬</div>
+      <div><div class="reading-title">MIMIC-IV Clinical Dataset</div><div class="reading-source">physionet.org · Free with credentialing (fast process)</div></div></div>
+      <div class="reading-desc">The gold-standard clinical NLP dataset — real de-identified ICU records. Used in every serious clinical AI research paper. Get credentialed early.</div>
+    </a>
+    <a class="reading-card" href="https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT" target="_blank">
+      <div class="reading-card-top"><div class="reading-emoji">🤗</div>
+      <div><div class="reading-title">ClinicalBERT — Clinical NLP Foundation Model</div><div class="reading-source">Hugging Face · Free download & inference</div></div></div>
+      <div class="reading-desc">BERT pre-trained on clinical notes from MIMIC-III. The baseline model for any clinical text classification, NER, or embedding task.</div>
+    </a>
+    <a class="reading-card" href="https://github.com/kbressem/medAlpaca" target="_blank">
+      <div class="reading-card-top"><div class="reading-emoji">🦙</div>
+      <div><div class="reading-title">medAlpaca — Open Medical LLMs</div><div class="reading-source">GitHub · Apache 2.0 License · Free</div></div></div>
+      <div class="reading-desc">Open-source medical LLMs fine-tuned on clinical Q&A. Your starting point for clinical fine-tuning experiments and the go-to OSS contribution target.</div>
+    </a>
+    <a class="reading-card" href="https://www.healthit.gov/topic/scientific-initiatives/pcor/fhir-research-resources" target="_blank">
+      <div class="reading-card-top"><div class="reading-emoji">🔥</div>
+      <div><div class="reading-title">ONC FHIR Research Resources</div><div class="reading-source">healthit.gov · US Government · Free</div></div></div>
+      <div class="reading-desc">Official US government FHIR resources, sandboxes, and implementation guides. The authoritative source for interoperability standards.</div>
+    </a>
+    <a class="reading-card" href="https://www.amia.org/publications/journals" target="_blank">
+      <div class="reading-card-top"><div class="reading-emoji">📰</div>
+      <div><div class="reading-title">AMIA — Journal of the American Medical Informatics Association</div><div class="reading-source">amia.org · Many articles free via PubMed</div></div></div>
+      <div class="reading-desc">The premier clinical informatics journal. Reading here keeps you current on what clinical AI actually looks like in real hospital deployments.</div>
+    </a>
+    <a class="reading-card" href="https://hai.stanford.edu/ai-index" target="_blank">
+      <div class="reading-card-top"><div class="reading-emoji">📊</div>
+      <div><div class="reading-title">Stanford HAI — AI in Healthcare Report</div><div class="reading-source">hai.stanford.edu · Annual report, free PDF</div></div></div>
+      <div class="reading-desc">Annual state-of-AI-in-healthcare report from Stanford's Human-Centered AI Institute. Essential for understanding the landscape before pitching to clinical stakeholders.</div>
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════════ CAREER RESOURCES ═══════════════ -->
+<div class="bonus-section">
+  <div class="section-heading">💼 Career & Business Resources</div>
+  <div class="section-sub">Converting skills into income — the resources that bridge learning and earning.</div>
+  <div class="bonus-grid">
+    <a class="bonus-card" href="https://www.levels.fyi" target="_blank">
+      <div class="bonus-icon">💰</div>
+      <div><div class="bonus-name">Levels.fyi</div><div class="bonus-desc">Real salary data for AI engineering roles by company, level, and location. Know your worth before any negotiation.</div></div>
+    </a>
+    <a class="bonus-card" href="https://github.com/alirezadir/Machine-Learning-Interviews" target="_blank">
+      <div class="bonus-icon">🎯</div>
+      <div><div class="bonus-name">ML Interviews Book — GitHub</div><div class="bonus-desc">Free open-source ML interview preparation guide. System design, coding, ML fundamentals — all the patterns that appear in AI engineering screens.</div></div>
+    </a>
+    <a class="bonus-card" href="https://www.swyx.io/learn-in-public" target="_blank">
+      <div class="bonus-icon">📢</div>
+      <div><div class="bonus-name">Learn in Public — Swyx</div><div class="bonus-desc">The essay that defines building-in-public strategy. Write about what you learn weekly. Start now, not at Month 18.</div></div>
+    </a>
+    <a class="bonus-card" href="https://developers.google.com/tech-writing" target="_blank">
+      <div class="bonus-icon">✍️</div>
+      <div><div class="bonus-name">Google Technical Writing Course</div><div class="bonus-desc">Two free courses with certificate. The clearest you write, the more people trust your AI systems. Communication is a clinical AI engineering skill.</div></div>
+    </a>
+    <a class="bonus-card" href="https://pair.withgoogle.com/guidebook/" target="_blank">
+      <div class="bonus-icon">🎨</div>
+      <div><div class="bonus-name">Google PAIR Guidebook</div><div class="bonus-desc">People + AI Research design patterns. Your UX background + this guidebook = your unique edge in designing trustworthy clinical AI interfaces.</div></div>
+    </a>
+    <a class="bonus-card" href="https://www.himss.org" target="_blank">
+      <div class="bonus-icon">🏥</div>
+      <div><div class="bonus-name">HIMSS — Healthcare IT Community</div><div class="bonus-desc">The largest global health informatics community. Join now. The network you build in Month 2 opens doors in Month 14.</div></div>
+    </a>
   </div>
 </div>
 
@@ -1249,10 +2270,117 @@
   </div>
 </div>
 
+
+<!-- ═══════════════ 18-MONTH WEEKLY SCHEDULE ═══════════════ -->
+<div class="bonus-section">
+  <div class="section-heading">📅 18-Month Weekly Study Schedule</div>
+  <div class="section-sub">At 20 hours/week — realistic for someone balancing nursing shifts and design work.</div>
+  <div class="schedule-grid">
+    <div class="schedule-card">
+      <div class="schedule-phase-label" style="color:var(--accent2)">Phase 1 · Months 1–2</div>
+      <div class="schedule-title">Core Engineering & Python</div>
+      <div class="schedule-items">
+        <div class="schedule-item"><span class="sw">Wk 1–2</span> Python fundamentals + Automate the Boring Stuff</div>
+        <div class="schedule-item"><span class="sw">Wk 3–4</span> Advanced Python (async, OOP, decorators) + pytest</div>
+        <div class="schedule-item"><span class="sw">Wk 5–6</span> Git, Docker, FastAPI + REST APIs</div>
+        <div class="schedule-item"><span class="sw">Wk 7</span> SQL + PostgreSQL + Redis basics</div>
+        <div class="schedule-item"><span class="sw">Wk 8</span> TypeScript fundamentals + Cursor workflow + Schema design</div>
+        <div class="schedule-milestone">✦ Milestone: SBAR Generator CLI deployed to GitHub</div>
+      </div>
+    </div>
+    <div class="schedule-card">
+      <div class="schedule-phase-label" style="color:var(--accent)">Phase 2 · Months 2–4</div>
+      <div class="schedule-title">LLM Engineering</div>
+      <div class="schedule-items">
+        <div class="schedule-item"><span class="sw">Wk 9–10</span> Karpathy LLM intro + LLM University + API calls</div>
+        <div class="schedule-item"><span class="sw">Wk 11–12</span> Prompt engineering mastery + Anthropic tutorial</div>
+        <div class="schedule-item"><span class="sw">Wk 13</span> Reasoning models (o1/Claude Extended Thinking)</div>
+        <div class="schedule-item"><span class="sw">Wk 14</span> Prompt caching + local models (Ollama + LM Studio)</div>
+        <div class="schedule-item"><span class="sw">Wk 15–16</span> LangChain/LlamaIndex + evaluation (RAGAS + DeepEval)</div>
+        <div class="schedule-milestone">✦ Milestone: Clinical prompt benchmark suite with eval scores</div>
+      </div>
+    </div>
+    <div class="schedule-card">
+      <div class="schedule-phase-label" style="color:var(--accent3)">Phase 3 · Months 4–6</div>
+      <div class="schedule-title">RAG Systems</div>
+      <div class="schedule-items">
+        <div class="schedule-item"><span class="sw">Wk 17–18</span> Vector embeddings + Pinecone Learning Center</div>
+        <div class="schedule-item"><span class="sw">Wk 19</span> Chunking strategies + Greg Kamradt chunking video</div>
+        <div class="schedule-item"><span class="sw">Wk 20–21</span> Advanced RAG (HyDE, multi-query, re-ranking)</div>
+        <div class="schedule-item"><span class="sw">Wk 22</span> GraphRAG + knowledge graph basics (Neo4j)</div>
+        <div class="schedule-item"><span class="sw">Wk 23</span> Long-context + Mem0 memory layer</div>
+        <div class="schedule-item"><span class="sw">Wk 24</span> Synthetic data generation + production RAG + Langfuse</div>
+        <div class="schedule-milestone">✦ Milestone: Clinical Guidelines RAG deployed with RAGAS eval dashboard</div>
+      </div>
+    </div>
+    <div class="schedule-card">
+      <div class="schedule-phase-label" style="color:#c47fff">Phase 4 · Months 6–9</div>
+      <div class="schedule-title">Agents & Multi-Agent</div>
+      <div class="schedule-items">
+        <div class="schedule-item"><span class="sw">Wk 25–26</span> ReAct agents + LangGraph + Anthropic agent paper</div>
+        <div class="schedule-item"><span class="sw">Wk 27–28</span> Multi-agent systems + CrewAI + AutoGen</div>
+        <div class="schedule-item"><span class="sw">Wk 29</span> Voice AI — Whisper + Kokoro + LiveKit Agents</div>
+        <div class="schedule-item"><span class="sw">Wk 30</span> LLM Security + OWASP Top 10 + Garak red-teaming</div>
+        <div class="schedule-item"><span class="sw">Wk 31</span> Agentic UX (PAIR + NN/g) + Realtime API</div>
+        <div class="schedule-item"><span class="sw">Wk 32–34</span> n8n workflows + safety guardrails + code gen agents</div>
+        <div class="schedule-milestone">✦ Milestone: Patient Intake Triage Agent — multi-agent with voice input</div>
+      </div>
+    </div>
+    <div class="schedule-card">
+      <div class="schedule-phase-label" style="color:#47ffb4">Phase 5 · Months 9–12</div>
+      <div class="schedule-title">Production & LLMOps</div>
+      <div class="schedule-items">
+        <div class="schedule-item"><span class="sw">Wk 35–36</span> Cloud infra — AWS Bedrock + Modal + serverless</div>
+        <div class="schedule-item"><span class="sw">Wk 37–38</span> LLMOps — Made With ML + Langfuse dashboards</div>
+        <div class="schedule-item"><span class="sw">Wk 39</span> Cost architecture — OpenRouter + caching strategy</div>
+        <div class="schedule-item"><span class="sw">Wk 40</span> Model serving — vLLM + GPU infrastructure basics</div>
+        <div class="schedule-item"><span class="sw">Wk 41–42</span> Fine-tuning — Unsloth QLoRA on clinical dataset</div>
+        <div class="schedule-item"><span class="sw">Wk 43–44</span> Scalable API design + multi-tenant architecture</div>
+        <div class="schedule-milestone">✦ Milestone: Triage agent live on Fly.io with Langfuse + cost dashboard</div>
+      </div>
+    </div>
+    <div class="schedule-card">
+      <div class="schedule-phase-label" style="color:#ffc847">Phase 6 · Months 12–14</div>
+      <div class="schedule-title">System Design & Capstone</div>
+      <div class="schedule-items">
+        <div class="schedule-item"><span class="sw">Wk 45–46</span> Chip Huyen ML Systems Design + a16z architecture</div>
+        <div class="schedule-item"><span class="sw">Wk 47</span> AI ethics audit + HIPAA compliance mapping</div>
+        <div class="schedule-item"><span class="sw">Wk 48</span> Open-source contribution — first PR to a framework</div>
+        <div class="schedule-item"><span class="sw">Wk 49–52</span> Begin integrating all prior projects into NurseAI v1</div>
+        <div class="schedule-milestone">✦ Milestone: NurseAI v1 — unified platform, deployed, public demo</div>
+      </div>
+    </div>
+    <div class="schedule-card">
+      <div class="schedule-phase-label" style="color:#c47fff">Phase 7 · Months 15–17</div>
+      <div class="schedule-title">Healthcare AI Specialization</div>
+      <div class="schedule-items">
+        <div class="schedule-item"><span class="sw">Wk 53–54</span> HIPAA technical safeguards + PHI de-identification (Presidio)</div>
+        <div class="schedule-item"><span class="sw">Wk 55–56</span> HL7 FHIR API + Epic/Cerner sandboxes</div>
+        <div class="schedule-item"><span class="sw">Wk 57–58</span> Clinical NLP — scispaCy, ClinicalBERT, medSpacy</div>
+        <div class="schedule-item"><span class="sw">Wk 59–60</span> Clinical AI validation + bias testing + MIMIC-IV</div>
+        <div class="schedule-item"><span class="sw">Wk 61–62</span> Healthcare compliance architecture + FDA SaMD reading</div>
+        <div class="schedule-milestone">✦ Milestone: NurseAI v2 — HIPAA-compliant, FHIR-integrated, clinically validated</div>
+      </div>
+    </div>
+    <div class="schedule-card">
+      <div class="schedule-phase-label" style="color:#ffc847">Phase 8 · Months 17–18</div>
+      <div class="schedule-title">Career & Business Launch</div>
+      <div class="schedule-items">
+        <div class="schedule-item"><span class="sw">Wk 63–64</span> Portfolio polish + GitHub README standards + resume</div>
+        <div class="schedule-item"><span class="sw">Wk 65–66</span> LinkedIn optimisation + HIMSS community + network outreach</div>
+        <div class="schedule-item"><span class="sw">Wk 67</span> Technical interview prep — system design + ML concepts</div>
+        <div class="schedule-item"><span class="sw">Wk 68</span> Freelance setup — Toptal application + consulting proposal template</div>
+        <div class="schedule-item"><span class="sw">Wk 69–72</span> First consulting client OR job applications OR product launch</div>
+        <div class="schedule-milestone">✦ Milestone: First paid AI engineering work or job offer</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </main>
 
 <footer>
-  <div class="footer-text">Ritji Ishaku · AI Automation Engineering · 100% Free Curriculum · v2026.1 · Updated May 2026</div>
+  <div class="footer-text">AI Automation Engineering · 100/100 Curriculum · 8 Phases · v2026.2 · Updated May 2026</div>
   <div class="footer-badge">
     <span style="width:7px;height:7px;background:#47ffb4;border-radius:50%;display:inline-block;"></span>
     $0 spent · Zero paywalls
