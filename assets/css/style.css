@@ -146,13 +146,8 @@ h2.phase-title, h2.section-heading, h3.module-title, h4.proj-card-title { margin
   width: 20px;
   height: 20px;
   stroke-width: 2.2px;
-  color: var(--accent);
+  color: var(--muted);
 }
-.module-card.a2 .module-icon svg { color: var(--accent2); }
-.module-card.a3 .module-icon svg { color: var(--accent3); }
-.module-card.ap .module-icon svg { color: var(--accent5); }
-.module-card.at .module-icon svg { color: var(--accent4); }
-.module-card.ag .module-icon svg { color: var(--accent6); }
 .module-title { font-family:'Syne',sans-serif; font-size:15px; font-weight:700; margin-bottom:10px; display: block; }
 .module-topics { list-style:none; display:flex; flex-direction:column; gap:4px; }
 .module-topics li { display:flex; align-items:flex-start; gap:8px; font-size:12px; color:var(--muted); line-height:1.5; }
@@ -350,13 +345,19 @@ footer { margin-top:100px; padding:40px; border-top:1px solid var(--border); dis
 }
 .proj-phase-label {
   font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--accent2);
+  color: var(--muted);
 }
-.proj-capstone-section {
-  margin: 80px 0 60px;
-  border-radius: 4px; overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
-  position: relative;
+.bonus-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2px;
+  color: var(--text);
+}
+.reading-emoji svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2px;
+  color: var(--muted);
 }
 .proj-capstone-header {
   padding: 26px 32px 18px;
