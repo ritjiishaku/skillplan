@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Automation Engineering — 100% Free Curriculum</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <meta name="description"
     content="The complete AI Automation Engineering curriculum — 8 phases, 150+ free resources, dual General & Healthcare tracks, career prep, and weekly study schedule. $0 cost.">
   <meta property="og:title" content="AI Automation Engineering — 100% Free Curriculum">
@@ -16,7 +18,12 @@
     content="8 phases, 150+ free resources, dual General & Healthcare tracks, and career prep. $0 cost. Zero compromises.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ai-automation-engineering.dev">
+  <meta property="og:image" content="https://ai-automation-engineering.dev/og-image.png">
+  <link rel="canonical" href="https://ai-automation-engineering.dev">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Automation Engineering — 100% Free Curriculum">
+  <meta name="twitter:description" content="8 phases, 150+ free resources, dual tracks, 18-month schedule. $0 cost. No paywalls.">
+  <meta name="theme-color" content="#070810">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -25,28 +32,25 @@
   "description": "A comprehensive 8-phase curriculum covering AI automation engineering, from Python foundations to multi-agent systems and healthcare AI. 150+ free resources.",
   "provider": {"@type": "Organization", "name": "AI Automation Engineering"},
   "educationalLevel": "Advanced",
-  "timeRequired": "PT18M",
+  "timeRequired": "P18M",
   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
 }
 </script>
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23e8ff47'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23000'>AI</text></svg>">
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header>
-    <div class="header-grid"></div>
+    <div class="header-grid" aria-hidden="true"></div>
     <div class="header-glow"></div>
 
-    <div class="free-banner">100% Free · 100/100 Score · 8 Phases · 150+ Resources · Zero Paywalls</div>
+    <div class="free-banner">100% Free · 8 Phases · 150+ Resources · Dual Tracks · Zero Paywalls</div>
 
     <h1>AI Automation<br><em>Engineering</em></h1>
-    <p class="subtitle">The complete 100/100 curriculum — all 7 critical gaps, 9 important gaps, and 8 enhancements
-      addressed. 8 phases, 150+ free resources, healthcare AI specialization, career preparation, and weekly study
-      schedule. $0 spent. Zero compromises.</p>
+    <p class="subtitle">A complete, self-paced path from Python to production AI engineer — 8 phases, 150+ hand-curated free resources, dual General &amp; Healthcare tracks, an 18-month study schedule, and career prep. $0 cost. No paywalls. No compromises.</p>
 
     <div class="meta-row">
       <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">18–20 mo</span></div>
@@ -59,15 +63,31 @@
 
   <main id="main-content">
 
+  <!-- PHASE QUICK-NAV -->
+  <nav class="phase-nav" aria-label="Jump to phase">
+    <span class="phase-nav-label">Jump to</span>
+    <ul class="phase-nav-links">
+      <li><a href="#phase-1" class="phase-nav-item">01 Foundation</a></li>
+      <li><a href="#phase-2" class="phase-nav-item">02 LLM Eng.</a></li>
+      <li><a href="#phase-3" class="phase-nav-item">03 RAG</a></li>
+      <li><a href="#phase-4" class="phase-nav-item">04 Agents</a></li>
+      <li><a href="#phase-5" class="phase-nav-item">05 Production</a></li>
+      <li><a href="#phase-6" class="phase-nav-item">06 Capstone</a></li>
+      <li><a href="#phase-7" class="phase-nav-item">07 Healthcare</a></li>
+      <li><a href="#phase-8" class="phase-nav-item">08 Career</a></li>
+    </ul>
+  </nav>
+
+
     <!-- ═══════════════ PHASE 1 ═══════════════ -->
-    <div class="phase">
+    <section class="phase" id="phase-1">
       <div class="phase-header-row">
         <div class="phase-header">
           <div class="phase-number">01</div>
           <div class="phase-meta">
             <div class="phase-badge badge-foundation">Foundation</div>
             <h2 class="phase-title">Core Engineering & Python Mastery</h2>
-            <div class="phase-duration">⏱ Months 1–2</div>
+            <div class="phase-duration">Months 1–2</div>
           </div>
         </div>
         <button class="proj-toggle-btn"><i data-lucide="sparkles"></i> View Phase Project</button>
@@ -88,7 +108,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://automatetheboringstuff.com" target="_blank">
+            <a class="resource-item" href="https://automatetheboringstuff.com" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book-open"></i>
               <div class="resource-info">
                 <div class="resource-name">Automate the Boring Stuff with Python</div>
@@ -96,7 +116,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://realpython.com/tutorials/advanced/" target="_blank">
+            <a class="resource-item" href="https://realpython.com/tutorials/advanced/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="terminal"></i>
               <div class="resource-info">
                 <div class="resource-name">Real Python — Advanced Tutorials</div>
@@ -104,7 +124,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.python.org/3/tutorial/" target="_blank">
+            <a class="resource-item" href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Official Python Tutorial</div>
@@ -113,7 +133,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">Corey Schafer — Python OOP & Advanced</div>
@@ -121,7 +141,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.pytest.org/en/stable/getting-started.html" target="_blank">
+            <a class="resource-item" href="https://docs.pytest.org/en/stable/getting-started.html" target="_blank" rel="noopener noreferrer">
               <i data-lucide="check-circle"></i>
               <div class="resource-info">
                 <div class="resource-name">pytest Official Docs</div>
@@ -136,7 +156,7 @@
         <!-- MODULE PROJECT: Python for Automation Engineers -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Python for Automation Engineers</span>
           </div>
           <div class="proj-dual-grid">
@@ -202,7 +222,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://www.theodinproject.com" target="_blank">
+            <a class="resource-item" href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">
               <i data-lucide="wrench"></i>
               <div class="resource-info">
                 <div class="resource-name">The Odin Project</div>
@@ -210,7 +230,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.docker.com/get-started/" target="_blank">
+            <a class="resource-item" href="https://docs.docker.com/get-started/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book-open"></i>
               <div class="resource-info">
                 <div class="resource-name">Docker Official Get Started Guide</div>
@@ -218,7 +238,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://fastapi.tiangolo.com/tutorial/" target="_blank">
+            <a class="resource-item" href="https://fastapi.tiangolo.com/tutorial/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="zap"></i>
               <div class="resource-info">
                 <div class="resource-name">FastAPI Official Tutorial</div>
@@ -226,8 +246,8 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://learngitbranching.js.org" target="_blank">
-              <i data-lucide="sprout"></i>
+            <a class="resource-item" href="https://learngitbranching.js.org" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="git-branch"></i>
               <div class="resource-info">
                 <div class="resource-name">Learn Git Branching (Interactive)</div>
                 <div class="resource-meta">learngitbranching.js.org · Visual, hands-on Git mastery</div>
@@ -241,7 +261,7 @@
         <!-- MODULE PROJECT: Software Engineering Fundamentals -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Software Engineering Fundamentals</span>
           </div>
           <div class="proj-dual-grid">
@@ -306,7 +326,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://mode.com/sql-tutorial/" target="_blank">
+            <a class="resource-item" href="https://mode.com/sql-tutorial/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="folder-open"></i>
               <div class="resource-info">
                 <div class="resource-name">Mode SQL Tutorial</div>
@@ -314,7 +334,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://university.redis.io" target="_blank">
+            <a class="resource-item" href="https://university.redis.io" target="_blank" rel="noopener noreferrer">
               <i data-lucide="zap"></i>
               <div class="resource-info">
                 <div class="resource-name">Redis University</div>
@@ -322,7 +342,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://pandas.pydata.org/docs/getting_started/index.html" target="_blank">
+            <a class="resource-item" href="https://pandas.pydata.org/docs/getting_started/index.html" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book-open"></i>
               <div class="resource-info">
                 <div class="resource-name">Pandas Getting Started Tutorials</div>
@@ -330,7 +350,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://jakevdp.github.io/PythonDataScienceHandbook/" target="_blank">
+            <a class="resource-item" href="https://jakevdp.github.io/PythonDataScienceHandbook/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book"></i>
               <div class="resource-info">
                 <div class="resource-name">Python Data Science Handbook</div>
@@ -345,7 +365,7 @@
         <!-- MODULE PROJECT: Data & Storage Foundations -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Data & Storage Foundations</span>
           </div>
           <div class="proj-dual-grid">
@@ -412,7 +432,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://neetcode.io" target="_blank">
+            <a class="resource-item" href="https://neetcode.io" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">Neetcode.io — Roadmap & Free Video Solutions</div>
@@ -420,7 +440,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://seanprashadleetcodepatterns.com" target="_blank">
+            <a class="resource-item" href="https://seanprashad.com/leetcode-patterns/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="clipboard"></i>
               <div class="resource-info">
                 <div class="resource-name">Sean Prashad's LeetCode Patterns</div>
@@ -429,7 +449,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://runestone.academy/ns/books/published/pythonds/index.html"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="book"></i>
               <div class="resource-info">
                 <div class="resource-name">Data Structures & Algorithms in Python — Free Book</div>
@@ -443,7 +463,7 @@
         <!-- MODULE PROJECT: Data Structures & Algorithms (Targeted) -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Data Structures & Algorithms (Targeted)</span>
           </div>
           <div class="proj-dual-grid">
@@ -509,7 +529,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://www.typescriptlang.org/docs/handbook/intro.html" target="_blank">
+            <a class="resource-item" href="https://www.typescriptlang.org/docs/handbook/intro.html" target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">TypeScript Official Handbook</div>
@@ -517,7 +537,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://sdk.vercel.ai/docs" target="_blank">
+            <a class="resource-item" href="https://sdk.vercel.ai/docs" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">Vercel AI SDK Documentation</div>
@@ -525,7 +545,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://nextjs.org/learn" target="_blank">
+            <a class="resource-item" href="https://nextjs.org/learn" target="_blank" rel="noopener noreferrer">
               <i data-lucide="graduation-cap"></i>
               <div class="resource-info">
                 <div class="resource-name">Next.js Learn — Official Free Course</div>
@@ -533,7 +553,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://mastra.ai/docs" target="_blank">
+            <a class="resource-item" href="https://mastra.ai/docs" target="_blank" rel="noopener noreferrer">
               <i data-lucide="bot"></i>
               <div class="resource-info">
                 <div class="resource-name">Mastra — TypeScript Agent Framework Docs</div>
@@ -547,7 +567,7 @@
         <!-- MODULE PROJECT: TypeScript & Full-Stack AI Development -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">TypeScript & Full-Stack AI Development</span>
           </div>
           <div class="proj-dual-grid">
@@ -614,7 +634,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://alembic.sqlalchemy.org/en/latest/" target="_blank">
+            <a class="resource-item" href="https://alembic.sqlalchemy.org/en/latest/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Alembic Database Migration Docs</div>
@@ -622,7 +642,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.postgresql.org/docs/current/tutorial.html" target="_blank">
+            <a class="resource-item" href="https://www.postgresql.org/docs/current/tutorial.html" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book"></i>
               <div class="resource-info">
                 <div class="resource-name">PostgreSQL Official Tutorial</div>
@@ -630,7 +650,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://supabase.com/docs/guides/database/tables" target="_blank">
+            <a class="resource-item" href="https://supabase.com/docs/guides/database/tables" target="_blank" rel="noopener noreferrer">
               <i data-lucide="wrench"></i>
               <div class="resource-info">
                 <div class="resource-name">Supabase Schema Design Guides</div>
@@ -644,7 +664,7 @@
         <!-- MODULE PROJECT: Database Schema Design for AI Applications -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Database Schema Design for AI Applications</span>
           </div>
           <div class="proj-dual-grid">
@@ -710,7 +730,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://docs.cursor.com" target="_blank">
+            <a class="resource-item" href="https://docs.cursor.com" target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Cursor Official Documentation</div>
@@ -718,7 +738,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/PatrickJS/awesome-cursorrules" target="_blank">
+            <a class="resource-item" href="https://github.com/PatrickJS/awesome-cursorrules" target="_blank" rel="noopener noreferrer">
               <i data-lucide="star"></i>
               <div class="resource-info">
                 <div class="resource-name">.cursorrules Community Repository</div>
@@ -726,7 +746,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://aider.chat/docs/usage/tips.html" target="_blank">
+            <a class="resource-item" href="https://aider.chat/docs/usage/tips.html" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">Aider Best Practices & Tips</div>
@@ -740,7 +760,7 @@
         <!-- MODULE PROJECT: AI-Assisted Development (Cursor / Vibe Coding Workflow) -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">AI-Assisted Development (Cursor / Vibe Coding Workflow)</span>
           </div>
           <div class="proj-dual-grid">
@@ -850,7 +870,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- PHASE 1 FINAL PROJECT -->
@@ -859,14 +879,14 @@
     <div class="phase-connector">↓ Phase complete · Begin LLM fundamentals</div>
 
     <!-- ═══════════════ PHASE 2 ═══════════════ -->
-    <div class="phase">
+    <section class="phase" id="phase-2">
       <div class="phase-header-row">
         <div class="phase-header">
           <div class="phase-number">02</div>
           <div class="phase-meta">
             <div class="phase-badge badge-core">Core AI</div>
             <h2 class="phase-title">LLM Engineering & Prompt Architecture</h2>
-            <div class="phase-duration">⏱ Months 2–4</div>
+            <div class="phase-duration">Months 2–4</div>
           </div>
         </div><button class="proj-toggle-btn"><i data-lucide="sparkles"></i> View Phase Project</button>
       </div>
@@ -886,7 +906,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank">
+            <a class="resource-item" href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">Andrej Karpathy — Intro to Large Language Models</div>
@@ -894,7 +914,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank">
+            <a class="resource-item" href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">Karpathy — Let's Build GPT From Scratch</div>
@@ -902,7 +922,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://llm.university" target="_blank">
+            <a class="resource-item" href="https://llm.university" target="_blank" rel="noopener noreferrer">
               <i data-lucide="graduation-cap"></i>
               <div class="resource-info">
                 <div class="resource-name">LLM University by Cohere</div>
@@ -912,7 +932,7 @@
             </a>
             <a class="resource-item"
               href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="bot"></i>
               <div class="resource-info">
                 <div class="resource-name">ChatGPT Prompt Engineering for Developers</div>
@@ -927,7 +947,7 @@
         <!-- MODULE PROJECT: How LLMs Actually Work -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">How LLMs Actually Work</span>
           </div>
           <div class="proj-dual-grid">
@@ -993,15 +1013,15 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking"
-              target="_blank">
-              <i data-lucide="circle"></i>
+              target="_blank" rel="noopener noreferrer">
+              <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Claude Extended Thinking — Anthropic Docs</div>
                 <div class="resource-meta">docs.anthropic.com · How to use extended thinking</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://platform.openai.com/docs/guides/reasoning" target="_blank">
+            <a class="resource-item" href="https://platform.openai.com/docs/guides/reasoning" target="_blank" rel="noopener noreferrer">
               <i data-lucide="bot"></i>
               <div class="resource-info">
                 <div class="resource-name">OpenAI Reasoning Models Guide</div>
@@ -1009,7 +1029,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://simonwillison.net" target="_blank">
+            <a class="resource-item" href="https://simonwillison.net" target="_blank" rel="noopener noreferrer">
               <i data-lucide="edit-3"></i>
               <div class="resource-info">
                 <div class="resource-name">Simon Willison's Blog — Reasoning Models Explained</div>
@@ -1023,7 +1043,7 @@
         <!-- MODULE PROJECT: Structured Reasoning & Thinking Models -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Structured Reasoning & Thinking Models</span>
           </div>
           <div class="proj-dual-grid">
@@ -1089,15 +1109,15 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://ollama.com" target="_blank">
-              <i data-lucide="bug"></i>
+            <a class="resource-item" href="https://ollama.com" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="server"></i>
               <div class="resource-info">
                 <div class="resource-name">Ollama Official Documentation</div>
                 <div class="resource-meta">ollama.com/docs · Install, pull, run, API reference</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://lmstudio.ai" target="_blank">
+            <a class="resource-item" href="https://lmstudio.ai" target="_blank" rel="noopener noreferrer">
               <i data-lucide="monitor"></i>
               <div class="resource-info">
                 <div class="resource-name">LM Studio — Local LLM GUI</div>
@@ -1106,8 +1126,8 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard"
-              target="_blank">
-              <i data-lucide="smile"></i>
+              target="_blank" rel="noopener noreferrer">
+              <i data-lucide="award"></i>
               <div class="resource-info">
                 <div class="resource-name">Hugging Face — Open LLM Leaderboard</div>
                 <div class="resource-meta">huggingface.co/spaces · Compare local model quality</div>
@@ -1120,7 +1140,7 @@
         <!-- MODULE PROJECT: Local Model Serving — Ollama In Depth -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Local Model Serving — Ollama In Depth</span>
           </div>
           <div class="proj-dual-grid">
@@ -1174,11 +1194,11 @@
         </div>
         <div class="module-card a2">
           <div class="module-top">
-            <i data-lucide="zap-off"></i>
+            <i data-lucide="trending-down"></i>
             <h3 class="module-title">Prompt Caching & Cost Optimisation</h3>
             <ul class="module-topics">
               <li>Anthropic prompt caching — 80–90% cost reduction on repeated calls</li>
-              <li>OpenAI prompt caching — automatic for prompts > 1024 tokens</li>
+              <li>OpenAI prompt caching — automatic for prompts &gt; 1024 tokens</li>
               <li>When to use caching vs. RAG vs. fine-tuning for repeated context</li>
               <li>Semantic caching with GPTCache for similar queries</li>
               <li>Cost-quality trade-off framework — Haiku vs Sonnet vs Opus</li>
@@ -1187,15 +1207,15 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching"
-              target="_blank">
-              <i data-lucide="circle"></i>
+              target="_blank" rel="noopener noreferrer">
+              <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Anthropic Prompt Caching Documentation</div>
                 <div class="resource-meta">docs.anthropic.com · 5-minute implementation, 90% cost cut</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://platform.openai.com/docs/guides/prompt-caching" target="_blank">
+            <a class="resource-item" href="https://platform.openai.com/docs/guides/prompt-caching" target="_blank" rel="noopener noreferrer">
               <i data-lucide="bot"></i>
               <div class="resource-info">
                 <div class="resource-name">OpenAI Prompt Caching Guide</div>
@@ -1203,7 +1223,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/zilliztech/GPTCache" target="_blank">
+            <a class="resource-item" href="https://github.com/zilliztech/GPTCache" target="_blank" rel="noopener noreferrer">
               <i data-lucide="package"></i>
               <div class="resource-info">
                 <div class="resource-name">GPTCache — Semantic Cache Library</div>
@@ -1217,7 +1237,7 @@
         <!-- MODULE PROJECT: Prompt Caching & Cost Optimisation -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Prompt Caching & Cost Optimisation</span>
           </div>
           <div class="proj-dual-grid">
@@ -1282,8 +1302,8 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://github.com/anthropics/prompt-eng-interactive-tutorial"
-              target="_blank">
-              <i data-lucide="circle"></i>
+              target="_blank" rel="noopener noreferrer">
+              <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Anthropic Prompt Engineering Interactive Tutorial</div>
                 <div class="resource-meta">GitHub · 34K+ stars · Jupyter notebooks, built by Anthropic</div>
@@ -1291,7 +1311,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item"
-              href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank">
+              href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Anthropic Prompt Engineering Docs</div>
@@ -1299,7 +1319,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.promptingguide.ai" target="_blank">
+            <a class="resource-item" href="https://www.promptingguide.ai" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book"></i>
               <div class="resource-info">
                 <div class="resource-name">Prompt Engineering Guide — DAIR.AI</div>
@@ -1308,7 +1328,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="microscope"></i>
               <div class="resource-info">
                 <div class="resource-name">Lilian Weng (OpenAI) — Prompt Engineering</div>
@@ -1323,7 +1343,7 @@
         <!-- MODULE PROJECT: Prompt Engineering Mastery -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Prompt Engineering Mastery</span>
           </div>
           <div class="proj-dual-grid">
@@ -1389,7 +1409,7 @@
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item"
               href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="link"></i>
               <div class="resource-info">
                 <div class="resource-name">LangChain for LLM Application Development</div>
@@ -1397,7 +1417,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://python.langchain.com/docs/tutorials/" target="_blank">
+            <a class="resource-item" href="https://python.langchain.com/docs/tutorials/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="books"></i>
               <div class="resource-info">
                 <div class="resource-name">LangChain Official Tutorials</div>
@@ -1405,15 +1425,15 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.llamaindex.ai/en/stable/" target="_blank">
-              <i data-lucide="bug"></i>
+            <a class="resource-item" href="https://docs.llamaindex.ai/en/stable/" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="server"></i>
               <div class="resource-info">
                 <div class="resource-name">LlamaIndex Official Docs</div>
                 <div class="resource-meta">llamaindex.ai · RAG-first orchestration framework</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/jxnl/instructor" target="_blank">
+            <a class="resource-item" href="https://github.com/jxnl/instructor" target="_blank" rel="noopener noreferrer">
               <i data-lucide="triangle"></i>
               <div class="resource-info">
                 <div class="resource-name">Instructor — Structured LLM Outputs</div>
@@ -1428,7 +1448,7 @@
         <!-- MODULE PROJECT: LLM Orchestration & Frameworks -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">LLM Orchestration & Frameworks</span>
           </div>
           <div class="proj-dual-grid">
@@ -1492,7 +1512,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="triangle"></i>
               <div class="resource-info">
                 <div class="resource-name">Building & Evaluating Advanced RAG</div>
@@ -1500,7 +1520,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.ragas.io/en/stable/" target="_blank">
+            <a class="resource-item" href="https://docs.ragas.io/en/stable/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="ruler"></i>
               <div class="resource-info">
                 <div class="resource-name">RAGAS Docs — RAG Evaluation Framework</div>
@@ -1508,7 +1528,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.confident-ai.com" target="_blank">
+            <a class="resource-item" href="https://docs.confident-ai.com" target="_blank" rel="noopener noreferrer">
               <i data-lucide="check-circle"></i>
               <div class="resource-info">
                 <div class="resource-name">DeepEval — LLM Testing Framework Docs</div>
@@ -1523,7 +1543,7 @@
         <!-- MODULE PROJECT: LLM Evaluation & Quality -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">LLM Evaluation & Quality</span>
           </div>
           <div class="proj-dual-grid">
@@ -1632,7 +1652,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- PHASE 2 FINAL PROJECT -->
@@ -1641,14 +1661,14 @@
     <div class="phase-connector">↓ Phase complete · Building retrieval systems</div>
 
     <!-- ═══════════════ PHASE 3 ═══════════════ -->
-    <div class="phase">
+    <section class="phase" id="phase-3">
       <div class="phase-header-row">
         <div class="phase-header">
           <div class="phase-number">03</div>
           <div class="phase-meta">
             <div class="phase-badge badge-advanced">Advanced RAG</div>
             <h2 class="phase-title">Retrieval-Augmented Generation Systems</h2>
-            <div class="phase-duration">⏱ Months 4–6</div>
+            <div class="phase-duration">Months 4–6</div>
           </div>
         </div><button class="proj-toggle-btn"><i data-lucide="sparkles"></i> View Phase Project</button>
       </div>
@@ -1670,7 +1690,7 @@
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item"
               href="https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="graduation-cap"></i>
               <div class="resource-info">
                 <div class="resource-name">Vector Databases: From Embeddings to Applications</div>
@@ -1678,7 +1698,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.pinecone.io/learn/" target="_blank">
+            <a class="resource-item" href="https://www.pinecone.io/learn/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="tree"></i>
               <div class="resource-info">
                 <div class="resource-name">Pinecone Learning Center</div>
@@ -1686,7 +1706,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.youtube.com/watch?v=viZrOnJclY0" target="_blank">
+            <a class="resource-item" href="https://www.youtube.com/watch?v=viZrOnJclY0" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">Greg Kamradt — 5 Levels of Text Splitting</div>
@@ -1694,7 +1714,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/lehoanglong95/rag-all-in-one" target="_blank">
+            <a class="resource-item" href="https://github.com/lehoanglong95/rag-all-in-one" target="_blank" rel="noopener noreferrer">
               <i data-lucide="package"></i>
               <div class="resource-info">
                 <div class="resource-name">RAG All-in-One — GitHub Resource Collection</div>
@@ -1709,7 +1729,7 @@
         <!-- MODULE PROJECT: Vector Embeddings & Semantic Search -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Vector Embeddings & Semantic Search</span>
           </div>
           <div class="proj-dual-grid">
@@ -1773,7 +1793,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://learn.activeloop.ai/courses/rag" target="_blank">
+            <a class="resource-item" href="https://learn.activeloop.ai/courses/rag" target="_blank" rel="noopener noreferrer">
               <i data-lucide="flame"></i>
               <div class="resource-info">
                 <div class="resource-name">Advanced RAG with LlamaIndex & LangChain</div>
@@ -1781,7 +1801,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.youtube.com/watch?v=sVcwVQRHIc8" target="_blank">
+            <a class="resource-item" href="https://www.youtube.com/watch?v=sVcwVQRHIc8" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">LangChain — Advanced RAG Tutorial</div>
@@ -1789,7 +1809,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/jamwithai/production-agentic-rag-course" target="_blank">
+            <a class="resource-item" href="https://github.com/jamwithai/production-agentic-rag-course" target="_blank" rel="noopener noreferrer">
               <i data-lucide="factory"></i>
               <div class="resource-info">
                 <div class="resource-name">Production Agentic RAG Course</div>
@@ -1797,7 +1817,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/patchy631/ai-engineering-hub" target="_blank">
+            <a class="resource-item" href="https://github.com/patchy631/ai-engineering-hub" target="_blank" rel="noopener noreferrer">
               <i data-lucide="tool"></i>
               <div class="resource-info">
                 <div class="resource-name">AI Engineering Hub — 93+ Projects</div>
@@ -1812,7 +1832,7 @@
         <!-- MODULE PROJECT: RAG Pipeline Architecture -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">RAG Pipeline Architecture</span>
           </div>
           <div class="proj-dual-grid">
@@ -1879,7 +1899,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://github.com/microsoft/graphrag" target="_blank">
+            <a class="resource-item" href="https://github.com/microsoft/graphrag" target="_blank" rel="noopener noreferrer">
               <i data-lucide="bar-chart-3"></i>
               <div class="resource-info">
                 <div class="resource-name">Microsoft GraphRAG — Official Docs & Repo</div>
@@ -1887,8 +1907,8 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://graphacademy.neo4j.com" target="_blank">
-              <i data-lucide="circle"></i>
+            <a class="resource-item" href="https://graphacademy.neo4j.com" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Neo4j Graph Academy — Free Courses</div>
                 <div class="resource-meta">graphacademy.neo4j.com · Foundations to LLM integration</div>
@@ -1897,7 +1917,7 @@
             </a>
             <a class="resource-item"
               href="https://docs.llamaindex.ai/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphIndex_demo/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="bot"></i>
               <div class="resource-info">
                 <div class="resource-name">LlamaIndex — Knowledge Graph Index Guide</div>
@@ -1911,7 +1931,7 @@
         <!-- MODULE PROJECT: GraphRAG & Knowledge Graphs -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">GraphRAG & Knowledge Graphs</span>
           </div>
           <div class="proj-dual-grid">
@@ -1979,7 +1999,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://docs.mem0.ai" target="_blank">
+            <a class="resource-item" href="https://docs.mem0.ai" target="_blank" rel="noopener noreferrer">
               <i data-lucide="brain"></i>
               <div class="resource-info">
                 <div class="resource-name">Mem0 — Open-Source Agent Memory Docs</div>
@@ -1987,7 +2007,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://help.getzep.com" target="_blank">
+            <a class="resource-item" href="https://help.getzep.com" target="_blank" rel="noopener noreferrer">
               <i data-lucide="zap"></i>
               <div class="resource-info">
                 <div class="resource-name">Zep — Long-Term Memory for AI Assistants</div>
@@ -1996,7 +2016,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/long-context-tips"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Anthropic — Long Context Tips & Best Practices</div>
@@ -2010,7 +2030,7 @@
         <!-- MODULE PROJECT: Long-Context & Agent Memory Architecture -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Long-Context & Agent Memory Architecture</span>
           </div>
           <div class="proj-dual-grid">
@@ -2078,15 +2098,15 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://github.com/argilla-io/distilabel" target="_blank">
-              <i data-lucide="smile"></i>
+            <a class="resource-item" href="https://github.com/argilla-io/distilabel" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="award"></i>
               <div class="resource-info">
                 <div class="resource-name">Distilabel — Synthetic Data Pipeline</div>
                 <div class="resource-meta">github.com/argilla-io/distilabel · Argilla · Open-source</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://gretel.ai" target="_blank">
+            <a class="resource-item" href="https://gretel.ai" target="_blank" rel="noopener noreferrer">
               <i data-lucide="bar-chart-3"></i>
               <div class="resource-info">
                 <div class="resource-name">Gretel.ai — Free Synthetic Data Platform</div>
@@ -2095,7 +2115,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://docs.ragas.io/en/stable/getstarted/testset_generation/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">RAGAS — Testset Generation from Docs</div>
@@ -2110,7 +2130,7 @@
         <!-- MODULE PROJECT: Synthetic Data Generation -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Synthetic Data Generation</span>
           </div>
           <div class="proj-dual-grid">
@@ -2178,7 +2198,7 @@
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item"
               href="https://www.deeplearning.ai/short-courses/preprocessing-unstructured-data-for-llm-applications/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="folder"></i>
               <div class="resource-info">
                 <div class="resource-name">Preprocessing Unstructured Data for LLM Apps</div>
@@ -2186,7 +2206,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.unstructured.io/welcome" target="_blank">
+            <a class="resource-item" href="https://docs.unstructured.io/welcome" target="_blank" rel="noopener noreferrer">
               <i data-lucide="folder"></i>
               <div class="resource-info">
                 <div class="resource-name">Unstructured.io Official Docs</div>
@@ -2195,8 +2215,8 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://docs.llamaindex.ai/en/stable/understanding/loading/loading/"
-              target="_blank">
-              <i data-lucide="bug"></i>
+              target="_blank" rel="noopener noreferrer">
+              <i data-lucide="server"></i>
               <div class="resource-info">
                 <div class="resource-name">LlamaIndex Data Loading Docs</div>
                 <div class="resource-meta">160+ connectors, loaders, and ingestion patterns</div>
@@ -2210,7 +2230,7 @@
         <!-- MODULE PROJECT: Document Processing & Ingestion -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Document Processing & Ingestion</span>
           </div>
           <div class="proj-dual-grid">
@@ -2276,7 +2296,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://langfuse.com/docs" target="_blank">
+            <a class="resource-item" href="https://langfuse.com/docs" target="_blank" rel="noopener noreferrer">
               <i data-lucide="telescope"></i>
               <div class="resource-info">
                 <div class="resource-name">Langfuse Documentation</div>
@@ -2284,7 +2304,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.deeplearning.ai/short-courses/llmops/" target="_blank">
+            <a class="resource-item" href="https://www.deeplearning.ai/short-courses/llmops/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="factory"></i>
               <div class="resource-info">
                 <div class="resource-name">LLMOps — DeepLearning.AI + Google Cloud</div>
@@ -2292,7 +2312,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://eugeneyan.com/writing/llm-patterns/" target="_blank">
+            <a class="resource-item" href="https://eugeneyan.com/writing/llm-patterns/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="newspaper"></i>
               <div class="resource-info">
                 <div class="resource-name">Eugene Yan — Patterns for Building LLM Systems</div>
@@ -2307,7 +2327,7 @@
         <!-- MODULE PROJECT: Production RAG Engineering -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Production RAG Engineering</span>
           </div>
           <div class="proj-dual-grid">
@@ -2420,7 +2440,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- PHASE 3 FINAL PROJECT -->
@@ -2429,14 +2449,14 @@
     <div class="phase-connector">↓ Phase complete · Entering agentic systems</div>
 
     <!-- ═══════════════ PHASE 4 ═══════════════ -->
-    <div class="phase">
+    <section class="phase" id="phase-4">
       <div class="phase-header-row">
         <div class="phase-header">
           <div class="phase-number">04</div>
           <div class="phase-meta">
             <div class="phase-badge badge-specialist">Agentic AI</div>
             <h2 class="phase-title">AI Agents, Tools & Multi-Agent Systems</h2>
-            <div class="phase-duration">⏱ Months 6–9</div>
+            <div class="phase-duration">Months 6–9</div>
           </div>
         </div><button class="proj-toggle-btn"><i data-lucide="sparkles"></i> View Phase Project</button>
       </div>
@@ -2457,8 +2477,8 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://www.anthropic.com/research/building-effective-agents"
-              target="_blank">
-              <i data-lucide="circle"></i>
+              target="_blank" rel="noopener noreferrer">
+              <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Building Effective Agents — Anthropic Research</div>
                 <div class="resource-meta">The essential reference for agent design principles</div>
@@ -2466,7 +2486,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="layout"></i>
               <div class="resource-info">
                 <div class="resource-name">AI Agents in LangGraph</div>
@@ -2474,7 +2494,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://langchain-ai.github.io/langgraph/tutorials/" target="_blank">
+            <a class="resource-item" href="https://langchain-ai.github.io/langgraph/tutorials/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book"></i>
               <div class="resource-info">
                 <div class="resource-name">LangGraph Official Tutorials</div>
@@ -2482,7 +2502,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.youtube.com/watch?v=Vh-p9Qfbm-8" target="_blank">
+            <a class="resource-item" href="https://www.youtube.com/watch?v=Vh-p9Qfbm-8" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">Sam Witteveen — LangGraph Agents Explained</div>
@@ -2497,7 +2517,7 @@
         <!-- MODULE PROJECT: Agent Architecture Patterns -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Agent Architecture Patterns</span>
           </div>
           <div class="proj-dual-grid">
@@ -2562,7 +2582,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://github.com/openai/whisper" target="_blank">
+            <a class="resource-item" href="https://github.com/openai/whisper" target="_blank" rel="noopener noreferrer">
               <i data-lucide="mic"></i>
               <div class="resource-info">
                 <div class="resource-name">Whisper — OpenAI Speech Recognition Docs</div>
@@ -2570,7 +2590,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/hexgrad/kokoro" target="_blank">
+            <a class="resource-item" href="https://github.com/hexgrad/kokoro" target="_blank" rel="noopener noreferrer">
               <i data-lucide="volume-2"></i>
               <div class="resource-info">
                 <div class="resource-name">Kokoro TTS — Open-Source Text-to-Speech</div>
@@ -2578,7 +2598,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.livekit.io/agents/" target="_blank">
+            <a class="resource-item" href="https://docs.livekit.io/agents/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="phone"></i>
               <div class="resource-info">
                 <div class="resource-name">LiveKit Agents — Real-Time Voice Agents</div>
@@ -2587,7 +2607,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item"
-              href="https://www.deeplearning.ai/short-courses/building-multimodal-search-and-rag/" target="_blank">
+              href="https://www.deeplearning.ai/short-courses/building-multimodal-search-and-rag/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="image"></i>
               <div class="resource-info">
                 <div class="resource-name">DeepLearning.AI — Building Multimodal Search & RAG</div>
@@ -2601,7 +2621,7 @@
         <!-- MODULE PROJECT: Voice AI & Multimodal Pipelines -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Voice AI & Multimodal Pipelines</span>
           </div>
           <div class="proj-dual-grid">
@@ -2669,7 +2689,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://owasp.org/www-project-top-10-for-large-language-model-applications/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="shield"></i>
               <div class="resource-info">
                 <div class="resource-name">OWASP Top 10 for LLM Applications</div>
@@ -2678,15 +2698,15 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/NVIDIA/garak" target="_blank">
-              <i data-lucide="circle"></i>
+            <a class="resource-item" href="https://github.com/NVIDIA/garak" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Garak — LLM Vulnerability Scanner</div>
                 <div class="resource-meta">github.com/NVIDIA/garak · NVIDIA open-source red-teaming tool</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.lakera.ai/blog/guide-to-prompt-injection" target="_blank">
+            <a class="resource-item" href="https://www.lakera.ai/blog/guide-to-prompt-injection" target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Lakera — Prompt Injection Guide</div>
@@ -2694,7 +2714,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://embracethered.com/blog/" target="_blank">
+            <a class="resource-item" href="https://embracethered.com/blog/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="microscope"></i>
               <div class="resource-info">
                 <div class="resource-name">LLM Security by Johann Rehberger</div>
@@ -2708,7 +2728,7 @@
         <!-- MODULE PROJECT: LLM Security & Red-Teaming -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">LLM Security & Red-Teaming</span>
           </div>
           <div class="proj-dual-grid">
@@ -2774,7 +2794,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://pair.withgoogle.com/guidebook/" target="_blank">
+            <a class="resource-item" href="https://pair.withgoogle.com/guidebook/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="triangle"></i>
               <div class="resource-info">
                 <div class="resource-name">Google PAIR Guidebook — People + AI Research</div>
@@ -2782,7 +2802,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.nngroup.com/topic/ai-user-experience/" target="_blank">
+            <a class="resource-item" href="https://www.nngroup.com/topic/ai-user-experience/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="clipboard"></i>
               <div class="resource-info">
                 <div class="resource-name">Nielsen Norman Group — AI UX Guidelines</div>
@@ -2790,7 +2810,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://sdk.vercel.ai/docs/ai-sdk-ui/overview" target="_blank">
+            <a class="resource-item" href="https://sdk.vercel.ai/docs/ai-sdk-ui/overview" target="_blank" rel="noopener noreferrer">
               <i data-lucide="zap"></i>
               <div class="resource-info">
                 <div class="resource-name">Vercel AI SDK UI Components</div>
@@ -2804,7 +2824,7 @@
         <!-- MODULE PROJECT: Agentic UX Design Patterns -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Agentic UX Design Patterns</span>
           </div>
           <div class="proj-dual-grid">
@@ -2870,7 +2890,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://platform.openai.com/docs/guides/realtime" target="_blank">
+            <a class="resource-item" href="https://platform.openai.com/docs/guides/realtime" target="_blank" rel="noopener noreferrer">
               <i data-lucide="mic"></i>
               <div class="resource-info">
                 <div class="resource-name">OpenAI Realtime API — Docs & Cookbook</div>
@@ -2878,15 +2898,15 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://redis.io/docs/latest/develop/data-types/streams/" target="_blank">
-              <i data-lucide="circle"></i>
+            <a class="resource-item" href="https://redis.io/docs/latest/develop/data-types/streams/" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Redis Streams — Official Guide</div>
                 <div class="resource-meta">redis.io/docs/data-types/streams · Event-driven pipeline fundamentals</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.vapi.ai" target="_blank">
+            <a class="resource-item" href="https://docs.vapi.ai" target="_blank" rel="noopener noreferrer">
               <i data-lucide="phone"></i>
               <div class="resource-info">
                 <div class="resource-name">Vapi.ai — Voice Agent Platform Docs</div>
@@ -2900,7 +2920,7 @@
         <!-- MODULE PROJECT: Real-Time AI & Event-Driven Pipelines -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Real-Time AI & Event-Driven Pipelines</span>
           </div>
           <div class="proj-dual-grid">
@@ -2967,7 +2987,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item"
-              href="https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/" target="_blank">
+              href="https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="users"></i>
               <div class="resource-info">
                 <div class="resource-name">Multi AI Agent Systems with CrewAI</div>
@@ -2975,7 +2995,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://docs.crewai.com" target="_blank">
+            <a class="resource-item" href="https://docs.crewai.com" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book-open"></i>
               <div class="resource-info">
                 <div class="resource-name">CrewAI Official Documentation</div>
@@ -2983,7 +3003,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://microsoft.github.io/autogen/" target="_blank">
+            <a class="resource-item" href="https://microsoft.github.io/autogen/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="window"></i>
               <div class="resource-info">
                 <div class="resource-name">Microsoft AutoGen Documentation</div>
@@ -2991,7 +3011,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://modelcontextprotocol.io/introduction" target="_blank">
+            <a class="resource-item" href="https://modelcontextprotocol.io/introduction" target="_blank" rel="noopener noreferrer">
               <i data-lucide="battery-charging"></i>
               <div class="resource-info">
                 <div class="resource-name">Model Context Protocol (MCP) Docs</div>
@@ -3006,7 +3026,7 @@
         <!-- MODULE PROJECT: Multi-Agent Orchestration -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Multi-Agent Orchestration</span>
           </div>
           <div class="proj-dual-grid">
@@ -3070,7 +3090,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://playwright.dev/python/docs/intro" target="_blank">
+            <a class="resource-item" href="https://playwright.dev/python/docs/intro" target="_blank" rel="noopener noreferrer">
               <i data-lucide="theater"></i>
               <div class="resource-info">
                 <div class="resource-name">Playwright for Python — Official Docs</div>
@@ -3079,7 +3099,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/computer-use"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="monitor"></i>
               <div class="resource-info">
                 <div class="resource-name">Claude Computer Use — Anthropic Docs</div>
@@ -3087,7 +3107,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/browser-use/browser-use" target="_blank">
+            <a class="resource-item" href="https://github.com/browser-use/browser-use" target="_blank" rel="noopener noreferrer">
               <i data-lucide="globe"></i>
               <div class="resource-info">
                 <div class="resource-name">Browser Use — GitHub</div>
@@ -3102,7 +3122,7 @@
         <!-- MODULE PROJECT: Browser & Computer Use Agents -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Browser & Computer Use Agents</span>
           </div>
           <div class="proj-dual-grid">
@@ -3166,7 +3186,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://docs.n8n.io/courses/" target="_blank">
+            <a class="resource-item" href="https://docs.n8n.io/courses/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="shuffle"></i>
               <div class="resource-info">
                 <div class="resource-name">n8n Official Courses</div>
@@ -3174,7 +3194,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.youtube.com/@n8n-io" target="_blank">
+            <a class="resource-item" href="https://www.youtube.com/@n8n-io" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">n8n YouTube Channel</div>
@@ -3182,7 +3202,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/activepieces/activepieces" target="_blank">
+            <a class="resource-item" href="https://github.com/activepieces/activepieces" target="_blank" rel="noopener noreferrer">
               <i data-lucide="puzzle"></i>
               <div class="resource-info">
                 <div class="resource-name">Activepieces — Open-Source Automation</div>
@@ -3197,7 +3217,7 @@
         <!-- MODULE PROJECT: Workflow Automation Platforms -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Workflow Automation Platforms</span>
           </div>
           <div class="proj-dual-grid">
@@ -3261,7 +3281,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://www.deeplearning.ai/short-courses/quality-safety-llm-applications/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="shield"></i>
               <div class="resource-info">
                 <div class="resource-name">Quality & Safety for LLM Applications</div>
@@ -3269,7 +3289,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/NVIDIA/NeMo-Guardrails" target="_blank">
+            <a class="resource-item" href="https://github.com/NVIDIA/NeMo-Guardrails" target="_blank" rel="noopener noreferrer">
               <i data-lucide="lock"></i>
               <div class="resource-info">
                 <div class="resource-name">NeMo Guardrails by NVIDIA</div>
@@ -3277,7 +3297,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://e2b.dev/docs" target="_blank">
+            <a class="resource-item" href="https://e2b.dev/docs" target="_blank" rel="noopener noreferrer">
               <i data-lucide="package"></i>
               <div class="resource-info">
                 <div class="resource-name">E2B — Secure Code Execution Docs</div>
@@ -3292,7 +3312,7 @@
         <!-- MODULE PROJECT: Agent Safety & Reliability -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Agent Safety & Reliability</span>
           </div>
           <div class="proj-dual-grid">
@@ -3357,15 +3377,15 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank">
-              <i data-lucide="circle"></i>
+            <a class="resource-item" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Claude Code Documentation</div>
                 <div class="resource-meta">anthropic.com · Agentic coding in the terminal</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/princeton-nlp/SWE-agent" target="_blank">
+            <a class="resource-item" href="https://github.com/princeton-nlp/SWE-agent" target="_blank" rel="noopener noreferrer">
               <i data-lucide="bot"></i>
               <div class="resource-info">
                 <div class="resource-name">SWE-agent (Princeton NLP)</div>
@@ -3373,7 +3393,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://aider.chat/docs/usage/tutorials.html" target="_blank">
+            <a class="resource-item" href="https://aider.chat/docs/usage/tutorials.html" target="_blank" rel="noopener noreferrer">
               <i data-lucide="edit-3"></i>
               <div class="resource-info">
                 <div class="resource-name">Aider — AI Pair Programming Tutorials</div>
@@ -3388,7 +3408,7 @@
         <!-- MODULE PROJECT: Code Generation Agents -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Code Generation Agents</span>
           </div>
           <div class="proj-dual-grid">
@@ -3499,7 +3519,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- PHASE 4 FINAL PROJECT -->
@@ -3508,14 +3528,14 @@
     <div class="phase-connector">↓ Phase complete · Production & LLMOps</div>
 
     <!-- ═══════════════ PHASE 5 ═══════════════ -->
-    <div class="phase">
+    <section class="phase" id="phase-5">
       <div class="phase-header-row">
         <div class="phase-header">
           <div class="phase-number">05</div>
           <div class="phase-meta">
             <div class="phase-badge badge-practice">MLOps</div>
             <h2 class="phase-title">Production Deployment & LLMOps</h2>
-            <div class="phase-duration">⏱ Months 9–12</div>
+            <div class="phase-duration">Months 9–12</div>
           </div>
         </div><button class="proj-toggle-btn"><i data-lucide="sparkles"></i> View Phase Project</button>
       </div>
@@ -3536,7 +3556,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item"
-              href="https://www.deeplearning.ai/short-courses/serverless-llm-apps-amazon-bedrock/" target="_blank">
+              href="https://www.deeplearning.ai/short-courses/serverless-llm-apps-amazon-bedrock/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="cloud"></i>
               <div class="resource-info">
                 <div class="resource-name">Serverless LLM Apps with Amazon Bedrock</div>
@@ -3544,7 +3564,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://modal.com/docs/guide" target="_blank">
+            <a class="resource-item" href="https://modal.com/docs/guide" target="_blank" rel="noopener noreferrer">
               <i data-lucide="zap"></i>
               <div class="resource-info">
                 <div class="resource-name">Modal Docs & Tutorials</div>
@@ -3552,7 +3572,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://cloud.google.com/vertex-ai/docs" target="_blank">
+            <a class="resource-item" href="https://cloud.google.com/vertex-ai/docs" target="_blank" rel="noopener noreferrer">
               <i data-lucide="globe"></i>
               <div class="resource-info">
                 <div class="resource-name">Vertex AI Documentation</div>
@@ -3560,7 +3580,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://kubernetes.io/docs/tutorials/" target="_blank">
+            <a class="resource-item" href="https://kubernetes.io/docs/tutorials/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book-open"></i>
               <div class="resource-info">
                 <div class="resource-name">Kubernetes Official Tutorials</div>
@@ -3575,7 +3595,7 @@
         <!-- MODULE PROJECT: Cloud & Infrastructure for AI -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Cloud & Infrastructure for AI</span>
           </div>
           <div class="proj-dual-grid">
@@ -3639,7 +3659,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://madewithml.com/courses/mlops/" target="_blank">
+            <a class="resource-item" href="https://madewithml.com/courses/mlops/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="factory"></i>
               <div class="resource-info">
                 <div class="resource-name">Made With ML — MLOps Course (Anyscale)</div>
@@ -3647,7 +3667,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.dailydoseofds.com/llmops-crash-course-part-1/" target="_blank">
+            <a class="resource-item" href="https://www.dailydoseofds.com/llmops-crash-course-part-1/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="newspaper"></i>
               <div class="resource-info">
                 <div class="resource-name">LLMOps Crash Course — Daily Dose of Data Science</div>
@@ -3655,7 +3675,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://langfuse.com/docs" target="_blank">
+            <a class="resource-item" href="https://langfuse.com/docs" target="_blank" rel="noopener noreferrer">
               <i data-lucide="telescope"></i>
               <div class="resource-info">
                 <div class="resource-name">Langfuse — Open-Source LLM Observability</div>
@@ -3663,7 +3683,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/mlflow/mlflow" target="_blank">
+            <a class="resource-item" href="https://github.com/mlflow/mlflow" target="_blank" rel="noopener noreferrer">
               <i data-lucide="flask"></i>
               <div class="resource-info">
                 <div class="resource-name">MLflow — Experiment Tracking</div>
@@ -3678,7 +3698,7 @@
         <!-- MODULE PROJECT: LLMOps & Observability -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">LLMOps & Observability</span>
           </div>
           <div class="proj-dual-grid">
@@ -3743,7 +3763,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://openrouter.ai" target="_blank">
+            <a class="resource-item" href="https://openrouter.ai" target="_blank" rel="noopener noreferrer">
               <i data-lucide="banknote"></i>
               <div class="resource-info">
                 <div class="resource-name">OpenRouter — Multi-Model Cost Dashboard</div>
@@ -3752,7 +3772,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://docs.anthropic.com/en/docs/build-with-claude/reduce-latency"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="bar-chart-3"></i>
               <div class="resource-info">
                 <div class="resource-name">Anthropic — Cost Optimisation Best Practices</div>
@@ -3761,7 +3781,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://llmpricecheck.com" target="_blank">
+            <a class="resource-item" href="https://llmpricecheck.com" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book-open"></i>
               <div class="resource-info">
                 <div class="resource-name">LLM API Pricing Calculator — community tool</div>
@@ -3775,7 +3795,7 @@
         <!-- MODULE PROJECT: AI Cost Architecture & Optimisation -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">AI Cost Architecture & Optimisation</span>
           </div>
           <div class="proj-dual-grid">
@@ -3841,7 +3861,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://docs.vllm.ai" target="_blank">
+            <a class="resource-item" href="https://docs.vllm.ai" target="_blank" rel="noopener noreferrer">
               <i data-lucide="zap"></i>
               <div class="resource-info">
                 <div class="resource-name">vLLM — Fast LLM Inference & Serving</div>
@@ -3850,7 +3870,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="book-open"></i>
               <div class="resource-info">
                 <div class="resource-name">NVIDIA Container Toolkit Documentation</div>
@@ -3858,7 +3878,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://modal.com/docs/examples/vllm_inference" target="_blank">
+            <a class="resource-item" href="https://modal.com/docs/examples/vllm_inference" target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Modal — GPU Serving Quickstart</div>
@@ -3872,7 +3892,7 @@
         <!-- MODULE PROJECT: Model Serving & GPU Infrastructure -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Model Serving & GPU Infrastructure</span>
           </div>
           <div class="proj-dual-grid">
@@ -3938,7 +3958,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://www.deeplearning.ai/short-courses/finetuning-large-language-models/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="target"></i>
               <div class="resource-info">
                 <div class="resource-name">Finetuning Large Language Models</div>
@@ -3946,15 +3966,15 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://huggingface.co/learn/llm-course/chapter1/1" target="_blank">
-              <i data-lucide="smile"></i>
+            <a class="resource-item" href="https://huggingface.co/learn/llm-course/chapter1/1" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="award"></i>
               <div class="resource-info">
                 <div class="resource-name">Hugging Face LLM Course</div>
                 <div class="resource-meta">Training, fine-tuning, PEFT, deployment · Free</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://mlabonne.github.io/blog/" target="_blank">
+            <a class="resource-item" href="https://mlabonne.github.io/blog/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="notebook"></i>
               <div class="resource-info">
                 <div class="resource-name">Maxime Labonne's LLM Blog + Notebooks</div>
@@ -3962,7 +3982,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/unslothai/unsloth" target="_blank">
+            <a class="resource-item" href="https://github.com/unslothai/unsloth" target="_blank" rel="noopener noreferrer">
               <i data-lucide="rocket"></i>
               <div class="resource-info">
                 <div class="resource-name">Unsloth — Fast Fine-Tuning Notebooks</div>
@@ -3977,7 +3997,7 @@
         <!-- MODULE PROJECT: Fine-Tuning & Model Customization -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Fine-Tuning & Model Customization</span>
           </div>
           <div class="proj-dual-grid">
@@ -4041,7 +4061,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://fastapi.tiangolo.com/advanced/" target="_blank">
+            <a class="resource-item" href="https://fastapi.tiangolo.com/advanced/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="zap"></i>
               <div class="resource-info">
                 <div class="resource-name">FastAPI Advanced User Guide</div>
@@ -4049,7 +4069,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.youtube.com/@ArjanCodes" target="_blank">
+            <a class="resource-item" href="https://www.youtube.com/@ArjanCodes" target="_blank" rel="noopener noreferrer">
               <i data-lucide="play"></i>
               <div class="resource-info">
                 <div class="resource-name">ArjanCodes — Clean Python Architecture</div>
@@ -4057,7 +4077,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/tiangolo/fastapi" target="_blank">
+            <a class="resource-item" href="https://github.com/tiangolo/fastapi" target="_blank" rel="noopener noreferrer">
               <i data-lucide="package"></i>
               <div class="resource-info">
                 <div class="resource-name">FastAPI GitHub — Examples & Issues</div>
@@ -4072,7 +4092,7 @@
         <!-- MODULE PROJECT: Scalable AI API Design -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Scalable AI API Design</span>
           </div>
           <div class="proj-dual-grid">
@@ -4184,7 +4204,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- PHASE 5 FINAL PROJECT -->
@@ -4193,14 +4213,14 @@
     <div class="phase-connector">↓ Phase complete · Specialization & capstone</div>
 
     <!-- ═══════════════ PHASE 6 ═══════════════ -->
-    <div class="phase">
+    <section class="phase" id="phase-6">
       <div class="phase-header-row">
         <div class="phase-header">
           <div class="phase-number">06</div>
           <div class="phase-meta">
             <div class="phase-badge badge-mastery">Mastery</div>
             <h2 class="phase-title">Specialization, System Design & Capstone</h2>
-            <div class="phase-duration">⏱ Months 12–18</div>
+            <div class="phase-duration">Months 12–18</div>
           </div>
         </div><button class="proj-toggle-btn"><i data-lucide="sparkles"></i> View Phase Project</button>
       </div>
@@ -4221,7 +4241,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item"
-              href="https://www.deeplearning.ai/short-courses/building-multimodal-search-and-rag/" target="_blank">
+              href="https://www.deeplearning.ai/short-courses/building-multimodal-search-and-rag/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="palette"></i>
               <div class="resource-info">
                 <div class="resource-name">Building Multimodal Search and RAG</div>
@@ -4229,7 +4249,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/chiphuyen/aie-book" target="_blank">
+            <a class="resource-item" href="https://github.com/chiphuyen/aie-book" target="_blank" rel="noopener noreferrer">
               <i data-lucide="folder"></i>
               <div class="resource-info">
                 <div class="resource-name">AI Engineering GitHub Companion (Chip Huyen)</div>
@@ -4237,7 +4257,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/patchy631/ai-engineering-hub" target="_blank">
+            <a class="resource-item" href="https://github.com/patchy631/ai-engineering-hub" target="_blank" rel="noopener noreferrer">
               <i data-lucide="tool"></i>
               <div class="resource-info">
                 <div class="resource-name">AI Engineering Hub — 93+ Free Projects</div>
@@ -4252,7 +4272,7 @@
         <!-- MODULE PROJECT: Capstone Project Resources -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Capstone Project Resources</span>
           </div>
           <div class="proj-dual-grid">
@@ -4319,7 +4339,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://goodfirstissue.dev" target="_blank">
+            <a class="resource-item" href="https://goodfirstissue.dev" target="_blank" rel="noopener noreferrer">
               <i data-lucide="star"></i>
               <div class="resource-info">
                 <div class="resource-name">First Timers Only — Good First Issue Finder</div>
@@ -4327,7 +4347,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://opensource.guide/how-to-contribute/" target="_blank">
+            <a class="resource-item" href="https://opensource.guide/how-to-contribute/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="book"></i>
               <div class="resource-info">
                 <div class="resource-name">How to Contribute to Open Source — GitHub Docs</div>
@@ -4335,7 +4355,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/kbressem/medAlpaca" target="_blank">
+            <a class="resource-item" href="https://github.com/kbressem/medAlpaca" target="_blank" rel="noopener noreferrer">
               <i data-lucide="hospital"></i>
               <div class="resource-info">
                 <div class="resource-name">medAlpaca — Medical LLM OSS Project</div>
@@ -4349,7 +4369,7 @@
         <!-- MODULE PROJECT: Open-Source Contribution Guide -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Open-Source Contribution Guide</span>
           </div>
           <div class="proj-dual-grid">
@@ -4413,7 +4433,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://huyenchip.com/machine-learning-systems-design/toc.html"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="building"></i>
               <div class="resource-info">
                 <div class="resource-name">ML Systems Design — Chip Huyen (Stanford)</div>
@@ -4422,7 +4442,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://a16z.com/emerging-architectures-for-llm-applications/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="bar-chart-3"></i>
               <div class="resource-info">
                 <div class="resource-name">a16z — Emerging Architectures for LLM Apps</div>
@@ -4431,7 +4451,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://github.com/EthicalML/awesome-agentic-engineering-resources"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="star"></i>
               <div class="resource-info">
                 <div class="resource-name">Awesome Agentic Engineering Resources</div>
@@ -4446,7 +4466,7 @@
         <!-- MODULE PROJECT: AI System Design -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">AI System Design</span>
           </div>
           <div class="proj-dual-grid">
@@ -4511,7 +4531,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://www.deeplearning.ai/short-courses/ai-safety-deeplearning/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="shield"></i>
               <div class="resource-info">
                 <div class="resource-name">AI Safety Fundamentals — DeepLearning.AI</div>
@@ -4519,15 +4539,15 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.anthropic.com/responsible-scaling-policy" target="_blank">
-              <i data-lucide="circle"></i>
+            <a class="resource-item" href="https://www.anthropic.com/responsible-scaling-policy" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Anthropic's Responsible Scaling Policy</div>
                 <div class="resource-meta">Industry-standard AI safety framework</div>
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://arxiv.org/abs/2307.09009" target="_blank">
+            <a class="resource-item" href="https://arxiv.org/abs/2307.09009" target="_blank" rel="noopener noreferrer">
               <i data-lucide="scroll"></i>
               <div class="resource-info">
                 <div class="resource-name">The Prompt Report — Schulhoff et al. (2024)</div>
@@ -4542,7 +4562,7 @@
         <!-- MODULE PROJECT: AI Ethics & Governance -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">AI Ethics & Governance</span>
           </div>
           <div class="proj-dual-grid">
@@ -4592,17 +4612,74 @@
           </div>
         </div>
       </div>
-    </div>
+      <!-- PHASE 6 FINAL PROJECT -->
+      <div class="proj-phase-block">
+        <div class="proj-phase-eyebrow">
+          <span class="proj-phase-num">Phase 6</span>
+          <span class="proj-phase-label">Final Project — Phase 6</span>
+        </div>
+        <div class="proj-dual-grid">
+          <div class="proj-card proj-general">
+            <div class="proj-card-header"><span class="proj-type-badge proj-badge-general">⬡ General</span>
+              <h4 class="proj-card-title">Open-Source AI Engineering Framework</h4>
+            </div>
+            <p class="proj-card-desc">Open-source your best tools as a reusable AI engineering framework — clean
+              abstractions, plugin system, MkDocs documentation site, contribution guide, and a GitHub launch post aiming
+              for 100+ stars.</p>
+            <div class="proj-section-label">What you'll build</div>
+            <ul class="proj-skill-list">
+              <li>Clean LLM provider abstraction</li>
+              <li>Plugin system for tools + retrievers</li>
+              <li>MkDocs documentation site</li>
+              <li>Contribution guide + issue templates</li>
+              <li>GitHub launch strategy</li>
+            </ul>
+            <div class="proj-section-label">Stack</div>
+            <div class="proj-stack-row">
+              <span class="proj-stack-tag">Python</span>
+              <span class="proj-stack-tag">MkDocs</span>
+              <span class="proj-stack-tag">GitHub</span>
+              <span class="proj-stack-tag">PyPI</span>
+              <span class="proj-stack-tag">LangChain</span>
+            </div>
+          </div>
+          <div class="proj-card proj-health">
+            <div class="proj-card-header"><span class="proj-type-badge proj-badge-health">🩺 Healthcare</span>
+              <h4 class="proj-card-title">ClinicalAI Open-Source Toolkit</h4>
+            </div>
+            <p class="proj-card-desc">Open-source your clinical AI tools as a healthcare Python framework — clinical RAG,
+              safety evaluators, SBAR generators, HIPAA compliance utilities — with a MkDocs site, clinical use-case
+              gallery, and launch targeting nursing informatics communities.</p>
+            <div class="proj-section-label">What you'll build</div>
+            <ul class="proj-skill-list">
+              <li>Clinical RAG + safety eval as pip package</li>
+              <li>HIPAA implementation guidance docs</li>
+              <li>Clinical use-case gallery (10+ examples)</li>
+              <li>MkDocs with clinical API reference</li>
+              <li>Launch to nursing informatics + digital health communities</li>
+            </ul>
+            <div class="proj-section-label">Stack</div>
+            <div class="proj-stack-row">
+              <span class="proj-stack-tag">Python</span>
+              <span class="proj-stack-tag">MkDocs</span>
+              <span class="proj-stack-tag">GitHub</span>
+              <span class="proj-stack-tag">PyPI</span>
+              <span class="proj-stack-tag">LlamaIndex</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ═══════════════ PHASE 7 ═══════════════ -->
-    <div class="phase">
+    <section class="phase" id="phase-7">
       <div class="phase-header-row">
         <div class="phase-header">
-          <div class="phase-number">7</div>
+          <div class="phase-number">07</div>
           <div class="phase-meta">
             <div class="phase-badge badge-specialist">🏥 Healthcare Specialization</div>
             <h2 class="phase-title">Healthcare AI, HIPAA Compliance & Clinical Systems</h2>
-            <div class="phase-duration">⏱ Months 15–17 · Your niche. Your moat. Your irreplaceable advantage.</div>
+            <div class="phase-duration">Months 15–17 · Your niche. Your moat. Your irreplaceable advantage.</div>
           </div>
         </div><button class="proj-toggle-btn"><i data-lucide="sparkles"></i> View Phase Project</button>
       </div>
@@ -4623,7 +4700,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://www.hhs.gov/hipaa/for-professionals/security/guidance/index.html"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="clipboard"></i>
               <div class="resource-info">
                 <div class="resource-name">HHS.gov — HIPAA Security Rule Technical Safeguards</div>
@@ -4631,7 +4708,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://hl7.org/fhir/R4/" target="_blank">
+            <a class="resource-item" href="https://hl7.org/fhir/R4/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="flame"></i>
               <div class="resource-info">
                 <div class="resource-name">HL7 FHIR R4 Documentation</div>
@@ -4641,7 +4718,7 @@
             </a>
             <a class="resource-item"
               href="https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="banknote"></i>
               <div class="resource-info">
                 <div class="resource-name">FDA — AI/ML Software as a Medical Device Framework</div>
@@ -4649,8 +4726,8 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://huggingface.co/models?search=clinical" target="_blank">
-              <i data-lucide="smile"></i>
+            <a class="resource-item" href="https://huggingface.co/models?search=clinical" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="award"></i>
               <div class="resource-info">
                 <div class="resource-name">Hugging Face — Clinical NLP Models Hub</div>
                 <div class="resource-meta">huggingface.co/models?pipeline_tag=text-classification&search=clinical ·
@@ -4664,7 +4741,7 @@
         <!-- MODULE PROJECT: Healthcare AI & HIPAA Compliance -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Healthcare AI & HIPAA Compliance</span>
           </div>
           <div class="proj-dual-grid">
@@ -4730,7 +4807,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://github.com/allenai/scispacy" target="_blank">
+            <a class="resource-item" href="https://github.com/allenai/scispacy" target="_blank" rel="noopener noreferrer">
               <i data-lucide="microscope"></i>
               <div class="resource-info">
                 <div class="resource-name">scispaCy — Scientific NLP Library</div>
@@ -4738,7 +4815,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/microsoft/presidio" target="_blank">
+            <a class="resource-item" href="https://github.com/microsoft/presidio" target="_blank" rel="noopener noreferrer">
               <i data-lucide="shield"></i>
               <div class="resource-info">
                 <div class="resource-name">Microsoft Presidio — PHI De-Identification</div>
@@ -4746,7 +4823,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://physionet.org/content/mimiciv/" target="_blank">
+            <a class="resource-item" href="https://physionet.org/content/mimiciv/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="bar-chart-3"></i>
               <div class="resource-info">
                 <div class="resource-name">MIMIC-IV — Free Clinical Dataset (with credentialing)</div>
@@ -4754,7 +4831,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/medspacy/medspacy" target="_blank">
+            <a class="resource-item" href="https://github.com/medspacy/medspacy" target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">MedSpacy — Clinical NLP Toolkit</div>
@@ -4768,7 +4845,7 @@
         <!-- MODULE PROJECT: Clinical NLP & Medical Text Processing -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Clinical NLP & Medical Text Processing</span>
           </div>
           <div class="proj-dual-grid">
@@ -4834,7 +4911,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://smarthealthit.org" target="_blank">
+            <a class="resource-item" href="https://smarthealthit.org" target="_blank" rel="noopener noreferrer">
               <i data-lucide="hospital"></i>
               <div class="resource-info">
                 <div class="resource-name">SMART Health IT — FHIR Tutorials & Sandboxes</div>
@@ -4842,7 +4919,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://hapifhir.io" target="_blank">
+            <a class="resource-item" href="https://hapifhir.io" target="_blank" rel="noopener noreferrer">
               <i data-lucide="flame"></i>
               <div class="resource-info">
                 <div class="resource-name">HAPI FHIR — Open-Source FHIR Server</div>
@@ -4850,7 +4927,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/beda-software/fhirpy" target="_blank">
+            <a class="resource-item" href="https://github.com/beda-software/fhirpy" target="_blank" rel="noopener noreferrer">
               <i data-lucide="terminal"></i>
               <div class="resource-info">
                 <div class="resource-name">fhirpy — Python FHIR Client Library</div>
@@ -4858,7 +4935,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.hl7.org/training/fhir-fundamentals.cfm" target="_blank">
+            <a class="resource-item" href="https://www.hl7.org/training/fhir-fundamentals.cfm" target="_blank" rel="noopener noreferrer">
               <i data-lucide="books"></i>
               <div class="resource-info">
                 <div class="resource-name">HL7 FHIR Fundamentals Course</div>
@@ -4872,7 +4949,7 @@
         <!-- MODULE PROJECT: EHR Integration & FHIR APIs -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">EHR Integration & FHIR APIs</span>
           </div>
           <div class="proj-dual-grid">
@@ -4938,7 +5015,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://www.who.int/publications/i/item/9789240029200" target="_blank">
+            <a class="resource-item" href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener noreferrer">
               <i data-lucide="scroll"></i>
               <div class="resource-info">
                 <div class="resource-name">WHO — Ethics & Governance of AI for Health</div>
@@ -4946,7 +5023,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://ai.nejm.org" target="_blank">
+            <a class="resource-item" href="https://ai.nejm.org" target="_blank" rel="noopener noreferrer">
               <i data-lucide="microscope"></i>
               <div class="resource-info">
                 <div class="resource-name">NEJM AI — Clinical AI Evaluation Best Practices</div>
@@ -4955,7 +5032,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://www.equator-network.org/reporting-guidelines/tripod-ai/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="bar-chart-3"></i>
               <div class="resource-info">
                 <div class="resource-name">TRIPOD+AI — Reporting Guidelines for Clinical AI</div>
@@ -4969,7 +5046,7 @@
         <!-- MODULE PROJECT: Clinical AI Validation & Evaluation -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Clinical AI Validation & Evaluation</span>
           </div>
           <div class="proj-dual-grid">
@@ -5036,7 +5113,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://aws.amazon.com/compliance/hipaa-eligible-services-reference/"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="cloud"></i>
               <div class="resource-info">
                 <div class="resource-name">AWS HIPAA Eligible Services Reference</div>
@@ -5046,7 +5123,7 @@
               <span class="free-tag">Free</span>
             </a>
             <a class="resource-item" href="https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="clipboard"></i>
               <div class="resource-info">
                 <div class="resource-name">HHS — Breach Notification Rule</div>
@@ -5054,7 +5131,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://microsoft.github.io/presidio/" target="_blank">
+            <a class="resource-item" href="https://microsoft.github.io/presidio/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="wrench"></i>
               <div class="resource-info">
                 <div class="resource-name">Presidio — End-to-End PII/PHI Anonymization</div>
@@ -5068,7 +5145,7 @@
         <!-- MODULE PROJECT: Healthcare AI Privacy & Compliance Architecture -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Healthcare AI Privacy & Compliance Architecture</span>
           </div>
           <div class="proj-dual-grid">
@@ -5120,9 +5197,6 @@
         </div>
       </div>
 
-      d HAI — AI in Healthcare Report
-    </div>
-    </div>
 
 
     <!-- PHASE 7 FINAL PROJECT -->
@@ -5182,19 +5256,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="phase-connector">↓ Phase 7 complete · Career, business & launch</div>
 
     <!-- ═══════════════ PHASE 8 ═══════════════ -->
-    <div class="phase">
+    <section class="phase" id="phase-8">
       <div class="phase-header-row">
         <div class="phase-header">
-          <div class="phase-number">8</div>
+          <div class="phase-number">08</div>
           <div class="phase-meta">
             <div class="phase-badge badge-mastery">🚀 Career & Business</div>
             <h2 class="phase-title">Career Preparation, Consulting & Launch</h2>
-            <div class="phase-duration">⏱ Months 17–18 · Convert 18 months of work into income and opportunity.</div>
+            <div class="phase-duration">Months 17–18 · Convert 18 months of work into income and opportunity.</div>
           </div>
         </div><button class="proj-toggle-btn"><i data-lucide="sparkles"></i> View Phase Project</button>
       </div>
@@ -5214,7 +5288,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://www.levels.fyi" target="_blank">
+            <a class="resource-item" href="https://www.levels.fyi" target="_blank" rel="noopener noreferrer">
               <i data-lucide="dollar-sign"></i>
               <div class="resource-info">
                 <div class="resource-name">Levels.fyi — AI Engineer Salary Data</div>
@@ -5222,7 +5296,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/alirezadir/Machine-Learning-Interviews" target="_blank">
+            <a class="resource-item" href="https://github.com/alirezadir/Machine-Learning-Interviews" target="_blank" rel="noopener noreferrer">
               <i data-lucide="target"></i>
               <div class="resource-info">
                 <div class="resource-name">Grokking the ML Interview — Free Preview</div>
@@ -5230,7 +5304,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://interviewing.io" target="_blank">
+            <a class="resource-item" href="https://interviewing.io" target="_blank" rel="noopener noreferrer">
               <i data-lucide="bar-chart-3"></i>
               <div class="resource-info">
                 <div class="resource-name">interviewing.io — Free AI/ML Interview Practice</div>
@@ -5238,7 +5312,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.himss.org/resources" target="_blank">
+            <a class="resource-item" href="https://www.himss.org/resources" target="_blank" rel="noopener noreferrer">
               <i data-lucide="hospital"></i>
               <div class="resource-info">
                 <div class="resource-name">HIMSS — Health Informatics Career Resources</div>
@@ -5252,7 +5326,7 @@
         <!-- MODULE PROJECT: Career Preparation & Portfolio Strategy -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Career Preparation & Portfolio Strategy</span>
           </div>
           <div class="proj-dual-grid">
@@ -5319,7 +5393,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://developers.google.com/tech-writing" target="_blank">
+            <a class="resource-item" href="https://developers.google.com/tech-writing" target="_blank" rel="noopener noreferrer">
               <i data-lucide="edit-3"></i>
               <div class="resource-info">
                 <div class="resource-name">Google Technical Writing Courses — Free</div>
@@ -5327,7 +5401,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://stripe.com/docs" target="_blank">
+            <a class="resource-item" href="https://stripe.com/docs" target="_blank" rel="noopener noreferrer">
               <i data-lucide="pen-tool"></i>
               <div class="resource-info">
                 <div class="resource-name">Stripe's API Documentation — Case Study</div>
@@ -5335,7 +5409,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.swyx.io/learn-in-public" target="_blank">
+            <a class="resource-item" href="https://www.swyx.io/learn-in-public" target="_blank" rel="noopener noreferrer">
               <i data-lucide="newspaper"></i>
               <div class="resource-info">
                 <div class="resource-name">Swyx — Learn in Public Essay</div>
@@ -5349,7 +5423,7 @@
         <!-- MODULE PROJECT: Building in Public & Personal Brand -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Building in Public & Personal Brand</span>
           </div>
           <div class="proj-dual-grid">
@@ -5414,7 +5488,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://www.toptal.com" target="_blank">
+            <a class="resource-item" href="https://www.toptal.com" target="_blank" rel="noopener noreferrer">
               <i data-lucide="clipboard"></i>
               <div class="resource-info">
                 <div class="resource-name">Toptal — AI Engineering Freelance Platform</div>
@@ -5422,7 +5496,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.upwork.com/resources/" target="_blank">
+            <a class="resource-item" href="https://www.upwork.com/resources/" target="_blank" rel="noopener noreferrer">
               <i data-lucide="briefcase"></i>
               <div class="resource-info">
                 <div class="resource-name">Upwork AI Guide for Freelancers</div>
@@ -5430,7 +5504,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="http://paulgraham.com/wealth.html" target="_blank">
+            <a class="resource-item" href="http://paulgraham.com/wealth.html" target="_blank" rel="noopener noreferrer">
               <i data-lucide="file-text"></i>
               <div class="resource-info">
                 <div class="resource-name">Paul Graham — How to Get Consulting Clients</div>
@@ -5444,7 +5518,7 @@
         <!-- MODULE PROJECT: Freelancing & AI Consulting Business -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Freelancing & AI Consulting Business</span>
           </div>
           <div class="proj-dual-grid">
@@ -5509,7 +5583,7 @@
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
             <a class="resource-item" href="https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               <i data-lucide="book"></i>
               <div class="resource-info">
                 <div class="resource-name">Architecture Decision Records — Michael Nygard's Original</div>
@@ -5517,7 +5591,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://developers.google.com/tech-writing/two" target="_blank">
+            <a class="resource-item" href="https://developers.google.com/tech-writing/two" target="_blank" rel="noopener noreferrer">
               <i data-lucide="clipboard"></i>
               <div class="resource-info">
                 <div class="resource-name">Google — Technical Writing for Engineers</div>
@@ -5525,7 +5599,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://www.amia.org" target="_blank">
+            <a class="resource-item" href="https://www.amia.org" target="_blank" rel="noopener noreferrer">
               <i data-lucide="hospital"></i>
               <div class="resource-info">
                 <div class="resource-name">AMIA — Clinical Informatics Communication Resources</div>
@@ -5539,7 +5613,7 @@
         <!-- MODULE PROJECT: Technical Communication & Stakeholder Management -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Technical Communication & Stakeholder Management</span>
           </div>
           <div class="proj-dual-grid">
@@ -5602,7 +5676,7 @@
           </div>
           <div class="module-resources">
             <div class="resources-label">🆓 Free Resources</div>
-            <a class="resource-item" href="https://www.notion.so/templates" target="_blank">
+            <a class="resource-item" href="https://www.notion.so/templates" target="_blank" rel="noopener noreferrer">
               <i data-lucide="check-circle"></i>
               <div class="resource-info">
                 <div class="resource-name">Notion — Free Study Tracker Templates</div>
@@ -5610,7 +5684,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://github.com/features/project-management" target="_blank">
+            <a class="resource-item" href="https://github.com/features/project-management" target="_blank" rel="noopener noreferrer">
               <i data-lucide="target"></i>
               <div class="resource-info">
                 <div class="resource-name">GitHub Projects — Free Progress Tracking</div>
@@ -5618,7 +5692,7 @@
               </div>
               <span class="free-tag">Free</span>
             </a>
-            <a class="resource-item" href="https://discord.gg/langchain" target="_blank">
+            <a class="resource-item" href="https://discord.gg/langchain" target="_blank" rel="noopener noreferrer">
               <i data-lucide="users"></i>
               <div class="resource-info">
                 <div class="resource-name">Study Hall — AI Engineering Study Groups</div>
@@ -5632,7 +5706,7 @@
         <!-- MODULE PROJECT: Weekly Study Schedule & Progress Tracking -->
         <div class="proj-module-block">
           <div class="proj-module-eyebrow">
-            <span class="proj-eyebrow-label">✦ Module Project</span>
+            <span class="proj-eyebrow-label"><span aria-hidden="true">✦</span> Module Project</span>
             <span class="proj-eyebrow-after">Weekly Study Schedule & Progress Tracking</span>
           </div>
           <div class="proj-dual-grid">
@@ -5740,16 +5814,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- ═══════════════ HEALTHCARE AI RESOURCES ═══════════════ -->
     <div class="bonus-section">
-      <h2 class="section-heading">🏥 Healthcare AI — Specialist Resources</h2>
+      <h2 class="section-heading">Healthcare AI — Specialist Resources</h2>
       <div class="section-sub">The clinical AI stack — datasets, models, frameworks, and communities specific to your
         niche.</div>
       <div class="reading-grid">
-        <a class="reading-card" href="https://physionet.org/content/mimiciv/" target="_blank">
+        <a class="reading-card" href="https://physionet.org/content/mimiciv/" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="dna"></i>
             <div>
@@ -5760,9 +5834,9 @@
           <div class="reading-desc">The gold-standard clinical NLP dataset — real de-identified ICU records. Used in
             every serious clinical AI research paper. Get credentialed early.</div>
         </a>
-        <a class="reading-card" href="https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT" target="_blank">
+        <a class="reading-card" href="https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
-            <i data-lucide="smile"></i>
+            <i data-lucide="award"></i>
             <div>
               <div class="reading-title">ClinicalBERT — Clinical NLP Foundation Model</div>
               <div class="reading-source">Hugging Face · Free download & inference</div>
@@ -5771,9 +5845,9 @@
           <div class="reading-desc">BERT pre-trained on clinical notes from MIMIC-III. The baseline model for any
             clinical text classification, NER, or embedding task.</div>
         </a>
-        <a class="reading-card" href="https://github.com/kbressem/medAlpaca" target="_blank">
+        <a class="reading-card" href="https://github.com/kbressem/medAlpaca" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
-            <i data-lucide="bug"></i>
+            <i data-lucide="server"></i>
             <div>
               <div class="reading-title">medAlpaca — Open Medical LLMs</div>
               <div class="reading-source">GitHub · Apache 2.0 License · Free</div>
@@ -5783,7 +5857,7 @@
             clinical fine-tuning experiments and the go-to OSS contribution target.</div>
         </a>
         <a class="reading-card"
-          href="https://www.healthit.gov/topic/scientific-initiatives/pcor/fhir-research-resources" target="_blank">
+          href="https://www.healthit.gov/topic/scientific-initiatives/pcor/fhir-research-resources" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="flame"></i>
             <div>
@@ -5794,7 +5868,7 @@
           <div class="reading-desc">Official US government FHIR resources, sandboxes, and implementation guides. The
             authoritative source for interoperability standards.</div>
         </a>
-        <a class="reading-card" href="https://www.amia.org/publications/journals" target="_blank">
+        <a class="reading-card" href="https://www.amia.org/publications/journals" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="newspaper"></i>
             <div>
@@ -5805,67 +5879,67 @@
           <div class="reading-desc">The premier clinical informatics journal. Reading here keeps you current on what
             clinical AI actually looks like in real hospital deployments.</div>
         </a>
-        <a class="reading-card" href="https://hai.stanford.edu/ai-index" target="_blank">
+        <a class="reading-card" href="https://hai.stanford.edu/ai-index" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="bar-chart-3"></i>
             <div>
-              <div class="reading-title">Stanfor<div class="reading-source">hai.stanford.edu · Annual report, free PDF
-                </div>
-              </div>
+              <div class="reading-title">Stanford HAI — AI in Healthcare Report</div>
+              <div class="reading-source">hai.stanford.edu · Annual report, free PDF</div>
             </div>
-            <div class="reading-desc">Annual state-of-AI-in-healthcare report from Stanford's Human-Centered AI
-              Institute. Essential for understanding the landscape before pitching to clinical stakeholders.</div>
+          </div>
+          <div class="reading-desc">Annual state-of-AI-in-healthcare report from Stanford's Human-Centered AI
+            Institute. Essential for understanding the landscape before pitching to clinical stakeholders.</div>
         </a>
       </div>
     </div>
 
     <!-- ═══════════════ CAREER RESOURCES ═══════════════ -->
     <div class="bonus-section">
-      <h2 class="section-heading">💼 Career & Business Resources</h2>
-      <div class="section-sub">Converting skills into income — the resources that bridge learning and earning.</div>
+      <h2 class="section-heading">Career & Business Resources</h2>
+      <div class="section-sub">Resources that convert skills into income — interviews, salary data, portfolio strategy, and community.</div>
       <div class="bonus-grid">
-        <a class="bonus-card" href="https://www.levels.fyi" target="_blank">
-          <i data-lucide="dollar-sign"></i>
+        <a class="bonus-card" href="https://www.levels.fyi" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="dollar-sign"></i></div>
           <div>
             <div class="bonus-name">Levels.fyi</div>
             <div class="bonus-desc">Real salary data for AI engineering roles by company, level, and location. Know your
               worth before any negotiation.</div>
           </div>
         </a>
-        <a class="bonus-card" href="https://github.com/alirezadir/Machine-Learning-Interviews" target="_blank">
-          <i data-lucide="target"></i>
+        <a class="bonus-card" href="https://github.com/alirezadir/Machine-Learning-Interviews" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="target"></i></div>
           <div>
             <div class="bonus-name">ML Interviews Book — GitHub</div>
             <div class="bonus-desc">Free open-source ML interview preparation guide. System design, coding, ML
               fundamentals — all the patterns that appear in AI engineering screens.</div>
           </div>
         </a>
-        <a class="bonus-card" href="https://www.swyx.io/learn-in-public" target="_blank">
-          <i data-lucide="megaphone"></i>
+        <a class="bonus-card" href="https://www.swyx.io/learn-in-public" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="megaphone"></i></div>
           <div>
             <div class="bonus-name">Learn in Public — Swyx</div>
             <div class="bonus-desc">The essay that defines building-in-public strategy. Write about what you learn
               weekly. Start now, not at Month 18.</div>
           </div>
         </a>
-        <a class="bonus-card" href="https://developers.google.com/tech-writing" target="_blank">
-          <i data-lucide="pen-tool"></i>
+        <a class="bonus-card" href="https://developers.google.com/tech-writing" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="pen-tool"></i></div>
           <div>
             <div class="bonus-name">Google Technical Writing Course</div>
             <div class="bonus-desc">Two free courses with certificate. The clearest you write, the more people trust
               your AI systems. Communication is a clinical AI engineering skill.</div>
           </div>
         </a>
-        <a class="bonus-card" href="https://pair.withgoogle.com/guidebook/" target="_blank">
-          <i data-lucide="palette"></i>
+        <a class="bonus-card" href="https://pair.withgoogle.com/guidebook/" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="palette"></i></div>
           <div>
             <div class="bonus-name">Google PAIR Guidebook</div>
             <div class="bonus-desc">People + AI Research design patterns. Your UX background + this guidebook = your
               unique edge in designing trustworthy clinical AI interfaces.</div>
           </div>
         </a>
-        <a class="bonus-card" href="https://www.himss.org" target="_blank">
-          <i data-lucide="hospital"></i>
+        <a class="bonus-card" href="https://www.himss.org" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="hospital"></i></div>
           <div>
             <div class="bonus-name">HIMSS — Healthcare IT Community</div>
             <div class="bonus-desc">The largest global health informatics community. Join now. The network you build in
@@ -5876,72 +5950,14 @@
     </div>
 
 
-    <!-- PHASE 6 FINAL PROJECT -->
-    <div class="proj-phase-block">
-      <div class="proj-phase-eyebrow">
-        <span class="proj-phase-num">Phase 6</span>
-        <span class="proj-phase-label">Final Project — Phase 6</span>
-      </div>
-      <div class="proj-dual-grid">
-        <div class="proj-card proj-general">
-          <div class="proj-card-header"><span class="proj-type-badge proj-badge-general">⬡ General</span>
-            <h4 class="proj-card-title">Open-Source AI Engineering Framework</h4>
-          </div>
-          <p class="proj-card-desc">Open-source your best tools as a reusable AI engineering framework — clean
-            abstractions, plugin system, MkDocs documentation site, contribution guide, and a GitHub launch post aiming
-            for 100+ stars.</p>
-          <div class="proj-section-label">What you'll build</div>
-          <ul class="proj-skill-list">
-            <li>Clean LLM provider abstraction</li>
-            <li>Plugin system for tools + retrievers</li>
-            <li>MkDocs documentation site</li>
-            <li>Contribution guide + issue templates</li>
-            <li>GitHub launch strategy</li>
-          </ul>
-          <div class="proj-section-label">Stack</div>
-          <div class="proj-stack-row">
-            <span class="proj-stack-tag">Python</span>
-            <span class="proj-stack-tag">MkDocs</span>
-            <span class="proj-stack-tag">GitHub</span>
-            <span class="proj-stack-tag">PyPI</span>
-            <span class="proj-stack-tag">LangChain</span>
-          </div>
-        </div>
-        <div class="proj-card proj-health">
-          <div class="proj-card-header"><span class="proj-type-badge proj-badge-health">🩺 Healthcare</span>
-            <h4 class="proj-card-title">ClinicalAI Open-Source Toolkit</h4>
-          </div>
-          <p class="proj-card-desc">Open-source your clinical AI tools as a healthcare Python framework — clinical RAG,
-            safety evaluators, SBAR generators, HIPAA compliance utilities — with a MkDocs site, clinical use-case
-            gallery, and launch targeting nursing informatics communities.</p>
-          <div class="proj-section-label">What you'll build</div>
-          <ul class="proj-skill-list">
-            <li>Clinical RAG + safety eval as pip package</li>
-            <li>HIPAA implementation guidance docs</li>
-            <li>Clinical use-case gallery (10+ examples)</li>
-            <li>MkDocs with clinical API reference</li>
-            <li>Launch to nursing informatics + digital health communities</li>
-          </ul>
-          <div class="proj-section-label">Stack</div>
-          <div class="proj-stack-row">
-            <span class="proj-stack-tag">Python</span>
-            <span class="proj-stack-tag">MkDocs</span>
-            <span class="proj-stack-tag">GitHub</span>
-            <span class="proj-stack-tag">PyPI</span>
-            <span class="proj-stack-tag">LlamaIndex</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- ═══════════════ FREE BOOK REPLACEMENTS ═══════════════ -->
     <div class="bonus-section">
-      <h2 class="section-heading">📖 Free Reading (Book Replacements)</h2>
-      <div class="section-sub">Can't afford the books? These free resources cover the same ground — and in some cases go
+      <h2 class="section-heading">Free Reading — Book Replacements</h2>
+      <div class="section-sub">Every foundational book replaced with a free resource that covers the same ground — and in many cases goes
         deeper.</div>
       <div class="reading-grid">
 
-        <a class="reading-card" href="https://huyenchip.com/machine-learning-systems-design/toc.html" target="_blank">
+        <a class="reading-card" href="https://huyenchip.com/machine-learning-systems-design/toc.html" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="building"></i>
             <div>
@@ -5953,7 +5969,7 @@
             book. Covers data pipelines, deployment, monitoring, and reliability for ML systems.</div>
         </a>
 
-        <a class="reading-card" href="https://eugeneyan.com/writing/llm-patterns/" target="_blank">
+        <a class="reading-card" href="https://eugeneyan.com/writing/llm-patterns/" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="puzzle"></i>
             <div>
@@ -5965,7 +5981,7 @@
             RAG, fine-tuning, caching, guardrails, and feedback loops in one place.</div>
         </a>
 
-        <a class="reading-card" href="https://github.com/stas00/ml-engineering" target="_blank">
+        <a class="reading-card" href="https://github.com/stas00/ml-engineering" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="settings"></i>
             <div>
@@ -5977,7 +5993,7 @@
             infrastructure, distributed training, model serving, and LLM internals from an HF engineer.</div>
         </a>
 
-        <a class="reading-card" href="https://mlabonne.github.io/blog/" target="_blank">
+        <a class="reading-card" href="https://mlabonne.github.io/blog/" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="notebook"></i>
             <div>
@@ -5989,7 +6005,7 @@
             fine-tuning notebooks, model merging guides, and LLM roadmap are free on his blog.</div>
         </a>
 
-        <a class="reading-card" href="https://www.anthropic.com/research" target="_blank">
+        <a class="reading-card" href="https://www.anthropic.com/research" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="microscope"></i>
             <div>
@@ -6001,7 +6017,7 @@
             agents, and safety — straight from the source, all free.</div>
         </a>
 
-        <a class="reading-card" href="https://newsletter.pragmaticengineer.com/p/ai-engineering" target="_blank">
+        <a class="reading-card" href="https://newsletter.pragmaticengineer.com/p/ai-engineering" target="_blank" rel="noopener noreferrer">
           <div class="reading-card-top">
             <i data-lucide="newspaper"></i>
             <div>
@@ -6018,12 +6034,12 @@
 
     <!-- ═══════════════ FREE CHANNELS & COMMUNITIES ═══════════════ -->
     <div class="bonus-section">
-      <h2 class="section-heading">▶️ Free Channels, Podcasts & Communities</h2>
+      <h2 class="section-heading">Channels, Podcasts & Communities</h2>
       <div class="section-sub">Stay current — the field moves weekly. These are the best free signals.</div>
       <div class="bonus-grid">
 
-        <a class="bonus-card" href="https://www.youtube.com/@AndrejKarpathy" target="_blank">
-          <i data-lucide="brain"></i>
+        <a class="bonus-card" href="https://www.youtube.com/@AndrejKarpathy" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="brain"></i></div>
           <div>
             <div class="bonus-name">Andrej Karpathy</div>
             <div class="bonus-desc">Ex-OpenAI/Tesla. "Let's Build GPT" is required watching for every serious AI
@@ -6031,8 +6047,8 @@
           </div>
         </a>
 
-        <a class="bonus-card" href="https://www.deeplearning.ai/short-courses/" target="_blank">
-          <i data-lucide="graduation-cap"></i>
+        <a class="bonus-card" href="https://www.deeplearning.ai/short-courses/" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="graduation-cap"></i></div>
           <div>
             <div class="bonus-name">DeepLearning.AI Short Courses</div>
             <div class="bonus-desc">60+ free 1–4h courses. Taught by engineers from OpenAI, Google, Anthropic,
@@ -6040,8 +6056,8 @@
           </div>
         </a>
 
-        <a class="bonus-card" href="https://www.youtube.com/@samwitteveenai" target="_blank">
-          <i data-lucide="bot"></i>
+        <a class="bonus-card" href="https://www.youtube.com/@samwitteveenai" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="bot"></i></div>
           <div>
             <div class="bonus-name">Sam Witteveen</div>
             <div class="bonus-desc">Weekly practical tutorials on LangChain, agents, and RAG. Best YouTube channel for
@@ -6049,8 +6065,8 @@
           </div>
         </a>
 
-        <a class="bonus-card" href="https://www.youtube.com/@DataIndependent" target="_blank">
-          <i data-lucide="bar-chart-3"></i>
+        <a class="bonus-card" href="https://www.youtube.com/@DataIndependent" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="bar-chart-3"></i></div>
           <div>
             <div class="bonus-name">Greg Kamradt (Data Independent)</div>
             <div class="bonus-desc">Chunking, embeddings, RAG explained better than anyone. The "5 Levels of RAG" video
@@ -6058,8 +6074,8 @@
           </div>
         </a>
 
-        <a class="bonus-card" href="https://huggingface.co/learn" target="_blank">
-          <i data-lucide="smile"></i>
+        <a class="bonus-card" href="https://huggingface.co/learn" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="award"></i></div>
           <div>
             <div class="bonus-name">Hugging Face Learning</div>
             <div class="bonus-desc">Free courses on NLP, Diffusion, RL, agents, and fine-tuning. The industry-standard
@@ -6067,8 +6083,8 @@
           </div>
         </a>
 
-        <a class="bonus-card" href="https://github.com/mlabonne/llm-course" target="_blank">
-          <i data-lucide="notebook"></i>
+        <a class="bonus-card" href="https://github.com/mlabonne/llm-course" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="notebook"></i></div>
           <div>
             <div class="bonus-name">LLM Course — Maxime Labonne</div>
             <div class="bonus-desc">GitHub repo with 30+ Colab notebooks. Best free collection of fine-tuning notebooks,
@@ -6076,8 +6092,8 @@
           </div>
         </a>
 
-        <a class="bonus-card" href="https://www.youtube.com/@ArjanCodes" target="_blank">
-          <i data-lucide="building"></i>
+        <a class="bonus-card" href="https://www.youtube.com/@ArjanCodes" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="building"></i></div>
           <div>
             <div class="bonus-name">ArjanCodes</div>
             <div class="bonus-desc">Clean Python architecture, design patterns, and engineering best practices. Pairs
@@ -6085,8 +6101,8 @@
           </div>
         </a>
 
-        <a class="bonus-card" href="https://discord.gg/langchain" target="_blank">
-          <i data-lucide="message-circle"></i>
+        <a class="bonus-card" href="https://discord.gg/langchain" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="message-circle"></i></div>
           <div>
             <div class="bonus-name">LangChain Discord</div>
             <div class="bonus-desc">Active daily Q&A on agent orchestration, RAG, evaluation, MCP. Free community,
@@ -6094,8 +6110,8 @@
           </div>
         </a>
 
-        <a class="bonus-card" href="https://www.reddit.com/r/LocalLLaMA/" target="_blank">
-          <i data-lucide="circle"></i>
+        <a class="bonus-card" href="https://www.reddit.com/r/LocalLLaMA/" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="file-text"></i></div>
           <div>
             <div class="bonus-name">r/LocalLLaMA</div>
             <div class="bonus-desc">Fastest signal for new open-weight models, quantization, serving tricks. Check
@@ -6105,8 +6121,8 @@
 
         <a class="bonus-card"
           href="https://podcasts.apple.com/us/podcast/the-cognitive-revolution-how-ai-changes-everything/id1669813431"
-          target="_blank">
-          <i data-lucide="headphones"></i>
+          target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="headphones"></i></div>
           <div>
             <div class="bonus-name">The Cognitive Revolution Podcast</div>
             <div class="bonus-desc">Weekly AI engineering + strategy. Best podcast for staying current on the field's
@@ -6114,16 +6130,16 @@
           </div>
         </a>
 
-        <a class="bonus-card" href="https://www.youtube.com/@LangChain" target="_blank">
-          <i data-lucide="link"></i>
+        <a class="bonus-card" href="https://www.youtube.com/@LangChain" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="link"></i></div>
           <div>
             <div class="bonus-name">LangChain YouTube</div>
             <div class="bonus-desc">Official LangGraph + LangChain tutorials. New features covered as they ship.</div>
           </div>
         </a>
 
-        <a class="bonus-card" href="https://news.ycombinator.com" target="_blank">
-          <i data-lucide="circle"></i>
+        <a class="bonus-card" href="https://news.ycombinator.com" target="_blank" rel="noopener noreferrer">
+          <div class="bonus-icon"><i data-lucide="file-text"></i></div>
           <div>
             <div class="bonus-name">Hacker News</div>
             <div class="bonus-desc">Filter for "LLM", "agent", "RAG" — where the best engineering essays and debates
@@ -6137,7 +6153,7 @@
 
     <!-- ═══════════════ 18-MONTH WEEKLY SCHEDULE ═══════════════ -->
     <div class="bonus-section">
-      <h2 class="section-heading">📅 18-Month Weekly Study Schedule</h2>
+      <h2 class="section-heading">18-Month Weekly Study Schedule</h2>
       <div class="section-sub">At 20 hours/week — realistic for someone balancing nursing shifts and design work.</div>
       <div class="schedule-grid">
         <div class="schedule-card">
@@ -6354,23 +6370,24 @@
   </main>
 
   <footer>
-    <div class="footer-text">AI Automation Engineering · 100/100 Curriculum · 8 Phases · v2026.2 · Updated May 2026
+    <div class="footer-text">AI Automation Engineering · 8 Phases · v2026.2 · Updated May 2026
     </div>
     <div class="footer-badge">
-      <span style="width:7px;height:7px;background:#47ffb4;border-radius:50%;display:inline-block;"></span>
+      <span class="footer-badge-dot"></span>
       $0 spent · Zero paywalls
     </div>
   </footer>
 
 
   <!-- PROJECT MODAL -->
-  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-label="Project details">
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-card">
-      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&#x2715;</button>
       <div class="modal-content" id="modalContent"></div>
     </div>
   </div>
-  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="script.js" defer></script>
 
 </body>
 
