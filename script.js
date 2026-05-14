@@ -1,7 +1,6 @@
-/* ═══════════════════════════════════════════════════════
+/* ═══════════════════════════════════════════
    AI Automation Engineering — Curriculum Script
-   v2026.3 · Cloud Sync Edition (Supabase)
-   ═══════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════ */
 
 const SUPABASE_URL = 'https://hbexvzqtgiizcuzwyifa.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhiZXh2enF0Z2lpemN1end5aWZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3NTM5OTMsImV4cCI6MjA5NDMyOTk5M30.9zI49DU7iET37Qvx3hXKGuVT-GQ7L2UphqvYPShGzM0';
@@ -10,7 +9,7 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ── 0. Helper Functions ── */
+  /* ── Helpers ── */
   function id(name) { return document.getElementById(name); }
 
   function validateEmail(email) {
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  /* ── 1. Progress Tracker Class ── */
+  /* ── Progress Tracker ── */
   class ProgressTracker {
     constructor() {
       this.user = null;
@@ -549,10 +548,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  /* ── 2. Instantiate Tracker ── */
+  /* ── Init ── */
   const tracker = new ProgressTracker();
 
-  /* ── 3. Modal & UI Logic (Consolidated) ── */
+  /* ── Project Modal ── */
   const projectModal = id('projectModal');
   const modalClose = id('modalClose');
   const modalContent = id('modalContent');
@@ -602,10 +601,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (block) btn.addEventListener('click', (e) => { e.stopPropagation(); openModal(block); });
   });
 
-  /* ── 4. Initialise Icons ── */
+  /* ── Icons ── */
   if (typeof lucide !== 'undefined') lucide.createIcons();
 
-  /* ── 5. Keyboard Access ── */
+  /* ── Keyboard ── */
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active'));
@@ -613,7 +612,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ── 6. Reveal Animations ── */
+  /* ── Animations ── */
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
