@@ -1,37 +1,76 @@
 /* ═══════════════════════════════════════════════════════
    AI Automation Engineering — Curriculum Script
-   v2026.2 · Perfected Edition
+   v2026.3 · Cloud Sync Edition (Supabase)
    ═══════════════════════════════════════════════════════ */
+
+const SUPABASE_URL = 'https://hbexvzqtgiiizcuzwyifa.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhiZXh2enF0Z2lpemN1end5aWZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3NTM5OTMsImV4cCI6MjA5NDMyOTk5M30.9zI49DU7iET37Qvx3hXKGuVT-GQ7L2UphqvYPShGzM0';
+
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 document.addEventListener('DOMContentLoaded', function () {
 
   /* ── 0. Helper Functions ── */
   function id(name) { return document.getElementById(name); }
 
-  /* ── 1. Progress Tracker ── */
+  /* ── 1. Progress Tracker Class ── */
   class ProgressTracker {
     constructor() {
-      this.user = JSON.parse(localStorage.getItem('ae_user')) || null;
+      this.user = null;
       this.completed = JSON.parse(localStorage.getItem('ae_completed')) || [];
       this.resources = Array.from(document.querySelectorAll('.resource-item'));
+      this.isSyncing = false;
+      this.currentTab = 'signin';
       
       this.initUI();
       this.injectCheckboxes();
       this.updateProgress();
+      this.checkSession();
       this.bindEvents();
+      this.checkRecoveryMode();
     }
 
     initUI() {
+      // Modals
       this.loginModal = id('loginModal');
+      this.accountModal = id('accountModal');
+      
+      // Triggers
       this.loginTrigger = id('login-trigger');
       this.userProfile = id('user-profile');
+      this.profileToggle = document.querySelector('.user-profile-toggle');
+      
+      // Displays
       this.usernameDisplay = id('username-display');
-      this.loginForm = id('login-form');
+      this.accEmail = id('acc-email');
+      this.accName = id('acc-name');
+      this.syncIndicator = id('sync-indicator');
+      
+      // Progress UI
       this.progressBar = id('global-progress');
       this.progressText = id('progress-percent');
+    }
 
-      if (this.user) {
+    async checkSession() {
+      const { data: { session } } = await sb.auth.getSession();
+      if (session) {
+        this.user = session.user;
+        await this.loadUserProfile();
         this.showLoggedIn();
+        await this.syncWithCloud();
+      }
+    }
+
+    async loadUserProfile() {
+      if (!this.user) return;
+      const { data, error } = await sb
+        .from('profiles')
+        .select('full_name')
+        .eq('id', this.user.id)
+        .single();
+      
+      if (data) {
+        this.user.full_name = data.full_name;
       }
     }
 
@@ -43,14 +82,12 @@ document.addEventListener('DOMContentLoaded', function () {
         checkbox.className = 'resource-checkbox';
         checkbox.checked = this.completed.includes(resId);
         
-        if (checkbox.checked) {
-          item.classList.add('completed');
-        }
+        if (checkbox.checked) item.classList.add('completed');
 
         item.prepend(checkbox);
 
-        checkbox.addEventListener('change', (e) => {
-          this.toggleResource(resId, checkbox.checked, item);
+        checkbox.addEventListener('change', async (e) => {
+          await this.toggleResource(resId, checkbox.checked, item);
         });
       });
     }
@@ -61,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return `${phase}-${name}`.replace(/\s+/g, '-').toLowerCase();
     }
 
-    toggleResource(resId, isChecked, item) {
+    async toggleResource(resId, isChecked, item) {
       if (isChecked) {
         if (!this.completed.includes(resId)) this.completed.push(resId);
         item.classList.add('completed');
@@ -69,8 +106,13 @@ document.addEventListener('DOMContentLoaded', function () {
         this.completed = this.completed.filter(c => c !== resId);
         item.classList.remove('completed');
       }
-      this.save();
+      
+      this.saveLocal();
       this.updateProgress();
+      
+      if (this.user) {
+        await this.pushToCloud();
+      }
     }
 
     updateProgress() {
@@ -82,230 +124,411 @@ document.addEventListener('DOMContentLoaded', function () {
       if (this.progressText) this.progressText.textContent = `${percent}%`;
     }
 
+    saveLocal() {
+      localStorage.setItem('ae_completed', JSON.stringify(this.completed));
+    }
+
     showLoggedIn() {
       if (this.loginTrigger) this.loginTrigger.style.display = 'none';
       if (this.userProfile) this.userProfile.style.display = 'block';
-      if (this.usernameDisplay) this.usernameDisplay.textContent = this.user.name;
+      if (this.usernameDisplay) this.usernameDisplay.textContent = this.user.full_name || this.user.email.split('@')[0];
+      
+      // Update Account Modal
+      if (this.accEmail) this.accEmail.textContent = this.user.email;
+      if (this.accName) this.accName.textContent = this.user.full_name || 'Not set';
+    }
+
+    showLoggedOut() {
+      if (this.loginTrigger) this.loginTrigger.style.display = 'flex';
+      if (this.userProfile) this.userProfile.style.display = 'none';
+      this.user = null;
+    }
+
+    async syncWithCloud() {
+      if (!this.user) return;
+      this.setSyncing(true);
+
+      try {
+        // 1. Pull cloud data
+        const { data, error } = await sb
+          .from('progress')
+          .select('completed_ids')
+          .eq('id', this.user.id)
+          .single();
+
+        let cloudIds = (data && data.completed_ids) ? data.completed_ids : [];
+
+        // 2. Merge with local data (The "Guest Migration" logic)
+        const localIds = JSON.parse(localStorage.getItem('ae_completed')) || [];
+        const combined = Array.from(new Set([...cloudIds, ...localIds]));
+        
+        this.completed = combined;
+        this.saveLocal();
+        this.updateCheckboxes();
+        this.updateProgress();
+
+        // 3. Push back merged state to cloud if local had more
+        if (localIds.length > 0) {
+          await this.pushToCloud();
+        }
+      } catch (err) {
+        console.error('[Sync] Failed:', err);
+      } finally {
+        this.setSyncing(false);
+      }
+    }
+
+    async pushToCloud() {
+      if (!this.user || this.isSyncing) return;
+      this.setSyncing(true);
+
+      try {
+        const { error } = await sb
+          .from('progress')
+          .upsert({ 
+            id: this.user.id, 
+            completed_ids: this.completed,
+            updated_at: new Date().toISOString()
+          });
+        
+        if (error) throw error;
+      } catch (err) {
+        console.error('[Push] Failed:', err);
+      } finally {
+        this.setSyncing(false);
+      }
+    }
+
+    setSyncing(state) {
+      this.isSyncing = state;
+      if (this.syncIndicator) {
+        state ? this.syncIndicator.classList.add('syncing') : this.syncIndicator.classList.remove('syncing');
+      }
+    }
+
+    updateCheckboxes() {
+      document.querySelectorAll('.resource-checkbox').forEach(cb => {
+        const item = cb.closest('.resource-item');
+        const resId = this.getResourceId(item);
+        cb.checked = this.completed.includes(resId);
+        cb.checked ? item.classList.add('completed') : item.classList.remove('completed');
+      });
+    }
+
+    togglePassword(btnId, inputId) {
+      id(btnId)?.addEventListener('click', (e) => {
+        const passInput = id(inputId);
+        const isPass = passInput.type === 'password';
+        passInput.type = isPass ? 'text' : 'password';
+        const container = e.currentTarget;
+        const oldIcon = container.querySelector('[data-lucide]');
+        if (oldIcon) {
+          const newIcon = document.createElement('i');
+          newIcon.setAttribute('data-lucide', isPass ? 'eye-off' : 'eye');
+          container.replaceChild(newIcon, oldIcon);
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+      });
+    }
+
+    showView(view) {
+      id('auth-form-view').style.display = 'none';
+      id('forgot-password-form').style.display = 'none';
+      id('reset-password-form').style.display = 'none';
+      id(view).style.display = 'block';
+      id('auth-error').style.display = 'none';
     }
 
     bindEvents() {
-      if (this.loginTrigger) {
-        this.loginTrigger.addEventListener('click', () => {
-          this.loginModal.classList.add('active');
-          id('user-name').focus();
-        });
-      }
+      // Login Modal Toggle
+      this.loginTrigger?.addEventListener('click', () => {
+        this.loginModal.classList.add('active');
+        id('user-email').focus();
+      });
 
       id('loginModalClose')?.addEventListener('click', () => {
         this.loginModal.classList.remove('active');
       });
 
-      if (this.loginForm) {
-        this.loginForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          const nameInput = id('user-name');
-          if (nameInput) {
-            this.user = { name: nameInput.value, joined: new Date().toISOString() };
-            localStorage.setItem('ae_user', JSON.stringify(this.user));
-            this.showLoggedIn();
-            this.loginModal.classList.remove('active');
+      // Account Modal Toggle
+      this.profileToggle?.addEventListener('click', () => {
+        this.accountModal.classList.add('active');
+      });
+
+      id('accountModalClose')?.addEventListener('click', () => {
+        this.accountModal.classList.remove('active');
+      });
+
+      // Auth Tabs
+      id('tab-signin')?.addEventListener('click', () => this.switchTab('signin'));
+      id('tab-signup')?.addEventListener('click', () => this.switchTab('signup'));
+
+      // Auth Form Submission
+      id('login-form')?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        await this.handleAuth();
+      });
+
+      // Logout
+      id('logout-btn')?.addEventListener('click', async () => {
+        await sb.auth.signOut();
+        this.showLoggedOut();
+        this.accountModal.classList.remove('active');
+      });
+
+      // Password Visibility Toggles
+      this.togglePassword('password-toggle', 'user-password');
+      this.togglePassword('confirm-password-toggle', 'user-confirm-password');
+      this.togglePassword('new-password-toggle', 'new-password');
+      this.togglePassword('confirm-new-password-toggle', 'confirm-new-password');
+
+      // Forgot Password
+      id('forgot-password-btn')?.addEventListener('click', () => {
+        this.showView('forgot-password-form');
+        id('reset-email').focus();
+      });
+
+      id('back-to-auth-btn')?.addEventListener('click', () => {
+        this.showView('auth-form-view');
+      });
+
+      // Forgot Password Form
+      id('forgot-form')?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        await this.handleForgotPassword();
+      });
+
+      // Reset Password Form
+      id('reset-form')?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        await this.handleResetPassword();
+      });
+
+      // Delete Data
+      id('delete-data-btn')?.addEventListener('click', async () => {
+        if (confirm('Are you sure? This will permanently clear your progress from the cloud.')) {
+          const { error } = await sb.from('progress').delete().eq('id', this.user.id);
+          if (!error) {
+            alert('Cloud progress cleared.');
+            this.completed = [];
+            this.saveLocal();
+            this.updateCheckboxes();
+            this.updateProgress();
           }
-        });
+        }
+      });
+    }
+
+    switchTab(tab) {
+      this.currentTab = tab;
+      const signinTab = id('tab-signin');
+      const signupTab = id('tab-signup');
+      const signupFields = id('signup-fields');
+      const signupConfirm = id('signup-confirm');
+      const forgotRow = id('forgot-password-row');
+      const authHeader = id('auth-header');
+      const submitBtn = id('auth-submit-btn');
+
+      if (tab === 'signup') {
+        signinTab.classList.remove('active');
+        signupTab.classList.add('active');
+        signupFields.style.display = 'block';
+        signupConfirm.style.display = 'block';
+        forgotRow.style.display = 'none';
+        authHeader.querySelector('h2').textContent = 'Create Account';
+        authHeader.querySelector('p').textContent = 'Join the curriculum and track your path.';
+        submitBtn.textContent = 'Create Account';
+      } else {
+        signinTab.classList.add('active');
+        signupTab.classList.remove('active');
+        signupFields.style.display = 'none';
+        signupConfirm.style.display = 'none';
+        forgotRow.style.display = 'block';
+        authHeader.querySelector('h2').textContent = 'Welcome Back';
+        authHeader.querySelector('p').textContent = 'Sign in to sync your progress across all devices.';
+        submitBtn.textContent = 'Sign In';
       }
     }
 
-    save() {
-      localStorage.setItem('ae_completed', JSON.stringify(this.completed));
+    async handleAuth() {
+      const email = id('user-email').value;
+      const password = id('user-password').value;
+      const fullName = id('user-full-name').value;
+      const errorEl = id('auth-error');
+      
+      errorEl.style.display = 'none';
+
+      try {
+        if (this.currentTab === 'signup') {
+          const confirmPassword = id('user-confirm-password').value;
+          if (password !== confirmPassword) {
+            errorEl.textContent = 'Passwords do not match.';
+            errorEl.style.display = 'block';
+            return;
+          }
+
+          const { data, error } = await sb.auth.signUp({
+            email,
+            password,
+            options: { data: { full_name: fullName } }
+          });
+          if (error) throw error;
+          
+          if (data.user) {
+            await sb.from('profiles').insert({ id: data.user.id, full_name: fullName });
+            alert('Account created! Please check your email for confirmation.');
+          }
+        } else {
+          const { data, error } = await sb.auth.signInWithPassword({ email, password });
+          if (error) throw error;
+          this.user = data.user;
+          await this.loadUserProfile();
+          this.showLoggedIn();
+          await this.syncWithCloud();
+        }
+        
+        this.loginModal.classList.remove('active');
+      } catch (err) {
+        errorEl.textContent = err.message;
+        errorEl.style.display = 'block';
+      }
+    }
+
+    async handleForgotPassword() {
+      const email = id('reset-email').value;
+      const errorEl = id('auth-error');
+      errorEl.style.display = 'none';
+
+      try {
+        const { error } = await sb.auth.resetPasswordForEmail(email, {
+          redirectTo: window.location.origin,
+        });
+        if (error) throw error;
+
+        alert('Check your email for the password reset link.');
+        this.showView('auth-form-view');
+      } catch (err) {
+        errorEl.textContent = err.message;
+        errorEl.style.display = 'block';
+      }
+    }
+
+    async handleResetPassword() {
+      const newPassword = id('new-password').value;
+      const confirmPassword = id('confirm-new-password').value;
+      const errorEl = id('auth-error');
+      errorEl.style.display = 'none';
+
+      if (newPassword !== confirmPassword) {
+        errorEl.textContent = 'Passwords do not match.';
+        errorEl.style.display = 'block';
+        return;
+      }
+
+      try {
+        const { error } = await sb.auth.updateUser({ password: newPassword });
+        if (error) throw error;
+
+        alert('Password updated successfully!');
+        this.loginModal.classList.remove('active');
+        this.showView('auth-form-view');
+      } catch (err) {
+        errorEl.textContent = err.message;
+        errorEl.style.display = 'block';
+      }
+    }
+
+    checkRecoveryMode() {
+      const hash = window.location.hash;
+      if (hash && hash.includes('type=recovery')) {
+        this.loginModal.classList.add('active');
+        this.showView('reset-password-form');
+        window.location.hash = '';
+      }
     }
   }
 
+  /* ── 2. Instantiate Tracker ── */
   const tracker = new ProgressTracker();
 
-  /* ── 2. Initialise Lucide icons ── */
-  if (typeof lucide !== 'undefined') {
-    lucide.createIcons();
-  } else {
-    console.error('[Curriculum] Lucide not loaded.');
-  }
+  /* ── 3. Modal & UI Logic (Consolidated) ── */
+  const projectModal = id('projectModal');
+  const modalClose = id('modalClose');
+  const modalContent = id('modalContent');
+  let lastFocused = null;
 
-  /* ── 3. Hide all inline project blocks (CSS already does this; JS as fallback) ── */
-  document.querySelectorAll('.proj-module-block, .proj-phase-block, .proj-capstone-section')
-    .forEach(b => { b.style.display = 'none'; });
-
-  /* ── 4. Modal state ── */
-  const modal        = document.getElementById('projectModal');
-  const modalClose   = document.getElementById('modalClose');
-  const modalContent = document.getElementById('modalContent');
-  let   lastFocused  = null;
-
-  if (!modal || !modalClose || !modalContent) {
-    console.error('[Curriculum] Modal elements missing from DOM.');
-    return;
-  }
-
-  /* ── Open modal ── */
   function openModal(sourceBlock) {
     lastFocused = document.activeElement;
-
     const clone = sourceBlock.cloneNode(true);
-    clone.style.display   = 'block';
-    clone.style.border    = 'none';
-    clone.style.margin    = '0';
-    clone.style.boxShadow = 'none';
-
+    clone.style.display = 'block';
     modalContent.innerHTML = '';
     modalContent.appendChild(clone);
-    modal.classList.add('active');
+    projectModal.classList.add('active');
     document.body.style.overflow = 'hidden';
-
-    /* Re-initialise Lucide icons inside the cloned content */
     if (typeof lucide !== 'undefined') lucide.createIcons();
-
-    /* Ensure first heading has the aria-labelledby id */
     const titleEl = modalContent.querySelector('h4, h3');
     if (titleEl) titleEl.id = 'modalTitle';
-
-    /* Focus the close button after two animation frames */
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => { modalClose.focus(); });
-    });
+    requestAnimationFrame(() => modalClose.focus());
   }
 
-  /* ── Close modal ── */
   function closeModal() {
-    modal.classList.remove('active');
+    projectModal.classList.remove('active');
     document.body.style.overflow = '';
-    if (lastFocused) {
-      requestAnimationFrame(() => { lastFocused.focus(); });
-    }
+    if (lastFocused) lastFocused.focus();
   }
 
-  /* ── 5. Inject "View Module Projects" button into each module card ── */
+  modalClose?.addEventListener('click', closeModal);
+  projectModal?.addEventListener('click', (e) => { if (e.target === projectModal) closeModal(); });
+
+  /* Project Toggles */
   document.querySelectorAll('.module-card').forEach(card => {
     let block = null;
     let sibling = card.nextElementSibling;
     while (sibling) {
       if (sibling.classList.contains('proj-module-block')) { block = sibling; break; }
-      if (sibling.classList.contains('module-card')) break; 
+      if (sibling.classList.contains('module-card')) break;
       sibling = sibling.nextElementSibling;
     }
-    if (!block) return; 
-
-    const titleEl = card.querySelector('.module-title');
-    const titleText = titleEl ? titleEl.textContent.trim() : 'this module';
-
+    if (!block) return;
     const btn = document.createElement('button');
     btn.className = 'proj-toggle-btn';
-    btn.setAttribute('aria-label', 'View projects for: ' + titleText);
-    btn.innerHTML = '<i data-lucide="sparkles"></i> View Module Projects';
+    btn.innerHTML = '<i data-lucide="sparkles"></i> View Projects';
     card.appendChild(btn);
-
-    btn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      openModal(block);
-    });
+    btn.addEventListener('click', (e) => { e.stopPropagation(); openModal(block); });
   });
 
-  /* Re-init icons after button injection */
+  document.querySelectorAll('.phase-header-row .proj-toggle-btn').forEach(btn => {
+    const phase = btn.closest('.phase');
+    const block = phase?.querySelector('.proj-phase-block, .proj-capstone-section');
+    if (block) btn.addEventListener('click', (e) => { e.stopPropagation(); openModal(block); });
+  });
+
+  /* ── 4. Initialise Icons ── */
   if (typeof lucide !== 'undefined') lucide.createIcons();
 
-  /* ── 6. Wire up phase-level "View Phase Project" buttons (already in HTML) ── */
-  document.querySelectorAll('.phase-header-row .proj-toggle-btn').forEach((btn, idx) => {
-    const phase = btn.closest('.phase');
-    if (!phase) return;
-    const phaseBlock = phase.querySelector('.proj-phase-block, .proj-capstone-section');
-    if (phaseBlock) {
-      btn.addEventListener('click', function (e) {
-        e.stopPropagation();
-        openModal(phaseBlock);
-      });
-    }
-  });
-
-  /* ── 7. Modal dismiss events ── */
-  modalClose.addEventListener('click', closeModal);
-
-  modal.addEventListener('click', function (e) {
-    if (e.target === modal) closeModal();
-  });
-
-  /* ── 8. Keyboard handling ── */
-  document.addEventListener('keydown', function (e) {
-    if (!modal.classList.contains('active')) return;
-
+  /* ── 5. Keyboard Access ── */
+  document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      closeModal();
-      return;
-    }
-
-    if (e.key === 'Tab') {
-      const focusable = Array.from(
-        modal.querySelectorAll(
-          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-        )
-      ).filter(el => !el.disabled && el.offsetParent !== null);
-
-      if (focusable.length === 0) return;
-      const first = focusable[0];
-      const last  = focusable[focusable.length - 1];
-
-      if (e.shiftKey && document.activeElement === first) {
-        e.preventDefault();
-        last.focus();
-      } else if (!e.shiftKey && document.activeElement === last) {
-        e.preventDefault();
-        first.focus();
-      }
+      document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active'));
+      document.body.style.overflow = '';
     }
   });
 
-  /* ── 9. Intersection Observer for staggered reveal ── */
+  /* ── 6. Reveal Animations ── */
   if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.animationPlayState = 'running';
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.06 }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
 
-    document.querySelectorAll('.phase, .bonus-section').forEach((el, i) => {
+    document.querySelectorAll('.phase').forEach((el, i) => {
       el.style.animationPlayState = 'paused';
-      el.style.animationDelay = (0.05 + i * 0.05) + 's';
+      el.style.animationDelay = `${i * 0.1}s`;
       observer.observe(el);
     });
   }
-
-  /* ── 10. iOS modal scroll lock fix ── */
-  let scrollPosition = 0;
-
-  function lockScroll() {
-    scrollPosition = window.scrollY;
-    document.body.style.position = 'fixed';
-    document.body.style.top = '-' + scrollPosition + 'px';
-    document.body.style.width = '100%';
-  }
-
-  function unlockScroll() {
-    document.body.style.position = '';
-    document.body.style.top = '';
-    document.body.style.width = '';
-    window.scrollTo(0, scrollPosition);
-  }
-
-  /* Patch openModal and closeModal */
-  const origOpen = openModal;
-  const origClose = closeModal;
-  openModal = function(sourceBlock) {
-    lockScroll();
-    origOpen(sourceBlock);
-  };
-  closeModal = function() {
-    unlockScroll();
-    origClose();
-  };
 });

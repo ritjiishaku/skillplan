@@ -54,21 +54,25 @@
   <div class="progress-counter-floating" id="progress-counter">
     <i data-lucide="trending-up"></i>
     <span>Progress: <strong id="progress-percent">0%</strong></span>
+    <span class="sync-indicator" id="sync-indicator" title="Syncing with cloud...">
+      <i data-lucide="refresh-cw"></i>
+      <span>Syncing</span>
+    </span>
   </div>
 
-  <div class="user-nav">
-    <button class="login-btn" id="login-trigger">
-      <i data-lucide="user"></i>
-      <span>Log In</span>
-    </button>
-    <div id="user-profile" style="display: none;">
-      <button class="user-profile-toggle">
-        <i data-lucide="user-check"></i>
-        <span id="username-display">User</span>
-      </button>
-    </div>
-  </div>
   <header>
+    <div class="user-nav">
+      <button class="login-btn" id="login-trigger">
+        <i data-lucide="user"></i>
+        <span>Log In</span>
+      </button>
+      <div id="user-profile" style="display: none;">
+        <button class="user-profile-toggle">
+          <i data-lucide="user-check"></i>
+          <span id="username-display">User</span>
+        </button>
+      </div>
+    </div>
     <div class="header-grid" aria-hidden="true"></div>
     <div class="header-glow"></div>
 
@@ -6405,17 +6409,114 @@
   </footer>
 
 
-  <!-- LOGIN MODAL -->
+  <!-- LOGIN / AUTH MODAL -->
   <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true">
-    <div class="modal-card" style="max-width: 400px;">
+    <div class="modal-card" style="max-width: 420px;">
       <button class="modal-close" id="loginModalClose" aria-label="Close modal">&#x2715;</button>
       <div class="modal-content">
-        <h2 class="section-heading" style="margin-bottom: 8px;">Welcome Back</h2>
-        <p class="section-sub" style="margin-bottom: 24px;">Enter your name to sync your progress locally.</p>
-        <form class="login-form" id="login-form">
-          <input type="text" id="user-name" placeholder="Your Name" required>
-          <button type="submit">Sign In</button>
-        </form>
+
+        <!-- ── Auth form (Sign In / Sign Up) ── -->
+        <div id="auth-form-view">
+          <div class="auth-tabs">
+            <button class="auth-tab active" id="tab-signin">Sign In</button>
+            <button class="auth-tab" id="tab-signup">Create Account</button>
+          </div>
+          
+          <div id="auth-header">
+            <h2 class="section-heading">Welcome Back</h2>
+            <p class="section-sub">Sign in to sync your progress across all devices.</p>
+          </div>
+
+          <form class="login-form" id="login-form">
+            <div id="signup-fields" style="display: none;">
+              <input type="text" id="user-full-name" placeholder="Full Name">
+            </div>
+            <input type="email" id="user-email" placeholder="Email Address" required>
+            <div class="password-wrapper">
+              <input type="password" id="user-password" placeholder="Password" required minlength="6">
+              <button type="button" class="password-toggle" id="password-toggle" aria-label="Toggle password visibility">
+                <i data-lucide="eye"></i>
+              </button>
+            </div>
+            <div id="signup-confirm" style="display: none;">
+              <div class="password-wrapper">
+                <input type="password" id="user-confirm-password" placeholder="Confirm Password" minlength="6">
+                <button type="button" class="password-toggle" id="confirm-password-toggle" aria-label="Toggle confirm password visibility">
+                  <i data-lucide="eye"></i>
+                </button>
+              </div>
+            </div>
+            <div id="forgot-password-row">
+              <button type="button" id="forgot-password-btn">Forgot password?</button>
+            </div>
+            <button type="submit" id="auth-submit-btn">Sign In</button>
+          </form>
+        </div>
+
+        <!-- ── Forgot password form ── -->
+        <div id="forgot-password-form" style="display: none;">
+          <h2 class="section-heading">Reset Password</h2>
+          <p class="section-sub">Enter your email and we'll send you a reset link.</p>
+          <form class="login-form" id="forgot-form">
+            <input type="email" id="reset-email" placeholder="Email Address" required>
+            <button type="submit" id="send-reset-btn">Send Reset Link</button>
+          </form>
+          <button type="button" class="back-to-auth-btn" id="back-to-auth-btn">← Back to Sign In</button>
+        </div>
+
+        <!-- ── Reset password form (recovery mode) ── -->
+        <div id="reset-password-form" style="display: none;">
+          <h2 class="section-heading">Set New Password</h2>
+          <p class="section-sub">Choose a new password for your account.</p>
+          <form class="login-form" id="reset-form">
+            <div class="password-wrapper">
+              <input type="password" id="new-password" placeholder="New Password" required minlength="6">
+              <button type="button" class="password-toggle" id="new-password-toggle" aria-label="Toggle new password visibility">
+                <i data-lucide="eye"></i>
+              </button>
+            </div>
+            <div class="password-wrapper">
+              <input type="password" id="confirm-new-password" placeholder="Confirm New Password" required minlength="6">
+              <button type="button" class="password-toggle" id="confirm-new-password-toggle" aria-label="Toggle confirm password visibility">
+                <i data-lucide="eye"></i>
+              </button>
+            </div>
+            <button type="submit" id="update-password-btn">Update Password</button>
+          </form>
+        </div>
+
+        <p id="auth-error" style="color: #ff4747; font-size: 12px; margin-top: 16px; display: none;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCOUNT MANAGEMENT MODAL -->
+  <div class="modal-overlay" id="accountModal" role="dialog" aria-modal="true">
+    <div class="modal-card" style="max-width: 420px;">
+      <button class="modal-close" id="accountModalClose" aria-label="Close modal">&#x2715;</button>
+      <div class="modal-content">
+        <h2 class="section-heading">Account Settings</h2>
+        
+        <div class="account-details">
+          <div class="account-info-row">
+            <span class="account-info-label">Signed in as</span>
+            <span class="account-info-value" id="acc-email">email@example.com</span>
+          </div>
+          
+          <div class="account-info-row">
+            <span class="account-info-label">Name</span>
+            <span class="account-info-value" id="acc-name">User Name</span>
+          </div>
+
+          <div class="account-actions">
+            <button class="action-btn action-btn-logout" id="logout-btn">
+              <i data-lucide="log-out"></i> Log Out
+            </button>
+            <button class="action-btn action-btn-danger" id="delete-data-btn">
+              <i data-lucide="trash-2"></i> Clear Cloud Progress
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -6427,7 +6528,8 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-<script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
 
 </body>
 
