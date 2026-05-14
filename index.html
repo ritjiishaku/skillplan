@@ -45,6 +45,29 @@
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
+  <div class="sticky-progress-container" aria-hidden="true">
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" id="global-progress"></div>
+    </div>
+  </div>
+
+  <div class="progress-counter-floating" id="progress-counter">
+    <i data-lucide="trending-up"></i>
+    <span>Progress: <strong id="progress-percent">0%</strong></span>
+  </div>
+
+  <div class="user-nav">
+    <button class="login-btn" id="login-trigger">
+      <i data-lucide="user"></i>
+      <span>Log In</span>
+    </button>
+    <div id="user-profile" style="display: none;">
+      <button class="user-profile-toggle">
+        <i data-lucide="user-check"></i>
+        <span id="username-display">User</span>
+      </button>
+    </div>
+  </div>
   <header>
     <div class="header-grid" aria-hidden="true"></div>
     <div class="header-glow"></div>
@@ -6382,6 +6405,20 @@
   </footer>
 
 
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true">
+    <div class="modal-card" style="max-width: 400px;">
+      <button class="modal-close" id="loginModalClose" aria-label="Close modal">&#x2715;</button>
+      <div class="modal-content">
+        <h2 class="section-heading" style="margin-bottom: 8px;">Welcome Back</h2>
+        <p class="section-sub" style="margin-bottom: 24px;">Enter your name to sync your progress locally.</p>
+        <form class="login-form" id="login-form">
+          <input type="text" id="user-name" placeholder="Your Name" required>
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- PROJECT MODAL -->
   <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-card">

@@ -5,18 +5,134 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ── 1. Initialise Lucide icons ── */
+  /* ── 0. Helper Functions ── */
+  function id(name) { return document.getElementById(name); }
+
+  /* ── 1. Progress Tracker ── */
+  class ProgressTracker {
+    constructor() {
+      this.user = JSON.parse(localStorage.getItem('ae_user')) || null;
+      this.completed = JSON.parse(localStorage.getItem('ae_completed')) || [];
+      this.resources = Array.from(document.querySelectorAll('.resource-item'));
+      
+      this.initUI();
+      this.injectCheckboxes();
+      this.updateProgress();
+      this.bindEvents();
+    }
+
+    initUI() {
+      this.loginModal = id('loginModal');
+      this.loginTrigger = id('login-trigger');
+      this.userProfile = id('user-profile');
+      this.usernameDisplay = id('username-display');
+      this.loginForm = id('login-form');
+      this.progressBar = id('global-progress');
+      this.progressText = id('progress-percent');
+
+      if (this.user) {
+        this.showLoggedIn();
+      }
+    }
+
+    injectCheckboxes() {
+      this.resources.forEach(item => {
+        const resId = this.getResourceId(item);
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = 'resource-checkbox';
+        checkbox.checked = this.completed.includes(resId);
+        
+        if (checkbox.checked) {
+          item.classList.add('completed');
+        }
+
+        item.prepend(checkbox);
+
+        checkbox.addEventListener('change', (e) => {
+          this.toggleResource(resId, checkbox.checked, item);
+        });
+      });
+    }
+
+    getResourceId(item) {
+      const phase = item.closest('.phase')?.id || 'misc';
+      const name = item.querySelector('.resource-name')?.textContent || 'unnamed';
+      return `${phase}-${name}`.replace(/\s+/g, '-').toLowerCase();
+    }
+
+    toggleResource(resId, isChecked, item) {
+      if (isChecked) {
+        if (!this.completed.includes(resId)) this.completed.push(resId);
+        item.classList.add('completed');
+      } else {
+        this.completed = this.completed.filter(c => c !== resId);
+        item.classList.remove('completed');
+      }
+      this.save();
+      this.updateProgress();
+    }
+
+    updateProgress() {
+      const total = this.resources.length;
+      const done = this.completed.length;
+      const percent = total > 0 ? Math.round((done / total) * 100) : 0;
+      
+      if (this.progressBar) this.progressBar.style.width = `${percent}%`;
+      if (this.progressText) this.progressText.textContent = `${percent}%`;
+    }
+
+    showLoggedIn() {
+      if (this.loginTrigger) this.loginTrigger.style.display = 'none';
+      if (this.userProfile) this.userProfile.style.display = 'block';
+      if (this.usernameDisplay) this.usernameDisplay.textContent = this.user.name;
+    }
+
+    bindEvents() {
+      if (this.loginTrigger) {
+        this.loginTrigger.addEventListener('click', () => {
+          this.loginModal.classList.add('active');
+          id('user-name').focus();
+        });
+      }
+
+      id('loginModalClose')?.addEventListener('click', () => {
+        this.loginModal.classList.remove('active');
+      });
+
+      if (this.loginForm) {
+        this.loginForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const nameInput = id('user-name');
+          if (nameInput) {
+            this.user = { name: nameInput.value, joined: new Date().toISOString() };
+            localStorage.setItem('ae_user', JSON.stringify(this.user));
+            this.showLoggedIn();
+            this.loginModal.classList.remove('active');
+          }
+        });
+      }
+    }
+
+    save() {
+      localStorage.setItem('ae_completed', JSON.stringify(this.completed));
+    }
+  }
+
+  const tracker = new ProgressTracker();
+
+  /* ── 2. Initialise Lucide icons ── */
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   } else {
     console.error('[Curriculum] Lucide not loaded.');
   }
 
-  /* ── 2. Hide all inline project blocks (CSS already does this; JS as fallback) ── */
+  /* ── 3. Hide all inline project blocks (CSS already does this; JS as fallback) ── */
   document.querySelectorAll('.proj-module-block, .proj-phase-block, .proj-capstone-section')
     .forEach(b => { b.style.display = 'none'; });
 
-  /* ── 3. Modal state ── */
+  /* ── 4. Modal state ── */
   const modal        = document.getElementById('projectModal');
   const modalClose   = document.getElementById('modalClose');
   const modalContent = document.getElementById('modalContent');
@@ -64,19 +180,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  /* ── 4. Inject "View Module Projects" button into each module card ── */
+  /* ── 5. Inject "View Module Projects" button into each module card ── */
   document.querySelectorAll('.module-card').forEach(card => {
-    /* Find the associated .proj-module-block that immediately follows this card */
     let block = null;
     let sibling = card.nextElementSibling;
     while (sibling) {
       if (sibling.classList.contains('proj-module-block')) { block = sibling; break; }
-      if (sibling.classList.contains('module-card')) break; /* stop at next card */
+      if (sibling.classList.contains('module-card')) break; 
       sibling = sibling.nextElementSibling;
     }
-    if (!block) return; /* card with no project block — skip */
+    if (!block) return; 
 
-    /* Get module title for aria-label */
     const titleEl = card.querySelector('.module-title');
     const titleText = titleEl ? titleEl.textContent.trim() : 'this module';
 
@@ -95,13 +209,10 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Re-init icons after button injection */
   if (typeof lucide !== 'undefined') lucide.createIcons();
 
-  /* ── 5. Wire up phase-level "View Phase Project" buttons (already in HTML) ── */
+  /* ── 6. Wire up phase-level "View Phase Project" buttons (already in HTML) ── */
   document.querySelectorAll('.phase-header-row .proj-toggle-btn').forEach((btn, idx) => {
     const phase = btn.closest('.phase');
-    if (!phase) {
-      console.warn('[Curriculum] Phase btn #' + idx + ' has no .phase ancestor.');
-      return;
-    }
+    if (!phase) return;
     const phaseBlock = phase.querySelector('.proj-phase-block, .proj-capstone-section');
     if (phaseBlock) {
       btn.addEventListener('click', function (e) {
@@ -111,14 +222,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ── 6. Modal dismiss events ── */
+  /* ── 7. Modal dismiss events ── */
   modalClose.addEventListener('click', closeModal);
 
   modal.addEventListener('click', function (e) {
     if (e.target === modal) closeModal();
   });
 
-  /* ── 7. Keyboard handling ── */
+  /* ── 8. Keyboard handling ── */
   document.addEventListener('keydown', function (e) {
     if (!modal.classList.contains('active')) return;
 
@@ -127,7 +238,6 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    /* Tab trap inside modal */
     if (e.key === 'Tab') {
       const focusable = Array.from(
         modal.querySelectorAll(
@@ -149,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ── 8. Intersection Observer for staggered reveal ── */
+  /* ── 9. Intersection Observer for staggered reveal ── */
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -170,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ── 9. iOS modal scroll lock fix ── */
+  /* ── 10. iOS modal scroll lock fix ── */
   let scrollPosition = 0;
 
   function lockScroll() {
