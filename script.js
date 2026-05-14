@@ -3,7 +3,7 @@
    v2026.3 · Cloud Sync Edition (Supabase)
    ═══════════════════════════════════════════════════════ */
 
-const SUPABASE_URL = 'https://hbexvzqtgiiizcuzwyifa.supabase.co';
+const SUPABASE_URL = 'https://hbexvzqtgiizcuzwyifa.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhiZXh2enF0Z2lpemN1end5aWZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3NTM5OTMsImV4cCI6MjA5NDMyOTk5M30.9zI49DU7iET37Qvx3hXKGuVT-GQ7L2UphqvYPShGzM0';
 
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
