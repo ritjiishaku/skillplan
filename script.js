@@ -37,15 +37,17 @@ document.addEventListener('DOMContentLoaded', function () {
   function clearFieldErrors() {
     document.querySelectorAll('.field-error').forEach(el => el.classList.remove('field-error'));
     const errorEl = id('auth-error');
-    errorEl.textContent = '';
-    errorEl.style.display = 'none';
+    if (errorEl) {
+      errorEl.textContent = '';
+      errorEl.style.display = 'none';
+    }
   }
 
   /* ── 1. Progress Tracker Class ── */
   class ProgressTracker {
     constructor() {
       this.user = null;
-      this.completed = JSON.parse(localStorage.getItem('ae_completed')) || [];
+      try { this.completed = JSON.parse(localStorage.getItem('ae_completed')) || []; } catch { this.completed = []; }
       this.resources = Array.from(document.querySelectorAll('.resource-item'));
       this.isSyncing = false;
       this.currentTab = 'signin';
@@ -80,25 +82,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     async checkSession() {
-      const { data: { session } } = await sb.auth.getSession();
-      if (session) {
-        this.user = session.user;
-        await this.loadUserProfile();
-        this.showLoggedIn();
-        await this.syncWithCloud();
+      try {
+        const { data: { session } } = await sb.auth.getSession();
+        if (session) {
+          this.user = session.user;
+          await this.loadUserProfile();
+          this.showLoggedIn();
+          await this.syncWithCloud();
+        }
+      } catch (err) {
+        console.warn('[Session] Check failed:', err);
       }
     }
 
     async loadUserProfile() {
       if (!this.user) return;
-      const { data, error } = await sb
-        .from('profiles')
-        .select('full_name')
-        .eq('id', this.user.id)
-        .single();
-      
-      if (data) {
-        this.user.full_name = data.full_name;
+      try {
+        const { data, error } = await sb
+          .from('profiles')
+          .select('full_name')
+          .eq('id', this.user.id)
+          .single();
+        
+        if (data) {
+          this.user.full_name = data.full_name;
+        }
+      } catch (err) {
+        console.warn('[Profile] Load failed:', err);
       }
     }
 
@@ -246,14 +256,12 @@ document.addEventListener('DOMContentLoaded', function () {
     togglePassword(btnId, inputId) {
       id(btnId)?.addEventListener('click', (e) => {
         const passInput = id(inputId);
+        if (!passInput) return;
         const isPass = passInput.type === 'password';
         passInput.type = isPass ? 'text' : 'password';
-        const container = e.currentTarget;
-        const oldIcon = container.querySelector('[data-lucide]');
-        if (oldIcon) {
-          const newIcon = document.createElement('i');
-          newIcon.setAttribute('data-lucide', isPass ? 'eye-off' : 'eye');
-          container.replaceChild(newIcon, oldIcon);
+        const icon = e.currentTarget.querySelector('i') || e.currentTarget.querySelector('svg');
+        if (icon) {
+          icon.setAttribute('data-lucide', isPass ? 'eye-off' : 'eye');
           if (typeof lucide !== 'undefined') lucide.createIcons();
         }
       });
@@ -300,7 +308,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Logout
       id('logout-btn')?.addEventListener('click', async () => {
-        await sb.auth.signOut();
+        try {
+          await sb.auth.signOut();
+        } catch (err) {
+          console.warn('[Logout] Failed:', err);
+        }
         this.showLoggedOut();
         this.accountModal.classList.remove('active');
       });
@@ -358,6 +370,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const forgotRow = id('forgot-password-row');
       const authHeader = id('auth-header');
       const submitBtn = id('auth-submit-btn');
+
+      if (!signinTab || !signupTab || !authHeader || !submitBtn) return;
 
       if (tab === 'signup') {
         signinTab.classList.remove('active');
@@ -546,8 +560,6 @@ document.addEventListener('DOMContentLoaded', function () {
     projectModal.classList.add('active');
     document.body.style.overflow = 'hidden';
     if (typeof lucide !== 'undefined') lucide.createIcons();
-    const titleEl = modalContent.querySelector('h4, h3');
-    if (titleEl) titleEl.id = 'modalTitle';
     requestAnimationFrame(() => modalClose.focus());
   }
 

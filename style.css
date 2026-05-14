@@ -345,7 +345,7 @@ h1 em {
   margin-top: 16px;
   font-size: 12.5px;
   color: var(--text-secondary);
-  max-width: 620px;
+  max-width: min(620px, 100%);
   position: relative;
   z-index: 1;
   line-height: 1.7;
@@ -411,9 +411,15 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .phase {
-    animation: none;
-  }
+  .phase { animation: none; }
+  .free-banner::before { animation: none; }
+  .footer-badge-dot { animation: none; }
+  .sync-indicator i { animation: none; }
+  .module-card:hover { transform: none !important; }
+  .bonus-card:hover { transform: none !important; }
+  .reading-card:hover { transform: none !important; }
+  .login-form button:hover { transform: none; box-shadow: none; }
+  .progress-bar { transition: none; }
 }
 
 @media (hover: none) and (pointer: coarse) {
@@ -457,7 +463,7 @@ main {
   font-size: 60px;
   font-weight: 700;
   line-height: 1;
-  color: var(--border-strong);
+  color: var(--muted);
   min-width: 58px;
   user-select: none;
   flex-shrink: 0;
@@ -1075,10 +1081,6 @@ h4.proj-card-title {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 860px) {
-  .proj-dual-grid { grid-template-columns: 1fr; }
-}
-
 /* ── Project card ── */
 .proj-card {
   padding: 22px 24px 24px;
@@ -1534,6 +1536,17 @@ footer {
   .proj-card-title {
     font-size: 13px;
   }
+
+  .action-btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .progress-counter-floating {
+    left: 16px;
+    padding: 5px 10px;
+    gap: 6px;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1602,6 +1615,10 @@ footer {
   .sync-indicator i { width: 10px; height: 10px; }
 
   .proj-toggle-btn { padding: 7px 12px; font-size: 9.5px; }
+
+  .action-btn { padding: 8px; font-size: 11px; }
+
+  .proj-stack-tag { font-size: 9px; padding: 1px 6px; }
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1834,7 +1851,8 @@ footer {
 
 .login-form input:focus {
   border-color: var(--accent);
-  outline: none;
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
   background: var(--card-hover);
 }
 
