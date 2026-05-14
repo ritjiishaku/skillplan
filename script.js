@@ -34,6 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
     errorEl.style.display = 'block';
   }
 
+  function friendlyError(err) {
+    const msg = err?.message || String(err);
+    if (msg === 'Failed to fetch') return 'Unable to connect. Please check your internet or try again later.';
+    if (msg.includes('NetworkError')) return 'Network error. Please check your connection.';
+    return msg;
+  }
+
   function clearFieldErrors() {
     document.querySelectorAll('.field-error').forEach(el => el.classList.remove('field-error'));
     const errorEl = id('auth-error');
@@ -449,7 +456,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
           this.loginModal.classList.remove('active');
         } catch (err) {
-          errorEl.textContent = err.message;
+          errorEl.textContent = friendlyError(err);
           errorEl.style.display = 'block';
         }
       } else {
@@ -462,7 +469,7 @@ document.addEventListener('DOMContentLoaded', function () {
           await this.syncWithCloud();
           this.loginModal.classList.remove('active');
         } catch (err) {
-          errorEl.textContent = err.message;
+          errorEl.textContent = friendlyError(err);
           errorEl.style.display = 'block';
         }
       }
@@ -492,7 +499,7 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Check your email for the password reset link.');
         this.showView('auth-form-view');
       } catch (err) {
-        errorEl.textContent = err.message;
+        errorEl.textContent = friendlyError(err);
         errorEl.style.display = 'block';
       }
     }
@@ -527,7 +534,7 @@ document.addEventListener('DOMContentLoaded', function () {
         this.loginModal.classList.remove('active');
         this.showView('auth-form-view');
       } catch (err) {
-        errorEl.textContent = err.message;
+        errorEl.textContent = friendlyError(err);
         errorEl.style.display = 'block';
       }
     }
