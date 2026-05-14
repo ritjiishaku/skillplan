@@ -13,6 +13,34 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── 0. Helper Functions ── */
   function id(name) { return document.getElementById(name); }
 
+  function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function validatePassword(password) {
+    const errors = [];
+    if (password.length < 8) errors.push('at least 8 characters');
+    if (!/[A-Z]/.test(password)) errors.push('one uppercase letter');
+    if (!/[a-z]/.test(password)) errors.push('one lowercase letter');
+    if (!/[0-9]/.test(password)) errors.push('one number');
+    return errors;
+  }
+
+  function showFieldError(inputId, message) {
+    const el = id(inputId);
+    if (el) el.classList.add('field-error');
+    const errorEl = id('auth-error');
+    errorEl.textContent = message;
+    errorEl.style.display = 'block';
+  }
+
+  function clearFieldErrors() {
+    document.querySelectorAll('.field-error').forEach(el => el.classList.remove('field-error'));
+    const errorEl = id('auth-error');
+    errorEl.textContent = '';
+    errorEl.style.display = 'none';
+  }
+
   /* ── 1. Progress Tracker Class ── */
   class ProgressTracker {
     constructor() {
@@ -242,6 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
     bindEvents() {
       // Login Modal Toggle
       this.loginTrigger?.addEventListener('click', () => {
+        clearFieldErrors();
         this.loginModal.classList.add('active');
         id('user-email').focus();
       });
@@ -320,6 +349,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     switchTab(tab) {
+      clearFieldErrors();
       this.currentTab = tab;
       const signinTab = id('tab-signin');
       const signupTab = id('tab-signup');
@@ -351,53 +381,93 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     async handleAuth() {
-      const email = id('user-email').value;
+      clearFieldErrors();
+
+      const email = id('user-email').value.trim();
       const password = id('user-password').value;
-      const fullName = id('user-full-name').value;
+      const fullName = id('user-full-name').value.trim();
       const errorEl = id('auth-error');
-      
-      errorEl.style.display = 'none';
 
-      try {
-        if (this.currentTab === 'signup') {
-          const confirmPassword = id('user-confirm-password').value;
-          if (password !== confirmPassword) {
-            errorEl.textContent = 'Passwords do not match.';
-            errorEl.style.display = 'block';
-            return;
-          }
+      // Email validation
+      if (!email) {
+        showFieldError('user-email', 'Email address is required.');
+        return;
+      }
+      if (!validateEmail(email)) {
+        showFieldError('user-email', 'Please enter a valid email address.');
+        return;
+      }
 
+      // Password validation
+      if (!password) {
+        showFieldError('user-password', 'Password is required.');
+        return;
+      }
+      const pwdErrors = validatePassword(password);
+      if (pwdErrors.length > 0) {
+        showFieldError('user-password', 'Password needs: ' + pwdErrors.join(', ') + '.');
+        return;
+      }
+
+      if (this.currentTab === 'signup') {
+        if (!fullName) {
+          showFieldError('user-full-name', 'Full name is required.');
+          return;
+        }
+
+        const confirmPassword = id('user-confirm-password').value;
+        if (password !== confirmPassword) {
+          showFieldError('user-confirm-password', 'Passwords do not match.');
+          return;
+        }
+
+        try {
           const { data, error } = await sb.auth.signUp({
             email,
             password,
             options: { data: { full_name: fullName } }
           });
           if (error) throw error;
-          
+
           if (data.user) {
             await sb.from('profiles').insert({ id: data.user.id, full_name: fullName });
             alert('Account created! Please check your email for confirmation.');
           }
-        } else {
+          this.loginModal.classList.remove('active');
+        } catch (err) {
+          errorEl.textContent = err.message;
+          errorEl.style.display = 'block';
+        }
+      } else {
+        try {
           const { data, error } = await sb.auth.signInWithPassword({ email, password });
           if (error) throw error;
           this.user = data.user;
           await this.loadUserProfile();
           this.showLoggedIn();
           await this.syncWithCloud();
+          this.loginModal.classList.remove('active');
+        } catch (err) {
+          errorEl.textContent = err.message;
+          errorEl.style.display = 'block';
         }
-        
-        this.loginModal.classList.remove('active');
-      } catch (err) {
-        errorEl.textContent = err.message;
-        errorEl.style.display = 'block';
       }
     }
 
     async handleForgotPassword() {
-      const email = id('reset-email').value;
+      clearFieldErrors();
+
+      const email = id('reset-email').value.trim();
       const errorEl = id('auth-error');
-      errorEl.style.display = 'none';
+
+      if (!email) {
+        showFieldError('reset-email', 'Email address is required.');
+        return;
+      }
+      if (!validateEmail(email)) {
+        showFieldError('reset-email', 'Please enter a valid email address.');
+        return;
+      }
 
       try {
         const { error } = await sb.auth.resetPasswordForEmail(email, {
@@ -414,14 +484,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     async handleResetPassword() {
+      clearFieldErrors();
+
       const newPassword = id('new-password').value;
       const confirmPassword = id('confirm-new-password').value;
       const errorEl = id('auth-error');
-      errorEl.style.display = 'none';
+
+      if (!newPassword) {
+        showFieldError('new-password', 'New password is required.');
+        return;
+      }
+      const pwdErrors = validatePassword(newPassword);
+      if (pwdErrors.length > 0) {
+        showFieldError('new-password', 'Password needs: ' + pwdErrors.join(', ') + '.');
+        return;
+      }
 
       if (newPassword !== confirmPassword) {
-        errorEl.textContent = 'Passwords do not match.';
-        errorEl.style.display = 'block';
+        showFieldError('confirm-new-password', 'Passwords do not match.');
         return;
       }
 

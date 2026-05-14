@@ -2150,3 +2150,9 @@ footer {
   }
 }
 
+/* ── Form Validation ── */
+.field-error {
+  border-color: #ff4747 !important;
+  box-shadow: 0 0 0 1px #ff4747;
+}
+
