@@ -1,0 +1,959 @@
+{
+  "banner": "100% Free · 11 Phases · 100+ Resources · $0 Cost · Zero Paywalls",
+  "titleDisplay": "Conversion &<br><em>Growth Engineering</em>",
+  "subtitle": "Your target is not: Web Designer, Frontend Developer, Digital Marketer. Your target is: Conversion & Growth Engineer — someone who can design experiences, build pages, write copy, create funnels, automate workflows, improve conversions, and increase business revenue. 11 phases, 100+ free resources. $0 cost. No paywalls.",
+  "meta": {
+    "duration": "15–18 mo",
+    "cost": "$0",
+    "resources": "100+",
+    "salaryTarget": "$120k+"
+  },
+  "phases": [
+    {
+      "number": "01",
+      "badge": "badge-foundation",
+      "badgeLabel": "Foundation",
+      "title": "Marketing & Business Foundations",
+      "duration": "Months 1–2",
+      "modules": [
+        {
+          "icon": "target",
+          "accentClass": "a2",
+          "title": "Marketing Fundamentals",
+          "topics": [
+            "Customer journey mapping & touchpoints",
+            "Buyer psychology & decision-making",
+            "Digital marketing channels overview",
+            "Value propositions & positioning"
+          ],
+          "resources": [
+            {
+              "icon": "graduation-cap",
+              "name": "Google Digital Garage — Fundamentals of Digital Marketing",
+              "meta": "skillshop.google.com · Free Google certification, 40+ modules",
+              "url": "https://skillshop.exceedlms.com/student/catalog/list?category_ids=702"
+            },
+            {
+              "icon": "award",
+              "name": "HubSpot Academy — Digital Marketing Certification",
+              "meta": "academy.hubspot.com · Free certification, 12 lessons",
+              "url": "https://academy.hubspot.com/courses/digital-marketing"
+            },
+            {
+              "icon": "search",
+              "name": "Semrush Academy — Digital Marketing Course",
+              "meta": "semrush.com · Free courses on SEO, PPC, content marketing",
+              "url": "https://www.semrush.com/academy/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Customer Journey Map",
+              "desc": "Map a complete customer journey for a SaaS product, identifying touchpoints, pain points, and conversion opportunities across the entire funnel.",
+              "skills": ["Customer persona development", "Journey stage mapping", "Touchpoint identification", "Pain point analysis", "Conversion opportunity matrix"],
+              "stack": ["Figma", "Miro", "Google Sheets"]
+            },
+            "capstone": {
+              "title": "Landing Page Audit",
+              "desc": "Audit 3 real landing pages, identify conversion issues, and create a detailed improvement report with actionable recommendations.",
+              "skills": ["Heuristic evaluation", "Competitive analysis", "Conversion issue identification", "Improvement recommendations", "Before/after mockups"],
+              "stack": ["Google Analytics", "Hotjar", "Figma"]
+            }
+          }
+        },
+        {
+          "icon": "book-open",
+          "accentClass": "a2",
+          "title": "Business & Strategy",
+          "topics": [
+            "Lead generation fundamentals",
+            "Email marketing & list building",
+            "SEO fundamentals for growth",
+            "Reading: This Is Marketing, Building a StoryBrand"
+          ],
+          "resources": [
+            {
+              "icon": "mail",
+              "name": "HubSpot Academy — Inbound Marketing Certification",
+              "meta": "academy.hubspot.com · Free certification on inbound & email marketing",
+              "url": "https://academy.hubspot.com/courses/inbound-marketing"
+            },
+            {
+              "icon": "search",
+              "name": "Ahrefs Academy — SEO Course for Beginners",
+              "meta": "ahrefs.com · Free comprehensive SEO training with video lessons",
+              "url": "https://ahrefs.com/academy"
+            },
+            {
+              "icon": "bar-chart-3",
+              "name": "Google Ads & Commerce Blog",
+              "meta": "blog.google · Free official Google marketing resources",
+              "url": "https://blog.google/products/ads-commerce/"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "02",
+      "badge": "badge-core",
+      "badgeLabel": "UX Design",
+      "title": "UX Design Fundamentals",
+      "duration": "Months 2–4",
+      "modules": [
+        {
+          "icon": "layout",
+          "accentClass": "a1",
+          "title": "UX Research & Methods",
+          "topics": [
+            "UX research methods & user interviews",
+            "User flows & task analysis",
+            "Information architecture",
+            "Accessibility standards (WCAG)"
+          ],
+          "resources": [
+            {
+              "icon": "graduation-cap",
+              "name": "Google UX Design Professional Certificate",
+              "meta": "coursera.org · Free audit, 8-course series by Google",
+              "url": "https://www.coursera.org/professional-certificates/google-ux-design"
+            },
+            {
+              "icon": "globe",
+              "name": "Nielsen Norman Group — UX Research Articles",
+              "meta": "nngroup.com · Free world-class UX research & articles",
+              "url": "https://www.nngroup.com/articles/"
+            },
+            {
+              "icon": "pen-tool",
+              "name": "Uxcel — Interactive UX Design Courses",
+              "meta": "uxcel.com · Free interactive lessons & quizzes",
+              "url": "https://uxcel.com/learn-design"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "SaaS Onboarding Redesign",
+              "desc": "Research, wireframe, and prototype a redesigned onboarding flow for a SaaS product, conducting user interviews and usability testing.",
+              "skills": ["User research & interviews", "Personas & journey maps", "Wireframes & prototypes", "Usability testing", "Iteration based on feedback"],
+              "stack": ["Figma", "Maze", "Google Forms"]
+            },
+            "capstone": {
+              "title": "E-commerce Checkout Flow",
+              "desc": "Design an optimized checkout flow reducing cart abandonment, with A/B test variants and conversion-focused UX decisions.",
+              "skills": ["Cart abandonment analysis", "Multi-variant checkout designs", "Mobile-first responsive flow", "Trust signal placement", "Conversion optimization"],
+              "stack": ["Figma", "Hotjar", "Google Analytics"]
+            }
+          }
+        },
+        {
+          "icon": "mouse-pointer-click",
+          "accentClass": "a2",
+          "title": "User Testing & Wireframing",
+          "topics": [
+            "Wireframing & prototyping",
+            "User testing methodologies",
+            "Usability heuristics",
+            "Reading: Don't Make Me Think"
+          ],
+          "resources": [
+            {
+              "icon": "figma",
+              "name": "Figma — Design Basics Course",
+              "meta": "figma.com · Free official Figma design fundamentals",
+              "url": "https://www.figma.com/resource-library/design-basics"
+            },
+            {
+              "icon": "test-tube",
+              "name": "NNGroup — Usability Testing 101",
+              "meta": "nngroup.com · Free guide to planning & running user tests",
+              "url": "https://www.nngroup.com/articles/usability-testing-101/"
+            },
+            {
+              "icon": "shield",
+              "name": "Usability.gov — UX Methods & Resources",
+              "meta": "usability.gov · Free government resource on UX best practices",
+              "url": "https://www.usability.gov/"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "03",
+      "badge": "badge-advanced",
+      "badgeLabel": "UI Design",
+      "title": "UI Design Mastery",
+      "duration": "Months 3–5",
+      "modules": [
+        {
+          "icon": "palette",
+          "accentClass": "a3",
+          "title": "Visual Design Principles",
+          "topics": [
+            "Typography systems & scale",
+            "Color theory & palette creation",
+            "Visual hierarchy & spacing",
+            "Design systems & component libraries"
+          ],
+          "resources": [
+            {
+              "icon": "figma",
+              "name": "Figma Design for Beginners — Official Course",
+              "meta": "figma.com · Free hands-on course, build a portfolio site",
+              "url": "https://help.figma.com/hc/en-us/articles/30848209492887-Course-overview-Figma-Design-for-beginners-2025"
+            },
+            {
+              "icon": "smartphone",
+              "name": "Mobbin — UI/UX Design Inspiration",
+              "meta": "mobbin.com · Free tier with real-world app screenshots",
+              "url": "https://mobbin.com"
+            },
+            {
+              "icon": "award",
+              "name": "Awwwards — Award-Winning Web Design",
+              "meta": "awwwards.com · Free curated gallery of best web designs",
+              "url": "https://www.awwwards.com"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "SaaS Landing Page Design",
+              "desc": "Design a complete SaaS landing page with a component library, responsive layouts, and conversion-focused visual hierarchy.",
+              "skills": ["Design system creation", "Responsive landing page", "Component library in Figma", "Mobile & desktop variants", "Animation & micro-interactions"],
+              "stack": ["Figma", "FigJam"]
+            },
+            "capstone": {
+              "title": "Product Page Redesign",
+              "desc": "Redesign a product page for an e-commerce site, applying visual hierarchy, trust signals, and conversion optimization principles.",
+              "skills": ["Visual hierarchy analysis", "Trust signal placement", "Mobile-first responsive design", "A/B test variant designs", "Design handoff documentation"],
+              "stack": ["Figma", "Zeplin"]
+            }
+          }
+        },
+        {
+          "icon": "grid",
+          "accentClass": "a2",
+          "title": "Responsive & Systems Design",
+          "topics": [
+            "Responsive design patterns",
+            "Component-based design",
+            "Study: Stripe, Linear, Vercel, Notion",
+            "Design tokens & variables"
+          ],
+          "resources": [
+            {
+              "icon": "layout",
+              "name": "Landingfolio — Landing Page Design Inspiration",
+              "meta": "landingfolio.com · Free templates & examples for landing pages",
+              "url": "https://landingfolio.com"
+            },
+            {
+              "icon": "globe",
+              "name": "Lapa Ninja — Landing Page Gallery",
+              "meta": "lapa.ninja · Free curated collection of 3000+ landing pages",
+              "url": "https://www.lapa.ninja"
+            },
+            {
+              "icon": "credit-card",
+              "name": "Stripe Design — Study Reference",
+              "meta": "stripe.com · World-class UI design reference to study",
+              "url": "https://stripe.com/design"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "04",
+      "badge": "badge-specialist",
+      "badgeLabel": "Copywriting",
+      "title": "Conversion Copywriting",
+      "duration": "Months 4–6",
+      "modules": [
+        {
+          "icon": "pen-tool",
+          "accentClass": "a2",
+          "title": "Copywriting Fundamentals",
+          "topics": [
+            "Headlines that capture attention",
+            "Offer creation & framing",
+            "CTAs that convert",
+            "Objection handling techniques"
+          ],
+          "resources": [
+            {
+              "icon": "file-text",
+              "name": "Copyhackers — Conversion Copywriting Resources",
+              "meta": "copyhackers.com · Free articles, guides & case studies",
+              "url": "https://copyhackers.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "Copyblogger — Content Marketing & Copywriting",
+              "meta": "copyblogger.com · Free library of copywriting training",
+              "url": "https://copyblogger.com"
+            },
+            {
+              "icon": "megaphone",
+              "name": "Good Marketing Club — Marketing Examples",
+              "meta": "goodmarketing.club · Free swipe file of great marketing copy",
+              "url": "https://goodmarketing.club"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "SaaS Landing Page Copy",
+              "desc": "Write complete copy for a SaaS landing page including headline, subheadline, features, testimonials, FAQ, and CTA — applying persuasion principles.",
+              "skills": ["Headline & subheadline variations", "Feature-benefit copy", "Social proof & testimonials", "Objection handling FAQ", "CTA optimization"],
+              "stack": ["Google Docs", "Hemingway Editor"]
+            },
+            "capstone": {
+              "title": "Email Sequence Copy",
+              "desc": "Write a 5-email nurture sequence for a SaaS product, including welcome, value, social proof, objection handling, and conversion emails.",
+              "skills": ["Welcome email sequence", "Value-driven nurture emails", "Social proof integration", "Objection handling emails", "Conversion-focused CTAs"],
+              "stack": ["Mailchimp", "Google Docs"]
+            }
+          }
+        },
+        {
+          "icon": "megaphone",
+          "accentClass": "at",
+          "title": "Sales Psychology",
+          "topics": [
+            "Influence & persuasion principles",
+            "Sales psychology & pricing",
+            "Storytelling for conversions",
+            "Reading: Influence, $100M Offers"
+          ],
+          "resources": [
+            {
+              "icon": "brain",
+              "name": "Influence at Work — Cialdini's Principles",
+              "meta": "influenceatwork.com · Free resources on persuasion science",
+              "url": "https://www.influenceatwork.com"
+            },
+            {
+              "icon": "lightbulb",
+              "name": "NNGroup — Psychology of Design",
+              "meta": "nngroup.com · Free articles on how psychology affects design",
+              "url": "https://www.nngroup.com/articles/psychology-of-design/"
+            },
+            {
+              "icon": "test-tube",
+              "name": "GoodUI — A/B Testing Ideas & Experiments",
+              "meta": "goodui.org · Free library of 400+ conversion ideas",
+              "url": "https://goodui.org"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "05",
+      "badge": "badge-practice",
+      "badgeLabel": "Coding",
+      "title": "Coding Foundations",
+      "duration": "Months 5–8",
+      "modules": [
+        {
+          "icon": "code",
+          "accentClass": "a2",
+          "title": "HTML, CSS & JavaScript",
+          "topics": [
+            "HTML5 semantic markup",
+            "CSS3 flexbox, grid, responsive design",
+            "JavaScript fundamentals & DOM",
+            "Mobile-first development"
+          ],
+          "resources": [
+            {
+              "icon": "code",
+              "name": "freeCodeCamp — Responsive Web Design Certification",
+              "meta": "freecodecamp.org · Free certification, 300+ hours of content",
+              "url": "https://www.freecodecamp.org"
+            },
+            {
+              "icon": "terminal",
+              "name": "The Odin Project — Foundations Course",
+              "meta": "theodinproject.com · Free full-stack curriculum, project-based",
+              "url": "https://www.theodinproject.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "MDN Web Docs — Learn Web Development",
+              "meta": "developer.mozilla.org · Free definitive reference for web technologies",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "SaaS Landing Page",
+              "desc": "Build a complete, responsive SaaS landing page from a Figma design, with HTML, CSS, and vanilla JavaScript interactions.",
+              "skills": ["Pixel-perfect Figma to code", "Responsive design implementation", "CSS animations & transitions", "Form handling & validation", "Deployed on Vercel"],
+              "stack": ["HTML5", "CSS3", "JavaScript", "Vercel"]
+            },
+            "capstone": {
+              "title": "Marketing Website",
+              "desc": "Build a multi-page marketing website for a fictional product, with responsive layouts, navigation, and conversion-focused CTAs.",
+              "skills": ["Multi-page responsive site", "Navigation & routing", "Conversion-focused CTAs", "Performance optimization", "SEO best practices"],
+              "stack": ["HTML5", "Tailwind CSS", "JavaScript"]
+            }
+          }
+        },
+        {
+          "icon": "layout",
+          "accentClass": "a2",
+          "title": "Build Marketing Pages",
+          "topics": [
+            "SaaS landing pages",
+            "Product pages",
+            "Marketing websites",
+            "Practice: Build 3 pages from scratch"
+          ],
+          "resources": [
+            {
+              "icon": "github",
+              "name": "GitHub Skills — Interactive Git Training",
+              "meta": "skills.github.com · Free interactive courses on Git & GitHub",
+              "url": "https://skills.github.com"
+            },
+            {
+              "icon": "wind",
+              "name": "Tailwind CSS — Official Documentation",
+              "meta": "tailwindcss.com · Free utility-first CSS framework docs",
+              "url": "https://tailwindcss.com/docs"
+            },
+            {
+              "icon": "component",
+              "name": "shadcn/ui — Re-usable Components",
+              "meta": "ui.shadcn.com · Free accessible React components to copy-paste",
+              "url": "https://ui.shadcn.com"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "06",
+      "badge": "badge-mastery",
+      "badgeLabel": "Frontend",
+      "title": "Modern Frontend Development",
+      "duration": "Months 8–10",
+      "modules": [
+        {
+          "icon": "component",
+          "accentClass": "a1",
+          "title": "React & Next.js",
+          "topics": [
+            "React components & hooks",
+            "Next.js routing & SSR",
+            "TypeScript fundamentals",
+            "State management patterns"
+          ],
+          "resources": [
+            {
+              "icon": "code",
+              "name": "React — Official Documentation & Tutorial",
+              "meta": "react.dev · Free official React docs with interactive examples",
+              "url": "https://react.dev/learn"
+            },
+            {
+              "icon": "graduation-cap",
+              "name": "Next.js — Learn Next.js",
+              "meta": "nextjs.org · Free official interactive tutorial",
+              "url": "https://nextjs.org/learn"
+            },
+            {
+              "icon": "file-text",
+              "name": "TypeScript — Handbook & Documentation",
+              "meta": "typescriptlang.org · Free official TypeScript learning resources",
+              "url": "https://www.typescriptlang.org/docs/handbook/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Interactive Landing Page",
+              "desc": "Build a dynamic SaaS landing page with React/Next.js, TypeScript, and Tailwind — with animations, forms, and responsive design.",
+              "skills": ["React component architecture", "TypeScript type safety", "Responsive Tailwind layouts", "Form handling & validation", "Deployed on Vercel"],
+              "stack": ["Next.js", "TypeScript", "Tailwind", "Vercel"]
+            },
+            "capstone": {
+              "title": "Product Showcase App",
+              "desc": "Build a product showcase app with filtering, search, and dynamic routing — demonstrating modern frontend patterns.",
+              "skills": ["Dynamic routing & SSR", "Search & filtering", "API data fetching", "Responsive product grid", "Performance optimization"],
+              "stack": ["Next.js", "TypeScript", "Tailwind"]
+            }
+          }
+        },
+        {
+          "icon": "git-branch",
+          "accentClass": "a2",
+          "title": "Git & Deployment",
+          "topics": [
+            "Git version control & workflows",
+            "GitHub repositories & PRs",
+            "Deployment to Vercel/Netlify",
+            "Performance optimization"
+          ],
+          "resources": [
+            {
+              "icon": "github",
+              "name": "GitHub Skills — Learn Git Interactively",
+              "meta": "skills.github.com · Free interactive courses on Git workflows",
+              "url": "https://skills.github.com"
+            },
+            {
+              "icon": "cloud",
+              "name": "Vercel — Deployment Documentation",
+              "meta": "vercel.com · Free tier for deploying Next.js apps",
+              "url": "https://vercel.com/docs"
+            },
+            {
+              "icon": "wind",
+              "name": "Tailwind CSS — Installation & Setup",
+              "meta": "tailwindcss.com · Free official getting started guide",
+              "url": "https://tailwindcss.com/docs/installation"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "07",
+      "badge": "badge-specialist",
+      "badgeLabel": "AI Development",
+      "title": "Vibe Coding & AI Development",
+      "duration": "Months 10–12",
+      "modules": [
+        {
+          "icon": "sparkles",
+          "accentClass": "ap",
+          "title": "AI-Assisted Development",
+          "topics": [
+            "Prompt engineering for code",
+            "AI pair programming workflows",
+            "Code review with AI",
+            "Rapid prototyping techniques"
+          ],
+          "resources": [
+            {
+              "icon": "message-square",
+              "name": "ChatGPT — OpenAI's AI Assistant",
+              "meta": "chatgpt.com · Free tier for AI-assisted coding & research",
+              "url": "https://chatgpt.com"
+            },
+            {
+              "icon": "bot",
+              "name": "Claude — Anthropic's AI Assistant",
+              "meta": "claude.ai · Free tier for coding, analysis & writing",
+              "url": "https://claude.ai"
+            },
+            {
+              "icon": "terminal",
+              "name": "Cursor — AI-Powered Code Editor",
+              "meta": "cursor.com · Free tier for AI pair programming",
+              "url": "https://cursor.com"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "AI-Built Landing Page",
+              "desc": "Use AI tools to rapidly prototype and build a complete landing page, documenting the AI-assisted workflow.",
+              "skills": ["AI prompt engineering", "Rapid prototyping workflow", "Code review & refinement", "Design iteration with AI", "Documentation of process"],
+              "stack": ["Cursor", "v0", "ChatGPT"]
+            },
+            "capstone": {
+              "title": "AI-Powered Component Library",
+              "desc": "Build a reusable component library using AI-assisted development, with documentation and Storybook deployment.",
+              "skills": ["Component architecture", "AI-assisted coding", "Storybook documentation", "Testing components", "npm package publication"],
+              "stack": ["React", "TypeScript", "Storybook"]
+            }
+          }
+        },
+        {
+          "icon": "zap",
+          "accentClass": "a2",
+          "title": "Rapid Prototyping",
+          "topics": [
+            "AI-assisted landing page building",
+            "Component generation workflows",
+            "Design-to-code pipelines",
+            "Testing & iteration with AI"
+          ],
+          "resources": [
+            {
+              "icon": "code",
+              "name": "v0 by Vercel — AI UI Generation",
+              "meta": "v0.dev · Free AI-powered UI component generator",
+              "url": "https://v0.dev"
+            },
+            {
+              "icon": "zap",
+              "name": "Bolt.new — AI Full-Stack App Builder",
+              "meta": "bolt.new · Free AI-powered full-stack builder",
+              "url": "https://bolt.new"
+            },
+            {
+              "icon": "rocket",
+              "name": "Antigravity — AI Development Tools",
+              "meta": "antigravity.dev · Free AI-assisted development platform",
+              "url": "https://antigravity.dev"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "08",
+      "badge": "badge-advanced",
+      "badgeLabel": "Funnels",
+      "title": "Funnel Design",
+      "duration": "Months 10–13",
+      "modules": [
+        {
+          "icon": "filter",
+          "accentClass": "a2",
+          "title": "Funnel Types & Strategy",
+          "topics": [
+            "Lead generation funnels",
+            "Webinar funnels",
+            "SaaS funnels",
+            "Product launch funnels"
+          ],
+          "resources": [
+            {
+              "icon": "file-text",
+              "name": "HubSpot — Marketing Funnel Guide",
+              "meta": "hubspot.com · Free comprehensive guide to building funnels",
+              "url": "https://blog.hubspot.com/marketing/funnel"
+            },
+            {
+              "icon": "graduation-cap",
+              "name": "HubSpot Academy — Inbound Marketing Course",
+              "meta": "academy.hubspot.com · Free certification on funnel strategy",
+              "url": "https://academy.hubspot.com/courses/inbound-marketing"
+            },
+            {
+              "icon": "bar-chart-3",
+              "name": "Neil Patel — Sales Funnel Guide",
+              "meta": "neilpatel.com · Free funnel optimization strategies",
+              "url": "https://neilpatel.com/blog/sales-funnel/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "SaaS Funnel Build",
+              "desc": "Design and build a complete SaaS funnel with landing page, lead magnet, email sequence, and conversion flow.",
+              "skills": ["Landing page design", "Lead magnet creation", "Email sequence", "Thank you page", "Analytics tracking"],
+              "stack": ["Next.js", "Mailchimp", "Google Analytics"]
+            },
+            "capstone": {
+              "title": "Product Launch Funnel",
+              "desc": "Create a complete product launch funnel with waitlist, launch sequence, and post-launch nurture — tracking conversions at each stage.",
+              "skills": ["Waitlist landing page", "Launch email sequence", "Cart & checkout flow", "Post-purchase nurture", "Conversion analytics"],
+              "stack": ["Next.js", "Stripe", "ConvertKit"]
+            }
+          }
+        },
+        {
+          "icon": "shopping-cart",
+          "accentClass": "a2",
+          "title": "E-commerce & Launch Funnels",
+          "topics": [
+            "E-commerce funnels",
+            "Cart abandonment recovery",
+            "Upsell & cross-sell strategies",
+            "Reading: DotCom Secrets"
+          ],
+          "resources": [
+            {
+              "icon": "shopping-bag",
+              "name": "Shopify — Sales Funnel Guide",
+              "meta": "shopify.com · Free step-by-step funnel building guide",
+              "url": "https://www.shopify.com/blog/sales-funnel"
+            },
+            {
+              "icon": "filter",
+              "name": "HubSpot — E-commerce Funnel Guide",
+              "meta": "hubspot.com · Free guide to optimizing e-commerce funnels",
+              "url": "https://blog.hubspot.com/marketing/ecommerce-funnels"
+            },
+            {
+              "icon": "trending-up",
+              "name": "Unbounce — Conversion Funnel Guide",
+              "meta": "unbounce.com · Free CRO-focused funnel optimization",
+              "url": "https://unbounce.com/conversion-rate-optimization/what-is-a-conversion-funnel/"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "09",
+      "badge": "badge-core",
+      "badgeLabel": "Analytics",
+      "title": "CRO & Analytics",
+      "duration": "Months 12–15",
+      "modules": [
+        {
+          "icon": "bar-chart-3",
+          "accentClass": "a2",
+          "title": "Analytics & Tracking",
+          "topics": [
+            "Conversion tracking setup",
+            "Google Analytics 4 mastery",
+            "Heatmaps & session recordings",
+            "Funnel analysis"
+          ],
+          "resources": [
+            {
+              "icon": "bar-chart-3",
+              "name": "Google Analytics Academy — GA4 Training",
+              "meta": "analytics.google.com · Free official Google Analytics courses",
+              "url": "https://analytics.google.com/analytics/academy/"
+            },
+            {
+              "icon": "eye",
+              "name": "Microsoft Clarity — Free Heatmaps & Recordings",
+              "meta": "clarity.microsoft.com · Free session recordings & heatmaps",
+              "url": "https://clarity.microsoft.com"
+            },
+            {
+              "icon": "mouse-pointer-click",
+              "name": "Hotjar — Behavior Analytics",
+              "meta": "hotjar.com · Free tier for heatmaps & session recordings",
+              "url": "https://www.hotjar.com"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Landing Page Optimization",
+              "desc": "Set up analytics, heatmaps, and A/B tests for a real landing page — documenting findings and optimization recommendations.",
+              "skills": ["GA4 setup & configuration", "Heatmap analysis", "A/B test design", "Conversion tracking", "Optimization report"],
+              "stack": ["Google Analytics", "Hotjar", "Microsoft Clarity"]
+            },
+            "capstone": {
+              "title": "CRO Case Study",
+              "desc": "Complete CRO case study: audit, hypothesis, A/B test, analyze results, and present optimization recommendations.",
+              "skills": ["Full funnel audit", "Hypothesis generation", "A/B test execution", "Statistical analysis", "Results presentation"],
+              "stack": ["Google Analytics", "Hotjar", "Google Slides"]
+            }
+          }
+        },
+        {
+          "icon": "test-tube",
+          "accentClass": "ag",
+          "title": "A/B Testing & Optimization",
+          "topics": [
+            "A/B testing methodology",
+            "Statistical significance",
+            "Conversion rate optimization",
+            "Reading: Making Websites Win"
+          ],
+          "resources": [
+            {
+              "icon": "test-tube",
+              "name": "GoodUI — A/B Testing Ideas & Experiments",
+              "meta": "goodui.org · Free library of 400+ conversion experiment ideas",
+              "url": "https://goodui.org"
+            },
+            {
+              "icon": "file-text",
+              "name": "AB Tasty — A/B Testing Guide",
+              "meta": "abtasty.com · Free comprehensive A/B testing resource",
+              "url": "https://abtasty.com/blog/what-is-ab-testing/"
+            },
+            {
+              "icon": "graduation-cap",
+              "name": "CXL Institute — CRO Minidegree",
+              "meta": "cxl.com · Free trial for conversion rate optimization training",
+              "url": "https://cxl.com/institute"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "badge": "badge-foundation",
+      "badgeLabel": "Automation",
+      "title": "AI Automation",
+      "duration": "Months 13–16",
+      "modules": [
+        {
+          "icon": "zap",
+          "accentClass": "a2",
+          "title": "Automation Workflows",
+          "topics": [
+            "n8n workflow automation",
+            "API integration & webhooks",
+            "OpenAI API for automation",
+            "Email & CRM automation"
+          ],
+          "resources": [
+            {
+              "icon": "file-text",
+              "name": "n8n — Official Documentation",
+              "meta": "docs.n8n.io · Free workflow automation docs & tutorials",
+              "url": "https://docs.n8n.io"
+            },
+            {
+              "icon": "send",
+              "name": "Postman — API Learning Center",
+              "meta": "learning.postman.com · Free API testing & development training",
+              "url": "https://learning.postman.com/docs/getting-started/introduction/"
+            },
+            {
+              "icon": "bot",
+              "name": "OpenAI — Platform Documentation",
+              "meta": "platform.openai.com · Free API docs for ChatGPT & GPT models",
+              "url": "https://platform.openai.com/docs"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Lead Qualification System",
+              "desc": "Build an automated lead qualification system using n8n, OpenAI API, and a CRM — from form submission to lead scoring.",
+              "skills": ["Form submission webhook", "AI lead scoring", "CRM data entry", "Email notification system", "Dashboard for tracking"],
+              "stack": ["n8n", "OpenAI API", "HubSpot"]
+            },
+            "capstone": {
+              "title": "AI Customer Support Bot",
+              "desc": "Build an AI-powered customer support system that handles inquiries, qualifies leads, and schedules appointments automatically.",
+              "skills": ["AI chatbot for support", "Lead qualification logic", "Calendar integration", "Email follow-up automation", "Analytics & reporting"],
+              "stack": ["n8n", "OpenAI", "Calendly"]
+            }
+          }
+        },
+        {
+          "icon": "cpu",
+          "accentClass": "a1",
+          "title": "AI-Powered Systems",
+          "topics": [
+            "Lead qualification systems",
+            "AI customer support",
+            "Appointment scheduling automation",
+            "CRM data enrichment"
+          ],
+          "resources": [
+            {
+              "icon": "zap",
+              "name": "Zapier — Automation Learning Hub",
+              "meta": "zapier.com · Free guides on workflow automation",
+              "url": "https://zapier.com/learn"
+            },
+            {
+              "icon": "settings",
+              "name": "Make (Integromat) — Help Center",
+              "meta": "make.com · Free tutorials for visual automation",
+              "url": "https://www.make.com/en/help"
+            },
+            {
+              "icon": "database",
+              "name": "HubSpot Free CRM",
+              "meta": "hubspot.com · Free CRM with built-in automation",
+              "url": "https://www.hubspot.com/products/crm"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "badge": "badge-career",
+      "badgeLabel": "Career",
+      "title": "Sales & Freelancing",
+      "duration": "Months 15–18",
+      "modules": [
+        {
+          "icon": "dollar-sign",
+          "accentClass": "a2",
+          "title": "Sales Fundamentals",
+          "topics": [
+            "Discovery calls & needs analysis",
+            "Proposal writing & pricing",
+            "Sales psychology & negotiation",
+            "Client management"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "HubSpot Academy — Sales Training & Certifications",
+              "meta": "academy.hubspot.com · Free sales certifications (Inbound, Sales Software)",
+              "url": "https://academy.hubspot.com/courses/sales-training"
+            },
+            {
+              "icon": "file-text",
+              "name": "HubSpot Sales Blog",
+              "meta": "hubspot.com · Free articles on sales strategy & techniques",
+              "url": "https://blog.hubspot.com/sales"
+            },
+            {
+              "icon": "briefcase",
+              "name": "Salesforce — Sales Fundamentals",
+              "meta": "salesforce.com · Free articles on sales methodology",
+              "url": "https://www.salesforce.com/resources/articles/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Portfolio & Case Study",
+              "desc": "Build a professional portfolio showcasing all projects from this roadmap, with detailed case studies demonstrating conversion results.",
+              "skills": ["Portfolio website", "Case study documentation", "Results & metrics display", "Client testimonials", "Contact & booking flow"],
+              "stack": ["Next.js", "Tailwind", "Vercel"]
+            },
+            "capstone": {
+              "title": "Client Project Simulation",
+              "desc": "Simulate a complete client project: discovery call, proposal, execution, delivery, and post-launch optimization — documenting the entire process.",
+              "skills": ["Discovery call script", "Project proposal", "Scope & timeline document", "Client communication", "Project delivery"],
+              "stack": ["Google Docs", "Notion", "Loom"]
+            }
+          }
+        },
+        {
+          "icon": "briefcase",
+          "accentClass": "ag",
+          "title": "Freelancing & Business",
+          "topics": [
+            "Client acquisition strategies",
+            "Portfolio & case studies",
+            "Contract & scope management",
+            "Reading: The Mom Test, SPIN Selling"
+          ],
+          "resources": [
+            {
+              "icon": "globe",
+              "name": "Upwork — Freelance Marketplace",
+              "meta": "upwork.com · Free to join, find freelance clients",
+              "url": "https://www.upwork.com"
+            },
+            {
+              "icon": "shopping-bag",
+              "name": "Fiverr — Freelance Services Marketplace",
+              "meta": "fiverr.com · Free to join, sell your services globally",
+              "url": "https://www.fiverr.com"
+            },
+            {
+              "icon": "users",
+              "name": "LinkedIn Learning — Freelancing Courses",
+              "meta": "linkedin.com · Free trial for freelancing & business courses",
+              "url": "https://www.linkedin.com/learning/"
+            }
+          ],
+          "projects": {}
+        }
+      ]
+    }
+  ]
+}
