@@ -1,1570 +1,2778 @@
 {
-    "banner": "100% Free \u00b7 8 Phases \u00b7 40+ Resources \u00b7 $0 Cost \u00b7 Zero Paywalls",
-    "titleDisplay": "Fintech\u003cbr\u003e\u003cem\u003eEngineering\u003c/em\u003e",
-    "subtitle": "A complete, self\u2013paced path from financial foundations to production fintech engineer \u2014 8 phases, 40+ hand\u2013curated free resources, dual General \u0026 Healthcare tracks, a 16\u2013month study schedule, and career prep. $0 cost. No paywalls. No compromises.",
-    "meta": {
-        "duration": "15\u201316 mo",
-        "cost": "$0",
-        "resources": "40+",
-        "salaryTarget": "$120k+"
-    },
-    "phases": [
+  "banner": "100% Free · 8 Phases · 40+ Resources · $0 Cost · Zero Paywalls",
+  "titleDisplay": "Fintech<br><em>Engineering</em>",
+  "subtitle": "A complete, self–paced path from financial foundations to production fintech engineer — 8 phases, 40+ hand–curated free resources, dual General & Healthcare tracks, a 16–month study schedule, and career prep. $0 cost. No paywalls. No compromises.",
+  "meta": {
+    "duration": "15–16 mo",
+    "cost": "$0",
+    "resources": "40+",
+    "salaryTarget": "$120k+"
+  },
+  "phases": [
+    {
+      "number": "01",
+      "badge": "badge-foundation",
+      "badgeLabel": "Foundation",
+      "title": "Financial Foundations",
+      "duration": "Months 1–2",
+      "modules": [
         {
-            "number": "01",
-            "badge": "badge-foundation",
-            "badgeLabel": "Foundation",
-            "title": "Financial Foundations",
-            "duration": "Months 1\u20132",
-            "modules": [
-                {
-                    "icon": "landmark",
-                    "accentClass": "a2",
-                    "title": "Personal Finance \u0026 Banking",
-                    "topics": [
-                        "Financial instruments \u0026 markets",
-                        "Banking systems \u0026 accounts",
-                        "Payment rails \u0026 clearing",
-                        "Financial regulations overview"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Khan Academy Finance \u0026 Capital Markets",
-                            "meta": "khanacademy.org \u00b7 Free comprehensive finance courses",
-                            "url": "https://www.khanacademy.org/economics-finance-domain"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Investopedia Fintech Course",
-                            "meta": "investopedia.com \u00b7 Free fintech fundamentals articles",
-                            "url": "https://www.investopedia.com/fintech-4426410"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Yale Financial Markets (Coursera)",
-                            "meta": "coursera.org \u00b7 Free audit, Robert Shiller\u2019s finance course",
-                            "url": "https://www.coursera.org/learn/financial-markets-global"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Coursera Introduction to Fintech (University of Michigan)",
-                            "meta": "coursera.org \u00b7 Free audit fintech overview",
-                            "url": "https://www.coursera.org/learn/fintech"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Financial Dashboard",
-                            "desc": "Build a personal finance dashboard tracking income, expenses, investments, and net worth with interactive charts and budgeting features.",
-                            "skills": [
-                                "Financial data modeling",
-                                "Investment tracking",
-                                "Budgeting algorithms",
-                                "Data visualization"
-                            ],
-                            "stack": [
-                                "Python",
-                                "Pandas",
-                                "Plotly",
-                                "Streamlit"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Healthcare Payment Tracker",
-                            "desc": "Build a system that tracks medical expenses, insurance claims, out\u2013of\u2013pocket costs, and generates FSA/HSA contribution reports.",
-                            "skills": [
-                                "Healthcare payment processing",
-                                "Insurance claim modeling",
-                                "FSA/HSA calculations",
-                                "Medical billing data"
-                            ],
-                            "stack": [
-                                "Python",
-                                "Pandas",
-                                "Plotly",
-                                "Streamlit"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "terminal",
-                    "accentClass": "a2",
-                    "title": "Programming for Finance",
-                    "topics": [
-                        "Python for financial analysis",
-                        "NumPy \u0026 financial math",
-                        "Pandas for time\u2013series data",
-                        "JavaScript for fintech web apps"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Python for Finance (free articles)",
-                            "meta": "freecodecamp.org \u00b7 Free Python finance tutorials",
-                            "url": "https://www.freecodecamp.org/news/tag/python/"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "NumPy Financial Functions",
-                            "meta": "numpy.org \u00b7 Free financial modeling documentation",
-                            "url": "https://numpy.org/doc/stable/reference/routines.financial.html"
-                        },
-                        {
-                            "icon": "database",
-                            "name": "Kaggle Intro to Financial Analysis",
-                            "meta": "kaggle.com \u00b7 Free financial data courses",
-                            "url": "https://www.kaggle.com/learn"
-                        },
-                        {
-                            "icon": "book",
-                            "name": "JavaScript.info",
-                            "meta": "javascript.info \u00b7 Free JavaScript fundamentals",
-                            "url": "https://javascript.info"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Investment Calculator Suite",
-                            "desc": "Build a suite of financial calculators: compound interest, mortgage, retirement planning, and investment portfolio analyzer with real\u2013time market data.",
-                            "skills": [
-                                "Financial formulas",
-                                "API integration",
-                                "Time\u2013value of money",
-                                "Portfolio analytics"
-                            ],
-                            "stack": [
-                                "Python",
-                                "NumPy",
-                                "Pandas",
-                                "Flask/Node.js"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Medical Cost Estimator",
-                            "desc": "Build a tool that estimates medical procedure costs, compares insurance plans, calculates deductible tracking, and projects annual healthcare spending.",
-                            "skills": [
-                                "Medical cost modeling",
-                                "Insurance plan comparison",
-                                "Deductible algorithms",
-                                "Healthcare spending projection"
-                            ],
-                            "stack": [
-                                "Python",
-                                "NumPy",
-                                "Pandas",
-                                "Flask/Node.js"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Personal Finance CLI",
-                    "desc": "A command\u2013line tool that tracks expenses, categorises transactions, generates monthly budget reports, and projects savings goals using financial math formulas.",
-                    "skills": [
-                        "CLI with Typer",
-                        "Financial data modeling",
-                        "Budgeting algorithms",
-                        "CSV/JSON export",
-                        "Terminal UI with Rich"
-                    ],
-                    "stack": [
-                        "Python",
-                        "NumPy",
-                        "Pandas",
-                        "Typer",
-                        "Rich"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Healthcare Expense Tracker",
-                    "desc": "A CLI tool that categorises medical expenses, tracks insurance claims, calculates FSA/HSA contributions, and generates end\u2013of\u2013year healthcare spending reports.",
-                    "skills": [
-                        "Medical expense categorisation",
-                        "Insurance claim tracking",
-                        "FSA/HSA contribution calculator",
-                        "Healthcare spending reports",
-                        "HIPAA\u2013aware data handling"
-                    ],
-                    "stack": [
-                        "Python",
-                        "NumPy",
-                        "Pandas",
-                        "Typer",
-                        "Rich"
-                    ]
-                }
+          "icon": "landmark",
+          "accentClass": "a2",
+          "title": "Personal Finance & Banking",
+          "topics": [
+            "Financial instruments & markets",
+            "Banking systems & accounts",
+            "Payment rails & clearing",
+            "Financial regulations overview"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Khan Academy Finance & Capital Markets",
+              "meta": "khanacademy.org · Free comprehensive finance courses",
+              "url": "https://www.khanacademy.org/economics-finance-domain"
+            },
+            {
+              "icon": "file-text",
+              "name": "Investopedia Fintech Course",
+              "meta": "investopedia.com · Free fintech fundamentals articles",
+              "url": "https://www.investopedia.com/fintech-4426410"
+            },
+            {
+              "icon": "play",
+              "name": "Yale Financial Markets (Coursera)",
+              "meta": "coursera.org · Free audit, Robert Shiller’s finance course",
+              "url": "https://www.coursera.org/learn/financial-markets-global"
+            },
+            {
+              "icon": "play",
+              "name": "Coursera Introduction to Fintech (University of Michigan)",
+              "meta": "coursera.org · Free audit fintech overview",
+              "url": "https://www.coursera.org/learn/fintech"
             }
+          ],
+          "projects": {
+            "general": {
+              "title": "Financial Dashboard",
+              "desc": "Build a personal finance dashboard tracking income, expenses, investments, and net worth with interactive charts and budgeting features.",
+              "skills": [
+                "Financial data modeling",
+                "Investment tracking",
+                "Budgeting algorithms",
+                "Data visualization"
+              ],
+              "stack": [
+                "Python",
+                "Pandas",
+                "Plotly",
+                "Streamlit"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
         },
         {
-            "number": "02",
-            "badge": "badge-foundation",
-            "badgeLabel": "Foundation",
-            "title": "Web Development for Fintech",
-            "duration": "Months 3\u20134",
-            "modules": [
-                {
-                    "icon": "layout",
-                    "accentClass": "a3",
-                    "title": "Frontend for Financial Apps",
-                    "topics": [
-                        "React for fintech UIs",
-                        "Financial data visualization (charts, candlesticks)",
-                        "Real\u2013time data streaming",
-                        "Responsive design for trading"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "React Official Tutorial",
-                            "meta": "react.dev \u00b7 Free React learning resources",
-                            "url": "https://react.dev/learn"
-                        },
-                        {
-                            "icon": "bar-chart",
-                            "name": "Chart.js Documentation",
-                            "meta": "chartjs.org \u00b7 Free charting library docs",
-                            "url": "https://www.chartjs.org/docs/"
-                        },
-                        {
-                            "icon": "trending-up",
-                            "name": "TradingView Lightweight Charts",
-                            "meta": "github.com \u00b7 Free open\u2013source financial charting",
-                            "url": "https://github.com/nicknisi/lightweight-charts"
-                        },
-                        {
-                            "icon": "check-circle",
-                            "name": "freeCodeCamp React Course",
-                            "meta": "freecodecamp.org \u00b7 Free React certification",
-                            "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Stock Portfolio Tracker",
-                            "desc": "Build a React app that tracks stock holdings, displays real\u2013time prices, shows portfolio performance, and generates dividend reports.",
-                            "skills": [
-                                "React component architecture",
-                                "Real\u2013time data handling",
-                                "Financial charting",
-                                "WebSocket integration"
-                            ],
-                            "stack": [
-                                "React",
-                                "Chart.js/TradingView",
-                                "WebSocket",
-                                "Node.js"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Health Insurance Comparison Tool",
-                            "desc": "Build a React app that compares health insurance plans, calculates premiums, shows coverage details, and tracks claims.",
-                            "skills": [
-                                "Insurance plan data modeling",
-                                "Premium calculation",
-                                "Coverage comparison UI",
-                                "Claims tracking"
-                            ],
-                            "stack": [
-                                "React",
-                                "Chart.js",
-                                "Node.js",
-                                "PostgreSQL"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "server",
-                    "accentClass": "a3",
-                    "title": "Backend for Financial Services",
-                    "topics": [
-                        "RESTful APIs for financial data",
-                        "WebSocket for real\u2013time feeds",
-                        "Database design for transactions",
-                        "Caching strategies for market data"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "zap",
-                            "name": "FastAPI Documentation",
-                            "meta": "fastapi.tiangolo.com \u00b7 Free API framework docs",
-                            "url": "https://fastapi.tiangolo.com/"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Express.js Guide",
-                            "meta": "expressjs.com \u00b7 Free Node.js API docs",
-                            "url": "https://expressjs.com/en/guide/routing.html"
-                        },
-                        {
-                            "icon": "database",
-                            "name": "PostgreSQL for Financial Data",
-                            "meta": "postgresql.org \u00b7 Free database docs",
-                            "url": "https://www.postgresql.org/docs/"
-                        },
-                        {
-                            "icon": "zap",
-                            "name": "Redis for Caching",
-                            "meta": "redis.io \u00b7 Free caching tutorials",
-                            "url": "https://redis.io/docs/get-started/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Market Data API",
-                            "desc": "Build a REST API serving stock prices, historical data, and financial news with rate limiting, caching, and WebSocket streaming.",
-                            "skills": [
-                                "API design for financial data",
-                                "Redis caching",
-                                "WebSocket streaming",
-                                "Rate limiting"
-                            ],
-                            "stack": [
-                                "FastAPI/Express.js",
-                                "PostgreSQL",
-                                "Redis",
-                                "WebSocket"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Insurance Claims API",
-                            "desc": "Build a REST API for submitting, tracking, and processing insurance claims with validation, status tracking, and document attachments.",
-                            "skills": [
-                                "Claims processing API",
-                                "Document management",
-                                "Status tracking",
-                                "Insurance validation rules"
-                            ],
-                            "stack": [
-                                "FastAPI/Express.js",
-                                "PostgreSQL",
-                                "S3",
-                                "Docker"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Fintech Web App Starter",
-                    "desc": "A full\u2013stack fintech starter kit with React frontend, FastAPI backend, Redis caching, WebSocket real\u2013time updates, and PostgreSQL database with financial data models.",
-                    "skills": [
-                        "React component architecture",
-                        "FastAPI REST API",
-                        "Redis caching layer",
-                        "WebSocket real\u2013time data",
-                        "PostgreSQL schema design"
-                    ],
-                    "stack": [
-                        "React",
-                        "FastAPI",
-                        "PostgreSQL",
-                        "Redis",
-                        "WebSocket"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Healthcare Fintech Starter",
-                    "desc": "A full\u2013stack healthcare fintech starter with React frontend, FastAPI backend, insurance claims processing, and HIPAA\u2013compliant data storage.",
-                    "skills": [
-                        "Healthcare data models",
-                        "Insurance claims API",
-                        "HIPAA\u2013compliant storage",
-                        "Real\u2013time status updates",
-                        "Document management"
-                    ],
-                    "stack": [
-                        "React",
-                        "FastAPI",
-                        "PostgreSQL",
-                        "Redis",
-                        "S3"
-                    ]
-                }
+          "icon": "terminal",
+          "accentClass": "a2",
+          "title": "Programming for Finance",
+          "topics": [
+            "Python for financial analysis",
+            "NumPy & financial math",
+            "Pandas for time–series data",
+            "JavaScript for fintech web apps"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Python for Finance (free articles)",
+              "meta": "freecodecamp.org · Free Python finance tutorials",
+              "url": "https://www.freecodecamp.org/news/tag/python/"
+            },
+            {
+              "icon": "file-text",
+              "name": "NumPy Financial Functions",
+              "meta": "numpy.org · Free financial modeling documentation",
+              "url": "https://numpy.org/doc/stable/reference/routines.financial.html"
+            },
+            {
+              "icon": "database",
+              "name": "Kaggle Intro to Financial Analysis",
+              "meta": "kaggle.com · Free financial data courses",
+              "url": "https://www.kaggle.com/learn"
+            },
+            {
+              "icon": "book",
+              "name": "JavaScript.info",
+              "meta": "javascript.info · Free JavaScript fundamentals",
+              "url": "https://javascript.info"
             }
-        },
-        {
-            "number": "03",
-            "badge": "badge-intermediate",
-            "badgeLabel": "Intermediate",
-            "title": "Payment Systems",
-            "duration": "Months 5\u20136",
-            "modules": [
-                {
-                    "icon": "credit-card",
-                    "accentClass": "a4",
-                    "title": "Payment Processing",
-                    "topics": [
-                        "Payment gateway integration",
-                        "Stripe/PayPal APIs",
-                        "Card processing (PCI DSS)",
-                        "ACH \u0026 wire transfers",
-                        "Payment reconciliation"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "file-text",
-                            "name": "Stripe Documentation",
-                            "meta": "stripe.com/docs \u00b7 Free comprehensive payment integration docs",
-                            "url": "https://stripe.com/docs"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "PayPal Developer Portal",
-                            "meta": "developer.paypal.com \u00b7 Free PayPal API docs",
-                            "url": "https://developer.paypal.com/docs/api/overview/"
-                        },
-                        {
-                            "icon": "shield",
-                            "name": "PCI DSS Overview",
-                            "meta": "pcisecuritystandards.org \u00b7 Free payment security standards",
-                            "url": "https://www.pcisecuritystandards.org/document_library/"
-                        },
-                        {
-                            "icon": "book-open",
-                            "name": "Adyen Payments Guide",
-                            "meta": "docs.adyen.com \u00b7 Free payment processing tutorials",
-                            "url": "https://docs.adyen.com/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Payment Processing System",
-                            "desc": "Build a payment system integrating Stripe for card payments, including checkout, refunds, subscription billing, and reconciliation.",
-                            "skills": [
-                                "Stripe integration",
-                                "PCI compliance awareness",
-                                "Payment reconciliation",
-                                "Subscription billing"
-                            ],
-                            "stack": [
-                                "Node.js/Python",
-                                "Stripe API",
-                                "PostgreSQL",
-                                "Docker"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Patient Payment Portal",
-                            "desc": "Build a patient\u2013facing payment portal for medical bills with payment plans, insurance copay processing, and HSA/FSA payment options.",
-                            "skills": [
-                                "Medical billing integration",
-                                "Payment plan calculations",
-                                "Insurance copay processing",
-                                "HSA/FSA compliance"
-                            ],
-                            "stack": [
-                                "Node.js/Python",
-                                "Stripe API",
-                                "PostgreSQL",
-                                "Docker"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "smartphone",
-                    "accentClass": "a4",
-                    "title": "Digital Wallets \u0026 Mobile Payments",
-                    "topics": [
-                        "Digital wallet architecture",
-                        "QR code payments",
-                        "NFC \u0026 contactless",
-                        "Peer\u2013to\u2013peer transfers",
-                        "Mobile payment SDKs"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "smartphone",
-                            "name": "Google Pay API",
-                            "meta": "developers.google.com \u00b7 Free Google Pay integration docs",
-                            "url": "https://developers.google.com/pay/api/web/overview"
-                        },
-                        {
-                            "icon": "smartphone",
-                            "name": "Apple Pay Web Integration",
-                            "meta": "developer.apple.com \u00b7 Free Apple Pay docs",
-                            "url": "https://developer.apple.com/documentation/apple_pay_on_the_web"
-                        },
-                        {
-                            "icon": "credit-card",
-                            "name": "Square Developer Portal",
-                            "meta": "developer.squareup.com \u00b7 Free payment SDK docs",
-                            "url": "https://developer.squareup.com/docs"
-                        },
-                        {
-                            "icon": "smartphone",
-                            "name": "Flutter for Mobile Payments",
-                            "meta": "flutter.dev \u00b7 Free mobile development framework",
-                            "url": "https://flutter.dev/docs"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Digital Wallet App",
-                            "desc": "Build a digital wallet with balance management, peer\u2013to\u2013peer transfers, QR code payments, and transaction history.",
-                            "skills": [
-                                "Wallet balance management",
-                                "P2P transfer logic",
-                                "QR code generation",
-                                "Transaction ledger"
-                            ],
-                            "stack": [
-                                "React Native/Flutter",
-                                "Node.js",
-                                "PostgreSQL",
-                                "Redis"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Health Savings Wallet",
-                            "desc": "Build a specialized wallet for health savings with HSA/FSA integration, medical expense categorization, receipt scanning, and tax reporting.",
-                            "skills": [
-                                "HSA/FSA balance tracking",
-                                "Medical expense categorization",
-                                "Receipt OCR",
-                                "Tax report generation"
-                            ],
-                            "stack": [
-                                "React Native/Flutter",
-                                "Node.js",
-                                "PostgreSQL",
-                                "OCR API"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Payment Gateway MVP",
-                    "desc": "A payment gateway MVP with Stripe checkout, refund processing, subscription management, payment reconciliation dashboard, and webhook handling.",
-                    "skills": [
-                        "Stripe Checkout integration",
-                        "Webhook event handling",
-                        "Subscription lifecycle management",
-                        "Payment reconciliation logic",
-                        "PCI\u2013aware architecture"
-                    ],
-                    "stack": [
-                        "Node.js",
-                        "Stripe API",
-                        "PostgreSQL",
-                        "React",
-                        "Docker"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Medical Billing Payment System",
-                    "desc": "A healthcare payment system handling patient billing, insurance copays, HSA/FSA payments, payment plans, and automated reconciliation with insurance providers.",
-                    "skills": [
-                        "Medical billing workflow",
-                        "Insurance copay processing",
-                        "HSA/FSA payment handling",
-                        "Payment plan scheduling",
-                        "Insurance reconciliation"
-                    ],
-                    "stack": [
-                        "Node.js",
-                        "Stripe API",
-                        "PostgreSQL",
-                        "React",
-                        "Docker"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "04",
-            "badge": "badge-intermediate",
-            "badgeLabel": "Intermediate",
-            "title": "Blockchain \u0026 DeFi",
-            "duration": "Months 7\u20138",
-            "modules": [
-                {
-                    "icon": "link",
-                    "accentClass": "a5",
-                    "title": "Blockchain Fundamentals",
-                    "topics": [
-                        "Blockchain architecture",
-                        "Distributed consensus",
-                        "Bitcoin \u0026 Ethereum basics",
-                        "Cryptographic hashing",
-                        "Smart contract concepts"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Ethereum.org Learning Resources",
-                            "meta": "ethereum.org \u00b7 Free blockchain education",
-                            "url": "https://ethereum.org/en/learn/"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "CryptoZombies",
-                            "meta": "cryptozombies.io \u00b7 Free interactive blockchain coding course",
-                            "url": "https://cryptozombies.io"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Bitcoin Whitepaper (Satoshi Nakamoto)",
-                            "meta": "bitcoin.org \u00b7 Free original Bitcoin paper",
-                            "url": "https://bitcoin.org/bitcoin.pdf"
-                        },
-                        {
-                            "icon": "book-open",
-                            "name": "Alchemy University",
-                            "meta": "alchemy.com/university \u00b7 Free blockchain development courses",
-                            "url": "https://university.alchemy.com"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Blockchain Transaction Explorer",
-                            "desc": "Build a blockchain explorer that visualizes transactions, blocks, gas fees, and wallet balances on Ethereum testnet.",
-                            "skills": [
-                                "Blockchain data querying",
-                                "Transaction visualization",
-                                "Gas estimation",
-                                "Wallet management"
-                            ],
-                            "stack": [
-                                "Web3.js/Ethers.js",
-                                "React",
-                                "Solidity (basics)",
-                                "Infura/Alchemy"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Medical Records Blockchain",
-                            "desc": "Build a proof\u2013of\u2013concept for storing medical record hashes on blockchain for integrity verification with off\u2013chain storage.",
-                            "skills": [
-                                "Blockchain data integrity",
-                                "Medical record hashing",
-                                "Decentralized verification",
-                                "IPFS storage"
-                            ],
-                            "stack": [
-                                "Solidity",
-                                "Web3.js",
-                                "IPFS",
-                                "React"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "code",
-                    "accentClass": "a5",
-                    "title": "Smart Contracts \u0026 DeFi",
-                    "topics": [
-                        "Solidity programming",
-                        "Smart contract testing",
-                        "DeFi protocols (lending, DEX)",
-                        "Token standards (ERC\u201320, ERC\u2013721)"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "file-text",
-                            "name": "Solidity Documentation",
-                            "meta": "soliditylang.org \u00b7 Free Solidity language docs",
-                            "url": "https://docs.soliditylang.org/"
-                        },
-                        {
-                            "icon": "shield",
-                            "name": "OpenZeppelin Contracts",
-                            "meta": "openzeppelin.com \u00b7 Free audited smart contract library",
-                            "url": "https://docs.openzeppelin.com/contracts"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Chainlink Documentation",
-                            "meta": "docs.chainlink.com \u00b7 Free oracle integration docs",
-                            "url": "https://docs.chain.link/"
-                        },
-                        {
-                            "icon": "wrench",
-                            "name": "Hardhat Tutorial",
-                            "meta": "hardhat.org \u00b7 Free Ethereum development environment",
-                            "url": "https://hardhat.org/tutorial"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Token Launch Platform",
-                            "desc": "Build an ERC\u201320 token creation platform with tokenomics configuration, distribution schedule, and basic DEX trading.",
-                            "skills": [
-                                "Solidity token development",
-                                "ERC\u201320 standards",
-                                "Tokenomics design",
-                                "Basic DEX mechanics"
-                            ],
-                            "stack": [
-                                "Solidity",
-                                "Hardhat",
-                                "React",
-                                "Ethers.js"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Healthcare Token System",
-                            "desc": "Build a token\u2013based system for patient health data sharing consent with smart contracts governing access permissions.",
-                            "skills": [
-                                "Smart contract access control",
-                                "Healthcare consent management",
-                                "Token\u2013based authorization",
-                                "Audit trail"
-                            ],
-                            "stack": [
-                                "Solidity",
-                                "Hardhat",
-                                "React",
-                                "Ethers.js"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "DeFi Dashboard",
-                    "desc": "A DeFi dashboard that connects to Ethereum wallets, displays token balances, tracks DeFi positions (lending/borrowing), and visualises gas costs.",
-                    "skills": [
-                        "Web3 wallet connection",
-                        "Token balance tracking",
-                        "DeFi position monitoring",
-                        "Gas cost analysis",
-                        "Solidity basics"
-                    ],
-                    "stack": [
-                        "React",
-                        "Ethers.js",
-                        "Solidity",
-                        "Hardhat",
-                        "Alchemy"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Healthcare Consent DApp",
-                    "desc": "A decentralized application for managing patient consent for health data sharing using blockchain\u2013based smart contracts with audit trails.",
-                    "skills": [
-                        "Smart contract consent logic",
-                        "Patient data access control",
-                        "Blockchain audit trail",
-                        "DApp frontend integration",
-                        "IPFS document storage"
-                    ],
-                    "stack": [
-                        "React",
-                        "Ethers.js",
-                        "Solidity",
-                        "Hardhat",
-                        "IPFS"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "05",
-            "badge": "badge-advanced",
-            "badgeLabel": "Advanced",
-            "title": "Financial Data \u0026 Analytics",
-            "duration": "Months 9\u201310",
-            "modules": [
-                {
-                    "icon": "bar-chart",
-                    "accentClass": "a6",
-                    "title": "Market Data \u0026 Analysis",
-                    "topics": [
-                        "Market data APIs",
-                        "Technical analysis indicators",
-                        "Financial modeling",
-                        "Algorithmic trading basics",
-                        "Backtesting"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "database",
-                            "name": "Yahoo Finance API (yfinance)",
-                            "meta": "pypi.org \u00b7 Free Python financial data library",
-                            "url": "https://pypi.org/project/yfinance/"
-                        },
-                        {
-                            "icon": "bar-chart",
-                            "name": "TA\u2013Lib Documentation",
-                            "meta": "ta\u2013lib.org \u00b7 Free technical analysis library",
-                            "url": "https://ta\u2013lib.org/"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "QuantConnect Bootcamp",
-                            "meta": "quantconnect.com \u00b7 Free algorithmic trading platform",
-                            "url": "https://www.quantconnect.com/tutorials"
-                        },
-                        {
-                            "icon": "database",
-                            "name": "Kaggle Financial Datasets",
-                            "meta": "kaggle.com \u00b7 Free financial data for analysis",
-                            "url": "https://www.kaggle.com/datasets"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Algorithmic Trading Bot",
-                            "desc": "Build a backtesting framework with technical indicators (RSI, MACD, Bollinger Bands) and paper trading simulation.",
-                            "skills": [
-                                "Technical analysis implementation",
-                                "Backtesting methodology",
-                                "Risk management",
-                                "Trading strategy evaluation"
-                            ],
-                            "stack": [
-                                "Python",
-                                "Pandas",
-                                "TA\u2013Lib",
-                                "QuantConnect (free tier)"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Healthcare Stock Analysis",
-                            "desc": "Analyze healthcare/pharma stock performance against clinical trial outcomes, FDA approvals, and market trends.",
-                            "skills": [
-                                "Healthcare sector analysis",
-                                "Event\u2013driven analysis",
-                                "Sector correlation",
-                                "Financial reporting"
-                            ],
-                            "stack": [
-                                "Python",
-                                "Pandas",
-                                "TA\u2013Lib",
-                                "Plotly"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "shield",
-                    "accentClass": "a6",
-                    "title": "Risk Analytics",
-                    "topics": [
-                        "Credit scoring models",
-                        "Fraud detection",
-                        "Risk assessment",
-                        "Monte Carlo simulation",
-                        "Regulatory reporting"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Scikit\u2013learn Documentation",
-                            "meta": "scikit\u2013learn.org \u00b7 Free ML library for risk models",
-                            "url": "https://scikit\u2013learn.org/stable/"
-                        },
-                        {
-                            "icon": "database",
-                            "name": "Kaggle Fraud Detection",
-                            "meta": "kaggle.com \u00b7 Free fraud detection datasets and competitions",
-                            "url": "https://www.kaggle.com/search?q=fraud+detection"
-                        },
-                        {
-                            "icon": "book-open",
-                            "name": "Monte Carlo Simulation (free articles)",
-                            "meta": "freecodecamp.org \u00b7 Free simulation tutorials",
-                            "url": "https://www.freecodecamp.org/news/tag/python/"
-                        },
-                        {
-                            "icon": "book-open",
-                            "name": "Risk Management Resources",
-                            "meta": "Various free academic resources",
-                            "url": "https://www.investopedia.com/terms/r/riskmanagement.asp"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Credit Risk Assessment Tool",
-                            "desc": "Build a credit scoring model using ML with features like payment history, credit utilization, and debt\u2013to\u2013income ratio.",
-                            "skills": [
-                                "Feature engineering for credit scoring",
-                                "ML model training",
-                                "Risk threshold calibration",
-                                "Model interpretability"
-                            ],
-                            "stack": [
-                                "Python",
-                                "scikit\u2013learn",
-                                "Pandas",
-                                "Flask"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Healthcare Fraud Detection",
-                            "desc": "Build a fraud detection system for insurance claims using anomaly detection and claims pattern analysis.",
-                            "skills": [
-                                "Anomaly detection",
-                                "Claims pattern analysis",
-                                "Fraud scoring",
-                                "Healthcare billing fraud indicators"
-                            ],
-                            "stack": [
-                                "Python",
-                                "scikit\u2013learn",
-                                "Pandas",
-                                "Flask"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Financial Analytics Platform",
-                    "desc": "A comprehensive financial analytics platform with market data ingestion, technical analysis, credit risk scoring, and interactive dashboards.",
-                    "skills": [
-                        "Market data pipeline",
-                        "Technical indicator engine",
-                        "ML\u2013based credit scoring",
-                        "Interactive Plotly dashboards",
-                        "Backtesting framework"
-                    ],
-                    "stack": [
-                        "Python",
-                        "Pandas",
-                        "scikit\u2013learn",
-                        "Plotly",
-                        "FastAPI"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Healthcare Financial Analytics",
-                    "desc": "A healthcare financial analytics platform tracking insurance claim patterns, fraud detection, healthcare cost trends, and provider payment analytics.",
-                    "skills": [
-                        "Insurance claim analytics",
-                        "Fraud detection pipeline",
-                        "Healthcare cost modeling",
-                        "Provider payment analysis",
-                        "Regulatory reporting"
-                    ],
-                    "stack": [
-                        "Python",
-                        "Pandas",
-                        "scikit\u2013learn",
-                        "Plotly",
-                        "FastAPI"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "06",
-            "badge": "badge-advanced",
-            "badgeLabel": "Advanced",
-            "title": "Regulatory \u0026 Security",
-            "duration": "Months 11\u201312",
-            "modules": [
-                {
-                    "icon": "clipboard",
-                    "accentClass": "a7",
-                    "title": "RegTech \u0026 Compliance",
-                    "topics": [
-                        "KYC/AML regulations",
-                        "Identity verification",
-                        "Transaction monitoring",
-                        "Regulatory reporting",
-                        "GDPR for financial data"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "shield",
-                            "name": "FATF Guidelines",
-                            "meta": "fatf\u2013gafi.org \u00b7 Free anti\u2013money laundering guidelines",
-                            "url": "https://www.fatf\u2013gafi.org/en/publications.html"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "FinCEN Resources",
-                            "meta": "fincen.gov \u00b7 Free AML compliance resources",
-                            "url": "https://www.fincen.gov/resources"
-                        },
-                        {
-                            "icon": "user-check",
-                            "name": "Onfido KYC Guide",
-                            "meta": "onfido.com \u00b7 Free identity verification resources",
-                            "url": "https://onfido.com/guides/kyc/"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "GDPR for Financial Services",
-                            "meta": "gdpr.eu \u00b7 Free GDPR compliance guides",
-                            "url": "https://gdpr.eu/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "KYC/AML Compliance System",
-                            "desc": "Build a KYC verification pipeline with document validation, sanctions screening, and transaction monitoring for AML compliance.",
-                            "skills": [
-                                "KYC document verification",
-                                "Sanctions list screening",
-                                "Transaction monitoring rules",
-                                "Suspicious activity reporting"
-                            ],
-                            "stack": [
-                                "Python",
-                                "OCR API",
-                                "PostgreSQL",
-                                "FastAPI"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Healthcare Identity Verification",
-                            "desc": "Build a patient identity verification system for telehealth with KYC principles, insurance verification, and HIPAA\u2013compliant identity management.",
-                            "skills": [
-                                "Patient identity verification",
-                                "Insurance eligibility checks",
-                                "HIPAA identity requirements",
-                                "Telehealth compliance"
-                            ],
-                            "stack": [
-                                "Python",
-                                "OCR API",
-                                "PostgreSQL",
-                                "FastAPI"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "lock",
-                    "accentClass": "a7",
-                    "title": "Fintech Security",
-                    "topics": [
-                        "API security for financial services",
-                        "Encryption for transactions",
-                        "Secure authentication (2FA, biometrics)",
-                        "Penetration testing for fintech"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "shield",
-                            "name": "OWASP API Security Top 10",
-                            "meta": "owasp.org \u00b7 Free API security guidelines",
-                            "url": "https://owasp.org/www\u2013project\u2013top\u2013ten/"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Stripe Security Best Practices",
-                            "meta": "stripe.com \u00b7 Free payment security docs",
-                            "url": "https://stripe.com/docs/security/guide"
-                        },
-                        {
-                            "icon": "lock",
-                            "name": "Auth0 Security Resources",
-                            "meta": "auth0.com \u00b7 Free authentication security guides",
-                            "url": "https://auth0.com/docs/secure"
-                        },
-                        {
-                            "icon": "shield",
-                            "name": "SANS Financial Sector Security",
-                            "meta": "sans.org \u00b7 Free financial security resources",
-                            "url": "https://www.sans.org/white\u2013papers/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Secure Payment Gateway",
-                            "desc": "Build a PCI\u2013compliant payment gateway with tokenization, 3D Secure, fraud detection, and comprehensive audit logging.",
-                            "skills": [
-                                "PCI DSS compliance",
-                                "Payment tokenization",
-                                "3D Secure implementation",
-                                "Fraud detection"
-                            ],
-                            "stack": [
-                                "Node.js/Python",
-                                "Stripe",
-                                "Redis",
-                                "PostgreSQL"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Secure Health Payment System",
-                            "desc": "Build a HIPAA\u2013compliant payment system for healthcare with PHI\u2013safe transaction handling, insurance payment processing, and audit trails.",
-                            "skills": [
-                                "HIPAA payment compliance",
-                                "PHI\u2013safe transaction design",
-                                "Insurance payment processing",
-                                "Audit logging"
-                            ],
-                            "stack": [
-                                "Node.js/Python",
-                                "Stripe",
-                                "Redis",
-                                "PostgreSQL"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Fintech Security Suite",
-                    "desc": "A comprehensive fintech security suite with KYC verification, AML monitoring, API security hardening, encryption utilities, and audit logging dashboard.",
-                    "skills": [
-                        "KYC/AML pipeline",
-                        "API security implementation",
-                        "Transaction encryption",
-                        "Audit log analysis",
-                        "Compliance reporting"
-                    ],
-                    "stack": [
-                        "Python",
-                        "FastAPI",
-                        "PostgreSQL",
-                        "Redis",
-                        "Docker"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Healthcare Compliance Platform",
-                    "desc": "A HIPAA\u2013compliant platform with patient identity verification, PHI encryption, audit trails, insurance verification, and regulatory reporting.",
-                    "skills": [
-                        "HIPAA compliance architecture",
-                        "PHI encryption at rest/transit",
-                        "Patient identity verification",
-                        "Audit trail management",
-                        "Regulatory reporting"
-                    ],
-                    "stack": [
-                        "Python",
-                        "FastAPI",
-                        "PostgreSQL",
-                        "Redis",
-                        "Docker"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "07",
-            "badge": "badge-expert",
-            "badgeLabel": "Expert",
-            "title": "Fintech Products",
-            "duration": "Months 13\u201314",
-            "modules": [
-                {
-                    "icon": "smartphone",
-                    "accentClass": "a8",
-                    "title": "Mobile Banking \u0026 Neobanking",
-                    "topics": [
-                        "Mobile banking architecture",
-                        "Account management",
-                        "Lending algorithms",
-                        "Investment platforms",
-                        "Robo\u2013advisory"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Chime Engineering Blog",
-                            "meta": "chime.com/blog \u00b7 Free neobank engineering insights",
-                            "url": "https://www.chime.com/blog/engineering/"
-                        },
-                        {
-                            "icon": "book-open",
-                            "name": "Nubank Tech Blog",
-                            "meta": "tech.nubank.com.br \u00b7 Free fintech architecture articles",
-                            "url": "https://tech.nubank.com.br/"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Plaid Documentation",
-                            "meta": "plaid.com/docs \u00b7 Free banking API docs",
-                            "url": "https://plaid.com/docs/"
-                        },
-                        {
-                            "icon": "smartphone",
-                            "name": "Flutter Mobile Development",
-                            "meta": "flutter.dev \u00b7 Free mobile framework",
-                            "url": "https://flutter.dev/docs"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Neobank MVP",
-                            "desc": "Build a mobile banking app with account management, P2P transfers, budgeting tools, and investment tracking.",
-                            "skills": [
-                                "Mobile banking architecture",
-                                "Account management",
-                                "P2P transfers",
-                                "Budgeting algorithms"
-                            ],
-                            "stack": [
-                                "React Native/Flutter",
-                                "Node.js",
-                                "PostgreSQL",
-                                "Plaid API"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Health Savings Neobank",
-                            "desc": "Build a specialized banking app for healthcare savings with HSA/FSA management, medical bill payment, and healthcare expense categorization.",
-                            "skills": [
-                                "HSA/FSA banking features",
-                                "Medical expense categorization",
-                                "Healthcare bill payment",
-                                "Savings optimization"
-                            ],
-                            "stack": [
-                                "React Native/Flutter",
-                                "Node.js",
-                                "PostgreSQL",
-                                "Plaid API"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "layers",
-                    "accentClass": "a8",
-                    "title": "Lending \u0026 Credit Platforms",
-                    "topics": [
-                        "Loan origination systems",
-                        "Credit decisioning",
-                        "P2P lending",
-                        "BNPL (Buy Now Pay Later)",
-                        "Debt management"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "file-text",
-                            "name": "LendingClub API Resources",
-                            "meta": "lendingclub.com \u00b7 Free lending platform insights",
-                            "url": "https://www.lendingclub.com/developers"
-                        },
-                        {
-                            "icon": "book-open",
-                            "name": "Zopa Engineering Blog",
-                            "meta": "zopafinance.com \u00b7 Free P2P lending engineering",
-                            "url": "https://www.zopa.com/tech\u2013blog"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Credit Karma API",
-                            "meta": "creditkarma.com \u00b7 Free credit data resources",
-                            "url": "https://www.creditkarma.com"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Affirm BNPL Documentation",
-                            "meta": "affirm.com \u00b7 Free BNPL integration docs",
-                            "url": "https://docs.affirm.com/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "P2P Lending Platform",
-                            "desc": "Build a peer\u2013to\u2013peer lending marketplace with loan listings, credit scoring, interest rate calculation, and payment scheduling.",
-                            "skills": [
-                                "Loan origination flow",
-                                "Credit decisioning",
-                                "Amortization schedules",
-                                "P2P matching"
-                            ],
-                            "stack": [
-                                "Node.js/Python",
-                                "PostgreSQL",
-                                "React",
-                                "Redis"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Medical Financing Platform",
-                            "desc": "Build a healthcare financing platform with medical loan offerings, payment plans for procedures, and insurance claim financing.",
-                            "skills": [
-                                "Medical loan products",
-                                "Procedure\u2013based financing",
-                                "Insurance claim integration",
-                                "Patient payment plans"
-                            ],
-                            "stack": [
-                                "Node.js/Python",
-                                "PostgreSQL",
-                                "React",
-                                "Redis"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Neobank Full\u2013Stack MVP",
-                    "desc": "A full\u2013stack neobank MVP with account management via Plaid, P2P transfers, budgeting tools, investment tracking, and a lending module.",
-                    "skills": [
-                        "Banking API integration",
-                        "Account management",
-                        "P2P transfer engine",
-                        "Budgeting algorithms",
-                        "Lending module"
-                    ],
-                    "stack": [
-                        "React Native",
-                        "Node.js",
-                        "PostgreSQL",
-                        "Plaid",
-                        "Redis"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Health Savings Banking Platform",
-                    "desc": "A healthcare banking platform with HSA/FSA account management, medical bill payments, insurance copay processing, and healthcare expense tracking.",
-                    "skills": [
-                        "HSA/FSA account management",
-                        "Medical bill payment flow",
-                        "Insurance copay processing",
-                        "Healthcare expense analytics",
-                        "Savings optimization"
-                    ],
-                    "stack": [
-                        "React Native",
-                        "Node.js",
-                        "PostgreSQL",
-                        "Plaid",
-                        "Redis"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "08",
-            "badge": "badge-expert",
-            "badgeLabel": "Expert",
-            "title": "Career Launch",
-            "duration": "Months 15\u201316",
-            "modules": [
-                {
-                    "icon": "briefcase",
-                    "accentClass": "a9",
-                    "title": "Fintech Portfolio",
-                    "topics": [
-                        "GitHub portfolio for fintech",
-                        "Project documentation",
-                        "Fintech blog writing",
-                        "Open source contributions"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "github",
-                            "name": "GitHub Profile README Generator",
-                            "meta": "github.com \u00b7 Free profile builder",
-                            "url": "https://github.com/rahuldkjain/github\u2013profile\u2013readme\u2013generator"
-                        },
-                        {
-                            "icon": "book-open",
-                            "name": "Fintech Dev Resources",
-                            "meta": "fintechdevs.com \u00b7 Free fintech community resources",
-                            "url": "https://fintechdevs.com"
-                        },
-                        {
-                            "icon": "book-open",
-                            "name": "Stripe Developer Community",
-                            "meta": "stripe.com \u00b7 Free developer community",
-                            "url": "https://stripe.com/community"
-                        },
-                        {
-                            "icon": "book-open",
-                            "name": "Plaid Developer Community",
-                            "meta": "plaid.com \u00b7 Free developer community",
-                            "url": "https://plaid.com/community/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Fintech Portfolio Site",
-                            "desc": "Build a portfolio site showcasing all Phase 1\u20137 fintech projects with live demos, API documentation, and technical blog posts.",
-                            "skills": [
-                                "Portfolio development",
-                                "Fintech project showcases",
-                                "API documentation",
-                                "Technical writing"
-                            ],
-                            "stack": [
-                                "Next.js",
-                                "Vercel",
-                                "MDX",
-                                "Tailwind CSS"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Healthcare Fintech Portfolio",
-                            "desc": "A portfolio focused on healthcare payment systems, medical billing, insurance processing, and health savings products.",
-                            "skills": [
-                                "Healthcare fintech portfolio",
-                                "Medical billing showcases",
-                                "Insurance processing demos",
-                                "Health savings products"
-                            ],
-                            "stack": [
-                                "Next.js",
-                                "Vercel",
-                                "MDX",
-                                "Tailwind CSS"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "target",
-                    "accentClass": "a9",
-                    "title": "Interview Preparation",
-                    "topics": [
-                        "Fintech interview questions",
-                        "System design for payments",
-                        "Financial domain knowledge",
-                        "Behavioral questions"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "file-text",
-                            "name": "Fintech Interview Questions (various)",
-                            "meta": "Free online resources",
-                            "url": "https://www.interview\u2013bit.com/fintech\u2013interview\u2013questions/"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Payments Interview Prep",
-                            "meta": "Free online resources",
-                            "url": "https://www.tryexponent.com/streams/payments"
-                        },
-                        {
-                            "icon": "layers",
-                            "name": "System Design for Financial Systems",
-                            "meta": "Free resources",
-                            "url": "https://www.educative.io/blog/fintech\u2013system\u2013design"
-                        },
-                        {
-                            "icon": "bar-chart",
-                            "name": "Fintech Salary Data",
-                            "meta": "levels.fyi \u00b7 Free compensation data",
-                            "url": "https://www.levels.fyi/companies?fid=3491"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Fintech Engineer Career Launch",
-                            "desc": "Complete career launch with portfolio, 3 fintech certifications studied, 5 system design exercises, and applications to 20+ fintech roles.",
-                            "skills": [
-                                "Fintech domain knowledge",
-                                "System design practice",
-                                "Payment system architecture",
-                                "Job application strategy"
-                            ],
-                            "stack": [
-                                "LinkedIn",
-                                "Indeed",
-                                "LeetCode",
-                                "System Design"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Healthcare Fintech Career Launch",
-                            "desc": "Career launch focused on healthcare fintech roles with medical billing expertise, insurance processing portfolio, and applications to health\u2013tech fintech positions.",
-                            "skills": [
-                                "Healthcare fintech certifications",
-                                "Medical billing expertise",
-                                "Insurance processing knowledge",
-                                "Health\u2013tech networking"
-                            ],
-                            "stack": [
-                                "LinkedIn",
-                                "Indeed",
-                                "Healthcare IT certifications"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Fintech Engineer Career Launch",
-                    "desc": "Complete career launch with portfolio site, fintech project documentation, system design exercises, and targeted applications to fintech engineering roles.",
-                    "skills": [
-                        "Fintech domain expertise",
-                        "Portfolio presentation",
-                        "System design",
-                        "Interview preparation",
-                        "Job application strategy"
-                    ],
-                    "stack": [
-                        "Next.js",
-                        "Vercel",
-                        "GitHub",
-                        "LinkedIn"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Healthcare Fintech Career Launch",
-                    "desc": "Career launch focused on healthcare fintech with medical billing portfolio, insurance processing demos, and targeted applications to health\u2013tech fintech roles.",
-                    "skills": [
-                        "Healthcare fintech expertise",
-                        "Medical billing portfolio",
-                        "Insurance processing demos",
-                        "Health\u2013tech networking",
-                        "HIPAA domain knowledge"
-                    ],
-                    "stack": [
-                        "Next.js",
-                        "Vercel",
-                        "GitHub",
-                        "LinkedIn"
-                    ]
-                }
-            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Investment Calculator Suite",
+              "desc": "Build a suite of financial calculators: compound interest, mortgage, retirement planning, and investment portfolio analyzer with real–time market data.",
+              "skills": [
+                "Financial formulas",
+                "API integration",
+                "Time–value of money",
+                "Portfolio analytics"
+              ],
+              "stack": [
+                "Python",
+                "NumPy",
+                "Pandas",
+                "Flask/Node.js"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
         }
-    ],
-    "projects": {
+      ],
+      "projects": {
         "general": {
-            "title": "Fintech Engineering Portfolio",
-            "desc": "A comprehensive portfolio showcasing payment systems, blockchain applications, financial data analytics, and fintech security projects with a professional blog documenting your fintech engineering journey.",
-            "skills": [
-                "Payment integration expertise",
-                "Blockchain development",
-                "Financial data analysis",
-                "Fintech security compliance",
-                "Technical writing"
-            ],
-            "stack": [
-                "React",
-                "Node.js/Python",
-                "Stripe",
-                "Solidity",
-                "PostgreSQL",
-                "Next.js"
-            ]
+          "title": "Personal Finance CLI",
+          "desc": "A command–line tool that tracks expenses, categorises transactions, generates monthly budget reports, and projects savings goals using financial math formulas.",
+          "skills": [
+            "CLI with Typer",
+            "Financial data modeling",
+            "Budgeting algorithms",
+            "CSV/JSON export",
+            "Terminal UI with Rich"
+          ],
+          "stack": [
+            "Python",
+            "NumPy",
+            "Pandas",
+            "Typer",
+            "Rich"
+          ]
         },
-        "healthcare": {
-            "title": "Healthcare Payment Platform",
-            "desc": "A production healthcare payment platform with insurance processing, patient billing, HSA/FSA integration, and HIPAA\u2013compliant payment handling.",
+        "niches": [
+          {
+            "id": "banking",
+            "name": "Banking & Lending",
+            "tagline": "Core banking, credit scoring, loan origination",
+            "title": "Core Banking",
+            "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
             "skills": [
-                "Healthcare payment processing",
-                "Insurance claim integration",
-                "HSA/FSA compliance",
-                "HIPAA payment handling",
-                "Medical billing automation"
+              "Account management engine",
+              "Transaction processing",
+              "Interest calculation",
+              "Regulatory compliance",
+              "Ledger reconciliation"
             ],
             "stack": [
+              "Java",
+              "Spring Boot",
+              "PostgreSQL",
+              "Redis",
+              "Kafka"
+            ]
+          },
+          {
+            "id": "insurance",
+            "name": "Insurance / InsurTech",
+            "tagline": "Parametric insurance, claims automation, risk underwriting",
+            "title": "InsurTech Platform",
+            "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+            "skills": [
+              "Policy management system",
+              "Claims processing pipeline",
+              "Risk underwriting models",
+              "Automated settlement",
+              "Regulatory reporting"
+            ],
+            "stack": [
+              "Python",
+              "FastAPI",
+              "PostgreSQL",
+              "Celery",
+              "Docker"
+            ]
+          },
+          {
+            "id": "crypto",
+            "name": "Crypto / DeFi",
+            "tagline": "Blockchain, smart contracts, digital asset management",
+            "title": "DeFi Protocol",
+            "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+            "skills": [
+              "Smart contract development",
+              "Token economics design",
+              "Liquidity pool management",
+              "On-chain analytics",
+              "Security auditing"
+            ],
+            "stack": [
+              "Solidity",
+              "Hardhat",
+              "Ethers.js",
+              "The Graph",
+              "IPFS"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "02",
+      "badge": "badge-foundation",
+      "badgeLabel": "Foundation",
+      "title": "Web Development for Fintech",
+      "duration": "Months 3–4",
+      "modules": [
+        {
+          "icon": "layout",
+          "accentClass": "a3",
+          "title": "Frontend for Financial Apps",
+          "topics": [
+            "React for fintech UIs",
+            "Financial data visualization (charts, candlesticks)",
+            "Real–time data streaming",
+            "Responsive design for trading"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "React Official Tutorial",
+              "meta": "react.dev · Free React learning resources",
+              "url": "https://react.dev/learn"
+            },
+            {
+              "icon": "bar-chart",
+              "name": "Chart.js Documentation",
+              "meta": "chartjs.org · Free charting library docs",
+              "url": "https://www.chartjs.org/docs/"
+            },
+            {
+              "icon": "trending-up",
+              "name": "TradingView Lightweight Charts",
+              "meta": "github.com · Free open–source financial charting",
+              "url": "https://github.com/nicknisi/lightweight-charts"
+            },
+            {
+              "icon": "check-circle",
+              "name": "freeCodeCamp React Course",
+              "meta": "freecodecamp.org · Free React certification",
+              "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Stock Portfolio Tracker",
+              "desc": "Build a React app that tracks stock holdings, displays real–time prices, shows portfolio performance, and generates dividend reports.",
+              "skills": [
+                "React component architecture",
+                "Real–time data handling",
+                "Financial charting",
+                "WebSocket integration"
+              ],
+              "stack": [
                 "React",
+                "Chart.js/TradingView",
+                "WebSocket",
+                "Node.js"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "server",
+          "accentClass": "a3",
+          "title": "Backend for Financial Services",
+          "topics": [
+            "RESTful APIs for financial data",
+            "WebSocket for real–time feeds",
+            "Database design for transactions",
+            "Caching strategies for market data"
+          ],
+          "resources": [
+            {
+              "icon": "zap",
+              "name": "FastAPI Documentation",
+              "meta": "fastapi.tiangolo.com · Free API framework docs",
+              "url": "https://fastapi.tiangolo.com/"
+            },
+            {
+              "icon": "file-text",
+              "name": "Express.js Guide",
+              "meta": "expressjs.com · Free Node.js API docs",
+              "url": "https://expressjs.com/en/guide/routing.html"
+            },
+            {
+              "icon": "database",
+              "name": "PostgreSQL for Financial Data",
+              "meta": "postgresql.org · Free database docs",
+              "url": "https://www.postgresql.org/docs/"
+            },
+            {
+              "icon": "zap",
+              "name": "Redis for Caching",
+              "meta": "redis.io · Free caching tutorials",
+              "url": "https://redis.io/docs/get-started/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Market Data API",
+              "desc": "Build a REST API serving stock prices, historical data, and financial news with rate limiting, caching, and WebSocket streaming.",
+              "skills": [
+                "API design for financial data",
+                "Redis caching",
+                "WebSocket streaming",
+                "Rate limiting"
+              ],
+              "stack": [
+                "FastAPI/Express.js",
+                "PostgreSQL",
+                "Redis",
+                "WebSocket"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Fintech Web App Starter",
+          "desc": "A full–stack fintech starter kit with React frontend, FastAPI backend, Redis caching, WebSocket real–time updates, and PostgreSQL database with financial data models.",
+          "skills": [
+            "React component architecture",
+            "FastAPI REST API",
+            "Redis caching layer",
+            "WebSocket real–time data",
+            "PostgreSQL schema design"
+          ],
+          "stack": [
+            "React",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis",
+            "WebSocket"
+          ]
+        },
+        "niches": [
+          {
+            "id": "banking",
+            "name": "Banking & Lending",
+            "tagline": "Core banking, credit scoring, loan origination",
+            "title": "Core Banking",
+            "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+            "skills": [
+              "Account management engine",
+              "Transaction processing",
+              "Interest calculation",
+              "Regulatory compliance",
+              "Ledger reconciliation"
+            ],
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "PostgreSQL",
+              "Redis",
+              "Kafka"
+            ]
+          },
+          {
+            "id": "insurance",
+            "name": "Insurance / InsurTech",
+            "tagline": "Parametric insurance, claims automation, risk underwriting",
+            "title": "InsurTech Platform",
+            "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+            "skills": [
+              "Policy management system",
+              "Claims processing pipeline",
+              "Risk underwriting models",
+              "Automated settlement",
+              "Regulatory reporting"
+            ],
+            "stack": [
+              "Python",
+              "FastAPI",
+              "PostgreSQL",
+              "Celery",
+              "Docker"
+            ]
+          },
+          {
+            "id": "crypto",
+            "name": "Crypto / DeFi",
+            "tagline": "Blockchain, smart contracts, digital asset management",
+            "title": "DeFi Protocol",
+            "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+            "skills": [
+              "Smart contract development",
+              "Token economics design",
+              "Liquidity pool management",
+              "On-chain analytics",
+              "Security auditing"
+            ],
+            "stack": [
+              "Solidity",
+              "Hardhat",
+              "Ethers.js",
+              "The Graph",
+              "IPFS"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "03",
+      "badge": "badge-intermediate",
+      "badgeLabel": "Intermediate",
+      "title": "Payment Systems",
+      "duration": "Months 5–6",
+      "modules": [
+        {
+          "icon": "credit-card",
+          "accentClass": "a4",
+          "title": "Payment Processing",
+          "topics": [
+            "Payment gateway integration",
+            "Stripe/PayPal APIs",
+            "Card processing (PCI DSS)",
+            "ACH & wire transfers",
+            "Payment reconciliation"
+          ],
+          "resources": [
+            {
+              "icon": "file-text",
+              "name": "Stripe Documentation",
+              "meta": "stripe.com/docs · Free comprehensive payment integration docs",
+              "url": "https://stripe.com/docs"
+            },
+            {
+              "icon": "file-text",
+              "name": "PayPal Developer Portal",
+              "meta": "developer.paypal.com · Free PayPal API docs",
+              "url": "https://developer.paypal.com/docs/api/overview/"
+            },
+            {
+              "icon": "shield",
+              "name": "PCI DSS Overview",
+              "meta": "pcisecuritystandards.org · Free payment security standards",
+              "url": "https://www.pcisecuritystandards.org/document_library/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Adyen Payments Guide",
+              "meta": "docs.adyen.com · Free payment processing tutorials",
+              "url": "https://docs.adyen.com/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Payment Processing System",
+              "desc": "Build a payment system integrating Stripe for card payments, including checkout, refunds, subscription billing, and reconciliation.",
+              "skills": [
+                "Stripe integration",
+                "PCI compliance awareness",
+                "Payment reconciliation",
+                "Subscription billing"
+              ],
+              "stack": [
+                "Node.js/Python",
+                "Stripe API",
+                "PostgreSQL",
+                "Docker"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "smartphone",
+          "accentClass": "a4",
+          "title": "Digital Wallets & Mobile Payments",
+          "topics": [
+            "Digital wallet architecture",
+            "QR code payments",
+            "NFC & contactless",
+            "Peer–to–peer transfers",
+            "Mobile payment SDKs"
+          ],
+          "resources": [
+            {
+              "icon": "smartphone",
+              "name": "Google Pay API",
+              "meta": "developers.google.com · Free Google Pay integration docs",
+              "url": "https://developers.google.com/pay/api/web/overview"
+            },
+            {
+              "icon": "smartphone",
+              "name": "Apple Pay Web Integration",
+              "meta": "developer.apple.com · Free Apple Pay docs",
+              "url": "https://developer.apple.com/documentation/apple_pay_on_the_web"
+            },
+            {
+              "icon": "credit-card",
+              "name": "Square Developer Portal",
+              "meta": "developer.squareup.com · Free payment SDK docs",
+              "url": "https://developer.squareup.com/docs"
+            },
+            {
+              "icon": "smartphone",
+              "name": "Flutter for Mobile Payments",
+              "meta": "flutter.dev · Free mobile development framework",
+              "url": "https://flutter.dev/docs"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Digital Wallet App",
+              "desc": "Build a digital wallet with balance management, peer–to–peer transfers, QR code payments, and transaction history.",
+              "skills": [
+                "Wallet balance management",
+                "P2P transfer logic",
+                "QR code generation",
+                "Transaction ledger"
+              ],
+              "stack": [
+                "React Native/Flutter",
+                "Node.js",
+                "PostgreSQL",
+                "Redis"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Payment Gateway MVP",
+          "desc": "A payment gateway MVP with Stripe checkout, refund processing, subscription management, payment reconciliation dashboard, and webhook handling.",
+          "skills": [
+            "Stripe Checkout integration",
+            "Webhook event handling",
+            "Subscription lifecycle management",
+            "Payment reconciliation logic",
+            "PCI–aware architecture"
+          ],
+          "stack": [
+            "Node.js",
+            "Stripe API",
+            "PostgreSQL",
+            "React",
+            "Docker"
+          ]
+        },
+        "niches": [
+          {
+            "id": "banking",
+            "name": "Banking & Lending",
+            "tagline": "Core banking, credit scoring, loan origination",
+            "title": "Core Banking",
+            "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+            "skills": [
+              "Account management engine",
+              "Transaction processing",
+              "Interest calculation",
+              "Regulatory compliance",
+              "Ledger reconciliation"
+            ],
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "PostgreSQL",
+              "Redis",
+              "Kafka"
+            ]
+          },
+          {
+            "id": "insurance",
+            "name": "Insurance / InsurTech",
+            "tagline": "Parametric insurance, claims automation, risk underwriting",
+            "title": "InsurTech Platform",
+            "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+            "skills": [
+              "Policy management system",
+              "Claims processing pipeline",
+              "Risk underwriting models",
+              "Automated settlement",
+              "Regulatory reporting"
+            ],
+            "stack": [
+              "Python",
+              "FastAPI",
+              "PostgreSQL",
+              "Celery",
+              "Docker"
+            ]
+          },
+          {
+            "id": "crypto",
+            "name": "Crypto / DeFi",
+            "tagline": "Blockchain, smart contracts, digital asset management",
+            "title": "DeFi Protocol",
+            "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+            "skills": [
+              "Smart contract development",
+              "Token economics design",
+              "Liquidity pool management",
+              "On-chain analytics",
+              "Security auditing"
+            ],
+            "stack": [
+              "Solidity",
+              "Hardhat",
+              "Ethers.js",
+              "The Graph",
+              "IPFS"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "04",
+      "badge": "badge-intermediate",
+      "badgeLabel": "Intermediate",
+      "title": "Blockchain & DeFi",
+      "duration": "Months 7–8",
+      "modules": [
+        {
+          "icon": "link",
+          "accentClass": "a5",
+          "title": "Blockchain Fundamentals",
+          "topics": [
+            "Blockchain architecture",
+            "Distributed consensus",
+            "Bitcoin & Ethereum basics",
+            "Cryptographic hashing",
+            "Smart contract concepts"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Ethereum.org Learning Resources",
+              "meta": "ethereum.org · Free blockchain education",
+              "url": "https://ethereum.org/en/learn/"
+            },
+            {
+              "icon": "play",
+              "name": "CryptoZombies",
+              "meta": "cryptozombies.io · Free interactive blockchain coding course",
+              "url": "https://cryptozombies.io"
+            },
+            {
+              "icon": "file-text",
+              "name": "Bitcoin Whitepaper (Satoshi Nakamoto)",
+              "meta": "bitcoin.org · Free original Bitcoin paper",
+              "url": "https://bitcoin.org/bitcoin.pdf"
+            },
+            {
+              "icon": "book-open",
+              "name": "Alchemy University",
+              "meta": "alchemy.com/university · Free blockchain development courses",
+              "url": "https://university.alchemy.com"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Blockchain Transaction Explorer",
+              "desc": "Build a blockchain explorer that visualizes transactions, blocks, gas fees, and wallet balances on Ethereum testnet.",
+              "skills": [
+                "Blockchain data querying",
+                "Transaction visualization",
+                "Gas estimation",
+                "Wallet management"
+              ],
+              "stack": [
+                "Web3.js/Ethers.js",
+                "React",
+                "Solidity (basics)",
+                "Infura/Alchemy"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "code",
+          "accentClass": "a5",
+          "title": "Smart Contracts & DeFi",
+          "topics": [
+            "Solidity programming",
+            "Smart contract testing",
+            "DeFi protocols (lending, DEX)",
+            "Token standards (ERC–20, ERC–721)"
+          ],
+          "resources": [
+            {
+              "icon": "file-text",
+              "name": "Solidity Documentation",
+              "meta": "soliditylang.org · Free Solidity language docs",
+              "url": "https://docs.soliditylang.org/"
+            },
+            {
+              "icon": "shield",
+              "name": "OpenZeppelin Contracts",
+              "meta": "openzeppelin.com · Free audited smart contract library",
+              "url": "https://docs.openzeppelin.com/contracts"
+            },
+            {
+              "icon": "file-text",
+              "name": "Chainlink Documentation",
+              "meta": "docs.chainlink.com · Free oracle integration docs",
+              "url": "https://docs.chain.link/"
+            },
+            {
+              "icon": "wrench",
+              "name": "Hardhat Tutorial",
+              "meta": "hardhat.org · Free Ethereum development environment",
+              "url": "https://hardhat.org/tutorial"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Token Launch Platform",
+              "desc": "Build an ERC–20 token creation platform with tokenomics configuration, distribution schedule, and basic DEX trading.",
+              "skills": [
+                "Solidity token development",
+                "ERC–20 standards",
+                "Tokenomics design",
+                "Basic DEX mechanics"
+              ],
+              "stack": [
+                "Solidity",
+                "Hardhat",
+                "React",
+                "Ethers.js"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "DeFi Dashboard",
+          "desc": "A DeFi dashboard that connects to Ethereum wallets, displays token balances, tracks DeFi positions (lending/borrowing), and visualises gas costs.",
+          "skills": [
+            "Web3 wallet connection",
+            "Token balance tracking",
+            "DeFi position monitoring",
+            "Gas cost analysis",
+            "Solidity basics"
+          ],
+          "stack": [
+            "React",
+            "Ethers.js",
+            "Solidity",
+            "Hardhat",
+            "Alchemy"
+          ]
+        },
+        "niches": [
+          {
+            "id": "banking",
+            "name": "Banking & Lending",
+            "tagline": "Core banking, credit scoring, loan origination",
+            "title": "Core Banking",
+            "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+            "skills": [
+              "Account management engine",
+              "Transaction processing",
+              "Interest calculation",
+              "Regulatory compliance",
+              "Ledger reconciliation"
+            ],
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "PostgreSQL",
+              "Redis",
+              "Kafka"
+            ]
+          },
+          {
+            "id": "insurance",
+            "name": "Insurance / InsurTech",
+            "tagline": "Parametric insurance, claims automation, risk underwriting",
+            "title": "InsurTech Platform",
+            "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+            "skills": [
+              "Policy management system",
+              "Claims processing pipeline",
+              "Risk underwriting models",
+              "Automated settlement",
+              "Regulatory reporting"
+            ],
+            "stack": [
+              "Python",
+              "FastAPI",
+              "PostgreSQL",
+              "Celery",
+              "Docker"
+            ]
+          },
+          {
+            "id": "crypto",
+            "name": "Crypto / DeFi",
+            "tagline": "Blockchain, smart contracts, digital asset management",
+            "title": "DeFi Protocol",
+            "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+            "skills": [
+              "Smart contract development",
+              "Token economics design",
+              "Liquidity pool management",
+              "On-chain analytics",
+              "Security auditing"
+            ],
+            "stack": [
+              "Solidity",
+              "Hardhat",
+              "Ethers.js",
+              "The Graph",
+              "IPFS"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "05",
+      "badge": "badge-advanced",
+      "badgeLabel": "Advanced",
+      "title": "Financial Data & Analytics",
+      "duration": "Months 9–10",
+      "modules": [
+        {
+          "icon": "bar-chart",
+          "accentClass": "a6",
+          "title": "Market Data & Analysis",
+          "topics": [
+            "Market data APIs",
+            "Technical analysis indicators",
+            "Financial modeling",
+            "Algorithmic trading basics",
+            "Backtesting"
+          ],
+          "resources": [
+            {
+              "icon": "database",
+              "name": "Yahoo Finance API (yfinance)",
+              "meta": "pypi.org · Free Python financial data library",
+              "url": "https://pypi.org/project/yfinance/"
+            },
+            {
+              "icon": "bar-chart",
+              "name": "TA–Lib Documentation",
+              "meta": "ta–lib.org · Free technical analysis library",
+              "url": "https://ta–lib.org/"
+            },
+            {
+              "icon": "play",
+              "name": "QuantConnect Bootcamp",
+              "meta": "quantconnect.com · Free algorithmic trading platform",
+              "url": "https://www.quantconnect.com/tutorials"
+            },
+            {
+              "icon": "database",
+              "name": "Kaggle Financial Datasets",
+              "meta": "kaggle.com · Free financial data for analysis",
+              "url": "https://www.kaggle.com/datasets"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Algorithmic Trading Bot",
+              "desc": "Build a backtesting framework with technical indicators (RSI, MACD, Bollinger Bands) and paper trading simulation.",
+              "skills": [
+                "Technical analysis implementation",
+                "Backtesting methodology",
+                "Risk management",
+                "Trading strategy evaluation"
+              ],
+              "stack": [
+                "Python",
+                "Pandas",
+                "TA–Lib",
+                "QuantConnect (free tier)"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "shield",
+          "accentClass": "a6",
+          "title": "Risk Analytics",
+          "topics": [
+            "Credit scoring models",
+            "Fraud detection",
+            "Risk assessment",
+            "Monte Carlo simulation",
+            "Regulatory reporting"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Scikit–learn Documentation",
+              "meta": "scikit–learn.org · Free ML library for risk models",
+              "url": "https://scikit–learn.org/stable/"
+            },
+            {
+              "icon": "database",
+              "name": "Kaggle Fraud Detection",
+              "meta": "kaggle.com · Free fraud detection datasets and competitions",
+              "url": "https://www.kaggle.com/search?q=fraud+detection"
+            },
+            {
+              "icon": "book-open",
+              "name": "Monte Carlo Simulation (free articles)",
+              "meta": "freecodecamp.org · Free simulation tutorials",
+              "url": "https://www.freecodecamp.org/news/tag/python/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Risk Management Resources",
+              "meta": "Various free academic resources",
+              "url": "https://www.investopedia.com/terms/r/riskmanagement.asp"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Credit Risk Assessment Tool",
+              "desc": "Build a credit scoring model using ML with features like payment history, credit utilization, and debt–to–income ratio.",
+              "skills": [
+                "Feature engineering for credit scoring",
+                "ML model training",
+                "Risk threshold calibration",
+                "Model interpretability"
+              ],
+              "stack": [
+                "Python",
+                "scikit–learn",
+                "Pandas",
+                "Flask"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Financial Analytics Platform",
+          "desc": "A comprehensive financial analytics platform with market data ingestion, technical analysis, credit risk scoring, and interactive dashboards.",
+          "skills": [
+            "Market data pipeline",
+            "Technical indicator engine",
+            "ML–based credit scoring",
+            "Interactive Plotly dashboards",
+            "Backtesting framework"
+          ],
+          "stack": [
+            "Python",
+            "Pandas",
+            "scikit–learn",
+            "Plotly",
+            "FastAPI"
+          ]
+        },
+        "niches": [
+          {
+            "id": "banking",
+            "name": "Banking & Lending",
+            "tagline": "Core banking, credit scoring, loan origination",
+            "title": "Core Banking",
+            "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+            "skills": [
+              "Account management engine",
+              "Transaction processing",
+              "Interest calculation",
+              "Regulatory compliance",
+              "Ledger reconciliation"
+            ],
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "PostgreSQL",
+              "Redis",
+              "Kafka"
+            ]
+          },
+          {
+            "id": "insurance",
+            "name": "Insurance / InsurTech",
+            "tagline": "Parametric insurance, claims automation, risk underwriting",
+            "title": "InsurTech Platform",
+            "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+            "skills": [
+              "Policy management system",
+              "Claims processing pipeline",
+              "Risk underwriting models",
+              "Automated settlement",
+              "Regulatory reporting"
+            ],
+            "stack": [
+              "Python",
+              "FastAPI",
+              "PostgreSQL",
+              "Celery",
+              "Docker"
+            ]
+          },
+          {
+            "id": "crypto",
+            "name": "Crypto / DeFi",
+            "tagline": "Blockchain, smart contracts, digital asset management",
+            "title": "DeFi Protocol",
+            "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+            "skills": [
+              "Smart contract development",
+              "Token economics design",
+              "Liquidity pool management",
+              "On-chain analytics",
+              "Security auditing"
+            ],
+            "stack": [
+              "Solidity",
+              "Hardhat",
+              "Ethers.js",
+              "The Graph",
+              "IPFS"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "06",
+      "badge": "badge-advanced",
+      "badgeLabel": "Advanced",
+      "title": "Regulatory & Security",
+      "duration": "Months 11–12",
+      "modules": [
+        {
+          "icon": "clipboard",
+          "accentClass": "a7",
+          "title": "RegTech & Compliance",
+          "topics": [
+            "KYC/AML regulations",
+            "Identity verification",
+            "Transaction monitoring",
+            "Regulatory reporting",
+            "GDPR for financial data"
+          ],
+          "resources": [
+            {
+              "icon": "shield",
+              "name": "FATF Guidelines",
+              "meta": "fatf–gafi.org · Free anti–money laundering guidelines",
+              "url": "https://www.fatf–gafi.org/en/publications.html"
+            },
+            {
+              "icon": "file-text",
+              "name": "FinCEN Resources",
+              "meta": "fincen.gov · Free AML compliance resources",
+              "url": "https://www.fincen.gov/resources"
+            },
+            {
+              "icon": "user-check",
+              "name": "Onfido KYC Guide",
+              "meta": "onfido.com · Free identity verification resources",
+              "url": "https://onfido.com/guides/kyc/"
+            },
+            {
+              "icon": "file-text",
+              "name": "GDPR for Financial Services",
+              "meta": "gdpr.eu · Free GDPR compliance guides",
+              "url": "https://gdpr.eu/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "KYC/AML Compliance System",
+              "desc": "Build a KYC verification pipeline with document validation, sanctions screening, and transaction monitoring for AML compliance.",
+              "skills": [
+                "KYC document verification",
+                "Sanctions list screening",
+                "Transaction monitoring rules",
+                "Suspicious activity reporting"
+              ],
+              "stack": [
+                "Python",
+                "OCR API",
+                "PostgreSQL",
+                "FastAPI"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "lock",
+          "accentClass": "a7",
+          "title": "Fintech Security",
+          "topics": [
+            "API security for financial services",
+            "Encryption for transactions",
+            "Secure authentication (2FA, biometrics)",
+            "Penetration testing for fintech"
+          ],
+          "resources": [
+            {
+              "icon": "shield",
+              "name": "OWASP API Security Top 10",
+              "meta": "owasp.org · Free API security guidelines",
+              "url": "https://owasp.org/www–project–top–ten/"
+            },
+            {
+              "icon": "file-text",
+              "name": "Stripe Security Best Practices",
+              "meta": "stripe.com · Free payment security docs",
+              "url": "https://stripe.com/docs/security/guide"
+            },
+            {
+              "icon": "lock",
+              "name": "Auth0 Security Resources",
+              "meta": "auth0.com · Free authentication security guides",
+              "url": "https://auth0.com/docs/secure"
+            },
+            {
+              "icon": "shield",
+              "name": "SANS Financial Sector Security",
+              "meta": "sans.org · Free financial security resources",
+              "url": "https://www.sans.org/white–papers/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Secure Payment Gateway",
+              "desc": "Build a PCI–compliant payment gateway with tokenization, 3D Secure, fraud detection, and comprehensive audit logging.",
+              "skills": [
+                "PCI DSS compliance",
+                "Payment tokenization",
+                "3D Secure implementation",
+                "Fraud detection"
+              ],
+              "stack": [
                 "Node.js/Python",
                 "Stripe",
-                "PostgreSQL",
-                "Plaid",
-                "Next.js"
+                "Redis",
+                "PostgreSQL"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
             ]
+          }
         }
+      ],
+      "projects": {
+        "general": {
+          "title": "Fintech Security Suite",
+          "desc": "A comprehensive fintech security suite with KYC verification, AML monitoring, API security hardening, encryption utilities, and audit logging dashboard.",
+          "skills": [
+            "KYC/AML pipeline",
+            "API security implementation",
+            "Transaction encryption",
+            "Audit log analysis",
+            "Compliance reporting"
+          ],
+          "stack": [
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis",
+            "Docker"
+          ]
+        },
+        "niches": [
+          {
+            "id": "banking",
+            "name": "Banking & Lending",
+            "tagline": "Core banking, credit scoring, loan origination",
+            "title": "Core Banking",
+            "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+            "skills": [
+              "Account management engine",
+              "Transaction processing",
+              "Interest calculation",
+              "Regulatory compliance",
+              "Ledger reconciliation"
+            ],
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "PostgreSQL",
+              "Redis",
+              "Kafka"
+            ]
+          },
+          {
+            "id": "insurance",
+            "name": "Insurance / InsurTech",
+            "tagline": "Parametric insurance, claims automation, risk underwriting",
+            "title": "InsurTech Platform",
+            "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+            "skills": [
+              "Policy management system",
+              "Claims processing pipeline",
+              "Risk underwriting models",
+              "Automated settlement",
+              "Regulatory reporting"
+            ],
+            "stack": [
+              "Python",
+              "FastAPI",
+              "PostgreSQL",
+              "Celery",
+              "Docker"
+            ]
+          },
+          {
+            "id": "crypto",
+            "name": "Crypto / DeFi",
+            "tagline": "Blockchain, smart contracts, digital asset management",
+            "title": "DeFi Protocol",
+            "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+            "skills": [
+              "Smart contract development",
+              "Token economics design",
+              "Liquidity pool management",
+              "On-chain analytics",
+              "Security auditing"
+            ],
+            "stack": [
+              "Solidity",
+              "Hardhat",
+              "Ethers.js",
+              "The Graph",
+              "IPFS"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "07",
+      "badge": "badge-expert",
+      "badgeLabel": "Expert",
+      "title": "Fintech Products",
+      "duration": "Months 13–14",
+      "modules": [
+        {
+          "icon": "smartphone",
+          "accentClass": "a8",
+          "title": "Mobile Banking & Neobanking",
+          "topics": [
+            "Mobile banking architecture",
+            "Account management",
+            "Lending algorithms",
+            "Investment platforms",
+            "Robo–advisory"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Chime Engineering Blog",
+              "meta": "chime.com/blog · Free neobank engineering insights",
+              "url": "https://www.chime.com/blog/engineering/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Nubank Tech Blog",
+              "meta": "tech.nubank.com.br · Free fintech architecture articles",
+              "url": "https://tech.nubank.com.br/"
+            },
+            {
+              "icon": "file-text",
+              "name": "Plaid Documentation",
+              "meta": "plaid.com/docs · Free banking API docs",
+              "url": "https://plaid.com/docs/"
+            },
+            {
+              "icon": "smartphone",
+              "name": "Flutter Mobile Development",
+              "meta": "flutter.dev · Free mobile framework",
+              "url": "https://flutter.dev/docs"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Neobank MVP",
+              "desc": "Build a mobile banking app with account management, P2P transfers, budgeting tools, and investment tracking.",
+              "skills": [
+                "Mobile banking architecture",
+                "Account management",
+                "P2P transfers",
+                "Budgeting algorithms"
+              ],
+              "stack": [
+                "React Native/Flutter",
+                "Node.js",
+                "PostgreSQL",
+                "Plaid API"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "layers",
+          "accentClass": "a8",
+          "title": "Lending & Credit Platforms",
+          "topics": [
+            "Loan origination systems",
+            "Credit decisioning",
+            "P2P lending",
+            "BNPL (Buy Now Pay Later)",
+            "Debt management"
+          ],
+          "resources": [
+            {
+              "icon": "file-text",
+              "name": "LendingClub API Resources",
+              "meta": "lendingclub.com · Free lending platform insights",
+              "url": "https://www.lendingclub.com/developers"
+            },
+            {
+              "icon": "book-open",
+              "name": "Zopa Engineering Blog",
+              "meta": "zopafinance.com · Free P2P lending engineering",
+              "url": "https://www.zopa.com/tech–blog"
+            },
+            {
+              "icon": "file-text",
+              "name": "Credit Karma API",
+              "meta": "creditkarma.com · Free credit data resources",
+              "url": "https://www.creditkarma.com"
+            },
+            {
+              "icon": "file-text",
+              "name": "Affirm BNPL Documentation",
+              "meta": "affirm.com · Free BNPL integration docs",
+              "url": "https://docs.affirm.com/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "P2P Lending Platform",
+              "desc": "Build a peer–to–peer lending marketplace with loan listings, credit scoring, interest rate calculation, and payment scheduling.",
+              "skills": [
+                "Loan origination flow",
+                "Credit decisioning",
+                "Amortization schedules",
+                "P2P matching"
+              ],
+              "stack": [
+                "Node.js/Python",
+                "PostgreSQL",
+                "React",
+                "Redis"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Neobank Full–Stack MVP",
+          "desc": "A full–stack neobank MVP with account management via Plaid, P2P transfers, budgeting tools, investment tracking, and a lending module.",
+          "skills": [
+            "Banking API integration",
+            "Account management",
+            "P2P transfer engine",
+            "Budgeting algorithms",
+            "Lending module"
+          ],
+          "stack": [
+            "React Native",
+            "Node.js",
+            "PostgreSQL",
+            "Plaid",
+            "Redis"
+          ]
+        },
+        "niches": [
+          {
+            "id": "banking",
+            "name": "Banking & Lending",
+            "tagline": "Core banking, credit scoring, loan origination",
+            "title": "Core Banking",
+            "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+            "skills": [
+              "Account management engine",
+              "Transaction processing",
+              "Interest calculation",
+              "Regulatory compliance",
+              "Ledger reconciliation"
+            ],
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "PostgreSQL",
+              "Redis",
+              "Kafka"
+            ]
+          },
+          {
+            "id": "insurance",
+            "name": "Insurance / InsurTech",
+            "tagline": "Parametric insurance, claims automation, risk underwriting",
+            "title": "InsurTech Platform",
+            "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+            "skills": [
+              "Policy management system",
+              "Claims processing pipeline",
+              "Risk underwriting models",
+              "Automated settlement",
+              "Regulatory reporting"
+            ],
+            "stack": [
+              "Python",
+              "FastAPI",
+              "PostgreSQL",
+              "Celery",
+              "Docker"
+            ]
+          },
+          {
+            "id": "crypto",
+            "name": "Crypto / DeFi",
+            "tagline": "Blockchain, smart contracts, digital asset management",
+            "title": "DeFi Protocol",
+            "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+            "skills": [
+              "Smart contract development",
+              "Token economics design",
+              "Liquidity pool management",
+              "On-chain analytics",
+              "Security auditing"
+            ],
+            "stack": [
+              "Solidity",
+              "Hardhat",
+              "Ethers.js",
+              "The Graph",
+              "IPFS"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "08",
+      "badge": "badge-expert",
+      "badgeLabel": "Expert",
+      "title": "Career Launch",
+      "duration": "Months 15–16",
+      "modules": [
+        {
+          "icon": "briefcase",
+          "accentClass": "a9",
+          "title": "Fintech Portfolio",
+          "topics": [
+            "GitHub portfolio for fintech",
+            "Project documentation",
+            "Fintech blog writing",
+            "Open source contributions"
+          ],
+          "resources": [
+            {
+              "icon": "github",
+              "name": "GitHub Profile README Generator",
+              "meta": "github.com · Free profile builder",
+              "url": "https://github.com/rahuldkjain/github–profile–readme–generator"
+            },
+            {
+              "icon": "book-open",
+              "name": "Fintech Dev Resources",
+              "meta": "fintechdevs.com · Free fintech community resources",
+              "url": "https://fintechdevs.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "Stripe Developer Community",
+              "meta": "stripe.com · Free developer community",
+              "url": "https://stripe.com/community"
+            },
+            {
+              "icon": "book-open",
+              "name": "Plaid Developer Community",
+              "meta": "plaid.com · Free developer community",
+              "url": "https://plaid.com/community/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Fintech Portfolio Site",
+              "desc": "Build a portfolio site showcasing all Phase 1–7 fintech projects with live demos, API documentation, and technical blog posts.",
+              "skills": [
+                "Portfolio development",
+                "Fintech project showcases",
+                "API documentation",
+                "Technical writing"
+              ],
+              "stack": [
+                "Next.js",
+                "Vercel",
+                "MDX",
+                "Tailwind CSS"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "target",
+          "accentClass": "a9",
+          "title": "Interview Preparation",
+          "topics": [
+            "Fintech interview questions",
+            "System design for payments",
+            "Financial domain knowledge",
+            "Behavioral questions"
+          ],
+          "resources": [
+            {
+              "icon": "file-text",
+              "name": "Fintech Interview Questions (various)",
+              "meta": "Free online resources",
+              "url": "https://www.interview–bit.com/fintech–interview–questions/"
+            },
+            {
+              "icon": "file-text",
+              "name": "Payments Interview Prep",
+              "meta": "Free online resources",
+              "url": "https://www.tryexponent.com/streams/payments"
+            },
+            {
+              "icon": "layers",
+              "name": "System Design for Financial Systems",
+              "meta": "Free resources",
+              "url": "https://www.educative.io/blog/fintech–system–design"
+            },
+            {
+              "icon": "bar-chart",
+              "name": "Fintech Salary Data",
+              "meta": "levels.fyi · Free compensation data",
+              "url": "https://www.levels.fyi/companies?fid=3491"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Fintech Engineer Career Launch",
+              "desc": "Complete career launch with portfolio, 3 fintech certifications studied, 5 system design exercises, and applications to 20+ fintech roles.",
+              "skills": [
+                "Fintech domain knowledge",
+                "System design practice",
+                "Payment system architecture",
+                "Job application strategy"
+              ],
+              "stack": [
+                "LinkedIn",
+                "Indeed",
+                "LeetCode",
+                "System Design"
+              ]
+            },
+            "niches": [
+              {
+                "id": "banking",
+                "name": "Banking & Lending",
+                "tagline": "Core banking, credit scoring, loan origination",
+                "title": "Core Banking",
+                "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+                "skills": [
+                  "Account management engine",
+                  "Transaction processing",
+                  "Interest calculation",
+                  "Regulatory compliance",
+                  "Ledger reconciliation"
+                ],
+                "stack": [
+                  "Java",
+                  "Spring Boot",
+                  "PostgreSQL",
+                  "Redis",
+                  "Kafka"
+                ]
+              },
+              {
+                "id": "insurance",
+                "name": "Insurance / InsurTech",
+                "tagline": "Parametric insurance, claims automation, risk underwriting",
+                "title": "InsurTech Platform",
+                "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+                "skills": [
+                  "Policy management system",
+                  "Claims processing pipeline",
+                  "Risk underwriting models",
+                  "Automated settlement",
+                  "Regulatory reporting"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Celery",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "crypto",
+                "name": "Crypto / DeFi",
+                "tagline": "Blockchain, smart contracts, digital asset management",
+                "title": "DeFi Protocol",
+                "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+                "skills": [
+                  "Smart contract development",
+                  "Token economics design",
+                  "Liquidity pool management",
+                  "On-chain analytics",
+                  "Security auditing"
+                ],
+                "stack": [
+                  "Solidity",
+                  "Hardhat",
+                  "Ethers.js",
+                  "The Graph",
+                  "IPFS"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Fintech Engineer Career Launch",
+          "desc": "Complete career launch with portfolio site, fintech project documentation, system design exercises, and targeted applications to fintech engineering roles.",
+          "skills": [
+            "Fintech domain expertise",
+            "Portfolio presentation",
+            "System design",
+            "Interview preparation",
+            "Job application strategy"
+          ],
+          "stack": [
+            "Next.js",
+            "Vercel",
+            "GitHub",
+            "LinkedIn"
+          ]
+        },
+        "niches": [
+          {
+            "id": "banking",
+            "name": "Banking & Lending",
+            "tagline": "Core banking, credit scoring, loan origination",
+            "title": "Core Banking",
+            "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+            "skills": [
+              "Account management engine",
+              "Transaction processing",
+              "Interest calculation",
+              "Regulatory compliance",
+              "Ledger reconciliation"
+            ],
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "PostgreSQL",
+              "Redis",
+              "Kafka"
+            ]
+          },
+          {
+            "id": "insurance",
+            "name": "Insurance / InsurTech",
+            "tagline": "Parametric insurance, claims automation, risk underwriting",
+            "title": "InsurTech Platform",
+            "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+            "skills": [
+              "Policy management system",
+              "Claims processing pipeline",
+              "Risk underwriting models",
+              "Automated settlement",
+              "Regulatory reporting"
+            ],
+            "stack": [
+              "Python",
+              "FastAPI",
+              "PostgreSQL",
+              "Celery",
+              "Docker"
+            ]
+          },
+          {
+            "id": "crypto",
+            "name": "Crypto / DeFi",
+            "tagline": "Blockchain, smart contracts, digital asset management",
+            "title": "DeFi Protocol",
+            "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+            "skills": [
+              "Smart contract development",
+              "Token economics design",
+              "Liquidity pool management",
+              "On-chain analytics",
+              "Security auditing"
+            ],
+            "stack": [
+              "Solidity",
+              "Hardhat",
+              "Ethers.js",
+              "The Graph",
+              "IPFS"
+            ]
+          }
+        ]
+      }
     }
+  ],
+  "projects": {
+    "general": {
+      "title": "Fintech Engineering Portfolio",
+      "desc": "A comprehensive portfolio showcasing payment systems, blockchain applications, financial data analytics, and fintech security projects with a professional blog documenting your fintech engineering journey.",
+      "skills": [
+        "Payment integration expertise",
+        "Blockchain development",
+        "Financial data analysis",
+        "Fintech security compliance",
+        "Technical writing"
+      ],
+      "stack": [
+        "React",
+        "Node.js/Python",
+        "Stripe",
+        "Solidity",
+        "PostgreSQL",
+        "Next.js"
+      ]
+    },
+    "niches": [
+      {
+        "id": "banking",
+        "name": "Banking & Lending",
+        "tagline": "Core banking, credit scoring, loan origination",
+        "title": "Core Banking",
+        "desc": "A core banking system with account management, transaction processing, interest calculation, and regulatory compliance.",
+        "skills": [
+          "Account management engine",
+          "Transaction processing",
+          "Interest calculation",
+          "Regulatory compliance",
+          "Ledger reconciliation"
+        ],
+        "stack": [
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "Redis",
+          "Kafka"
+        ]
+      },
+      {
+        "id": "insurance",
+        "name": "Insurance / InsurTech",
+        "tagline": "Parametric insurance, claims automation, risk underwriting",
+        "title": "InsurTech Platform",
+        "desc": "A insurance platform with policy management, claims processing, risk underwriting, and automated settlement.",
+        "skills": [
+          "Policy management system",
+          "Claims processing pipeline",
+          "Risk underwriting models",
+          "Automated settlement",
+          "Regulatory reporting"
+        ],
+        "stack": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "Celery",
+          "Docker"
+        ]
+      },
+      {
+        "id": "crypto",
+        "name": "Crypto / DeFi",
+        "tagline": "Blockchain, smart contracts, digital asset management",
+        "title": "DeFi Protocol",
+        "desc": "A decentralized finance protocol with smart contracts, token management, liquidity pools, and on-chain analytics.",
+        "skills": [
+          "Smart contract development",
+          "Token economics design",
+          "Liquidity pool management",
+          "On-chain analytics",
+          "Security auditing"
+        ],
+        "stack": [
+          "Solidity",
+          "Hardhat",
+          "Ethers.js",
+          "The Graph",
+          "IPFS"
+        ]
+      }
+    ]
+  }
 }

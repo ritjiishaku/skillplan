@@ -4,6 +4,7 @@ import { useEffect, useMemo } from 'react';
 import { useProgress } from '../context/ProgressContext';
 import PhaseSection from './PhaseSection';
 import ProgressBar from './ProgressBar';
+import { ProjectCard, getNiches, NicheAccordion } from './ProjectCard';
 
 export default function RoadmapPage({ data, roadmapId }) {
   const { getCompleted, loadProgress } = useProgress();
@@ -21,6 +22,8 @@ export default function RoadmapPage({ data, roadmapId }) {
   }, [data]);
 
   if (!data) return null;
+
+  const niches = data.projects ? getNiches(data.projects) : [];
 
   return (
     <>
@@ -60,53 +63,15 @@ export default function RoadmapPage({ data, roadmapId }) {
             <div className="proj-capstone-glow"></div>
             <div className="proj-capstone-eyebrow">
               <div className="proj-capstone-badge">🎯 Final Capstone Project</div>
-              <span className="proj-capstone-sub">Encompasses all phases of this roadmap</span>
+              <span className="proj-capstone-sub">General project required · Choose one niche to specialize in</span>
             </div>
           </div>
-          <div className="proj-dual-grid">
-            {data.projects.general && (
-              <div className="proj-card proj-general">
-                <div className="proj-card-header">
-                  <span className="proj-type-badge proj-badge-general">⬡ General</span>
-                  <h4 className="proj-card-title">{data.projects.general.title}</h4>
-                </div>
-                <p className="proj-card-desc">{data.projects.general.desc}</p>
-                <div className="proj-section-label">What you&apos;ll build</div>
-                <ul className="proj-skill-list">
-                  {data.projects.general.skills?.map((s, si) => (
-                    <li key={si}>{s}</li>
-                  ))}
-                </ul>
-                <div className="proj-section-label">Stack</div>
-                <div className="proj-stack-row">
-                  {data.projects.general.stack?.map((s, si) => (
-                    <span key={si} className="proj-stack-tag">{s}</span>
-                  ))}
-                </div>
-              </div>
-            )}
-            {(data.projects.healthcare || data.projects.capstone) && (
-              <div className="proj-card proj-health">
-                <div className="proj-card-header">
-                  <span className="proj-type-badge proj-badge-health">⚕ Healthcare</span>
-                  <h4 className="proj-card-title">{(data.projects.healthcare || data.projects.capstone).title}</h4>
-                </div>
-                <p className="proj-card-desc">{(data.projects.healthcare || data.projects.capstone).desc}</p>
-                <div className="proj-section-label">What you&apos;ll build</div>
-                <ul className="proj-skill-list">
-                  {(data.projects.healthcare || data.projects.capstone).skills?.map((s, si) => (
-                    <li key={si}>{s}</li>
-                  ))}
-                </ul>
-                <div className="proj-section-label">Stack</div>
-                <div className="proj-stack-row">
-                  {(data.projects.healthcare || data.projects.capstone).stack?.map((s, si) => (
-                    <span key={si} className="proj-stack-tag">{s}</span>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+          {data.projects.general && (
+            <div className="accordion-general">
+              <ProjectCard project={data.projects.general} badge="⬡ General" badgeClass="proj-badge-general" />
+            </div>
+          )}
+          {niches.length > 0 && <NicheAccordion projects={data.projects} />}
         </section>
       )}
     </>

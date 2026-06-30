@@ -1,1523 +1,2698 @@
 {
-    "banner": "100% Free \u00b7 8 Phases \u00b7 120+ Resources \u00b7 $0 Cost \u00b7 Zero Paywalls",
-    "titleDisplay": "Backend\u003cbr\u003e\u003cem\u003eEngineering\u003c/em\u003e",
-    "subtitle": "A complete, self-paced path from programming basics to production backend engineer \u2014 8 phases, 120+ hand-curated free resources, Python & Node.js focus, a 16-month study schedule, and career prep. $0 cost. No paywalls. No compromises.",
-    "meta": {
-        "duration": "14\u201316 mo",
-        "cost": "$0",
-        "resources": "120+",
-        "salaryTarget": "$130k+"
-    },
-    "phases": [
+  "banner": "100% Free · 8 Phases · 120+ Resources · $0 Cost · Zero Paywalls",
+  "titleDisplay": "Backend<br><em>Engineering</em>",
+  "subtitle": "A complete, self-paced path from programming basics to production backend engineer — 8 phases, 120+ hand-curated free resources, Python & Node.js focus, a 16-month study schedule, and career prep. $0 cost. No paywalls. No compromises.",
+  "meta": {
+    "duration": "14–16 mo",
+    "cost": "$0",
+    "resources": "120+",
+    "salaryTarget": "$130k+"
+  },
+  "phases": [
+    {
+      "number": "01",
+      "badge": "badge-foundation",
+      "badgeLabel": "Foundation",
+      "title": "Programming Basics & Computer Science",
+      "duration": "Months 1–2",
+      "modules": [
         {
-            "number": "01",
-            "badge": "badge-foundation",
-            "badgeLabel": "Foundation",
-            "title": "Programming Basics & Computer Science",
-            "duration": "Months 1\u20132",
-            "modules": [
-                {
-                    "icon": "code",
-                    "accentClass": "a2",
-                    "title": "Programming Fundamentals",
-                    "topics": [
-                        "Variables, data types & control flow",
-                        "Functions, scope & closures",
-                        "Object-oriented programming principles",
-                        "Error handling & debugging techniques"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "CS50: Introduction to Computer Science",
-                            "meta": "cs50.harvard.edu \u00b7 Free Harvard course, C, Python, SQL, web",
-                            "url": "https://cs50.harvard.edu"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "freeCodeCamp \u2014 Python for Everybody",
-                            "meta": "freecodecamp.org \u00b7 Project-based Python certification",
-                            "url": "https://www.freecodecamp.org/learn"
-                        },
-                        {
-                            "icon": "terminal",
-                            "name": "The Odin Project \u2014 Foundations",
-                            "meta": "theodinproject.com \u00b7 Full-stack curriculum, hands-on",
-                            "url": "https://www.theodinproject.com"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Corey Schafer \u2014 Python Tutorials",
-                            "meta": "youtube.com \u00b7 Best free Python tutorial series",
-                            "url": "https://www.youtube.com/@coreyms"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "CLI Task Manager",
-                            "desc": "Build a command-line task manager in Python with CRUD operations, file persistence, colored output, and input validation.",
-                            "skills": [
-                                "Python file I/O & JSON persistence",
-                                "Argument parsing with argparse",
-                                "Error handling & input validation",
-                                "Clean code structure & separation of concerns",
-                                "Unit testing with pytest"
-                            ],
-                            "stack": [
-                                "Python",
-                                "pytest",
-                                "argparse",
-                                "JSON"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Patient Intake CLI",
-                            "desc": "A command-line patient intake tool that collects, validates, and stores patient demographics and symptoms in a structured format for clinic staff.",
-                            "skills": [
-                                "Structured data collection & validation",
-                                "PHI-safe local storage patterns",
-                                "Input sanitization for medical data",
-                                "HIPAA awareness in data handling",
-                                "Exportable patient records"
-                            ],
-                            "stack": [
-                                "Python",
-                                "pytest",
-                                "argparse",
-                                "JSON"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "cpu",
-                    "accentClass": "a2",
-                    "title": "Data Structures & Algorithms",
-                    "topics": [
-                        "Arrays, linked lists & stacks",
-                        "Trees, graphs & hash maps",
-                        "Sorting & searching algorithms",
-                        "Big-O complexity analysis"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book",
-                            "name": "Neetcode \u2014 DSA Roadmap",
-                            "meta": "neetcode.io \u00b7 Visual algorithm roadmap with solutions",
-                            "url": "https://neetcode.io/roadmap"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "Visualgo \u2014 Algorithm Visualisation",
-                            "meta": "visualgo.net \u00b7 Animated data structure visualisations",
-                            "url": "https://visualgo.net"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Big-O Cheat Sheet",
-                            "meta": "bigocheatsheet.com \u00b7 Quick reference for complexities",
-                            "url": "https://www.bigocheatsheet.com"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Algorithm Playground",
-                            "desc": "Implement 10 core data structures and 15 sorting/searching algorithms from scratch, with unit tests and Big-O annotations for each.",
-                            "skills": [
-                                "Implement arrays, linked lists, hash maps",
-                                "Binary search trees & heap structures",
-                                "Quick sort, merge sort, radix sort",
-                                "Graph BFS & DFS traversal",
-                                "Big-O analysis documentation"
-                            ],
-                            "stack": [
-                                "Python",
-                                "pytest",
-                                "GitHub"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Patient Lookup System",
-                            "desc": "Build an efficient patient record lookup system using hash maps and trees, optimised for fast search by name, DOB, or MRN.",
-                            "skills": [
-                                "Hash map for O(1) patient lookup",
-                                "Tree-based range queries by DOB",
-                                "Efficient search by multiple fields",
-                                "Data structure selection rationale",
-                                "Performance benchmarking"
-                            ],
-                            "stack": [
-                                "Python",
-                                "pytest",
-                                "GitHub"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "CS Foundations Portfolio",
-                    "desc": "A GitHub repository showcasing your programming fundamentals and DSA implementations, with clean documentation, test coverage, and Big-O analysis for each solution.",
-                    "skills": [
-                        "Clean, well-documented Python code",
-                        "10+ data structure implementations",
-                        "15+ algorithm implementations",
-                        "Full pytest coverage",
-                        "README with Big-O analysis"
-                    ],
-                    "stack": [
-                        "Python",
-                        "pytest",
-                        "GitHub",
-                        "Markdown"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Healthcare Data Structures Showcase",
-                    "desc": "A curated portfolio of DSA implementations applied to healthcare scenarios \u2014 patient lookups, scheduling algorithms, and medical record indexing.",
-                    "skills": [
-                        "Healthcare-motivated data structure selection",
-                        "Patient record indexing structures",
-                        "Appointment scheduling algorithms",
-                        "Medical coding lookups (ICD-10)",
-                        "Documentation with healthcare context"
-                    ],
-                    "stack": [
-                        "Python",
-                        "pytest",
-                        "GitHub",
-                        "Markdown"
-                    ]
-                }
+          "icon": "code",
+          "accentClass": "a2",
+          "title": "Programming Fundamentals",
+          "topics": [
+            "Variables, data types & control flow",
+            "Functions, scope & closures",
+            "Object-oriented programming principles",
+            "Error handling & debugging techniques"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "CS50: Introduction to Computer Science",
+              "meta": "cs50.harvard.edu · Free Harvard course, C, Python, SQL, web",
+              "url": "https://cs50.harvard.edu"
+            },
+            {
+              "icon": "code",
+              "name": "freeCodeCamp — Python for Everybody",
+              "meta": "freecodecamp.org · Project-based Python certification",
+              "url": "https://www.freecodecamp.org/learn"
+            },
+            {
+              "icon": "terminal",
+              "name": "The Odin Project — Foundations",
+              "meta": "theodinproject.com · Full-stack curriculum, hands-on",
+              "url": "https://www.theodinproject.com"
+            },
+            {
+              "icon": "play",
+              "name": "Corey Schafer — Python Tutorials",
+              "meta": "youtube.com · Best free Python tutorial series",
+              "url": "https://www.youtube.com/@coreyms"
             }
+          ],
+          "projects": {
+            "general": {
+              "title": "CLI Task Manager",
+              "desc": "Build a command-line task manager in Python with CRUD operations, file persistence, colored output, and input validation.",
+              "skills": [
+                "Python file I/O & JSON persistence",
+                "Argument parsing with argparse",
+                "Error handling & input validation",
+                "Clean code structure & separation of concerns",
+                "Unit testing with pytest"
+              ],
+              "stack": [
+                "Python",
+                "pytest",
+                "argparse",
+                "JSON"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Patient Intake CLI",
+                "desc": "A command-line patient intake tool that collects, validates, and stores patient demographics and symptoms in a structured format for clinic staff.",
+                "skills": [
+                  "Structured data collection & validation",
+                  "PHI-safe local storage patterns",
+                  "Input sanitization for medical data",
+                  "HIPAA awareness in data handling",
+                  "Exportable patient records"
+                ],
+                "stack": [
+                  "Python",
+                  "pytest",
+                  "argparse",
+                  "JSON"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
         },
         {
-            "number": "02",
-            "badge": "badge-core",
-            "badgeLabel": "Core Backend",
-            "title": "Server-Side Programming",
-            "duration": "Months 3\u20134",
-            "modules": [
-                {
-                    "icon": "server",
-                    "accentClass": "a2",
-                    "title": "Python Web Frameworks",
-                    "topics": [
-                        "HTTP protocol & request/response cycle",
-                        "FastAPI: routing, dependencies, validation",
-                        "Async Python & ASGI fundamentals",
-                        "Middleware, error handling & logging"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "FastAPI Official Tutorial",
-                            "meta": "fastapi.tiangolo.com \u00b7 Authoritative, beginner-friendly docs",
-                            "url": "https://fastapi.tiangolo.com/tutorial/"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Tech With Tim \u2014 FastAPI Full Course",
-                            "meta": "youtube.com \u00b7 Complete FastAPI project walkthrough",
-                            "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "TestDriven.io \u2014 FastAPI Course",
-                            "meta": "testdriven.io \u00b7 Project-based FastAPI learning",
-                            "url": "https://testdriven.io/courses/fastapi"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "REST API for Blog Engine",
-                            "desc": "Build a complete blog engine API with FastAPI \u2014 CRUD for posts and comments, pagination, filtering, input validation with Pydantic, and OpenAPI docs.",
-                            "skills": [
-                                "FastAPI routing & dependency injection",
-                                "Pydantic models for validation",
-                                "SQLite with SQLAlchemy ORM",
-                                "Automatic OpenAPI documentation",
-                                "Unit & integration tests"
-                            ],
-                            "stack": [
-                                "Python",
-                                "FastAPI",
-                                "SQLAlchemy",
-                                "SQLite",
-                                "Pytest"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Clinical Notes API",
-                            "desc": "A FastAPI service for clinicians to create, search, and retrieve structured clinical notes with patient linking, timestamps, and note categorisation.",
-                            "skills": [
-                                "Structured clinical note schemas",
-                                "Patient-note linking with foreign keys",
-                                "Search across note types and dates",
-                                "PHI access logging middleware",
-                                "Role-based response filtering"
-                            ],
-                            "stack": [
-                                "Python",
-                                "FastAPI",
-                                "SQLAlchemy",
-                                "SQLite",
-                                "Pytest"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "hexagon",
-                    "accentClass": "a2",
-                    "title": "Node.js & Express",
-                    "topics": [
-                        "Node.js event loop & non-blocking I/O",
-                        "Express.js routing & middleware",
-                        "Template engines & static file serving",
-                        "RESTful API design principles"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Node.js Official Docs",
-                            "meta": "nodejs.org \u00b7 Official guides and API reference",
-                            "url": "https://nodejs.org/en/learn"
-                        },
-                        {
-                            "icon": "terminal",
-                            "name": "The Odin Project \u2014 NodeJS Path",
-                            "meta": "theodinproject.com \u00b7 Project-based Node.js curriculum",
-                            "url": "https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Traversy Media \u2014 Express Crash Course",
-                            "meta": "youtube.com \u00b7 Quick Express.js fundamentals",
-                            "url": "https://www.youtube.com/watch?v=CnH3kAXSrmU"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Bookshelf API",
-                            "desc": "A RESTful bookshelf API with Express.js \u2014 manage books, authors, reading lists, and reviews with full CRUD, pagination, and search.",
-                            "skills": [
-                                "Express.js routing & middleware chains",
-                                "MongoDB with Mongoose ODM",
-                                "JWT authentication middleware",
-                                "Input sanitisation & validation",
-                                "Jest integration tests"
-                            ],
-                            "stack": [
-                                "Node.js",
-                                "Express.js",
-                                "MongoDB",
-                                "Mongoose",
-                                "Jest"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Appointment Scheduling API",
-                            "desc": "An Express.js API for managing clinic appointments \u2014 patient booking, provider availability, time slot management, and cancellation handling.",
-                            "skills": [
-                                "Time slot generation & availability logic",
-                                "Double-booking prevention",
-                                "Patient-provider appointment linking",
-                                "Calendar conflict detection",
-                                "Automated reminder scheduling"
-                            ],
-                            "stack": [
-                                "Node.js",
-                                "Express.js",
-                                "MongoDB",
-                                "Mongoose",
-                                "Jest"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Dual-Framework API Showcase",
-                    "desc": "Deploy both a FastAPI and Express.js API demonstrating the same blog domain, showcasing Python and JavaScript backend proficiency with documented architectural decisions.",
-                    "skills": [
-                        "FastAPI & Express.js implementations",
-                        "Consistent API contract across frameworks",
-                        "ORM selection rationale (SQLAlchemy vs Mongoose)",
-                        "Framework comparison documentation",
-                        "Deployed on Railway or Render"
-                    ],
-                    "stack": [
-                        "Python",
-                        "FastAPI",
-                        "Node.js",
-                        "Express.js",
-                        "Render"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Clinical Booking Platform Backend",
-                    "desc": "A dual-framework backend for clinic appointment management, with FastAPI for data processing services and Express.js for the booking API, demonstrating polyglot backend architecture.",
-                    "skills": [
-                        "FastAPI microservice for data processing",
-                        "Express.js booking API gateway",
-                        "Cross-service communication patterns",
-                        "Healthcare appointment business logic",
-                        "Deployed with Docker Compose"
-                    ],
-                    "stack": [
-                        "Python",
-                        "FastAPI",
-                        "Node.js",
-                        "Express.js",
-                        "Docker"
-                    ]
-                }
+          "icon": "cpu",
+          "accentClass": "a2",
+          "title": "Data Structures & Algorithms",
+          "topics": [
+            "Arrays, linked lists & stacks",
+            "Trees, graphs & hash maps",
+            "Sorting & searching algorithms",
+            "Big-O complexity analysis"
+          ],
+          "resources": [
+            {
+              "icon": "book",
+              "name": "Neetcode — DSA Roadmap",
+              "meta": "neetcode.io · Visual algorithm roadmap with solutions",
+              "url": "https://neetcode.io/roadmap"
+            },
+            {
+              "icon": "code",
+              "name": "Visualgo — Algorithm Visualisation",
+              "meta": "visualgo.net · Animated data structure visualisations",
+              "url": "https://visualgo.net"
+            },
+            {
+              "icon": "file-text",
+              "name": "Big-O Cheat Sheet",
+              "meta": "bigocheatsheet.com · Quick reference for complexities",
+              "url": "https://www.bigocheatsheet.com"
             }
-        },
-        {
-            "number": "03",
-            "badge": "badge-data",
-            "badgeLabel": "Data Layer",
-            "title": "Databases & Data Storage",
-            "duration": "Months 5\u20136",
-            "modules": [
-                {
-                    "icon": "database",
-                    "accentClass": "a2",
-                    "title": "SQL & Relational Databases",
-                    "topics": [
-                        "SQL fundamentals: SELECT, JOIN, subqueries",
-                        "Schema design & normalisation",
-                        "PostgreSQL setup, indexing & migrations",
-                        "Transactions, ACID & isolation levels"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "PostgreSQL Official Tutorial",
-                            "meta": "postgresql.org \u00b7 Free official PostgreSQL docs & tutorial",
-                            "url": "https://www.postgresql.org/docs/current/tutorial.html"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "SQLBolt \u2014 Interactive SQL Lessons",
-                            "meta": "sqlbolt.com \u00b7 Hands-on SQL exercises in the browser",
-                            "url": "https://sqlbolt.com"
-                        },
-                        {
-                            "icon": "graduation-cap",
-                            "name": "CS50 SQL \u2014 Harvard",
-                            "meta": "cs50.harvard.edu \u00b7 Free SQL course from Harvard",
-                            "url": "https://cs50.harvard.edu/sql/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Library Management System",
-                            "desc": "Design and build a PostgreSQL-backed library system with books, members, loans, reservations, and overdue tracking with proper normalisation.",
-                            "skills": [
-                                "Database schema design (3NF normalisation)",
-                                "Complex SQL queries with JOINs & subqueries",
-                                "PostgreSQL indexing for performance",
-                                "Alembic migrations for schema changes",
-                                "Transaction handling for loan operations"
-                            ],
-                            "stack": [
-                                "PostgreSQL",
-                                "SQLAlchemy",
-                                "Alembic",
-                                "Python",
-                                "psycopg2"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Patient Records Database",
-                            "desc": "A PostgreSQL schema for patient records \u2014 demographics, encounters, diagnoses (ICD-10), medications, and lab results with proper normalisation and indexing.",
-                            "skills": [
-                                "Healthcare data modelling (HL7 FHIR concepts)",
-                                "ICD-10 diagnosis code indexing",
-                                "Encounter-patient relational design",
-                                "Audit trail tables for PHI access",
-                                "De-identification ready schema design"
-                            ],
-                            "stack": [
-                                "PostgreSQL",
-                                "SQLAlchemy",
-                                "Alembic",
-                                "Python",
-                                "psycopg2"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "layers",
-                    "accentClass": "a2",
-                    "title": "NoSQL & Modern Data Stores",
-                    "topics": [
-                        "MongoDB document model & Mongoose ODM",
-                        "Redis caching & session storage",
-                        "When to use SQL vs NoSQL",
-                        "Database selection criteria"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "MongoDB University \u2014 Free Courses",
-                            "meta": "university.mongodb.com \u00b7 Free official MongoDB certifications",
-                            "url": "https://university.mongodb.com"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Traversy Media \u2014 MongoDB Crash Course",
-                            "meta": "youtube.com \u00b7 Quick MongoDB fundamentals",
-                            "url": "https://www.youtube.com/watch?v=-56x56UppqQ"
-                        },
-                        {
-                            "icon": "terminal",
-                            "name": "Redis Official Tutorials",
-                            "meta": "redis.io \u00b7 Free interactive Redis tutorials",
-                            "url": "https://redis.io/learn"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Real-Time Chat Store",
-                            "desc": "Build a MongoDB schema for a real-time chat application with rooms, messages, users, and read receipts, plus Redis for session caching.",
-                            "skills": [
-                                "MongoDB embedded vs referenced documents",
-                                "Mongoose schemas & virtual fields",
-                                "Redis session store implementation",
-                                "Index design for message search",
-                                "Aggregation pipeline for chat analytics"
-                            ],
-                            "stack": [
-                                "MongoDB",
-                                "Mongoose",
-                                "Redis",
-                                "Node.js",
-                                "Docker"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Clinical Document Store",
-                            "desc": "A MongoDB-based document store for clinical notes, lab reports, and imaging results with flexible schemas and full-text search capabilities.",
-                            "skills": [
-                                "Flexible clinical document schemas",
-                                "Full-text search across medical notes",
-                                "Redis caching for frequently accessed records",
-                                "Document versioning for audit trails",
-                                "TTL indexes for data retention policies"
-                            ],
-                            "stack": [
-                                "MongoDB",
-                                "Mongoose",
-                                "Redis",
-                                "Node.js",
-                                "Docker"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Polyglot Persistence Portfolio",
-                    "desc": "A portfolio project demonstrating SQL (PostgreSQL) and NoSQL (MongoDB + Redis) database implementations for the same e-commerce domain, with performance comparisons.",
-                    "skills": [
-                        "PostgreSQL relational schema for orders",
-                        "MongoDB document schema for product catalog",
-                        "Redis caching layer for hot data",
-                        "Query performance benchmarking",
-                        "Database selection rationale document"
-                    ],
-                    "stack": [
-                        "PostgreSQL",
-                        "MongoDB",
-                        "Redis",
-                        "Python",
-                        "Docker"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Multi-Store Clinical Data Platform",
-                    "desc": "A polyglot persistence system using PostgreSQL for structured patient data and MongoDB for unstructured clinical documents, with Redis for session management.",
-                    "skills": [
-                        "PostgreSQL for structured clinical data",
-                        "MongoDB for clinical documents & notes",
-                        "Redis for clinician session caching",
-                        "Cross-store data synchronisation",
-                        "HIPAA-aware data access patterns"
-                    ],
-                    "stack": [
-                        "PostgreSQL",
-                        "MongoDB",
-                        "Redis",
-                        "Python",
-                        "Docker"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "04",
-            "badge": "badge-api",
-            "badgeLabel": "API Design",
-            "title": "API Design & Integration",
-            "duration": "Months 7\u20138",
-            "modules": [
-                {
-                    "icon": "globe",
-                    "accentClass": "a2",
-                    "title": "RESTful API Mastery",
-                    "topics": [
-                        "REST principles & resource modelling",
-                        "Versioning, pagination & filtering",
-                        "HATEOAS & API discoverability",
-                        "OpenAPI/Swagger documentation"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Microsoft REST API Guidelines",
-                            "meta": "github.com \u00b7 Industry-standard REST design guidelines",
-                            "url": "https://github.com/microsoft/api-guidelines"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "Swagger Petstore \u2014 Interactive API",
-                            "meta": "editor.swagger.io \u00b7 Live OpenAPI editor & demo",
-                            "url": "https://editor.swagger.io"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Zalando RESTful API Guidelines",
-                            "meta": "opensource.zalando.com \u00b7 Comprehensive REST standards",
-                            "url": "https://opensource.zalando.com/restful-api-guidelines/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "E-Commerce REST API",
-                            "desc": "A fully documented REST API for an e-commerce platform with products, cart, orders, users, search, pagination, and OpenAPI documentation.",
-                            "skills": [
-                                "RESTful resource design & naming",
-                                "API versioning strategy (URL-based)",
-                                "Cursor-based pagination",
-                                "OpenAPI 3.0 specification",
-                                "Rate limiting & throttling"
-                            ],
-                            "stack": [
-                                "FastAPI",
-                                "PostgreSQL",
-                                "Pydantic",
-                                "OpenAPI",
-                                "Docker"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "FHIR-Lite Patient API",
-                            "desc": "A RESTful API implementing core FHIR (Fast Healthcare Interoperability Resources) patterns for patient demographics, observations, and conditions.",
-                            "skills": [
-                                "FHIR resource modelling (Patient, Observation, Condition)",
-                                "HL7 FHIR search parameters",
-                                "JSON resource bundles",
-                                "Content negotiation headers",
-                                "FHIR capability statement endpoint"
-                            ],
-                            "stack": [
-                                "FastAPI",
-                                "PostgreSQL",
-                                "Pydantic",
-                                "OpenAPI",
-                                "Docker"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "share-2",
-                    "accentClass": "a2",
-                    "title": "GraphQL & Event-Driven APIs",
-                    "topics": [
-                        "GraphQL schema design & resolvers",
-                        "Queries, mutations & subscriptions",
-                        "WebSocket real-time APIs",
-                        "Message queues with RabbitMQ/Redis"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "GraphQL Official Tutorials",
-                            "meta": "graphql.org \u00b7 Free official learning resources",
-                            "url": "https://graphql.org/learn/"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Fireship \u2014 GraphQL in 100 Seconds",
-                            "meta": "youtube.com \u00b7 Quick GraphQL overview",
-                            "url": "https://www.youtube.com/watch?v=eIQh02xuVw4"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "Hasura GraphQL Engine",
-                            "meta": "hasura.io \u00b7 Free tier, instant GraphQL on Postgres",
-                            "url": "https://hasura.io"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Social Feed GraphQL API",
-                            "desc": "A GraphQL API for a social feed with posts, comments, likes, real-time subscriptions, and a WebSocket-powered notification system.",
-                            "skills": [
-                                "GraphQL schema & resolver architecture",
-                                "N+1 query prevention with DataLoader",
-                                "WebSocket subscriptions for real-time updates",
-                                "Query complexity limiting",
-                                "Redis pub/sub for event broadcasting"
-                            ],
-                            "stack": [
-                                "Node.js",
-                                "Apollo Server",
-                                "GraphQL",
-                                "Redis",
-                                "WebSocket"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Clinical Alerts GraphQL API",
-                            "desc": "A GraphQL API for real-time clinical alerts \u2014 lab result notifications, medication reminders, and patient status updates via WebSocket subscriptions.",
-                            "skills": [
-                                "GraphQL subscriptions for real-time alerts",
-                                "Role-based field visibility (nurse vs doctor)",
-                                "Alert prioritisation & escalation logic",
-                                "WebSocket connection management",
-                                "Audit logging for alert delivery"
-                            ],
-                            "stack": [
-                                "Node.js",
-                                "Apollo Server",
-                                "GraphQL",
-                                "Redis",
-                                "WebSocket"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "API Design Portfolio",
-                    "desc": "A comprehensive API portfolio showcasing both REST and GraphQL implementations with full documentation, testing, and deployment on a cloud platform.",
-                    "skills": [
-                        "REST API with OpenAPI specification",
-                        "GraphQL API with schema documentation",
-                        "Postman/Insomnia test collections",
-                        "API performance benchmarking",
-                        "Deployed with documentation site"
-                    ],
-                    "stack": [
-                        "FastAPI",
-                        "Apollo Server",
-                        "PostgreSQL",
-                        "Docker",
-                        "Vercel"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Interoperability API Suite",
-                    "desc": "A FHIR-inspired API suite demonstrating healthcare interoperability patterns \u2014 REST resources, GraphQL clinical queries, and real-time alert subscriptions.",
-                    "skills": [
-                        "FHIR resource REST endpoints",
-                        "GraphQL clinical data queries",
-                        "Real-time clinical alert subscriptions",
-                        "API documentation with healthcare context",
-                        "Interoperability standards awareness"
-                    ],
-                    "stack": [
-                        "FastAPI",
-                        "Apollo Server",
-                        "PostgreSQL",
-                        "Docker",
-                        "Vercel"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "05",
-            "badge": "badge-devops",
-            "badgeLabel": "DevOps",
-            "title": "Deployment & Infrastructure",
-            "duration": "Months 9\u201310",
-            "modules": [
-                {
-                    "icon": "box",
-                    "accentClass": "a2",
-                    "title": "Docker & Containerisation",
-                    "topics": [
-                        "Docker fundamentals: images, containers, volumes",
-                        "Dockerfile best practices & multi-stage builds",
-                        "Docker Compose for multi-service apps",
-                        "Container networking & environment management"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Docker Official Getting Started",
-                            "meta": "docs.docker.com \u00b7 Free official Docker tutorials",
-                            "url": "https://docs.docker.com/get-started/"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "TechWorld with Nana \u2014 Docker Course",
-                            "meta": "youtube.com \u00b7 Complete Docker tutorial (4 hours)",
-                            "url": "https://www.youtube.com/watch?v=3c-iBn73dDE"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "Play with Docker Labs",
-                            "meta": "labs.play-with-docker.com \u00b7 Free browser-based Docker playground",
-                            "url": "https://labs.play-with-docker.com"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Multi-Service Docker Stack",
-                            "desc": "Containerise a full-stack application with separate containers for API, database, cache, and reverse proxy using Docker Compose.",
-                            "skills": [
-                                "Multi-stage Dockerfile for small images",
-                                "Docker Compose service orchestration",
-                                "Volume mounting for development",
-                                "Health checks & restart policies",
-                                "Environment variable management"
-                            ],
-                            "stack": [
-                                "Docker",
-                                "Docker Compose",
-                                "Nginx",
-                                "PostgreSQL",
-                                "Redis"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Clinical Services Docker Stack",
-                            "desc": "A Docker Compose stack for healthcare microservices \u2014 patient API, clinical notes service, alert service, and PostgreSQL with volume-backed persistence.",
-                            "skills": [
-                                "Healthcare microservice containerisation",
-                                "Data persistence with named volumes",
-                                "Network isolation between services",
-                                "Secrets management for PHI configs",
-                                "Log aggregation for audit trails"
-                            ],
-                            "stack": [
-                                "Docker",
-                                "Docker Compose",
-                                "PostgreSQL",
-                                "Redis",
-                                "Nginx"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "git-merge",
-                    "accentClass": "a2",
-                    "title": "CI/CD & Cloud Deployment",
-                    "topics": [
-                        "GitHub Actions: workflows, jobs & secrets",
-                        "Automated testing in CI pipelines",
-                        "Cloud platforms: Railway, Render, Vercel",
-                        "Infrastructure as Code basics (Terraform)"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "GitHub Actions Official Docs",
-                            "meta": "docs.github.com \u00b7 Free official CI/CD tutorials",
-                            "url": "https://docs.github.com/en/actions"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Fireship \u2014 GitHub Actions in 100 Seconds",
-                            "meta": "youtube.com \u00b7 Quick CI/CD overview",
-                            "url": "https://www.youtube.com/watch?v=R8_veQiYBjI"
-                        },
-                        {
-                            "icon": "terminal",
-                            "name": "Railway \u00b7 Deploy Guide",
-                            "meta": "railway.app \u00b7 Free tier backend hosting",
-                            "url": "https://docs.railway.app"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "CI/CD Pipeline Portfolio",
-                            "desc": "Set up complete CI/CD pipelines for a backend project \u2014 lint, test, build, deploy on push, with staging and production environments.",
-                            "skills": [
-                                "GitHub Actions workflow configuration",
-                                "Automated test gates in CI",
-                                "Docker build & push to registry",
-                                "Staging & production deploy targets",
-                                "Secret management in CI/CD"
-                            ],
-                            "stack": [
-                                "GitHub Actions",
-                                "Docker",
-                                "Railway",
-                                "PostgreSQL",
-                                "Redis"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Clinical Services CI/CD Pipeline",
-                            "desc": "A healthcare-aware CI/CD pipeline with automated security scanning, HIPAA compliance checks, and staged deployments for clinical services.",
-                            "skills": [
-                                "Security scanning in CI (SAST/DAST)",
-                                "HIPAA compliance gate checks",
-                                "Canary deployment strategy",
-                                "Rollback automation",
-                                "Audit logging for deployments"
-                            ],
-                            "stack": [
-                                "GitHub Actions",
-                                "Docker",
-                                "Railway",
-                                "Trivy",
-                                "Semgrep"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Production-Ready Deployment Portfolio",
-                    "desc": "A fully deployed backend application with Docker containerisation, CI/CD pipeline, cloud hosting, monitoring, and documented infrastructure decisions.",
-                    "skills": [
-                        "Docker multi-stage production builds",
-                        "GitHub Actions CI/CD pipeline",
-                        "Cloud deployment (Railway/Render)",
-                        "Environment-based configuration",
-                        "Post-deployment health checks"
-                    ],
-                    "stack": [
-                        "Docker",
-                        "GitHub Actions",
-                        "Railway",
-                        "PostgreSQL",
-                        "Redis"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Clinical Infrastructure Portfolio",
-                    "desc": "A deployed clinical services stack with container orchestration, CI/CD with security gates, environment isolation, and infrastructure documentation.",
-                    "skills": [
-                        "Docker Compose production stack",
-                        "CI/CD with security scanning gates",
-                        "Staging & production environment separation",
-                        "Infrastructure documentation",
-                        "Disaster recovery procedures"
-                    ],
-                    "stack": [
-                        "Docker",
-                        "GitHub Actions",
-                        "Railway",
-                        "Trivy",
-                        "Terraform"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "06",
-            "badge": "badge-security",
-            "badgeLabel": "Security",
-            "title": "Authentication & Security",
-            "duration": "Months 11\u201312",
-            "modules": [
-                {
-                    "icon": "shield",
-                    "accentClass": "a2",
-                    "title": "Authentication & Authorisation",
-                    "topics": [
-                        "JWT: access tokens & refresh tokens",
-                        "OAuth 2.0 & social login integration",
-                        "Role-based access control (RBAC)",
-                        "Session management & secure cookies"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Auth0 JWT Handbook",
-                            "meta": "auth0.com \u00b7 Free comprehensive JWT guide",
-                            "url": "https://auth0.com/resources/ebooks/jwt-handbook"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Fireship \u2014 JWT in 8 Minutes",
-                            "meta": "youtube.com \u00b7 Quick JWT explainer",
-                            "url": "https://www.youtube.com/watch?v=UBUNrFtufWo"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "OAuth 2.0 Simplified",
-                            "meta": "aaronparecki.com \u00b7 Free OAuth 2.0 tutorial",
-                            "url": "https://aaronparecki.com/oauth-2-simplified/"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Auth Microservice",
-                            "desc": "A standalone authentication service with JWT access/refresh tokens, Google OAuth, role-based access control, and rate-limited login attempts.",
-                            "skills": [
-                                "JWT access & refresh token rotation",
-                                "Google OAuth 2.0 integration",
-                                "RBAC middleware implementation",
-                                "Rate limiting for brute-force protection",
-                                "Secure password hashing with bcrypt"
-                            ],
-                            "stack": [
-                                "Node.js",
-                                "Express.js",
-                                "MongoDB",
-                                "Redis",
-                                "JWT"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Clinical Auth Service",
-                            "desc": "A healthcare authentication service with role-based access (nurse, doctor, admin), multi-factor authentication, and session audit logging for HIPAA compliance.",
-                            "skills": [
-                                "Healthcare role hierarchy (nurse/doctor/admin)",
-                                "MFA with TOTP (Time-based One-Time Password)",
-                                "Session timeout for clinical workstations",
-                                "PHI access audit trail logging",
-                                "Break-the-glass emergency access"
-                            ],
-                            "stack": [
-                                "Node.js",
-                                "Express.js",
-                                "MongoDB",
-                                "Redis",
-                                "Speakeasy"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "lock",
-                    "accentClass": "a2",
-                    "title": "Web Security Fundamentals",
-                    "topics": [
-                        "OWASP Top 10 vulnerabilities",
-                        "SQL injection & XSS prevention",
-                        "CSRF, CORS & security headers",
-                        "API security best practices"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "OWASP Top 10",
-                            "meta": "owasp.org \u00b7 Industry-standard security reference",
-                            "url": "https://owasp.org/www-project-top-ten/"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Fireship \u2014 OWASP Top 10 in 100 Seconds",
-                            "meta": "youtube.com \u00b7 Quick security overview",
-                            "url": "https://www.youtube.com/watch?v=Gz3JUf3JQ4o"
-                        },
-                        {
-                            "icon": "terminal",
-                            "name": "PortSwigger Web Security Academy",
-                            "meta": "portswigger.net \u00b7 Free hands-on security labs",
-                            "url": "https://portswigger.net/web-security"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Secure API Hardening",
-                            "desc": "Take an existing API and systematically harden it \u2014 fix OWASP Top 10 vulnerabilities, add security headers, implement rate limiting, and write a security audit report.",
-                            "skills": [
-                                "Input validation & sanitisation",
-                                "SQL injection prevention (parameterised queries)",
-                                "XSS & CSRF protection headers",
-                                "Security audit report documentation",
-                                "Penetration testing with OWASP ZAP"
-                            ],
-                            "stack": [
-                                "FastAPI",
-                                "Helmet.js",
-                                "OWASP ZAP",
-                                "Rate Limiter",
-                                "PostgreSQL"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Clinical API Security Audit",
-                            "desc": "A comprehensive security audit of a clinical API \u2014 vulnerability assessment, OWASP Top 10 remediation, PHI protection validation, and compliance report.",
-                            "skills": [
-                                "OWASP Top 10 assessment for healthcare APIs",
-                                "PHI data exposure prevention",
-                                "Encryption at rest and in transit validation",
-                                "Security compliance report (HIPAA checklist)",
-                                "Automated security scanning in CI"
-                            ],
-                            "stack": [
-                                "FastAPI",
-                                "OWASP ZAP",
-                                "Bandit",
-                                "Semgrep",
-                                "PostgreSQL"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Security-First Backend Portfolio",
-                    "desc": "A backend project portfolio demonstrating security best practices \u2014 authenticated APIs, OWASP Top 10 remediation, security headers, and audit documentation.",
-                    "skills": [
-                        "JWT authentication implementation",
-                        "OWASP Top 10 vulnerability remediation",
-                        "Security headers (Helmet.js / middleware)",
-                        "Rate limiting & brute-force protection",
-                        "Security audit report"
-                    ],
-                    "stack": [
-                        "FastAPI",
-                        "Node.js",
-                        "Helmet.js",
-                        "OWASP ZAP",
-                        "Docker"
-                    ]
-                },
-                "healthcare": {
-                    "title": "HIPAA-Compliant Security Portfolio",
-                    "desc": "A security portfolio focused on healthcare compliance \u2014 PHI protection, audit logging, access controls, and HIPAA compliance documentation.",
-                    "skills": [
-                        "PHI access control implementation",
-                        "Audit trail logging system",
-                        "Encryption at rest & in transit",
-                        "HIPAA compliance checklist completion",
-                        "Security documentation for clinical systems"
-                    ],
-                    "stack": [
-                        "FastAPI",
-                        "Node.js",
-                        "PostgreSQL",
-                        "Docker",
-                        "Vault"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "07",
-            "badge": "badge-scale",
-            "badgeLabel": "Scaling",
-            "title": "Performance & Distributed Systems",
-            "duration": "Months 13\u201314",
-            "modules": [
-                {
-                    "icon": "zap",
-                    "accentClass": "a2",
-                    "title": "Performance Optimization",
-                    "topics": [
-                        "Caching strategies: Redis, CDN, application-level",
-                        "Database query optimization & N+1 prevention",
-                        "Connection pooling & resource management",
-                        "Load testing & performance benchmarking"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "System Design Primer",
-                            "meta": "github.com \u00b7 Free comprehensive system design guide",
-                            "url": "https://github.com/donnemartin/system-design-primer"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Gaurav Sen \u2014 System Design",
-                            "meta": "youtube.com \u00b7 System design tutorial series",
-                            "url": "https://www.youtube.com/@GauravS"
-                        },
-                        {
-                            "icon": "terminal",
-                            "name": "Locust \u2014 Load Testing",
-                            "meta": "locust.io \u00b7 Free Python load testing tool",
-                            "url": "https://locust.io"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "High-Performance API",
-                            "desc": "Optimise a backend API for performance \u2014 implement caching, fix N+1 queries, add connection pooling, and benchmark with Locust load tests.",
-                            "skills": [
-                                "Redis caching with cache invalidation",
-                                "N+1 query detection & eager loading",
-                                "Database connection pooling",
-                                "Locust load test scripts",
-                                "Performance before/after report"
-                            ],
-                            "stack": [
-                                "FastAPI",
-                                "Redis",
-                                "PostgreSQL",
-                                "Locust",
-                                "Docker"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Clinical Data Caching Layer",
-                            "desc": "A performance-optimised caching layer for clinical data access \u2014 patient records, recent observations, and frequently accessed reference data.",
-                            "skills": [
-                                "Multi-tier caching (Redis + in-memory)",
-                                "Clinical data freshness guarantees",
-                                "Cache invalidation for patient updates",
-                                "Load testing with clinical query patterns",
-                                "Performance documentation"
-                            ],
-                            "stack": [
-                                "FastAPI",
-                                "Redis",
-                                "PostgreSQL",
-                                "Locust",
-                                "Docker"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "cloud",
-                    "accentClass": "a2",
-                    "title": "Distributed Systems Patterns",
-                    "topics": [
-                        "Message queues: RabbitMQ, Redis Streams",
-                        "Microservices communication patterns",
-                        "API gateway & service mesh concepts",
-                        "Circuit breaker & retry patterns"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "Designing Data-Intensive Applications",
-                            "meta": "dataintensive.net \u00b7 The definitive distributed systems book",
-                            "url": "https://dataintensive.net"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Hussein Nasser \u2014 Distributed Systems",
-                            "meta": "youtube.com \u00b7 Deep-dive distributed systems topics",
-                            "url": "https://www.youtube.com/@hnasser"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "Microservices.io \u2014 Patterns",
-                            "meta": "microservices.io \u00b7 Catalog of microservice patterns",
-                            "url": "https://microservices.io/patterns"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Event-Driven Microservices",
-                            "desc": "Build a microservices system with RabbitMQ message broker \u2014 order service, inventory service, and notification service communicating asynchronously.",
-                            "skills": [
-                                "RabbitMQ producer/consumer patterns",
-                                "Event-driven architecture design",
-                                "Circuit breaker pattern implementation",
-                                "Service health monitoring",
-                                "Distributed tracing with correlation IDs"
-                            ],
-                            "stack": [
-                                "Node.js",
-                                "RabbitMQ",
-                                "Docker",
-                                "Redis",
-                                "FastAPI"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Clinical Event Bus",
-                            "desc": "A healthcare event-driven system \u2014 lab results trigger clinical alerts, medication orders trigger pharmacy notifications, with dead-letter queues for failed events.",
-                            "skills": [
-                                "Clinical event publishing & subscription",
-                                "Dead-letter queue for failed clinical events",
-                                "Event replay for audit requirements",
-                                "Circuit breaker for external integrations",
-                                "Correlation ID tracking across services"
-                            ],
-                            "stack": [
-                                "Node.js",
-                                "RabbitMQ",
-                                "Docker",
-                                "Redis",
-                                "FastAPI"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Distributed Systems Portfolio",
-                    "desc": "A portfolio demonstrating distributed systems patterns \u2014 event-driven architecture, message queues, caching strategies, and load-tested performance benchmarks.",
-                    "skills": [
-                        "Event-driven microservice architecture",
-                        "RabbitMQ message broker integration",
-                        "Multi-tier caching strategy",
-                        "Load testing with Locust",
-                        "System design documentation"
-                    ],
-                    "stack": [
-                        "FastAPI",
-                        "Node.js",
-                        "RabbitMQ",
-                        "Redis",
-                        "Docker"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Clinical Event System Portfolio",
-                    "desc": "A healthcare event-driven system demonstrating clinical event processing, alert routing, and performance-optimised data access patterns.",
-                    "skills": [
-                        "Clinical event bus architecture",
-                        "Alert routing with priority levels",
-                        "Performance-optimised clinical data access",
-                        "System design for healthcare scale",
-                        "Load testing documentation"
-                    ],
-                    "stack": [
-                        "FastAPI",
-                        "Node.js",
-                        "RabbitMQ",
-                        "Redis",
-                        "Docker"
-                    ]
-                }
-            }
-        },
-        {
-            "number": "08",
-            "badge": "badge-career",
-            "badgeLabel": "Career",
-            "title": "Portfolio & Career Launch",
-            "duration": "Months 15\u201316",
-            "modules": [
-                {
-                    "icon": "briefcase",
-                    "accentClass": "a2",
-                    "title": "Technical Portfolio",
-                    "topics": [
-                        "GitHub profile optimisation",
-                        "Project documentation & READMEs",
-                        "Technical blog writing",
-                        "Open source contributions"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "GitHub Profile README Generator",
-                            "meta": "github.com \u00b7 Free profile README builder",
-                            "url": "https://github.com/rahuldkjain/github-profile-readme-generator"
-                        },
-                        {
-                            "icon": "file-text",
-                            "name": "Oh Shit, Git!?!",
-                            "meta": "ohshitgit.com \u00b7 Git rescue reference",
-                            "url": "https://ohshitgit.com"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Fireship \u2014 Portfolio Tips",
-                            "meta": "youtube.com \u00b7 Developer portfolio advice",
-                            "url": "https://www.youtube.com/watch?v=51VbcDk3bVg"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Backend Engineering Portfolio Site",
-                            "desc": "Build a portfolio site showcasing all Phase 1-8 projects with architecture diagrams, live API demos, and technical deep-dive blog posts.",
-                            "skills": [
-                                "Portfolio site with project showcases",
-                                "Architecture diagram per project",
-                                "Live API endpoint demonstrations",
-                                "Technical blog posts on Medium/dev.to",
-                                "GitHub contribution graph optimisation"
-                            ],
-                            "stack": [
-                                "Next.js",
-                                "Vercel",
-                                "MDX",
-                                "Tailwind CSS"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Healthcare Backend Portfolio",
-                            "desc": "A portfolio site focused on healthcare backend projects \u2014 showcasing FHIR expertise, HIPAA awareness, clinical system architecture, and healthcare domain knowledge.",
-                            "skills": [
-                                "Healthcare-focused project showcases",
-                                "FHIR implementation case studies",
-                                "HIPAA compliance documentation samples",
-                                "Clinical system architecture diagrams",
-                                "Healthcare tech blog posts"
-                            ],
-                            "stack": [
-                                "Next.js",
-                                "Vercel",
-                                "MDX",
-                                "Tailwind CSS"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "icon": "target",
-                    "accentClass": "a2",
-                    "title": "Interview Preparation",
-                    "topics": [
-                        "System design interview patterns",
-                        "API design & code review questions",
-                        "Behavioural interview frameworks",
-                        "Salary negotiation strategies"
-                    ],
-                    "resources": [
-                        {
-                            "icon": "book-open",
-                            "name": "System Design Interview (Free Chapters)",
-                            "meta": "github.com \u00b7 Free system design resources",
-                            "url": "https://github.com/donnemartin/system-design-primer"
-                        },
-                        {
-                            "icon": "play",
-                            "name": "Neetcode \u2014 System Design Interviews",
-                            "meta": "youtube.com \u00b7 System design interview walkthroughs",
-                            "url": "https://www.youtube.com/@NeetCode"
-                        },
-                        {
-                            "icon": "code",
-                            "name": "Leetcode \u2014 Backend Interview Prep",
-                            "meta": "leetcode.com \u00b7 Coding interview practice",
-                            "url": "https://leetcode.com"
-                        }
-                    ],
-                    "projects": {
-                        "general": {
-                            "title": "Backend Engineer Career Launch",
-                            "desc": "Complete career launch \u2014 polished portfolio, resume with quantified projects, 30 LeetCode problems solved, 3 mock interviews, and applications to 20+ roles.",
-                            "skills": [
-                                "Portfolio site deployed on Vercel",
-                                "Developer resume with project links",
-                                "30 LeetCode solutions documented",
-                                "3 mock interview recordings",
-                                "20+ job applications sent"
-                            ],
-                            "stack": [
-                                "Next.js",
-                                "Vercel",
-                                "LeetCode",
-                                "LinkedIn"
-                            ]
-                        },
-                        "healthcare": {
-                            "title": "Healthcare Backend Specialist Launch",
-                            "desc": "Career launch focused on healthcare backend roles \u2014 portfolio showcasing clinical systems, healthcare domain expertise, and targeted applications to health-tech positions.",
-                            "skills": [
-                                "Healthcare-focused portfolio",
-                                "Clinical system case studies",
-                                "Healthcare domain certifications prep",
-                                "Healthcare tech networking",
-                                "20+ healthcare role applications"
-                            ],
-                            "stack": [
-                                "Next.js",
-                                "Vercel",
-                                "LinkedIn",
-                                "HL7 FHIR"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "projects": {
-                "general": {
-                    "title": "Backend Engineering Career Launch",
-                    "desc": "Complete backend engineering career launch \u2014 polished portfolio, 30+ LeetCode solutions, system design practice, and targeted applications to backend roles.",
-                    "skills": [
-                        "Deployed portfolio with project demos",
-                        "30+ algorithm solutions documented",
-                        "System design interview prep",
-                        "Backend-specific resume",
-                        "20+ backend role applications"
-                    ],
-                    "stack": [
-                        "Next.js",
-                        "Vercel",
-                        "LeetCode",
-                        "LinkedIn"
-                    ]
-                },
-                "healthcare": {
-                    "title": "Healthcare Backend Career Launch",
-                    "desc": "Career launch for healthcare backend engineering roles \u2014 clinical system portfolio, healthcare domain expertise, and targeted applications to health-tech companies.",
-                    "skills": [
-                        "Healthcare backend portfolio",
-                        "FHIR implementation showcase",
-                        "HIPAA compliance knowledge",
-                        "Healthcare tech networking",
-                        "20+ healthcare backend applications"
-                    ],
-                    "stack": [
-                        "Next.js",
-                        "Vercel",
-                        "LinkedIn",
-                        "HL7 FHIR"
-                    ]
-                }
-            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Algorithm Playground",
+              "desc": "Implement 10 core data structures and 15 sorting/searching algorithms from scratch, with unit tests and Big-O annotations for each.",
+              "skills": [
+                "Implement arrays, linked lists, hash maps",
+                "Binary search trees & heap structures",
+                "Quick sort, merge sort, radix sort",
+                "Graph BFS & DFS traversal",
+                "Big-O analysis documentation"
+              ],
+              "stack": [
+                "Python",
+                "pytest",
+                "GitHub"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Patient Lookup System",
+                "desc": "Build an efficient patient record lookup system using hash maps and trees, optimised for fast search by name, DOB, or MRN.",
+                "skills": [
+                  "Hash map for O(1) patient lookup",
+                  "Tree-based range queries by DOB",
+                  "Efficient search by multiple fields",
+                  "Data structure selection rationale",
+                  "Performance benchmarking"
+                ],
+                "stack": [
+                  "Python",
+                  "pytest",
+                  "GitHub"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
         }
-    ],
-    "projects": {
+      ],
+      "projects": {
         "general": {
-            "title": "Full Backend Engineering Portfolio",
-            "desc": "Build and deploy a polished portfolio site showcasing all Phase 1-8 backend projects with live API demos, architecture diagrams, system design documentation, and a blog documenting your 16-month backend engineering journey.",
+          "title": "CS Foundations Portfolio",
+          "desc": "A GitHub repository showcasing your programming fundamentals and DSA implementations, with clean documentation, test coverage, and Big-O analysis for each solution.",
+          "skills": [
+            "Clean, well-documented Python code",
+            "10+ data structure implementations",
+            "15+ algorithm implementations",
+            "Full pytest coverage",
+            "README with Big-O analysis"
+          ],
+          "stack": [
+            "Python",
+            "pytest",
+            "GitHub",
+            "Markdown"
+          ]
+        },
+        "niches": [
+          {
+            "id": "healthcare",
+            "name": "Healthcare",
+            "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+            "title": "Healthcare Data Structures Showcase",
+            "desc": "A curated portfolio of DSA implementations applied to healthcare scenarios — patient lookups, scheduling algorithms, and medical record indexing.",
             "skills": [
-                "Portfolio site with live API demo links",
-                "Architecture diagrams per project",
-                "System design documentation",
-                "Test coverage & CI status badges",
-                "Deployed on Vercel with custom domain"
+              "Healthcare-motivated data structure selection",
+              "Patient record indexing structures",
+              "Appointment scheduling algorithms",
+              "Medical coding lookups (ICD-10)",
+              "Documentation with healthcare context"
             ],
             "stack": [
+              "Python",
+              "pytest",
+              "GitHub",
+              "Markdown"
+            ]
+          },
+          {
+            "id": "fintech",
+            "name": "Fintech",
+            "tagline": "Payment processing, real-time transactions, banking APIs",
+            "title": "Payment API",
+            "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+            "skills": [
+              "Idempotent payment processing",
+              "Fraud detection integration",
+              "PCI-compliant data handling",
+              "Webhook event system",
+              "Transaction reconciliation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "PostgreSQL",
+              "Redis",
+              "Docker"
+            ]
+          },
+          {
+            "id": "climate",
+            "name": "Climate & Sustainability",
+            "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+            "title": "IoT Data API",
+            "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+            "skills": [
+              "IoT device management",
+              "Real-time data ingestion",
+              "Time-series data storage",
+              "Emission calculation engine",
+              "Sensor data validation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "TimescaleDB",
+              "MQTT",
+              "Docker"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "02",
+      "badge": "badge-core",
+      "badgeLabel": "Core Backend",
+      "title": "Server-Side Programming",
+      "duration": "Months 3–4",
+      "modules": [
+        {
+          "icon": "server",
+          "accentClass": "a2",
+          "title": "Python Web Frameworks",
+          "topics": [
+            "HTTP protocol & request/response cycle",
+            "FastAPI: routing, dependencies, validation",
+            "Async Python & ASGI fundamentals",
+            "Middleware, error handling & logging"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "FastAPI Official Tutorial",
+              "meta": "fastapi.tiangolo.com · Authoritative, beginner-friendly docs",
+              "url": "https://fastapi.tiangolo.com/tutorial/"
+            },
+            {
+              "icon": "play",
+              "name": "Tech With Tim — FastAPI Full Course",
+              "meta": "youtube.com · Complete FastAPI project walkthrough",
+              "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+            },
+            {
+              "icon": "code",
+              "name": "TestDriven.io — FastAPI Course",
+              "meta": "testdriven.io · Project-based FastAPI learning",
+              "url": "https://testdriven.io/courses/fastapi"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "REST API for Blog Engine",
+              "desc": "Build a complete blog engine API with FastAPI — CRUD for posts and comments, pagination, filtering, input validation with Pydantic, and OpenAPI docs.",
+              "skills": [
+                "FastAPI routing & dependency injection",
+                "Pydantic models for validation",
+                "SQLite with SQLAlchemy ORM",
+                "Automatic OpenAPI documentation",
+                "Unit & integration tests"
+              ],
+              "stack": [
+                "Python",
+                "FastAPI",
+                "SQLAlchemy",
+                "SQLite",
+                "Pytest"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Clinical Notes API",
+                "desc": "A FastAPI service for clinicians to create, search, and retrieve structured clinical notes with patient linking, timestamps, and note categorisation.",
+                "skills": [
+                  "Structured clinical note schemas",
+                  "Patient-note linking with foreign keys",
+                  "Search across note types and dates",
+                  "PHI access logging middleware",
+                  "Role-based response filtering"
+                ],
+                "stack": [
+                  "Python",
+                  "FastAPI",
+                  "SQLAlchemy",
+                  "SQLite",
+                  "Pytest"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "hexagon",
+          "accentClass": "a2",
+          "title": "Node.js & Express",
+          "topics": [
+            "Node.js event loop & non-blocking I/O",
+            "Express.js routing & middleware",
+            "Template engines & static file serving",
+            "RESTful API design principles"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Node.js Official Docs",
+              "meta": "nodejs.org · Official guides and API reference",
+              "url": "https://nodejs.org/en/learn"
+            },
+            {
+              "icon": "terminal",
+              "name": "The Odin Project — NodeJS Path",
+              "meta": "theodinproject.com · Project-based Node.js curriculum",
+              "url": "https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs"
+            },
+            {
+              "icon": "play",
+              "name": "Traversy Media — Express Crash Course",
+              "meta": "youtube.com · Quick Express.js fundamentals",
+              "url": "https://www.youtube.com/watch?v=CnH3kAXSrmU"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Bookshelf API",
+              "desc": "A RESTful bookshelf API with Express.js — manage books, authors, reading lists, and reviews with full CRUD, pagination, and search.",
+              "skills": [
+                "Express.js routing & middleware chains",
+                "MongoDB with Mongoose ODM",
+                "JWT authentication middleware",
+                "Input sanitisation & validation",
+                "Jest integration tests"
+              ],
+              "stack": [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Mongoose",
+                "Jest"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Appointment Scheduling API",
+                "desc": "An Express.js API for managing clinic appointments — patient booking, provider availability, time slot management, and cancellation handling.",
+                "skills": [
+                  "Time slot generation & availability logic",
+                  "Double-booking prevention",
+                  "Patient-provider appointment linking",
+                  "Calendar conflict detection",
+                  "Automated reminder scheduling"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express.js",
+                  "MongoDB",
+                  "Mongoose",
+                  "Jest"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Dual-Framework API Showcase",
+          "desc": "Deploy both a FastAPI and Express.js API demonstrating the same blog domain, showcasing Python and JavaScript backend proficiency with documented architectural decisions.",
+          "skills": [
+            "FastAPI & Express.js implementations",
+            "Consistent API contract across frameworks",
+            "ORM selection rationale (SQLAlchemy vs Mongoose)",
+            "Framework comparison documentation",
+            "Deployed on Railway or Render"
+          ],
+          "stack": [
+            "Python",
+            "FastAPI",
+            "Node.js",
+            "Express.js",
+            "Render"
+          ]
+        },
+        "niches": [
+          {
+            "id": "healthcare",
+            "name": "Healthcare",
+            "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+            "title": "Clinical Booking Platform Backend",
+            "desc": "A dual-framework backend for clinic appointment management, with FastAPI for data processing services and Express.js for the booking API, demonstrating polyglot backend architecture.",
+            "skills": [
+              "FastAPI microservice for data processing",
+              "Express.js booking API gateway",
+              "Cross-service communication patterns",
+              "Healthcare appointment business logic",
+              "Deployed with Docker Compose"
+            ],
+            "stack": [
+              "Python",
+              "FastAPI",
+              "Node.js",
+              "Express.js",
+              "Docker"
+            ]
+          },
+          {
+            "id": "fintech",
+            "name": "Fintech",
+            "tagline": "Payment processing, real-time transactions, banking APIs",
+            "title": "Payment API",
+            "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+            "skills": [
+              "Idempotent payment processing",
+              "Fraud detection integration",
+              "PCI-compliant data handling",
+              "Webhook event system",
+              "Transaction reconciliation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "PostgreSQL",
+              "Redis",
+              "Docker"
+            ]
+          },
+          {
+            "id": "climate",
+            "name": "Climate & Sustainability",
+            "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+            "title": "IoT Data API",
+            "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+            "skills": [
+              "IoT device management",
+              "Real-time data ingestion",
+              "Time-series data storage",
+              "Emission calculation engine",
+              "Sensor data validation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "TimescaleDB",
+              "MQTT",
+              "Docker"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "03",
+      "badge": "badge-data",
+      "badgeLabel": "Data Layer",
+      "title": "Databases & Data Storage",
+      "duration": "Months 5–6",
+      "modules": [
+        {
+          "icon": "database",
+          "accentClass": "a2",
+          "title": "SQL & Relational Databases",
+          "topics": [
+            "SQL fundamentals: SELECT, JOIN, subqueries",
+            "Schema design & normalisation",
+            "PostgreSQL setup, indexing & migrations",
+            "Transactions, ACID & isolation levels"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "PostgreSQL Official Tutorial",
+              "meta": "postgresql.org · Free official PostgreSQL docs & tutorial",
+              "url": "https://www.postgresql.org/docs/current/tutorial.html"
+            },
+            {
+              "icon": "code",
+              "name": "SQLBolt — Interactive SQL Lessons",
+              "meta": "sqlbolt.com · Hands-on SQL exercises in the browser",
+              "url": "https://sqlbolt.com"
+            },
+            {
+              "icon": "graduation-cap",
+              "name": "CS50 SQL — Harvard",
+              "meta": "cs50.harvard.edu · Free SQL course from Harvard",
+              "url": "https://cs50.harvard.edu/sql/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Library Management System",
+              "desc": "Design and build a PostgreSQL-backed library system with books, members, loans, reservations, and overdue tracking with proper normalisation.",
+              "skills": [
+                "Database schema design (3NF normalisation)",
+                "Complex SQL queries with JOINs & subqueries",
+                "PostgreSQL indexing for performance",
+                "Alembic migrations for schema changes",
+                "Transaction handling for loan operations"
+              ],
+              "stack": [
+                "PostgreSQL",
+                "SQLAlchemy",
+                "Alembic",
+                "Python",
+                "psycopg2"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Patient Records Database",
+                "desc": "A PostgreSQL schema for patient records — demographics, encounters, diagnoses (ICD-10), medications, and lab results with proper normalisation and indexing.",
+                "skills": [
+                  "Healthcare data modelling (HL7 FHIR concepts)",
+                  "ICD-10 diagnosis code indexing",
+                  "Encounter-patient relational design",
+                  "Audit trail tables for PHI access",
+                  "De-identification ready schema design"
+                ],
+                "stack": [
+                  "PostgreSQL",
+                  "SQLAlchemy",
+                  "Alembic",
+                  "Python",
+                  "psycopg2"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "layers",
+          "accentClass": "a2",
+          "title": "NoSQL & Modern Data Stores",
+          "topics": [
+            "MongoDB document model & Mongoose ODM",
+            "Redis caching & session storage",
+            "When to use SQL vs NoSQL",
+            "Database selection criteria"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "MongoDB University — Free Courses",
+              "meta": "university.mongodb.com · Free official MongoDB certifications",
+              "url": "https://university.mongodb.com"
+            },
+            {
+              "icon": "play",
+              "name": "Traversy Media — MongoDB Crash Course",
+              "meta": "youtube.com · Quick MongoDB fundamentals",
+              "url": "https://www.youtube.com/watch?v=-56x56UppqQ"
+            },
+            {
+              "icon": "terminal",
+              "name": "Redis Official Tutorials",
+              "meta": "redis.io · Free interactive Redis tutorials",
+              "url": "https://redis.io/learn"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Real-Time Chat Store",
+              "desc": "Build a MongoDB schema for a real-time chat application with rooms, messages, users, and read receipts, plus Redis for session caching.",
+              "skills": [
+                "MongoDB embedded vs referenced documents",
+                "Mongoose schemas & virtual fields",
+                "Redis session store implementation",
+                "Index design for message search",
+                "Aggregation pipeline for chat analytics"
+              ],
+              "stack": [
+                "MongoDB",
+                "Mongoose",
+                "Redis",
+                "Node.js",
+                "Docker"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Clinical Document Store",
+                "desc": "A MongoDB-based document store for clinical notes, lab reports, and imaging results with flexible schemas and full-text search capabilities.",
+                "skills": [
+                  "Flexible clinical document schemas",
+                  "Full-text search across medical notes",
+                  "Redis caching for frequently accessed records",
+                  "Document versioning for audit trails",
+                  "TTL indexes for data retention policies"
+                ],
+                "stack": [
+                  "MongoDB",
+                  "Mongoose",
+                  "Redis",
+                  "Node.js",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Polyglot Persistence Portfolio",
+          "desc": "A portfolio project demonstrating SQL (PostgreSQL) and NoSQL (MongoDB + Redis) database implementations for the same e-commerce domain, with performance comparisons.",
+          "skills": [
+            "PostgreSQL relational schema for orders",
+            "MongoDB document schema for product catalog",
+            "Redis caching layer for hot data",
+            "Query performance benchmarking",
+            "Database selection rationale document"
+          ],
+          "stack": [
+            "PostgreSQL",
+            "MongoDB",
+            "Redis",
+            "Python",
+            "Docker"
+          ]
+        },
+        "niches": [
+          {
+            "id": "healthcare",
+            "name": "Healthcare",
+            "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+            "title": "Multi-Store Clinical Data Platform",
+            "desc": "A polyglot persistence system using PostgreSQL for structured patient data and MongoDB for unstructured clinical documents, with Redis for session management.",
+            "skills": [
+              "PostgreSQL for structured clinical data",
+              "MongoDB for clinical documents & notes",
+              "Redis for clinician session caching",
+              "Cross-store data synchronisation",
+              "HIPAA-aware data access patterns"
+            ],
+            "stack": [
+              "PostgreSQL",
+              "MongoDB",
+              "Redis",
+              "Python",
+              "Docker"
+            ]
+          },
+          {
+            "id": "fintech",
+            "name": "Fintech",
+            "tagline": "Payment processing, real-time transactions, banking APIs",
+            "title": "Payment API",
+            "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+            "skills": [
+              "Idempotent payment processing",
+              "Fraud detection integration",
+              "PCI-compliant data handling",
+              "Webhook event system",
+              "Transaction reconciliation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "PostgreSQL",
+              "Redis",
+              "Docker"
+            ]
+          },
+          {
+            "id": "climate",
+            "name": "Climate & Sustainability",
+            "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+            "title": "IoT Data API",
+            "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+            "skills": [
+              "IoT device management",
+              "Real-time data ingestion",
+              "Time-series data storage",
+              "Emission calculation engine",
+              "Sensor data validation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "TimescaleDB",
+              "MQTT",
+              "Docker"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "04",
+      "badge": "badge-api",
+      "badgeLabel": "API Design",
+      "title": "API Design & Integration",
+      "duration": "Months 7–8",
+      "modules": [
+        {
+          "icon": "globe",
+          "accentClass": "a2",
+          "title": "RESTful API Mastery",
+          "topics": [
+            "REST principles & resource modelling",
+            "Versioning, pagination & filtering",
+            "HATEOAS & API discoverability",
+            "OpenAPI/Swagger documentation"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Microsoft REST API Guidelines",
+              "meta": "github.com · Industry-standard REST design guidelines",
+              "url": "https://github.com/microsoft/api-guidelines"
+            },
+            {
+              "icon": "code",
+              "name": "Swagger Petstore — Interactive API",
+              "meta": "editor.swagger.io · Live OpenAPI editor & demo",
+              "url": "https://editor.swagger.io"
+            },
+            {
+              "icon": "file-text",
+              "name": "Zalando RESTful API Guidelines",
+              "meta": "opensource.zalando.com · Comprehensive REST standards",
+              "url": "https://opensource.zalando.com/restful-api-guidelines/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "E-Commerce REST API",
+              "desc": "A fully documented REST API for an e-commerce platform with products, cart, orders, users, search, pagination, and OpenAPI documentation.",
+              "skills": [
+                "RESTful resource design & naming",
+                "API versioning strategy (URL-based)",
+                "Cursor-based pagination",
+                "OpenAPI 3.0 specification",
+                "Rate limiting & throttling"
+              ],
+              "stack": [
+                "FastAPI",
+                "PostgreSQL",
+                "Pydantic",
+                "OpenAPI",
+                "Docker"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "FHIR-Lite Patient API",
+                "desc": "A RESTful API implementing core FHIR (Fast Healthcare Interoperability Resources) patterns for patient demographics, observations, and conditions.",
+                "skills": [
+                  "FHIR resource modelling (Patient, Observation, Condition)",
+                  "HL7 FHIR search parameters",
+                  "JSON resource bundles",
+                  "Content negotiation headers",
+                  "FHIR capability statement endpoint"
+                ],
+                "stack": [
+                  "FastAPI",
+                  "PostgreSQL",
+                  "Pydantic",
+                  "OpenAPI",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "share-2",
+          "accentClass": "a2",
+          "title": "GraphQL & Event-Driven APIs",
+          "topics": [
+            "GraphQL schema design & resolvers",
+            "Queries, mutations & subscriptions",
+            "WebSocket real-time APIs",
+            "Message queues with RabbitMQ/Redis"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "GraphQL Official Tutorials",
+              "meta": "graphql.org · Free official learning resources",
+              "url": "https://graphql.org/learn/"
+            },
+            {
+              "icon": "play",
+              "name": "Fireship — GraphQL in 100 Seconds",
+              "meta": "youtube.com · Quick GraphQL overview",
+              "url": "https://www.youtube.com/watch?v=eIQh02xuVw4"
+            },
+            {
+              "icon": "code",
+              "name": "Hasura GraphQL Engine",
+              "meta": "hasura.io · Free tier, instant GraphQL on Postgres",
+              "url": "https://hasura.io"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Social Feed GraphQL API",
+              "desc": "A GraphQL API for a social feed with posts, comments, likes, real-time subscriptions, and a WebSocket-powered notification system.",
+              "skills": [
+                "GraphQL schema & resolver architecture",
+                "N+1 query prevention with DataLoader",
+                "WebSocket subscriptions for real-time updates",
+                "Query complexity limiting",
+                "Redis pub/sub for event broadcasting"
+              ],
+              "stack": [
+                "Node.js",
+                "Apollo Server",
+                "GraphQL",
+                "Redis",
+                "WebSocket"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Clinical Alerts GraphQL API",
+                "desc": "A GraphQL API for real-time clinical alerts — lab result notifications, medication reminders, and patient status updates via WebSocket subscriptions.",
+                "skills": [
+                  "GraphQL subscriptions for real-time alerts",
+                  "Role-based field visibility (nurse vs doctor)",
+                  "Alert prioritisation & escalation logic",
+                  "WebSocket connection management",
+                  "Audit logging for alert delivery"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Apollo Server",
+                  "GraphQL",
+                  "Redis",
+                  "WebSocket"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "API Design Portfolio",
+          "desc": "A comprehensive API portfolio showcasing both REST and GraphQL implementations with full documentation, testing, and deployment on a cloud platform.",
+          "skills": [
+            "REST API with OpenAPI specification",
+            "GraphQL API with schema documentation",
+            "Postman/Insomnia test collections",
+            "API performance benchmarking",
+            "Deployed with documentation site"
+          ],
+          "stack": [
+            "FastAPI",
+            "Apollo Server",
+            "PostgreSQL",
+            "Docker",
+            "Vercel"
+          ]
+        },
+        "niches": [
+          {
+            "id": "healthcare",
+            "name": "Healthcare",
+            "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+            "title": "Interoperability API Suite",
+            "desc": "A FHIR-inspired API suite demonstrating healthcare interoperability patterns — REST resources, GraphQL clinical queries, and real-time alert subscriptions.",
+            "skills": [
+              "FHIR resource REST endpoints",
+              "GraphQL clinical data queries",
+              "Real-time clinical alert subscriptions",
+              "API documentation with healthcare context",
+              "Interoperability standards awareness"
+            ],
+            "stack": [
+              "FastAPI",
+              "Apollo Server",
+              "PostgreSQL",
+              "Docker",
+              "Vercel"
+            ]
+          },
+          {
+            "id": "fintech",
+            "name": "Fintech",
+            "tagline": "Payment processing, real-time transactions, banking APIs",
+            "title": "Payment API",
+            "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+            "skills": [
+              "Idempotent payment processing",
+              "Fraud detection integration",
+              "PCI-compliant data handling",
+              "Webhook event system",
+              "Transaction reconciliation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "PostgreSQL",
+              "Redis",
+              "Docker"
+            ]
+          },
+          {
+            "id": "climate",
+            "name": "Climate & Sustainability",
+            "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+            "title": "IoT Data API",
+            "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+            "skills": [
+              "IoT device management",
+              "Real-time data ingestion",
+              "Time-series data storage",
+              "Emission calculation engine",
+              "Sensor data validation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "TimescaleDB",
+              "MQTT",
+              "Docker"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "05",
+      "badge": "badge-devops",
+      "badgeLabel": "DevOps",
+      "title": "Deployment & Infrastructure",
+      "duration": "Months 9–10",
+      "modules": [
+        {
+          "icon": "box",
+          "accentClass": "a2",
+          "title": "Docker & Containerisation",
+          "topics": [
+            "Docker fundamentals: images, containers, volumes",
+            "Dockerfile best practices & multi-stage builds",
+            "Docker Compose for multi-service apps",
+            "Container networking & environment management"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Docker Official Getting Started",
+              "meta": "docs.docker.com · Free official Docker tutorials",
+              "url": "https://docs.docker.com/get-started/"
+            },
+            {
+              "icon": "play",
+              "name": "TechWorld with Nana — Docker Course",
+              "meta": "youtube.com · Complete Docker tutorial (4 hours)",
+              "url": "https://www.youtube.com/watch?v=3c-iBn73dDE"
+            },
+            {
+              "icon": "code",
+              "name": "Play with Docker Labs",
+              "meta": "labs.play-with-docker.com · Free browser-based Docker playground",
+              "url": "https://labs.play-with-docker.com"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Multi-Service Docker Stack",
+              "desc": "Containerise a full-stack application with separate containers for API, database, cache, and reverse proxy using Docker Compose.",
+              "skills": [
+                "Multi-stage Dockerfile for small images",
+                "Docker Compose service orchestration",
+                "Volume mounting for development",
+                "Health checks & restart policies",
+                "Environment variable management"
+              ],
+              "stack": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "PostgreSQL",
+                "Redis"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Clinical Services Docker Stack",
+                "desc": "A Docker Compose stack for healthcare microservices — patient API, clinical notes service, alert service, and PostgreSQL with volume-backed persistence.",
+                "skills": [
+                  "Healthcare microservice containerisation",
+                  "Data persistence with named volumes",
+                  "Network isolation between services",
+                  "Secrets management for PHI configs",
+                  "Log aggregation for audit trails"
+                ],
+                "stack": [
+                  "Docker",
+                  "Docker Compose",
+                  "PostgreSQL",
+                  "Redis",
+                  "Nginx"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "git-merge",
+          "accentClass": "a2",
+          "title": "CI/CD & Cloud Deployment",
+          "topics": [
+            "GitHub Actions: workflows, jobs & secrets",
+            "Automated testing in CI pipelines",
+            "Cloud platforms: Railway, Render, Vercel",
+            "Infrastructure as Code basics (Terraform)"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "GitHub Actions Official Docs",
+              "meta": "docs.github.com · Free official CI/CD tutorials",
+              "url": "https://docs.github.com/en/actions"
+            },
+            {
+              "icon": "play",
+              "name": "Fireship — GitHub Actions in 100 Seconds",
+              "meta": "youtube.com · Quick CI/CD overview",
+              "url": "https://www.youtube.com/watch?v=R8_veQiYBjI"
+            },
+            {
+              "icon": "terminal",
+              "name": "Railway · Deploy Guide",
+              "meta": "railway.app · Free tier backend hosting",
+              "url": "https://docs.railway.app"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "CI/CD Pipeline Portfolio",
+              "desc": "Set up complete CI/CD pipelines for a backend project — lint, test, build, deploy on push, with staging and production environments.",
+              "skills": [
+                "GitHub Actions workflow configuration",
+                "Automated test gates in CI",
+                "Docker build & push to registry",
+                "Staging & production deploy targets",
+                "Secret management in CI/CD"
+              ],
+              "stack": [
+                "GitHub Actions",
+                "Docker",
+                "Railway",
+                "PostgreSQL",
+                "Redis"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Clinical Services CI/CD Pipeline",
+                "desc": "A healthcare-aware CI/CD pipeline with automated security scanning, HIPAA compliance checks, and staged deployments for clinical services.",
+                "skills": [
+                  "Security scanning in CI (SAST/DAST)",
+                  "HIPAA compliance gate checks",
+                  "Canary deployment strategy",
+                  "Rollback automation",
+                  "Audit logging for deployments"
+                ],
+                "stack": [
+                  "GitHub Actions",
+                  "Docker",
+                  "Railway",
+                  "Trivy",
+                  "Semgrep"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Production-Ready Deployment Portfolio",
+          "desc": "A fully deployed backend application with Docker containerisation, CI/CD pipeline, cloud hosting, monitoring, and documented infrastructure decisions.",
+          "skills": [
+            "Docker multi-stage production builds",
+            "GitHub Actions CI/CD pipeline",
+            "Cloud deployment (Railway/Render)",
+            "Environment-based configuration",
+            "Post-deployment health checks"
+          ],
+          "stack": [
+            "Docker",
+            "GitHub Actions",
+            "Railway",
+            "PostgreSQL",
+            "Redis"
+          ]
+        },
+        "niches": [
+          {
+            "id": "healthcare",
+            "name": "Healthcare",
+            "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+            "title": "Clinical Infrastructure Portfolio",
+            "desc": "A deployed clinical services stack with container orchestration, CI/CD with security gates, environment isolation, and infrastructure documentation.",
+            "skills": [
+              "Docker Compose production stack",
+              "CI/CD with security scanning gates",
+              "Staging & production environment separation",
+              "Infrastructure documentation",
+              "Disaster recovery procedures"
+            ],
+            "stack": [
+              "Docker",
+              "GitHub Actions",
+              "Railway",
+              "Trivy",
+              "Terraform"
+            ]
+          },
+          {
+            "id": "fintech",
+            "name": "Fintech",
+            "tagline": "Payment processing, real-time transactions, banking APIs",
+            "title": "Payment API",
+            "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+            "skills": [
+              "Idempotent payment processing",
+              "Fraud detection integration",
+              "PCI-compliant data handling",
+              "Webhook event system",
+              "Transaction reconciliation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "PostgreSQL",
+              "Redis",
+              "Docker"
+            ]
+          },
+          {
+            "id": "climate",
+            "name": "Climate & Sustainability",
+            "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+            "title": "IoT Data API",
+            "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+            "skills": [
+              "IoT device management",
+              "Real-time data ingestion",
+              "Time-series data storage",
+              "Emission calculation engine",
+              "Sensor data validation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "TimescaleDB",
+              "MQTT",
+              "Docker"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "06",
+      "badge": "badge-security",
+      "badgeLabel": "Security",
+      "title": "Authentication & Security",
+      "duration": "Months 11–12",
+      "modules": [
+        {
+          "icon": "shield",
+          "accentClass": "a2",
+          "title": "Authentication & Authorisation",
+          "topics": [
+            "JWT: access tokens & refresh tokens",
+            "OAuth 2.0 & social login integration",
+            "Role-based access control (RBAC)",
+            "Session management & secure cookies"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Auth0 JWT Handbook",
+              "meta": "auth0.com · Free comprehensive JWT guide",
+              "url": "https://auth0.com/resources/ebooks/jwt-handbook"
+            },
+            {
+              "icon": "play",
+              "name": "Fireship — JWT in 8 Minutes",
+              "meta": "youtube.com · Quick JWT explainer",
+              "url": "https://www.youtube.com/watch?v=UBUNrFtufWo"
+            },
+            {
+              "icon": "code",
+              "name": "OAuth 2.0 Simplified",
+              "meta": "aaronparecki.com · Free OAuth 2.0 tutorial",
+              "url": "https://aaronparecki.com/oauth-2-simplified/"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Auth Microservice",
+              "desc": "A standalone authentication service with JWT access/refresh tokens, Google OAuth, role-based access control, and rate-limited login attempts.",
+              "skills": [
+                "JWT access & refresh token rotation",
+                "Google OAuth 2.0 integration",
+                "RBAC middleware implementation",
+                "Rate limiting for brute-force protection",
+                "Secure password hashing with bcrypt"
+              ],
+              "stack": [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Redis",
+                "JWT"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Clinical Auth Service",
+                "desc": "A healthcare authentication service with role-based access (nurse, doctor, admin), multi-factor authentication, and session audit logging for HIPAA compliance.",
+                "skills": [
+                  "Healthcare role hierarchy (nurse/doctor/admin)",
+                  "MFA with TOTP (Time-based One-Time Password)",
+                  "Session timeout for clinical workstations",
+                  "PHI access audit trail logging",
+                  "Break-the-glass emergency access"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express.js",
+                  "MongoDB",
+                  "Redis",
+                  "Speakeasy"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "lock",
+          "accentClass": "a2",
+          "title": "Web Security Fundamentals",
+          "topics": [
+            "OWASP Top 10 vulnerabilities",
+            "SQL injection & XSS prevention",
+            "CSRF, CORS & security headers",
+            "API security best practices"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "OWASP Top 10",
+              "meta": "owasp.org · Industry-standard security reference",
+              "url": "https://owasp.org/www-project-top-ten/"
+            },
+            {
+              "icon": "play",
+              "name": "Fireship — OWASP Top 10 in 100 Seconds",
+              "meta": "youtube.com · Quick security overview",
+              "url": "https://www.youtube.com/watch?v=Gz3JUf3JQ4o"
+            },
+            {
+              "icon": "terminal",
+              "name": "PortSwigger Web Security Academy",
+              "meta": "portswigger.net · Free hands-on security labs",
+              "url": "https://portswigger.net/web-security"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Secure API Hardening",
+              "desc": "Take an existing API and systematically harden it — fix OWASP Top 10 vulnerabilities, add security headers, implement rate limiting, and write a security audit report.",
+              "skills": [
+                "Input validation & sanitisation",
+                "SQL injection prevention (parameterised queries)",
+                "XSS & CSRF protection headers",
+                "Security audit report documentation",
+                "Penetration testing with OWASP ZAP"
+              ],
+              "stack": [
+                "FastAPI",
+                "Helmet.js",
+                "OWASP ZAP",
+                "Rate Limiter",
+                "PostgreSQL"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Clinical API Security Audit",
+                "desc": "A comprehensive security audit of a clinical API — vulnerability assessment, OWASP Top 10 remediation, PHI protection validation, and compliance report.",
+                "skills": [
+                  "OWASP Top 10 assessment for healthcare APIs",
+                  "PHI data exposure prevention",
+                  "Encryption at rest and in transit validation",
+                  "Security compliance report (HIPAA checklist)",
+                  "Automated security scanning in CI"
+                ],
+                "stack": [
+                  "FastAPI",
+                  "OWASP ZAP",
+                  "Bandit",
+                  "Semgrep",
+                  "PostgreSQL"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Security-First Backend Portfolio",
+          "desc": "A backend project portfolio demonstrating security best practices — authenticated APIs, OWASP Top 10 remediation, security headers, and audit documentation.",
+          "skills": [
+            "JWT authentication implementation",
+            "OWASP Top 10 vulnerability remediation",
+            "Security headers (Helmet.js / middleware)",
+            "Rate limiting & brute-force protection",
+            "Security audit report"
+          ],
+          "stack": [
+            "FastAPI",
+            "Node.js",
+            "Helmet.js",
+            "OWASP ZAP",
+            "Docker"
+          ]
+        },
+        "niches": [
+          {
+            "id": "healthcare",
+            "name": "Healthcare",
+            "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+            "title": "HIPAA-Compliant Security Portfolio",
+            "desc": "A security portfolio focused on healthcare compliance — PHI protection, audit logging, access controls, and HIPAA compliance documentation.",
+            "skills": [
+              "PHI access control implementation",
+              "Audit trail logging system",
+              "Encryption at rest & in transit",
+              "HIPAA compliance checklist completion",
+              "Security documentation for clinical systems"
+            ],
+            "stack": [
+              "FastAPI",
+              "Node.js",
+              "PostgreSQL",
+              "Docker",
+              "Vault"
+            ]
+          },
+          {
+            "id": "fintech",
+            "name": "Fintech",
+            "tagline": "Payment processing, real-time transactions, banking APIs",
+            "title": "Payment API",
+            "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+            "skills": [
+              "Idempotent payment processing",
+              "Fraud detection integration",
+              "PCI-compliant data handling",
+              "Webhook event system",
+              "Transaction reconciliation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "PostgreSQL",
+              "Redis",
+              "Docker"
+            ]
+          },
+          {
+            "id": "climate",
+            "name": "Climate & Sustainability",
+            "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+            "title": "IoT Data API",
+            "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+            "skills": [
+              "IoT device management",
+              "Real-time data ingestion",
+              "Time-series data storage",
+              "Emission calculation engine",
+              "Sensor data validation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "TimescaleDB",
+              "MQTT",
+              "Docker"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "07",
+      "badge": "badge-scale",
+      "badgeLabel": "Scaling",
+      "title": "Performance & Distributed Systems",
+      "duration": "Months 13–14",
+      "modules": [
+        {
+          "icon": "zap",
+          "accentClass": "a2",
+          "title": "Performance Optimization",
+          "topics": [
+            "Caching strategies: Redis, CDN, application-level",
+            "Database query optimization & N+1 prevention",
+            "Connection pooling & resource management",
+            "Load testing & performance benchmarking"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "System Design Primer",
+              "meta": "github.com · Free comprehensive system design guide",
+              "url": "https://github.com/donnemartin/system-design-primer"
+            },
+            {
+              "icon": "play",
+              "name": "Gaurav Sen — System Design",
+              "meta": "youtube.com · System design tutorial series",
+              "url": "https://www.youtube.com/@GauravS"
+            },
+            {
+              "icon": "terminal",
+              "name": "Locust — Load Testing",
+              "meta": "locust.io · Free Python load testing tool",
+              "url": "https://locust.io"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "High-Performance API",
+              "desc": "Optimise a backend API for performance — implement caching, fix N+1 queries, add connection pooling, and benchmark with Locust load tests.",
+              "skills": [
+                "Redis caching with cache invalidation",
+                "N+1 query detection & eager loading",
+                "Database connection pooling",
+                "Locust load test scripts",
+                "Performance before/after report"
+              ],
+              "stack": [
+                "FastAPI",
+                "Redis",
+                "PostgreSQL",
+                "Locust",
+                "Docker"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Clinical Data Caching Layer",
+                "desc": "A performance-optimised caching layer for clinical data access — patient records, recent observations, and frequently accessed reference data.",
+                "skills": [
+                  "Multi-tier caching (Redis + in-memory)",
+                  "Clinical data freshness guarantees",
+                  "Cache invalidation for patient updates",
+                  "Load testing with clinical query patterns",
+                  "Performance documentation"
+                ],
+                "stack": [
+                  "FastAPI",
+                  "Redis",
+                  "PostgreSQL",
+                  "Locust",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "cloud",
+          "accentClass": "a2",
+          "title": "Distributed Systems Patterns",
+          "topics": [
+            "Message queues: RabbitMQ, Redis Streams",
+            "Microservices communication patterns",
+            "API gateway & service mesh concepts",
+            "Circuit breaker & retry patterns"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Designing Data-Intensive Applications",
+              "meta": "dataintensive.net · The definitive distributed systems book",
+              "url": "https://dataintensive.net"
+            },
+            {
+              "icon": "play",
+              "name": "Hussein Nasser — Distributed Systems",
+              "meta": "youtube.com · Deep-dive distributed systems topics",
+              "url": "https://www.youtube.com/@hnasser"
+            },
+            {
+              "icon": "code",
+              "name": "Microservices.io — Patterns",
+              "meta": "microservices.io · Catalog of microservice patterns",
+              "url": "https://microservices.io/patterns"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Event-Driven Microservices",
+              "desc": "Build a microservices system with RabbitMQ message broker — order service, inventory service, and notification service communicating asynchronously.",
+              "skills": [
+                "RabbitMQ producer/consumer patterns",
+                "Event-driven architecture design",
+                "Circuit breaker pattern implementation",
+                "Service health monitoring",
+                "Distributed tracing with correlation IDs"
+              ],
+              "stack": [
+                "Node.js",
+                "RabbitMQ",
+                "Docker",
+                "Redis",
+                "FastAPI"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Clinical Event Bus",
+                "desc": "A healthcare event-driven system — lab results trigger clinical alerts, medication orders trigger pharmacy notifications, with dead-letter queues for failed events.",
+                "skills": [
+                  "Clinical event publishing & subscription",
+                  "Dead-letter queue for failed clinical events",
+                  "Event replay for audit requirements",
+                  "Circuit breaker for external integrations",
+                  "Correlation ID tracking across services"
+                ],
+                "stack": [
+                  "Node.js",
+                  "RabbitMQ",
+                  "Docker",
+                  "Redis",
+                  "FastAPI"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Distributed Systems Portfolio",
+          "desc": "A portfolio demonstrating distributed systems patterns — event-driven architecture, message queues, caching strategies, and load-tested performance benchmarks.",
+          "skills": [
+            "Event-driven microservice architecture",
+            "RabbitMQ message broker integration",
+            "Multi-tier caching strategy",
+            "Load testing with Locust",
+            "System design documentation"
+          ],
+          "stack": [
+            "FastAPI",
+            "Node.js",
+            "RabbitMQ",
+            "Redis",
+            "Docker"
+          ]
+        },
+        "niches": [
+          {
+            "id": "healthcare",
+            "name": "Healthcare",
+            "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+            "title": "Clinical Event System Portfolio",
+            "desc": "A healthcare event-driven system demonstrating clinical event processing, alert routing, and performance-optimised data access patterns.",
+            "skills": [
+              "Clinical event bus architecture",
+              "Alert routing with priority levels",
+              "Performance-optimised clinical data access",
+              "System design for healthcare scale",
+              "Load testing documentation"
+            ],
+            "stack": [
+              "FastAPI",
+              "Node.js",
+              "RabbitMQ",
+              "Redis",
+              "Docker"
+            ]
+          },
+          {
+            "id": "fintech",
+            "name": "Fintech",
+            "tagline": "Payment processing, real-time transactions, banking APIs",
+            "title": "Payment API",
+            "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+            "skills": [
+              "Idempotent payment processing",
+              "Fraud detection integration",
+              "PCI-compliant data handling",
+              "Webhook event system",
+              "Transaction reconciliation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "PostgreSQL",
+              "Redis",
+              "Docker"
+            ]
+          },
+          {
+            "id": "climate",
+            "name": "Climate & Sustainability",
+            "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+            "title": "IoT Data API",
+            "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+            "skills": [
+              "IoT device management",
+              "Real-time data ingestion",
+              "Time-series data storage",
+              "Emission calculation engine",
+              "Sensor data validation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "TimescaleDB",
+              "MQTT",
+              "Docker"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "number": "08",
+      "badge": "badge-career",
+      "badgeLabel": "Career",
+      "title": "Portfolio & Career Launch",
+      "duration": "Months 15–16",
+      "modules": [
+        {
+          "icon": "briefcase",
+          "accentClass": "a2",
+          "title": "Technical Portfolio",
+          "topics": [
+            "GitHub profile optimisation",
+            "Project documentation & READMEs",
+            "Technical blog writing",
+            "Open source contributions"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "GitHub Profile README Generator",
+              "meta": "github.com · Free profile README builder",
+              "url": "https://github.com/rahuldkjain/github-profile-readme-generator"
+            },
+            {
+              "icon": "file-text",
+              "name": "Oh Shit, Git!?!",
+              "meta": "ohshitgit.com · Git rescue reference",
+              "url": "https://ohshitgit.com"
+            },
+            {
+              "icon": "play",
+              "name": "Fireship — Portfolio Tips",
+              "meta": "youtube.com · Developer portfolio advice",
+              "url": "https://www.youtube.com/watch?v=51VbcDk3bVg"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Backend Engineering Portfolio Site",
+              "desc": "Build a portfolio site showcasing all Phase 1-8 projects with architecture diagrams, live API demos, and technical deep-dive blog posts.",
+              "skills": [
+                "Portfolio site with project showcases",
+                "Architecture diagram per project",
+                "Live API endpoint demonstrations",
+                "Technical blog posts on Medium/dev.to",
+                "GitHub contribution graph optimisation"
+              ],
+              "stack": [
                 "Next.js",
-                "TypeScript",
                 "Vercel",
                 "MDX",
                 "Tailwind CSS"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Healthcare Backend Portfolio",
+                "desc": "A portfolio site focused on healthcare backend projects — showcasing FHIR expertise, HIPAA awareness, clinical system architecture, and healthcare domain knowledge.",
+                "skills": [
+                  "Healthcare-focused project showcases",
+                  "FHIR implementation case studies",
+                  "HIPAA compliance documentation samples",
+                  "Clinical system architecture diagrams",
+                  "Healthcare tech blog posts"
+                ],
+                "stack": [
+                  "Next.js",
+                  "Vercel",
+                  "MDX",
+                  "Tailwind CSS"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
             ]
+          }
         },
-        "healthcare": {
-            "title": "Clinical Backend System",
-            "desc": "A production clinical backend system with HIPAA-compliant architecture \u2014 patient data API, clinical notes service, appointment scheduling, and role-based access with audit trails.",
+        {
+          "icon": "target",
+          "accentClass": "a2",
+          "title": "Interview Preparation",
+          "topics": [
+            "System design interview patterns",
+            "API design & code review questions",
+            "Behavioural interview frameworks",
+            "Salary negotiation strategies"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "System Design Interview (Free Chapters)",
+              "meta": "github.com · Free system design resources",
+              "url": "https://github.com/donnemartin/system-design-primer"
+            },
+            {
+              "icon": "play",
+              "name": "Neetcode — System Design Interviews",
+              "meta": "youtube.com · System design interview walkthroughs",
+              "url": "https://www.youtube.com/@NeetCode"
+            },
+            {
+              "icon": "code",
+              "name": "Leetcode — Backend Interview Prep",
+              "meta": "leetcode.com · Coding interview practice",
+              "url": "https://leetcode.com"
+            }
+          ],
+          "projects": {
+            "general": {
+              "title": "Backend Engineer Career Launch",
+              "desc": "Complete career launch — polished portfolio, resume with quantified projects, 30 LeetCode problems solved, 3 mock interviews, and applications to 20+ roles.",
+              "skills": [
+                "Portfolio site deployed on Vercel",
+                "Developer resume with project links",
+                "30 LeetCode solutions documented",
+                "3 mock interview recordings",
+                "20+ job applications sent"
+              ],
+              "stack": [
+                "Next.js",
+                "Vercel",
+                "LeetCode",
+                "LinkedIn"
+              ]
+            },
+            "niches": [
+              {
+                "id": "healthcare",
+                "name": "Healthcare",
+                "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+                "title": "Healthcare Backend Specialist Launch",
+                "desc": "Career launch focused on healthcare backend roles — portfolio showcasing clinical systems, healthcare domain expertise, and targeted applications to health-tech positions.",
+                "skills": [
+                  "Healthcare-focused portfolio",
+                  "Clinical system case studies",
+                  "Healthcare domain certifications prep",
+                  "Healthcare tech networking",
+                  "20+ healthcare role applications"
+                ],
+                "stack": [
+                  "Next.js",
+                  "Vercel",
+                  "LinkedIn",
+                  "HL7 FHIR"
+                ]
+              },
+              {
+                "id": "fintech",
+                "name": "Fintech",
+                "tagline": "Payment processing, real-time transactions, banking APIs",
+                "title": "Payment API",
+                "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+                "skills": [
+                  "Idempotent payment processing",
+                  "Fraud detection integration",
+                  "PCI-compliant data handling",
+                  "Webhook event system",
+                  "Transaction reconciliation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "PostgreSQL",
+                  "Redis",
+                  "Docker"
+                ]
+              },
+              {
+                "id": "climate",
+                "name": "Climate & Sustainability",
+                "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+                "title": "IoT Data API",
+                "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+                "skills": [
+                  "IoT device management",
+                  "Real-time data ingestion",
+                  "Time-series data storage",
+                  "Emission calculation engine",
+                  "Sensor data validation"
+                ],
+                "stack": [
+                  "Node.js",
+                  "Express",
+                  "TimescaleDB",
+                  "MQTT",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "projects": {
+        "general": {
+          "title": "Backend Engineering Career Launch",
+          "desc": "Complete backend engineering career launch — polished portfolio, 30+ LeetCode solutions, system design practice, and targeted applications to backend roles.",
+          "skills": [
+            "Deployed portfolio with project demos",
+            "30+ algorithm solutions documented",
+            "System design interview prep",
+            "Backend-specific resume",
+            "20+ backend role applications"
+          ],
+          "stack": [
+            "Next.js",
+            "Vercel",
+            "LeetCode",
+            "LinkedIn"
+          ]
+        },
+        "niches": [
+          {
+            "id": "healthcare",
+            "name": "Healthcare",
+            "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+            "title": "Healthcare Backend Career Launch",
+            "desc": "Career launch for healthcare backend engineering roles — clinical system portfolio, healthcare domain expertise, and targeted applications to health-tech companies.",
             "skills": [
-                "HIPAA-compliant API architecture",
-                "Patient data processing pipeline",
-                "Clinical notes CRUD with search",
-                "Appointment scheduling with conflict detection",
-                "Audit trail & compliance logging"
+              "Healthcare backend portfolio",
+              "FHIR implementation showcase",
+              "HIPAA compliance knowledge",
+              "Healthcare tech networking",
+              "20+ healthcare backend applications"
             ],
             "stack": [
-                "FastAPI",
-                "PostgreSQL",
-                "Redis",
-                "Docker",
-                "GitHub Actions"
+              "Next.js",
+              "Vercel",
+              "LinkedIn",
+              "HL7 FHIR"
             ]
-        }
+          },
+          {
+            "id": "fintech",
+            "name": "Fintech",
+            "tagline": "Payment processing, real-time transactions, banking APIs",
+            "title": "Payment API",
+            "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+            "skills": [
+              "Idempotent payment processing",
+              "Fraud detection integration",
+              "PCI-compliant data handling",
+              "Webhook event system",
+              "Transaction reconciliation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "PostgreSQL",
+              "Redis",
+              "Docker"
+            ]
+          },
+          {
+            "id": "climate",
+            "name": "Climate & Sustainability",
+            "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+            "title": "IoT Data API",
+            "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+            "skills": [
+              "IoT device management",
+              "Real-time data ingestion",
+              "Time-series data storage",
+              "Emission calculation engine",
+              "Sensor data validation"
+            ],
+            "stack": [
+              "Node.js",
+              "Express",
+              "TimescaleDB",
+              "MQTT",
+              "Docker"
+            ]
+          }
+        ]
+      }
     }
+  ],
+  "projects": {
+    "general": {
+      "title": "Full Backend Engineering Portfolio",
+      "desc": "Build and deploy a polished portfolio site showcasing all Phase 1-8 backend projects with live API demos, architecture diagrams, system design documentation, and a blog documenting your 16-month backend engineering journey.",
+      "skills": [
+        "Portfolio site with live API demo links",
+        "Architecture diagrams per project",
+        "System design documentation",
+        "Test coverage & CI status badges",
+        "Deployed on Vercel with custom domain"
+      ],
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Vercel",
+        "MDX",
+        "Tailwind CSS"
+      ]
+    },
+    "niches": [
+      {
+        "id": "healthcare",
+        "name": "Healthcare",
+        "tagline": "HIPAA APIs, health data pipelines, telemedicine",
+        "title": "Clinical Backend System",
+        "desc": "A production clinical backend system with HIPAA-compliant architecture — patient data API, clinical notes service, appointment scheduling, and role-based access with audit trails.",
+        "skills": [
+          "HIPAA-compliant API architecture",
+          "Patient data processing pipeline",
+          "Clinical notes CRUD with search",
+          "Appointment scheduling with conflict detection",
+          "Audit trail & compliance logging"
+        ],
+        "stack": [
+          "FastAPI",
+          "PostgreSQL",
+          "Redis",
+          "Docker",
+          "GitHub Actions"
+        ]
+      },
+      {
+        "id": "fintech",
+        "name": "Fintech",
+        "tagline": "Payment processing, real-time transactions, banking APIs",
+        "title": "Payment API",
+        "desc": "A real-time payment processing API with idempotent transactions, fraud detection hooks, and PCI-compliant data handling.",
+        "skills": [
+          "Idempotent payment processing",
+          "Fraud detection integration",
+          "PCI-compliant data handling",
+          "Webhook event system",
+          "Transaction reconciliation"
+        ],
+        "stack": [
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Redis",
+          "Docker"
+        ]
+      },
+      {
+        "id": "climate",
+        "name": "Climate & Sustainability",
+        "tagline": "IoT data pipelines, energy grid systems, carbon tracking",
+        "title": "IoT Data API",
+        "desc": "A IoT data ingestion API for environmental sensors with real-time streaming, time-series storage, and emission calculations.",
+        "skills": [
+          "IoT device management",
+          "Real-time data ingestion",
+          "Time-series data storage",
+          "Emission calculation engine",
+          "Sensor data validation"
+        ],
+        "stack": [
+          "Node.js",
+          "Express",
+          "TimescaleDB",
+          "MQTT",
+          "Docker"
+        ]
+      }
+    ]
+  }
 }

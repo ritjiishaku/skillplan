@@ -4,58 +4,23 @@ import ResourceItem from './ResourceItem';
 import { Icon } from '../lib/icons';
 import { useModal } from '../context/ModalContext';
 import { Sparkles } from 'lucide-react';
+import { ProjectCard, getNiches, NicheAccordion } from './ProjectCard';
 
 function ProjectModalContent({ projects }) {
+  const niches = getNiches(projects);
+
   return (
     <div className="proj-module-block">
       <div className="proj-module-eyebrow">
         <span className="proj-eyebrow-label">Module Project</span>
-        <span className="proj-eyebrow-after">· General &amp; Healthcare tracks</span>
+        <span className="proj-eyebrow-after">· General + Choose Your Niche</span>
       </div>
-      <div className="proj-dual-grid">
-        {projects.general && (
-          <div className="proj-card proj-general">
-            <div className="proj-card-header">
-              <span className="proj-type-badge proj-badge-general">⬡ General</span>
-              <h4 className="proj-card-title">{projects.general.title}</h4>
-            </div>
-            <p className="proj-card-desc">{projects.general.desc}</p>
-            <div className="proj-section-label">What you&apos;ll build</div>
-            <ul className="proj-skill-list">
-              {projects.general.skills?.map((s, i) => (
-                <li key={i}>{s}</li>
-              ))}
-            </ul>
-            <div className="proj-section-label">Stack</div>
-            <div className="proj-stack-row">
-              {projects.general.stack?.map((s, i) => (
-                <span key={i} className="proj-stack-tag">{s}</span>
-              ))}
-            </div>
-          </div>
-        )}
-        {(projects.healthcare || projects.capstone) && (
-          <div className="proj-card proj-health">
-            <div className="proj-card-header">
-              <span className="proj-type-badge proj-badge-health">⚕ Healthcare</span>
-              <h4 className="proj-card-title">{(projects.healthcare || projects.capstone).title}</h4>
-            </div>
-            <p className="proj-card-desc">{(projects.healthcare || projects.capstone).desc}</p>
-            <div className="proj-section-label">What you&apos;ll build</div>
-            <ul className="proj-skill-list">
-              {(projects.healthcare || projects.capstone).skills?.map((s, i) => (
-                <li key={i}>{s}</li>
-              ))}
-            </ul>
-            <div className="proj-section-label">Stack</div>
-            <div className="proj-stack-row">
-              {(projects.healthcare || projects.capstone).stack?.map((s, i) => (
-                <span key={i} className="proj-stack-tag">{s}</span>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
+      {projects.general && (
+        <div className="accordion-general">
+          <ProjectCard project={projects.general} badge="⬡ General" badgeClass="proj-badge-general" />
+        </div>
+      )}
+      {niches.length > 0 && <NicheAccordion projects={projects} />}
     </div>
   );
 }
