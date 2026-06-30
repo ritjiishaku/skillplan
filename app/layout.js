@@ -1,4 +1,4 @@
-import { Syne, DM_Mono, Fraunces } from 'next/font/google';
+import { Syne, DM_Mono } from 'next/font/google';
 import './globals.css';
 import Providers from './components/Providers';
 import StickyNav from './components/StickyNav';
@@ -9,22 +9,15 @@ import Footer from './components/Footer';
 
 const syne = Syne({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['500', '600', '700'],
   variable: '--font-syne',
   display: 'swap',
 });
 
 const dmMono = DM_Mono({
   subsets: ['latin'],
-  weight: ['300', '400', '500'],
+  weight: ['400', '500'],
   variable: '--font-dm-mono',
-  display: 'swap',
-});
-
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  weight: ['300', '700'],
-  variable: '--font-fraunces',
   display: 'swap',
 });
 
@@ -54,7 +47,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmMono.variable} ${fraunces.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${syne.variable} ${dmMono.variable}`} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Ritji Ishaku" />

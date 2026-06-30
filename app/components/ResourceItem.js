@@ -1,9 +1,10 @@
 'use client';
 
+import { memo } from 'react';
 import { useProgress } from '../context/ProgressContext';
 import { useParams } from 'next/navigation';
 
-export default function ResourceItem({ phaseNumber, resource, index }) {
+function ResourceItem({ phaseNumber, resource, index }) {
   const { getCompleted, toggleResource } = useProgress();
   const params = useParams();
   const roadmapId = params?.roadmapId || 'ai';
@@ -26,3 +27,5 @@ export default function ResourceItem({ phaseNumber, resource, index }) {
     </a>
   );
 }
+
+export default memo(ResourceItem);

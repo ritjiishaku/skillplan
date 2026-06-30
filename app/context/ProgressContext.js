@@ -1,17 +1,19 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback } from 'react';
+import { createContext, useContext, useState, useCallback, useRef, useMemo } from 'react';
 
 const ProgressContext = createContext();
 
 export function ProgressProvider({ children }) {
   const [completedMap, setCompletedMap] = useState({});
+  const completedRef = useRef(completedMap);
+  completedRef.current = completedMap;
 
   const getKey = (roadmapId) => `${roadmapId}_completed`;
 
   const getCompleted = useCallback((roadmapId) => {
-    return completedMap[roadmapId] || [];
-  }, [completedMap]);
+    return completedRef.current[roadmapId] || [];
+  }, []);
 
   const loadProgress = useCallback((roadmapId) => {
     const key = getKey(roadmapId);
@@ -36,8 +38,10 @@ export function ProgressProvider({ children }) {
     });
   }, [saveLocal]);
 
+  const value = useMemo(() => ({ getCompleted, loadProgress, toggleResource }), [getCompleted, loadProgress, toggleResource]);
+
   return (
-    <ProgressContext.Provider value={{ getCompleted, loadProgress, toggleResource }}>
+    <ProgressContext.Provider value={value}>
       {children}
     </ProgressContext.Provider>
   );
