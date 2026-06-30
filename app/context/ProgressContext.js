@@ -38,7 +38,7 @@ export function ProgressProvider({ children }) {
     });
   }, [saveLocal]);
 
-  const value = useMemo(() => ({ getCompleted, loadProgress, toggleResource }), [getCompleted, loadProgress, toggleResource]);
+  const value = useMemo(() => ({ getCompleted, loadProgress, toggleResource }), [getCompleted, loadProgress, toggleResource, completedMap]);
 
   return (
     <ProgressContext.Provider value={value}>
