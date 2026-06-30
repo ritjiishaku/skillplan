@@ -1911,15 +1911,15 @@ footer {
   left: 0;
   right: 0;
   z-index: 2001;
-  background: transparent;
-  border-bottom: 1px solid transparent;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
   transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .sticky-nav.scrolled {
-  background: color-mix(in srgb, var(--surface) 85%, transparent);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: color-mix(in srgb, var(--surface) 97%, transparent);
   border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
 }
