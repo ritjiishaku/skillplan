@@ -1,0 +1,947 @@
+{
+    "banner": "100% Free \u00b7 8 Phases \u00b7 64+ Resources \u00b7 $0 Cost \u00b7 Zero Paywalls",
+    "titleDisplay": "Cloud/\u003cbr\u003e\u003cem\u003eDevOps Engineering\u003c/em\u003e",
+    "subtitle": "Master Linux, Docker, Kubernetes, CI/CD, Terraform, Cloud Platforms, and SRE \u2013 from zero to job-ready DevOps engineer",
+    "meta": {
+        "duration": "15\u201316 mo",
+        "cost": "$0",
+        "resources": "64+",
+        "salaryTarget": "$90k+"
+    },
+    "phases": [
+        {
+            "number": "01",
+            "badge": "badge-foundation",
+            "badgeLabel": "Foundation",
+            "title": "Linux & Git Foundations",
+            "duration": "Months 1\u20132",
+            "modules": [
+                {
+                    "icon": "🐧",
+                    "accentClass": "a2",
+                    "title": "Linux System Administration",
+                    "topics": ["Linux command line", "File system & permissions", "Process management", "Shell scripting", "Cron jobs", "SSH"],
+                    "resources": [
+                        {
+                            "icon": "📘",
+                            "name": "Learn Linux for Beginners (freeCodeCamp)",
+                            "meta": "freecodecamp.org \u00b7 Free complete Linux handbook",
+                            "url": "https://www.freecodecamp.org/learn/linux/"
+                        },
+                        {
+                            "icon": "📕",
+                            "name": "The Linux Command Line (book)",
+                            "meta": "linuxcommand.org \u00b7 Free book on Linux CLI",
+                            "url": "https://linuxcommand.org/tlcl.php"
+                        },
+                        {
+                            "icon": "🎯",
+                            "name": "OverTheWire Bandit",
+                            "meta": "overthewire.org \u00b7 Free Linux CLI wargame",
+                            "url": "https://overthewire.org/wargames/bandit/"
+                        },
+                        {
+                            "icon": "🌐",
+                            "name": "Linux Journey",
+                            "meta": "linuxjourney.com \u00b7 Free interactive Linux training",
+                            "url": "https://linuxjourney.com/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Linux Server Setup",
+                            "desc": "Provision a Linux server (VM), configure users, firewall, SSH hardening, automated backups, and monitoring scripts.",
+                            "skills": ["User management", "UFW/iptables", "SSH key auth", "Cron scheduling", "Log rotation"],
+                            "stack": ["Ubuntu", "Bash", "cron", "UFW", "SSH"]
+                        },
+                        "healthcare": {
+                            "title": "Clinic Server Hardening",
+                            "desc": "Set up a hardened Linux server for clinic use with role-based access, encrypted storage, audit logging, and HIPAA-compliant configurations.",
+                            "skills": ["Role-based access", "Encrypted partitions", "Audit logging", "Session management", "HIPAA workstation security"],
+                            "stack": ["Ubuntu", "LUKS", "auditd", "PAM", "Bash"]
+                        }
+                    }
+                },
+                {
+                    "icon": "🔀",
+                    "accentClass": "a3",
+                    "title": "Git & Version Control",
+                    "topics": ["Git fundamentals", "Branching strategies", "Merge/rebase", "GitHub workflows", "Collaborative development"],
+                    "resources": [
+                        {
+                            "icon": "🌳",
+                            "name": "Learn Git Branching",
+                            "meta": "learngitbranching.js.org \u00b7 Free interactive Git learning",
+                            "url": "https://learngitbranching.js.org/"
+                        },
+                        {
+                            "icon": "📘",
+                            "name": "Pro Git Book",
+                            "meta": "git-scm.com \u00b7 Free comprehensive Git book",
+                            "url": "https://git-scm.com/book/en/v2"
+                        },
+                        {
+                            "icon": "🎓",
+                            "name": "GitHub Skills",
+                            "meta": "skills.github.com \u00b7 Free interactive GitHub courses",
+                            "url": "https://skills.github.com/"
+                        },
+                        {
+                            "icon": "🎮",
+                            "name": "Oh My Git! Game",
+                            "meta": "ohmygit.org \u00b7 Free Git learning game",
+                            "url": "https://ohmygit.org/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Git Workflow Portfolio",
+                            "desc": "Master Git through 10 branching exercises: feature branches, hotfixes, squash merges, interactive rebase, and GitHub PR workflows.",
+                            "skills": ["Git branching", "Merge conflict resolution", "GitHub Flow", "PR reviews", "Commit conventions"],
+                            "stack": ["Git", "GitHub", "VS Code"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Code Repository",
+                            "desc": "Set up a Git repository for clinical software with branch protection, code review policies, signed commits, and HIPAA-aware commit message conventions.",
+                            "skills": ["Branch protection rules", "Code review policies", "Commit signing", "HIPAA development practices"],
+                            "stack": ["Git", "GitHub", "GPG", "Branch protection"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Linux & Git Foundations",
+                    "desc": "Complete Linux server administration and Git version control mastery with real-world branching workflows.",
+                    "skills": ["Linux administration", "Shell scripting", "Git workflows", "SSH hardening", "Cron automation"],
+                    "stack": ["Ubuntu", "Bash", "Git", "GitHub", "SSH"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Linux & Git Foundations",
+                    "desc": "HIPAA-compliant Linux server hardening and clinical code repository management with signed commits.",
+                    "skills": ["HIPAA server hardening", "Audit logging", "Role-based access", "Signed commits", "Clinical Git workflows"],
+                    "stack": ["Ubuntu", "LUKS", "auditd", "Git", "GPG"]
+                }
+            }
+        },
+        {
+            "number": "02",
+            "badge": "badge-foundation",
+            "badgeLabel": "Foundation",
+            "title": "Containers & Docker",
+            "duration": "Months 3\u20134",
+            "modules": [
+                {
+                    "icon": "🐳",
+                    "accentClass": "a2",
+                    "title": "Docker Fundamentals",
+                    "topics": ["Docker architecture", "Images vs containers", "Dockerfiles", "Volumes", "Networking", "Docker Hub"],
+                    "resources": [
+                        {
+                            "icon": "📘",
+                            "name": "The Docker Handbook (freeCodeCamp)",
+                            "meta": "freecodecamp.org \u00b7 Free comprehensive Docker book",
+                            "url": "https://www.freecodecamp.org/learn/"
+                        },
+                        {
+                            "icon": "🐳",
+                            "name": "Docker 101 Tutorial",
+                            "meta": "docker.com \u00b7 Free browser-based Docker tutorial",
+                            "url": "https://www.docker.com/101-tutorial/"
+                        },
+                        {
+                            "icon": "🧪",
+                            "name": "Play with Docker",
+                            "meta": "labs.play-with-docker.com \u00b7 Free browser Docker playground",
+                            "url": "https://labs.play-with-docker.com/"
+                        },
+                        {
+                            "icon": "🎓",
+                            "name": "Docker Curriculum",
+                            "meta": "docker-curriculum.com \u00b7 Free Docker tutorial",
+                            "url": "https://docker-curriculum.com/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Containerized Web Application",
+                            "desc": "Containerize a full-stack application with separate containers for API, database, and reverse proxy.",
+                            "skills": ["Multi-stage Dockerfile", "Docker networking", "Volume management", "Environment variables"],
+                            "stack": ["Docker", "Docker Compose", "Nginx", "PostgreSQL"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Services Containers",
+                            "desc": "Containerize clinical microservices with proper isolation, data persistence, network segmentation, and logging for audit.",
+                            "skills": ["Healthcare container isolation", "Network segmentation", "PHI data persistence", "Audit logging"],
+                            "stack": ["Docker", "Docker Compose", "PostgreSQL", "Redis", "Nginx"]
+                        }
+                    }
+                },
+                {
+                    "icon": "📦",
+                    "accentClass": "a3",
+                    "title": "Docker Compose & Multi-Container Apps",
+                    "topics": ["Compose file structure", "Service orchestration", "Health checks", "Restart policies", "Dev vs prod configs"],
+                    "resources": [
+                        {
+                            "icon": "📘",
+                            "name": "Docker Compose Docs",
+                            "meta": "docs.docker.com \u00b7 Free official Compose documentation",
+                            "url": "https://docs.docker.com/compose/"
+                        },
+                        {
+                            "icon": "🧪",
+                            "name": "Play with Docker Compose",
+                            "meta": "labs.play-with-docker.com \u00b7 Free hands-on playground",
+                            "url": "https://labs.play-with-docker.com/"
+                        },
+                        {
+                            "icon": "📦",
+                            "name": "Docker Compose Samples",
+                            "meta": "github.com/docker \u00b7 Free sample Compose files",
+                            "url": "https://github.com/docker/awesome-compose"
+                        },
+                        {
+                            "icon": "🎥",
+                            "name": "YouTube Docker Compose Tutorials",
+                            "meta": "youtube.com \u00b7 Free video tutorials",
+                            "url": "https://www.youtube.com/results?search_query=docker+compose+tutorial"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Development Environment Stack",
+                            "desc": "Build a Docker Compose development environment with hot-reload, database seeding, and utility services.",
+                            "skills": ["Compose service orchestration", "Development hot-reload", "Database seeding", "Service dependencies"],
+                            "stack": ["Docker Compose", "Node.js/Python", "PostgreSQL", "Redis", "Mailhog"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Multi-Service Stack",
+                            "desc": "Build a Docker Compose stack for clinical services with environment isolation, data persistence, health checks, and proper logging.",
+                            "skills": ["Multi-service healthcare architecture", "Environment isolation", "Health monitoring", "Clinical logging"],
+                            "stack": ["Docker Compose", "FastAPI", "PostgreSQL", "Redis", "Nginx"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Containerized Application Stack",
+                    "desc": "Complete Docker mastery with containerized full-stack applications and multi-service orchestration.",
+                    "skills": ["Docker architecture", "Dockerfile authoring", "Compose orchestration", "Volume management", "Container networking"],
+                    "stack": ["Docker", "Docker Compose", "Nginx", "PostgreSQL", "Redis"]
+                },
+                "healthcare": {
+                    "title": "Clinical Container Platform",
+                    "desc": "HIPAA-aware containerized clinical services with isolation, audit logging, and data persistence.",
+                    "skills": ["Container isolation", "PHI data handling", "Audit logging", "Network segmentation", "Clinical health checks"],
+                    "stack": ["Docker", "Docker Compose", "PostgreSQL", "Redis", "Nginx"]
+                }
+            }
+        },
+        {
+            "number": "03",
+            "badge": "badge-intermediate",
+            "badgeLabel": "Intermediate",
+            "title": "Kubernetes & Orchestration",
+            "duration": "Months 5\u20136",
+            "modules": [
+                {
+                    "icon": "☸️",
+                    "accentClass": "a4",
+                    "title": "Kubernetes Basics",
+                    "topics": ["K8s architecture", "Pods", "Deployments", "Services", "Namespaces", "ConfigMaps/Secrets"],
+                    "resources": [
+                        {
+                            "icon": "🎓",
+                            "name": "Introduction to Kubernetes (Linux Foundation)",
+                            "meta": "training.linuxfoundation.org \u00b7 Free K8s fundamentals course",
+                            "url": "https://training.linuxfoundation.org/"
+                        },
+                        {
+                            "icon": "📘",
+                            "name": "Kubernetes Official Tutorials",
+                            "meta": "kubernetes.io \u00b7 Free interactive K8s tutorials",
+                            "url": "https://kubernetes.io/docs/tutorials/"
+                        },
+                        {
+                            "icon": "🧪",
+                            "name": "Play with Kubernetes",
+                            "meta": "labs.play-with-k8s.com \u00b7 Free browser K8s playground",
+                            "url": "https://labs.play-with-k8s.com/"
+                        },
+                        {
+                            "icon": "🎯",
+                            "name": "KodeKloud Kubernetes Labs",
+                            "meta": "learn.kodekloud.com \u00b7 Free hands-on K8s labs",
+                            "url": "https://learn.kodekloud.com/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Kubernetes Web Application",
+                            "desc": "Deploy a web application on Kubernetes with deployments, services, configmaps, secrets, and horizontal pod autoscaling.",
+                            "skills": ["Pod deployment", "Service discovery", "ConfigMap/Secret management", "HPA configuration"],
+                            "stack": ["Kubernetes", "kubectl", "Minikube", "YAML"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical K8s Deployment",
+                            "desc": "Deploy clinical services on Kubernetes with proper resource limits, network policies, secret management, and health probes.",
+                            "skills": ["K8s resource management", "Network policies", "Secret management", "Health probe configuration"],
+                            "stack": ["Kubernetes", "kubectl", "Minikube", "Sealed Secrets"]
+                        }
+                    }
+                },
+                {
+                    "icon": "🏭",
+                    "accentClass": "a5",
+                    "title": "Production Kubernetes",
+                    "topics": ["Helm charts", "Persistent storage", "Ingress controllers", "RBAC", "Monitoring"],
+                    "resources": [
+                        {
+                            "icon": "📘",
+                            "name": "Kubernetes the Hard Way",
+                            "meta": "github.com/kelseyhightower \u00b7 Free deep-dive K8s bootstrapping guide",
+                            "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way"
+                        },
+                        {
+                            "icon": "⎈",
+                            "name": "Helm Official Documentation",
+                            "meta": "helm.sh \u00b7 Free Helm chart tutorials",
+                            "url": "https://helm.sh/docs/"
+                        },
+                        {
+                            "icon": "🔐",
+                            "name": "K8s Documentation RBAC",
+                            "meta": "kubernetes.io \u00b7 Free RBAC guide",
+                            "url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/"
+                        },
+                        {
+                            "icon": "💾",
+                            "name": "K8s Documentation Persistent Volumes",
+                            "meta": "kubernetes.io \u00b7 Free storage guide",
+                            "url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Production K8s Cluster",
+                            "desc": "Set up a production-grade Kubernetes cluster with Helm charts, persistent storage, ingress, RBAC, and monitoring.",
+                            "skills": ["Helm chart creation", "PersistentVolume management", "Ingress configuration", "RBAC policies"],
+                            "stack": ["Kubernetes", "Helm", "NGINX Ingress", "Prometheus"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical K8s Production",
+                            "desc": "Deploy a HIPAA-ready Kubernetes environment with encrypted storage, RBAC for clinical roles, audit logging, and network segmentation.",
+                            "skills": ["HIPAA K8s configuration", "Encrypted PersistentVolumes", "Clinical RBAC", "Audit logging"],
+                            "stack": ["Kubernetes", "Helm", "Vault", "Falco", "Prometheus"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Kubernetes Orchestration Platform",
+                    "desc": "Complete Kubernetes mastery from basics to production with Helm, RBAC, and monitoring.",
+                    "skills": ["Pod management", "Service discovery", "Helm charts", "Persistent storage", "K8s security"],
+                    "stack": ["Kubernetes", "Helm", "kubectl", "NGINX Ingress", "Prometheus"]
+                },
+                "healthcare": {
+                    "title": "Clinical Kubernetes Platform",
+                    "desc": "HIPAA-compliant Kubernetes deployment with encrypted storage, clinical RBAC, and audit logging.",
+                    "skills": ["HIPAA K8s", "Encrypted storage", "Clinical RBAC", "Network policies", "Audit logging"],
+                    "stack": ["Kubernetes", "Helm", "Vault", "Falco", "Sealed Secrets"]
+                }
+            }
+        },
+        {
+            "number": "04",
+            "badge": "badge-intermediate",
+            "badgeLabel": "Intermediate",
+            "title": "CI/CD & Automation",
+            "duration": "Months 7\u20138",
+            "modules": [
+                {
+                    "icon": "🔄",
+                    "accentClass": "a6",
+                    "title": "CI/CD Pipeline Design",
+                    "topics": ["CI vs CD concepts", "Pipeline architecture", "Testing in CI", "Artifact management", "Deployment strategies"],
+                    "resources": [
+                        {
+                            "icon": "📘",
+                            "name": "The CI/CD Handbook (freeCodeCamp)",
+                            "meta": "freecodecamp.org \u00b7 Free comprehensive CI/CD guide",
+                            "url": "https://www.freecodecamp.org/learn/"
+                        },
+                        {
+                            "icon": "⚙️",
+                            "name": "GitHub Actions Documentation",
+                            "meta": "docs.github.com \u00b7 Free official Actions docs",
+                            "url": "https://docs.github.com/en/actions"
+                        },
+                        {
+                            "icon": "🦊",
+                            "name": "GitLab CI/CD Documentation",
+                            "meta": "docs.gitlab.com \u00b7 Free GitLab CI docs",
+                            "url": "https://docs.gitlab.com/ee/ci/"
+                        },
+                        {
+                            "icon": "🎓",
+                            "name": "GitHub Learning Lab",
+                            "meta": "skills.github.com \u00b7 Free interactive CI/CD courses",
+                            "url": "https://skills.github.com/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Complete CI/CD Pipeline",
+                            "desc": "Build a CI/CD pipeline: lint, test, build, containerize, deploy on push with staging and production environments.",
+                            "skills": ["GitHub Actions workflow design", "Test automation", "Docker build", "Deployment strategies"],
+                            "stack": ["GitHub Actions", "Docker", "Node.js/Python", "Railway/Render"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical CI/CD Pipeline",
+                            "desc": "Build a CI/CD pipeline with security scanning (Trivy, Semgrep), HIPAA compliance checks, and staged deployments for clinical services.",
+                            "skills": ["Security scanning in CI", "HIPAA compliance gates", "Canary deployments", "Rollback automation"],
+                            "stack": ["GitHub Actions", "Docker", "Trivy", "Semgrep", "Terraform"]
+                        }
+                    }
+                },
+                {
+                    "icon": "🚀",
+                    "accentClass": "a7",
+                    "title": "Build Automation & Release Management",
+                    "topics": ["Artifact versioning", "Release strategies (blue-green, canary)", "Feature flags", "Rollback procedures"],
+                    "resources": [
+                        {
+                            "icon": "🧩",
+                            "name": "GitHub Actions Marketplace",
+                            "meta": "github.com/marketplace \u00b7 Free CI/CD action marketplace",
+                            "url": "https://github.com/marketplace"
+                        },
+                        {
+                            "icon": "📋",
+                            "name": "Semantic Versioning",
+                            "meta": "semver.org \u00b7 Free versioning standard",
+                            "url": "https://semver.org/"
+                        },
+                        {
+                            "icon": "🚩",
+                            "name": "LaunchDarkly Feature Flags",
+                            "meta": "launchdarkly.com \u00b7 Free tier for feature flags",
+                            "url": "https://launchdarkly.com/"
+                        },
+                        {
+                            "icon": "🎥",
+                            "name": "YouTube DevOps Deployment Strategies",
+                            "meta": "youtube.com \u00b7 Free deployment strategy tutorials",
+                            "url": "https://www.youtube.com/results?search_query=devops+deployment+strategies"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Release Automation System",
+                            "desc": "Build automated release management with semantic versioning, changelog generation, blue-green deployments, and automated rollback on failure.",
+                            "skills": ["Semantic versioning", "Changelog automation", "Blue-green deployment", "Health-check based rollback"],
+                            "stack": ["GitHub Actions", "Docker", "Terraform", "Railway"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Release Pipeline",
+                            "desc": "Build a clinical release pipeline with manual approval gates, compliance verification, staged rollout, and emergency rollback procedures.",
+                            "skills": ["Manual approval gates", "Compliance verification", "Staged rollout", "Clinical emergency procedures"],
+                            "stack": ["GitHub Actions", "Docker", "Terraform", "PagerDuty"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "CI/CD Automation Platform",
+                    "desc": "Complete CI/CD pipeline mastery with automated releases, deployment strategies, and rollback procedures.",
+                    "skills": ["Pipeline design", "Test automation", "Container builds", "Deployment strategies", "Release management"],
+                    "stack": ["GitHub Actions", "Docker", "Terraform", "Node.js/Python"]
+                },
+                "healthcare": {
+                    "title": "Clinical CI/CD Platform",
+                    "desc": "HIPAA-compliant CI/CD with security scanning, compliance gates, and clinical release procedures.",
+                    "skills": ["Security scanning", "HIPAA compliance gates", "Clinical deployments", "Emergency rollback", "Approval workflows"],
+                    "stack": ["GitHub Actions", "Docker", "Trivy", "Semgrep", "Terraform"]
+                }
+            }
+        },
+        {
+            "number": "05",
+            "badge": "badge-advanced",
+            "badgeLabel": "Advanced",
+            "title": "Infrastructure as Code",
+            "duration": "Months 9\u201310",
+            "modules": [
+                {
+                    "icon": "🏗️",
+                    "accentClass": "a8",
+                    "title": "Terraform/OpenTofu",
+                    "topics": ["IaC concepts", "Terraform/OpenTofu syntax", "State management", "Modules", "Providers"],
+                    "resources": [
+                        {
+                            "icon": "🎓",
+                            "name": "HashiCorp Learn Terraform",
+                            "meta": "developer.hashicorp.com \u00b7 Free 100+ hands-on Terraform tutorials",
+                            "url": "https://developer.hashicorp.com/terraform/tutorials"
+                        },
+                        {
+                            "icon": "📘",
+                            "name": "OpenTofu Documentation",
+                            "meta": "opentofu.org \u00b7 Free IaC tool documentation",
+                            "url": "https://opentofu.org/docs/"
+                        },
+                        {
+                            "icon": "📋",
+                            "name": "Terraform Associate Study Guide (freeCodeCamp)",
+                            "meta": "freecodecamp.org \u00b7 Free certification study guide",
+                            "url": "https://www.freecodecamp.org/learn/"
+                        },
+                        {
+                            "icon": "📕",
+                            "name": "Terraform up & Running (free chapters)",
+                            "meta": "terraformupandrunning.com \u00b7 Free book chapters",
+                            "url": "https://www.terraformupandrunning.com/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Cloud Infrastructure as Code",
+                            "desc": "Provision a complete cloud environment with Terraform/OpenTofu: VPC, subnets, security groups, EC2/ECS, RDS, S3, and IAM.",
+                            "skills": ["Resource provisioning", "State management", "Module creation", "Output management"],
+                            "stack": ["Terraform/OpenTofu", "AWS/GCP/Azure", "Git"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Infrastructure as Code",
+                            "desc": "Provision HIPAA-eligible cloud infrastructure with Terraform: encrypted storage, isolated networks, audit logging, and security groups.",
+                            "skills": ["HIPAA infrastructure provisioning", "Encrypted resources", "Network isolation", "Security group configuration"],
+                            "stack": ["Terraform/OpenTofu", "AWS/GCP", "KMS", "CloudTrail"]
+                        }
+                    }
+                },
+                {
+                    "icon": "🤖",
+                    "accentClass": "a9",
+                    "title": "Infrastructure Automation",
+                    "topics": ["Configuration management (Ansible)", "Server provisioning", "Drift detection", "Infrastructure testing"],
+                    "resources": [
+                        {
+                            "icon": "📘",
+                            "name": "Ansible Official Documentation",
+                            "meta": "docs.ansible.com \u00b7 Free Ansible learning resources",
+                            "url": "https://docs.ansible.com/"
+                        },
+                        {
+                            "icon": "🎯",
+                            "name": "Ansible Getting Started",
+                            "meta": "ansible.com \u00b7 Free hands-on Ansible tutorials",
+                            "url": "https://www.ansible.com/get-started"
+                        },
+                        {
+                            "icon": "🧪",
+                            "name": "Kitchen.ci",
+                            "meta": "kitchen.ci \u00b7 Free infrastructure testing framework",
+                            "url": "https://kitchen.ci/"
+                        },
+                        {
+                            "icon": "🧪",
+                            "name": "Terratest (Go)",
+                            "meta": "terratest.gruntwork.io \u00b7 Free infrastructure testing library",
+                            "url": "https://terratest.gruntwork.io/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Automated Server Provisioning",
+                            "desc": "Build automated server provisioning with Ansible: configure web servers, databases, and monitoring with idempotent playbooks.",
+                            "skills": ["Ansible playbook design", "Role-based configuration", "Idempotency", "Drift detection"],
+                            "stack": ["Ansible", "Terraform", "Python", "YAML"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Server Automation",
+                            "desc": "Automate clinical server configuration with Ansible: security hardening, HIPAA compliance checks, audit logging setup, and regular compliance scanning.",
+                            "skills": ["Healthcare server hardening", "Compliance automation", "Audit log configuration", "Drift detection"],
+                            "stack": ["Ansible", "Terraform", "CIS Benchmarks", "Python"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Infrastructure as Code Platform",
+                    "desc": "Complete IaC mastery with Terraform provisioning, Ansible automation, and infrastructure testing.",
+                    "skills": ["Terraform authoring", "State management", "Ansible playbooks", "Drift detection", "Infrastructure testing"],
+                    "stack": ["Terraform/OpenTofu", "Ansible", "AWS/GCP/Azure", "Python"]
+                },
+                "healthcare": {
+                    "title": "Clinical Infrastructure Automation",
+                    "desc": "HIPAA-compliant infrastructure provisioning with Terraform and automated compliance with Ansible.",
+                    "skills": ["HIPAA provisioning", "Encrypted resources", "Compliance automation", "Drift detection", "Clinical server hardening"],
+                    "stack": ["Terraform/OpenTofu", "Ansible", "AWS/GCP", "KMS", "CIS Benchmarks"]
+                }
+            }
+        },
+        {
+            "number": "06",
+            "badge": "badge-advanced",
+            "badgeLabel": "Advanced",
+            "title": "Cloud Platforms",
+            "duration": "Months 11\u201312",
+            "modules": [
+                {
+                    "icon": "☁️",
+                    "accentClass": "a10",
+                    "title": "AWS/GCP/Azure Foundations",
+                    "topics": ["Cloud concepts", "Compute/storage/networking basics", "IAM", "Serverless fundamentals", "Cost management"],
+                    "resources": [
+                        {
+                            "icon": "🎓",
+                            "name": "AWS Skill Builder",
+                            "meta": "skillbuilder.aws \u00b7 Free AWS digital training",
+                            "url": "https://skillbuilder.aws/"
+                        },
+                        {
+                            "icon": "🎓",
+                            "name": "Google Cloud Training",
+                            "meta": "cloud.google.com/training \u00b7 Free GCP courses",
+                            "url": "https://cloud.google.com/training"
+                        },
+                        {
+                            "icon": "🎓",
+                            "name": "Microsoft Learn Azure",
+                            "meta": "learn.microsoft.com \u00b7 Free Azure learning paths",
+                            "url": "https://learn.microsoft.com/en-us/training/"
+                        },
+                        {
+                            "icon": "💰",
+                            "name": "AWS/GCP/Azure Free Tiers",
+                            "meta": "aws.amazon.com/free, cloud.google.com/free, azure.microsoft.com/free \u00b7 Free cloud credits",
+                            "url": "https://aws.amazon.com/free/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Multi-Cloud Deployment",
+                            "desc": "Deploy a web application across AWS and GCP: compute instances, load balancers, managed databases, and CDN.",
+                            "skills": ["Multi-cloud deployment", "IAM configuration", "Networking", "Load balancing"],
+                            "stack": ["AWS EC2/ECS", "GCP Cloud Run", "RDS/Cloud SQL", "CloudFront/Cloud CDN"]
+                        },
+                        "healthcare": {
+                            "title": "Healthcare Cloud Architecture",
+                            "desc": "Design and deploy a HIPAA-eligible cloud architecture on AWS/GCP with proper encryption, access controls, and audit logging.",
+                            "skills": ["HIPAA cloud architecture", "BAA requirements", "Encryption configuration", "Audit logging"],
+                            "stack": ["AWS/GCP", "Terraform", "KMS", "CloudTrail/Cloud Audit Logs"]
+                        }
+                    }
+                },
+                {
+                    "icon": "⚡",
+                    "accentClass": "a11",
+                    "title": "Cloud-Native Services",
+                    "topics": ["Serverless (Lambda/Cloud Functions)", "Managed Kubernetes (EKS/GKE)", "Message queues", "CDN", "Edge computing"],
+                    "resources": [
+                        {
+                            "icon": "⚡",
+                            "name": "AWS Lambda Getting Started",
+                            "meta": "aws.amazon.com \u00b7 Free Lambda tutorials and free tier",
+                            "url": "https://aws.amazon.com/lambda/"
+                        },
+                        {
+                            "icon": "⚡",
+                            "name": "Google Cloud Functions",
+                            "meta": "cloud.google.com \u00b7 Free tier with 2M invocations",
+                            "url": "https://cloud.google.com/functions"
+                        },
+                        {
+                            "icon": "☸️",
+                            "name": "EKS/GKE Free Trials",
+                            "meta": "aws.amazon.com/eks, cloud.google.com/kubernetes-engine \u00b7 Free managed K8s trials",
+                            "url": "https://aws.amazon.com/eks/"
+                        },
+                        {
+                            "icon": "☁️",
+                            "name": "Cloud Resume Challenge",
+                            "meta": "cloudresumechallenge.dev \u00b7 Free cloud project guide",
+                            "url": "https://cloudresumechallenge.dev/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Serverless Application",
+                            "desc": "Build a serverless application using Lambda/Cloud Functions, API Gateway, DynamoDB/Firestore, and S3 with CI/CD.",
+                            "skills": ["Serverless architecture", "API Gateway configuration", "Managed database", "Serverless monitoring"],
+                            "stack": ["AWS Lambda/GCP Cloud Functions", "API Gateway", "DynamoDB/Firestore", "S3"]
+                        },
+                        "healthcare": {
+                            "title": "Serverless Clinical API",
+                            "desc": "Build a serverless clinical API with Lambda/Cloud Functions, API Gateway, DynamoDB, proper authentication, and audit logging.",
+                            "skills": ["Serverless healthcare API", "Clinical authentication", "Audit logging", "HIPAA serverless patterns"],
+                            "stack": ["AWS Lambda", "API Gateway", "DynamoDB", "Cognito", "CloudTrail"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Cloud Platform Mastery",
+                    "desc": "Multi-cloud deployment skills with AWS, GCP, serverless services, and cloud-native architecture.",
+                    "skills": ["Cloud provisioning", "IAM management", "Serverless development", "Load balancing", "CDN configuration"],
+                    "stack": ["AWS", "GCP", "Terraform", "Lambda/Cloud Functions", "DynamoDB/Firestore"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Cloud Platform",
+                    "desc": "HIPAA-compliant cloud architecture with serverless clinical APIs, encryption, and audit logging.",
+                    "skills": ["HIPAA cloud design", "BAA compliance", "Serverless healthcare", "Clinical authentication", "Audit logging"],
+                    "stack": ["AWS/GCP", "Terraform", "KMS", "CloudTrail", "Cognito"]
+                }
+            }
+        },
+        {
+            "number": "07",
+            "badge": "badge-expert",
+            "badgeLabel": "Expert",
+            "title": "Monitoring & SRE",
+            "duration": "Months 13\u201314",
+            "modules": [
+                {
+                    "icon": "📊",
+                    "accentClass": "a12",
+                    "title": "Monitoring & Observability",
+                    "topics": ["Metrics, logs, traces (three pillars)", "Prometheus", "Grafana", "Alerting"],
+                    "resources": [
+                        {
+                            "icon": "📈",
+                            "name": "Prometheus Getting Started",
+                            "meta": "prometheus.io \u00b7 Free monitoring documentation",
+                            "url": "https://prometheus.io/docs/prometheus/latest/getting_started/"
+                        },
+                        {
+                            "icon": "📊",
+                            "name": "Grafana Play",
+                            "meta": "play.grafana.org \u00b7 Free interactive Grafana demo",
+                            "url": "https://play.grafana.org/"
+                        },
+                        {
+                            "icon": "🎥",
+                            "name": "Prometheus & Grafana Course (freeCodeCamp YouTube)",
+                            "meta": "youtube.com \u00b7 Free 3-hour monitoring course",
+                            "url": "https://www.youtube.com/watch?v=7gW5pSM6dlU"
+                        },
+                        {
+                            "icon": "🔭",
+                            "name": "OpenTelemetry Documentation",
+                            "meta": "opentelemetry.io \u00b7 Free observability framework docs",
+                            "url": "https://opentelemetry.io/docs/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Full Observability Stack",
+                            "desc": "Deploy a complete monitoring stack: Prometheus for metrics, Grafana for dashboards, Loki for logs, and alerting rules for critical services.",
+                            "skills": ["Prometheus configuration", "Grafana dashboard design", "Log aggregation", "Alert rule creation"],
+                            "stack": ["Prometheus", "Grafana", "Loki", "AlertManager", "Docker"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Monitoring Dashboard",
+                            "desc": "Build a monitoring dashboard for clinical systems: API latency, error rates, patient throughput, with alerting for SLA breaches.",
+                            "skills": ["Healthcare system monitoring", "SLA tracking", "Clinical alert thresholds", "Audit log monitoring"],
+                            "stack": ["Prometheus", "Grafana", "Loki", "AlertManager", "Python"]
+                        }
+                    }
+                },
+                {
+                    "icon": "🛡️",
+                    "accentClass": "a13",
+                    "title": "SRE Practices",
+                    "topics": ["SLIs/SLOs/SLAs", "Error budgets", "Incident management", "Toil reduction", "Capacity planning"],
+                    "resources": [
+                        {
+                            "icon": "📘",
+                            "name": "Google SRE Books (free)",
+                            "meta": "sre.google/books \u00b7 Free SRE books from Google",
+                            "url": "https://sre.google/books/"
+                        },
+                        {
+                            "icon": "🎓",
+                            "name": "Google SRE Fundamentals",
+                            "meta": "sre.google \u00b7 Free SRE case studies and resources",
+                            "url": "https://sre.google/"
+                        },
+                        {
+                            "icon": "☁️",
+                            "name": "Google Cloud SRE",
+                            "meta": "cloud.google.com/sre \u00b7 Free SRE documentation",
+                            "url": "https://cloud.google.com/sre"
+                        },
+                        {
+                            "icon": "🎓",
+                            "name": "SRE Classroom Workshops",
+                            "meta": "sre.google/classroom \u00b7 Free SRE workshop modules",
+                            "url": "https://sre.google/classroom/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "SRE Practice Implementation",
+                            "desc": "Implement SRE practices for an application: define SLIs/SLOs, set up error budget tracking, create incident response runbooks, and automate toil reduction.",
+                            "skills": ["SLI/SLO definition", "Error budget management", "Incident response runbooks", "Toil measurement and reduction"],
+                            "stack": ["Prometheus", "Grafana", "PagerDuty", "Terraform", "Python"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical SRE Framework",
+                            "desc": "Implement SRE practices for clinical systems with healthcare-specific SLOs (patient portal uptime, clinical API latency), incident response for clinical outages, and compliance-aware monitoring.",
+                            "skills": ["Healthcare SLOs", "Clinical incident response", "Compliance monitoring", "Clinical system capacity planning"],
+                            "stack": ["Prometheus", "Grafana", "PagerDuty", "Terraform", "Python"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Monitoring & SRE Platform",
+                    "desc": "Full observability stack with Prometheus, Grafana, alerting, and SRE practices with error budgets and incident response.",
+                    "skills": ["Prometheus monitoring", "Grafana dashboards", "SLI/SLO management", "Incident response", "Toil reduction"],
+                    "stack": ["Prometheus", "Grafana", "Loki", "AlertManager", "PagerDuty"]
+                },
+                "healthcare": {
+                    "title": "Clinical SRE Platform",
+                    "desc": "Healthcare-specific SRE framework with clinical monitoring, HIPAA-compliant alerting, and incident response for clinical systems.",
+                    "skills": ["Healthcare SLOs", "Clinical monitoring", "Compliance alerting", "Clinical incident response", "Capacity planning"],
+                    "stack": ["Prometheus", "Grafana", "Loki", "PagerDuty", "Python"]
+                }
+            }
+        },
+        {
+            "number": "08",
+            "badge": "badge-expert",
+            "badgeLabel": "Expert",
+            "title": "Career Launch",
+            "duration": "Months 15\u201316",
+            "modules": [
+                {
+                    "icon": "💼",
+                    "accentClass": "a14",
+                    "title": "DevOps Portfolio",
+                    "topics": ["Portfolio site", "Project documentation", "Home lab showcase", "Blog writing", "Certifications"],
+                    "resources": [
+                        {
+                            "icon": "📝",
+                            "name": "GitHub Profile README Generator",
+                            "meta": "github.com \u00b7 Free profile builder",
+                            "url": "https://github.com/abhisheknaiidu/awesome-github-profile-readme"
+                        },
+                        {
+                            "icon": "☁️",
+                            "name": "Cloud Resume Challenge",
+                            "meta": "cloudresumechallenge.dev \u00b7 Free cloud project guide",
+                            "url": "https://cloudresumechallenge.dev/"
+                        },
+                        {
+                            "icon": "📋",
+                            "name": "HashiCorp Certified Study Guides",
+                            "meta": "hashicorp.com \u00b7 Free certification prep",
+                            "url": "https://www.hashicorp.com/certification"
+                        },
+                        {
+                            "icon": "🎓",
+                            "name": "Linux Foundation Training",
+                            "meta": "training.linuxfoundation.org \u00b7 Free Linux/cloud courses",
+                            "url": "https://training.linuxfoundation.org/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "DevOps Portfolio Site",
+                            "desc": "Build a portfolio site showcasing all Phase 1-7 projects with architecture diagrams, deployment pipelines, and technical blog posts.",
+                            "skills": ["Portfolio development", "Architecture documentation", "Technical writing", "GitHub optimization"],
+                            "stack": ["Next.js", "Vercel", "MDX", "Tailwind CSS"]
+                        },
+                        "healthcare": {
+                            "title": "Healthcare DevOps Portfolio",
+                            "desc": "A portfolio focused on healthcare infrastructure projects, HIPAA-compliant deployments, clinical system reliability, and healthcare domain expertise.",
+                            "skills": ["Healthcare DevOps portfolio", "HIPAA infrastructure documentation", "Clinical system case studies"],
+                            "stack": ["Next.js", "Vercel", "MDX", "Tailwind CSS"]
+                        }
+                    }
+                },
+                {
+                    "icon": "🎤",
+                    "accentClass": "a15",
+                    "title": "Interview Preparation",
+                    "topics": ["DevOps interview questions", "System design for infrastructure", "Linux troubleshooting", "Behavioral questions"],
+                    "resources": [
+                        {
+                            "icon": "❓",
+                            "name": "DevOps Interview Questions (various)",
+                            "meta": "Free online resources",
+                            "url": "https://github.com/bregman-arie/devops-exercises"
+                        },
+                        {
+                            "icon": "🎓",
+                            "name": "KodeKloud Interview Prep",
+                            "meta": "learn.kodekloud.com \u00b7 Free DevOps interview prep",
+                            "url": "https://learn.kodekloud.com/"
+                        },
+                        {
+                            "icon": "🐧",
+                            "name": "Linux Interview Questions",
+                            "meta": "Free online resources",
+                            "url": "https://github.com/bregman-arie/devops-exercises"
+                        },
+                        {
+                            "icon": "💻",
+                            "name": "GitHub DevOps Projects",
+                            "meta": "github.com \u00b7 Free project-based interview prep",
+                            "url": "https://github.com/topics/devops-projects"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "DevOps Engineer Career Launch",
+                            "desc": "Complete career launch with portfolio, 3 certifications studied (AWS/CKA/Terraform), 5 home lab projects documented, and applications to 20+ DevOps roles.",
+                            "skills": ["Certification preparation", "Home lab documentation", "System design practice", "Job application strategy"],
+                            "stack": ["AWS", "Kubernetes", "Terraform", "GitHub", "LinkedIn"]
+                        },
+                        "healthcare": {
+                            "title": "Healthcare DevOps Career Launch",
+                            "desc": "Career launch focused on healthcare infrastructure roles with HIPAA deployment expertise, clinical system reliability portfolio, and applications to health-tech infrastructure positions.",
+                            "skills": ["Healthcare DevOps certifications", "HIPAA infrastructure expertise", "Clinical SRE knowledge", "Healthcare tech networking"],
+                            "stack": ["AWS", "Kubernetes", "Terraform", "LinkedIn", "Healthcare IT certifications"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Career Launch Portfolio",
+                    "desc": "Professional portfolio with certification prep, interview readiness, and documented home lab projects for job applications.",
+                    "skills": ["Portfolio presentation", "Certification study", "Interview preparation", "Home lab documentation", "Job application strategy"],
+                    "stack": ["GitHub", "LinkedIn", "Next.js", "AWS", "Kubernetes"]
+                },
+                "healthcare": {
+                    "title": "Healthcare DevOps Career Launch",
+                    "desc": "Healthcare-focused career launch with HIPAA infrastructure portfolio, clinical SRE case studies, and health-tech networking.",
+                    "skills": ["Healthcare DevOps portfolio", "HIPAA expertise", "Clinical SRE", "Healthcare IT networking", "Certification prep"],
+                    "stack": ["GitHub", "LinkedIn", "AWS", "Kubernetes", "Terraform"]
+                }
+            }
+        }
+    ],
+    "projects": {
+        "general": {
+            "title": "Cloud/DevOps Engineering Portfolio",
+            "desc": "A comprehensive portfolio showcasing Docker, Kubernetes, CI/CD pipelines, IaC with Terraform, monitoring with Prometheus/Grafana, and SRE practices with a professional blog.",
+            "skills": ["Container orchestration", "CI/CD pipeline design", "Infrastructure as code", "Observability implementation", "SRE practices"],
+            "stack": ["Docker", "Kubernetes", "Terraform", "GitHub Actions", "Prometheus", "Grafana", "AWS/GCP"]
+        },
+        "healthcare": {
+            "title": "Clinical Infrastructure Platform",
+            "desc": "A production healthcare infrastructure platform with HIPAA-compliant deployments, clinical system monitoring, automated compliance, and disaster recovery procedures.",
+            "skills": ["HIPAA-compliant infrastructure", "Clinical system reliability", "Healthcare SRE", "Compliance automation", "Disaster recovery"],
+            "stack": ["Docker", "Kubernetes", "Terraform", "GitHub Actions", "Prometheus", "Grafana", "AWS/GCP", "Vault"]
+        }
+    }
+}

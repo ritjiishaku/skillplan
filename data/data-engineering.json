@@ -1,0 +1,947 @@
+{
+    "banner": "100% Free \u00b7 8 Phases \u00b7 48+ Resources \u00b7 $0 Cost \u00b7 Zero Paywalls",
+    "titleDisplay": "Data Engineering\u003cbr\u003e\u003cem\u003e\u0026 Analytics\u003c/em\u003e",
+    "subtitle": "Master SQL, Python, ETL pipelines, cloud data platforms, and BI analytics to become a job-ready data engineer.",
+    "meta": {
+        "duration": "15\u201316 mo",
+        "cost": "$0",
+        "resources": "48+",
+        "salaryTarget": "$95k+"
+    },
+    "phases": [
+        {
+            "number": "01",
+            "badge": "badge-foundation",
+            "badgeLabel": "Foundation",
+            "title": "SQL \u0026 Data Foundations",
+            "duration": "Months 1\u20132",
+            "modules": [
+                {
+                    "icon": "fa-solid fa-database",
+                    "accentClass": "a2",
+                    "title": "SQL Fundamentals",
+                    "topics": ["SELECT", "JOIN", "subqueries", "window functions", "query optimization", "PostgreSQL setup"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-code",
+                            "name": "SQLBolt",
+                            "meta": "sqlbolt.com \u00b7 Free",
+                            "url": "https://sqlbolt.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-dumbbell",
+                            "name": "PostgreSQL Exercises",
+                            "meta": "pgexercises.com \u00b7 Free",
+                            "url": "https://pgexercises.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-book",
+                            "name": "Mode SQL Tutorial",
+                            "meta": "mode.com/sql-tutorial \u00b7 Free",
+                            "url": "https://mode.com/sql-tutorial"
+                        },
+                        {
+                            "icon": "fa-solid fa-graduation-cap",
+                            "name": "Kaggle Intro to SQL",
+                            "meta": "kaggle.com \u00b7 Free",
+                            "url": "https://www.kaggle.com/learn/intro-to-sql"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "E-Commerce Analytics Queries",
+                            "desc": "Write 30 complex SQL queries analyzing an e-commerce dataset: customer segmentation, revenue trends, product performance, cohort analysis.",
+                            "skills": ["Complex JOINs", "window functions", "CTEs", "subqueries", "query optimization"],
+                            "stack": ["PostgreSQL", "pgAdmin", "DBeaver"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Data Analysis",
+                            "desc": "Write SQL queries analyzing patient encounter data: admission rates, length of stay, readmission patterns, diagnosis distributions.",
+                            "skills": ["Healthcare data querying", "clinical metric calculations", "patient cohort analysis", "time-series SQL"],
+                            "stack": ["PostgreSQL", "pgAdmin"]
+                        }
+                    }
+                },
+                {
+                    "icon": "fa-solid fa-project-diagram",
+                    "accentClass": "a2",
+                    "title": "Database Design \u0026 Modeling",
+                    "topics": ["ER diagrams", "normalization (1NF\u20133NF)", "indexing strategies", "schema design patterns"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-vial",
+                            "name": "DB Fiddle",
+                            "meta": "db-fiddle.com \u00b7 Free",
+                            "url": "https://www.db-fiddle.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-video",
+                            "name": "Database Design Course",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org"
+                        },
+                        {
+                            "icon": "fa-solid fa-book-open",
+                            "name": "PostgreSQL Tutorial",
+                            "meta": "postgresqltutorial.com \u00b7 Free",
+                            "url": "https://www.postgresqltutorial.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-globe",
+                            "name": "W3Schools SQL",
+                            "meta": "w3schools.com \u00b7 Free",
+                            "url": "https://www.w3schools.com/sql"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Library Management Database",
+                            "desc": "Design and implement a complete normalized database schema for a library system with books, members, loans, reservations, and overdue tracking.",
+                            "skills": ["ER diagram creation", "3NF normalization", "index optimization", "migration scripts"],
+                            "stack": ["PostgreSQL", "SQLAlchemy", "Alembic", "DBeaver"]
+                        },
+                        "healthcare": {
+                            "title": "Patient Records Schema",
+                            "desc": "Design a healthcare database schema for patient demographics, encounters, diagnoses (ICD-10), medications, and lab results with proper normalization.",
+                            "skills": ["Healthcare data modeling", "ICD-10 code indexing", "encounter-patient relationships", "audit trail tables"],
+                            "stack": ["PostgreSQL", "SQLAlchemy", "Alembic", "DBeaver"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "SQL Mastery Project",
+                    "desc": "Build a comprehensive SQL project combining complex queries, database design, and performance optimization for an e-commerce use case.",
+                    "skills": ["SQL proficiency", "database design", "query optimization", "PostgreSQL administration"],
+                    "stack": ["PostgreSQL", "pgAdmin", "DBeaver", "SQLAlchemy"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Data Foundation",
+                    "desc": "Build a normalized healthcare database with clinical queries, patient analytics, and HIPAA-aware design patterns.",
+                    "skills": ["Healthcare SQL", "clinical data modeling", "ICD-10 indexing", "patient cohort queries"],
+                    "stack": ["PostgreSQL", "pgAdmin", "DBeaver", "SQLAlchemy"]
+                }
+            }
+        },
+        {
+            "number": "02",
+            "badge": "badge-foundation",
+            "badgeLabel": "Foundation",
+            "title": "Python for Data",
+            "duration": "Months 3\u20134",
+            "modules": [
+                {
+                    "icon": "fa-brands fa-python",
+                    "accentClass": "a2",
+                    "title": "Python Data Manipulation",
+                    "topics": ["Pandas DataFrames", "NumPy arrays", "data cleaning", "merging \u0026 joining", "groupby operations"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-database",
+                            "name": "Kaggle Python",
+                            "meta": "kaggle.com \u00b7 Free",
+                            "url": "https://www.kaggle.com/learn/python"
+                        },
+                        {
+                            "icon": "fa-solid fa-table",
+                            "name": "Kaggle Pandas",
+                            "meta": "kaggle.com \u00b7 Free",
+                            "url": "https://www.kaggle.com/learn/pandas"
+                        },
+                        {
+                            "icon": "fa-solid fa-laptop-code",
+                            "name": "freeCodeCamp Python",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python"
+                        },
+                        {
+                            "icon": "fa-solid fa-graduation-cap",
+                            "name": "Python for Everybody",
+                            "meta": "py4e.com \u00b7 Free",
+                            "url": "https://www.py4e.com"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Sales Data Pipeline",
+                            "desc": "Build a Python data pipeline that cleans, transforms, and analyzes sales data: handle missing values, merge datasets, compute aggregations, and generate insights.",
+                            "skills": ["Pandas data cleaning", "merge/join operations", "groupby aggregations", "data validation"],
+                            "stack": ["Python", "Pandas", "NumPy", "Jupyter"]
+                        },
+                        "healthcare": {
+                            "title": "Patient Data Cleaning Pipeline",
+                            "desc": "Build a Python pipeline that cleans and standardizes messy patient data: handle inconsistent formats, validate medical codes, deduplicate records, and produce clean datasets.",
+                            "skills": ["Healthcare data cleaning", "medical code validation", "deduplication strategies", "data quality reporting"],
+                            "stack": ["Python", "Pandas", "NumPy", "Jupyter"]
+                        }
+                    }
+                },
+                {
+                    "icon": "fa-solid fa-chart-bar",
+                    "accentClass": "a2",
+                    "title": "Data Wrangling \u0026 Visualization",
+                    "topics": ["Data quality assessment", "outlier handling", "feature engineering", "matplotlib/seaborn", "exploratory data analysis"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-chart-line",
+                            "name": "Kaggle Data Visualization",
+                            "meta": "kaggle.com \u00b7 Free",
+                            "url": "https://www.kaggle.com/learn/data-visualization"
+                        },
+                        {
+                            "icon": "fa-solid fa-chart-pie",
+                            "name": "freeCodeCamp Data Analysis",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org/learn/data-analysis-with-python"
+                        },
+                        {
+                            "icon": "fa-solid fa-chart-area",
+                            "name": "Python Graph Gallery",
+                            "meta": "python-graph-gallery.com \u00b7 Free",
+                            "url": "https://www.python-graph-gallery.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-layer-group",
+                            "name": "From Data to Viz",
+                            "meta": "fromdatatoviz.com \u00b7 Free",
+                            "url": "https://www.fromdatatoviz.com"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Exploratory Data Analysis Portfolio",
+                            "desc": "Complete 3 end-to-end EDA projects on different datasets (titanic, housing, climate) with visualizations, statistical summaries, and Jupyter notebook reports.",
+                            "skills": ["EDA methodology", "visualization selection", "statistical analysis", "Jupyter notebook presentation"],
+                            "stack": ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical EDA Dashboard",
+                            "desc": "Perform exploratory analysis on clinical trial data: patient demographics, treatment outcomes, adverse events, and produce interactive visualizations.",
+                            "skills": ["Healthcare EDA", "clinical outcome visualization", "adverse event analysis", "statistical significance testing"],
+                            "stack": ["Python", "Pandas", "Matplotlib", "Seaborn", "Plotly", "Jupyter"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Python Data Engineering Kit",
+                    "desc": "Build a collection of reusable Python data processing modules for cleaning, transformation, and visualization.",
+                    "skills": ["Python data manipulation", "Pandas mastery", "data visualization", "Jupyter workflows"],
+                    "stack": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Data Cleaning Toolkit",
+                    "desc": "Develop a Python toolkit for healthcare data cleaning: medical code validation, PHI detection, patient record deduplication.",
+                    "skills": ["Healthcare data cleaning", "medical code validation", "PHI detection", "data quality assessment"],
+                    "stack": ["Python", "Pandas", "NumPy", "Matplotlib", "Jupyter"]
+                }
+            }
+        },
+        {
+            "number": "03",
+            "badge": "badge-core",
+            "badgeLabel": "Core",
+            "title": "Data Warehousing \u0026 Modeling",
+            "duration": "Months 5\u20136",
+            "modules": [
+                {
+                    "icon": "fa-solid fa-warehouse",
+                    "accentClass": "a3",
+                    "title": "Data Warehousing Concepts",
+                    "topics": ["Star schema", "snowflake schema", "dimensional modeling", "Kimball vs Inmon", "OLAP vs OLTP", "fact \u0026 dimension tables"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-book",
+                            "name": "Dimensional Modeling (Kimball)",
+                            "meta": "YouTube \u00b7 Free",
+                            "url": "https://www.youtube.com/results?search_query=dimensional+modeling+kimball"
+                        },
+                        {
+                            "icon": "fa-solid fa-sitemap",
+                            "name": "Star vs Snowflake Schema",
+                            "meta": "Various \u00b7 Free",
+                            "url": "https://www.youtube.com/results?search_query=star+schema+vs+snowflake+schema"
+                        },
+                        {
+                            "icon": "fa-brands fa-microsoft",
+                            "name": "Azure Data Warehouse",
+                            "meta": "learn.microsoft.com \u00b7 Free",
+                            "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse"
+                        },
+                        {
+                            "icon": "fa-solid fa-play-circle",
+                            "name": "Katzion Data Warehouse Tutorials",
+                            "meta": "youtube.com \u00b7 Free",
+                            "url": "https://www.youtube.com/results?search_query=katzion+data+warehouse"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "E-Commerce Data Warehouse",
+                            "desc": "Design and build a star schema data warehouse for an e-commerce business with fact tables (orders, page views) and dimension tables (products, customers, dates, stores).",
+                            "skills": ["Star schema design", "dimension tables", "fact tables", "surrogate keys", "slowly changing dimensions"],
+                            "stack": ["PostgreSQL", "dbt", "Python"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Data Warehouse",
+                            "desc": "Design a healthcare data warehouse with star schema for patient encounters, clinical measurements, provider performance, and financial metrics.",
+                            "skills": ["Healthcare dimensional modeling", "clinical fact tables", "provider dimension design", "healthcare KPI calculations"],
+                            "stack": ["PostgreSQL", "dbt", "Python"]
+                        }
+                    }
+                },
+                {
+                    "icon": "fa-solid fa-cubes",
+                    "accentClass": "a3",
+                    "title": "dbt (Data Build Tool)",
+                    "topics": ["dbt models", "testing", "documentation", "incremental models", "Jinja macros", "packages"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-graduation-cap",
+                            "name": "dbt Learn",
+                            "meta": "learn.getdbt.com \u00b7 Free",
+                            "url": "https://www.getdbt.com/learn"
+                        },
+                        {
+                            "icon": "fa-solid fa-book-open",
+                            "name": "dbt Official Documentation",
+                            "meta": "docs.getdbt.com \u00b7 Free",
+                            "url": "https://docs.getdbt.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-comments",
+                            "name": "dbt Community Forum",
+                            "meta": "discourse.getdbt.com \u00b7 Free",
+                            "url": "https://discourse.getdbt.com"
+                        },
+                        {
+                            "icon": "fa-brands fa-youtube",
+                            "name": "dbt Labs YouTube",
+                            "meta": "youtube.com/@dbtlabs \u00b7 Free",
+                            "url": "https://www.youtube.com/@dbtlabs"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "dbt Analytics Project",
+                            "desc": "Build a complete dbt project with staging, intermediate, and marts layers, implement tests, generate documentation, and set up incremental models.",
+                            "skills": ["dbt project structure", "model materializations", "testing", "documentation", "incremental models"],
+                            "stack": ["dbt", "PostgreSQL", "BigQuery", "Git"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Analytics dbt Project",
+                            "desc": "Build a dbt project transforming raw clinical data into analytics-ready tables: patient summaries, encounter metrics, clinical quality indicators.",
+                            "skills": ["Healthcare data transformations", "clinical metric calculations", "HIPAA-aware documentation", "data quality testing"],
+                            "stack": ["dbt", "PostgreSQL", "Git"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Data Warehouse Blueprint",
+                    "desc": "Design and document a complete data warehouse architecture with dbt transformations, testing, and documentation.",
+                    "skills": ["Dimensional modeling", "dbt development", "data warehouse architecture", "data quality testing"],
+                    "stack": ["PostgreSQL", "dbt", "Python", "Git"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Warehouse Blueprint",
+                    "desc": "Build a healthcare-specific data warehouse with clinical dimensional models, dbt transformations, and HIPAA-aware documentation.",
+                    "skills": ["Healthcare dimensional modeling", "clinical data warehousing", "dbt healthcare transformations", "compliance documentation"],
+                    "stack": ["PostgreSQL", "dbt", "Python", "Git"]
+                }
+            }
+        },
+        {
+            "number": "04",
+            "badge": "badge-core",
+            "badgeLabel": "Core",
+            "title": "ETL Pipelines \u0026 Orchestration",
+            "duration": "Months 7\u20138",
+            "modules": [
+                {
+                    "icon": "fa-solid fa-exchange-alt",
+                    "accentClass": "a3",
+                    "title": "ETL Design Patterns",
+                    "topics": ["ETL vs ELT", "batch vs streaming", "data extraction strategies", "transformation patterns", "loading strategies"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-wind",
+                            "name": "freeCodeCamp ETL with Airflow",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org"
+                        },
+                        {
+                            "icon": "fa-solid fa-rocket",
+                            "name": "Data Engineering Zoomcamp",
+                            "meta": "github.com \u00b7 Free",
+                            "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp"
+                        },
+                        {
+                            "icon": "fa-brands fa-youtube",
+                            "name": "Tech with Lucy",
+                            "meta": "youtube.com \u00b7 Free",
+                            "url": "https://www.youtube.com/@TechWithLucy"
+                        },
+                        {
+                            "icon": "fa-brands fa-youtube",
+                            "name": "Seattle Data Guy",
+                            "meta": "youtube.com \u00b7 Free",
+                            "url": "https://www.youtube.com/@SeattleDataGuy"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Multi-Source ETL Pipeline",
+                            "desc": "Build an ETL pipeline that extracts data from APIs, CSVs, and databases, transforms it through multiple stages, and loads into a data warehouse.",
+                            "skills": ["API data extraction", "data transformation logic", "error handling", "pipeline monitoring"],
+                            "stack": ["Python", "Pandas", "SQLAlchemy", "PostgreSQL", "cron"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Data Integration Pipeline",
+                            "desc": "Build an ETL pipeline that integrates data from multiple clinical sources (HL7 feeds, lab systems, pharmacy), normalizes it, and loads into a clinical data warehouse.",
+                            "skills": ["HL7 data parsing", "clinical data normalization", "multi-source integration", "data quality validation"],
+                            "stack": ["Python", "Pandas", "SQLAlchemy", "PostgreSQL"]
+                        }
+                    }
+                },
+                {
+                    "icon": "fa-solid fa-wind",
+                    "accentClass": "a3",
+                    "title": "Apache Airflow",
+                    "topics": ["DAGs", "operators", "sensors", "XComs", "scheduling", "task dependencies", "deployment"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-book",
+                            "name": "Apache Airflow Official Tutorial",
+                            "meta": "airflow.apache.org \u00b7 Free",
+                            "url": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html"
+                        },
+                        {
+                            "icon": "fa-brands fa-youtube",
+                            "name": "Airflow Tutorial (coder2j)",
+                            "meta": "youtube.com \u00b7 Free",
+                            "url": "https://www.youtube.com/@coder2j"
+                        },
+                        {
+                            "icon": "fa-solid fa-laptop-code",
+                            "name": "freeCodeCamp Airflow Warehousing",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org"
+                        },
+                        {
+                            "icon": "fa-solid fa-rocket",
+                            "name": "Astronomer Airflow Guides",
+                            "meta": "astronomer.io \u00b7 Free",
+                            "url": "https://www.astronomer.io/guides"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Scheduled Data Pipeline",
+                            "desc": "Build and deploy an Apache Airflow pipeline with multiple DAGs: data extraction, transformation, quality checks, and reporting, with proper scheduling and alerting.",
+                            "skills": ["DAG design", "operator selection", "task dependencies", "XCom usage", "pipeline monitoring"],
+                            "stack": ["Apache Airflow", "Python", "PostgreSQL", "Docker"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Report Scheduler",
+                            "desc": "Build an Airflow pipeline that generates scheduled clinical reports: daily patient summaries, weekly quality metrics, monthly compliance reports with SLA monitoring.",
+                            "skills": ["Healthcare report scheduling", "SLA monitoring", "clinical metric calculations", "automated alerting"],
+                            "stack": ["Apache Airflow", "Python", "PostgreSQL", "Docker"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Orchestrated Data Pipeline",
+                    "desc": "Build a production-grade ETL pipeline orchestrated with Apache Airflow, featuring scheduling, monitoring, and error recovery.",
+                    "skills": ["ETL design", "Airflow orchestration", "pipeline monitoring", "error handling"],
+                    "stack": ["Apache Airflow", "Python", "PostgreSQL", "Docker"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Data Pipeline",
+                    "desc": "Build a HIPAA-compliant clinical data pipeline with Airflow orchestration, SLA monitoring, and compliance reporting.",
+                    "skills": ["Healthcare ETL", "HIPAA compliance", "Airflow orchestration", "clinical reporting"],
+                    "stack": ["Apache Airflow", "Python", "PostgreSQL", "Docker"]
+                }
+            }
+        },
+        {
+            "number": "05",
+            "badge": "badge-advanced",
+            "badgeLabel": "Advanced",
+            "title": "Big Data \u0026 Spark",
+            "duration": "Months 9\u201310",
+            "modules": [
+                {
+                    "icon": "fa-solid fa-bolt",
+                    "accentClass": "a4",
+                    "title": "Apache Spark",
+                    "topics": ["Spark architecture", "RDDs", "DataFrames", "Spark SQL", "PySpark", "performance tuning"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-code",
+                            "name": "Spark By Examples",
+                            "meta": "sparkbyexamples.com \u00b7 Free",
+                            "url": "https://www.sparkbyexamples.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-laptop-code",
+                            "name": "freeCodeCamp PySpark Handbook",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org"
+                        },
+                        {
+                            "icon": "fa-solid fa-graduation-cap",
+                            "name": "Databricks Academy",
+                            "meta": "databricks.com \u00b7 Free",
+                            "url": "https://www.databricks.com/learn"
+                        },
+                        {
+                            "icon": "fa-solid fa-book",
+                            "name": "Apache Spark Official Docs",
+                            "meta": "spark.apache.org \u00b7 Free",
+                            "url": "https://spark.apache.org/docs/latest/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Large-Scale Data Processing",
+                            "desc": "Process a 1GB+ dataset with PySpark: data cleaning, aggregation, joins, window functions, and output optimization.",
+                            "skills": ["PySpark DataFrame operations", "Spark SQL", "partitioning", "caching", "performance tuning"],
+                            "stack": ["PySpark", "Jupyter", "Databricks Community Edition"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Big Data Analytics",
+                            "desc": "Process large volumes of clinical data with Spark: patient cohort analysis, time-series clinical measurements, population health metrics.",
+                            "skills": ["Healthcare big data processing", "clinical cohort identification", "time-series aggregation", "Spark performance optimization"],
+                            "stack": ["PySpark", "Jupyter", "Databricks Community Edition"]
+                        }
+                    }
+                },
+                {
+                    "icon": "fa-solid fa-water",
+                    "accentClass": "a4",
+                    "title": "Data Lakes \u0026 Lakehouse",
+                    "topics": ["Data lake architecture", "Delta Lake", "lakehouse pattern", "data lake governance", "file formats (Parquet, ORC)"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-laptop-code",
+                            "name": "freeCodeCamp Data Lake",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org"
+                        },
+                        {
+                            "icon": "fa-solid fa-book",
+                            "name": "Delta Lake Documentation",
+                            "meta": "delta.io \u00b7 Free",
+                            "url": "https://docs.delta.io"
+                        },
+                        {
+                            "icon": "fa-solid fa-cubes",
+                            "name": "Databricks Lakehouse",
+                            "meta": "databricks.com \u00b7 Free",
+                            "url": "https://www.databricks.com/learn/lakehouse"
+                        },
+                        {
+                            "icon": "fa-solid fa-laptop-code",
+                            "name": "freeCodeCamp Databricks SQL",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Lakehouse Data Platform",
+                            "desc": "Build a complete data lakehouse with Delta Lake: bronze/silver/gold layers, schema evolution, time travel, and ACID transactions.",
+                            "skills": ["Delta Lake operations", "medallion architecture", "file format optimization", "data lake governance"],
+                            "stack": ["Delta Lake", "PySpark", "Python", "MinIO"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Data Lake",
+                            "desc": "Build a healthcare data lake with proper PHI segregation, encryption at rest, lifecycle management, and compliance-friendly governance.",
+                            "skills": ["Healthcare data lake architecture", "PHI segregation", "encryption", "data lifecycle management", "compliance documentation"],
+                            "stack": ["Delta Lake", "PySpark", "Python", "MinIO"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Big Data Processing Suite",
+                    "desc": "Build a comprehensive big data processing platform with Spark and Delta Lake for large-scale analytics.",
+                    "skills": ["PySpark", "Delta Lake", "data lake architecture", "performance optimization"],
+                    "stack": ["PySpark", "Delta Lake", "Python", "MinIO", "Databricks Community Edition"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Big Data Platform",
+                    "desc": "Build a HIPAA-compliant big data platform for clinical analytics with PHI protection and governance.",
+                    "skills": ["Healthcare big data", "PHI protection", "Delta Lake governance", "clinical analytics at scale"],
+                    "stack": ["PySpark", "Delta Lake", "Python", "MinIO", "Databricks Community Edition"]
+                }
+            }
+        },
+        {
+            "number": "06",
+            "badge": "badge-advanced",
+            "badgeLabel": "Advanced",
+            "title": "Cloud Data Engineering",
+            "duration": "Months 11\u201312",
+            "modules": [
+                {
+                    "icon": "fa-solid fa-cloud",
+                    "accentClass": "a4",
+                    "title": "Cloud Data Platforms",
+                    "topics": ["AWS/GCP/Azure data services", "managed data warehouses", "serverless data processing", "cost optimization"],
+                    "resources": [
+                        {
+                            "icon": "fa-brands fa-google",
+                            "name": "Google Cloud Skills Boost",
+                            "meta": "cloudskillsboost.google \u00b7 Free",
+                            "url": "https://cloudskillsboost.google"
+                        },
+                        {
+                            "icon": "fa-brands fa-aws",
+                            "name": "AWS Skill Builder",
+                            "meta": "skillbuilder.aws \u00b7 Free",
+                            "url": "https://skillbuilder.aws"
+                        },
+                        {
+                            "icon": "fa-brands fa-microsoft",
+                            "name": "Microsoft Learn Azure Data",
+                            "meta": "learn.microsoft.com \u00b7 Free",
+                            "url": "https://learn.microsoft.com/en-us/training/browse/?terms=data%20engineering"
+                        },
+                        {
+                            "icon": "fa-solid fa-cloud",
+                            "name": "Cloud Resume Challenge",
+                            "meta": "cloudresumechallenge.dev \u00b7 Free",
+                            "url": "https://cloudresumechallenge.dev"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Cloud Data Warehouse",
+                            "desc": "Deploy a data warehouse on AWS Redshift or BigQuery: load data, create materialized views, optimize queries, and set up BI connections.",
+                            "skills": ["Cloud data warehouse setup", "query optimization", "materialized views", "cost management"],
+                            "stack": ["AWS Redshift/BigQuery", "Python", "S3/GCS"]
+                        },
+                        "healthcare": {
+                            "title": "Cloud Clinical Analytics",
+                            "desc": "Deploy a HIPAA-eligible cloud analytics platform with BigQuery/Redshift, implement row-level security, and create clinical dashboards.",
+                            "skills": ["Cloud data security", "row-level security", "HIPAA cloud architecture", "clinical analytics deployment"],
+                            "stack": ["BigQuery/Redshift", "Python", "Terraform", "S3/GCS"]
+                        }
+                    }
+                },
+                {
+                    "icon": "fa-solid fa-bolt",
+                    "accentClass": "a4",
+                    "title": "Serverless Data Processing",
+                    "topics": ["AWS Lambda/Cloud Functions", "event-driven ETL", "serverless orchestration", "cost optimization"],
+                    "resources": [
+                        {
+                            "icon": "fa-brands fa-aws",
+                            "name": "AWS Lambda Getting Started",
+                            "meta": "aws.amazon.com \u00b7 Free",
+                            "url": "https://aws.amazon.com/lambda/getting-started/"
+                        },
+                        {
+                            "icon": "fa-brands fa-google",
+                            "name": "Google Cloud Functions",
+                            "meta": "cloud.google.com \u00b7 Free",
+                            "url": "https://cloud.google.com/functions"
+                        },
+                        {
+                            "icon": "fa-solid fa-book",
+                            "name": "Serverless Framework Docs",
+                            "meta": "serverless.com \u00b7 Free",
+                            "url": "https://www.serverless.com/framework/docs"
+                        },
+                        {
+                            "icon": "fa-brands fa-youtube",
+                            "name": "Serverless Data Pipelines",
+                            "meta": "youtube.com \u00b7 Free",
+                            "url": "https://www.youtube.com/results?search_query=serverless+data+pipeline+tutorial"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Serverless Data Pipeline",
+                            "desc": "Build a serverless ETL pipeline using Lambda/Cloud Functions triggered by S3/GCS events, processing data through multiple stages.",
+                            "skills": ["Serverless architecture", "event-driven design", "cost optimization", "serverless monitoring"],
+                            "stack": ["AWS Lambda/Cloud Functions", "S3/GCS", "Step Functions", "Python"]
+                        },
+                        "healthcare": {
+                            "title": "Serverless Clinical Ingestion",
+                            "desc": "Build a serverless clinical data ingestion pipeline that processes HL7 messages, validates PHI, and loads into a clinical data store.",
+                            "skills": ["Serverless healthcare data processing", "HL7 message handling", "PHI validation", "serverless audit logging"],
+                            "stack": ["AWS Lambda", "S3", "DynamoDB", "Python", "Terraform"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Cloud Data Engineering Platform",
+                    "desc": "Deploy a complete cloud data engineering platform with managed services, serverless processing, and cost optimization.",
+                    "skills": ["Cloud architecture", "serverless ETL", "cost optimization", "cloud data warehousing"],
+                    "stack": ["AWS/GCP/Azure", "Python", "Terraform", "Lambda/Cloud Functions"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Cloud Platform",
+                    "desc": "Deploy a HIPAA-eligible cloud data platform with serverless processing, PHI protection, and compliance monitoring.",
+                    "skills": ["HIPAA cloud architecture", "PHI protection", "serverless healthcare", "compliance monitoring"],
+                    "stack": ["AWS/GCP/Azure", "Python", "Terraform", "Lambda/Cloud Functions"]
+                }
+            }
+        },
+        {
+            "number": "07",
+            "badge": "badge-expert",
+            "badgeLabel": "Expert",
+            "title": "Data Visualization \u0026 BI",
+            "duration": "Months 13\u201314",
+            "modules": [
+                {
+                    "icon": "fa-solid fa-tachometer-alt",
+                    "accentClass": "a5",
+                    "title": "BI Tools \u0026 Dashboards",
+                    "topics": ["Tableau", "Power BI", "data storytelling", "dashboard design principles", "KPI definition"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-chart-bar",
+                            "name": "Tableau Public",
+                            "meta": "public.tableau.com \u00b7 Free",
+                            "url": "https://public.tableau.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-graduation-cap",
+                            "name": "Tableau Free Training",
+                            "meta": "tableau.com/learn/training \u00b7 Free",
+                            "url": "https://www.tableau.com/learn/training"
+                        },
+                        {
+                            "icon": "fa-brands fa-microsoft",
+                            "name": "Power BI Desktop",
+                            "meta": "powerbi.microsoft.com \u00b7 Free",
+                            "url": "https://powerbi.microsoft.com"
+                        },
+                        {
+                            "icon": "fa-brands fa-microsoft",
+                            "name": "Microsoft Learn Power BI",
+                            "meta": "learn.microsoft.com \u00b7 Free",
+                            "url": "https://learn.microsoft.com/en-us/training/browse/?terms=power%20bi"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Executive Dashboard Suite",
+                            "desc": "Build a suite of interactive dashboards in Tableau/Power BI covering sales performance, customer analytics, and financial metrics.",
+                            "skills": ["Dashboard design", "interactive visualizations", "KPI definition", "data storytelling"],
+                            "stack": ["Tableau Public/Power BI", "SQL", "Python"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Operations Dashboard",
+                            "desc": "Build clinical dashboards showing patient flow, bed utilization, readmission rates, and quality metrics with drill-down capabilities.",
+                            "skills": ["Healthcare KPI visualization", "clinical dashboard design", "real-time data display", "HIPAA-compliant reporting"],
+                            "stack": ["Tableau Public/Power BI", "SQL", "Python"]
+                        }
+                    }
+                },
+                {
+                    "icon": "fa-solid fa-chart-line",
+                    "accentClass": "a5",
+                    "title": "Analytics \u0026 Storytelling",
+                    "topics": ["Statistical analysis", "A/B testing", "cohort analysis", "predictive analytics basics", "business storytelling"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-graduation-cap",
+                            "name": "Kaggle Micro-Courses",
+                            "meta": "kaggle.com \u00b7 Free",
+                            "url": "https://www.kaggle.com/learn"
+                        },
+                        {
+                            "icon": "fa-solid fa-chart-pie",
+                            "name": "freeCodeCamp Statistics",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org"
+                        },
+                        {
+                            "icon": "fa-brands fa-google",
+                            "name": "Google Analytics Academy",
+                            "meta": "analytics.google.com \u00b7 Free",
+                            "url": "https://analytics.google.com/analytics/academy/"
+                        },
+                        {
+                            "icon": "fa-solid fa-pen-nib",
+                            "name": "Storytelling with Data",
+                            "meta": "storytellingwithdata.com \u00b7 Free",
+                            "url": "https://www.storytellingwithdata.com"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Analytics Report Portfolio",
+                            "desc": "Create 3 end-to-end analytics reports: customer segmentation, churn prediction, revenue forecasting with statistical analysis and narrative.",
+                            "skills": ["Statistical analysis", "cohort analysis", "predictive modeling basics", "data storytelling"],
+                            "stack": ["Python", "Jupyter", "Tableau/Power BI", "Markdown"]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Outcomes Analytics",
+                            "desc": "Analyze clinical outcomes data: treatment effectiveness, patient satisfaction, readmission prediction with statistical rigor and healthcare-appropriate visualizations.",
+                            "skills": ["Clinical outcome analysis", "statistical significance", "healthcare visualization standards", "clinical report writing"],
+                            "stack": ["Python", "Jupyter", "Tableau/Power BI", "Markdown"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "BI Analytics Portfolio",
+                    "desc": "Build a comprehensive BI portfolio with interactive dashboards, analytics reports, and data storytelling showcases.",
+                    "skills": ["Dashboard design", "data storytelling", "statistical analysis", "BI tool mastery"],
+                    "stack": ["Tableau Public/Power BI", "Python", "Jupyter", "SQL"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Analytics Portfolio",
+                    "desc": "Build a healthcare BI portfolio with clinical dashboards, outcome analytics, and HIPAA-compliant reporting showcases.",
+                    "skills": ["Healthcare BI", "clinical analytics", "HIPAA-compliant reporting", "healthcare data storytelling"],
+                    "stack": ["Tableau Public/Power BI", "Python", "Jupyter", "SQL"]
+                }
+            }
+        },
+        {
+            "number": "08",
+            "badge": "badge-expert",
+            "badgeLabel": "Expert",
+            "title": "Career Launch",
+            "duration": "Months 15\u201316",
+            "modules": [
+                {
+                    "icon": "fa-solid fa-briefcase",
+                    "accentClass": "a5",
+                    "title": "Data Portfolio",
+                    "topics": ["GitHub portfolio optimization", "project documentation", "data engineering blog", "open source contributions"],
+                    "resources": [
+                        {
+                            "icon": "fa-brands fa-github",
+                            "name": "GitHub Profile README Generator",
+                            "meta": "github.com \u00b7 Free",
+                            "url": "https://github.com/rahuldkjain/github-profile-readme-generator"
+                        },
+                        {
+                            "icon": "fa-solid fa-pen-fancy",
+                            "name": "freeCodeCamp Data Engineering Articles",
+                            "meta": "freecodecamp.org \u00b7 Free",
+                            "url": "https://www.freecodecamp.org/news/tag/data-engineering/"
+                        },
+                        {
+                            "icon": "fa-solid fa-book",
+                            "name": "Data Engineering Blogging Guide",
+                            "meta": "Various \u00b7 Free",
+                            "url": "https://www.google.com/search?q=data+engineering+blogging+guide"
+                        },
+                        {
+                            "icon": "fa-solid fa-database",
+                            "name": "Kaggle Datasets",
+                            "meta": "kaggle.com \u00b7 Free",
+                            "url": "https://www.kaggle.com/datasets"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Data Engineering Portfolio Site",
+                            "desc": "Build a portfolio site showcasing all Phase 1\u20137 projects with live dashboards, SQL demos, and technical blog posts.",
+                            "skills": ["Portfolio development", "technical writing", "project documentation", "GitHub optimization"],
+                            "stack": ["Next.js", "Vercel", "MDX", "Tailwind CSS"]
+                        },
+                        "healthcare": {
+                            "title": "Healthcare Data Specialist Portfolio",
+                            "desc": "A portfolio focused on healthcare data projects, clinical analytics, HIPAA-aware data engineering, and healthcare domain knowledge.",
+                            "skills": ["Healthcare data portfolio", "clinical analytics showcases", "HIPAA documentation", "healthcare domain expertise"],
+                            "stack": ["Next.js", "Vercel", "MDX", "Tailwind CSS"]
+                        }
+                    }
+                },
+                {
+                    "icon": "fa-solid fa-user-tie",
+                    "accentClass": "a5",
+                    "title": "Interview Preparation",
+                    "topics": ["SQL interview questions", "data modeling interviews", "system design for data", "behavioral questions"],
+                    "resources": [
+                        {
+                            "icon": "fa-solid fa-database",
+                            "name": "DataLemur",
+                            "meta": "datalemur.com \u00b7 Free",
+                            "url": "https://datalemur.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-code",
+                            "name": "InterviewQuery",
+                            "meta": "interviewquery.com \u00b7 Free",
+                            "url": "https://interviewquery.com"
+                        },
+                        {
+                            "icon": "fa-solid fa-laptop-code",
+                            "name": "StrataScratch",
+                            "meta": "stratascratch.com \u00b7 Free",
+                            "url": "https://www.stratascratch.com"
+                        },
+                        {
+                            "icon": "fa-brands fa-github",
+                            "name": "GitHub Data Engineering Interview",
+                            "meta": "github.com \u00b7 Free",
+                            "url": "https://github.com/topics/data-engineering-interview"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Data Engineer Career Launch",
+                            "desc": "Complete career launch with portfolio, 50+ SQL problems solved, 3 data modeling exercises, and applications to 20+ data engineering roles.",
+                            "skills": ["SQL interview mastery", "data modeling interview prep", "system design practice", "job application strategy"],
+                            "stack": ["SQL", "Python", "LeetCode", "LinkedIn"]
+                        },
+                        "healthcare": {
+                            "title": "Healthcare Data Specialist Career Launch",
+                            "desc": "Career launch focused on healthcare data roles with clinical analytics portfolio, healthcare domain expertise, and applications to health-tech data positions.",
+                            "skills": ["Healthcare data certifications", "clinical analytics expertise", "healthcare tech networking", "data role applications"],
+                            "stack": ["SQL", "Python", "LinkedIn", "Healthcare IT certifications"]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Career Launch Package",
+                    "desc": "Complete job-ready portfolio, interview preparation, and strategic applications for data engineering roles.",
+                    "skills": ["Portfolio optimization", "interview preparation", "job application strategy", "personal branding"],
+                    "stack": ["Next.js", "Vercel", "MDX", "LinkedIn", "GitHub"]
+                },
+                "healthcare": {
+                    "title": "Healthcare Data Career Launch",
+                    "desc": "Specialized career launch for healthcare data roles with domain expertise, certifications, and targeted applications.",
+                    "skills": ["Healthcare domain expertise", "HIPAA certification prep", "healthcare networking", "healthcare data roles"],
+                    "stack": ["Next.js", "Vercel", "MDX", "LinkedIn", "Healthcare IT certifications"]
+                }
+            }
+        }
+    ],
+    "projects": {
+        "general": {
+            "title": "Data Engineering \u0026 Analytics Portfolio",
+            "desc": "A comprehensive portfolio showcasing SQL mastery, data pipelines, warehousing, Spark processing, and BI dashboards with a technical blog documenting your data engineering journey.",
+            "skills": ["End-to-end data pipeline projects", "SQL expertise", "data warehousing", "cloud data platforms", "BI dashboards"],
+            "stack": ["PostgreSQL", "Python", "dbt", "Apache Airflow", "Spark", "Tableau/Power BI", "Next.js"]
+        },
+        "healthcare": {
+            "title": "Clinical Data Analytics Platform",
+            "desc": "A production healthcare data analytics platform with HIPAA-compliant pipelines, clinical data warehousing, real-time dashboards, and automated compliance reporting.",
+            "skills": ["HIPAA-compliant data pipelines", "clinical data warehousing", "healthcare analytics", "compliance reporting", "real-time clinical dashboards"],
+            "stack": ["PostgreSQL", "Python", "dbt", "Apache Airflow", "Spark", "Tableau/Power BI", "Next.js"]
+        }
+    }
+}

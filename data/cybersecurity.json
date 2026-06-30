@@ -1,0 +1,1542 @@
+{
+    "banner": "100% Free \u00b7 8 Phases \u00b7 32+ Resources \u00b7 $0 Cost \u00b7 Zero Paywalls",
+    "titleDisplay": "Cybersecurity\u003cbr\u003e\u003cem\u003eEngineering\u003c/em\u003e",
+    "subtitle": "Master offensive and defensive security, cryptography, forensics, and GRC compliance \u2014 from networking fundamentals to healthcare security architecture.",
+    "meta": {
+        "duration": "15\u201316 mo",
+        "cost": "$0",
+        "resources": "32+",
+        "salaryTarget": "$120k+"
+    },
+    "phases": [
+        {
+            "number": "01",
+            "badge": "badge-foundation",
+            "badgeLabel": "Foundation",
+            "title": "Network & System Foundations",
+            "duration": "Months 1\u20132",
+            "modules": [
+                {
+                    "icon": "\ud83d\udc27",
+                    "accentClass": "a2",
+                    "title": "System Administration",
+                    "topics": [
+                        "Linux command line & file system",
+                        "User/permission management",
+                        "Process management & cron",
+                        "System hardening basics"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83c\udfaf",
+                            "name": "OverTheWire Bandit",
+                            "meta": "overthewire.org \u2014 Free Linux CLI wargame teaching fundamentals",
+                            "url": "https://overthewire.org/wargames/bandit/"
+                        },
+                        {
+                            "icon": "\ud83d\udcda",
+                            "name": "Linux Journey",
+                            "meta": "linuxjourney.com \u2014 Free interactive Linux training from basics to security",
+                            "url": "https://linuxjourney.com/"
+                        },
+                        {
+                            "icon": "\ud83c\udfa5",
+                            "name": "Professor Messer CompTIA Linux+",
+                            "meta": "professormesser.com \u2014 Free video course on Linux administration",
+                            "url": "https://www.professormesser.com/free-linux-plus-training/"
+                        },
+                        {
+                            "icon": "\ud83c\udfe2",
+                            "name": "Microsoft Learn Windows Server",
+                            "meta": "learn.microsoft.com \u2014 Free Windows Server administration modules",
+                            "url": "https://learn.microsoft.com/en-us/training/windows-server/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Linux Server Hardening Lab",
+                            "desc": "Set up a Linux server (VM), configure SSH key-only auth, firewall rules, user permissions, automated backups, and security auditing.",
+                            "skills": [
+                                "SSH hardening",
+                                "UFW/iptables firewall",
+                                "User privilege management",
+                                "Cron job scheduling",
+                                "Log monitoring"
+                            ],
+                            "stack": [
+                                "Ubuntu",
+                                "SSH",
+                                "UFW",
+                                "Bash",
+                                "cron"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Clinic Workstation Security Setup",
+                            "desc": "Configure secure Linux workstations for a clinic environment with role-based access, encrypted storage, audit logging, and HIPAA-compliant session timeouts.",
+                            "skills": [
+                                "Role-based access control",
+                                "Encrypted partition setup",
+                                "Audit logging",
+                                "Session management",
+                                "HIPAA workstation security"
+                            ],
+                            "stack": [
+                                "Ubuntu",
+                                "LUKS encryption",
+                                "auditd",
+                                "PAM",
+                                "Bash"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "icon": "\ud83c\udf10",
+                    "accentClass": "a3",
+                    "title": "Network Fundamentals",
+                    "topics": [
+                        "TCP/IP model & protocols",
+                        "DNS, DHCP & routing",
+                        "Network analysis with Wireshark",
+                        "Subnetting & VLANs"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83c\udfab",
+                            "name": "Cisco Networking Academy Cybersecurity Essentials",
+                            "meta": "netacad.com \u2014 Free course covering network defense and security fundamentals",
+                            "url": "https://www.netacad.com/courses/cybersecurity/cybersecurity-essentials"
+                        },
+                        {
+                            "icon": "\ud83c\udfa5",
+                            "name": "Professor Messer Network+ N10-009",
+                            "meta": "professormesser.com \u2014 Free CompTIA Network+ video course",
+                            "url": "https://www.professormesser.com/free-network-plus-training/"
+                        },
+                        {
+                            "icon": "\ud83d\udcca",
+                            "name": "Wireshark Official Documentation",
+                            "meta": "wireshark.org \u2014 Free network protocol analyzer and learning resources",
+                            "url": "https://www.wireshark.org/docs/"
+                        },
+                        {
+                            "icon": "\ud83d\udd2d",
+                            "name": "TryHackMe Network Fundamentals",
+                            "meta": "tryhackme.com \u2014 Free rooms covering networking basics",
+                            "url": "https://tryhackme.com/room/networkfundamentals8"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Network Traffic Analysis Dashboard",
+                            "desc": "Capture and analyze network traffic using Wireshark, identify protocols, detect anomalies, and create a traffic analysis report.",
+                            "skills": [
+                                "Packet capture & analysis",
+                                "Protocol identification",
+                                "Network forensics basics",
+                                "Traffic pattern recognition",
+                                "Anomaly detection"
+                            ],
+                            "stack": [
+                                "Wireshark",
+                                "tcpdump",
+                                "Python",
+                                "Scapy"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Hospital Network Security Audit",
+                            "desc": "Audit a simulated hospital network, map topology, identify exposed services, and produce a security assessment report.",
+                            "skills": [
+                                "Network mapping",
+                                "Port scanning",
+                                "Service enumeration",
+                                "Security assessment reporting",
+                                "Healthcare network segmentation"
+                            ],
+                            "stack": [
+                                "Nmap",
+                                "Wireshark",
+                                "netcat",
+                                "Python",
+                                "Markdown"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Network & System Foundations Project",
+                    "desc": "Apply Linux administration and networking skills to secure a server and analyze network traffic.",
+                    "skills": [
+                        "Linux hardening",
+                        "Network analysis",
+                        "Security auditing"
+                    ],
+                    "stack": [
+                        "Ubuntu",
+                        "Wireshark",
+                        "Bash",
+                        "Python"
+                    ]
+                },
+                "healthcare": {
+                    "title": "Healthcare Infrastructure Foundations",
+                    "desc": "Secure clinic workstations and audit hospital network infrastructure with healthcare compliance in mind.",
+                    "skills": [
+                        "HIPAA workstation security",
+                        "Healthcare network segmentation",
+                        "Role-based access"
+                    ],
+                    "stack": [
+                        "Ubuntu",
+                        "Nmap",
+                        "LUKS",
+                        "auditd"
+                    ]
+                }
+            }
+        },
+        {
+            "number": "02",
+            "badge": "badge-core",
+            "badgeLabel": "Core",
+            "title": "Web Security & Vulnerabilities",
+            "duration": "Months 3\u20134",
+            "modules": [
+                {
+                    "icon": "\ud83c\udf10",
+                    "accentClass": "a4",
+                    "title": "Web Application Security",
+                    "topics": [
+                        "OWASP Top 10 vulnerabilities",
+                        "SQL injection & XSS",
+                        "SSRF, CSRF & XXE",
+                        "API security testing"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83c\udfaf",
+                            "name": "PortSwigger Web Security Academy",
+                            "meta": "portswigger.net/web-security \u2014 Free 200+ interactive web security labs",
+                            "url": "https://portswigger.net/web-security"
+                        },
+                        {
+                            "icon": "\ud83d\udcca",
+                            "name": "OWASP Top 10",
+                            "meta": "owasp.org \u2014 Free industry-standard vulnerability reference",
+                            "url": "https://owasp.org/www-project-top-ten/"
+                        },
+                        {
+                            "icon": "\ud83d\udcbb",
+                            "name": "Hacksplaining",
+                            "meta": "hacksplaining.com \u2014 Free interactive web vulnerability lessons",
+                            "url": "https://www.hacksplaining.com/"
+                        },
+                        {
+                            "icon": "\ud83c\udf4e",
+                            "name": "OWASP Juice Shop",
+                            "meta": "owasp.org \u2014 Free deliberately insecure web app for training",
+                            "url": "https://owasp.org/www-project-juice-shop/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Web App Pentest Report",
+                            "desc": "Perform a complete web application penetration test on OWASP Juice Shop, document all vulnerabilities found, severity ratings, and remediation steps.",
+                            "skills": [
+                                "OWASP Top 10 testing",
+                                "Burp Suite usage",
+                                "SQL injection",
+                                "XSS exploitation",
+                                "Vulnerability documentation"
+                            ],
+                            "stack": [
+                                "Burp Suite CE",
+                                "OWASP Juice Shop",
+                                "Kali Linux",
+                                "Markdown"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "EHR Web Interface Security Audit",
+                            "desc": "Audit a simulated electronic health record web interface for vulnerabilities, focusing on authentication bypass, data exposure, and injection attacks.",
+                            "skills": [
+                                "Authentication testing",
+                                "PHI data exposure analysis",
+                                "Injection attack testing",
+                                "Healthcare-specific vulnerability assessment"
+                            ],
+                            "stack": [
+                                "Burp Suite CE",
+                                "PortSwigger labs",
+                                "Python",
+                                "Markdown"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "icon": "\ud83d\udd12",
+                    "accentClass": "a5",
+                    "title": "Secure Coding",
+                    "topics": [
+                        "Input validation & sanitization",
+                        "Secure authentication patterns",
+                        "Cryptography for developers",
+                        "Security headers & CSP"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83d\udcdc",
+                            "name": "OWASP Cheat Sheet Series",
+                            "meta": "cheatsheetseries.owasp.org \u2014 Free secure coding reference guides",
+                            "url": "https://cheatsheetseries.owasp.org/"
+                        },
+                        {
+                            "icon": "\ud83d\udcda",
+                            "name": "PortSwigger Secure Coding Practices",
+                            "meta": "portswigger.net \u2014 Free secure coding labs",
+                            "url": "https://portswigger.net/web-security/secure-coding"
+                        },
+                        {
+                            "icon": "\ud83c\udfe2",
+                            "name": "Microsoft Secure Coding Guidelines",
+                            "meta": "learn.microsoft.com \u2014 Free secure development lifecycle resources",
+                            "url": "https://learn.microsoft.com/en-us/azure/security/develop/"
+                        },
+                        {
+                            "icon": "\ud83d\udca1",
+                            "name": "SANS Secure Coding Practices",
+                            "meta": "sans.org \u2014 Free secure coding poster and resources",
+                            "url": "https://www.sans.org/white-papers/secure-coding-practices/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Secure Blog Engine",
+                            "desc": "Build a blog engine with deliberate security best practices: parameterized queries, CSRF tokens, CSP headers, secure session management, and input validation.",
+                            "skills": [
+                                "Parameterized SQL queries",
+                                "CSRF protection",
+                                "Content Security Policy",
+                                "Secure session handling",
+                                "Input validation"
+                            ],
+                            "stack": [
+                                "Python/Node.js",
+                                "PostgreSQL",
+                                "Redis",
+                                "Docker"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Secure Patient Portal",
+                            "desc": "Build a patient-facing portal with healthcare-grade security: MFA, encrypted PII, audit logging, role-based access, and HIPAA-compliant session handling.",
+                            "skills": [
+                                "Multi-factor authentication",
+                                "PII encryption",
+                                "Audit logging",
+                                "RBAC implementation",
+                                "HIPAA security controls"
+                            ],
+                            "stack": [
+                                "FastAPI",
+                                "PostgreSQL",
+                                "Redis",
+                                "Docker",
+                                "Python"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Web Security & Vulnerabilities Project",
+                    "desc": "Develop secure web applications and perform penetration testing to identify vulnerabilities.",
+                    "skills": [
+                        "Web application security",
+                        "Secure coding",
+                        "Penetration testing"
+                    ],
+                    "stack": [
+                        "Burp Suite",
+                        "PortSwigger labs",
+                        "Python",
+                        "PostgreSQL"
+                    ]
+                },
+                "healthcare": {
+                    "title": "Healthcare Web Application Security",
+                    "desc": "Secure healthcare web interfaces and audit EHR systems for vulnerabilities.",
+                    "skills": [
+                        "Healthcare web security",
+                        "HIPAA compliance",
+                        "Secure patient portals"
+                    ],
+                    "stack": [
+                        "FastAPI",
+                        "Burp Suite",
+                        "PostgreSQL",
+                        "Redis"
+                    ]
+                }
+            }
+        },
+        {
+            "number": "03",
+            "badge": "badge-core",
+            "badgeLabel": "Core",
+            "title": "Cryptography & Identity",
+            "duration": "Months 5\u20136",
+            "modules": [
+                {
+                    "icon": "\ud83d\udd10",
+                    "accentClass": "a6",
+                    "title": "Cryptography",
+                    "topics": [
+                        "Symmetric & asymmetric encryption",
+                        "Hashing & digital signatures",
+                        "PKI & certificate management",
+                        "TLS/SSL deep dive"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83c\udfaf",
+                            "name": "CryptoHack",
+                            "meta": "cryptohack.org \u2014 Free gamified cryptography learning platform with interactive challenges",
+                            "url": "https://cryptohack.org/"
+                        },
+                        {
+                            "icon": "\ud83d\udcda",
+                            "name": "Stanford Cryptography I (Dan Boneh)",
+                            "meta": "coursera.org \u2014 Free audit, comprehensive cryptography course",
+                            "url": "https://www.coursera.org/learn/crypto"
+                        },
+                        {
+                            "icon": "\ud83d\udd27",
+                            "name": "CrypTool",
+                            "meta": "cryptool.org \u2014 Free open-source cryptography learning tools",
+                            "url": "https://www.cryptool.org/en/cto/"
+                        },
+                        {
+                            "icon": "\ud83d\udd10",
+                            "name": "HashiCorp Vault Getting Started",
+                            "meta": "developer.hashicorp.com \u2014 Free secrets management tutorials",
+                            "url": "https://developer.hashicorp.com/vault/docs"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Encryption Toolkit",
+                            "desc": "Build a CLI tool that encrypts/decrypts files, generates key pairs, verifies signatures, and manages a simple PKI.",
+                            "skills": [
+                                "AES/RSA encryption implementation",
+                                "Digital signature generation",
+                                "Certificate management",
+                                "Key rotation strategies"
+                            ],
+                            "stack": [
+                                "Python",
+                                "cryptography library",
+                                "OpenSSL",
+                                "Click"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "PHI Encryption Service",
+                            "desc": "Build a service that encrypts/decrypts patient health information with key management, access logging, and FIPS 140-2 compliant algorithms.",
+                            "skills": [
+                                "Healthcare data encryption",
+                                "Key management",
+                                "FIPS compliance awareness",
+                                "Audit logging for crypto operations"
+                            ],
+                            "stack": [
+                                "Python",
+                                "cryptography library",
+                                "HashiCorp Vault",
+                                "PostgreSQL"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "icon": "\ud83d\udc64",
+                    "accentClass": "a7",
+                    "title": "Identity & Access Management",
+                    "topics": [
+                        "OAuth 2.0 & OpenID Connect",
+                        "SAML & SSO",
+                        "RBAC & ABAC",
+                        "Identity federation"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83d\udcdd",
+                            "name": "Auth0 JWT Handbook",
+                            "meta": "auth0.com \u2014 Free comprehensive JWT and OAuth guide",
+                            "url": "https://auth0.com/docs/tokens"
+                        },
+                        {
+                            "icon": "\ud83d\udca1",
+                            "name": "OAuth 2.0 Simplified",
+                            "meta": "aaronparecki.com \u2014 Free OAuth 2.0 tutorial",
+                            "url": "https://aaronparecki.com/oauth-2-simplified/"
+                        },
+                        {
+                            "icon": "\ud83d\udd11",
+                            "name": "Keycloak Getting Started",
+                            "meta": "keycloak.org \u2014 Free open-source IAM getting started guide",
+                            "url": "https://www.keycloak.org/getting-started"
+                        },
+                        {
+                            "icon": "\ud83d\udcca",
+                            "name": "OWASP ASVS",
+                            "meta": "owasp.org \u2014 Free application security verification standard",
+                            "url": "https://owasp.org/www-project-application-security-verification-standard/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "SSO Authentication Gateway",
+                            "desc": "Build a single sign-on gateway supporting OAuth 2.0, OIDC, SAML with multiple identity providers, MFA, and session management.",
+                            "skills": [
+                                "OAuth 2.0 flows",
+                                "OIDC integration",
+                                "SAML implementation",
+                                "MFA with TOTP",
+                                "Session management"
+                            ],
+                            "stack": [
+                                "Keycloak",
+                                "Node.js",
+                                "PostgreSQL",
+                                "Docker"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Identity Service",
+                            "desc": "Build an IAM service for clinical staff with role hierarchy (nurse/doctor/admin), break-the-glass access, session timeout, and comprehensive audit trails.",
+                            "skills": [
+                                "Healthcare role hierarchy",
+                                "Break-the-glass emergency access",
+                                "Session timeout enforcement",
+                                "Audit logging",
+                                "MFA for clinicians"
+                            ],
+                            "stack": [
+                                "Keycloak",
+                                "FastAPI",
+                                "PostgreSQL",
+                                "Redis",
+                                "Docker"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Cryptography & Identity Project",
+                    "desc": "Implement encryption services and identity management systems with robust security controls.",
+                    "skills": [
+                        "Encryption",
+                        "PKI management",
+                        "Identity federation",
+                        "MFA implementation"
+                    ],
+                    "stack": [
+                        "Python",
+                        "Keycloak",
+                        "PostgreSQL",
+                        "Docker"
+                    ]
+                },
+                "healthcare": {
+                    "title": "Healthcare Identity & Encryption",
+                    "desc": "Build healthcare-grade encryption and identity services for clinical environments.",
+                    "skills": [
+                        "PHI encryption",
+                        "Clinical IAM",
+                        "FIPS compliance",
+                        "Break-the-glass access"
+                    ],
+                    "stack": [
+                        "Keycloak",
+                        "FastAPI",
+                        "HashiCorp Vault",
+                        "PostgreSQL"
+                    ]
+                }
+            }
+        },
+        {
+            "number": "04",
+            "badge": "badge-offensive",
+            "badgeLabel": "Offensive",
+            "title": "Ethical Hacking & Pen Testing",
+            "duration": "Months 7\u20138",
+            "modules": [
+                {
+                    "icon": "\ud83d\udca1",
+                    "accentClass": "a8",
+                    "title": "Penetration Testing",
+                    "topics": [
+                        "Reconnaissance & OSINT",
+                        "Enumeration & scanning",
+                        "Exploitation techniques",
+                        "Post-exploitation & pivoting"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83d\udd2d",
+                            "name": "TryHackMe Free Tier",
+                            "meta": "tryhackme.com \u2014 Free rooms covering pentesting methodology",
+                            "url": "https://tryhackme.com/"
+                        },
+                        {
+                            "icon": "\ud83c\udfaf",
+                            "name": "Hack The Box Starting Point",
+                            "meta": "hackthebox.com \u2014 Free introductory pentesting machines",
+                            "url": "https://www.hackthebox.com/starting-point"
+                        },
+                        {
+                            "icon": "\ud83c\udfb2",
+                            "name": "PicoCTF (CMU CyLab)",
+                            "meta": "picoctf.org \u2014 Free CTF challenges for beginners",
+                            "url": "https://picoctf.org/"
+                        },
+                        {
+                            "icon": "\ud83d\udcdc",
+                            "name": "PTES (Penetration Testing Execution Standard)",
+                            "meta": "pentest-standard.org \u2014 Free pentest methodology standard",
+                            "url": "http://www.pentest-standard.org/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "CTF Challenge Solutions",
+                            "desc": "Complete 10 CTF challenges from TryHackMe/PicoCTF covering web, crypto, forensics, and binary exploitation, documenting methodology for each.",
+                            "skills": [
+                                "Multi-vector exploitation",
+                                "OSINT techniques",
+                                "Privilege escalation",
+                                "Web exploitation",
+                                "CTF methodology"
+                            ],
+                            "stack": [
+                                "Kali Linux",
+                                "Metasploit",
+                                "Burp Suite",
+                                "John the Ripper",
+                                "Python"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Clinic Infrastructure Pentest",
+                            "desc": "Perform a penetration test against a simulated clinic network: external recon, internal scanning, exploitation, and a professional pentest report.",
+                            "skills": [
+                                "Healthcare infrastructure pentesting",
+                                "Medical device security awareness",
+                                "Professional report writing",
+                                "Remediation prioritization"
+                            ],
+                            "stack": [
+                                "Nmap",
+                                "Metasploit",
+                                "Burp Suite",
+                                "BloodHound",
+                                "Markdown"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "icon": "\ud83d\udda4",
+                    "accentClass": "a9",
+                    "title": "Exploitation Frameworks",
+                    "topics": [
+                        "Metasploit framework",
+                        "Cobalt Strike concepts",
+                        "Custom exploit development",
+                        "Vulnerability research"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83d\udcda",
+                            "name": "Metasploit Unleashed (Offensive Security)",
+                            "meta": "offensive-security.com \u2014 Free comprehensive Metasploit guide",
+                            "url": "https://www.offensive-security.com/metasploit-unleashed/"
+                        },
+                        {
+                            "icon": "\ud83d\udd2d",
+                            "name": "TryHackMe Metasploit Room",
+                            "meta": "tryhackme.com \u2014 Free hands-on Metasploit training",
+                            "url": "https://tryhackme.com/room/metasploitintro"
+                        },
+                        {
+                            "icon": "\ud83d\udd0e",
+                            "name": "Exploit-DB",
+                            "meta": "exploit-db.com \u2014 Free public exploit database",
+                            "url": "https://www.exploit-db.com/"
+                        },
+                        {
+                            "icon": "\ud83d\udcdd",
+                            "name": "Rapid7 Metasploit Documentation",
+                            "meta": "docs.rapid7.com \u2014 Free official Metasploit docs",
+                            "url": "https://docs.rapid7.com/metasploit/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Exploit Development Lab",
+                            "desc": "Set up a local exploitation lab, develop custom exploits for known CVEs, practice with Metasploit modules, and document exploitation chains.",
+                            "skills": [
+                                "Exploit development basics",
+                                "Metasploit module usage",
+                                "Payload crafting",
+                                "Vulnerability analysis",
+                                "Exploitation chain documentation"
+                            ],
+                            "stack": [
+                                "Kali Linux",
+                                "Metasploit",
+                                "GDB",
+                                "Python",
+                                "pwntools"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Medical Device Vulnerability Assessment",
+                            "desc": "Research and document vulnerabilities in common medical devices (infusion pumps, patient monitors), develop proof-of-concept exploits in a safe lab environment.",
+                            "skills": [
+                                "Medical device security testing",
+                                "IEC 62443 awareness",
+                                "Responsible vulnerability disclosure",
+                                "Healthcare threat modeling"
+                            ],
+                            "stack": [
+                                "Kali Linux",
+                                "Metasploit",
+                                "Nmap",
+                                "Python",
+                                "Markdown"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Ethical Hacking & Pen Testing Project",
+                    "desc": "Conduct penetration tests and develop exploits for known vulnerabilities.",
+                    "skills": [
+                        "Penetration testing",
+                        "Exploit development",
+                        "Vulnerability research"
+                    ],
+                    "stack": [
+                        "Kali Linux",
+                        "Metasploit",
+                        "Burp Suite",
+                        "Python"
+                    ]
+                },
+                "healthcare": {
+                    "title": "Healthcare Penetration Testing",
+                    "desc": "Perform security assessments against healthcare infrastructure and medical devices.",
+                    "skills": [
+                        "Healthcare infrastructure pentesting",
+                        "Medical device security",
+                        "Professional reporting"
+                    ],
+                    "stack": [
+                        "Nmap",
+                        "Metasploit",
+                        "Burp Suite",
+                        "BloodHound"
+                    ]
+                }
+            }
+        },
+        {
+            "number": "05",
+            "badge": "badge-defensive",
+            "badgeLabel": "Defensive",
+            "title": "Threat Intelligence & SOC",
+            "duration": "Months 9\u201310",
+            "modules": [
+                {
+                    "icon": "\ud83c\udfaf",
+                    "accentClass": "a10",
+                    "title": "Threat Intelligence",
+                    "topics": [
+                        "MITRE ATT&CK framework",
+                        "Threat actor profiles",
+                        "IOC analysis",
+                        "Threat hunting"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83c\udff7\ufe0f",
+                            "name": "MITRE ATT&CK",
+                            "meta": "attack.mitre.org \u2014 Free adversary tactics and techniques knowledge base",
+                            "url": "https://attack.mitre.org/"
+                        },
+                        {
+                            "icon": "\ud83d\udca1",
+                            "name": "AlienVault OTX",
+                            "meta": "otx.alienvault.com \u2014 Free community threat intelligence platform",
+                            "url": "https://otx.alienvault.com/"
+                        },
+                        {
+                            "icon": "\u26a0\ufe0f",
+                            "name": "CISA KEV Catalog",
+                            "meta": "cisa.gov \u2014 Free known exploited vulnerabilities catalog",
+                            "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+                        },
+                        {
+                            "icon": "\ud83d\udca1",
+                            "name": "Sigma Rules (GitHub)",
+                            "meta": "github.com/SigmaHQ/sigma \u2014 Free detection rule repository",
+                            "url": "https://github.com/SigmaHQ/sigma"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Threat Intelligence Dashboard",
+                            "desc": "Build a threat intel dashboard that aggregates IOCs from OTX, maps them to MITRE ATT&CK, and generates threat reports.",
+                            "skills": [
+                                "IOC collection and analysis",
+                                "MITRE ATT&CK mapping",
+                                "Threat report generation",
+                                "Sigma rule creation"
+                            ],
+                            "stack": [
+                                "Python",
+                                "AlienVault OTX API",
+                                "MITRE ATT&CK Navigator",
+                                "Markdown"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Threat Landscape Analysis",
+                            "desc": "Analyze threats targeting healthcare organizations using MITRE ATT&CK for Healthcare, create detection rules, and produce an executive threat briefing.",
+                            "skills": [
+                                "Healthcare threat modeling",
+                                "MITRE ATT&CK for Healthcare",
+                                "Clinical system threat analysis",
+                                "Executive communication"
+                            ],
+                            "stack": [
+                                "Python",
+                                "MITRE ATT&CK",
+                                "Sigma",
+                                "Markdown"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "icon": "\ud83d\udee1\ufe0f",
+                    "accentClass": "a11",
+                    "title": "Security Operations",
+                    "topics": [
+                        "SIEM setup & tuning",
+                        "Alert triage & investigation",
+                        "SOC workflows",
+                        "Log analysis"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83c\udfaf",
+                            "name": "LetsDefend Free Tier",
+                            "meta": "letsdefend.io \u2014 Free SOC fundamentals and phishing analysis courses",
+                            "url": "https://letsdefend.io/"
+                        },
+                        {
+                            "icon": "\ud83d\udcca",
+                            "name": "Splunk Free Training",
+                            "meta": "splunk.com \u2014 Free Splunk Fundamentals 1 course",
+                            "url": "https://www.splunk.com/en_us/training/free-courses.html"
+                        },
+                        {
+                            "icon": "\ud83d\udd27",
+                            "name": "Elastic Security Training",
+                            "meta": "elastic.co \u2014 Free SIEM and detection rules training",
+                            "url": "https://www.elastic.co/training"
+                        },
+                        {
+                            "icon": "\ud83c\udfae",
+                            "name": "Blue Team Labs Online",
+                            "meta": "blueteamlabs.online \u2014 Free blue team challenges",
+                            "url": "https://blueteamlabs.online/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Home SOC Lab",
+                            "desc": "Build a complete SOC lab with Splunk/ELK SIEM, configure log sources, create detection rules, investigate simulated alerts, and document SOC procedures.",
+                            "skills": [
+                                "SIEM deployment and configuration",
+                                "Log ingestion and parsing",
+                                "Detection rule creation",
+                                "Alert triage workflow"
+                            ],
+                            "stack": [
+                                "Splunk/ELK",
+                                "Security Onion",
+                                "Linux",
+                                "Python"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Alert Investigation System",
+                            "desc": "Build a SIEM-based alert system for healthcare environments with clinical-specific detection rules, alert prioritization, and investigation playbooks.",
+                            "skills": [
+                                "Healthcare log sources (HL7, DICOM)",
+                                "Clinical alert triage",
+                                "Investigation playbooks",
+                                "HIPAA incident response"
+                            ],
+                            "stack": [
+                                "Splunk",
+                                "ELK",
+                                "Python",
+                                "Sigma rules",
+                                "Docker"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Threat Intelligence & SOC Project",
+                    "desc": "Build threat intelligence capabilities and security operations workflows.",
+                    "skills": [
+                        "Threat intelligence",
+                        "SIEM operations",
+                        "Alert triage"
+                    ],
+                    "stack": [
+                        "Splunk/ELK",
+                        "MITRE ATT&CK",
+                        "Python",
+                        "Sigma"
+                    ]
+                },
+                "healthcare": {
+                    "title": "Healthcare Security Operations",
+                    "desc": "Implement clinical threat detection and alert investigation systems.",
+                    "skills": [
+                        "Healthcare SIEM",
+                        "Clinical alert triage",
+                        "Threat intelligence for healthcare"
+                    ],
+                    "stack": [
+                        "Splunk",
+                        "ELK",
+                        "Sigma",
+                        "Docker"
+                    ]
+                }
+            }
+        },
+        {
+            "number": "06",
+            "badge": "badge-defensive",
+            "badgeLabel": "Defensive",
+            "title": "Incident Response & Forensics",
+            "duration": "Months 11\u201312",
+            "modules": [
+                {
+                    "icon": "\ud83d\udea8",
+                    "accentClass": "a12",
+                    "title": "Incident Response",
+                    "topics": [
+                        "IR lifecycle & NIST framework",
+                        "Containment & eradication",
+                        "Evidence handling",
+                        "Post-incident review"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83c\udf93",
+                            "name": "CISA Incident Response Training",
+                            "meta": "cisa.gov \u2014 Free hands-on IR training courses",
+                            "url": "https://www.cisa.gov/cyber-training"
+                        },
+                        {
+                            "icon": "\ud83d\udcdc",
+                            "name": "NIST SP 800-61 (IR Guide)",
+                            "meta": "csrc.nist.gov \u2014 Free IR guidance document",
+                            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final"
+                        },
+                        {
+                            "icon": "\ud83d\udca1",
+                            "name": "SANS DFIR Posters",
+                            "meta": "sans.org \u2014 Free IR methodology cheat sheets",
+                            "url": "https://www.sans.org/white-papers/incident-response-process/"
+                        },
+                        {
+                            "icon": "\ud83d\udcc4",
+                            "name": "The DFIR Report",
+                            "meta": "thedfirreport.com \u2014 Free real-world incident analysis reports",
+                            "url": "https://thedfirreport.com/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "IR Playbook Collection",
+                            "desc": "Create comprehensive incident response playbooks for 5 common scenarios (ransomware, phishing, data breach, insider threat, DDoS) with step-by-step procedures.",
+                            "skills": [
+                                "IR playbook development",
+                                "NIST IR lifecycle",
+                                "Evidence preservation",
+                                "Communication templates"
+                            ],
+                            "stack": [
+                                "Markdown",
+                                "NIST Framework",
+                                "TheHive",
+                                "MISP"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Healthcare Breach Response Plan",
+                            "desc": "Develop a complete healthcare incident response plan covering HIPAA breach notification, clinical system recovery, and regulatory reporting.",
+                            "skills": [
+                                "HIPAA breach response",
+                                "60-day notification rule",
+                                "Clinical system recovery",
+                                "HHS/OCR reporting"
+                            ],
+                            "stack": [
+                                "Markdown",
+                                "NIST Framework",
+                                "HIPAA guidelines",
+                                "TheHive"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "icon": "\ud83d\udd0d",
+                    "accentClass": "a13",
+                    "title": "Digital Forensics",
+                    "topics": [
+                        "Disk forensics & file carving",
+                        "Memory forensics",
+                        "Network forensics",
+                        "Timeline analysis"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83d\udd0d",
+                            "name": "Autopsy/Sleuth Kit",
+                            "meta": "autopsy.com \u2014 Free open-source digital forensics platform",
+                            "url": "https://www.autopsy.com/"
+                        },
+                        {
+                            "icon": "\ud83d\udcbb",
+                            "name": "Volatility Framework",
+                            "meta": "volatilityfoundation.org \u2014 Free memory forensics framework",
+                            "url": "https://www.volatilityfoundation.org/"
+                        },
+                        {
+                            "icon": "\ud83c\udf10",
+                            "name": "Malware-Traffic-Analysis.net",
+                            "meta": "malware-traffic-analysis.net \u2014 Free pcap exercises",
+                            "url": "https://www.malware-traffic-analysis.net/"
+                        },
+                        {
+                            "icon": "\ud83d\udca1",
+                            "name": "The CIRT.in DFIR Guide",
+                            "meta": "dfir.pubpub.org \u2014 Free community DFIR resource",
+                            "url": "https://dfir.pubpub.org/"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Forensic Investigation Portfolio",
+                            "desc": "Complete 5 forensic challenges involving disk image analysis, memory dump investigation, PCAP analysis, and malware triage with detailed forensic reports.",
+                            "skills": [
+                                "Disk image mounting and carving",
+                                "Volatility memory analysis",
+                                "PCAP traffic analysis",
+                                "Timeline reconstruction"
+                            ],
+                            "stack": [
+                                "Autopsy",
+                                "Volatility",
+                                "Wireshark",
+                                "YARA",
+                                "Python"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Incident Forensics",
+                            "desc": "Investigate a simulated healthcare data breach: analyze system logs, disk images, network captures, and produce a forensic report suitable for HIPAA compliance.",
+                            "skills": [
+                                "Healthcare data breach forensics",
+                                "PHI exposure analysis",
+                                "Forensic report writing for compliance",
+                                "Evidence chain of custody"
+                            ],
+                            "stack": [
+                                "Autopsy",
+                                "Volatility",
+                                "Wireshark",
+                                "Splunk",
+                                "Markdown"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Incident Response & Forensics Project",
+                    "desc": "Develop IR playbooks and perform forensic investigations on simulated incidents.",
+                    "skills": [
+                        "Incident response",
+                        "Digital forensics",
+                        "Evidence handling"
+                    ],
+                    "stack": [
+                        "Autopsy",
+                        "Volatility",
+                        "Wireshark",
+                        "TheHive"
+                    ]
+                },
+                "healthcare": {
+                    "title": "Healthcare Incident Response & Forensics",
+                    "desc": "Create healthcare breach response plans and perform clinical data breach forensics.",
+                    "skills": [
+                        "HIPAA breach response",
+                        "Healthcare forensics",
+                        "Clinical incident investigation"
+                    ],
+                    "stack": [
+                        "Autopsy",
+                        "Volatility",
+                        "Splunk",
+                        "HIPAA guidelines"
+                    ]
+                }
+            }
+        },
+        {
+            "number": "07",
+            "badge": "badge-advanced",
+            "badgeLabel": "Advanced",
+            "title": "GRC & Cloud Security",
+            "duration": "Months 13\u201314",
+            "modules": [
+                {
+                    "icon": "\ud83d\udccb",
+                    "accentClass": "a14",
+                    "title": "Governance, Risk & Compliance",
+                    "topics": [
+                        "NIST Cybersecurity Framework",
+                        "ISO 27001",
+                        "HIPAA security rule",
+                        "Risk assessment methodology"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83d\udcdc",
+                            "name": "NIST CSF 2.0",
+                            "meta": "nist.gov \u2014 Free cybersecurity framework",
+                            "url": "https://www.nist.gov/cyberframework"
+                        },
+                        {
+                            "icon": "\ud83d\udca1",
+                            "name": "NIST SP 800-53",
+                            "meta": "csrc.nist.gov \u2014 Free security and privacy controls catalog",
+                            "url": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final"
+                        },
+                        {
+                            "icon": "\ud83c\udfe5",
+                            "name": "HIPAA Security Rule",
+                            "meta": "hhs.gov \u2014 Free HIPAA security guidance",
+                            "url": "https://www.hhs.gov/hipaa/for-professionals/security/index.html"
+                        },
+                        {
+                            "icon": "\ud83c\udfc2",
+                            "name": "ISACA COBIT Overview",
+                            "meta": "isaca.org \u2014 Free IT governance framework materials",
+                            "url": "https://www.isaca.org/resources/cobit"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "GRC Compliance Toolkit",
+                            "desc": "Build a compliance assessment tool that maps organizational controls to NIST CSF, identifies gaps, generates risk assessments, and produces compliance reports.",
+                            "skills": [
+                                "NIST CSF implementation",
+                                "Gap analysis methodology",
+                                "Risk assessment documentation",
+                                "Compliance reporting"
+                            ],
+                            "stack": [
+                                "Python",
+                                "Markdown",
+                                "NIST CSF",
+                                "Excel/CSV"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "HIPAA Security Assessment",
+                            "desc": "Conduct a comprehensive HIPAA security risk assessment for a simulated healthcare organization, documenting policies, procedures, and technical safeguards.",
+                            "skills": [
+                                "HIPAA security rule analysis",
+                                "Risk assessment methodology",
+                                "Policy documentation",
+                                "Technical safeguard evaluation"
+                            ],
+                            "stack": [
+                                "Python",
+                                "NIST CSF",
+                                "HIPAA guidelines",
+                                "Markdown"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "icon": "\u2601\ufe0f",
+                    "accentClass": "a15",
+                    "title": "Cloud Security",
+                    "topics": [
+                        "AWS/GCP/Azure security services",
+                        "Cloud-native security architecture",
+                        "Container security",
+                        "Serverless security"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83c\udfe2",
+                            "name": "AWS Security Fundamentals",
+                            "meta": "skillbuilder.aws \u2014 Free AWS security training",
+                            "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-security-fundamentals"
+                        },
+                        {
+                            "icon": "\u2601\ufe0f",
+                            "name": "Google Cloud Security",
+                            "meta": "cloud.google.com/training \u2014 Free cloud security courses",
+                            "url": "https://cloud.google.com/training"
+                        },
+                        {
+                            "icon": "\ud83c\udfe2",
+                            "name": "Microsoft Learn Azure Security",
+                            "meta": "learn.microsoft.com \u2014 Free Azure security modules",
+                            "url": "https://learn.microsoft.com/en-us/training/browse/?products=azure"
+                        },
+                        {
+                            "icon": "\ud83c\udfc3",
+                            "name": "CIS Benchmarks",
+                            "meta": "cisecurity.org \u2014 Free cloud security configuration benchmarks",
+                            "url": "https://www.cisecurity.org/cis-benchmarks"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Cloud Security Hardening",
+                            "desc": "Deploy a cloud application on AWS/GCP/Azure, then systematically harden it using CIS benchmarks, configure IAM policies, enable logging, and produce a security assessment.",
+                            "skills": [
+                                "Cloud IAM policy design",
+                                "CIS benchmark implementation",
+                                "Cloud logging and monitoring",
+                                "Security group configuration"
+                            ],
+                            "stack": [
+                                "AWS/GCP/Azure",
+                                "Terraform",
+                                "CloudTrail/Logger",
+                                "Python"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Clinical Cloud Architecture Security",
+                            "desc": "Design and deploy a HIPAA-eligible cloud architecture with proper encryption, access controls, audit logging, BAA considerations, and security documentation.",
+                            "skills": [
+                                "HIPAA cloud architecture",
+                                "Encryption at rest/in transit",
+                                "Cloud audit logging",
+                                "BAA requirements",
+                                "Security documentation"
+                            ],
+                            "stack": [
+                                "AWS/GCP",
+                                "Terraform",
+                                "CloudTrail",
+                                "KMS",
+                                "Python"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "GRC & Cloud Security Project",
+                    "desc": "Implement compliance frameworks and secure cloud architectures.",
+                    "skills": [
+                        "GRC implementation",
+                        "Cloud security hardening",
+                        "Compliance documentation"
+                    ],
+                    "stack": [
+                        "Python",
+                        "Terraform",
+                        "NIST CSF",
+                        "AWS/GCP"
+                    ]
+                },
+                "healthcare": {
+                    "title": "Healthcare Cloud Security & Compliance",
+                    "desc": "Build HIPAA-compliant cloud architectures and perform security assessments.",
+                    "skills": [
+                        "HIPAA cloud compliance",
+                        "Clinical cloud security",
+                        "Risk assessment"
+                    ],
+                    "stack": [
+                        "AWS/GCP",
+                        "Terraform",
+                        "HIPAA guidelines",
+                        "NIST CSF"
+                    ]
+                }
+            }
+        },
+        {
+            "number": "08",
+            "badge": "badge-career",
+            "badgeLabel": "Career",
+            "title": "Career Launch",
+            "duration": "Months 15\u201316",
+            "modules": [
+                {
+                    "icon": "\ud83d\udcbb",
+                    "accentClass": "a16",
+                    "title": "Security Portfolio",
+                    "topics": [
+                        "GitHub profile optimization",
+                        "Security blog writing",
+                        "Home lab documentation",
+                        "Open source contributions"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83d\udcdd",
+                            "name": "GitHub Profile README Generator",
+                            "meta": "github.com \u2014 Free profile README builder",
+                            "url": "https://github.com/abhisheknaiidu/awesome-github-profile-readme"
+                        },
+                        {
+                            "icon": "\ud83c\udfaf",
+                            "name": "TryHackMe Profile Integration",
+                            "meta": "tryhackme.com \u2014 Free profile linking for portfolio",
+                            "url": "https://tryhackme.com/profile"
+                        },
+                        {
+                            "icon": "\ud83d\udd0e",
+                            "name": "HackerOne Hacktivity",
+                            "meta": "hackerone.com \u2014 Free public vulnerability disclosure examples",
+                            "url": "https://hackerone.com/hacktivity"
+                        },
+                        {
+                            "icon": "\ud83d\udca1",
+                            "name": "Cybersecurity Blogging Guide",
+                            "meta": "Various free resources for security blogging",
+                            "url": "https://www.google.com/search?q=cybersecurity+blogging+guide"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Cybersecurity Portfolio Site",
+                            "desc": "Build a portfolio site showcasing all Phase 1-7 projects, home lab setups, CTF achievements, and technical blog posts about security topics.",
+                            "skills": [
+                                "Portfolio site development",
+                                "Technical writing",
+                                "Project documentation",
+                                "GitHub profile optimization"
+                            ],
+                            "stack": [
+                                "Next.js",
+                                "Vercel",
+                                "MDX",
+                                "Tailwind CSS"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Healthcare Security Specialist Portfolio",
+                            "desc": "A portfolio site focused on healthcare cybersecurity projects, HIPAA expertise, clinical system security, and healthcare threat analysis.",
+                            "skills": [
+                                "Healthcare security portfolio",
+                                "HIPAA documentation samples",
+                                "Clinical security case studies",
+                                "Healthcare tech networking"
+                            ],
+                            "stack": [
+                                "Next.js",
+                                "Vercel",
+                                "MDX",
+                                "Tailwind CSS"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "icon": "\ud83c\udfc6",
+                    "accentClass": "a17",
+                    "title": "Interview Preparation",
+                    "topics": [
+                        "Security interview questions",
+                        "Behavioral interview frameworks",
+                        "Salary negotiation",
+                        "Certification path planning"
+                    ],
+                    "resources": [
+                        {
+                            "icon": "\ud83d\udd2d",
+                            "name": "TryHackMe Interview Prep",
+                            "meta": "tryhackme.com \u2014 Free security interview preparation rooms",
+                            "url": "https://tryhackme.com/room/interviewprep"
+                        },
+                        {
+                            "icon": "\ud83d\udd0e",
+                            "name": "Cybersecurity Interview Questions",
+                            "meta": "Various free online resources for security interview preparation",
+                            "url": "https://www.google.com/search?q=cybersecurity+interview+questions"
+                        },
+                        {
+                            "icon": "\ud83d\udcda",
+                            "name": "CompTIA Security+ Study Materials",
+                            "meta": "professormesser.com \u2014 Free video series",
+                            "url": "https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/"
+                        },
+                        {
+                            "icon": "\ud83d\udcc4",
+                            "name": "SANS Blog Career Resources",
+                            "meta": "sans.org \u2014 Free career guidance articles",
+                            "url": "https://www.sans.org/blog/?focus-area=career-development"
+                        }
+                    ],
+                    "projects": {
+                        "general": {
+                            "title": "Security Engineer Career Launch",
+                            "desc": "Complete career launch with portfolio, 3 security certifications studied, 10+ CTF writeups documented, and applications to 20+ security roles.",
+                            "skills": [
+                                "Certification preparation",
+                                "CTF writeup documentation",
+                                "Security interview practice",
+                                "Job application strategy"
+                            ],
+                            "stack": [
+                                "TryHackMe",
+                                "Hack The Box",
+                                "LinkedIn",
+                                "Indeed"
+                            ]
+                        },
+                        "healthcare": {
+                            "title": "Healthcare Security Specialist Career Launch",
+                            "desc": "Career launch focused on healthcare security roles with HIPAA certification prep, clinical security portfolio, and applications to health-tech security positions.",
+                            "skills": [
+                                "Healthcare security certifications",
+                                "HIPAA expertise demonstration",
+                                "Healthcare tech networking",
+                                "Security role applications"
+                            ],
+                            "stack": [
+                                "CompTIA Security+",
+                                "LinkedIn",
+                                "Indeed",
+                                "Healthcare IT certifications"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "projects": {
+                "general": {
+                    "title": "Cybersecurity Career Launch",
+                    "desc": "Prepare for cybersecurity roles with portfolio, certifications, and interview skills.",
+                    "skills": [
+                        "Portfolio development",
+                        "Certification preparation",
+                        "Interview readiness"
+                    ],
+                    "stack": [
+                        "TryHackMe",
+                        "Hack The Box",
+                        "Next.js",
+                        "LinkedIn"
+                    ]
+                },
+                "healthcare": {
+                    "title": "Healthcare Security Career Launch",
+                    "desc": "Target healthcare security roles with specialized portfolio and HIPAA expertise.",
+                    "skills": [
+                        "Healthcare security certifications",
+                        "HIPAA documentation",
+                        "Healthcare tech networking"
+                    ],
+                    "stack": [
+                        "CompTIA Security+",
+                        "LinkedIn",
+                        "Next.js",
+                        "Healthcare IT"
+                    ]
+                }
+            }
+        }
+    ],
+    "projects": {
+        "general": {
+            "title": "Cybersecurity Engineering Portfolio",
+            "desc": "A comprehensive portfolio showcasing penetration testing, incident response, forensics, and security architecture projects with a professional blog documenting your cybersecurity journey.",
+            "skills": [
+                "Multi-domain security portfolio",
+                "Technical blog posts",
+                "Home lab documentation",
+                "CTF achievements",
+                "Professional certifications"
+            ],
+            "stack": [
+                "Next.js",
+                "Vercel",
+                "MDX",
+                "TryHackMe",
+                "Hack The Box"
+            ]
+        },
+        "healthcare": {
+            "title": "Clinical Cybersecurity System",
+            "desc": "A production-grade healthcare security monitoring system with HIPAA-compliant logging, clinical threat detection, incident response automation, and compliance documentation.",
+            "skills": [
+                "HIPAA security architecture",
+                "Clinical threat detection",
+                "Automated incident response",
+                "Compliance documentation",
+                "Healthcare security operations"
+            ],
+            "stack": [
+                "Splunk",
+                "Sigma Rules",
+                "Python",
+                "Docker",
+                "Next.js"
+            ]
+        }
+    }
+}

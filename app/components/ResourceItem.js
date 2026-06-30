@@ -2,7 +2,6 @@
 
 import { useProgress } from '../context/ProgressContext';
 import { useParams } from 'next/navigation';
-import { Icon } from '../lib/icons';
 
 export default function ResourceItem({ phaseNumber, resource, index }) {
   const { getCompleted, toggleResource } = useProgress();
@@ -19,7 +18,6 @@ export default function ResourceItem({ phaseNumber, resource, index }) {
   return (
     <a className={`resource-item ${isChecked ? 'completed' : ''}`} href={resource.url} target="_blank" rel="noopener noreferrer">
       <input type="checkbox" className="resource-checkbox" checked={isChecked} onChange={handleChange} aria-label={`Mark "${resource.name}" as completed`} />
-      <Icon name={resource.icon} size={14} />
       <div className="resource-info">
         <div className="resource-name">{resource.name}</div>
         <div className="resource-meta">{resource.meta}</div>

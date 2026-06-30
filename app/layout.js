@@ -32,25 +32,25 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   metadataBase: new URL('https://ritji.xyz'),
-  title: 'Conversion & Growth Engineering — 100% Free Curriculum',
-  description: 'AI Automation Engineering, Full-Stack Software Engineering, and Conversion & Growth Engineering — 100% free, no paywalls. 8-11 phases each, all resources free.',
+  title: 'Skillplan \u2014 Free Roadmaps to Your Next Career',
+  description: '9 skills-first roadmaps aligned to the WEF Future of Jobs Report 2025. AI, Full-Stack, Frontend, Backend, Cybersecurity, Data, Cloud/DevOps, Fintech, and Growth Engineering \u2014 all free, no degree needed, remote-ready.',
   openGraph: {
-    title: 'Conversion & Growth Engineering — 100% Free Curriculum',
-    description: 'AI Automation Engineering, Full-Stack Software Engineering, and Conversion & Growth Engineering — 100% free, no paywalls. 8-11 phases each, all resources free.',
+    title: 'Skillplan \u2014 Free Roadmaps to Your Next Career',
+    description: '9 skills-first roadmaps aligned to the WEF Future of Jobs Report 2025. All free, no degree needed, remote-ready.',
     url: 'https://ritji.xyz',
-    siteName: 'Conversion & Growth Engineering',
+    siteName: 'Skillplan',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Conversion & Growth Engineering — 100% Free Curriculum',
-    description: 'AI Automation Engineering, Full-Stack Software Engineering, and Conversion & Growth Engineering — 100% free, no paywalls.',
+    title: 'Skillplan \u2014 Free Roadmaps to Your Next Career',
+    description: '9 skills-first roadmaps aligned to the WEF Future of Jobs Report 2025. All free, no degree needed, remote-ready.',
     images: ['/og-image.png'],
   },
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23e8ff47'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23000'>CE</text></svg>",
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23e8ff47'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23000'>SP</text></svg>",
   },
 };
 
