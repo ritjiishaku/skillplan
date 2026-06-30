@@ -36,12 +36,8 @@ export function ProgressProvider({ children }) {
     });
   }, [saveLocal]);
 
-  const syncWithCloud = useCallback((roadmapId) => {
-    loadProgress(roadmapId);
-  }, []);
-
   return (
-    <ProgressContext.Provider value={{ getCompleted, loadProgress, toggleResource, syncWithCloud }}>
+    <ProgressContext.Provider value={{ getCompleted, loadProgress, toggleResource }}>
       {children}
     </ProgressContext.Provider>
   );

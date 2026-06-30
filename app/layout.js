@@ -28,8 +28,6 @@ const fraunces = Fraunces({
   display: 'swap',
 });
 
-export const dynamic = 'force-dynamic';
-
 export const metadata = {
   metadataBase: new URL('https://ritji.xyz'),
   title: 'Skillplan \u2014 Free Roadmaps to Your Next Career',
