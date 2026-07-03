@@ -3094,6 +3094,9 @@ footer {
 .req-cert-name {
   font-weight: 500;
   flex: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .req-cert-cost {
@@ -3134,6 +3137,11 @@ footer {
   .req-cert-item {
     flex-wrap: wrap;
     gap: 4px;
+  }
+
+  .req-cert-name {
+    flex: 1 1 100%;
+    min-height: 44px;
   }
 }
 
