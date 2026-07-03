@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "audit:build": "next build",
+    "audit:lighthouse": "npx -y lighthouse http://localhost:3000 --output=json --output=html --output-path=./audit/lighthouse-report --chrome-flags=\"--headless=new --no-sandbox\"",
+    "audit:axe": "npx -y axe http://localhost:3000 --save ./audit/axe-report.json",
+    "audit:run": "npm run audit:build && npm run audit:lighthouse && npm run audit:axe"
   },
   "dependencies": {
     "lucide-react": "^1.21.0",

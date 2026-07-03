@@ -28,6 +28,33 @@ const roadmapsMeta = [
   return rankA - rankB;
 });
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Skillplan',
+  url: 'https://ritji.xyz',
+  description: 'Free, skills-first engineering roadmaps aligned to the WEF Future of Jobs Report 2025. No paywalls. No degrees required.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://ritji.xyz/{search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+export const metadata = {
+  title: 'Skillplan — Free Roadmaps to Your Next Career',
+  description: '9 skills-first roadmaps aligned to the WEF Future of Jobs Report 2025. AI, Full-Stack, Frontend, Backend, Cybersecurity, Data, Cloud/DevOps, Fintech, and Growth Engineering — all free, no degree needed, remote-ready.',
+  alternates: { canonical: 'https://ritji.xyz' },
+};
+
 export default function Home() {
-  return <HomePage roadmapsMeta={roadmapsMeta} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <HomePage roadmapsMeta={roadmapsMeta} />
+    </>
+  );
 }

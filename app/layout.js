@@ -45,6 +45,27 @@ export const metadata = {
   },
 };
 
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Ritji Ishaku',
+  url: 'https://ritji.xyz',
+  jobTitle: 'Software Engineer',
+  sameAs: [],
+};
+
+const orgJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Skillplan',
+  url: 'https://ritji.xyz',
+  logo: 'https://ritji.xyz/og-image.png',
+  founder: {
+    '@type': 'Person',
+    name: 'Ritji Ishaku',
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${syne.variable} ${dmMono.variable}`} suppressHydrationWarning>
@@ -52,6 +73,14 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Ritji Ishaku" />
         <meta name="theme-color" content="#1a1a2e" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
       </head>
       <body suppressHydrationWarning>
         <a href="#main-content" className="skip-link">Skip to main content</a>

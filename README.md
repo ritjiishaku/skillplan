@@ -27,7 +27,7 @@ Free, skills-first engineering roadmaps aligned to the **WEF Future of Jobs Repo
 - **Styling:** Single global CSS file (`globals.css`) — dark/light theme via CSS variables
 - **Data:** Static JSON files per roadmap (no database)
 - **Progress:** localStorage (per-roadmap completion tracking)
-- **Fonts:** Syne, DM Mono, Fraunces (via `next/font/google`)
+- **Fonts:** Syne, DM Mono (via `next/font/google`)
 
 ## Getting Started
 
@@ -96,7 +96,7 @@ skillplan/
 
 ## Features
 
-- **9 career roadmaps** with structured phases, modules, and curated free resources
+- **10 career roadmaps** with structured phases, modules, and curated free resources
 - **Progress tracking** — check off completed resources, persisted in localStorage per roadmap
 - **Dark/light theme** — toggle with system preference detection
 - **Phase projects** — milestone projects at the end of each phase

@@ -1,7 +1,7 @@
 'use client';
 
 import ResourceItem from './ResourceItem';
-import { Icon } from '../lib/icons';
+import { Icon } from '@/lib/icons';
 import { useModal } from '../context/ModalContext';
 import { Sparkles } from 'lucide-react';
 import { ProjectCard, getNiches, NicheAccordion } from './ProjectCard';

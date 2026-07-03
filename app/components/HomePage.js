@@ -80,49 +80,9 @@ const HOME_ICONS = {
   ),
 };
 
-const titleMap = {
-  'ai': 'AI Automation Engineering',
-  'fullstack': 'Full-Stack Engineering',
-  'frontend': 'Frontend Engineering',
-  'backend': 'Backend Engineering',
-  'cybersecurity': 'Cybersecurity Engineering',
-  'data-engineering': 'Data Engineering & Analytics',
-  'cloud-devops': 'Cloud/DevOps Engineering',
-  'fintech': 'Fintech Engineering',
-  'growth': 'Growth Engineering',
-  'green-tech': 'Green Tech / Climate Tech Engineering',
-};
+import { TITLE_MAP as titleMap } from '@/lib/roadmaps';
 
-const REQ_ICONS = {
-  target: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="10" />
-      <circle cx="12" cy="12" r="6" />
-      <circle cx="12" cy="12" r="2" />
-    </svg>
-  ),
-  award: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="8" r="7" />
-      <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
-    </svg>
-  ),
-  scale: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <line x1="12" y1="3" x2="12" y2="21" />
-      <polyline points="16 7 20 3 24 7" />
-      <polyline points="8 7 4 3 0 7" />
-      <path d="M4 7v4a4 4 0 0 0 4 4" />
-      <path d="M20 7v4a4 4 0 0 1-4 4" />
-    </svg>
-  ),
-  'graduation-cap': (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-      <path d="M6 12v5c3 3 9 3 12 0v-5" />
-    </svg>
-  ),
-};
+import { HOME_REQ_ICONS as REQ_ICONS } from '@/lib/req-icons';
 
 export default function HomePage({ roadmapsMeta }) {
   const router = useRouter();

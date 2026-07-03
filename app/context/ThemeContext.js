@@ -4,23 +4,28 @@ import { createContext, useContext, useState, useEffect, useCallback } from 'rea
 
 const ThemeContext = createContext();
 
+function getInitialTheme() {
+  if (typeof window === 'undefined') return 'dark';
+  try {
+    const saved = localStorage.getItem('theme');
+    if (saved) return saved;
+  } catch {}
+  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+}
+
 export function ThemeProvider({ children }) {
-  const [theme, setThemeState] = useState('dark');
+  const [theme, setThemeState] = useState(getInitialTheme);
 
   useEffect(() => {
-    const saved = localStorage.getItem('theme');
-    const preferred = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-    const initial = saved || preferred;
-    setThemeState(initial);
-    document.documentElement.setAttribute('data-theme', initial);
+    document.documentElement.setAttribute('data-theme', theme);
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', initial === 'dark' ? '#1a1a2e' : '#f2f0eb');
-  }, []);
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#1a1a2e' : '#f2f0eb');
+  }, [theme]);
 
   const setTheme = useCallback((t) => {
     setThemeState(t);
     document.documentElement.setAttribute('data-theme', t);
-    localStorage.setItem('theme', t);
+    try { localStorage.setItem('theme', t); } catch {}
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute('content', t === 'dark' ? '#1a1a2e' : '#f2f0eb');
   }, []);

@@ -1,8 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState, useCallback } from 'react';
+import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
+import { ROADMAP_LIST, PHASE_COUNTS } from '@/lib/roadmaps';
 
 export default function StickyNav() {
   const router = useRouter();
@@ -13,19 +15,8 @@ export default function StickyNav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activePhase, setActivePhase] = useState(null);
 
-  const roadmaps = [
-    { id: 'ai', label: 'AI Automation Engineering' },
-    { id: 'fullstack', label: 'Full-Stack Engineering' },
-    { id: 'frontend', label: 'Frontend Engineering' },
-    { id: 'backend', label: 'Backend Engineering' },
-    { id: 'cybersecurity', label: 'Cybersecurity Engineering' },
-    { id: 'data-engineering', label: 'Data Engineering' },
-    { id: 'cloud-devops', label: 'Cloud/DevOps Engineering' },
-    { id: 'fintech', label: 'Fintech Engineering' },
-    { id: 'growth', label: 'Growth Engineering' },
-  ];
-
-  const phaseCounts = { ai: 8, fullstack: 8, frontend: 8, backend: 8, cybersecurity: 8, 'data-engineering': 8, 'cloud-devops': 8, fintech: 8, growth: 11 };
+  const roadmaps = ROADMAP_LIST.filter((r) => r.id !== 'green-tech');
+  const phaseCounts = PHASE_COUNTS;
   const phaseCount = phaseCounts[current] || 8;
 
   const closeMenu = useCallback(() => setMenuOpen(false), []);
@@ -112,7 +103,7 @@ export default function StickyNav() {
             <polygon points="12,3.5 14,9 12,7.8 10,9" fill="currentColor" stroke="none" />
             <polygon points="12,20.5 10,15 12,16.2 14,15" fill="none" stroke="currentColor" strokeWidth="1.2" />
           </svg>
-          <a href="/" className="nav-brand-name">Skillplan</a>
+          <Link href="/" className="nav-brand-name">Skillplan</Link>
           {pathname !== '/' && (
             <select className="roadmap-select" value={current} onChange={(e) => { closeMenu(); router.push(`/${e.target.value}`); }} aria-label="Select roadmap">
               {roadmaps.map((r) => (

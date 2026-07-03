@@ -1,13 +1,16 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, useRef, useMemo } from 'react';
+import { createContext, useContext, useState, useCallback, useRef, useMemo, useEffect } from 'react';
 
 const ProgressContext = createContext();
 
 export function ProgressProvider({ children }) {
   const [completedMap, setCompletedMap] = useState({});
   const completedRef = useRef(completedMap);
-  completedRef.current = completedMap;
+
+  useEffect(() => {
+    completedRef.current = completedMap;
+  }, [completedMap]);
 
   const getKey = (roadmapId) => `${roadmapId}_completed`;
 
@@ -17,14 +20,24 @@ export function ProgressProvider({ children }) {
 
   const loadProgress = useCallback((roadmapId) => {
     const key = getKey(roadmapId);
-    const stored = localStorage.getItem(key);
-    const ids = stored ? JSON.parse(stored) : [];
+    let ids = [];
+    try {
+      const stored = localStorage.getItem(key);
+      ids = stored ? JSON.parse(stored) : [];
+      if (!Array.isArray(ids)) ids = [];
+    } catch {
+      ids = [];
+    }
     setCompletedMap((prev) => ({ ...prev, [roadmapId]: ids }));
     return ids;
   }, []);
 
   const saveLocal = useCallback((roadmapId, ids) => {
-    localStorage.setItem(getKey(roadmapId), JSON.stringify(ids));
+    try {
+      localStorage.setItem(getKey(roadmapId), JSON.stringify(ids));
+    } catch {
+      // localStorage full or unavailable
+    }
   }, []);
 
   const toggleResource = useCallback((roadmapId, resId, isChecked) => {
@@ -38,7 +51,7 @@ export function ProgressProvider({ children }) {
     });
   }, [saveLocal]);
 
-  const value = useMemo(() => ({ getCompleted, loadProgress, toggleResource }), [getCompleted, loadProgress, toggleResource, completedMap]);
+  const value = useMemo(() => ({ getCompleted, loadProgress, toggleResource }), [getCompleted, loadProgress, toggleResource]);
 
   return (
     <ProgressContext.Provider value={value}>

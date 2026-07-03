@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect } from 'react';
 
 export default function ProgressBar({ completed = 0, total = 0 }) {
