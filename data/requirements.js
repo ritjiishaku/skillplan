@@ -111,7 +111,7 @@ export const ROADMAP_REQUIREMENTS = {
     degreeNote: 'Emerging field. Skills and projects matter most. Certifications are new but growing in recognition.',
     certs: [
       { name: 'UN CC:Learn Climate Change', cost: 'Free', priority: 'medium', url: 'https://www.uncclearn.org/courses/introductory-e-course-on-climate-change/' },
-      { name: 'AWS Sustainability Specialty', cost: '$150', priority: 'medium', url: 'https://explore.skillbuilder.aws/learn/course/external/view/elearning/17696/sustainability-transformation-with-aws' },
+      { name: 'AWS Sustainability Specialty', cost: '$150', priority: 'medium', url: 'https://aws.amazon.com/certification/' },
     ],
     portfolio: 'critical',
     experience: 'important',
@@ -125,7 +125,7 @@ export const ROADMAP_REQUIREMENTS = {
     certs: [
       { name: 'AWS Solutions Architect', cost: '$150', priority: 'high', url: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/' },
       { name: 'Certified Kubernetes Administrator', cost: '$395', priority: 'high', url: 'https://www.cncf.io/training/certification/cka/' },
-      { name: 'HashiCorp Terraform Associate', cost: '$70', priority: 'medium', url: 'https://developer.hashicorp.com/certifications/terraform-associate' },
+      { name: 'HashiCorp Terraform Associate', cost: '$70', priority: 'medium', url: 'https://developer.hashicorp.com/certifications/infrastructure-automation' },
       { name: 'GCP Professional Cloud Architect', cost: '$200', priority: 'medium', url: 'https://cloud.google.com/learn/certification/cloud-architect' },
     ],
     portfolio: 'important',

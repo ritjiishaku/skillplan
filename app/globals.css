@@ -312,6 +312,7 @@ header {
 .header-grid {
   position: absolute;
   inset: 0;
+  pointer-events: none;
   background-image:
     linear-gradient(var(--border) 1px, transparent 1px),
     linear-gradient(90deg, var(--border) 1px, transparent 1px);
