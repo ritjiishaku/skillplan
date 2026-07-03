@@ -8,6 +8,8 @@ import dataEngineeringData from '@/data/data-engineering.json';
 import cloudDevopsData from '@/data/cloud-devops.json';
 import fintechData from '@/data/fintech.json';
 import growthData from '@/data/growth.json';
+import greenTechData from '@/data/green-tech.json';
+import { ROADMAP_WEF_MAP } from '@/data/wef-rankings';
 
 const roadmapsMeta = [
   { id: 'ai', meta: aiData.meta, phaseCount: aiData.phases.length },
@@ -19,7 +21,12 @@ const roadmapsMeta = [
   { id: 'cloud-devops', meta: cloudDevopsData.meta, phaseCount: cloudDevopsData.phases.length },
   { id: 'fintech', meta: fintechData.meta, phaseCount: fintechData.phases.length },
   { id: 'growth', meta: growthData.meta, phaseCount: growthData.phases.length },
-];
+  { id: 'green-tech', meta: greenTechData.meta, phaseCount: greenTechData.phases.length },
+].sort((a, b) => {
+  const rankA = ROADMAP_WEF_MAP[a.id]?.wefRank ?? 99;
+  const rankB = ROADMAP_WEF_MAP[b.id]?.wefRank ?? 99;
+  return rankA - rankB;
+});
 
 export default function Home() {
   return <HomePage roadmapsMeta={roadmapsMeta} />;

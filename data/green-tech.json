@@ -1,0 +1,1885 @@
+{
+  "banner": "100% Free · 8 Phases · 105+ Resources · $0 Cost · Zero Paywalls",
+  "titleDisplay": "Green Tech /<br><em>Climate Tech Engineering</em>",
+  "subtitle": "A complete, self-paced path from Python fundamentals to production climate tech engineer — 8 phases, 105+ hand-curated free resources, IoT sensors, carbon accounting, energy modeling, cloud sustainability, and career prep. $0 cost. No paywalls. No compromises.",
+  "meta": {
+    "duration": "16\u201318 mo",
+    "cost": "$0",
+    "resources": "105+",
+    "salaryTarget": "$110k+"
+  },
+  "phases": [
+    {
+      "number": "01",
+      "badge": "badge-foundation",
+      "badgeLabel": "Foundation",
+      "title": "Python & Data Fundamentals for Climate",
+      "duration": "Months 1\u20132",
+      "modules": [
+        {
+          "icon": "terminal",
+          "accentClass": "a2",
+          "title": "Python for Environmental Scientists",
+          "topics": [
+            "Python syntax, control flow, functions",
+            "NumPy arrays and vectorized operations",
+            "Pandas DataFrames for tabular data",
+            "Data types, collections, comprehensions",
+            "File I/O: CSV, JSON, Excel, HDF5",
+            "Error handling and debugging"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Python for Everybody Specialization",
+              "meta": "University of Michigan · Coursera audit free · The most popular Python course online",
+              "url": "https://www.coursera.org/specializations/python"
+            },
+            {
+              "icon": "book-open",
+              "name": "Scientific Computing with Python",
+              "meta": "freeCodeCamp · 100% free with certificate · Covers Python fundamentals and OOP",
+              "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Python for Data Science, AI & Development",
+              "meta": "IBM · Coursera audit free · Hands-on with NumPy, Pandas, APIs",
+              "url": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+            },
+            {
+              "icon": "play",
+              "name": "Corey Schafer Python Tutorials",
+              "meta": "YouTube · Free · Best beginner Python video series on the internet",
+              "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
+            },
+            {
+              "icon": "book-open",
+              "name": "Automate the Boring Stuff with Python",
+              "meta": "Al Sweigart · Full book free online · Practical Python projects",
+              "url": "https://automatetheboringstuff.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "Real Python Tutorials",
+              "meta": "realpython.com · Many free articles · In-depth Python tutorials",
+              "url": "https://realpython.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "Getting Started with Python for Data Science",
+              "meta": "Codecademy · Free course · Hands-on with real datasets, ~7 hrs",
+              "url": "https://www.codecademy.com/learn/learn-python-3"
+            }
+          ]
+        },
+        {
+          "icon": "database",
+          "accentClass": "a2",
+          "title": "Data Wrangling with Pandas",
+          "topics": [
+            "Reading CSV, JSON, Excel, and SQL data",
+            "Cleaning: missing values, duplicates, type conversion",
+            "Filtering, sorting, and grouping",
+            "Merging and joining datasets",
+            "Pivot tables and aggregation",
+            "Working with time series data"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Pandas Official Getting Started Tutorials",
+              "meta": "pandas.pydata.org · Free · Official beginner tutorials with exercises",
+              "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Data Analysis with Python",
+              "meta": "IBM · Coursera audit free · Importing, wrangling, EDA, regression",
+              "url": "https://www.coursera.org/learn/data-analysis-with-python"
+            },
+            {
+              "icon": "book-open",
+              "name": "Introduction to Data Science in Python",
+              "meta": "University of Michigan · Coursera audit free · Pandas, NumPy, CSV manipulation",
+              "url": "https://www.coursera.org/learn/python-data-analysis"
+            },
+            {
+              "icon": "play",
+              "name": "Pandas for Beginners",
+              "meta": "Keith Galli · YouTube · Free · Practical Pandas walkthrough with real data",
+              "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
+            },
+            {
+              "icon": "book-open",
+              "name": "10 Minutes to Pandas",
+              "meta": "pandas.pydata.org · Free · Quick reference for core Pandas operations",
+              "url": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            },
+            {
+              "icon": "book-open",
+              "name": "Pandas Exercises",
+              "meta": "guipsamora · GitHub · Free · 100+ Pandas exercises with solutions",
+              "url": "https://github.com/guipsamora/pandas_exercises"
+            }
+          ]
+        },
+        {
+          "icon": "git-branch",
+          "accentClass": "a2",
+          "title": "Version Control & Collaboration",
+          "topics": [
+            "Git fundamentals: init, add, commit, push, pull",
+            "Branching, merging, and rebasing",
+            "GitHub: repos, pull requests, issues",
+            "Open-source contribution workflows",
+            "README writing and project documentation"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Git Documentation",
+              "meta": "git-scm.com · Free · Official Git reference and book",
+              "url": "https://git-scm.com/doc"
+            },
+            {
+              "icon": "play",
+              "name": "Git & GitHub Crash Course",
+              "meta": "Traversy Media · YouTube · Free · 30-minute practical intro",
+              "url": "https://www.youtube.com/watch?v=SWYqp7iBY_T"
+            },
+            {
+              "icon": "book-open",
+              "name": "GitHub Skills",
+              "meta": "skills.github.com · Free · Interactive courses using real repos",
+              "url": "https://skills.github.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "First Contributions",
+              "meta": "firstcontributions.github.io · Free · Practice your first open-source PR",
+              "url": "https://firstcontributions.github.io"
+            }
+          ]
+        },
+        {
+          "icon": "terminal",
+          "accentClass": "a2",
+          "title": "Command Line & Linux Basics",
+          "topics": [
+            "Shell navigation and file management",
+            "Text processing: grep, sed, awk",
+            "Cron jobs and scheduling",
+            "SSH and remote server management",
+            "Environment variables and PATH"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Linux Command Line Basics",
+              "meta": "Codecademy · Free · Interactive terminal exercises",
+              "url": "https://www.codecademy.com/learn/learn-the-command-line"
+            },
+            {
+              "icon": "play",
+              "name": "Linux Command Line Tutorial for Beginners",
+              "meta": "Programming with Mosh · YouTube · Free · Comprehensive 4-hour tutorial",
+              "url": "https://www.youtube.com/watch?v=oxuTx7nV07I"
+            },
+            {
+              "icon": "book-open",
+              "name": "The Linux Command Line",
+              "meta": "William Shotts · Full book free online · The definitive CLI reference",
+              "url": "https://linuxcommand.org/tlcl.php"
+            },
+            {
+              "icon": "book-open",
+              "name": "Linux Survival",
+              "meta": "linuxsurvival.com · Free · Interactive Linux tutorial in the browser",
+              "url": "https://linuxsurvival.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "MIT Missing Semester",
+              "meta": "MIT · Free · CLI tools, version control, debugging — the CS education you missed",
+              "url": "https://missing.csail.mit.edu"
+            }
+          ]
+        },
+        {
+          "icon": "globe",
+          "accentClass": "a2",
+          "title": "Environmental Data Sources",
+          "topics": [
+            "NOAA Climate Data Online (CDO)",
+            "NASA Earthdata and MODIS datasets",
+            "EPA Air Quality and Toxics data",
+            "World Bank Climate Change Indicators",
+            "Kaggle climate and environmental datasets",
+            "API access patterns for government data"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "NOAA Climate Data Online",
+              "meta": "noaa.gov · Free · Historical weather data for any US location",
+              "url": "https://www.ncdc.noaa.gov/cdo-web/"
+            },
+            {
+              "icon": "book-open",
+              "name": "NASA Earthdata",
+              "meta": "earthdata.nasa.gov · Free · Satellite data, climate models, Earth science data",
+              "url": "https://earthdata.nasa.gov"
+            },
+            {
+              "icon": "book-open",
+              "name": "EPA Envirofacts",
+              "meta": "epa.gov · Free · Air, water, land, and chemicals data via APIs",
+              "url": "https://enviro.epa.gov"
+            },
+            {
+              "icon": "book-open",
+              "name": "World Bank Climate Change Knowledge Portal",
+              "meta": "worldbank.org · Free · Country-level climate data and projections",
+              "url": "https://climateknowledgeportal.worldbank.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "Kaggle Climate Datasets",
+              "meta": "kaggle.com · Free · Curated datasets for analysis and ML projects",
+              "url": "https://www.kaggle.com/search?q=climate+change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "02",
+      "badge": "badge-core",
+      "badgeLabel": "Core Analysis",
+      "title": "Environmental Data Analysis & Visualization",
+      "duration": "Months 2\u20134",
+      "modules": [
+        {
+          "icon": "bar-chart-3",
+          "accentClass": "a2",
+          "title": "Statistical Analysis for Climate Data",
+          "topics": [
+            "Descriptive statistics for environmental data",
+            "Hypothesis testing and confidence intervals",
+            "Correlation and regression analysis",
+            "ANOVA for environmental comparisons",
+            "Non-parametric methods for skewed data",
+            "Statistical significance in climate trends"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Statistics with Python Specialization",
+              "meta": "University of Michigan · Coursera audit free · 3-course series on statistics with Python",
+              "url": "https://www.coursera.org/specializations/statistics-with-python"
+            },
+            {
+              "icon": "book-open",
+              "name": "Think Stats",
+              "meta": "Allen Downey · Full book free · Statistics for programmers, practical examples",
+              "url": "https://greenteapress.com/thinkstats2/html/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Scipy Stats Documentation",
+              "meta": "scipy.org · Free · Reference for statistical functions in Python",
+              "url": "https://docs.scipy.org/doc/scipy/reference/stats.html"
+            },
+            {
+              "icon": "play",
+              "name": "StatQuest Statistics Fundamentals",
+              "meta": "Josh Starmer · YouTube · Free · Best visual explanations of statistics concepts",
+              "url": "https://www.youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9"
+            },
+            {
+              "icon": "book-open",
+              "name": "Practical Statistics for Data Scientists",
+              "meta": "O'Reilly · Free chapter samples · Focus on concepts relevant to data science",
+              "url": "https://www.oreilly.com/library/view/practical-statistics-for/9781492072935/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Introduction to Probability and Statistics Using Python",
+              "meta": "Liang Yann · Free · Applied probability and statistics with Python examples",
+              "url": "http://python-for-scientists.org"
+            }
+          ]
+        },
+        {
+          "icon": "palette",
+          "accentClass": "a2",
+          "title": "Matplotlib & Seaborn",
+          "topics": [
+            "Figure, axes, and subplots",
+            "Line plots, scatter plots, bar charts",
+            "Heatmaps and correlation matrices",
+            "Publication-quality styling",
+            "Seaborn statistical visualizations",
+            "Saving and exporting figures"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Matplotlib Official Tutorials",
+              "meta": "matplotlib.org · Free · Comprehensive tutorials and examples gallery",
+              "url": "https://matplotlib.org/stable/tutorials/index.html"
+            },
+            {
+              "icon": "book-open",
+              "name": "Python Data Visualization with Matplotlib",
+              "meta": "Real Python · Free article · Step-by-step guide to creating charts",
+              "url": "https://realpython.com/python-matplotlib-guide/"
+            },
+            {
+              "icon": "play",
+              "name": "Matplotlib Tutorial (Python)",
+              "meta": "Corey Schafer · YouTube · Free · Best Matplotlib video tutorial series",
+              "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTsnMWsKU0M4g7W0YHqBz0y0"
+            },
+            {
+              "icon": "book-open",
+              "name": "Seaborn Official Tutorial",
+              "meta": "seaborn.pydata.org · Free · Statistical data visualization with Python",
+              "url": "https://seaborn.pydata.org/tutorial.html"
+            },
+            {
+              "icon": "book-open",
+              "name": "From Data to Viz",
+              "meta": "data-to-viz.com · Free · Chart selection guide based on data type",
+              "url": "https://www.data-to-viz.com"
+            }
+          ]
+        },
+        {
+          "icon": "activity",
+          "accentClass": "a1",
+          "title": "Interactive Dashboards with Plotly",
+          "topics": [
+            "Plotly Express for quick charts",
+            "Interactive scatter, bar, and map plots",
+            "Dash framework for web dashboards",
+            "Callbacks and interactivity",
+            "Deploying Dash apps",
+            "Climate dashboard design patterns"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Plotly Official Documentation",
+              "meta": "plotly.com · Free · Interactive chart tutorials and Dash framework guides",
+              "url": "https://plotly.com/python/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Dash Official Tutorials",
+              "meta": "dash.plotly.com · Free · Step-by-step Dash app tutorials",
+              "url": "https://dash.plotly.com"
+            },
+            {
+              "icon": "play",
+              "name": "Dash Web App Tutorial",
+              "meta": "Chillims · YouTube · Free · Build a complete Dash dashboard from scratch",
+              "url": "https://www.youtube.com/watch?v=b-PQqf0IbTQ"
+            },
+            {
+              "icon": "book-open",
+              "name": "Data Visualization with Python",
+              "meta": "IBM Cognitive Class · Free with certificate · Matplotlib, Seaborn, Folium, Dash",
+              "url": "https://cognitiveclass.ai/courses/data-visualization-with-python"
+            },
+            {
+              "icon": "book-open",
+              "name": "Panel by HoloViz",
+              "meta": "panel.holoviz.org · Free · Build dashboards from any Python plotting library",
+              "url": "https://panel.holoviz.org"
+            }
+          ]
+        },
+        {
+          "icon": "map",
+          "accentClass": "a3",
+          "title": "Geospatial Data with GeoPandas",
+          "topics": [
+            "Shapefiles and GeoDataFrames",
+            "Coordinate reference systems (CRS)",
+            "Spatial joins and overlays",
+            "Choropleth and bubble maps",
+            "Geocoding and reverse geocoding",
+            "Working with raster data"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "GeoPandas Official Documentation",
+              "meta": "geopandas.org · Free · Official getting started and user guide",
+              "url": "https://geopandas.org/en/stable/getting_started.html"
+            },
+            {
+              "icon": "play",
+              "name": "Geospatial Analysis with Python",
+              "meta": "Andy Hudson · YouTube · Free · GeoPandas tutorial series",
+              "url": "https://www.youtube.com/playlist?list=PLbDE7VSuKlWdpYrH3L3e8dQhEJFf0bT3I"
+            },
+            {
+              "icon": "book-open",
+              "name": "Geographic Data Science with Python",
+              "meta": "Sergio Rey · Free online textbook · Covers spatial analysis, point patterns, geovisualization",
+              "url": "https://geods.gis.ucsb.edu"
+            },
+            {
+              "icon": "book-open",
+              "name": "Python for Geospatial Data Analysis",
+              "meta": "Real Python · Free article · Practical GeoPandas workflows",
+              "url": "https://realpython.com/python-gis-geospatial/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Automating GIS Processes",
+              "meta": "University of Helsinki · Free · Python-based GIS course with exercises",
+              "url": "https://autogis-site.readthedocs.io"
+            }
+          ]
+        },
+        {
+          "icon": "trending-up",
+          "accentClass": "a2",
+          "title": "Time Series Analysis",
+          "topics": [
+            "Time series decomposition",
+            "Trend and seasonality detection",
+            "Moving averages and smoothing",
+            "ARIMA and Prophet forecasting",
+            "Cross-correlation in climate data",
+            "Anomaly detection in environmental signals"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Facebook Prophet Documentation",
+              "meta": "facebook.github.io · Free · Official Prophet forecasting tutorial",
+              "url": "https://facebook.github.io/prophet/docs/quick_start.html"
+            },
+            {
+              "icon": "book-open",
+              "name": "Introduction to Time Series Analysis",
+              "meta": "Quantitative Economics with Python · Free · University-level time series with code",
+              "url": "https://quantecon.github.io/QuantEcon/time_series.html"
+            },
+            {
+              "icon": "play",
+              "name": "Time Series Analysis Tutorial",
+              "meta": "Rob Mulla · YouTube · Free · Practical time series with Python walkthrough",
+              "url": "https://www.youtube.com/watch?v=red_zELp7aQ"
+            },
+            {
+              "icon": "book-open",
+              "name": "Statsmodels Time Series Analysis",
+              "meta": "statsmodels.org · Free · ARIMA, ExponentialSmoothing, seasonal decomposition",
+              "url": "https://www.statsmodels.org/stable/tsa.html"
+            },
+            {
+              "icon": "book-open",
+              "name": "Time Series Analysis with Python",
+              "meta": "Machine Learning Mastery · Free article · Practical guide to time series in Python",
+              "url": "https://machinelearningmastery.com/time-series-analysis-in-python/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "03",
+      "badge": "badge-advanced",
+      "badgeLabel": "GIS & Remote Sensing",
+      "title": "Geospatial Analysis & Earth Observation",
+      "duration": "Months 4\u20136",
+      "modules": [
+        {
+          "icon": "layers",
+          "accentClass": "a2",
+          "title": "QGIS Fundamentals",
+          "topics": [
+            "QGIS installation and interface",
+            "Vector data: shapefiles, GeoJSON, editing",
+            "Raster data: GeoTIFF, NDVI calculation",
+            "Digitization and georeferencing",
+            "Spatial analysis: buffer, intersect, clip",
+            "Map layout and print composer"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Introduction to QGIS (Full Course)",
+              "meta": "Spatial Thoughts · YouTube · Free · Comprehensive QGIS tutorial with data package",
+              "url": "https://www.youtube.com/playlist?list=PL7KPy8wDqazFahvJrTi6PMH0gvCkkbgqK"
+            },
+            {
+              "icon": "book-open",
+              "name": "QGIS Free Certification",
+              "meta": "Modern GIS · Free certification · Covers QGIS basics through spatial analysis",
+              "url": "https://www.moderngis.com/qgis-certification"
+            },
+            {
+              "icon": "book-open",
+              "name": "QGIS Training Manual",
+              "meta": "docs.qgis.org · Free · Official QGIS documentation and exercises",
+              "url": "https://docs.qgis.org/3.34/en/docs/training_manual/"
+            },
+            {
+              "icon": "book-open",
+              "name": "GIS, Mapping, and Spatial Analysis",
+              "meta": "UC Davis · Coursera audit free · 4-course series on spatial analysis",
+              "url": "https://www.coursera.org/specializations/gis"
+            },
+            {
+              "icon": "book-open",
+              "name": "QGIS For Beginners",
+              "meta": "Udemy · Free · Vector data, raster data, georeferencing, ~1.5 hrs",
+              "url": "https://www.udemy.com/course/qgis-for-beginners/"
+            },
+            {
+              "icon": "book-open",
+              "name": "A Gentle Introduction to GIS",
+              "meta": "QGIS.org · Free · Conceptual introduction to GIS concepts",
+              "url": "https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/"
+            }
+          ]
+        },
+        {
+          "icon": "telescope",
+          "accentClass": "a2",
+          "title": "Satellite Imagery Analysis",
+          "topics": [
+            "Landsat and Sentinel missions",
+            "Spectral bands and indices (NDVI, NDWI)",
+            "Cloud masking and atmospheric correction",
+            "Land cover classification",
+            "Change detection techniques",
+            "Image compositing and mosaicking"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "USGS EarthExplorer",
+              "meta": "earthexplorer.usgs.gov · Free · Download Landsat, Sentinel, and other satellite data",
+              "url": "https://earthexplorer.usgs.gov"
+            },
+            {
+              "icon": "book-open",
+              "name": "Copernicus Open Access Hub",
+              "meta": "scihub.copernicus.eu · Free · Sentinel satellite data access",
+              "url": "https://scihub.copernicus.eu"
+            },
+            {
+              "icon": "play",
+              "name": "Remote Sensing with Python",
+              "meta": "Python Remote Sensing · YouTube · Free · Practical satellite data analysis",
+              "url": "https://www.youtube.com/playlist?list=PL46n2og49fLRbEHqz0YbUxQ1rJbWtT-8"
+            },
+            {
+              "icon": "book-open",
+              "name": "Remote Sensing of Wildfires",
+              "meta": "edX · University of Alaska · Free audit · Applied remote sensing for monitoring",
+              "url": "https://www.edx.org/course/remote-sensing-of-wildfires"
+            },
+            {
+              "icon": "book-open",
+              "name": "Spectral Python (SPy)",
+              "meta": "spectralpython.github.io · Free · Python library for hyperspectral image analysis",
+              "url": "http://www.spectralpython.net"
+            }
+          ]
+        },
+        {
+          "icon": "cloud",
+          "accentClass": "at",
+          "title": "Google Earth Engine",
+          "topics": [
+            "Earth Engine JavaScript API",
+            "Image collections and compositing",
+            "Cloud masking with QA bands",
+            "NDVI time series extraction",
+            "Exporting results to Drive",
+            "Mapping functions over collections"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Google Earth Engine Documentation",
+              "meta": "developers.google.com · Free · Official GEE guides and API reference",
+              "url": "https://developers.google.com/earth-engine"
+            },
+            {
+              "icon": "play",
+              "name": "Google Earth Engine Tutorial",
+              "meta": "Google Developers · YouTube · Free · Official GEE video series",
+              "url": "https://www.youtube.com/playlist?list=PL3SjyMFy73jPxeyzr0hRQ0H5E1YpMjyWq"
+            },
+            {
+              "icon": "book-open",
+              "name": "Cloud-Based Remote Sensing with GEE",
+              "meta": "Springer · Free chapter samples · Comprehensive GEE reference",
+              "url": "https://link.springer.com/book/10.1007/978-3-030-86036-9"
+            },
+            {
+              "icon": "book-open",
+              "name": "GEE Community Catalog",
+              "meta": "developers.google.com · Free · User-contributed datasets and scripts",
+              "url": "https://developers.google.com/earth-engine/datasets"
+            },
+            {
+              "icon": "book-open",
+              "name": "Awesome Google Earth Engine",
+              "meta": "GitHub · Free · Curated list of GEE resources, tutorials, and papers",
+              "url": "https://github.com/opengeos/awesome-google-earth-engine"
+            }
+          ]
+        },
+        {
+          "icon": "target",
+          "accentClass": "a2",
+          "title": "Spatial Analysis & Modeling",
+          "topics": [
+            "Buffer and overlay analysis",
+            "Spatial interpolation (IDW, Kriging)",
+            "Network analysis and routing",
+            "Spatial autocorrelation (Moran's I)",
+            "Hot spot analysis (Getis-Ord Gi*)",
+            "Agent-based spatial modeling"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "PySAL Documentation",
+              "meta": "pysal.org · Free · Python Spatial Analysis Library tutorials",
+              "url": "https://pysal.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "Spatial Analysis with Python",
+              "meta": "GeoPython · Free · Workshops on spatial analysis techniques",
+              "url": "https://geopython.github.io"
+            },
+            {
+              "icon": "play",
+              "name": "Spatial Statistics with Python",
+              "meta": "PySAL · YouTube · Free · Workshop recordings on spatial analysis",
+              "url": "https://www.youtube.com/c/PySAL"
+            },
+            {
+              "icon": "book-open",
+              "name": "Introduction to Spatial Data Analysis",
+              "meta": "Geocomputation with R · Free online book · Concepts transferable to Python",
+              "url": "https://r.geocompx.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "GeoDa Documentation",
+              "meta": "geodacenter.github.io · Free · Spatial data analysis software with tutorials",
+              "url": "https://geodacenter.github.io"
+            }
+          ]
+        },
+        {
+          "icon": "pen-tool",
+          "accentClass": "a2",
+          "title": "Cartography & Map Design",
+          "topics": [
+            "Color theory for maps",
+            "Typography and labeling",
+            "Thematic map types",
+            "Web mapping with Folium",
+            "Interactive Leaflet maps",
+            "Map storytelling techniques"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Folium Documentation",
+              "meta": "python-visualization.github.io · Free · Python library for Leaflet maps",
+              "url": "https://python-visualization.github.io/folium/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Python Geospatial Development",
+              "meta": "Free online reference · Web mapping with Python and Leaflet",
+              "url": "https://www.packtpub.com/free-ebooks/python-geospatial-development"
+            },
+            {
+              "icon": "book-open",
+              "name": "Maptime Tutorials",
+              "meta": "maptime.io · Free · Beginner-friendly mapping workshops",
+              "url": "https://maptime.io"
+            },
+            {
+              "icon": "book-open",
+              "name": "Cartography Guide",
+              "meta": "Axismaps · Free · Principles of map design and visualization",
+              "url": "https://.axismaps.com/guide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "04",
+      "badge": "badge-specialist",
+      "badgeLabel": "IoT & Sensors",
+      "title": "Environmental IoT & Edge Computing",
+      "duration": "Months 6\u20138",
+      "modules": [
+        {
+          "icon": "cpu",
+          "accentClass": "a2",
+          "title": "IoT Fundamentals & Architecture",
+          "topics": [
+            "IoT system architecture",
+            "Communication protocols: MQTT, CoAP, HTTP",
+            "Edge vs cloud computing",
+            "IoT security considerations",
+            "Device management and provisioning",
+            "IoT data pipelines"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Introduction to the Internet of Things (IoT)",
+              "meta": "Curtin University · edX free audit · IoT concepts, device communication",
+              "url": "https://www.edx.org/course/introduction-to-the-internet-of-things-iot"
+            },
+            {
+              "icon": "book-open",
+              "name": "Introduction to IoT",
+              "meta": "Cisco Networking Academy · Coursera audit free · Digital transformation and IoT",
+              "url": "https://www.coursera.org/learn/cisco-introduction-to-iot"
+            },
+            {
+              "icon": "book-open",
+              "name": "IoT Overview (IOTOPENEU E1)",
+              "meta": "IoT-Open EU · Free self-study MOOC · IoT definition, enabling technologies",
+              "url": "https://www.futurelearn.com/courses/iot-overview"
+            },
+            {
+              "icon": "book-open",
+              "name": "Introduction to IoT and Embedded Systems",
+              "meta": "UC Irvine · Coursera audit free · IoT devices, hardware/software components",
+              "url": "https://www.coursera.org/learn/introduction-to-iot"
+            },
+            {
+              "icon": "book-open",
+              "name": "MQTT Essentials",
+              "meta": "HiveMQ · Free · Complete MQTT protocol guide for IoT developers",
+              "url": "https://www.hivemq.com/mqtt/mqtt-essentials/"
+            }
+          ]
+        },
+        {
+          "icon": "wrench",
+          "accentClass": "a2",
+          "title": "Arduino & Raspberry Pi for Sensors",
+          "topics": [
+            "Arduino hardware and IDE setup",
+            "GPIO programming and digital I/O",
+            "Analog sensors and ADC",
+            "Raspberry Pi GPIO with Python",
+            "MicroPython on microcontrollers",
+            "Sensor wiring and circuit design"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Arduino Official Documentation",
+              "meta": "docs.arduino.cc · Free · Official tutorials, examples, and reference",
+              "url": "https://docs.arduino.cc"
+            },
+            {
+              "icon": "play",
+              "name": "Arduino Tutorial for Beginners",
+              "meta": "Paul McWhorter · YouTube · Free · Complete Arduino beginner series",
+              "url": "https://www.youtube.com/playlist?list=PLGsM__fVLbMHGk7ZGEmqoqKxLmfhJE9sY"
+            },
+            {
+              "icon": "book-open",
+              "name": "Raspberry Pi Documentation",
+              "meta": "raspberrypi.com · Free · Official GPIO and Python guides",
+              "url": "https://www.raspberrypi.com/documentation/"
+            },
+            {
+              "icon": "book-open",
+              "name": "MicroPython Documentation",
+              "meta": "micropython.org · Free · Python for microcontrollers reference",
+              "url": "https://docs.micropython.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "IoT Programming and Frameworks",
+              "meta": "IoT-Open EU · Free · Arduino, MicroPython, C++ for embedded",
+              "url": "https://www.futurelearn.com/courses/iot-programming"
+            }
+          ]
+        },
+        {
+          "icon": "wind",
+          "accentClass": "a2",
+          "title": "Air & Water Quality Monitoring",
+          "topics": [
+            "PM2.5 and PM10 particulate sensors",
+            "CO2 and VOC sensors (SCD30, BME680)",
+            "Water quality: pH, turbidity, dissolved oxygen",
+            "Sensor calibration techniques",
+            "Data logging and time stamping",
+            "Building a monitoring station"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Open Air Quality Project",
+              "meta": "openairlabs.org · Free · Open-source air quality monitoring community",
+              "url": "https://openairlabs.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "AirGradient DIY Sensor",
+              "meta": "airgradient.com · Free · Open-source air quality monitor build guide",
+              "url": "https://www.airgradient.com/open-airgradient/diy-guide/"
+            },
+            {
+              "icon": "book-open",
+              "name": "PurpleAir Sensor Network",
+              "meta": "purpleair.com · Free · Community-driven air quality monitoring",
+              "url": "https://www.purpleair.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "Water Quality Monitoring Guide",
+              "meta": "openwaterproject.io · Free · Open-source water quality monitoring tools",
+              "url": "https://www.openwaterproject.io"
+            },
+            {
+              "icon": "book-open",
+              "name": "Adafruit Sensor Guides",
+              "meta": "learn.adafruit.com · Free · Comprehensive sensor tutorials for Arduino and Pi",
+              "url": "https://learn.adafruit.com/category/sensors"
+            }
+          ]
+        },
+        {
+          "icon": "server",
+          "accentClass": "at",
+          "title": "Edge Computing & Data Pipelines",
+          "topics": [
+            "Edge ML with TensorFlow Lite",
+            "On-device inference and filtering",
+            "Data streaming with MQTT and Kafka",
+            "Edge-to-cloud data pipelines",
+            "Time series databases (InfluxDB)",
+            "Real-time alerting and dashboards"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "TensorFlow Lite for Microcontrollers",
+              "meta": "tensorflow.org · Free · Official TFLite Micro documentation",
+              "url": "https://www.tensorflow.org/lite/microcontrollers"
+            },
+            {
+              "icon": "book-open",
+              "name": "InfluxDB Documentation",
+              "meta": "docs.influxdata.com · Free · Time series database tutorials",
+              "url": "https://docs.influxdata.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "MQTT with Python",
+              "meta": "Eclipse Paho · Free · MQTT client library documentation",
+              "url": "https://pypi.org/project/paho-mqtt/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Edge AI Foundations",
+              "meta": "Coursera · Audit free · Edge computing and on-device ML",
+              "url": "https://www.coursera.org/learn/edge-ai-fundamentals"
+            },
+            {
+              "icon": "book-open",
+              "name": "Grafana Tutorials",
+              "meta": "grafana.com · Free · Build dashboards for IoT sensor data",
+              "url": "https://grafana.com/tutorials/"
+            }
+          ]
+        },
+        {
+          "icon": "database",
+          "accentClass": "a2",
+          "title": "IoT Data Storage & APIs",
+          "topics": [
+            "TimescaleDB for time series",
+            "REST API design for IoT data",
+            "MQTT broker setup (Mosquitto)",
+            "Data retention and downsampling",
+            "Building a simple IoT dashboard",
+            "Securing IoT APIs"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "TimescaleDB Documentation",
+              "meta": "docs.timescale.com · Free · Time series on PostgreSQL tutorials",
+              "url": "https://docs.timescale.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "Mosquitto MQTT Broker",
+              "meta": "mosquitto.org · Free · Lightweight MQTT broker setup guide",
+              "url": "https://mosquitto.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "FastAPI Documentation",
+              "meta": "fastapi.tiangolo.com · Free · Modern Python API framework",
+              "url": "https://fastapi.tiangolo.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "AWS IoT: Developing and Deploying",
+              "meta": "edX · Free audit · 4 weeks, IoT deployment on AWS with projects",
+              "url": "https://www.edx.org/course/aws-iot-developing-and-deploying"
+            },
+            {
+              "icon": "book-open",
+              "name": "Grafana IoT Dashboard Tutorial",
+              "meta": "grafana.com · Free · Build a complete IoT monitoring dashboard",
+              "url": "https://grafana.com/tutorials/iot-data-monitoring/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "05",
+      "badge": "badge-practice",
+      "badgeLabel": "Carbon & LCA",
+      "title": "Carbon Accounting & Life Cycle Assessment",
+      "duration": "Months 8\u201310",
+      "modules": [
+        {
+          "icon": "factory",
+          "accentClass": "a2",
+          "title": "GHG Protocol & Emissions Scopes",
+          "topics": [
+            "GHG Protocol Corporate Standard",
+            "Scope 1: Direct emissions",
+            "Scope 2: Indirect energy emissions",
+            "Scope 3: Value chain emissions",
+            "Emission factors and databases",
+            "Corporate carbon footprint calculation"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "GHG Protocol Corporate Standard",
+              "meta": "ghgprotocol.org · Free · The foundational framework for carbon accounting",
+              "url": "https://ghgprotocol.org/corporate-standard"
+            },
+            {
+              "icon": "book-open",
+              "name": "Carbon Accounting Essentials",
+              "meta": "Persefoni Academy · Free · GHG Protocol, emissions calculation basics",
+              "url": "https://www.persefoni.com/academy"
+            },
+            {
+              "icon": "book-open",
+              "name": "Scope 3 101",
+              "meta": "Persefoni Academy · Free · Value-chain emissions and data collection",
+              "url": "https://www.persefoni.com/academy/scope-3-101"
+            },
+            {
+              "icon": "book-open",
+              "name": "EPA Greenhouse Gas Equivalencies Calculator",
+              "meta": "epa.gov · Free · Convert emissions into relatable equivalents",
+              "url": "https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator"
+            },
+            {
+              "icon": "book-open",
+              "name": "Science Based Targets initiative (SBTi)",
+              "meta": "sciencebasedtargets.org · Free · Corporate climate target setting guidance",
+              "url": "https://sciencebasedtargets.org"
+            }
+          ]
+        },
+        {
+          "icon": "recycle",
+          "accentClass": "ag",
+          "title": "openLCA Software Mastery",
+          "topics": [
+            "openLCA installation and interface",
+            "Product system setup",
+            "LCIA method selection (ReCiPe, CML)",
+            "Ecoinvent and other databases",
+            "Contribution and sensitivity analysis",
+            "Reporting and visualization"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "openLCA Website",
+              "meta": "openlca.org · Free, open-source · Professional-grade LCA software",
+              "url": "https://www.openlca.org"
+            },
+            {
+              "icon": "play",
+              "name": "openLCA Tutorials",
+              "meta": "GreenDelta · YouTube · Free · Official openLCA video tutorials",
+              "url": "https://www.youtube.com/c/GreenDeltaConsulting"
+            },
+            {
+              "icon": "book-open",
+              "name": "openLCA Manual",
+              "meta": "manual.openlca.org · Free · Comprehensive official documentation",
+              "url": "https://manual.openlca.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "LCA Beginner Course",
+              "meta": "Ecochain Academy · Free · 3-4 hrs, 7 modules, free certificate",
+              "url": "https://academy.ecochain.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "Getting Started with Product Footprinting",
+              "meta": "Ecochain Academy · Free · Practical product footprinting",
+              "url": "https://academy.ecochain.com/courses"
+            }
+          ]
+        },
+        {
+          "icon": "link",
+          "accentClass": "a2",
+          "title": "Supply Chain Carbon Tracking",
+          "topics": [
+            "Scope 3 categories and calculation methods",
+            "Supplier data collection and engagement",
+            "Ecoinvent database for background data",
+            "Activity-based vs spend-based accounting",
+            "Product carbon footprint (PCF)",
+            "Supply chain decarbonization levers"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "GHG Protocol Scope 3 Standard",
+              "meta": "ghgprotocol.org · Free · Comprehensive Scope 3 accounting guidance",
+              "url": "https://ghgprotocol.org/scope-3-standard"
+            },
+            {
+              "icon": "book-open",
+              "name": "WBCSD Pathfinder Framework",
+              "meta": "wbcsd.org · Free · Product-level footprinting methodology",
+              "url": "https://wbcsd.org/publications/pathfinder-framework"
+            },
+            {
+              "icon": "book-open",
+              "name": "Cool Farm Tool",
+              "meta": "coolfarmtool.org · Free · Agricultural supply chain carbon calculator",
+              "url": "https://coolfarmtool.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "Supply Chain Decarbonization Guide",
+              "meta": "CDP · Free · Corporate supply chain emissions reporting",
+              "url": "https://www.cdp.net/en/supply-chain"
+            },
+            {
+              "icon": "book-open",
+              "name": "Ecoinvent Database",
+              "meta": "ecoinvent.org · Free documentation · Life cycle inventory database",
+              "url": "https://ecoinvent.org"
+            }
+          ]
+        },
+        {
+          "icon": "trending-down",
+          "accentClass": "ag",
+          "title": "Decarbonization Strategies",
+          "topics": [
+            "Setting science-based reduction targets",
+            "Net-zero pathways and timelines",
+            "Carbon offset quality assessment",
+            "Renewable energy procurement",
+            "Energy efficiency improvements",
+            "Circular economy principles"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "SBTi Target Validation",
+              "meta": "sciencebasedtargets.org · Free · How to set and validate climate targets",
+              "url": "https://sciencebasedtargets.org/companies-taking-action"
+            },
+            {
+              "icon": "book-open",
+              "name": "Decarbonization 101",
+              "meta": "Persefoni Academy · Free · Corporate decarbonization strategies and tools",
+              "url": "https://www.persefoni.com/academy/decarbonization-101"
+            },
+            {
+              "icon": "book-open",
+              "name": "Carbon Direct Resources",
+              "meta": "carbondirect.co · Free guides · Technical resources on carbon removal",
+              "url": "https://carbondirect.co/resources"
+            },
+            {
+              "icon": "book-open",
+              "name": "Circular Economy Guide",
+              "meta": "Ellen MacArthur Foundation · Free · Principles and case studies",
+              "url": "https://ellenmacarthurfoundation.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "RE100 Renewable Energy Guide",
+              "meta": "there100.org · Free · Corporate renewable energy procurement best practices",
+              "url": "https://www.there100.org"
+            }
+          ]
+        },
+        {
+          "icon": "file-text",
+          "accentClass": "a2",
+          "title": "Sustainability Reporting (CSRD/ESRS)",
+          "topics": [
+            "EU Corporate Sustainability Reporting Directive",
+            "European Sustainability Reporting Standards (ESRS)",
+            "Double materiality assessment",
+            "Climate-related financial disclosures",
+            "TCFD recommendations",
+            "CDP disclosure framework"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "CSRD Fundamentals",
+              "meta": "Sustainability Reporting Institute · Free · 1 hour, self-paced, certificate",
+              "url": "https://sustainabilityreportinginstitute.org/courses"
+            },
+            {
+              "icon": "book-open",
+              "name": "ESRS Standards",
+              "meta": "frreporting.com · Free · Full text of European sustainability standards",
+              "url": "https://www.frreporting.com/esrs"
+            },
+            {
+              "icon": "book-open",
+              "name": "TCFD Knowledge Hub",
+              "meta": "fsb-tcfd.org · Free · Climate-related financial disclosure guidance",
+              "url": "https://www.fsb-tcfd.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "CDP Reporting Platform",
+              "meta": "cdp.net · Free · Corporate environmental disclosure framework",
+              "url": "https://www.cdp.net"
+            },
+            {
+              "icon": "book-open",
+              "name": "GRI Standards",
+              "meta": "globalreporting.org · Free · Global Reporting Initiative sustainability standards",
+              "url": "https://www.globalreporting.org/standards"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "06",
+      "badge": "badge-advanced",
+      "badgeLabel": "Energy Systems",
+      "title": "Energy Modeling & Grid Optimization",
+      "duration": "Months 10\u201312",
+      "modules": [
+        {
+          "icon": "zap",
+          "accentClass": "a2",
+          "title": "Renewable Energy Technologies",
+          "topics": [
+            "Solar PV: physics, efficiency, economics",
+            "Wind energy: turbine design, capacity factors",
+            "Hydroelectric and geothermal basics",
+            "Energy conversion and storage",
+            "Levelized Cost of Energy (LCOE)",
+            "Grid parity and market dynamics"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Renewable Energy Technology Fundamentals",
+              "meta": "University of Colorado Boulder · Coursera audit free · Solar, wind, renewables",
+              "url": "https://www.coursera.org/learn/renewable-energy"
+            },
+            {
+              "icon": "book-open",
+              "name": "Solar Energy Basics",
+              "meta": "SUNY · Coursera audit free · PV systems, power electronics",
+              "url": "https://www.coursera.org/learn/solar-energy"
+            },
+            {
+              "icon": "book-open",
+              "name": "Exploring Renewable Energy Schemes",
+              "meta": "Open University · Coursera audit free · Off-grid PV, wind, hydroelectric",
+              "url": "https://www.coursera.org/learn/renewable-energy-schemes"
+            },
+            {
+              "icon": "play",
+              "name": "Solar Energy Explained",
+              "meta": "Undecided with Matt Ferrell · YouTube · Free · Solar and renewable tech deep dives",
+              "url": "https://www.youtube.com/c/UndecidedMFerrell"
+            },
+            {
+              "icon": "book-open",
+              "name": "NREL Learning Resources",
+              "meta": "nrel.gov · Free · National Renewable Energy Lab educational materials",
+              "url": "https://www.nrel.gov/education.html"
+            }
+          ]
+        },
+        {
+          "icon": "battery-charging",
+          "accentClass": "a2",
+          "title": "HOMER Energy Modeling",
+          "topics": [
+            "HOMER Pro interface and workflow",
+            "Microgrid component modeling",
+            "Load and resource definition",
+            "Storage optimization sizing",
+            "Sensitivity and optimization analysis",
+            "Financial metrics: LCOE, NPV, IRR"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "HOMER Energy Website",
+              "meta": "homerenergy.com · Free trial · Industry-standard microgrid modeling",
+              "url": "https://www.homerenergy.com"
+            },
+            {
+              "icon": "play",
+              "name": "HOMER Pro Tutorial Series",
+              "meta": "UL HOMER · YouTube · Free · Official HOMER Pro video tutorials",
+              "url": "https://www.youtube.com/playlist?list=PLKbKqL3d0D3dD9cR4fHjL3m0X4qL5n0W"
+            },
+            {
+              "icon": "book-open",
+              "name": "HOMER Legacy (Free Version)",
+              "meta": "homerenergy.com · Free · Free version of HOMER for basic modeling",
+              "url": "https://www.homerenergy.com/products/homer-legacy.html"
+            },
+            {
+              "icon": "book-open",
+              "name": "HOMER Pro User Manual",
+              "meta": "homerenergy.com · Free · Complete HOMER Pro reference",
+              "url": "https://www.homerenergy.com/products/pro/manual/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Microgrid Design Toolkit",
+              "meta": "Sandia National Labs · Free · Microgrid design and optimization tools",
+              "url": "https://www.sandia.gov/microgrids"
+            }
+          ]
+        },
+        {
+          "icon": "sun",
+          "accentClass": "ag",
+          "title": "NREL SAM for Performance Modeling",
+          "topics": [
+            "SAM installation and interface",
+            "PV system performance modeling",
+            "Financial modeling: PPA, residential, commercial",
+            "Wind and geothermal performance",
+            "Battery storage modeling",
+            "Parametric analysis and exports"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "NREL System Advisor Model (SAM)",
+              "meta": "sam.nrel.gov · Free, open-source · Performance and financial modeling",
+              "url": "https://sam.nrel.gov"
+            },
+            {
+              "icon": "play",
+              "name": "SAM Tutorial Videos",
+              "meta": "NREL · YouTube · Free · Official SAM software tutorials",
+              "url": "https://www.youtube.com/playlist?list=PLKbKqL3d0D3dD9cR4fHjL3m0X4qL5n0W"
+            },
+            {
+              "icon": "book-open",
+              "name": "SAM Manual",
+              "meta": "sam.nrel.gov · Free · Complete SAM documentation and help",
+              "url": "https://sam.nrel.gov/software-development-kit-sdk/sam-manual.html"
+            },
+            {
+              "icon": "book-open",
+              "name": "Power Systems Simulation Onramp",
+              "meta": "MathWorks · Free certificate · Microgrid modeling, 1-2 hrs",
+              "url": "https://matlabacademy.mathworks.com/details/power-systems-simulation-onramp/gVh05vJ0qQ6z1hJ"
+            }
+          ]
+        },
+        {
+          "icon": "network",
+          "accentClass": "at",
+          "title": "Smart Grid & Demand Response",
+          "topics": [
+            "Grid architecture and components",
+            "Smart metering and AMI",
+            "Demand response programs",
+            "Vehicle-to-grid (V2G) technology",
+            "Grid stability and frequency regulation",
+            "Distributed energy resources (DER)"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Principles of Modeling for Electric Energy Systems",
+              "meta": "MITx · edX free audit · Smart grids, renewables integration",
+              "url": "https://www.edx.org/course/principles-of-modeling-simulation-and-control-for-electric-energy-systems"
+            },
+            {
+              "icon": "book-open",
+              "name": "Systems Thinking in Energy",
+              "meta": "MITx · edX free audit · Navigate costs, emissions, and impact",
+              "url": "https://www.edx.org/course/systems-thinking-in-energy"
+            },
+            {
+              "icon": "book-open",
+              "name": "IEEE Smart Grid Resources",
+              "meta": "ieee.org · Free articles · Research papers on smart grid technologies",
+              "url": "https://smartgrid.ieee.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "Grid Modernization Guide",
+              "meta": "DOE · Free · US Department of Energy grid modernization resources",
+              "url": "https://www.energy.gov/oe/grid-modernization"
+            },
+            {
+              "icon": "book-open",
+              "name": "OpenEI (Open Energy Information)",
+              "meta": "openei.org · Free · Wiki-based energy data and tools",
+              "url": "https://openei.org"
+            }
+          ]
+        },
+        {
+          "icon": "battery-charging",
+          "accentClass": "a2",
+          "title": "Energy Storage & Battery Tech",
+          "topics": [
+            "Lithium-ion battery fundamentals",
+            "Flow batteries and emerging chemistries",
+            "Hydrogen storage and fuel cells",
+            "Battery sizing algorithms",
+            "Degradation and cycle life modeling",
+            "Battery management systems"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Battery University",
+              "meta": "batteryuniversity.com · Free · Comprehensive battery technology reference",
+              "url": "https://batteryuniversity.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "MIT Energy Storage Course",
+              "meta": "MIT · Free online · Introduction to electrochemical energy storage",
+              "url": "https://ocw.mit.edu/courses/2-625-fundamentals-of-renewable-energy-spring-2015/"
+            },
+            {
+              "icon": "play",
+              "name": "Battery Technology Explained",
+              "meta": "Fully Charged Show · YouTube · Free · In-depth battery technology videos",
+              "url": "https://www.youtube.com/c/FullyChargedShow"
+            },
+            {
+              "icon": "book-open",
+              "name": "DOE Energy Storage Guide",
+              "meta": "energy.gov · Free · US DOE energy storage systems handbook",
+              "url": "https://www.energy.gov/oe/energy-storage"
+            },
+            {
+              "icon": "book-open",
+              "name": "NREL Battery Storage Research",
+              "meta": "nrel.gov · Free · Battery research, testing, and analysis",
+              "url": "https://www.nrel.gov/energy-storage.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "07",
+      "badge": "badge-specialist",
+      "badgeLabel": "Cloud & Scale",
+      "title": "Cloud Sustainability & Platform Engineering",
+      "duration": "Months 12\u201315",
+      "modules": [
+        {
+          "icon": "cloud",
+          "accentClass": "at",
+          "title": "Cloud Carbon Footprint Measurement",
+          "topics": [
+            "AWS Customer Carbon Footprint Tool",
+            "Google Cloud Carbon Footprint",
+            "Azure Emissions Impact Dashboard",
+            "Billing-to-CO2 mapping",
+            "Regional emissions factors",
+            "Cloud carbon reporting and visualization"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "AWS Customer Carbon Footprint Tool",
+              "meta": "aws.amazon.com · Free · Built-in AWS carbon emissions tracking",
+              "url": "https://aws.amazon.com/aws/carbon-footprint-tool/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Google Cloud Carbon Footprint",
+              "meta": "cloud.google.com · Free · Measure, report, and reduce cloud emissions",
+              "url": "https://cloud.google.com/carbon-footprint"
+            },
+            {
+              "icon": "book-open",
+              "name": "Azure Emissions Impact Dashboard",
+              "meta": "azure.microsoft.com · Free · Track emissions from Azure workloads",
+              "url": "https://azure.microsoft.com/en-us/solutions/green-cloud-sustainability/emissions-impact-dashboard"
+            },
+            {
+              "icon": "play",
+              "name": "Master Your AWS Carbon Footprint",
+              "meta": "AWS re:Invent · YouTube · Free · 16-min walkthrough of AWS carbon tool",
+              "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            },
+            {
+              "icon": "book-open",
+              "name": "Cloud Carbon Footprint (Open Source)",
+              "meta": "ThoughtWorks · GitHub · Free · Open-source multi-cloud carbon monitoring",
+              "url": "https://github.com/cloud-carbon-footprint/cloud-carbon-footprint"
+            }
+          ]
+        },
+        {
+          "icon": "server",
+          "accentClass": "a2",
+          "title": "Sustainable Cloud Architecture",
+          "topics": [
+            "AWS Well-Architected Sustainability Pillar",
+            "Right-sizing and auto-scaling",
+            "Spot instances and scheduling",
+            "Data storage tiering",
+            "Serverless for efficiency",
+            "Green coding practices"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "AWS Sustainability Pillar",
+              "meta": "docs.aws.amazon.com · Free · Well-Architected sustainability design principles",
+              "url": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/"
+            },
+            {
+              "icon": "book-open",
+              "name": "AWS Well-Architected Labs — Sustainability",
+              "meta": "wellarchitectedlabs.com · Free · Hands-on sustainability labs",
+              "url": "https://wellarchitectedlabs.com/reliability/300_labs/300_testing_for_sustainability/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Google Cloud Sustainability",
+              "meta": "cloud.google.com/sustainability · Free · Google's carbon-neutral cloud practices",
+              "url": "https://cloud.google.com/sustainability"
+            },
+            {
+              "icon": "book-open",
+              "name": "Sustainability Transformation with AWS",
+              "meta": "AWS Skill Builder · Free · AWS sustainability commitments and optimization",
+              "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/17696/sustainability-transformation-with-aws"
+            },
+            {
+              "icon": "book-open",
+              "name": "Green Software Foundation",
+              "meta": "greensoftware.foundation · Free · Principles and tools for sustainable software",
+              "url": "https://greensoftware.foundation"
+            }
+          ]
+        },
+        {
+          "icon": "database",
+          "accentClass": "a2",
+          "title": "Data Pipelines for Climate Tech",
+          "topics": [
+            "ETL for environmental data",
+            "Apache Airflow fundamentals",
+            "dbt for data transformation",
+            "Data quality and validation",
+            "Pipeline monitoring and alerting",
+            "Scaling data processing"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Apache Airflow Documentation",
+              "meta": "airflow.apache.org · Free · Official Airflow tutorials and DAG examples",
+              "url": "https://airflow.apache.org/docs/stable/tutorial/index.html"
+            },
+            {
+              "icon": "book-open",
+              "name": "dbt Documentation",
+              "meta": "docs.getdbt.com · Free · Data transformation with SQL tutorials",
+              "url": "https://docs.getdbt.com"
+            },
+            {
+              "icon": "play",
+              "name": "Apache Airflow Tutorial",
+              "meta": "Data Engineering · YouTube · Free · Complete Airflow beginner guide",
+              "url": "https://www.youtube.com/playlist?list=PL0VZvA0Qp5L4e2B5f0YQx5pQxQxQxQxQ"
+            },
+            {
+              "icon": "book-open",
+              "name": "Pandas ETL Patterns",
+              "meta": "Real Python · Free article · Common ETL patterns with Pandas",
+              "url": "https://realpython.com/python-data-cleaning-cleaning/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Great Expectations",
+              "meta": "greatexpectations.io · Free · Data quality and validation framework",
+              "url": "https://docs.greatexpectations.io"
+            }
+          ]
+        },
+        {
+          "icon": "code-2",
+          "accentClass": "a2",
+          "title": "Building Climate Tech APIs",
+          "topics": [
+            "FastAPI for REST APIs",
+            "API design best practices",
+            "Authentication and API keys",
+            "Rate limiting and caching",
+            "OpenAPI/Swagger documentation",
+            "Deploying APIs to cloud"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "FastAPI Documentation",
+              "meta": "fastapi.tiangolo.com · Free · Modern Python API framework tutorials",
+              "url": "https://fastapi.tiangolo.com/tutorial/"
+            },
+            {
+              "icon": "play",
+              "name": "FastAPI Full Course",
+              "meta": "freeCodeCamp · YouTube · Free · Complete FastAPI tutorial",
+              "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+            },
+            {
+              "icon": "book-open",
+              "name": "API Design Guide",
+              "meta": "apistudio.io · Free · RESTful API design best practices",
+              "url": "https://restfulapi.net"
+            },
+            {
+              "icon": "book-open",
+              "name": "OWASP API Security",
+              "meta": "owasp.org · Free · API security best practices",
+              "url": "https://owasp.org/www-project-api-security/"
+            },
+            {
+              "icon": "book-open",
+              "name": "Docker Documentation",
+              "meta": "docs.docker.com · Free · Containerize and deploy your APIs",
+              "url": "https://docs.docker.com/get-started/"
+            }
+          ]
+        },
+        {
+          "icon": "brain",
+          "accentClass": "ap",
+          "title": "MLOps for Environmental Models",
+          "topics": [
+            "Model versioning with MLflow",
+            "Experiment tracking and comparison",
+            "Model deployment patterns",
+            "Monitoring and drift detection",
+            "A/B testing for environmental models",
+            "Reproducible ML pipelines"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "MLflow Documentation",
+              "meta": "mlflow.org · Free · Open-source ML lifecycle management",
+              "url": "https://mlflow.org/docs/latest/index.html"
+            },
+            {
+              "icon": "play",
+              "name": "MLflow Tutorial",
+              "meta": "Data Instructor · YouTube · Free · MLflow end-to-end tutorial",
+              "url": "https://www.youtube.com/watch?v=WBsvN0KIPk8"
+            },
+            {
+              "icon": "book-open",
+              "name": "Made With ML",
+              "meta": "madewithml.com · Free · Learn MLOps by building production ML apps",
+              "url": "https://madewithml.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "Evidently AI Documentation",
+              "meta": "evidentlyai.com · Free · ML model monitoring and drift detection",
+              "url": "https://docs.evidentlyai.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "DVC (Data Version Control)",
+              "meta": "dvc.org · Free · Git-like versioning for ML datasets and models",
+              "url": "https://dvc.org"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "08",
+      "badge": "badge-mastery",
+      "badgeLabel": "Career Launch",
+      "title": "Portfolio, Certification & Career Prep",
+      "duration": "Months 15\u201316",
+      "modules": [
+        {
+          "icon": "target",
+          "accentClass": "ag",
+          "title": "Capstone Project Resources",
+          "topics": [
+            "End-to-end carbon footprint tracker SaaS",
+            "Environmental monitoring dashboard",
+            "Energy optimization platform",
+            "Open-source climate tools contribution"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Cloud Carbon Footprint (Open Source)",
+              "meta": "ThoughtWorks · GitHub · Free · Reference architecture for cloud emissions tracking",
+              "url": "https://github.com/cloud-carbon-footprint/cloud-carbon-footprint"
+            },
+            {
+              "icon": "book-open",
+              "name": "Open Climate Fix",
+              "meta": "openclimatefix.org · Free · Open-source solar PV and grid forecasting",
+              "url": "https://openclimatefix.org"
+            },
+            {
+              "icon": "book-open",
+              "name": "Climate Change AI",
+              "meta": "climatechange.ai · Free · Wiki, papers, and code for climate ML",
+              "url": "https://www.climatechange.ai"
+            },
+            {
+              "icon": "book-open",
+              "name": "Awesome Climate Tech",
+              "meta": "GitHub · Free · Curated list of climate tech projects and resources",
+              "url": "https://github.com/GlenTiki/awesome-climate-tech"
+            },
+            {
+              "icon": "book-open",
+              "name": "Project Drawdown",
+              "meta": "drawdown.org · Free · Science-based climate solutions library",
+              "url": "https://drawdown.org"
+            }
+          ]
+        },
+        {
+          "icon": "award",
+          "accentClass": "ag",
+          "title": "Sustainability Certifications",
+          "topics": [
+            "UN CC:Learn Climate Change Course",
+            "AWS Sustainability Specialty",
+            "GCP Climate Sustainability Badge",
+            "GRI Certified Sustainability Professional",
+            "CSRD Reporting Certification",
+            "Building a certification portfolio"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "UN CC:Learn Introductory e-Course on Climate Change",
+              "meta": "UN Climate Change · Free · Official UN course with certificate",
+              "url": "https://www.uncclearn.org/courses/introductory-e-course-on-climate-change"
+            },
+            {
+              "icon": "book-open",
+              "name": "Introduction to Sustainability",
+              "meta": "University of Illinois · Coursera audit free · 4.8 stars, 2.7K reviews",
+              "url": "https://www.coursera.org/learn/sustainability"
+            },
+            {
+              "icon": "book-open",
+              "name": "Climate Change: The Basics",
+              "meta": "Council on Foreign Relations · Coursera audit free · Shareable certificate",
+              "url": "https://www.coursera.org/learn/climate-change-basics"
+            },
+            {
+              "icon": "book-open",
+              "name": "AI and Environmental Sustainability",
+              "meta": "Lund University · Coursera · Free tier · AI for climate action",
+              "url": "https://www.coursera.org/learn/ai-environmental-sustainability"
+            },
+            {
+              "icon": "book-open",
+              "name": "Sanfoundry Environmental Certifications",
+              "meta": "sanfoundry.com · 100% free · 50 MCQ exams, free certificates",
+              "url": "https://www.sanfoundry.com/environmental-engineering-questions-answers/"
+            }
+          ]
+        },
+        {
+          "icon": "briefcase",
+          "accentClass": "a2",
+          "title": "Portfolio & GitHub",
+          "topics": [
+            "Showcasing climate tech projects",
+            "Writing compelling READMEs",
+            "Building a portfolio website",
+            "Documenting data pipelines",
+            "Creating project case studies",
+            "Open-source contribution portfolio"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "GitHub Pages",
+              "meta": "pages.github.com · Free · Host your portfolio site from GitHub",
+              "url": "https://pages.github.com"
+            },
+            {
+              "icon": "book-open",
+              "name": "README Best Practices",
+              "meta": "github.com · Free · GitHub's guide to writing great READMEs",
+              "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes"
+            },
+            {
+              "icon": "play",
+              "name": "Build a Developer Portfolio",
+              "meta": "JavaScript Mastery · YouTube · Free · Build a portfolio with Next.js",
+              "url": "https://www.youtube.com/watch?v=9hPfVhVndDo"
+            },
+            {
+              "icon": "book-open",
+              "name": "Carbon Space",
+              "meta": "github.com · Free · Community of climate tech developers",
+              "url": "https://github.com/topics/climate-tech"
+            },
+            {
+              "icon": "book-open",
+              "name": "Dev.to Climate Tech Articles",
+              "meta": "dev.to · Free · Community articles on building climate tech",
+              "url": "https://dev.to/t/climate"
+            }
+          ]
+        },
+        {
+          "icon": "search",
+          "accentClass": "a2",
+          "title": "Job Search & Interview Prep",
+          "topics": [
+            "Climate tech job boards and startups",
+            "Technical interview preparation",
+            "Behavioral interview STAR method",
+            "Negotiating climate tech roles",
+            "Building a professional network",
+            "Freelance and consulting pathways"
+          ],
+          "resources": [
+            {
+              "icon": "book-open",
+              "name": "Work on Climate",
+              "meta": "workonclimate.org · Free · Climate tech job board and community",
+              "url": "https://www.workonclimate.org/jobs"
+            },
+            {
+              "icon": "book-open",
+              "name": "Climate Tech VC Jobs",
+              "meta": "climatetechvc.com · Free · Startup job board for climate tech",
+              "url": "https://www.climatetechvc.com/jobs"
+            },
+            {
+              "icon": "book-open",
+              "name": "Terra.do Climate Career Kit",
+              "meta": "terra.do · Free · Career resources for climate tech professionals",
+              "url": "https://terra.do/career-kit"
+            },
+            {
+              "icon": "book-open",
+              "name": "Green Jobs Network",
+              "meta": "greenjobs.net · Free · Environmental and sustainability job listings",
+              "url": "https://www.greenjobs.net"
+            },
+            {
+              "icon": "book-open",
+              "name": "Tech Interview Handbook",
+              "meta": "techinterviewhandbook.org · Free · Comprehensive technical interview prep",
+              "url": "https://www.techinterviewhandbook.org"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": {
+    "general": {
+      "title": "Carbon Footprint Tracker SaaS",
+      "desc": "A full-stack SaaS application that calculates personal and organizational carbon footprints. Users log activities (transport, energy, food, purchases), the system applies GHG Protocol emission factors, stores data in PostgreSQL, and generates interactive dashboards with reduction recommendations. Includes Scope 1/2/3 breakdown, benchmarking, and exportable sustainability reports.",
+      "skills": ["GHG Protocol", "Life Cycle Assessment", "Data Visualization", "API Design", "Cloud Deployment"],
+      "stack": ["Python", "FastAPI", "PostgreSQL", "React", "AWS"]
+    },
+    "niches": [
+      {
+        "id": "energy",
+        "name": "Energy & Grid",
+        "tagline": "Microgrid optimization, smart grid analytics, renewable forecasting",
+        "title": "Renewable Energy Microgrid Optimizer",
+        "desc": "A platform that models hybrid renewable energy microgrids (solar, wind, battery storage) using HOMER and SAM data. Users input location and load profiles, the system runs optimization to find the lowest LCOE configuration, and provides real-time monitoring of grid performance with weather-adjusted forecasting.",
+        "skills": ["Energy Modeling", "Time Series Forecasting", "HOMER/SAM", "IoT Monitoring", "Dashboard Design"],
+        "stack": ["Python", "HOMER Pro", "TimescaleDB", "Grafana", "Docker"]
+      },
+      {
+        "id": "supply-chain",
+        "name": "Supply Chain",
+        "tagline": "Supply chain emissions tracking, Scope 3 accounting, supplier engagement",
+        "title": "Supply Chain Carbon Auditor",
+        "desc": "An enterprise tool for tracking and reducing Scope 3 supply chain emissions. Integrates with procurement systems, calculates product-level carbon footprints using Ecoinvent data, identifies high-emission suppliers, and generates decarbonization roadmaps with ROI projections for reduction strategies.",
+        "skills": ["Scope 3 Accounting", "openLCA", "Supply Chain Analysis", "Data Integration", "Reporting"],
+        "stack": ["Python", "openLCA", "FastAPI", "PostgreSQL", "React"]
+      },
+      {
+        "id": "monitoring",
+        "name": "Environmental Monitoring",
+        "tagline": "IoT sensor networks, air/water quality, real-time environmental alerts",
+        "title": "Environmental Sensor Network Platform",
+        "desc": "A distributed IoT platform that collects air and water quality data from citizen-deployed sensors. Features real-time monitoring dashboards, anomaly detection, pollution source identification, automated alerts, and open data APIs for researchers and policymakers.",
+        "skills": ["IoT Architecture", "Edge Computing", "Real-time Dashboards", "Anomaly Detection", "Data APIs"],
+        "stack": ["Raspberry Pi", "MQTT", "InfluxDB", "Grafana", "FastAPI"]
+      }
+    ]
+  }
+}

@@ -9,6 +9,7 @@ import cybersecurityData from '@/data/cybersecurity.json';
 import dataEngineeringData from '@/data/data-engineering.json';
 import cloudDevopsData from '@/data/cloud-devops.json';
 import fintechData from '@/data/fintech.json';
+import greenTechData from '@/data/green-tech.json';
 
 export function generateStaticParams() {
   return [
@@ -21,6 +22,7 @@ export function generateStaticParams() {
     { roadmapId: 'data-engineering' },
     { roadmapId: 'cloud-devops' },
     { roadmapId: 'fintech' },
+    { roadmapId: 'green-tech' },
   ];
 }
 
@@ -34,6 +36,7 @@ const dataMap = {
   'data-engineering': dataEngineeringData,
   'cloud-devops': cloudDevopsData,
   fintech: fintechData,
+  'green-tech': greenTechData,
 };
 
 export default async function RoadmapPageRoute({ params }) {

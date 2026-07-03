@@ -2,6 +2,8 @@
 
 import { useRouter } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
+import { ROADMAP_WEF_MAP } from '@/data/wef-rankings';
+import { REQUIREMENT_CATEGORIES, ROADMAP_REQUIREMENTS } from '@/data/requirements';
 
 const HOME_ICONS = {
   ai: (
@@ -69,6 +71,13 @@ const HOME_ICONS = {
       <polyline points="16 7 22 7 22 13" />
     </svg>
   ),
+  'green-tech': (
+    <svg className="home-card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z" />
+      <path d="M12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+      <path d="M12 16v-4" />
+    </svg>
+  ),
 };
 
 const titleMap = {
@@ -81,10 +90,47 @@ const titleMap = {
   'cloud-devops': 'Cloud/DevOps Engineering',
   'fintech': 'Fintech Engineering',
   'growth': 'Growth Engineering',
+  'green-tech': 'Green Tech / Climate Tech Engineering',
+};
+
+const REQ_ICONS = {
+  target: (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="12" r="6" />
+      <circle cx="12" cy="12" r="2" />
+    </svg>
+  ),
+  award: (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="8" r="7" />
+      <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+    </svg>
+  ),
+  scale: (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="12" y1="3" x2="12" y2="21" />
+      <polyline points="16 7 20 3 24 7" />
+      <polyline points="8 7 4 3 0 7" />
+      <path d="M4 7v4a4 4 0 0 0 4 4" />
+      <path d="M20 7v4a4 4 0 0 1-4 4" />
+    </svg>
+  ),
+  'graduation-cap': (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+    </svg>
+  ),
 };
 
 export default function HomePage({ roadmapsMeta }) {
   const router = useRouter();
+
+  const groupedByCategory = REQUIREMENT_CATEGORIES.map((cat) => ({
+    ...cat,
+    roadmaps: roadmapsMeta.filter((r) => ROADMAP_REQUIREMENTS[r.id]?.category === cat.id),
+  })).filter((g) => g.roadmaps.length > 0);
 
   return (
     <main className="home">
@@ -104,7 +150,7 @@ export default function HomePage({ roadmapsMeta }) {
           No paywalls. Work remotely from anywhere.
         </p>
         <div className="home-hero-stats">
-          <span>9 roadmaps</span>
+          <span>10 roadmaps</span>
           <span className="home-card-dot">·</span>
           <span>130+ modules</span>
           <span className="home-card-dot">·</span>
@@ -114,29 +160,75 @@ export default function HomePage({ roadmapsMeta }) {
         </div>
       </section>
 
-      <section className="home-grid-section">
-        <div className="home-grid">
-          {roadmapsMeta.map((r) => (
-            <a
-              key={r.id}
-              className="home-card"
-              href={`/${r.id}`}
-              onClick={(e) => { e.preventDefault(); router.push(`/${r.id}`); }}
-            >
-              {HOME_ICONS[r.id]}
-              <h3 className="home-card-title">{titleMap[r.id]}</h3>
-              <div className="home-card-meta">
-                <span>{r.phaseCount} phases</span>
-                <span className="home-card-dot">·</span>
-                <span>{r.meta.resources || '120+'}</span>
-                <span className="home-card-dot">·</span>
-                <span>{r.meta.duration || '14\u201316 mo'}</span>
+      <section className="home-req-legend">
+        <h2 className="home-req-legend-title">How to Choose</h2>
+        <p className="home-req-legend-sub">
+          Each roadmap shows what matters most for hiring. Here&apos;s what the labels mean.
+        </p>
+        <div className="home-req-legend-grid">
+          {REQUIREMENT_CATEGORIES.map((cat) => (
+            <div key={cat.id} className="home-req-legend-item">
+              <div className="legend-dot-wrap">
+                <span className="legend-dot" style={{ background: cat.color }}></span>
               </div>
-              <div className="home-card-salary">{r.meta.salaryTarget || '$120k+'}</div>
-            </a>
+              <div className="legend-text">
+                <strong><span className="legend-icon" style={{ color: cat.color }}>{REQ_ICONS[cat.icon]}</span> {cat.label}</strong>
+                <p>{cat.fullDesc}</p>
+              </div>
+            </div>
           ))}
         </div>
       </section>
+
+      {groupedByCategory.map((group) => (
+        <section key={group.id} className="home-grid-section">
+          <div className="home-category">
+            <div className="home-category-header">
+              <span className="home-category-icon" style={{ color: group.color }}>{REQ_ICONS[group.icon]}</span>
+              <h3 className="home-category-title">{group.label}</h3>
+            </div>
+            <p className="home-category-desc">{group.shortDesc}</p>
+          </div>
+          <div className="home-grid">
+            {group.roadmaps.map((r) => {
+              const wef = ROADMAP_WEF_MAP[r.id];
+              const req = ROADMAP_REQUIREMENTS[r.id];
+              return (
+                <a
+                  key={r.id}
+                  className="home-card"
+                  href={`/${r.id}`}
+                  onClick={(e) => { e.preventDefault(); router.push(`/${r.id}`); }}
+                >
+                  {wef && (
+                    <div className="home-card-wef">
+                      <span className="home-card-wef-rank">#{wef.wefRank}</span>
+                      <span className="home-card-wef-label">WEF Fastest Growing</span>
+                    </div>
+                  )}
+                  {HOME_ICONS[r.id]}
+                  <h3 className="home-card-title">{titleMap[r.id]}</h3>
+                  <div className="home-card-meta">
+                    <span>{r.phaseCount} phases</span>
+                    <span className="home-card-dot">·</span>
+                    <span>{r.meta.resources || '120+'}</span>
+                    <span className="home-card-dot">·</span>
+                    <span>{r.meta.duration || '14\u201316 mo'}</span>
+                  </div>
+                  <div className="home-card-salary">{r.meta.salaryTarget || '$120k+'}</div>
+                  <div className="home-card-req">
+                    <span className="home-card-req-dot" style={{ background: group.color }}></span>
+                    <span className="home-card-req-label">{group.label}</span>
+                    {req && req.certs.length > 0 && (
+                      <span className="home-card-req-certs">{req.certs.length} cert{req.certs.length > 1 ? 's' : ''}</span>
+                    )}
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      ))}
 
       <section className="home-wef">
         <h2 className="home-wef-title">Why these roadmaps?</h2>

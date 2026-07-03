@@ -2695,6 +2695,447 @@ footer {
   letter-spacing: 0.02em;
 }
 
+/* ── WEF Ranking Card Badge ── */
+.home-card-wef {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), rgba(34, 197, 94, 0.04));
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-radius: var(--radius-sm);
+  margin-bottom: 4px;
+}
+
+.home-card-wef-rank {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: #22c55e;
+  letter-spacing: -0.02em;
+}
+
+.home-card-wef-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #22c55e;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+}
+
+/* ── WEF Ranking Detail Banner ── */
+.wef-ranking-banner {
+  margin: 20px 0 0;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(34, 197, 94, 0.02));
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: var(--radius-md);
+}
+
+.wef-ranking-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.wef-ranking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-sm);
+}
+
+.wef-ranking-number {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.wef-ranking-text {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: #22c55e;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.wef-alt-badge {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: #86efac;
+  padding: 4px 10px;
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.15);
+  border-radius: var(--radius-sm);
+}
+
+.wef-ranking-details {
+  margin-bottom: 12px;
+}
+
+.wef-role-name {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 4px;
+}
+
+.wef-demand {
+  font-size: var(--text-sm);
+  color: #22c55e;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+
+.wef-note {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.wef-source-link {
+  display: inline-block;
+  font-size: var(--text-xs);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.wef-source-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ── Homepage: How to Choose Legend ── */
+.home-req-legend {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 0 32px;
+  border-top: 1px solid var(--border);
+}
+
+.home-req-legend-title {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin: 0 0 6px;
+  text-align: center;
+}
+
+.home-req-legend-sub {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.home-req-legend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.home-req-legend-item {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.legend-dot-wrap {
+  flex-shrink: 0;
+  padding-top: 3px;
+}
+
+.legend-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.legend-icon {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.legend-text strong {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.legend-text p {
+  font-size: var(--text-xs);
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Homepage: Category Headings ── */
+.home-category {
+  max-width: 1200px;
+  margin: 0 auto 16px;
+  padding: 0 20px;
+}
+
+.home-category-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-category-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.home-category-title {
+  font-family: 'Syne', sans-serif;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.home-category-desc {
+  font-size: var(--text-xs);
+  color: var(--muted);
+  margin: 2px 0 0;
+}
+
+/* ── Homepage: Card Requirement Badge ── */
+.home-card-req {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.home-card-req-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.home-card-req-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.home-card-req-certs {
+  font-size: 9px;
+  font-weight: 500;
+  padding: 2px 6px;
+  background: var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+/* ── Roadmap Page: Requirements Banner ── */
+.requirements-banner {
+  margin: 20px 0 0;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.req-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.req-category-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1.5px solid;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+.req-badge-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.req-category-desc {
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+.req-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.req-item {
+  padding: 12px;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+}
+
+.req-item-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: var(--text-xs);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.req-item-icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.req-item-value {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.req-degree-not-required { color: #22c55e; }
+.req-degree-preferred { color: #f59e0b; }
+.req-degree-required { color: #ef4444; }
+
+.req-item-note {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.req-priority-dots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.req-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.req-dot-active {
+  background: var(--accent);
+}
+
+.req-priority-label {
+  margin-left: 6px;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--text);
+}
+
+.req-certs {
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.req-certs-title {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+.req-certs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.req-cert-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.req-cert-name {
+  font-weight: 500;
+  flex: 1;
+}
+
+.req-cert-cost {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.req-cert-priority {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.priority-critical { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
+.priority-high { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }
+.priority-medium { background: rgba(59, 130, 246, 0.12); color: #3b82f6; }
+.priority-senior { background: rgba(139, 92, 246, 0.12); color: #8b5cf6; }
+
+/* ── Responsive: Homepage Legend & Categories ── */
+@media (max-width: 768px) {
+  .home-req-legend-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .req-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-req-legend-item {
+    padding: 10px;
+  }
+
+  .req-cert-item {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+}
+
 .home-wef {
   width: 100%;
   max-width: 900px;
