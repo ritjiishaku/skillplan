@@ -6,12 +6,19 @@ const ModalContext = createContext();
 
 export function ModalProvider({ children }) {
   const [projectContent, setProjectContent] = useState(null);
+  const [modalSize, setModalSize] = useState(null);
 
-  const openProject = useCallback((content) => setProjectContent(content), []);
-  const closeProject = useCallback(() => setProjectContent(null), []);
+  const openProject = useCallback((content, size = null) => {
+    setProjectContent(content);
+    setModalSize(size);
+  }, []);
+  const closeProject = useCallback(() => {
+    setProjectContent(null);
+    setModalSize(null);
+  }, []);
 
   return (
-    <ModalContext.Provider value={{ projectContent, openProject, closeProject }}>
+    <ModalContext.Provider value={{ projectContent, modalSize, openProject, closeProject }}>
       {children}
     </ModalContext.Provider>
   );

@@ -2,6 +2,9 @@
 
 import { useRouter } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
+import { useModal } from '../context/ModalContext';
+import ContactForm from './ContactForm';
+import { Icon } from '../../lib/icons';
 import { ROADMAP_WEF_MAP } from '@/data/wef-rankings';
 import { REQUIREMENT_CATEGORIES, ROADMAP_REQUIREMENTS } from '@/data/requirements';
 
@@ -86,6 +89,7 @@ import { HOME_REQ_ICONS as REQ_ICONS } from '@/lib/req-icons';
 
 export default function HomePage({ roadmapsMeta }) {
   const router = useRouter();
+  const { openProject } = useModal();
 
   const groupedByCategory = REQUIREMENT_CATEGORIES.map((cat) => ({
     ...cat,
@@ -203,6 +207,37 @@ export default function HomePage({ roadmapsMeta }) {
           <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/" target="_blank" rel="noopener noreferrer" className="home-wef-link">
             Read the report &rarr;
           </a>
+        </div>
+      </section>
+
+      <section className="home-contact">
+        <h2 className="home-contact-title">Get in Touch</h2>
+        <p className="home-contact-text">
+          Have feedback, found a bug, or want to suggest a roadmap? I&apos;d love to hear from you.
+        </p>
+        <div className="home-contact-actions">
+          <a
+            href="https://wa.me/2349064957884"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-contact-btn home-contact-whatsapp"
+          >
+            <Icon name="whatsapp" size={18} />
+            WhatsApp
+          </a>
+          <a
+            href="mailto:ritjiishaku@gmail.com"
+            className="home-contact-btn home-contact-email"
+          >
+            <Icon name="mail" size={18} />
+            Email
+          </a>
+          <button
+            className="home-contact-btn home-contact-page"
+            onClick={() => openProject(<ContactForm />, 'sm')}
+          >
+            More options &rarr;
+          </button>
         </div>
       </section>
 

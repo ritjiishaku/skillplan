@@ -4,7 +4,7 @@ import { useEffect, useCallback, useRef } from 'react';
 import { useModal } from '../context/ModalContext';
 
 export default function ProjectModal() {
-  const { projectContent, closeProject } = useModal();
+  const { projectContent, modalSize, closeProject } = useModal();
   const modalRef = useRef(null);
   const previousFocusRef = useRef(null);
 
@@ -64,11 +64,11 @@ export default function ProjectModal() {
       id="projectModal"
       role="dialog"
       aria-modal="true"
-      aria-label="Project details"
+      aria-label="Contact form"
       onClick={closeProject}
       ref={modalRef}
     >
-      <div className="modal-card" onClick={(e) => e.stopPropagation()}>
+      <div className={`modal-card${modalSize === 'sm' ? ' modal-card-sm' : ''}`} onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={closeProject} aria-label="Close modal">&#x2715;</button>
         <div className="modal-content" id="modalContent">
           {projectContent}
