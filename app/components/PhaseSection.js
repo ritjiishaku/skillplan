@@ -1,9 +1,11 @@
 'use client';
 
 import ModuleCard from './ModuleCard';
+import PhaseSocialPrompt from './PhaseSocialPrompt';
 import { Sparkles } from 'lucide-react';
 import { useModal } from '../context/ModalContext';
 import { ProjectCard, getNiches, NicheAccordion } from './ProjectCard';
+import { isPhaseComplete } from '@/lib/completion';
 
 function PhaseProjectContent({ phase }) {
   const p = phase.projects;
@@ -26,8 +28,9 @@ function PhaseProjectContent({ phase }) {
   );
 }
 
-export default function PhaseSection({ phase }) {
+export default function PhaseSection({ phase, completed, roadmapId, roadmapTitle }) {
   const { openProject } = useModal();
+  const phaseComplete = isPhaseComplete(phase, completed);
 
   const handlePhaseProjectClick = () => {
     openProject(<PhaseProjectContent phase={phase} />);
@@ -53,9 +56,24 @@ export default function PhaseSection({ phase }) {
 
       <div className="modules-grid">
         {phase.modules.map((mod, i) => (
-          <ModuleCard key={i} phaseNumber={phase.number} module={mod} moduleIndex={i} />
+          <ModuleCard
+            key={i}
+            phaseNumber={phase.number}
+            module={mod}
+            moduleIndex={i}
+            completed={completed}
+            roadmapId={roadmapId}
+            roadmapTitle={roadmapTitle}
+          />
         ))}
       </div>
+
+      {phaseComplete && phase.socialMediaGuide && (
+        <PhaseSocialPrompt
+          phase={phase}
+          roadmapTitle={roadmapTitle}
+        />
+      )}
     </section>
   );
 }

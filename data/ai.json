@@ -1,9 +1,9 @@
 {
   "banner": "100% Free · 8 Phases · 150+ Resources · Dual Tracks · Zero Paywalls",
   "titleDisplay": "AI Automation<br><em>Engineering</em>",
-  "subtitle": "A complete, self-paced path from Python to production AI engineer â€” 8 phases, 150+ hand-curated free resources, dual General &amp; Healthcare tracks, an 18-month study schedule, and career prep. $0 cost. No paywalls. No compromises.",
+  "subtitle": "A complete, self-paced path from Python to production AI engineer — 8 phases, 150+ hand-curated free resources, dual General &amp; Healthcare tracks, an 18-month study schedule, and career prep. $0 cost. No paywalls. No compromises.",
   "meta": {
-    "duration": "18â€“20 mo",
+    "duration": "18–20 mo",
     "cost": "$0",
     "resources": "150+",
     "salaryTarget": "$140k+"
@@ -14,7 +14,7 @@
       "badge": "badge-foundation",
       "badgeLabel": "Foundation",
       "title": "Core Engineering & Python Mastery",
-      "duration": "Months 1â€“2",
+      "duration": "Months 1–2",
       "modules": [
         {
           "icon": "terminal",
@@ -35,7 +35,7 @@
             },
             {
               "icon": "terminal",
-              "name": "Real Python â€” Advanced Tutorials",
+              "name": "Real Python — Advanced Tutorials",
               "meta": "realpython.com · Decorators, async, generators, testing",
               "url": "https://realpython.com/tutorials/advanced/"
             },
@@ -47,7 +47,7 @@
             },
             {
               "icon": "play",
-              "name": "Corey Schafer â€” Python OOP & Advanced",
+              "name": "Corey Schafer — Python OOP & Advanced",
               "meta": "YouTube · Best free Python video content, period",
               "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
             },
@@ -67,7 +67,7 @@
                 "OOP class hierarchy for file types",
                 "Async file-system watching",
                 "Pydantic config models",
-                "pytest suite â€” 80%+ coverage"
+                "pytest suite — 80%+ coverage"
               ],
               "stack": [
                 "Python 3.11",
@@ -205,7 +205,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Shift Task API",
-                "desc": "Containerised REST API for nurses to log, assign, and track shift tasks â€” role-based auth (nurse/charge nurse), Docker Compose, CI/CD, and dev/prod environment separation.",
+                "desc": "Containerised REST API for nurses to log, assign, and track shift tasks — role-based auth (nurse/charge nurse), Docker Compose, CI/CD, and dev/prod environment separation.",
                 "skills": [
                   "Role-based JWT (nurse/charge nurse)",
                   "CRUD for shift tasks + patient notes",
@@ -327,7 +327,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Patient Vitals Trend Dashboard",
-                "desc": "ETL pipeline ingesting synthetic patient vitals (HR, BP, SpOâ‚‚, temp), storing in PostgreSQL with Redis caching, and a Streamlit dashboard with per-patient trends and alert thresholds.",
+                "desc": "ETL pipeline ingesting synthetic patient vitals (HR, BP, SpO₂, temp), storing in PostgreSQL with Redis caching, and a Streamlit dashboard with per-patient trends and alert thresholds.",
                 "skills": [
                   "Vitals data model with Polars",
                   "PostgreSQL time-series schema",
@@ -402,7 +402,7 @@
           "resources": [
             {
               "icon": "play",
-              "name": "Neetcode.io â€” Roadmap & Free Video Solutions",
+              "name": "Neetcode.io — Roadmap & Free Video Solutions",
               "meta": "neetcode.io · Best free DSA resource, interview-focused",
               "url": "https://neetcode.io"
             },
@@ -414,7 +414,7 @@
             },
             {
               "icon": "book",
-              "name": "Data Structures & Algorithms in Python â€” Free Book",
+              "name": "Data Structures & Algorithms in Python — Free Book",
               "meta": "pythonds.runestone.academy · Interactive, free online",
               "url": "https://runestone.academy/ns/books/published/pythonds/index.html"
             }
@@ -422,7 +422,7 @@
           "projects": {
             "general": {
               "title": "Algorithm Practice Tracker CLI",
-              "desc": "Build a CLI that tracks your LeetCode/Neetcode progress â€” logs problems solved by pattern, calculates completion % per pattern, and generates a daily practice plan weighted toward your weak areas.",
+              "desc": "Build a CLI that tracks your LeetCode/Neetcode progress — logs problems solved by pattern, calculates completion % per pattern, and generates a daily practice plan weighted toward your weak areas.",
               "skills": [
                 "Pattern-based problem categorisation",
                 "Hash map for O(1) progress lookup",
@@ -443,7 +443,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Triage Priority Queue",
-                "desc": "Implement a real priority queue system for patient triage â€” patients are scored by severity (NEWS2), and the queue dynamically re-orders as vitals change, with O(log n) insert/update.",
+                "desc": "Implement a real priority queue system for patient triage — patients are scored by severity (NEWS2), and the queue dynamically re-orders as vitals change, with O(log n) insert/update.",
                 "skills": [
                   "Min-heap priority queue implementation",
                   "NEWS2 severity scoring algorithm",
@@ -508,10 +508,10 @@
           "accentClass": "a2",
           "title": "TypeScript & Full-Stack AI Development",
           "topics": [
-            "TypeScript fundamentals for Python developers â€” types, async, interfaces",
-            "Vercel AI SDK â€” standard for AI-powered Next.js apps",
+            "TypeScript fundamentals for Python developers — types, async, interfaces",
+            "Vercel AI SDK — standard for AI-powered Next.js apps",
             "Next.js App Router with streaming AI responses",
-            "Mastra â€” TypeScript-native agent framework",
+            "Mastra — TypeScript-native agent framework",
             "React + FastAPI full-stack integration patterns"
           ],
           "resources": [
@@ -529,13 +529,13 @@
             },
             {
               "icon": "graduation-cap",
-              "name": "Next.js Learn â€” Official Free Course",
+              "name": "Next.js Learn — Official Free Course",
               "meta": "nextjs.org/learn · App Router, React Server Components",
               "url": "https://nextjs.org/learn"
             },
             {
               "icon": "bot",
-              "name": "Mastra â€” TypeScript Agent Framework Docs",
+              "name": "Mastra — TypeScript Agent Framework Docs",
               "meta": "mastra.ai · Rising fast: TypeScript-native agents",
               "url": "https://mastra.ai/docs"
             }
@@ -543,7 +543,7 @@
           "projects": {
             "general": {
               "title": "AI Chat Interface with Next.js",
-              "desc": "Build a full-stack AI chat app using Next.js App Router + Vercel AI SDK â€” with streaming responses, conversation history, a model selector, and deploy it to Vercel (free tier).",
+              "desc": "Build a full-stack AI chat app using Next.js App Router + Vercel AI SDK — with streaming responses, conversation history, a model selector, and deploy it to Vercel (free tier).",
               "skills": [
                 "Next.js App Router setup",
                 "Vercel AI SDK useChat hook",
@@ -631,7 +631,7 @@
           "accentClass": "a2",
           "title": "Database Schema Design for AI Applications",
           "topics": [
-            "Conversation history schema â€” standard patterns",
+            "Conversation history schema — standard patterns",
             "Document + chunk + embedding metadata schema",
             "Multi-tenant data isolation in PostgreSQL",
             "HIPAA-compliant audit trail schema design",
@@ -660,7 +660,7 @@
           "projects": {
             "general": {
               "title": "AI App Database Blueprint",
-              "desc": "Design and implement the complete PostgreSQL schema for an AI SaaS app â€” users, tenants, conversations, messages, documents, chunks, and a full audit log table with Alembic migrations.",
+              "desc": "Design and implement the complete PostgreSQL schema for an AI SaaS app — users, tenants, conversations, messages, documents, chunks, and a full audit log table with Alembic migrations.",
               "skills": [
                 "Multi-tenant user + org schema",
                 "Conversation + message history tables",
@@ -681,7 +681,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "HIPAA-Compliant Clinical AI Schema",
-                "desc": "Design a HIPAA-compliant PostgreSQL schema for a clinical AI system â€” patients, encounters, AI queries, PHI access log, and de-identification tracking â€” with row-level security per ward.",
+                "desc": "Design a HIPAA-compliant PostgreSQL schema for a clinical AI system — patients, encounters, AI queries, PHI access log, and de-identification tracking — with row-level security per ward.",
                 "skills": [
                   "Patient + encounter schema (de-identified)",
                   "AI query + response audit table",
@@ -746,7 +746,7 @@
           "accentClass": "a2",
           "title": "AI-Assisted Development (Cursor / Vibe Coding Workflow)",
           "topics": [
-            "Cursor rules & custom instructions â€” the vibe coding meta-skill",
+            "Cursor rules & custom instructions — the vibe coding meta-skill",
             "Effective prompting for code generation vs. LLM prompting",
             "Code review patterns when accepting AI-generated code",
             "Composing large systems with AI assistance",
@@ -775,7 +775,7 @@
           "projects": {
             "general": {
               "title": "Personal .cursorrules Starter Kit",
-              "desc": "Build your personal .cursorrules configuration for Python + AI engineering projects â€” covering code style, test generation, documentation, and error handling rules. Publish it on GitHub.",
+              "desc": "Build your personal .cursorrules configuration for Python + AI engineering projects — covering code style, test generation, documentation, and error handling rules. Publish it on GitHub.",
               "skills": [
                 ".cursorrules for Python + FastAPI",
                 "Rules for automatic pytest generation",
@@ -796,7 +796,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI .cursorrules Pack",
-                "desc": "A specialised .cursorrules pack for clinical AI development â€” enforcing PHI variable naming conventions, HIPAA comment requirements, clinical term definitions, and safe default patterns.",
+                "desc": "A specialised .cursorrules pack for clinical AI development — enforcing PHI variable naming conventions, HIPAA comment requirements, clinical term definitions, and safe default patterns.",
                 "skills": [
                   "PHI variable naming enforcement",
                   "HIPAA compliance comment templates",
@@ -941,6 +941,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 01: Core Engineering & Python Mastery!",
+        "whatToPost": [
+          "Share your Python projects and automation scripts",
+          "Post about software engineering fundamentals you learned",
+          "Talk about data structures and algorithms practice"
+        ],
+        "suggestedHashtags": [
+          "#Python",
+          "#100DaysOfCode",
+          "#SoftwareEngineering",
+          "#DSA"
+        ]
       }
     },
     {
@@ -948,7 +962,7 @@
       "badge": "badge-core",
       "badgeLabel": "Core AI",
       "title": "LLM Engineering & Prompt Architecture",
-      "duration": "Months 2â€“4",
+      "duration": "Months 2–4",
       "modules": [
         {
           "icon": "brain",
@@ -963,20 +977,20 @@
           "resources": [
             {
               "icon": "play",
-              "name": "Andrej Karpathy â€” Intro to Large Language Models",
+              "name": "Andrej Karpathy — Intro to Large Language Models",
               "meta": "YouTube · 1hr · The best single free resource on LLMs",
               "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g"
             },
             {
               "icon": "play",
-              "name": "Karpathy â€” Let's Build GPT From Scratch",
+              "name": "Karpathy — Let's Build GPT From Scratch",
               "meta": "YouTube · 2hr · Build a transformer in pure PyTorch",
               "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY"
             },
             {
               "icon": "graduation-cap",
               "name": "LLM University by Cohere",
-              "meta": "llm.university · 15â€“20h · Deep technical foundations",
+              "meta": "llm.university · 15–20h · Deep technical foundations",
               "url": "https://llm.university"
             },
             {
@@ -989,7 +1003,7 @@
           "projects": {
             "general": {
               "title": "LLM Parameter Explorer",
-              "desc": "Streamlit app comparing the same prompt across different temperature/top-p/max-token settings side-by-side â€” showing latency, token count, cost, and output quality.",
+              "desc": "Streamlit app comparing the same prompt across different temperature/top-p/max-token settings side-by-side — showing latency, token count, cost, and output quality.",
               "skills": [
                 "Side-by-side parameter comparison",
                 "Token count + cost per call",
@@ -1010,7 +1024,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Tone Parameter Explorer",
-                "desc": "Same explorer tested on clinical prompts â€” showing how temperature affects clinical accuracy, readability, and hallucination risk for medical language generation.",
+                "desc": "Same explorer tested on clinical prompts — showing how temperature affects clinical accuracy, readability, and hallucination risk for medical language generation.",
                 "skills": [
                   "Clinical prompt test suite",
                   "Accuracy vs. creativity chart",
@@ -1075,16 +1089,16 @@
           "accentClass": "a2",
           "title": "Structured Reasoning & Thinking Models",
           "topics": [
-            "How reasoning models work â€” thinking tokens, chain-of-thought budget",
+            "How reasoning models work — thinking tokens, chain-of-thought budget",
             "When to use o1/o3 vs. standard models (cost/latency trade-offs)",
             "Prompting strategies for Claude Extended Thinking",
-            "Reasoning model evaluation â€” benchmarking thinking quality",
+            "Reasoning model evaluation — benchmarking thinking quality",
             "Clinical use cases: differential Dx, drug interaction reasoning"
           ],
           "resources": [
             {
               "icon": "file-text",
-              "name": "Claude Extended Thinking â€” Anthropic Docs",
+              "name": "Claude Extended Thinking — Anthropic Docs",
               "meta": "docs.anthropic.com · How to use extended thinking",
               "url": "https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking"
             },
@@ -1096,7 +1110,7 @@
             },
             {
               "icon": "edit-3",
-              "name": "Simon Willison's Blog â€” Reasoning Models Explained",
+              "name": "Simon Willison's Blog — Reasoning Models Explained",
               "meta": "simonwillison.net · Practical deep-dives, free",
               "url": "https://simonwillison.net"
             }
@@ -1125,7 +1139,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Differential Diagnosis Reasoner",
-                "desc": "A reasoning model app that takes a patient presentation (symptoms, vitals, history) and generates a ranked differential diagnosis with evidence for each â€” using Claude Extended Thinking for clinical reasoning depth.",
+                "desc": "A reasoning model app that takes a patient presentation (symptoms, vitals, history) and generates a ranked differential diagnosis with evidence for each — using Claude Extended Thinking for clinical reasoning depth.",
                 "skills": [
                   "Patient presentation input form",
                   "Extended Thinking differential generation",
@@ -1188,13 +1202,13 @@
         {
           "icon": "hard-drive",
           "accentClass": "a2",
-          "title": "Local Model Serving â€” Ollama In Depth",
+          "title": "Local Model Serving — Ollama In Depth",
           "topics": [
             "Ollama setup, model management, and OpenAI-compatible API",
             "Running Llama 3, Mistral, Phi-3, Qwen locally",
             "LM Studio for GUI-based local model testing",
-            "Privacy-first deployment â€” no PHI leaves the network",
-            "Comparing local models vs. API models â€” when local wins"
+            "Privacy-first deployment — no PHI leaves the network",
+            "Comparing local models vs. API models — when local wins"
           ],
           "resources": [
             {
@@ -1205,13 +1219,13 @@
             },
             {
               "icon": "monitor",
-              "name": "LM Studio â€” Local LLM GUI",
+              "name": "LM Studio — Local LLM GUI",
               "meta": "lmstudio.ai · Free GUI for local model testing & serving",
               "url": "https://lmstudio.ai"
             },
             {
               "icon": "award",
-              "name": "Hugging Face â€” Open LLM Leaderboard",
+              "name": "Hugging Face — Open LLM Leaderboard",
               "meta": "huggingface.co/spaces · Compare local model quality",
               "url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard"
             }
@@ -1240,12 +1254,12 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Offline Clinical Query Server",
-                "desc": "A local Ollama server running a clinical-tuned model â€” zero PHI leaves the machine. FastAPI wrapper for ward queries, benchmark clinical accuracy vs. cloud API, and a privacy audit proving offline operation.",
+                "desc": "A local Ollama server running a clinical-tuned model — zero PHI leaves the machine. FastAPI wrapper for ward queries, benchmark clinical accuracy vs. cloud API, and a privacy audit proving offline operation.",
                 "skills": [
                   "Ollama with clinical model (medAlpaca/OpenHermes)",
                   "FastAPI clinical query wrapper",
                   "Clinical accuracy benchmark (20 queries)",
-                  "Privacy audit â€” zero external calls confirmed",
+                  "Privacy audit — zero external calls confirmed",
                   "Offline deployment guide for clinical settings"
                 ],
                 "stack": [
@@ -1305,11 +1319,11 @@
           "accentClass": "a2",
           "title": "Prompt Caching & Cost Optimisation",
           "topics": [
-            "Anthropic prompt caching â€” 80â€“90% cost reduction on repeated calls",
-            "OpenAI prompt caching â€” automatic for prompts > 1024 tokens",
+            "Anthropic prompt caching — 80–90% cost reduction on repeated calls",
+            "OpenAI prompt caching — automatic for prompts > 1024 tokens",
             "When to use caching vs. RAG vs. fine-tuning for repeated context",
             "Semantic caching with GPTCache for similar queries",
-            "Cost-quality trade-off framework â€” Haiku vs Sonnet vs Opus"
+            "Cost-quality trade-off framework — Haiku vs Sonnet vs Opus"
           ],
           "resources": [
             {
@@ -1326,7 +1340,7 @@
             },
             {
               "icon": "package",
-              "name": "GPTCache â€” Semantic Cache Library",
+              "name": "GPTCache — Semantic Cache Library",
               "meta": "github.com/zilliztech/GPTCache · Open-source semantic caching",
               "url": "https://github.com/zilliztech/GPTCache"
             }
@@ -1355,7 +1369,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical RAG Cost Optimiser",
-                "desc": "Apply prompt caching to a clinical RAG system where the clinical context system prompt is large â€” measure the 70â€“90% cost reduction, model the monthly savings for a 10-ward deployment, and present the ROI to a fictional clinical director.",
+                "desc": "Apply prompt caching to a clinical RAG system where the clinical context system prompt is large — measure the 70–90% cost reduction, model the monthly savings for a 10-ward deployment, and present the ROI to a fictional clinical director.",
                 "skills": [
                   "Prompt caching on clinical system prompt",
                   "Cost per query before/after",
@@ -1440,13 +1454,13 @@
             },
             {
               "icon": "book",
-              "name": "Prompt Engineering Guide â€” DAIR.AI",
+              "name": "Prompt Engineering Guide — DAIR.AI",
               "meta": "promptingguide.ai · Continuously updated, research-backed",
               "url": "https://www.promptingguide.ai"
             },
             {
               "icon": "microscope",
-              "name": "Lilian Weng (OpenAI) â€” Prompt Engineering",
+              "name": "Lilian Weng (OpenAI) — Prompt Engineering",
               "meta": "lilianweng.github.io · Systematic technique taxonomy",
               "url": "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/"
             }
@@ -1475,7 +1489,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Prompt Benchmark Suite",
-                "desc": "Testing harness for clinical scenarios â€” triage questions, medication queries, patient education tasks â€” with an LLM-as-judge using a clinician-authored rubric that flags safety issues.",
+                "desc": "Testing harness for clinical scenarios — triage questions, medication queries, patient education tasks — with an LLM-as-judge using a clinician-authored rubric that flags safety issues.",
                 "skills": [
                   "Clinical scenario test dataset (30+ cases)",
                   "LLM-as-judge with clinical rubric",
@@ -1566,7 +1580,7 @@
             },
             {
               "icon": "triangle",
-              "name": "Instructor â€” Structured LLM Outputs",
+              "name": "Instructor — Structured LLM Outputs",
               "meta": "GitHub · Pydantic-validated outputs from any LLM",
               "url": "https://github.com/jxnl/instructor"
             }
@@ -1574,7 +1588,7 @@
           "projects": {
             "general": {
               "title": "Multi-Step Research Summariser",
-              "desc": "LangChain pipeline: query generator â†’ web fetcher â†’ structured summariser â€” with conversation memory, Instructor structured output, and multi-model fallback.",
+              "desc": "LangChain pipeline: query generator ’ web fetcher ’ structured summariser — with conversation memory, Instructor structured output, and multi-model fallback.",
               "skills": [
                 "LangChain LCEL multi-chain",
                 "Buffer memory",
@@ -1597,7 +1611,7 @@
                 "title": "Clinical Literature Summariser",
                 "desc": "LangChain pipeline taking a medical topic, generating PubMed queries, fetching abstracts, and producing a nurse-readable PICO summary with evidence levels.",
                 "skills": [
-                  "LCEL: query â†’ fetch â†’ summarise",
+                  "LCEL: query ’ fetch ’ summarise",
                   "Evidence level extraction",
                   "Structured PICO output",
                   "Multi-turn clarification memory",
@@ -1674,13 +1688,13 @@
             },
             {
               "icon": "ruler",
-              "name": "RAGAS Docs â€” RAG Evaluation Framework",
+              "name": "RAGAS Docs — RAG Evaluation Framework",
               "meta": "ragas.io · Faithfulness, answer relevancy, recall",
               "url": "https://docs.ragas.io/en/stable/"
             },
             {
               "icon": "check-circle",
-              "name": "DeepEval â€” LLM Testing Framework Docs",
+              "name": "DeepEval — LLM Testing Framework Docs",
               "meta": "confident-ai.com · Open-source LLM evaluation",
               "url": "https://docs.confident-ai.com"
             }
@@ -1709,7 +1723,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI Safety Evaluator",
-                "desc": "Evaluation for clinical AI â€” detecting hallucinated drug names, wrong dosages, missing escalation language. LLM-as-judge with clinical rubric flags unsafe outputs for human review.",
+                "desc": "Evaluation for clinical AI — detecting hallucinated drug names, wrong dosages, missing escalation language. LLM-as-judge with clinical rubric flags unsafe outputs for human review.",
                 "skills": [
                   "Clinical safety dataset (50+ cases)",
                   "Drug/dosage hallucination detection",
@@ -1852,6 +1866,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 02: LLM Engineering & Prompt Architecture!",
+        "whatToPost": [
+          "Share your prompt engineering experiments",
+          "Post about how LLMs actually work under the hood",
+          "Showcase structured reasoning and thinking models"
+        ],
+        "suggestedHashtags": [
+          "#LLM",
+          "#PromptEngineering",
+          "#100DaysOfCode",
+          "#AI"
+        ]
       }
     },
     {
@@ -1859,7 +1887,7 @@
       "badge": "badge-advanced",
       "badgeLabel": "Advanced RAG",
       "title": "Retrieval-Augmented Generation Systems",
-      "duration": "Months 4â€“6",
+      "duration": "Months 4–6",
       "modules": [
         {
           "icon": "search",
@@ -1886,13 +1914,13 @@
             },
             {
               "icon": "play",
-              "name": "Greg Kamradt â€” 5 Levels of Text Splitting",
+              "name": "Greg Kamradt — 5 Levels of Text Splitting",
               "meta": "YouTube · The definitive chunking strategy guide",
               "url": "https://www.youtube.com/watch?v=viZrOnJclY0"
             },
             {
               "icon": "package",
-              "name": "RAG All-in-One â€” GitHub Resource Collection",
+              "name": "RAG All-in-One — GitHub Resource Collection",
               "meta": "Comprehensive library of RAG tools & techniques",
               "url": "https://github.com/lehoanglong95/rag-all-in-one"
             }
@@ -1900,7 +1928,7 @@
           "projects": {
             "general": {
               "title": "Semantic Search Engine for Docs",
-              "desc": "Semantic search over 500+ docs â€” compare BGE, E5, OpenAI embeddings, implement BM25 hybrid search, and benchmark precision@k across chunking strategies.",
+              "desc": "Semantic search over 500+ docs — compare BGE, E5, OpenAI embeddings, implement BM25 hybrid search, and benchmark precision@k across chunking strategies.",
               "skills": [
                 "Embed 500+ docs with 3 models",
                 "Chroma vector store with metadata",
@@ -1921,7 +1949,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Guidelines Semantic Search",
-                "desc": "Semantic search over nursing guidelines â€” compare embedding models on clinical terminology, hybrid search tuned for medical acronyms, benchmarked with a nurse-authored gold-standard query set.",
+                "desc": "Semantic search over nursing guidelines — compare embedding models on clinical terminology, hybrid search tuned for medical acronyms, benchmarked with a nurse-authored gold-standard query set.",
                 "skills": [
                   "Clinical corpus of 200+ guidelines",
                   "Medical acronym handling",
@@ -1986,7 +2014,7 @@
           "accentClass": "a3",
           "title": "RAG Pipeline Architecture",
           "topics": [
-            "Naive â†’ Advanced â†’ Modular RAG patterns",
+            "Naive ’ Advanced ’ Modular RAG patterns",
             "Query transformation: HyDE, step-back, multi-query",
             "Re-ranking with cross-encoders",
             "Context compression & contextual retrieval"
@@ -2000,7 +2028,7 @@
             },
             {
               "icon": "play",
-              "name": "LangChain â€” Advanced RAG Tutorial",
+              "name": "LangChain — Advanced RAG Tutorial",
               "meta": "YouTube · LangChain engineer · CRAG, Adaptive RAG",
               "url": "https://www.youtube.com/watch?v=sVcwVQRHIc8"
             },
@@ -2012,8 +2040,8 @@
             },
             {
               "icon": "tool",
-              "name": "AI Engineering Hub â€” 93+ Projects",
-              "meta": "GitHub · RAG, agents, deployment â€” all with code",
+              "name": "AI Engineering Hub — 93+ Projects",
+              "meta": "GitHub · RAG, agents, deployment — all with code",
               "url": "https://github.com/patchy631/ai-engineering-hub"
             }
           ],
@@ -2108,28 +2136,28 @@
           "accentClass": "a2",
           "title": "GraphRAG & Knowledge Graphs",
           "topics": [
-            "GraphRAG by Microsoft â€” community detection + graph retrieval",
+            "GraphRAG by Microsoft — community detection + graph retrieval",
             "Knowledge graph construction from unstructured text",
             "Neo4j for clinical relationship modelling",
             "Graph + vector hybrid retrieval patterns",
-            "When to use graph vs. vector RAG â€” decision framework"
+            "When to use graph vs. vector RAG — decision framework"
           ],
           "resources": [
             {
               "icon": "bar-chart-3",
-              "name": "Microsoft GraphRAG â€” Official Docs & Repo",
+              "name": "Microsoft GraphRAG — Official Docs & Repo",
               "meta": "github.com/microsoft/graphrag · Open-source, Apache 2.0",
               "url": "https://github.com/microsoft/graphrag"
             },
             {
               "icon": "file-text",
-              "name": "Neo4j Graph Academy â€” Free Courses",
+              "name": "Neo4j Graph Academy — Free Courses",
               "meta": "graphacademy.neo4j.com · Foundations to LLM integration",
               "url": "https://graphacademy.neo4j.com"
             },
             {
               "icon": "bot",
-              "name": "LlamaIndex â€” Knowledge Graph Index Guide",
+              "name": "LlamaIndex — Knowledge Graph Index Guide",
               "meta": "docs.llamaindex.ai · Build + query knowledge graphs",
               "url": "https://docs.llamaindex.ai/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphIndex_demo/"
             }
@@ -2225,28 +2253,28 @@
           "accentClass": "a2",
           "title": "Long-Context & Agent Memory Architecture",
           "topics": [
-            "Long-context strategies â€” when full context beats RAG",
-            "Mem0 â€” open-source memory layer for AI agents",
-            "Zep â€” production memory store for LLM applications",
+            "Long-context strategies — when full context beats RAG",
+            "Mem0 — open-source memory layer for AI agents",
+            "Zep — production memory store for LLM applications",
             "Episodic + semantic + procedural memory architectures",
             "Patient-session memory patterns for healthcare agents"
           ],
           "resources": [
             {
               "icon": "brain",
-              "name": "Mem0 â€” Open-Source Agent Memory Docs",
+              "name": "Mem0 — Open-Source Agent Memory Docs",
               "meta": "docs.mem0.ai · Add persistent memory to any agent",
               "url": "https://docs.mem0.ai"
             },
             {
               "icon": "zap",
-              "name": "Zep â€” Long-Term Memory for AI Assistants",
+              "name": "Zep — Long-Term Memory for AI Assistants",
               "meta": "getzep.com/docs · Production-grade memory store",
               "url": "https://help.getzep.com"
             },
             {
               "icon": "file-text",
-              "name": "Anthropic â€” Long Context Tips & Best Practices",
+              "name": "Anthropic — Long Context Tips & Best Practices",
               "meta": "docs.anthropic.com · 200K context window engineering",
               "url": "https://docs.anthropic.com/en/docs/build-with-claude/long-context-tips"
             }
@@ -2254,7 +2282,7 @@
           "projects": {
             "general": {
               "title": "Persistent Research Assistant",
-              "desc": "An AI assistant with Mem0-powered persistent memory â€” remembers your research topics, prior questions, and document preferences across sessions. Compare recall quality vs. plain RAG.",
+              "desc": "An AI assistant with Mem0-powered persistent memory — remembers your research topics, prior questions, and document preferences across sessions. Compare recall quality vs. plain RAG.",
               "skills": [
                 "Mem0 memory layer integration",
                 "Cross-session context persistence",
@@ -2276,7 +2304,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Patient History Memory Agent",
-                "desc": "A clinical agent with persistent memory per patient â€” remembers prior visits, medications, allergies, and care preferences. HIPAA-aware: memory stored locally, never sent to cloud.",
+                "desc": "A clinical agent with persistent memory per patient — remembers prior visits, medications, allergies, and care preferences. HIPAA-aware: memory stored locally, never sent to cloud.",
                 "skills": [
                   "Mem0 per-patient memory store",
                   "Local-only storage (Ollama backend)",
@@ -2344,26 +2372,26 @@
           "topics": [
             "LLM-based synthetic Q&A pair generation for RAG evaluation",
             "Gretel.ai for tabular and structured synthetic data",
-            "Synthetic clinical data â€” de-identified patient records",
-            "Distilabel â€” open-source synthetic dataset pipeline",
+            "Synthetic clinical data — de-identified patient records",
+            "Distilabel — open-source synthetic dataset pipeline",
             "Validating synthetic data quality against real distributions"
           ],
           "resources": [
             {
               "icon": "award",
-              "name": "Distilabel â€” Synthetic Data Pipeline",
+              "name": "Distilabel — Synthetic Data Pipeline",
               "meta": "github.com/argilla-io/distilabel · Argilla · Open-source",
               "url": "https://github.com/argilla-io/distilabel"
             },
             {
               "icon": "bar-chart-3",
-              "name": "Gretel.ai â€” Free Synthetic Data Platform",
+              "name": "Gretel.ai — Free Synthetic Data Platform",
               "meta": "gretel.ai · Free tier for synthetic tabular + text data",
               "url": "https://gretel.ai"
             },
             {
               "icon": "file-text",
-              "name": "RAGAS â€” Testset Generation from Docs",
+              "name": "RAGAS — Testset Generation from Docs",
               "meta": "docs.ragas.io/en/stable/getstarted/testset_generation/ · Auto-generate eval sets",
               "url": "https://docs.ragas.io/en/stable/getstarted/testset_generation/"
             }
@@ -2393,7 +2421,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Synthetic Clinical Record Generator",
-                "desc": "Generate 500 de-identified synthetic patient records (demographics, diagnoses, medications, vitals) using Gretel.ai â€” validate statistical similarity to real distributions and use for clinical AI training.",
+                "desc": "Generate 500 de-identified synthetic patient records (demographics, diagnoses, medications, vitals) using Gretel.ai — validate statistical similarity to real distributions and use for clinical AI training.",
                 "skills": [
                   "Gretel.ai synthetic patient data generation",
                   "ICD-10 diagnosis distribution matching",
@@ -2486,7 +2514,7 @@
           "projects": {
             "general": {
               "title": "Universal Document Ingestion Pipeline",
-              "desc": "Async pipeline processing PDFs, Word, HTML, and scanned images (OCR) â€” smart chunking by document type, table extraction, and incremental indexing with change detection.",
+              "desc": "Async pipeline processing PDFs, Word, HTML, and scanned images (OCR) — smart chunking by document type, table extraction, and incremental indexing with change detection.",
               "skills": [
                 "PDF + DOCX + HTML + image parsing",
                 "OCR with Tesseract",
@@ -2508,7 +2536,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Medical Record Ingestion Pipeline",
-                "desc": "Async pipeline ingesting clinical documents â€” discharge PDFs, scanned lab reports, nurse notes â€” with OCR, lab value table extraction, clinical section-aware chunking, and PHI de-identification.",
+                "desc": "Async pipeline ingesting clinical documents — discharge PDFs, scanned lab reports, nurse notes — with OCR, lab value table extraction, clinical section-aware chunking, and PHI de-identification.",
                 "skills": [
                   "Clinical document type detection",
                   "OCR for handwritten nurse notes",
@@ -2588,13 +2616,13 @@
             },
             {
               "icon": "factory",
-              "name": "LLMOps â€” DeepLearning.AI + Google Cloud",
+              "name": "LLMOps — DeepLearning.AI + Google Cloud",
               "meta": "Deployment, monitoring, production patterns · Free",
               "url": "https://www.deeplearning.ai/short-courses/llmops/"
             },
             {
               "icon": "newspaper",
-              "name": "Eugene Yan â€” Patterns for Building LLM Systems",
+              "name": "Eugene Yan — Patterns for Building LLM Systems",
               "meta": "The reference pattern catalogue for production LLMs",
               "url": "https://eugeneyan.com/writing/llm-patterns/"
             }
@@ -2768,6 +2796,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 03: RAG Systems!",
+        "whatToPost": [
+          "Share your vector embedding and semantic search projects",
+          "Post about RAG pipeline architecture decisions",
+          "Show a before/after of retrieval quality improvements"
+        ],
+        "suggestedHashtags": [
+          "#RAG",
+          "#VectorSearch",
+          "#100DaysOfCode",
+          "#AI"
+        ]
       }
     },
     {
@@ -2775,7 +2817,7 @@
       "badge": "badge-specialist",
       "badgeLabel": "Agentic AI",
       "title": "AI Agents, Tools & Multi-Agent Systems",
-      "duration": "Months 6â€“9",
+      "duration": "Months 6–9",
       "modules": [
         {
           "icon": "bot",
@@ -2790,7 +2832,7 @@
           "resources": [
             {
               "icon": "file-text",
-              "name": "Building Effective Agents â€” Anthropic Research",
+              "name": "Building Effective Agents — Anthropic Research",
               "meta": "The essential reference for agent design principles",
               "url": "https://www.anthropic.com/research/building-effective-agents"
             },
@@ -2808,7 +2850,7 @@
             },
             {
               "icon": "play",
-              "name": "Sam Witteveen â€” LangGraph Agents Explained",
+              "name": "Sam Witteveen — LangGraph Agents Explained",
               "meta": "YouTube · Practical agent implementation walkthrough",
               "url": "https://www.youtube.com/watch?v=Vh-p9Qfbm-8"
             }
@@ -2816,7 +2858,7 @@
           "projects": {
             "general": {
               "title": "ReAct Research Agent",
-              "desc": "ReAct agent with web search, calculator, code execution â€” episodic memory across sessions, reflexion self-correction loop, and human-in-the-loop approval before final output.",
+              "desc": "ReAct agent with web search, calculator, code execution — episodic memory across sessions, reflexion self-correction loop, and human-in-the-loop approval before final output.",
               "skills": [
                 "ReAct loop with 4+ tools",
                 "Episodic memory across sessions",
@@ -2837,7 +2879,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Research ReAct Agent",
-                "desc": "ReAct agent searching PubMed, calculating drug dosages, retrieving from clinical RAG, self-correcting on conflicting evidence â€” with mandatory human approval before surfacing any recommendation.",
+                "desc": "ReAct agent searching PubMed, calculating drug dosages, retrieving from clinical RAG, self-correcting on conflicting evidence — with mandatory human approval before surfacing any recommendation.",
                 "skills": [
                   "PubMed search tool",
                   "Dosage calculator tool",
@@ -2902,34 +2944,34 @@
           "accentClass": "a2",
           "title": "Voice AI & Multimodal Pipelines",
           "topics": [
-            "Speech-to-text with Whisper â€” local and API variants",
+            "Speech-to-text with Whisper — local and API variants",
             "Text-to-speech with ElevenLabs, Kokoro (open-source)",
             "Real-time voice agent pipelines with LiveKit Agents",
             "Vision + language: Claude Vision, LLaVA for image understanding",
-            "Ambient AI scribe pattern â€” clinical voice documentation"
+            "Ambient AI scribe pattern — clinical voice documentation"
           ],
           "resources": [
             {
               "icon": "mic",
-              "name": "Whisper â€” OpenAI Speech Recognition Docs",
+              "name": "Whisper — OpenAI Speech Recognition Docs",
               "meta": "github.com/openai/whisper · Free, open-source, local",
               "url": "https://github.com/openai/whisper"
             },
             {
               "icon": "volume-2",
-              "name": "Kokoro TTS â€” Open-Source Text-to-Speech",
+              "name": "Kokoro TTS — Open-Source Text-to-Speech",
               "meta": "github.com/hexgrad/kokoro · Best open-source TTS, Apache 2.0",
               "url": "https://github.com/hexgrad/kokoro"
             },
             {
               "icon": "phone",
-              "name": "LiveKit Agents â€” Real-Time Voice Agents",
+              "name": "LiveKit Agents — Real-Time Voice Agents",
               "meta": "docs.livekit.io/agents · Open-source voice pipeline framework",
               "url": "https://docs.livekit.io/agents/"
             },
             {
               "icon": "image",
-              "name": "DeepLearning.AI â€” Building Multimodal Search & RAG",
+              "name": "DeepLearning.AI — Building Multimodal Search & RAG",
               "meta": "deeplearning.ai · Free short course on vision + RAG",
               "url": "https://www.deeplearning.ai/short-courses/building-multimodal-search-and-rag/"
             }
@@ -2937,7 +2979,7 @@
           "projects": {
             "general": {
               "title": "Voice-to-Report Generator",
-              "desc": "Build a voice pipeline: record audio â†’ Whisper transcription â†’ LLM structuring â†’ formatted report. Add a Kokoro TTS readback of the summary. Deploy as a FastAPI endpoint.",
+              "desc": "Build a voice pipeline: record audio ’ Whisper transcription ’ LLM structuring ’ formatted report. Add a Kokoro TTS readback of the summary. Deploy as a FastAPI endpoint.",
               "skills": [
                 "Whisper local transcription",
                 "LLM structured report generation",
@@ -2959,7 +3001,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Ambient Clinical Scribe",
-                "desc": "Voice pipeline for clinical documentation: nurse speaks naturally about a patient encounter â†’ Whisper transcribes â†’ LLM structures into SOAP note format â†’ note is stored and ready for EHR entry.",
+                "desc": "Voice pipeline for clinical documentation: nurse speaks naturally about a patient encounter ’ Whisper transcribes ’ LLM structures into SOAP note format ’ note is stored and ready for EHR entry.",
                 "skills": [
                   "Whisper real-time transcription",
                   "SOAP note LLM structuring",
@@ -3025,7 +3067,7 @@
           "accentClass": "a2",
           "title": "LLM Security & Red-Teaming",
           "topics": [
-            "Prompt injection â€” direct and indirect (via RAG documents)",
+            "Prompt injection — direct and indirect (via RAG documents)",
             "Jailbreaking patterns and systematic defense strategies",
             "OWASP Top 10 for LLM Applications (2025)",
             "RAG data poisoning and document-level attacks",
@@ -3040,13 +3082,13 @@
             },
             {
               "icon": "file-text",
-              "name": "Garak â€” LLM Vulnerability Scanner",
+              "name": "Garak — LLM Vulnerability Scanner",
               "meta": "github.com/NVIDIA/garak · NVIDIA open-source red-teaming tool",
               "url": "https://github.com/NVIDIA/garak"
             },
             {
               "icon": "file-text",
-              "name": "Lakera â€” Prompt Injection Guide",
+              "name": "Lakera — Prompt Injection Guide",
               "meta": "lakera.ai/blog · Comprehensive free reference on injection attacks",
               "url": "https://www.lakera.ai/blog/guide-to-prompt-injection"
             },
@@ -3060,7 +3102,7 @@
           "projects": {
             "general": {
               "title": "LLM Security Audit Report",
-              "desc": "Red-team your own RAG or agent system using Garak â€” run prompt injection, jailbreaking, and data extraction probes. Document all vulnerabilities found and implement fixes. Publish as a security report.",
+              "desc": "Red-team your own RAG or agent system using Garak — run prompt injection, jailbreaking, and data extraction probes. Document all vulnerabilities found and implement fixes. Publish as a security report.",
               "skills": [
                 "Garak vulnerability scanner setup",
                 "Prompt injection probe suite",
@@ -3081,7 +3123,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI Red-Team Assessment",
-                "desc": "Red-team your clinical RAG system specifically for healthcare risks â€” injecting false clinical information via documents, testing for dangerous drug recommendations, and verifying guardrails block all attacks.",
+                "desc": "Red-team your clinical RAG system specifically for healthcare risks — injecting false clinical information via documents, testing for dangerous drug recommendations, and verifying guardrails block all attacks.",
                 "skills": [
                   "Clinical false-information injection tests",
                   "Dangerous drug recommendation probes",
@@ -3147,7 +3189,7 @@
           "title": "Agentic UX Design Patterns",
           "topics": [
             "Progress indicators for long-running agent tasks",
-            "Surfacing agent reasoning to users â€” transparency patterns",
+            "Surfacing agent reasoning to users — transparency patterns",
             "Error state design for agent failures & recovery",
             "Approval UI patterns for human-in-the-loop workflows",
             "Trust-building interface design for clinical AI"
@@ -3155,13 +3197,13 @@
           "resources": [
             {
               "icon": "triangle",
-              "name": "Google PAIR Guidebook â€” People + AI Research",
+              "name": "Google PAIR Guidebook — People + AI Research",
               "meta": "pair.withgoogle.com/guidebook · Free design patterns for AI",
               "url": "https://pair.withgoogle.com/guidebook/"
             },
             {
               "icon": "clipboard",
-              "name": "Nielsen Norman Group â€” AI UX Guidelines",
+              "name": "Nielsen Norman Group — AI UX Guidelines",
               "meta": "nngroup.com/topic/ai-user-experience · Free articles & reports",
               "url": "https://www.nngroup.com/topic/ai-user-experience/"
             },
@@ -3175,7 +3217,7 @@
           "projects": {
             "general": {
               "title": "Agent Progress UI Component",
-              "desc": "Build a React/Next.js UI component that shows real-time agent progress â€” step-by-step reasoning display, tool call indicators, error states with retry options, and a final approval button.",
+              "desc": "Build a React/Next.js UI component that shows real-time agent progress — step-by-step reasoning display, tool call indicators, error states with retry options, and a final approval button.",
               "skills": [
                 "Real-time agent step display (SSE)",
                 "Tool call indicator animations",
@@ -3196,7 +3238,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Agent Trust Interface",
-                "desc": "A clinical agent UI designed using PAIR guidelines â€” showing the agent's reasoning in plain language, confidence indicators for recommendations, a clear 'requires nurse review' flag, and one-tap approval flow.",
+                "desc": "A clinical agent UI designed using PAIR guidelines — showing the agent's reasoning in plain language, confidence indicators for recommendations, a clear 'requires nurse review' flag, and one-tap approval flow.",
                 "skills": [
                   "PAIR-compliant reasoning disclosure",
                   "Confidence indicator (traffic light system)",
@@ -3261,28 +3303,28 @@
           "accentClass": "a2",
           "title": "Real-Time AI & Event-Driven Pipelines",
           "topics": [
-            "OpenAI Realtime API â€” sub-300ms voice-to-voice conversations",
+            "OpenAI Realtime API — sub-300ms voice-to-voice conversations",
             "Event-driven AI pipelines with Redis Streams",
-            "Real-time agent status streaming â€” SSE + WebSockets in depth",
+            "Real-time agent status streaming — SSE + WebSockets in depth",
             "Webhook-driven automation triggers for clinical workflows",
             "Live clinical monitoring dashboard patterns"
           ],
           "resources": [
             {
               "icon": "mic",
-              "name": "OpenAI Realtime API â€” Docs & Cookbook",
+              "name": "OpenAI Realtime API — Docs & Cookbook",
               "meta": "platform.openai.com/docs/guides/realtime · Voice agents in browser",
               "url": "https://platform.openai.com/docs/guides/realtime"
             },
             {
               "icon": "file-text",
-              "name": "Redis Streams â€” Official Guide",
+              "name": "Redis Streams — Official Guide",
               "meta": "redis.io/docs/data-types/streams · Event-driven pipeline fundamentals",
               "url": "https://redis.io/docs/latest/develop/data-types/streams/"
             },
             {
               "icon": "phone",
-              "name": "Vapi.ai â€” Voice Agent Platform Docs",
+              "name": "Vapi.ai — Voice Agent Platform Docs",
               "meta": "docs.vapi.ai · Voice agents with clinical use case examples",
               "url": "https://docs.vapi.ai"
             }
@@ -3312,7 +3354,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Real-Time Ward Alert System",
-                "desc": "Event-driven pipeline for a clinical ward â€” patient vitals events stream into Redis, an LLM classifies urgency and generates nurse alerts, and a ward dashboard shows live patient status with colour-coded urgency.",
+                "desc": "Event-driven pipeline for a clinical ward — patient vitals events stream into Redis, an LLM classifies urgency and generates nurse alerts, and a ward dashboard shows live patient status with colour-coded urgency.",
                 "skills": [
                   "Redis Streams vitals event pipeline",
                   "LLM urgency classifier (NEWS2-aware)",
@@ -3387,7 +3429,7 @@
             {
               "icon": "users",
               "name": "Multi AI Agent Systems with CrewAI",
-              "meta": "DeepLearning.AI · JoÃ£o Moura (CrewAI founder) · Free",
+              "meta": "DeepLearning.AI · João Moura (CrewAI founder) · Free",
               "url": "https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/"
             },
             {
@@ -3506,19 +3548,19 @@
           "resources": [
             {
               "icon": "theater",
-              "name": "Playwright for Python â€” Official Docs",
+              "name": "Playwright for Python — Official Docs",
               "meta": "playwright.dev · The best browser automation tool",
               "url": "https://playwright.dev/python/docs/intro"
             },
             {
               "icon": "monitor",
-              "name": "Claude Computer Use â€” Anthropic Docs",
+              "name": "Claude Computer Use — Anthropic Docs",
               "meta": "Vision-based UI automation guide",
               "url": "https://docs.anthropic.com/en/docs/build-with-claude/computer-use"
             },
             {
               "icon": "globe",
-              "name": "Browser Use â€” GitHub",
+              "name": "Browser Use — GitHub",
               "meta": "Open-source LLM-powered browser agent framework",
               "url": "https://github.com/browser-use/browser-use"
             }
@@ -3547,7 +3589,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Trial Eligibility Scraper",
-                "desc": "Browser agent scraping ClinicalTrials.gov for trials matching a patient profile â€” extracting eligibility criteria and comparing against conditions/medications to produce a match report.",
+                "desc": "Browser agent scraping ClinicalTrials.gov for trials matching a patient profile — extracting eligibility criteria and comparing against conditions/medications to produce a match report.",
                 "skills": [
                   "ClinicalTrials.gov automated search",
                   "Eligibility criteria extraction",
@@ -3632,7 +3674,7 @@
             },
             {
               "icon": "puzzle",
-              "name": "Activepieces â€” Open-Source Automation",
+              "name": "Activepieces — Open-Source Automation",
               "meta": "GitHub · Free Make.com alternative, self-hostable",
               "url": "https://github.com/activepieces/activepieces"
             }
@@ -3640,7 +3682,7 @@
           "projects": {
             "general": {
               "title": "n8n AI Content Pipeline",
-              "desc": "n8n workflow monitoring RSS â†’ LLM classification â†’ summarisation â†’ Slack + Notion posting â†’ daily digest email. Includes a custom LLM node built from scratch.",
+              "desc": "n8n workflow monitoring RSS ’ LLM classification ’ summarisation ’ Slack + Notion posting ’ daily digest email. Includes a custom LLM node built from scratch.",
               "skills": [
                 "RSS monitor trigger",
                 "LLM classification + summarisation",
@@ -3746,7 +3788,7 @@
             },
             {
               "icon": "package",
-              "name": "E2B â€” Secure Code Execution Docs",
+              "name": "E2B — Secure Code Execution Docs",
               "meta": "Sandboxed environments for AI agents running code",
               "url": "https://e2b.dev/docs"
             }
@@ -3861,7 +3903,7 @@
             },
             {
               "icon": "edit-3",
-              "name": "Aider â€” AI Pair Programming Tutorials",
+              "name": "Aider — AI Pair Programming Tutorials",
               "meta": "aider.chat · CLI-based coding assistant, fully open-source",
               "url": "https://aider.chat/docs/usage/tutorials.html"
             }
@@ -3890,7 +3932,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Calculator Code Agent",
-                "desc": "Agent generating and validating clinical scoring code (CURB-65, NEWS2, Wells Score) â€” writes implementation, tests against gold-standard clinical cases, self-corrects until all pass, auto-documents with clinical references.",
+                "desc": "Agent generating and validating clinical scoring code (CURB-65, NEWS2, Wells Score) — writes implementation, tests against gold-standard clinical cases, self-corrects until all pass, auto-documents with clinical references.",
                 "skills": [
                   "Clinical formula spec reader",
                   "Python implementation generator",
@@ -4033,6 +4075,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 04: AI Agents & Multi-Agent Systems!",
+        "whatToPost": [
+          "Share your agent architecture patterns",
+          "Post about voice AI and multimodal pipelines",
+          "Showcase a multi-agent system you built"
+        ],
+        "suggestedHashtags": [
+          "#AIAgents",
+          "#MultiAgent",
+          "#100DaysOfCode",
+          "#AI"
+        ]
       }
     },
     {
@@ -4040,7 +4096,7 @@
       "badge": "badge-practice",
       "badgeLabel": "MLOps",
       "title": "Production Deployment & LLMOps",
-      "duration": "Months 9â€“12",
+      "duration": "Months 9–12",
       "modules": [
         {
           "icon": "cloud",
@@ -4068,7 +4124,7 @@
             {
               "icon": "globe",
               "name": "Vertex AI Documentation",
-              "meta": "Google's full AI platform â€” free docs + free tier",
+              "meta": "Google's full AI platform — free docs + free tier",
               "url": "https://cloud.google.com/vertex-ai/docs"
             },
             {
@@ -4081,7 +4137,7 @@
           "projects": {
             "general": {
               "title": "Serverless LLM Inference API",
-              "desc": "Serverless LLM summarisation endpoint on Modal â€” cold start optimisation, auto-scaling, GPU spot fallback, health check endpoint, Python IaC deploy script.",
+              "desc": "Serverless LLM summarisation endpoint on Modal — cold start optimisation, auto-scaling, GPU spot fallback, health check endpoint, Python IaC deploy script.",
               "skills": [
                 "Modal serverless LLM endpoint",
                 "Cold start optimisation",
@@ -4175,25 +4231,25 @@
           "resources": [
             {
               "icon": "factory",
-              "name": "Made With ML â€” MLOps Course (Anyscale)",
+              "name": "Made With ML — MLOps Course (Anyscale)",
               "meta": "Consistently rated the best free MLOps resource",
               "url": "https://madewithml.com/courses/mlops/"
             },
             {
               "icon": "newspaper",
-              "name": "LLMOps Crash Course â€” Daily Dose of Data Science",
+              "name": "LLMOps Crash Course — Daily Dose of Data Science",
               "meta": "18-part series · AI engineering & LLMOps · Free",
               "url": "https://www.dailydoseofds.com/llmops-crash-course-part-1/"
             },
             {
               "icon": "telescope",
-              "name": "Langfuse â€” Open-Source LLM Observability",
+              "name": "Langfuse — Open-Source LLM Observability",
               "meta": "Tracing, evals, cost tracking · OSS & free tier",
               "url": "https://langfuse.com/docs"
             },
             {
               "icon": "flask",
-              "name": "MLflow â€” Experiment Tracking",
+              "name": "MLflow — Experiment Tracking",
               "meta": "GitHub · Open-source ML lifecycle management",
               "url": "https://github.com/mlflow/mlflow"
             }
@@ -4222,7 +4278,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI Quality Monitor",
-                "desc": "Monitoring for clinical AI â€” latency by query type, cost per ward, DeepEval safety scores, dual alerting: quality degradation + hallucination rate spikes, weekly clinical safety report.",
+                "desc": "Monitoring for clinical AI — latency by query type, cost per ward, DeepEval safety scores, dual alerting: quality degradation + hallucination rate spikes, weekly clinical safety report.",
                 "skills": [
                   "Langfuse traces by clinical query type",
                   "Cost breakdown by ward",
@@ -4287,28 +4343,28 @@
           "accentClass": "a2",
           "title": "AI Cost Architecture & Optimisation",
           "topics": [
-            "LLM cost modelling â€” tokens, requests, embeddings, fine-tuning",
-            "Cost-quality framework â€” when to use Haiku vs Sonnet vs GPT-4o vs local",
-            "Intelligent caching to reduce API costs by 40â€“70%",
+            "LLM cost modelling — tokens, requests, embeddings, fine-tuning",
+            "Cost-quality framework — when to use Haiku vs Sonnet vs GPT-4o vs local",
+            "Intelligent caching to reduce API costs by 40–70%",
             "Cost forecasting for multi-tenant SaaS",
             "OpenRouter for model cost arbitrage across providers"
           ],
           "resources": [
             {
               "icon": "banknote",
-              "name": "OpenRouter â€” Multi-Model Cost Dashboard",
+              "name": "OpenRouter — Multi-Model Cost Dashboard",
               "meta": "openrouter.ai · Compare costs across 100+ models in real-time",
               "url": "https://openrouter.ai"
             },
             {
               "icon": "bar-chart-3",
-              "name": "Anthropic â€” Cost Optimisation Best Practices",
+              "name": "Anthropic — Cost Optimisation Best Practices",
               "meta": "docs.anthropic.com/en/docs/build-with-claude/reduce-latency · Free guide",
               "url": "https://docs.anthropic.com/en/docs/build-with-claude/reduce-latency"
             },
             {
               "icon": "book-open",
-              "name": "LLM API Pricing Calculator â€” community tool",
+              "name": "LLM API Pricing Calculator — community tool",
               "meta": "llmpricecheck.com · Compare token costs across providers",
               "url": "https://llmpricecheck.com"
             }
@@ -4337,7 +4393,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI Cost Model for a 10-Ward Hospital",
-                "desc": "Model the full LLM cost for a 10-ward hospital deployment â€” queries/day per ward, token estimates, caching savings, local model vs. API trade-offs â€” and present as a ROI document for a CFO.",
+                "desc": "Model the full LLM cost for a 10-ward hospital deployment — queries/day per ward, token estimates, caching savings, local model vs. API trade-offs — and present as a ROI document for a CFO.",
                 "skills": [
                   "Per-ward query volume modelling",
                   "Token cost estimation by query type",
@@ -4402,16 +4458,16 @@
           "accentClass": "a2",
           "title": "Model Serving & GPU Infrastructure",
           "topics": [
-            "vLLM â€” high-throughput open-source LLM serving",
+            "vLLM — high-throughput open-source LLM serving",
             "NVIDIA Container Toolkit for GPU-enabled model serving",
-            "Model serving vs. app serving â€” architectural differences",
+            "Model serving vs. app serving — architectural differences",
             "Batching strategies for cost-efficient inference",
             "Health checks & graceful degradation for model servers"
           ],
           "resources": [
             {
               "icon": "zap",
-              "name": "vLLM â€” Fast LLM Inference & Serving",
+              "name": "vLLM — Fast LLM Inference & Serving",
               "meta": "docs.vllm.ai · Open-source, PagedAttention, OpenAI-compatible",
               "url": "https://docs.vllm.ai"
             },
@@ -4423,7 +4479,7 @@
             },
             {
               "icon": "file-text",
-              "name": "Modal â€” GPU Serving Quickstart",
+              "name": "Modal — GPU Serving Quickstart",
               "meta": "modal.com/docs/examples/vllm_inference · vLLM on Modal, free tier",
               "url": "https://modal.com/docs/examples/vllm_inference"
             }
@@ -4431,7 +4487,7 @@
           "projects": {
             "general": {
               "title": "Local vLLM Inference Server",
-              "desc": "Deploy a Llama 3 8B model with vLLM â€” benchmark throughput (requests/sec) and latency, compare vs. Ollama, implement a FastAPI wrapper, and document optimal batching configuration.",
+              "desc": "Deploy a Llama 3 8B model with vLLM — benchmark throughput (requests/sec) and latency, compare vs. Ollama, implement a FastAPI wrapper, and document optimal batching configuration.",
               "skills": [
                 "vLLM server setup + config",
                 "Throughput + latency benchmark",
@@ -4452,7 +4508,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Private Clinical Model Server",
-                "desc": "Deploy a clinical-tuned model with vLLM in a Docker container configured for air-gapped operation â€” no external calls. Benchmark clinical accuracy, measure latency for ward use, and document the privacy guarantees.",
+                "desc": "Deploy a clinical-tuned model with vLLM in a Docker container configured for air-gapped operation — no external calls. Benchmark clinical accuracy, measure latency for ward use, and document the privacy guarantees.",
                 "skills": [
                   "Air-gapped vLLM deployment",
                   "Clinical model accuracy benchmark",
@@ -4543,7 +4599,7 @@
             },
             {
               "icon": "rocket",
-              "name": "Unsloth â€” Fast Fine-Tuning Notebooks",
+              "name": "Unsloth — Fast Fine-Tuning Notebooks",
               "meta": "GitHub · 2x faster, 70% less VRAM, extensive free notebooks",
               "url": "https://github.com/unslothai/unsloth"
             }
@@ -4572,7 +4628,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Triage Fine-Tuned Model",
-                "desc": "Fine-tune Llama 3.1 8B on 500+ clinical triage Q&A pairs â€” evaluate clinical accuracy vs. base model + RAG baseline, compare hallucination rates, serve locally via Ollama for offline ward use.",
+                "desc": "Fine-tune Llama 3.1 8B on 500+ clinical triage Q&A pairs — evaluate clinical accuracy vs. base model + RAG baseline, compare hallucination rates, serve locally via Ollama for offline ward use.",
                 "skills": [
                   "Clinical triage dataset curation",
                   "QLoRA fine-tune with Unsloth",
@@ -4651,13 +4707,13 @@
             },
             {
               "icon": "play",
-              "name": "ArjanCodes â€” Clean Python Architecture",
+              "name": "ArjanCodes — Clean Python Architecture",
               "meta": "YouTube · Design patterns, APIs, scalable code",
               "url": "https://www.youtube.com/@ArjanCodes"
             },
             {
               "icon": "package",
-              "name": "FastAPI GitHub â€” Examples & Issues",
+              "name": "FastAPI GitHub — Examples & Issues",
               "meta": "Real-world patterns from the community",
               "url": "https://github.com/tiangolo/fastapi"
             }
@@ -4833,6 +4889,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 05: Production Deployment & LLMOps!",
+        "whatToPost": [
+          "Share your cloud infrastructure setup for AI",
+          "Post about LLMOps and observability tools",
+          "Talk about production deployment challenges"
+        ],
+        "suggestedHashtags": [
+          "#LLMOps",
+          "#MLOps",
+          "#100DaysOfCode",
+          "#AI"
+        ]
       }
     },
     {
@@ -4840,7 +4910,7 @@
       "badge": "badge-mastery",
       "badgeLabel": "Mastery",
       "title": "Specialization, System Design & Capstone",
-      "duration": "Months 12â€“18",
+      "duration": "Months 12–18",
       "modules": [
         {
           "icon": "target",
@@ -4867,15 +4937,15 @@
             },
             {
               "icon": "tool",
-              "name": "AI Engineering Hub â€” 93+ Free Projects",
-              "meta": "Copy and build â€” all projects open-source with code",
+              "name": "AI Engineering Hub — 93+ Free Projects",
+              "meta": "Copy and build — all projects open-source with code",
               "url": "https://github.com/patchy631/ai-engineering-hub"
             }
           ],
           "projects": {
             "general": {
               "title": "Autonomous Research Agent SaaS",
-              "desc": "Multi-tenant SaaS: users submit research questions, an autonomous agent pipeline researches web + uploaded docs, produces a cited report, emails it â€” with billing dashboard and eval scores.",
+              "desc": "Multi-tenant SaaS: users submit research questions, an autonomous agent pipeline researches web + uploaded docs, produces a cited report, emails it — with billing dashboard and eval scores.",
               "skills": [
                 "Multi-tenant auth + billing",
                 "Autonomous agent pipeline",
@@ -4897,7 +4967,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical Intelligence SaaS",
-                "desc": "Multi-tenant clinical SaaS â€” wards subscribe, upload protocols, nurses query a clinical AI assistant. Isolated RAG per tenant, usage dashboards, monthly safety evaluation reports.",
+                "desc": "Multi-tenant clinical SaaS — wards subscribe, upload protocols, nurses query a clinical AI assistant. Isolated RAG per tenant, usage dashboards, monthly safety evaluation reports.",
                 "skills": [
                   "Ward-isolated RAG per tenant",
                   "Nurse-facing chat interface",
@@ -4963,8 +5033,8 @@
           "accentClass": "a2",
           "title": "Open-Source Contribution Guide",
           "topics": [
-            "Finding good first issues in AI repos â€” filtering strategies",
-            "GitHub contribution workflow â€” fork, branch, PR, review cycle",
+            "Finding good first issues in AI repos — filtering strategies",
+            "GitHub contribution workflow — fork, branch, PR, review cycle",
             "Writing a PR description that gets merged",
             "Target repos for healthcare AI: medAlpaca, ClinicalBERT",
             "Building reputation through consistent OSS contributions"
@@ -4972,19 +5042,19 @@
           "resources": [
             {
               "icon": "star",
-              "name": "First Timers Only â€” Good First Issue Finder",
+              "name": "First Timers Only — Good First Issue Finder",
               "meta": "goodfirstissue.dev · Filter by language & topic",
               "url": "https://goodfirstissue.dev"
             },
             {
               "icon": "book",
-              "name": "How to Contribute to Open Source â€” GitHub Docs",
+              "name": "How to Contribute to Open Source — GitHub Docs",
               "meta": "opensource.guide · Full guide from GitHub",
               "url": "https://opensource.guide/how-to-contribute/"
             },
             {
               "icon": "hospital",
-              "name": "medAlpaca â€” Medical LLM OSS Project",
+              "name": "medAlpaca — Medical LLM OSS Project",
               "meta": "github.com/kbressem/medAlpaca · Healthcare AI to contribute to",
               "url": "https://github.com/kbressem/medAlpaca"
             }
@@ -5013,7 +5083,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI OSS Contribution",
-                "desc": "Contribute to a healthcare AI project (medAlpaca, ClinicalBERT, or MedSpacy) â€” fix a bug, add a clinical test case, or improve documentation for a clinical use case.",
+                "desc": "Contribute to a healthcare AI project (medAlpaca, ClinicalBERT, or MedSpacy) — fix a bug, add a clinical test case, or improve documentation for a clinical use case.",
                 "skills": [
                   "Healthcare AI repo contribution",
                   "Clinical test case addition",
@@ -5086,13 +5156,13 @@
           "resources": [
             {
               "icon": "building",
-              "name": "ML Systems Design â€” Chip Huyen (Stanford)",
+              "name": "ML Systems Design — Chip Huyen (Stanford)",
               "meta": "Open-access Stanford course material · Free",
               "url": "https://huyenchip.com/machine-learning-systems-design/toc.html"
             },
             {
               "icon": "bar-chart-3",
-              "name": "a16z â€” Emerging Architectures for LLM Apps",
+              "name": "a16z — Emerging Architectures for LLM Apps",
               "meta": "The widely-shared LLM app stack reference diagram",
               "url": "https://a16z.com/emerging-architectures-for-llm-applications/"
             },
@@ -5112,7 +5182,7 @@
                 "Architecture diagrams (Mermaid)",
                 "Trade-off analysis tables",
                 "Failure mode + mitigation maps",
-                "Scaling plan: 1k â†’ 1M users"
+                "Scaling plan: 1k ’ 1M users"
               ],
               "stack": [
                 "Markdown",
@@ -5200,7 +5270,7 @@
           "resources": [
             {
               "icon": "shield",
-              "name": "AI Safety Fundamentals â€” DeepLearning.AI",
+              "name": "AI Safety Fundamentals — DeepLearning.AI",
               "meta": "Core safety concepts for production AI engineers · Free",
               "url": "https://www.deeplearning.ai/short-courses/ai-safety-deeplearning/"
             },
@@ -5212,7 +5282,7 @@
             },
             {
               "icon": "scroll",
-              "name": "The Prompt Report â€” Schulhoff et al. (2024)",
+              "name": "The Prompt Report — Schulhoff et al. (2024)",
               "meta": "arXiv · 76-page survey of prompting techniques · Free",
               "url": "https://arxiv.org/abs/2307.09009"
             }
@@ -5220,7 +5290,7 @@
           "projects": {
             "general": {
               "title": "AI Ethics Audit Report",
-              "desc": "Full ethics audit of a prior project â€” bias sources, demographic disparity testing, EU AI Act mapping, responsible disclosure policy, and a published model card.",
+              "desc": "Full ethics audit of a prior project — bias sources, demographic disparity testing, EU AI Act mapping, responsible disclosure policy, and a published model card.",
               "skills": [
                 "Bias source documentation",
                 "Demographic disparity testing",
@@ -5240,7 +5310,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI Ethics & HIPAA Audit",
-                "desc": "Ethics and compliance audit of your clinical RAG â€” patient demographic bias testing, HIPAA gap analysis, hallucination risk assessment, EU AI Act classification, model card with clinical contraindications.",
+                "desc": "Ethics and compliance audit of your clinical RAG — patient demographic bias testing, HIPAA gap analysis, hallucination risk assessment, EU AI Act classification, model card with clinical contraindications.",
                 "skills": [
                   "Patient demographic bias testing",
                   "HIPAA compliance gap analysis",
@@ -5382,30 +5452,44 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 06: Specialization & Capstone!",
+        "whatToPost": [
+          "Share your capstone project demo",
+          "Post about open-source contributions",
+          "Talk about your specialization path"
+        ],
+        "suggestedHashtags": [
+          "#Capstone",
+          "#OpenSource",
+          "#100DaysOfCode",
+          "#AI"
+        ]
       }
     },
     {
       "number": "07",
       "badge": "badge-specialist",
-      "badgeLabel": "ðŸ¥ Healthcare Specialization",
+      "badgeLabel": "🏥 Healthcare Specialization",
       "title": "Healthcare AI, HIPAA Compliance & Clinical Systems",
-      "duration": "Months 15â€“17 · Your niche. Your moat. Your irreplaceable advantage.",
+      "duration": "Months 15–17 · Your niche. Your moat. Your irreplaceable advantage.",
       "modules": [
         {
           "icon": "heart-pulse",
           "accentClass": "ap",
           "title": "Healthcare AI & HIPAA Compliance",
           "topics": [
-            "HIPAA technical safeguards for AI systems â€” PHI handling & audit logging",
-            "De-identification of PHI â€” Safe Harbor and Expert Determination methods",
-            "HL7 FHIR API â€” the standard for EHR data exchange",
-            "FDA SaMD guidelines â€” when your AI becomes a regulated medical device",
-            "Clinical AI validation â€” proving safety for clinical use"
+            "HIPAA technical safeguards for AI systems — PHI handling & audit logging",
+            "De-identification of PHI — Safe Harbor and Expert Determination methods",
+            "HL7 FHIR API — the standard for EHR data exchange",
+            "FDA SaMD guidelines — when your AI becomes a regulated medical device",
+            "Clinical AI validation — proving safety for clinical use"
           ],
           "resources": [
             {
               "icon": "clipboard",
-              "name": "HHS.gov â€” HIPAA Security Rule Technical Safeguards",
+              "name": "HHS.gov — HIPAA Security Rule Technical Safeguards",
               "meta": "hhs.gov · Official guidance, free PDF",
               "url": "https://www.hhs.gov/hipaa/for-professionals/security/guidance/index.html"
             },
@@ -5417,13 +5501,13 @@
             },
             {
               "icon": "banknote",
-              "name": "FDA â€” AI/ML Software as a Medical Device Framework",
+              "name": "FDA — AI/ML Software as a Medical Device Framework",
               "meta": "fda.gov · SaMD action plan, free PDF",
               "url": "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices"
             },
             {
               "icon": "award",
-              "name": "Hugging Face â€” Clinical NLP Models Hub",
+              "name": "Hugging Face — Clinical NLP Models Hub",
               "meta": "huggingface.co/models?pipeline_tag=text-classification&search=clinical · ClinicalBERT, BioBERT",
               "url": "https://huggingface.co/models?search=clinical"
             }
@@ -5431,7 +5515,7 @@
           "projects": {
             "general": {
               "title": "HIPAA Compliance Audit Toolkit",
-              "desc": "Build a Python toolkit that audits an AI application for HIPAA technical safeguard compliance â€” checking for PHI in logs, encryption at rest, access controls, and generating a compliance report.",
+              "desc": "Build a Python toolkit that audits an AI application for HIPAA technical safeguard compliance — checking for PHI in logs, encryption at rest, access controls, and generating a compliance report.",
               "skills": [
                 "PHI log scanner (regex + NER)",
                 "Encryption config checker",
@@ -5452,7 +5536,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "PHI De-Identification Pipeline",
-                "desc": "Full de-identification pipeline for clinical text using Presidio â€” strips names, dates, locations, MRNs, phone numbers, and replaces with realistic synthetic values. Validated against HIPAA Safe Harbor criteria.",
+                "desc": "Full de-identification pipeline for clinical text using Presidio — strips names, dates, locations, MRNs, phone numbers, and replaces with realistic synthetic values. Validated against HIPAA Safe Harbor criteria.",
                 "skills": [
                   "Presidio NLP-based PHI detection",
                   "18 HIPAA Safe Harbor identifier removal",
@@ -5517,7 +5601,7 @@
           "accentClass": "ap",
           "title": "Clinical NLP & Medical Text Processing",
           "topics": [
-            "Medical entity extraction â€” diseases, drugs, procedures, dosages",
+            "Medical entity extraction — diseases, drugs, procedures, dosages",
             "ICD-10 coding automation from clinical notes",
             "SNOMED CT and medical ontology integration",
             "Clinical text normalization and abbreviation expansion",
@@ -5526,25 +5610,25 @@
           "resources": [
             {
               "icon": "microscope",
-              "name": "scispaCy â€” Scientific NLP Library",
+              "name": "scispaCy — Scientific NLP Library",
               "meta": "github.com/allenai/scispacy · Free, biomedical entity recognition",
               "url": "https://github.com/allenai/scispacy"
             },
             {
               "icon": "shield",
-              "name": "Microsoft Presidio â€” PHI De-Identification",
+              "name": "Microsoft Presidio — PHI De-Identification",
               "meta": "github.com/microsoft/presidio · Open-source, HIPAA-ready",
               "url": "https://github.com/microsoft/presidio"
             },
             {
               "icon": "bar-chart-3",
-              "name": "MIMIC-IV â€” Free Clinical Dataset (with credentialing)",
+              "name": "MIMIC-IV — Free Clinical Dataset (with credentialing)",
               "meta": "physionet.org/content/mimiciv · The gold standard clinical NLP dataset",
               "url": "https://physionet.org/content/mimiciv/"
             },
             {
               "icon": "file-text",
-              "name": "MedSpacy â€” Clinical NLP Toolkit",
+              "name": "MedSpacy — Clinical NLP Toolkit",
               "meta": "github.com/medspacy/medspacy · Built on spaCy for clinical text",
               "url": "https://github.com/medspacy/medspacy"
             }
@@ -5552,7 +5636,7 @@
           "projects": {
             "general": {
               "title": "Medical Entity Extraction API",
-              "desc": "FastAPI endpoint using scispaCy to extract diseases, drugs, procedures, and dosages from clinical text â€” with confidence scores, ICD-10 code linking, and a Streamlit demo interface.",
+              "desc": "FastAPI endpoint using scispaCy to extract diseases, drugs, procedures, and dosages from clinical text — with confidence scores, ICD-10 code linking, and a Streamlit demo interface.",
               "skills": [
                 "scispaCy biomedical NER",
                 "Disease + drug + procedure extraction",
@@ -5573,7 +5657,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Nurse Note Structuring Pipeline",
-                "desc": "Pipeline that takes unstructured nurse notes and extracts: chief complaint, vital signs, medications administered, procedures performed, and nursing assessment â€” outputting structured JSON ready for EHR entry.",
+                "desc": "Pipeline that takes unstructured nurse notes and extracts: chief complaint, vital signs, medications administered, procedures performed, and nursing assessment — outputting structured JSON ready for EHR entry.",
                 "skills": [
                   "Nurse note NLP with medSpacy",
                   "Chief complaint extraction",
@@ -5638,28 +5722,28 @@
           "accentClass": "ap",
           "title": "EHR Integration & FHIR APIs",
           "topics": [
-            "FHIR RESTful API â€” Patient, Observation, Condition resources",
-            "SMART on FHIR â€” OAuth for EHR app integration",
+            "FHIR RESTful API — Patient, Observation, Condition resources",
+            "SMART on FHIR — OAuth for EHR app integration",
             "Epic, Cerner, and Athena API sandboxes (all free)",
-            "Clinical data pipeline: FHIR â†’ Python â†’ AI model",
+            "Clinical data pipeline: FHIR ’ Python ’ AI model",
             "Bulk FHIR export for dataset creation"
           ],
           "resources": [
             {
               "icon": "hospital",
-              "name": "SMART Health IT â€” FHIR Tutorials & Sandboxes",
+              "name": "SMART Health IT — FHIR Tutorials & Sandboxes",
               "meta": "smarthealthit.org · Free sandboxes for Epic, Cerner, Athena",
               "url": "https://smarthealthit.org"
             },
             {
               "icon": "flame",
-              "name": "HAPI FHIR â€” Open-Source FHIR Server",
+              "name": "HAPI FHIR — Open-Source FHIR Server",
               "meta": "hapifhir.io · Free FHIR server for development & testing",
               "url": "https://hapifhir.io"
             },
             {
               "icon": "terminal",
-              "name": "fhirpy â€” Python FHIR Client Library",
+              "name": "fhirpy — Python FHIR Client Library",
               "meta": "github.com/beda-software/fhirpy · Async FHIR API client",
               "url": "https://github.com/beda-software/fhirpy"
             },
@@ -5678,7 +5762,7 @@
                 "SMART on FHIR OAuth flow",
                 "FHIR resource retrieval (Patient/Observation/Condition)",
                 "fhirpy async client",
-                "Resource â†’ pandas DataFrame transform",
+                "Resource ’ pandas DataFrame transform",
                 "Sandbox environment setup guide"
               ],
               "stack": [
@@ -5694,12 +5778,12 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI FHIR Integration Layer",
-                "desc": "A middleware layer that pulls patient context from a FHIR server, formats it as a structured LLM prompt context, and feeds it to your clinical RAG system â€” enabling AI answers grounded in real patient data.",
+                "desc": "A middleware layer that pulls patient context from a FHIR server, formats it as a structured LLM prompt context, and feeds it to your clinical RAG system — enabling AI answers grounded in real patient data.",
                 "skills": [
                   "FHIR patient context retrieval",
-                  "Patient data â†’ LLM prompt formatting",
+                  "Patient data ’ LLM prompt formatting",
                   "Clinical RAG integration",
-                  "FHIR observation â†’ vitals normalisation",
+                  "FHIR observation ’ vitals normalisation",
                   "SMART on FHIR auth with sandbox (Epic/Cerner)"
                 ],
                 "stack": [
@@ -5759,28 +5843,28 @@
           "accentClass": "ap",
           "title": "Clinical AI Validation & Evaluation",
           "topics": [
-            "Clinical AI validation frameworks â€” accuracy, safety, fairness",
+            "Clinical AI validation frameworks — accuracy, safety, fairness",
             "Demographic bias testing across patient populations",
             "Clinical decision support evaluation standards (GRADE)",
-            "Human-AI teaming evaluation â€” when AI helps vs. harms",
+            "Human-AI teaming evaluation — when AI helps vs. harms",
             "Building a clinical gold-standard evaluation dataset"
           ],
           "resources": [
             {
               "icon": "scroll",
-              "name": "WHO â€” Ethics & Governance of AI for Health",
+              "name": "WHO — Ethics & Governance of AI for Health",
               "meta": "who.int · Free guidance document on clinical AI evaluation",
               "url": "https://www.who.int/publications/i/item/9789240029200"
             },
             {
               "icon": "microscope",
-              "name": "NEJM AI â€” Clinical AI Evaluation Best Practices",
+              "name": "NEJM AI — Clinical AI Evaluation Best Practices",
               "meta": "ai.nejm.org · Free articles on AI clinical validation",
               "url": "https://ai.nejm.org"
             },
             {
               "icon": "bar-chart-3",
-              "name": "TRIPOD+AI â€” Reporting Guidelines for Clinical AI",
+              "name": "TRIPOD+AI — Reporting Guidelines for Clinical AI",
               "meta": "equator-network.org · Free checklist for clinical AI studies",
               "url": "https://www.equator-network.org/reporting-guidelines/tripod-ai/"
             }
@@ -5788,7 +5872,7 @@
           "projects": {
             "general": {
               "title": "Clinical AI Benchmark Suite",
-              "desc": "Build a 100-question benchmark dataset for a clinical AI system â€” covering drug dosages, clinical protocols, triage decisions, and patient education â€” with ground-truth answers reviewed against clinical guidelines.",
+              "desc": "Build a 100-question benchmark dataset for a clinical AI system — covering drug dosages, clinical protocols, triage decisions, and patient education — with ground-truth answers reviewed against clinical guidelines.",
               "skills": [
                 "100-question clinical benchmark",
                 "Ground-truth answer sourcing (clinical guidelines)",
@@ -5809,7 +5893,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Demographic Bias Audit for Clinical AI",
-                "desc": "Audit your clinical AI system for demographic disparities â€” test responses across patient age, gender, race, and socioeconomic signals, measure quality differences, and produce a bias report with mitigation recommendations.",
+                "desc": "Audit your clinical AI system for demographic disparities — test responses across patient age, gender, race, and socioeconomic signals, measure quality differences, and produce a bias report with mitigation recommendations.",
                 "skills": [
                   "Demographic signal test dataset",
                   "Response quality measurement by group",
@@ -5877,7 +5961,7 @@
             "End-to-end PHI data flow mapping for AI systems",
             "Business Associate Agreement (BAA) requirements for AI vendors",
             "HIPAA-compliant cloud deployment on AWS/GCP/Azure",
-            "Audit logging architecture â€” who queried what, when",
+            "Audit logging architecture — who queried what, when",
             "Incident response plan for clinical AI failures"
           ],
           "resources": [
@@ -5889,13 +5973,13 @@
             },
             {
               "icon": "clipboard",
-              "name": "HHS â€” Breach Notification Rule",
+              "name": "HHS — Breach Notification Rule",
               "meta": "hhs.gov · What to do when clinical AI causes a PHI breach",
               "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html"
             },
             {
               "icon": "wrench",
-              "name": "Presidio â€” End-to-End PII/PHI Anonymization",
+              "name": "Presidio — End-to-End PII/PHI Anonymization",
               "meta": "microsoft.github.io/presidio · Complete system architecture guide",
               "url": "https://microsoft.github.io/presidio/"
             }
@@ -5903,7 +5987,7 @@
           "projects": {
             "general": {
               "title": "HIPAA-Compliant AI Architecture Blueprint",
-              "desc": "Design and document the full technical architecture for a HIPAA-compliant clinical AI system â€” data flow diagram, BAA requirements checklist, encryption plan, audit logging architecture, and incident response plan.",
+              "desc": "Design and document the full technical architecture for a HIPAA-compliant clinical AI system — data flow diagram, BAA requirements checklist, encryption plan, audit logging architecture, and incident response plan.",
               "skills": [
                 "PHI data flow diagram",
                 "BAA requirements checklist",
@@ -5923,7 +6007,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI Privacy Impact Assessment",
-                "desc": "Conduct a formal Privacy Impact Assessment (PIA) for your NurseAI platform â€” identifying all PHI touchpoints, assessing risk per touchpoint, documenting mitigations, and producing a publishable PIA report.",
+                "desc": "Conduct a formal Privacy Impact Assessment (PIA) for your NurseAI platform — identifying all PHI touchpoints, assessing risk per touchpoint, documenting mitigations, and producing a publishable PIA report.",
                 "skills": [
                   "PHI touchpoint inventory",
                   "Risk rating per touchpoint (High/Med/Low)",
@@ -6067,48 +6151,62 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 07: Healthcare AI & HIPAA Compliance!",
+        "whatToPost": [
+          "Share your healthcare AI project",
+          "Post about HIPAA compliance learnings",
+          "Talk about clinical NLP and medical text processing"
+        ],
+        "suggestedHashtags": [
+          "#HealthcareAI",
+          "#HIPAA",
+          "#100DaysOfCode",
+          "#AI"
+        ]
       }
     },
     {
       "number": "08",
       "badge": "badge-mastery",
-      "badgeLabel": "ðŸš€ Career & Business",
+      "badgeLabel": "🚀 Career & Business",
       "title": "Career Preparation, Consulting & Launch",
-      "duration": "Months 17â€“18 · Convert 18 months of work into income and opportunity.",
+      "duration": "Months 17–18 · Convert 18 months of work into income and opportunity.",
       "modules": [
         {
           "icon": "briefcase",
           "accentClass": "ag",
           "title": "Career Preparation & Portfolio Strategy",
           "topics": [
-            "Portfolio strategy â€” what to show, how to frame it, GitHub README standards",
-            "AI engineer resume writing â€” keywords, project descriptions, GitHub links",
-            "Technical interview prep â€” system design, coding, ML for AI roles",
+            "Portfolio strategy — what to show, how to frame it, GitHub README standards",
+            "AI engineer resume writing — keywords, project descriptions, GitHub links",
+            "Technical interview prep — system design, coding, ML for AI roles",
             "LinkedIn optimisation for healthcare AI engineering roles",
-            "Healthcare AI market map â€” companies, verticals, where the money is"
+            "Healthcare AI market map — companies, verticals, where the money is"
           ],
           "resources": [
             {
               "icon": "dollar-sign",
-              "name": "Levels.fyi â€” AI Engineer Salary Data",
+              "name": "Levels.fyi — AI Engineer Salary Data",
               "meta": "levels.fyi · Real compensation data by company and level",
               "url": "https://www.levels.fyi"
             },
             {
               "icon": "target",
-              "name": "Grokking the ML Interview â€” Free Preview",
+              "name": "Grokking the ML Interview — Free Preview",
               "meta": "github.com/Educative-Io/ml-interviews-book · Chapter previews free",
               "url": "https://github.com/alirezadir/Machine-Learning-Interviews"
             },
             {
               "icon": "bar-chart-3",
-              "name": "interviewing.io â€” Free AI/ML Interview Practice",
+              "name": "interviewing.io — Free AI/ML Interview Practice",
               "meta": "interviewing.io · Mock technical interviews, some free",
               "url": "https://interviewing.io"
             },
             {
               "icon": "hospital",
-              "name": "HIMSS â€” Health Informatics Career Resources",
+              "name": "HIMSS — Health Informatics Career Resources",
               "meta": "himss.org · Healthcare IT & AI career community, free resources",
               "url": "https://www.himss.org/resources"
             }
@@ -6116,7 +6214,7 @@
           "projects": {
             "general": {
               "title": "AI Engineer Portfolio Site",
-              "desc": "Build and deploy a personal portfolio site showcasing your 6+ projects â€” with live demo links, tech stack badges, architecture diagrams, RAGAS eval scores, and a blog section for your build-in-public posts.",
+              "desc": "Build and deploy a personal portfolio site showcasing your 6+ projects — with live demo links, tech stack badges, architecture diagrams, RAGAS eval scores, and a blog section for your build-in-public posts.",
               "skills": [
                 "Next.js portfolio site",
                 "Project cards with live demo links",
@@ -6138,9 +6236,9 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Healthcare AI Engineer Portfolio",
-                "desc": "Same portfolio site specifically positioned for healthcare AI roles â€” featuring clinical problem statements, HIPAA compliance notes per project, clinical validation results, and a dedicated NurseAI case study.",
+                "desc": "Same portfolio site specifically positioned for healthcare AI roles — featuring clinical problem statements, HIPAA compliance notes per project, clinical validation results, and a dedicated NurseAI case study.",
                 "skills": [
-                  "Clinical problem â†’ solution framing",
+                  "Clinical problem ’ solution framing",
                   "HIPAA compliance badge per project",
                   "Clinical validation results section",
                   "NurseAI platform case study page",
@@ -6203,28 +6301,28 @@
           "accentClass": "ag",
           "title": "Building in Public & Personal Brand",
           "topics": [
-            "Weekly building-in-public strategy â€” what to post, when, how",
+            "Weekly building-in-public strategy — what to post, when, how",
             "LinkedIn content strategy for AI engineers entering healthcare",
-            "Technical writing â€” blog posts, case studies, architecture essays",
-            "Newsletter flywheel â€” turning your 18 months into an audience",
+            "Technical writing — blog posts, case studies, architecture essays",
+            "Newsletter flywheel — turning your 18 months into an audience",
             "Speaking at meetups and conferences as an early-career AI engineer"
           ],
           "resources": [
             {
               "icon": "edit-3",
-              "name": "Google Technical Writing Courses â€” Free",
+              "name": "Google Technical Writing Courses — Free",
               "meta": "developers.google.com/tech-writing · Two free courses, certificate",
               "url": "https://developers.google.com/tech-writing"
             },
             {
               "icon": "pen-tool",
-              "name": "Stripe's API Documentation â€” Case Study",
+              "name": "Stripe's API Documentation — Case Study",
               "meta": "stripe.com/docs · The gold standard for technical communication",
               "url": "https://stripe.com/docs"
             },
             {
               "icon": "newspaper",
-              "name": "Swyx â€” Learn in Public Essay",
+              "name": "Swyx — Learn in Public Essay",
               "meta": "swyx.io/learn-in-public · The original manifesto, still the best",
               "url": "https://www.swyx.io/learn-in-public"
             }
@@ -6232,7 +6330,7 @@
           "projects": {
             "general": {
               "title": "30-Day Build-in-Public Sprint",
-              "desc": "Plan and execute 30 days of building-in-public content â€” 1 post/day about what you built or learned. Write a retrospective on what worked, what flopped, and what you'll continue.",
+              "desc": "Plan and execute 30 days of building-in-public content — 1 post/day about what you built or learned. Write a retrospective on what worked, what flopped, and what you'll continue.",
               "skills": [
                 "30-day content calendar",
                 "5 post formats (lesson/build/mistake/resource/milestone)",
@@ -6253,7 +6351,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Healthcare AI Build-in-Public Series",
-                "desc": "30-day series specifically about building AI tools as a nurse â€” 'Day 1: Why nurses need better AI tools', 'Day 15: What I built this week for my ward', 'Day 30: What I learned'. Target nursing informatics communities.",
+                "desc": "30-day series specifically about building AI tools as a nurse — 'Day 1: Why nurses need better AI tools', 'Day 15: What I built this week for my ward', 'Day 30: What I learned'. Target nursing informatics communities.",
                 "skills": [
                   "Nurse-perspective content angle",
                   "Clinical problem storytelling format",
@@ -6318,16 +6416,16 @@
           "accentClass": "ag",
           "title": "Freelancing & AI Consulting Business",
           "topics": [
-            "Scoping AI automation projects â€” what to ask before quoting",
+            "Scoping AI automation projects — what to ask before quoting",
             "Pricing models: hourly vs. project vs. retainer for AI consulting",
-            "ROI framing for healthcare AI â€” quantifying time savings & error reduction",
+            "ROI framing for healthcare AI — quantifying time savings & error reduction",
             "Statement of work template for AI automation projects",
             "Managing client expectations around AI hallucinations & limitations"
           ],
           "resources": [
             {
               "icon": "clipboard",
-              "name": "Toptal â€” AI Engineering Freelance Platform",
+              "name": "Toptal — AI Engineering Freelance Platform",
               "meta": "toptal.com · Top-tier AI freelance marketplace, high rates",
               "url": "https://www.toptal.com"
             },
@@ -6339,7 +6437,7 @@
             },
             {
               "icon": "file-text",
-              "name": "Paul Graham â€” How to Get Consulting Clients",
+              "name": "Paul Graham — How to Get Consulting Clients",
               "meta": "paulgraham.com/wealth.html · Timeless consulting advice",
               "url": "http://paulgraham.com/wealth.html"
             }
@@ -6347,7 +6445,7 @@
           "projects": {
             "general": {
               "title": "AI Consulting Proposal Template",
-              "desc": "Build a reusable consulting proposal template for AI automation projects â€” covering problem statement, proposed solution, timeline, deliverables, pricing tiers, and terms. Use it to send 3 real outreach messages.",
+              "desc": "Build a reusable consulting proposal template for AI automation projects — covering problem statement, proposed solution, timeline, deliverables, pricing tiers, and terms. Use it to send 3 real outreach messages.",
               "skills": [
                 "Proposal template (Markdown + PDF export)",
                 "Problem statement framework",
@@ -6367,11 +6465,11 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Healthcare AI Consulting Pitch",
-                "desc": "A healthcare-specific consulting pitch deck and proposal template â€” targeting clinics, health systems, and digital health startups. Includes a ROI calculator showing time savings and error reduction from clinical AI automation.",
+                "desc": "A healthcare-specific consulting pitch deck and proposal template — targeting clinics, health systems, and digital health startups. Includes a ROI calculator showing time savings and error reduction from clinical AI automation.",
                 "skills": [
                   "Healthcare AI pitch deck (10 slides)",
                   "ROI calculator (time saved per ward)",
-                  "Clinical problem â†’ AI solution mapping",
+                  "Clinical problem ’ AI solution mapping",
                   "HIPAA compliance assurance section",
                   "3 real outreach messages to health tech companies"
                 ],
@@ -6432,27 +6530,27 @@
           "title": "Technical Communication & Stakeholder Management",
           "topics": [
             "Explaining AI limitations to clinical stakeholders without losing trust",
-            "Stakeholder management for AI projects â€” setting expectations, managing scope",
-            "Architecture Decision Records (ADRs) â€” documenting your technical choices",
+            "Stakeholder management for AI projects — setting expectations, managing scope",
+            "Architecture Decision Records (ADRs) — documenting your technical choices",
             "Writing effective AI project proposals and clinical case studies",
-            "Building trust with clinicians â€” the unique challenge of clinical AI adoption"
+            "Building trust with clinicians — the unique challenge of clinical AI adoption"
           ],
           "resources": [
             {
               "icon": "book",
-              "name": "Architecture Decision Records â€” Michael Nygard's Original",
+              "name": "Architecture Decision Records — Michael Nygard's Original",
               "meta": "cognitect.com/blog/2011/11/15/documenting-architecture-decisions · Free",
               "url": "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions"
             },
             {
               "icon": "clipboard",
-              "name": "Google â€” Technical Writing for Engineers",
+              "name": "Google — Technical Writing for Engineers",
               "meta": "developers.google.com/tech-writing/two · Free course part 2",
               "url": "https://developers.google.com/tech-writing/two"
             },
             {
               "icon": "hospital",
-              "name": "AMIA â€” Clinical Informatics Communication Resources",
+              "name": "AMIA — Clinical Informatics Communication Resources",
               "meta": "amia.org · American Medical Informatics Association, free articles",
               "url": "https://www.amia.org"
             }
@@ -6460,7 +6558,7 @@
           "projects": {
             "general": {
               "title": "AI Project Technical Case Study",
-              "desc": "Write a 1,500-word technical case study for one of your projects â€” problem, solution, architecture, results, and lessons learned. Publish on GitHub Pages and LinkedIn.",
+              "desc": "Write a 1,500-word technical case study for one of your projects — problem, solution, architecture, results, and lessons learned. Publish on GitHub Pages and LinkedIn.",
               "skills": [
                 "Problem statement framing",
                 "Architecture diagram (Mermaid)",
@@ -6480,7 +6578,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI Stakeholder Presentation",
-                "desc": "Build a 10-slide presentation explaining your NurseAI platform to clinical stakeholders (nursing director, CMIO) â€” focusing on patient safety benefits, workflow impact, HIPAA compliance, and how clinicians remain in control.",
+                "desc": "Build a 10-slide presentation explaining your NurseAI platform to clinical stakeholders (nursing director, CMIO) — focusing on patient safety benefits, workflow impact, HIPAA compliance, and how clinicians remain in control.",
                 "skills": [
                   "Non-technical executive summary slide",
                   "Patient safety benefit quantification",
@@ -6545,27 +6643,27 @@
           "title": "Weekly Study Schedule & Progress Tracking",
           "topics": [
             "18-month week-by-week study plan at 20hrs/week",
-            "Monthly milestone checklist â€” what to build at each point",
+            "Monthly milestone checklist — what to build at each point",
             "Self-assessment questions per phase",
-            "Accountability systems â€” study partners, public commits",
+            "Accountability systems — study partners, public commits",
             "Adapting the schedule around nursing shifts"
           ],
           "resources": [
             {
               "icon": "check-circle",
-              "name": "Notion â€” Free Study Tracker Templates",
+              "name": "Notion — Free Study Tracker Templates",
               "meta": "notion.so/templates · 18-month curriculum tracker template",
               "url": "https://www.notion.so/templates"
             },
             {
               "icon": "target",
-              "name": "GitHub Projects â€” Free Progress Tracking",
+              "name": "GitHub Projects — Free Progress Tracking",
               "meta": "github.com/features/project-management · Kanban for your curriculum",
               "url": "https://github.com/features/project-management"
             },
             {
               "icon": "users",
-              "name": "Study Hall â€” AI Engineering Study Groups",
+              "name": "Study Hall — AI Engineering Study Groups",
               "meta": "discord.gg/study-hall · Find accountability partners in AI",
               "url": "https://discord.gg/langchain"
             }
@@ -6573,7 +6671,7 @@
           "projects": {
             "general": {
               "title": "Personal Curriculum Tracker",
-              "desc": "Build a Notion or GitHub Projects-based tracker for your 18-month curriculum â€” with phase completion %, weekly hour logging, project status per phase, and a public accountability page.",
+              "desc": "Build a Notion or GitHub Projects-based tracker for your 18-month curriculum — with phase completion %, weekly hour logging, project status per phase, and a public accountability page.",
               "skills": [
                 "18-month phase breakdown in Notion",
                 "Weekly hour logging template",
@@ -6593,7 +6691,7 @@
                 "name": "Healthcare",
                 "tagline": "Clinical AI, patient data systems, medical NLP",
                 "title": "Clinical AI Learning Journal",
-                "desc": "A structured learning journal combining technical progress tracking with clinical reflection â€” what you built, how it applies to nursing practice, what clinical problem it solves, and who you shared it with.",
+                "desc": "A structured learning journal combining technical progress tracking with clinical reflection — what you built, how it applies to nursing practice, what clinical problem it solves, and who you shared it with.",
                 "skills": [
                   "Weekly build log + clinical reflection",
                   "Clinical applicability rating per module",
@@ -6734,6 +6832,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 08: Career Launch!",
+        "whatToPost": [
+          "Share your portfolio and resume updates",
+          "Post about your consulting journey",
+          "Talk about building in public and personal branding"
+        ],
+        "suggestedHashtags": [
+          "#CareerLaunch",
+          "#Portfolio",
+          "#100DaysOfCode",
+          "#AI"
         ]
       }
     }

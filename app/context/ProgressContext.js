@@ -15,8 +15,8 @@ export function ProgressProvider({ children }) {
   const getKey = (roadmapId) => `${roadmapId}_completed`;
 
   const getCompleted = useCallback((roadmapId) => {
-    return completedRef.current[roadmapId] || [];
-  }, []);
+    return completedMap[roadmapId] || [];
+  }, [completedMap]);
 
   const loadProgress = useCallback((roadmapId) => {
     const key = getKey(roadmapId);

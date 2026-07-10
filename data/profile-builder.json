@@ -1,0 +1,509 @@
+{
+  "roadmapProfiles": {
+    "ai": {
+      "title": "AI Automation Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring AI Engineer | Learning {topics} | Building {projects} | {timeline} journey",
+        "linkedin": "AI Automation Engineer in training | Passionate about {focus} | Currently learning {topics} | Building real-world AI solutions",
+        "github": "Aspiring AI Automation Engineer | Building projects to learn {topics}"
+      },
+      "profileKeywords": [
+        "AI",
+        "Machine Learning",
+        "Python",
+        "Automation",
+        "LLMs",
+        "Deep Learning",
+        "NLP",
+        "Computer Vision"
+      ],
+      "contentPillars": [
+        "Learning progress updates",
+        "AI concept explanations",
+        "Project showcases",
+        "Industry insights",
+        "Tool and resource recommendations"
+      ],
+      "recommendedPlatforms": ["twitter", "linkedin", "github"],
+      "bannerTips": "Use images related to AI, neural networks, or data visualization. Keep it professional and clean.",
+      "profilePictureTips": "Professional headshot or a stylized avatar with AI-related elements.",
+      "nicheVariations": {
+        "healthcare": {
+          "bio": "Aspiring Healthcare AI Engineer | Building clinical AI solutions | Learning {topics}",
+          "keywords": ["Healthcare AI", "Clinical NLP", "Medical Imaging", "HIPAA"],
+          "contentPillars": [
+            "Healthcare AI applications",
+            "Clinical document processing",
+            "Patient data systems",
+            "Medical NLP"
+          ]
+        },
+        "fintech": {
+          "bio": "Aspiring Fintech AI Engineer | Building algorithmic trading systems | Learning {topics}",
+          "keywords": ["Algorithmic Trading", "Quantitative Finance", "Risk Models", "Financial AI"],
+          "contentPillars": [
+            "Trading algorithms",
+            "Risk assessment models",
+            "Financial data analysis",
+            "Market prediction"
+          ]
+        },
+        "climate": {
+          "bio": "Aspiring Climate Tech AI Engineer | Building sustainability solutions | Learning {topics}",
+          "keywords": ["Climate AI", "Carbon Tracking", "Environmental Monitoring", "Green Tech"],
+          "contentPillars": [
+            "Carbon footprint tracking",
+            "Environmental data analysis",
+            "Sustainability reporting",
+            "Climate modeling"
+          ]
+        }
+      }
+    },
+    "fullstack": {
+      "title": "Full-Stack Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring Full-Stack Developer | Building end-to-end applications | Learning {topics} | {timeline} journey",
+        "linkedin": "Full-Stack Developer in training | Passionate about building complete web solutions | Learning {topics}",
+        "github": "Aspiring Full-Stack Developer | Building full-stack projects"
+      },
+      "profileKeywords": [
+        "Full-Stack",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Databases",
+        "APIs",
+        "Web Development"
+      ],
+      "contentPillars": [
+        "Full-stack project showcases",
+        "Frontend-backend integration",
+        "Deployment workflows",
+        "Database design"
+      ],
+      "recommendedPlatforms": ["twitter", "linkedin", "github"],
+      "bannerTips": "Use images of code editors, web applications, or development setups.",
+      "profilePictureTips": "Professional headshot or a code-themed avatar."
+    },
+    "frontend": {
+      "title": "Frontend Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring Frontend Developer | Building beautiful UIs | Learning {topics} | {timeline} journey",
+        "linkedin": "Frontend Developer in training | Passionate about UI/UX | Learning {topics}",
+        "github": "Aspiring Frontend Developer | Building responsive web applications"
+      },
+      "profileKeywords": [
+        "Frontend",
+        "React",
+        "CSS",
+        "JavaScript",
+        "UI/UX",
+        "Responsive Design",
+        "Web Development"
+      ],
+      "contentPillars": [
+        "UI component showcases",
+        "CSS techniques",
+        "Responsive design tips",
+        "Performance optimization"
+      ],
+      "recommendedPlatforms": ["twitter", "devto", "github", "tiktok"],
+      "bannerTips": "Use colorful gradients, UI mockups, or design elements.",
+      "profilePictureTips": "Creative or design-focused avatar."
+    },
+    "backend": {
+      "title": "Backend Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring Backend Developer | Building scalable APIs | Learning {topics} | {timeline} journey",
+        "linkedin": "Backend Developer in training | Passionate about system design | Learning {topics}",
+        "github": "Aspiring Backend Developer | Building robust API systems"
+      },
+      "profileKeywords": [
+        "Backend",
+        "APIs",
+        "Node.js",
+        "Python",
+        "Databases",
+        "System Design",
+        "Architecture"
+      ],
+      "contentPillars": [
+        "API design patterns",
+        "Database optimization",
+        "System architecture",
+        "Security best practices"
+      ],
+      "recommendedPlatforms": ["twitter", "linkedin", "github", "devto"],
+      "bannerTips": "Use server, database, or architecture diagrams.",
+      "profilePictureTips": "Professional headshot or system architecture themed avatar."
+    },
+    "cybersecurity": {
+      "title": "Cybersecurity Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring Cybersecurity Professional | Protecting digital assets | Learning {topics} | {timeline} journey",
+        "linkedin": "Cybersecurity Professional in training | Passionate about information security | Learning {topics}",
+        "github": "Aspiring Security Engineer | Building security tools"
+      },
+      "profileKeywords": [
+        "Cybersecurity",
+        "InfoSec",
+        "Ethical Hacking",
+        "Security",
+        "Compliance",
+        "Risk Management"
+      ],
+      "contentPillars": [
+        "Security awareness tips",
+        "Vulnerability explanations",
+        "Career advice in security",
+        "Industry trends"
+      ],
+      "recommendedPlatforms": ["twitter", "linkedin"],
+      "bannerTips": "Use security-related imagery, shields, or lock icons.",
+      "profilePictureTips": "Professional headshot with security-themed elements."
+    },
+    "data-engineering": {
+      "title": "Data Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring Data Engineer | Building data pipelines | Learning {topics} | {timeline} journey",
+        "linkedin": "Data Engineer in training | Passionate about data infrastructure | Learning {topics}",
+        "github": "Aspiring Data Engineer | Building ETL pipelines and data systems"
+      },
+      "profileKeywords": [
+        "Data Engineering",
+        "ETL",
+        "Pipelines",
+        "SQL",
+        "Python",
+        "Big Data",
+        "Analytics"
+      ],
+      "contentPillars": [
+        "Pipeline architecture",
+        "ETL workflow optimization",
+        "Data quality insights",
+        "Tool comparisons"
+      ],
+      "recommendedPlatforms": ["twitter", "linkedin", "github"],
+      "bannerTips": "Use data flow diagrams, pipeline visualizations, or database imagery.",
+      "profilePictureTips": "Professional headshot or data visualization themed avatar."
+    },
+    "cloud-devops": {
+      "title": "Cloud/DevOps Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring DevOps Engineer | Building cloud infrastructure | Learning {topics} | {timeline} journey",
+        "linkedin": "DevOps Engineer in training | Passionate about cloud architecture | Learning {topics}",
+        "github": "Aspiring DevOps Engineer | Building infrastructure as code"
+      },
+      "profileKeywords": [
+        "DevOps",
+        "Cloud",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "Infrastructure"
+      ],
+      "contentPillars": [
+        "Infrastructure as Code",
+        "CI/CD pipeline design",
+        "Cost optimization",
+        "Cloud architecture"
+      ],
+      "recommendedPlatforms": ["twitter", "linkedin", "github"],
+      "bannerTips": "Use cloud icons, server infrastructure, or DevOps tool logos.",
+      "profilePictureTips": "Professional headshot or cloud-themed avatar."
+    },
+    "fintech": {
+      "title": "Fintech Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring Fintech Developer | Building financial technology | Learning {topics} | {timeline} journey",
+        "linkedin": "Fintech Developer in training | Passionate about financial innovation | Learning {topics}",
+        "github": "Aspiring Fintech Developer | Building financial applications"
+      },
+      "profileKeywords": [
+        "FinTech",
+        "Blockchain",
+        "DeFi",
+        "Algorithmic Trading",
+        "Financial Systems",
+        "Payments"
+      ],
+      "contentPillars": [
+        "Financial algorithm explanations",
+        "Regulatory compliance insights",
+        "Market analysis tools",
+        "Risk management approaches"
+      ],
+      "recommendedPlatforms": ["linkedin", "twitter"],
+      "bannerTips": "Use financial imagery, charts, or fintech-related graphics.",
+      "profilePictureTips": "Professional headshot with financial or tech elements."
+    },
+    "growth": {
+      "title": "Growth Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring Growth Engineer | Data-driven marketing | Learning {topics} | {timeline} journey",
+        "linkedin": "Growth Engineer in training | Combining tech with marketing | Learning {topics}",
+        "github": "Aspiring Growth Engineer | Building analytics and growth tools"
+      },
+      "profileKeywords": [
+        "Growth Engineering",
+        "Analytics",
+        "Marketing",
+        "SEO",
+        "A/B Testing",
+        "Conversion Optimization"
+      ],
+      "contentPillars": [
+        "A/B testing insights",
+        "Analytics implementation",
+        "SEO optimization tips",
+        "Growth metrics analysis"
+      ],
+      "recommendedPlatforms": ["twitter", "linkedin"],
+      "bannerTips": "Use growth charts, analytics dashboards, or marketing imagery.",
+      "profilePictureTips": "Professional headshot with growth or analytics elements."
+    },
+    "green-tech": {
+      "title": "Green Tech Engineer",
+      "bioTemplates": {
+        "twitter": "Aspiring Climate Tech Developer | Building sustainability solutions | Learning {topics} | {timeline} journey",
+        "linkedin": "Climate Tech Developer in training | Using tech for sustainability | Learning {topics}",
+        "github": "Aspiring Green Tech Developer | Building environmental monitoring tools"
+      },
+      "profileKeywords": [
+        "Climate Tech",
+        "Green Tech",
+        "Sustainability",
+        "Clean Energy",
+        "Environmental Monitoring",
+        "Carbon Tracking"
+      ],
+      "contentPillars": [
+        "Environmental impact metrics",
+        "Sustainability solutions",
+        "Carbon tracking tools",
+        "Climate data analysis"
+      ],
+      "recommendedPlatforms": ["linkedin", "twitter"],
+      "bannerTips": "Use nature imagery, sustainability graphics, or environmental data visualizations.",
+      "profilePictureTips": "Professional headshot with green or nature elements."
+    }
+  },
+  "profileOptimization": {
+    "twitter": {
+      "sections": [
+        {
+          "name": "Bio",
+          "tips": [
+            "Keep it under 160 characters",
+            "Include your learning focus",
+            "Add relevant keywords",
+            "Include a call-to-action"
+          ]
+        },
+        {
+          "name": "Profile Picture",
+          "tips": [
+            "Use a clear, professional photo",
+            "Ensure good lighting",
+            "Use a consistent image across platforms"
+          ]
+        },
+        {
+          "name": "Banner",
+          "tips": [
+            "Use a relevant background image",
+            "Include your current focus or project",
+            "Keep text minimal"
+          ]
+        },
+        {
+          "name": "Pinned Tweet",
+          "tips": [
+            "Pin your best project or learning update",
+            "Include a link to your portfolio or GitHub",
+            "Update regularly"
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "Canva",
+          "url": "https://canva.com",
+          "purpose": "Create banner images"
+        },
+        {
+          "name": "Figma",
+          "url": "https://figma.com",
+          "purpose": "Design custom graphics"
+        }
+      ]
+    },
+    "linkedin": {
+      "sections": [
+        {
+          "name": "Headline",
+          "tips": [
+            "Include your target role",
+            "Add key skills",
+            "Keep it under 220 characters"
+          ]
+        },
+        {
+          "name": "About Section",
+          "tips": [
+            "Write in first person",
+            "Tell your learning story",
+            "Include relevant keywords",
+            "Add a call-to-action"
+          ]
+        },
+        {
+          "name": "Experience",
+          "tips": [
+            "Add learning projects as experience",
+            "Use action verbs",
+            "Quantify achievements"
+          ]
+        },
+        {
+          "name": "Featured Section",
+          "tips": [
+            "Add your best projects",
+            "Include articles you have written",
+            "Link to your portfolio"
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "Canva",
+          "url": "https://canva.com",
+          "purpose": "Create banner and featured images"
+        },
+        {
+          "name": "Grammarly",
+          "url": "https://grammarly.com",
+          "purpose": "Polish your bio and posts"
+        }
+      ]
+    },
+    "github": {
+      "sections": [
+        {
+          "name": "Profile README",
+          "tips": [
+            "Add a profile README repository",
+            "Include your learning journey",
+            "Add pinned repositories",
+            "Include contact information"
+          ]
+        },
+        {
+          "name": "Repository Structure",
+          "tips": [
+            "Use consistent naming conventions",
+            "Write detailed READMEs",
+            "Add topics and descriptions",
+            "Include screenshots and demos"
+          ]
+        },
+        {
+          "name": "Pinned Repositories",
+          "tips": [
+            "Pin your best 6 projects",
+            "Include diverse project types",
+            "Ensure READMEs are complete"
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "GitHub Profile README Generator",
+          "url": "https://github.com/rahuldkjain/github-profile-readme-generator",
+          "purpose": "Generate profile README"
+        },
+        {
+          "name": " Shields.io",
+          "url": "https://shields.io",
+          "purpose": "Add badges to READMEs"
+        }
+      ]
+    },
+    "devto": {
+      "sections": [
+        {
+          "name": "Profile",
+          "tips": [
+            "Add a professional photo",
+            "Write a clear bio",
+            "Include your learning focus"
+          ]
+        },
+        {
+          "name": "Articles",
+          "tips": [
+            "Write consistent, quality content",
+            "Use proper tagging",
+            "Include code examples",
+            "Add images and diagrams"
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "Carbon",
+          "url": "https://carbon.now.sh",
+          "purpose": "Create code screenshots"
+        },
+        {
+          "name": "Excalidraw",
+          "url": "https://excalidraw.com",
+          "purpose": "Create diagrams"
+        }
+      ]
+    }
+  },
+  "contentCalendar": {
+    "beginner": {
+      "week1": [
+        "Journey announcement post",
+        "Day 1 learning update",
+        "Resource recommendation"
+      ],
+      "week2": [
+        "Progress update",
+        "First code snippet",
+        "Learning environment showcase"
+      ],
+      "week3": [
+        "Weekly summary",
+        "Challenge encountered",
+        "Resource分享"
+      ],
+      "week4": [
+        "Month 1 summary",
+        "Key learnings",
+        "Goals for next month"
+      ]
+    },
+    "intermediate": {
+      "weekly": [
+        "Progress update (Mon)",
+        "Code snippet or tutorial (Wed)",
+        "Project update (Fri)",
+        "Weekend learning summary (Sun)"
+      ]
+    },
+    "advanced": {
+      "weekly": [
+        "Technical deep-dive (Mon)",
+        "Project showcase (Wed)",
+        "Industry insight (Fri)",
+        "Community engagement (Daily)"
+      ]
+    }
+  }
+}

@@ -341,6 +341,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 01: Financial Foundations!",
+        "whatToPost": [
+          "Share financial concepts learned",
+          "Post about programming for finance",
+          "Showcase personal finance projects"
+        ],
+        "suggestedHashtags": [
+          "#Finance",
+          "#100DaysOfCode",
+          "#Fintech",
+          "#Banking"
+        ]
       }
     },
     {
@@ -674,6 +688,20 @@
               "IPFS"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 02: Web Development for Fintech!",
+        "whatToPost": [
+          "Share your financial app frontends",
+          "Post about backend for financial services",
+          "Showcase secure web development"
+        ],
+        "suggestedHashtags": [
+          "#Fintech",
+          "#WebDev",
+          "#100DaysOfCode",
+          "#Security"
         ]
       }
     },
@@ -1011,6 +1039,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 03: Payment Systems!",
+        "whatToPost": [
+          "Share payment processing projects",
+          "Post about payment gateway integrations",
+          "Showcase mobile payment solutions"
+        ],
+        "suggestedHashtags": [
+          "#Payments",
+          "#MobilePay",
+          "#100DaysOfCode",
+          "#Fintech"
+        ]
       }
     },
     {
@@ -1345,6 +1387,20 @@
               "IPFS"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 04: Blockchain & DeFi!",
+        "whatToPost": [
+          "Share your blockchain projects",
+          "Post about smart contract development",
+          "Showcase DeFi applications"
+        ],
+        "suggestedHashtags": [
+          "#Blockchain",
+          "#DeFi",
+          "#100DaysOfCode",
+          "#Web3"
         ]
       }
     },
@@ -1682,6 +1738,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 05: Financial Data & Analytics!",
+        "whatToPost": [
+          "Share financial data analysis",
+          "Post about risk modeling",
+          "Showcase market data visualization"
+        ],
+        "suggestedHashtags": [
+          "#FinData",
+          "#Analytics",
+          "#100DaysOfCode",
+          "#Fintech"
+        ]
       }
     },
     {
@@ -2016,6 +2086,20 @@
               "IPFS"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 06: Regulatory & Security!",
+        "whatToPost": [
+          "Share compliance implementations",
+          "Post about fintech security practices",
+          "Showcase RegTech solutions"
+        ],
+        "suggestedHashtags": [
+          "#RegTech",
+          "#Compliance",
+          "#100DaysOfCode",
+          "#Security"
         ]
       }
     },
@@ -2353,6 +2437,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 07: Fintech Products!",
+        "whatToPost": [
+          "Share your fintech product designs",
+          "Post about mobile banking features",
+          "Showcase lending platform projects"
+        ],
+        "suggestedHashtags": [
+          "#Neobank",
+          "#Lending",
+          "#100DaysOfCode",
+          "#Fintech"
+        ]
       }
     },
     {
@@ -2685,6 +2783,20 @@
               "IPFS"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 08: Career Launch!",
+        "whatToPost": [
+          "Share your fintech portfolio",
+          "Post about industry networking",
+          "Talk about your fintech career journey"
+        ],
+        "suggestedHashtags": [
+          "#FintechCareer",
+          "#100DaysOfCode",
+          "#CareerLaunch",
+          "#Finance"
         ]
       }
     }

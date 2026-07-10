@@ -1,0 +1,235 @@
+{
+  "templates": {
+    "journey-start": {
+      "title": "Learning Journey Kickoff",
+      "description": "Announce your learning journey to the world",
+      "templates": {
+        "twitter": "Starting my {roadmapTitle} journey!\n\nGoal: {role}\nTimeline: {duration}\nCost: {cost}\n\nDay 1 starts now. Follow along!\n\n{hashtags}",
+        "linkedin": "New Learning Journey: {roadmapTitle}\n\nI am excited to announce I am starting a new learning path.\n\n---\n\nGoal: Become a {role}\nTimeline: {duration}\nInvestment: {cost}\n\nI will be sharing my progress, learnings, and projects along the way.\n\n---\n\n{hashtags}",
+        "devto": "# Starting My {roadmapTitle} Journey\n\n## Why {roadmapTitle}?\n\nI have decided to pursue a career in {roadmapTitle} because {reason}.\n\n## My Plan\n\n- **Timeline:** {duration}\n- **Resources:** {resources}+ free resources\n- **Cost:** {cost}\n\nFollow along as I document my learning process!\n\n---\n\n*Part of the Skillplan learning community*",
+        "github": "## {roadmapTitle} Learning Journey\n\n### About\n\nThis repository documents my learning journey to become a {role}.\n\n### Timeline\n\n- **Start Date:** {startDate}\n- **Target:** {duration}\n- **Resources:** {resources}+ free resources\n\n### Roadmap\n\n- [ ] Phase 1: Foundation\n- [ ] Phase 2: Core Concepts\n- [ ] Phase 3-7: Advanced Topics\n- [ ] Phase 8: Capstone Project\n\n### Progress\n\n- Resources completed: 0/{resources}\n- Current phase: 1\n\n---\n\n*Guided by Skillplan*"
+      },
+      "assets": [
+        {
+          "type": "Screenshot",
+          "description": "Your development environment or setup",
+          "required": true,
+          "tips": "Show your VS Code, terminal, or workspace"
+        },
+        {
+          "type": "Photo",
+          "description": "Your workspace or desk setup",
+          "required": false,
+          "tips": "Natural lighting works best"
+        }
+      ]
+    },
+    "phase-complete": {
+      "title": "Phase Completion Celebration",
+      "description": "Celebrate completing a learning phase",
+      "templates": {
+        "twitter": "Phase {phaseNumber} complete!\n\nLearned:\n- {topic1}\n- {topic2}\n- {topic3}\n\nNext up: {nextPhase}\n\nProgress: {progress}%\n\n{hashtags}",
+        "linkedin": "Milestone Reached: Phase {phaseNumber} Complete\n\n---\n\nI have successfully completed Phase {phaseNumber} of my {roadmapTitle} journey.\n\n**Key Learnings:**\n- {topic1}\n- {topic2}\n- {topic3}\n\n**What is Next:**\n{nextPhase}\n\n**Progress:** {progress}% complete\n\n---\n\nThis journey is challenging but rewarding. Each phase builds on the last.\n\n{hashtags}",
+        "devto": "# Phase {phaseNumber} Complete: {phaseTitle}\n\n## What I Learned\n\n### {topic1}\n\n{explanation1}\n\n### {topic2}\n\n{explanation2}\n\n### {topic3}\n\n{explanation3}\n\n## Challenges\n\n{challenges}\n\n## What is Next\n\n{nextPhase}\n\n---\n\n**Progress:** {progress}% complete\n\n*Learning with Skillplan*"
+      },
+      "assets": [
+        {
+          "type": "Progress Screenshot",
+          "description": "Screenshot showing phase completion",
+          "required": true,
+          "tips": "Capture the progress bar or completion badge"
+        },
+        {
+          "type": "Code Snippet",
+          "description": "Highlight a key concept you learned",
+          "required": true,
+          "tips": "Use syntax highlighting and add explanation"
+        }
+      ]
+    },
+    "project-showcase": {
+      "title": "Project Showcase",
+      "description": "Showcase a completed project",
+      "templates": {
+        "twitter": "Project complete: {projectTitle}\n\nWhat I built:\n- {feature1}\n- {feature2}\n- {feature3}\n\nStack: {stack}\n\nDemo: {demoLink}\nRepo: {repoLink}\n\n{hashtags}",
+        "linkedin": "Project Showcase: {projectTitle}\n\n---\n\nI am excited to share my latest project.\n\n**What I Built:**\n{projectDescription}\n\n**Key Features:**\n- {feature1}\n- {feature2}\n- {feature3}\n\n**Tech Stack:**\n{stack}\n\n**What I Learned:**\n{lessons}\n\n**Links:**\n- Live Demo: {demoLink}\n- Repository: {repoLink}\n\n---\n\n{hashtags}",
+        "devto": "# {projectTitle}: A {roadmapTitle} Project\n\n## Overview\n\n{projectDescription}\n\n## Features\n\n- {feature1}\n- {feature2}\n- {feature3}\n\n## Tech Stack\n\n{stack}\n\n## What I Learned\n\n{lessons}\n\n## Getting Started\n\n```bash\ngit clone {repoLink}\n```\n\n## Demo\n\n{demoLink}\n\n---\n\n*Built during my {roadmapTitle} journey with Skillplan*",
+        "github": "# {projectTitle}\n\n## About\n\n{projectDescription}\n\n## Features\n\n- {feature1}\n- {feature2}\n- {feature3}\n\n## Tech Stack\n\n{stack}\n\n## Getting Started\n\n### Prerequisites\n\n- {prerequisite1}\n- {prerequisite2}\n\n### Installation\n\n```bash\n{installCommand}\n```\n\n### Usage\n\n{usageInstructions}\n\n## What I Learned\n\n{lessons}\n\n## Roadmap\n\nThis project was built as part of my {roadmapTitle} journey.\n\nSee the full roadmap at [Skillplan](https://skillplan.ritji.xyz)\n\n## License\n\nMIT"
+      },
+      "assets": [
+        {
+          "type": "Project Screenshots",
+          "description": "Multiple screenshots of your project",
+          "required": true,
+          "tips": "Show different features and views"
+        },
+        {
+          "type": "Demo GIF/Video",
+          "description": "Animated demo of your project in action",
+          "required": true,
+          "tips": "Keep it under 30 seconds, show key features"
+        },
+        {
+          "type": "Architecture Diagram",
+          "description": "Diagram showing project structure",
+          "required": false,
+          "tips": "Use draw.io or Excalidraw"
+        },
+        {
+          "type": "README Screenshot",
+          "description": "Screenshot of your GitHub README",
+          "required": false,
+          "tips": "Show the README with badges and sections"
+        }
+      ]
+    },
+    "resource-share": {
+      "title": "Resource Recommendation",
+      "description": "Share a valuable learning resource",
+      "templates": {
+        "twitter": "Found an amazing resource for {topic}:\n\n{resourceName}\n\nWhy it is great:\n- {reason1}\n- {reason2}\n\nLink: {resourceLink}\n\n{hashtags}",
+        "linkedin": "Resource Recommendation: {resourceName}\n\n---\n\nI recently discovered this resource for {topic} and found it incredibly valuable.\n\n**Why I Recommend It:**\n- {reason1}\n- {reason2}\n- {reason3}\n\n**Best For:**\n{audience}\n\n**Link:** {resourceLink}\n\n---\n\nWhat resources have you found helpful for learning {topic}?\n\n{hashtags}",
+        "devto": "# Why {resourceName} is Great for {topic}\n\n## Overview\n\n{resourceDescription}\n\n## What Makes It Stand Out\n\n- {reason1}\n- {reason2}\n- {reason3}\n\n## Who Should Use It\n\n{audience}\n\n## Link\n\n{resourceLink}\n\n---\n\n*Discovered during my {roadmapTitle} journey*"
+      },
+      "assets": [
+        {
+          "type": "Screenshot",
+          "description": "Screenshot of the resource",
+          "required": true,
+          "tips": "Show the main page or a key section"
+        }
+      ]
+    },
+    "daily-progress": {
+      "title": "Daily Progress Update",
+      "description": "Share your daily learning progress",
+      "templates": {
+        "twitter": "Day {day} of {roadmapTitle}\n\nToday I learned:\n- {learnings}\n\nTime spent: {time}\n\nTotal progress: {progress}%\n\n{hashtags}",
+        "linkedin": "Daily Learning Update: Day {day}\n\n---\n\n**Roadmap:** {roadmapTitle}\n**Time Invested:** {time}\n**Total Progress:** {progress}%\n\n**Today I Focused On:**\n{learnings}\n\n**Key Takeaway:**\n{takeaway}\n\n---\n\nConsistency is key. One day at a time.\n\n{hashtags}"
+      },
+      "assets": [
+        {
+          "type": "Progress Screenshot",
+          "description": "Screenshot of your progress",
+          "required": true,
+          "tips": "Show the progress bar or completed resources"
+        }
+      ]
+    },
+    "milestone": {
+      "title": "Learning Milestone",
+      "description": "Celebrate a significant learning milestone",
+      "templates": {
+        "twitter": "Milestone reached!\n\n{milestoneDescription}\n\nThis is a big step in my {roadmapTitle} journey.\n\nProgress: {progress}%\n\n{hashtags}",
+        "linkedin": "Milestone Reached\n\n---\n\nI am thrilled to share that I have reached a significant milestone in my learning journey.\n\n**Milestone:**\n{milestoneDescription}\n\n**Context:**\nThis is part of my {roadmapTitle} journey.\n\n**Progress:**\n{progress}% complete\n\n**What I Have Learned:**\n{lessons}\n\n---\n\nThank you to everyone who has supported me on this journey.\n\n{hashtags}",
+        "devto": "# Milestone: {milestoneDescription}\n\n## The Journey So Far\n\nI have been learning {roadmapTitle} for {duration} now.\n\n**Progress:** {progress}%\n\n## What This Milestone Means\n\n{milestoneExplanation}\n\n## Key Lessons\n\n{lessons}\n\n## What is Next\n\n{nextSteps}\n\n---\n\n*Part of my {roadmapTitle} journey with Skillplan*"
+      },
+      "assets": [
+        {
+          "type": "Progress Screenshot",
+          "description": "Screenshot showing the milestone",
+          "required": true,
+          "tips": "Highlight the achievement"
+        },
+        {
+          "type": "Celebration Image",
+          "description": "Optional celebration graphic",
+          "required": false,
+          "tips": "Keep it professional and relevant"
+        }
+      ]
+    }
+  },
+  "roadmapSpecificTemplates": {
+    "ai": {
+      "journey-start": {
+        "reason": "AI is transforming every industry, and I want to be at the forefront of building intelligent automation systems."
+      },
+      "project-showcase": {
+        "projectDescription": "An AI-powered automation system that {projectFunction}.",
+        "lessons": "Building this project taught me about {lesson1}, {lesson2}, and the importance of {lesson3}."
+      }
+    },
+    "fullstack": {
+      "journey-start": {
+        "reason": "I want to build complete web applications from concept to deployment, handling both frontend and backend."
+      },
+      "project-showcase": {
+        "projectDescription": "A full-stack web application that {projectFunction}.",
+        "lessons": "This project deepened my understanding of {lesson1}, {lesson2}, and {lesson3}."
+      }
+    },
+    "frontend": {
+      "journey-start": {
+        "reason": "I am passionate about creating beautiful, responsive, and accessible user interfaces."
+      },
+      "project-showcase": {
+        "projectDescription": "A modern web application featuring {projectFunction}.",
+        "lessons": "I learned the importance of {lesson1}, {lesson2}, and {lesson3} in frontend development."
+      }
+    },
+    "backend": {
+      "journey-start": {
+        "reason": "I want to build robust, scalable APIs and systems that power modern applications."
+      },
+      "project-showcase": {
+        "projectDescription": "A backend API system that {projectFunction}.",
+        "lessons": "This project taught me about {lesson1}, {lesson2}, and {lesson3} in backend architecture."
+      }
+    },
+    "cybersecurity": {
+      "journey-start": {
+        "reason": "I want to protect systems and data from evolving cyber threats."
+      },
+      "project-showcase": {
+        "projectDescription": "A security tool that {projectFunction}.",
+        "lessons": "I gained insights into {lesson1}, {lesson2}, and {lesson3} in cybersecurity."
+      }
+    },
+    "data-engineering": {
+      "journey-start": {
+        "reason": "I want to build systems that transform raw data into actionable insights."
+      },
+      "project-showcase": {
+        "projectDescription": "A data pipeline that {projectFunction}.",
+        "lessons": "This project taught me about {lesson1}, {lesson2}, and {lesson3} in data engineering."
+      }
+    },
+    "cloud-devops": {
+      "journey-start": {
+        "reason": "I want to build and manage scalable, reliable cloud infrastructure."
+      },
+      "project-showcase": {
+        "projectDescription": "A cloud infrastructure setup that {projectFunction}.",
+        "lessons": "I learned about {lesson1}, {lesson2}, and {lesson3} in cloud and DevOps."
+      }
+    },
+    "fintech": {
+      "journey-start": {
+        "reason": "I want to build technology solutions for the financial industry."
+      },
+      "project-showcase": {
+        "projectDescription": "A fintech application that {projectFunction}.",
+        "lessons": "This project deepened my understanding of {lesson1}, {lesson2}, and {lesson3} in fintech."
+      }
+    },
+    "growth": {
+      "journey-start": {
+        "reason": "I want to combine technical skills with marketing to drive business growth."
+      },
+      "project-showcase": {
+        "projectDescription": "A growth engineering tool that {projectFunction}.",
+        "lessons": "I learned about {lesson1}, {lesson2}, and {lesson3} in growth engineering."
+      }
+    },
+    "green-tech": {
+      "journey-start": {
+        "reason": "I want to use technology to address climate change and promote sustainability."
+      },
+      "project-showcase": {
+        "projectDescription": "A sustainability tool that {projectFunction}.",
+        "lessons": "This project taught me about {lesson1}, {lesson2}, and {lesson3} in climate tech."
+      }
+    }
+  }
+}

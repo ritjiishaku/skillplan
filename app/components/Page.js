@@ -5,9 +5,12 @@ import { useProgress } from '../context/ProgressContext';
 import PhaseSection from './PhaseSection';
 import ProgressBar from './ProgressBar';
 import { ProjectCard, getNiches, NicheAccordion } from './ProjectCard';
+import SocialMediaGuide from './SocialMediaGuide';
 import { ROADMAP_WEF_MAP } from '@/data/wef-rankings';
 import { ROADMAP_REQUIREMENTS, REQUIREMENT_CATEGORIES } from '@/data/requirements';
 import { REQ_ICONS } from '@/lib/req-icons';
+import socialMediaGuideData from '@/data/social-media-guide.json';
+import { isPhaseComplete } from '@/lib/completion';
 
 const ALLOWED_TAGS = ['br', 'em', 'strong', 'span'];
 const ALLOWED_ATTR = [];
@@ -168,9 +171,18 @@ export default function RoadmapPage({ data, roadmapId }) {
       <main id="main-content">
         {data.phases?.map((phase, i) => (
           <div key={i}>
-            <PhaseSection phase={phase} />
+            <PhaseSection
+              phase={phase}
+              completed={completed}
+              roadmapId={roadmapId}
+              roadmapTitle={data.titleDisplay?.replace(/<[^>]*>/g, '') || ''}
+            />
             {i < data.phases.length - 1 && (
-              <div className="phase-connector">↓ Phase complete · Next phase</div>
+              <div className="phase-connector">
+                {isPhaseComplete(phase, completed)
+                  ? 'Phase complete - Share your progress!'
+                  : 'Phase complete - Next phase'}
+              </div>
             )}
           </div>
         ))}
@@ -181,18 +193,26 @@ export default function RoadmapPage({ data, roadmapId }) {
           <div className="proj-capstone-header">
             <div className="proj-capstone-glow"></div>
             <div className="proj-capstone-eyebrow">
-              <div className="proj-capstone-badge">🎯 Final Capstone Project</div>
-              <span className="proj-capstone-sub">General project required · Choose one niche to specialize in</span>
+              <div className="proj-capstone-badge">Final Capstone Project</div>
+              <span className="proj-capstone-sub">General project required - Choose one niche to specialize in</span>
             </div>
           </div>
           {data.projects.general && (
             <div className="accordion-general">
-              <ProjectCard project={data.projects.general} badge="⬡ General" badgeClass="proj-badge-general" />
+              <ProjectCard project={data.projects.general} badge="General" badgeClass="proj-badge-general" />
             </div>
           )}
           {niches.length > 0 && <NicheAccordion projects={data.projects} />}
         </section>
       )}
+
+      <SocialMediaGuide
+        guide={socialMediaGuideData}
+        roadmapId={roadmapId}
+        roadmapTitle={data.titleDisplay?.replace(/<[^>]*>/g, '') || ''}
+        completed={completed}
+        totalResources={totalResources}
+      />
     </>
   );
 }

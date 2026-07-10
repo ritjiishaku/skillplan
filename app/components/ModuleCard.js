@@ -1,10 +1,12 @@
 'use client';
 
 import ResourceItem from './ResourceItem';
+import ModuleSocialPrompt from './ModuleSocialPrompt';
 import { Icon } from '@/lib/icons';
 import { useModal } from '../context/ModalContext';
 import { Sparkles } from 'lucide-react';
 import { ProjectCard, getNiches, NicheAccordion } from './ProjectCard';
+import { isModuleComplete } from '@/lib/completion';
 
 function ProjectModalContent({ projects }) {
   const niches = getNiches(projects);
@@ -25,9 +27,10 @@ function ProjectModalContent({ projects }) {
   );
 }
 
-export default function ModuleCard({ phaseNumber, module, moduleIndex }) {
+export default function ModuleCard({ phaseNumber, module, moduleIndex, completed, roadmapId, roadmapTitle }) {
   const { openProject } = useModal();
   const projects = module.projects;
+  const moduleComplete = isModuleComplete(phaseNumber, module, moduleIndex, completed);
 
   const handleProjectClick = () => {
     openProject(<ProjectModalContent projects={projects} />);
@@ -45,9 +48,16 @@ export default function ModuleCard({ phaseNumber, module, moduleIndex }) {
         </ul>
       </div>
       <div className="module-resources">
-        <div className="resources-label">🆓 Free Resources</div>
+        <div className="resources-label">Free Resources</div>
         {module.resources.map((res, r) => (
-          <ResourceItem key={r} phaseNumber={phaseNumber} resource={res} index={`${moduleIndex}-${r}`} />
+          <ResourceItem
+            key={r}
+            phaseNumber={phaseNumber}
+            resource={res}
+            index={`${moduleIndex}-${r}`}
+            completed={completed}
+            roadmapId={roadmapId}
+          />
         ))}
         {projects && (
           <button className="proj-toggle-btn" onClick={handleProjectClick}>
@@ -55,6 +65,13 @@ export default function ModuleCard({ phaseNumber, module, moduleIndex }) {
           </button>
         )}
       </div>
+      {moduleComplete && (
+        <ModuleSocialPrompt
+          module={module}
+          phaseNumber={phaseNumber}
+          roadmapTitle={roadmapTitle}
+        />
+      )}
     </div>
   );
 }

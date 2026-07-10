@@ -344,6 +344,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 01: Linux & Git Foundations!",
+        "whatToPost": [
+          "Share your Linux configurations",
+          "Post about shell scripting projects",
+          "Showcase Git workflow strategies"
+        ],
+        "suggestedHashtags": [
+          "#Linux",
+          "#Git",
+          "#100DaysOfCode",
+          "#DevOps"
+        ]
       }
     },
     {
@@ -680,6 +694,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 02: Containers & Docker!",
+        "whatToPost": [
+          "Share your Dockerfiles",
+          "Post about Docker Compose setups",
+          "Showcase containerized applications"
+        ],
+        "suggestedHashtags": [
+          "#Docker",
+          "#Containers",
+          "#100DaysOfCode",
+          "#DevOps"
+        ]
       }
     },
     {
@@ -1014,6 +1042,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 03: Kubernetes & Orchestration!",
+        "whatToPost": [
+          "Share your Kubernetes deployments",
+          "Post about cluster management",
+          "Showcase production K8s setups"
+        ],
+        "suggestedHashtags": [
+          "#Kubernetes",
+          "#K8s",
+          "#100DaysOfCode",
+          "#DevOps"
+        ]
       }
     },
     {
@@ -1345,6 +1387,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 04: CI/CD & Automation!",
+        "whatToPost": [
+          "Share your CI/CD pipelines",
+          "Post about build automation",
+          "Showcase release management workflows"
+        ],
+        "suggestedHashtags": [
+          "#CICD",
+          "#Automation",
+          "#100DaysOfCode",
+          "#DevOps"
+        ]
       }
     },
     {
@@ -1673,6 +1729,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 05: Infrastructure as Code!",
+        "whatToPost": [
+          "Share your Terraform modules",
+          "Post about IaC best practices",
+          "Showcase infrastructure automation"
+        ],
+        "suggestedHashtags": [
+          "#Terraform",
+          "#IaC",
+          "#100DaysOfCode",
+          "#DevOps"
         ]
       }
     },
@@ -2006,6 +2076,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 06: Cloud Platforms!",
+        "whatToPost": [
+          "Share your cloud architectures",
+          "Post about cloud-native services",
+          "Showcase multi-cloud setups"
+        ],
+        "suggestedHashtags": [
+          "#AWS",
+          "#GCP",
+          "#100DaysOfCode",
+          "#Cloud"
         ]
       }
     },
@@ -2342,6 +2426,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 07: Monitoring & SRE!",
+        "whatToPost": [
+          "Share your monitoring dashboards",
+          "Post about observability practices",
+          "Showcase SRE implementations"
+        ],
+        "suggestedHashtags": [
+          "#Monitoring",
+          "#SRE",
+          "#100DaysOfCode",
+          "#DevOps"
+        ]
       }
     },
     {
@@ -2673,6 +2771,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 08: Career Launch!",
+        "whatToPost": [
+          "Share your DevOps portfolio",
+          "Post about certifications pursued",
+          "Talk about your DevOps journey"
+        ],
+        "suggestedHashtags": [
+          "#DevOpsPortfolio",
+          "#100DaysOfCode",
+          "#CareerLaunch",
+          "#Cloud"
         ]
       }
     }

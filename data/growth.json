@@ -327,6 +327,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 01: Marketing & Business Foundations!",
+        "whatToPost": [
+          "Share marketing concepts learned",
+          "Post about business strategy insights",
+          "Showcase customer journey mapping"
+        ],
+        "suggestedHashtags": [
+          "#Marketing",
+          "#100DaysOfCode",
+          "#Growth",
+          "#Business"
+        ]
       }
     },
     {
@@ -646,6 +660,20 @@
               "Vercel"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 02: UX Design Fundamentals!",
+        "whatToPost": [
+          "Share your UX research findings",
+          "Post about user testing results",
+          "Showcase wireframe projects"
+        ],
+        "suggestedHashtags": [
+          "#UX",
+          "#Design",
+          "#100DaysOfCode",
+          "#UserResearch"
         ]
       }
     },
@@ -967,6 +995,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 03: UI Design Mastery!",
+        "whatToPost": [
+          "Share your UI designs",
+          "Post about visual design principles",
+          "Showcase responsive design work"
+        ],
+        "suggestedHashtags": [
+          "#UI",
+          "#VisualDesign",
+          "#100DaysOfCode",
+          "#Design"
+        ]
       }
     },
     {
@@ -1285,6 +1327,20 @@
               "Vercel"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 04: Conversion Copywriting!",
+        "whatToPost": [
+          "Share your copywriting examples",
+          "Post about sales psychology techniques",
+          "Showcase conversion-focused copy"
+        ],
+        "suggestedHashtags": [
+          "#Copywriting",
+          "#Conversion",
+          "#100DaysOfCode",
+          "#Marketing"
         ]
       }
     },
@@ -1606,6 +1662,20 @@
               "Vercel"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 05: Coding Foundations!",
+        "whatToPost": [
+          "Share your first web pages",
+          "Post about HTML/CSS/JS learning",
+          "Showcase marketing pages built"
+        ],
+        "suggestedHashtags": [
+          "#HTML",
+          "#CSS",
+          "#100DaysOfCode",
+          "#WebDev"
         ]
       }
     },
@@ -1930,6 +2000,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 06: Modern Frontend Development!",
+        "whatToPost": [
+          "Share your React/Next.js projects",
+          "Post about deployment workflows",
+          "Showcase modern frontend patterns"
+        ],
+        "suggestedHashtags": [
+          "#React",
+          "#NextJS",
+          "#100DaysOfCode",
+          "#Frontend"
+        ]
       }
     },
     {
@@ -2251,6 +2335,20 @@
               "Vercel"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 07: Vibe Coding & AI Development!",
+        "whatToPost": [
+          "Share AI-assisted development workflows",
+          "Post about rapid prototyping",
+          "Showcase AI tools used"
+        ],
+        "suggestedHashtags": [
+          "#AIDev",
+          "#VibeCoding",
+          "#100DaysOfCode",
+          "#Growth"
         ]
       }
     },
@@ -2574,6 +2672,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 08: Funnel Design!",
+        "whatToPost": [
+          "Share your funnel strategies",
+          "Post about conversion optimization",
+          "Showcase e-commerce funnels"
+        ],
+        "suggestedHashtags": [
+          "#Funnels",
+          "#Conversion",
+          "#100DaysOfCode",
+          "#Growth"
+        ]
       }
     },
     {
@@ -2896,6 +3008,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 09: CRO & Analytics!",
+        "whatToPost": [
+          "Share your A/B testing results",
+          "Post about analytics implementations",
+          "Showcase optimization experiments"
+        ],
+        "suggestedHashtags": [
+          "#CRO",
+          "#Analytics",
+          "#100DaysOfCode",
+          "#Optimization"
+        ]
       }
     },
     {
@@ -3216,6 +3342,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 10: AI Automation!",
+        "whatToPost": [
+          "Share your automation workflows",
+          "Post about AI-powered systems",
+          "Showcase growth automation"
+        ],
+        "suggestedHashtags": [
+          "#Automation",
+          "#AI",
+          "#100DaysOfCode",
+          "#Growth"
+        ]
       }
     },
     {
@@ -3535,6 +3675,20 @@
               "Vercel"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 11: Sales & Freelancing!",
+        "whatToPost": [
+          "Share your sales process",
+          "Post about freelancing journey",
+          "Showcase client work"
+        ],
+        "suggestedHashtags": [
+          "#Freelancing",
+          "#Sales",
+          "#100DaysOfCode",
+          "#Career"
         ]
       }
     }

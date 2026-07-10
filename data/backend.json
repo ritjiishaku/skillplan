@@ -331,6 +331,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 01: Programming Basics & Computer Science!",
+        "whatToPost": [
+          "Share your first programs",
+          "Post about data structures and algorithms",
+          "Showcase problem-solving approaches"
+        ],
+        "suggestedHashtags": [
+          "#Programming",
+          "#DSA",
+          "#100DaysOfCode",
+          "#CS"
+        ]
       }
     },
     {
@@ -656,6 +670,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 02: Server-Side Programming!",
+        "whatToPost": [
+          "Share your web framework projects",
+          "Post about Python vs Node.js comparisons",
+          "Showcase API development"
+        ],
+        "suggestedHashtags": [
+          "#Python",
+          "#NodeJS",
+          "#100DaysOfCode",
+          "#Backend"
         ]
       }
     },
@@ -983,6 +1011,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 03: Databases & Data Storage!",
+        "whatToPost": [
+          "Share your database designs",
+          "Post about SQL optimization techniques",
+          "Showcase NoSQL use cases"
+        ],
+        "suggestedHashtags": [
+          "#SQL",
+          "#NoSQL",
+          "#100DaysOfCode",
+          "#Databases"
+        ]
       }
     },
     {
@@ -1308,6 +1350,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 04: API Design & Integration!",
+        "whatToPost": [
+          "Share your REST API designs",
+          "Post about GraphQL implementations",
+          "Showcase event-driven architectures"
+        ],
+        "suggestedHashtags": [
+          "#REST",
+          "#GraphQL",
+          "#100DaysOfCode",
+          "#API"
         ]
       }
     },
@@ -1635,6 +1691,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 05: Deployment & Infrastructure!",
+        "whatToPost": [
+          "Share your Docker setups",
+          "Post about CI/CD pipelines",
+          "Showcase cloud deployment strategies"
+        ],
+        "suggestedHashtags": [
+          "#Docker",
+          "#DevOps",
+          "#100DaysOfCode",
+          "#Cloud"
+        ]
       }
     },
     {
@@ -1960,6 +2030,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 06: Authentication & Security!",
+        "whatToPost": [
+          "Share your auth implementations",
+          "Post about security best practices",
+          "Showcase OAuth/JWT setups"
+        ],
+        "suggestedHashtags": [
+          "#Security",
+          "#Auth",
+          "#100DaysOfCode",
+          "#Backend"
         ]
       }
     },
@@ -2287,6 +2371,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 07: Performance & Distributed Systems!",
+        "whatToPost": [
+          "Share performance optimization wins",
+          "Post about caching strategies",
+          "Showcase distributed system patterns"
+        ],
+        "suggestedHashtags": [
+          "#Performance",
+          "#Distributed",
+          "#100DaysOfCode",
+          "#Backend"
+        ]
       }
     },
     {
@@ -2606,6 +2704,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 08: Portfolio & Career Launch!",
+        "whatToPost": [
+          "Share your technical portfolio",
+          "Post about interview prep",
+          "Talk about your backend engineering journey"
+        ],
+        "suggestedHashtags": [
+          "#Portfolio",
+          "#100DaysOfCode",
+          "#CareerLaunch",
+          "#Backend"
         ]
       }
     }

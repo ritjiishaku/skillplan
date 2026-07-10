@@ -333,6 +333,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 01: SQL & Data Foundations!",
+        "whatToPost": [
+          "Share your SQL queries and optimizations",
+          "Post about database design patterns",
+          "Showcase data modeling projects"
+        ],
+        "suggestedHashtags": [
+          "#SQL",
+          "#DataModeling",
+          "#100DaysOfCode",
+          "#Data"
+        ]
       }
     },
     {
@@ -667,6 +681,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 02: Python for Data!",
+        "whatToPost": [
+          "Share your Python data scripts",
+          "Post about Pandas and NumPy projects",
+          "Showcase data visualization work"
+        ],
+        "suggestedHashtags": [
+          "#Python",
+          "#Pandas",
+          "#100DaysOfCode",
+          "#Data"
+        ]
       }
     },
     {
@@ -995,6 +1023,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 03: Data Warehousing & Modeling!",
+        "whatToPost": [
+          "Share your data warehouse designs",
+          "Post about dbt transformations",
+          "Showcase dimensional modeling"
+        ],
+        "suggestedHashtags": [
+          "#DataWarehouse",
+          "#dbt",
+          "#100DaysOfCode",
+          "#Analytics"
         ]
       }
     },
@@ -1328,6 +1370,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 04: ETL Pipelines & Orchestration!",
+        "whatToPost": [
+          "Share your Airflow DAGs",
+          "Post about ETL design patterns",
+          "Showcase pipeline orchestration"
+        ],
+        "suggestedHashtags": [
+          "#ETL",
+          "#Airflow",
+          "#100DaysOfCode",
+          "#DataEngineering"
+        ]
       }
     },
     {
@@ -1659,6 +1715,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 05: Big Data & Spark!",
+        "whatToPost": [
+          "Share your Spark projects",
+          "Post about data lake architectures",
+          "Showcase big data processing"
+        ],
+        "suggestedHashtags": [
+          "#Spark",
+          "#BigData",
+          "#100DaysOfCode",
+          "#DataLake"
+        ]
       }
     },
     {
@@ -1985,6 +2055,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 06: Cloud Data Engineering!",
+        "whatToPost": [
+          "Share your cloud data setups",
+          "Post about serverless data processing",
+          "Showcase cloud platform comparisons"
+        ],
+        "suggestedHashtags": [
+          "#CloudData",
+          "#AWS",
+          "#100DaysOfCode",
+          "#DataEngineering"
+        ]
       }
     },
     {
@@ -2310,6 +2394,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 07: Data Visualization & BI!",
+        "whatToPost": [
+          "Share your dashboards and visualizations",
+          "Post about data storytelling techniques",
+          "Showcase BI tool implementations"
+        ],
+        "suggestedHashtags": [
+          "#DataViz",
+          "#BI",
+          "#100DaysOfCode",
+          "#Analytics"
         ]
       }
     },
@@ -2638,6 +2736,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 08: Career Launch!",
+        "whatToPost": [
+          "Share your data portfolio",
+          "Post about data engineering career path",
+          "Talk about your learning journey"
+        ],
+        "suggestedHashtags": [
+          "#DataPortfolio",
+          "#100DaysOfCode",
+          "#CareerLaunch",
+          "#Data"
         ]
       }
     }

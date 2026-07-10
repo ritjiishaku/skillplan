@@ -1,9 +1,9 @@
 {
   "banner": "100% Free · 8 Phases · 120+ Resources · $0 Cost · Zero Paywalls",
   "titleDisplay": "Full-Stack<br><em>Engineering</em>",
-  "subtitle": "A complete, self-paced path from HTML basics to production full-stack engineer â€” 8 phases, 120+ hand-curated free resources, frontend &amp; backend tracks, a 16-month study schedule, and career prep. $0 cost. No paywalls. No compromises.",
+  "subtitle": "A complete, self-paced path from HTML basics to production full-stack engineer — 8 phases, 120+ hand-curated free resources, frontend &amp; backend tracks, a 16-month study schedule, and career prep. $0 cost. No paywalls. No compromises.",
   "meta": {
-    "duration": "14â€“16 mo",
+    "duration": "14–16 mo",
     "cost": "$0",
     "resources": "120+",
     "salaryTarget": "$130k+"
@@ -14,7 +14,7 @@
       "badge": "badge-foundation",
       "badgeLabel": "Foundation",
       "title": "HTML, CSS & JavaScript Fundamentals",
-      "duration": "Months 1â€“2",
+      "duration": "Months 1–2",
       "modules": [
         {
           "icon": "globe",
@@ -29,25 +29,25 @@
           "resources": [
             {
               "icon": "book-open",
-              "name": "MDN Web Docs â€” Learn Web Development",
+              "name": "MDN Web Docs — Learn Web Development",
               "meta": "developer.mozilla.org · The definitive web reference",
               "url": "https://developer.mozilla.org/en-US/docs/Learn"
             },
             {
               "icon": "code",
-              "name": "freeCodeCamp â€” Responsive Web Design",
+              "name": "freeCodeCamp — Responsive Web Design",
               "meta": "freecodecamp.org · Project-based, fully free certification",
               "url": "https://www.freecodecamp.org/learn"
             },
             {
               "icon": "terminal",
-              "name": "The Odin Project â€” Foundations",
+              "name": "The Odin Project — Foundations",
               "meta": "theodinproject.com · Full-stack curriculum, hands-on",
               "url": "https://www.theodinproject.com"
             },
             {
               "icon": "play",
-              "name": "CSS-Tricks â€” A Complete Guide to Flexbox",
+              "name": "CSS-Tricks — A Complete Guide to Flexbox",
               "meta": "css-tricks.com · The most popular flexbox resource online",
               "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
             }
@@ -76,7 +76,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "Interactive Recipe Finder",
-                "desc": "A JavaScript-driven recipe app that filters, searches, and displays recipes from a local dataset â€” with dynamic DOM updates, localStorage persistence, and responsive design.",
+                "desc": "A JavaScript-driven recipe app that filters, searches, and displays recipes from a local dataset — with dynamic DOM updates, localStorage persistence, and responsive design.",
                 "skills": [
                   "Search & filter with vanilla JS",
                   "Dynamic DOM rendering",
@@ -154,13 +154,13 @@
             },
             {
               "icon": "book",
-              "name": "Eloquent JavaScript â€” Full Book Free",
+              "name": "Eloquent JavaScript — Full Book Free",
               "meta": "eloquentjavascript.net · The classic JS textbook, online free",
               "url": "https://eloquentjavascript.net"
             },
             {
               "icon": "play",
-              "name": "JavaScript30 â€” 30-Day Challenge",
+              "name": "JavaScript30 — 30-Day Challenge",
               "meta": "javascript30.com · Wes Bos · 30 projects in 30 days, no frameworks",
               "url": "https://javascript30.com"
             }
@@ -189,7 +189,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "Interactive Recipe Finder",
-                "desc": "A JavaScript-driven recipe app that filters, searches, and displays recipes from a local dataset â€” with dynamic DOM updates, localStorage persistence, and responsive design.",
+                "desc": "A JavaScript-driven recipe app that filters, searches, and displays recipes from a local dataset — with dynamic DOM updates, localStorage persistence, and responsive design.",
                 "skills": [
                   "Search & filter with vanilla JS",
                   "Dynamic DOM rendering",
@@ -331,6 +331,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 01: HTML, CSS & JavaScript Fundamentals!",
+        "whatToPost": [
+          "Share your first web pages",
+          "Post about CSS layout techniques",
+          "Showcase JavaScript fundamentals"
+        ],
+        "suggestedHashtags": [
+          "#HTML",
+          "#CSS",
+          "#JavaScript",
+          "#100DaysOfCode"
+        ]
       }
     },
     {
@@ -338,7 +352,7 @@
       "badge": "badge-core",
       "badgeLabel": "Frontend",
       "title": "Frontend Mastery with React",
-      "duration": "Months 3â€“4",
+      "duration": "Months 3–4",
       "modules": [
         {
           "icon": "layout",
@@ -353,25 +367,25 @@
           "resources": [
             {
               "icon": "file-text",
-              "name": "React.dev â€” Official React Docs",
+              "name": "React.dev — Official React Docs",
               "meta": "react.dev · New interactive docs, the definitive resource",
               "url": "https://react.dev/learn"
             },
             {
               "icon": "play",
-              "name": "Scrimba â€” Learn React for Free",
+              "name": "Scrimba — Learn React for Free",
               "meta": "scrimba.com · Interactive video course with code editor",
               "url": "https://scrimba.com/learn/learnreact"
             },
             {
               "icon": "globe",
-              "name": "Kent C. Dodds â€” Blog & Workshops",
+              "name": "Kent C. Dodds — Blog & Workshops",
               "meta": "kentcdodds.com · React testing, hooks, and patterns",
               "url": "https://kentcdodds.com/blog"
             },
             {
               "icon": "graduation-cap",
-              "name": "React â€” Official Tutorial (Tic Tac Toe)",
+              "name": "React — Official Tutorial (Tic Tac Toe)",
               "meta": "react.dev · Hands-on intro to React concepts",
               "url": "https://react.dev/learn/tutorial-tic-tac-toe"
             }
@@ -400,7 +414,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "Weather Dashboard App",
-                "desc": "A React weather app fetching real API data, with search history, unit conversion, geolocation, responsive cards, and error handling â€” deployed on Vercel.",
+                "desc": "A React weather app fetching real API data, with search history, unit conversion, geolocation, responsive cards, and error handling — deployed on Vercel.",
                 "skills": [
                   "API integration with fetch/axios",
                   "useEffect for data fetching patterns",
@@ -473,19 +487,19 @@
           "resources": [
             {
               "icon": "check-circle",
-              "name": "React Patterns â€” Design Patterns for React",
+              "name": "React Patterns — Design Patterns for React",
               "meta": "react-patterns.com · Common patterns explained clearly",
               "url": "https://react-patterns.com"
             },
             {
               "icon": "terminal",
-              "name": "useHooks â€” Easy to Understand React Hook Recipes",
+              "name": "useHooks — Easy to Understand React Hook Recipes",
               "meta": "usehooks.com · Copy-paste custom hooks with explanations",
               "url": "https://usehooks.com"
             },
             {
               "icon": "file-text",
-              "name": "Awesome React â€” GitHub Curated List",
+              "name": "Awesome React — GitHub Curated List",
               "meta": "github.com/enaqx · Tools, libraries, and React resources",
               "url": "https://github.com/enaqx/awesome-react"
             }
@@ -514,7 +528,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "Weather Dashboard App",
-                "desc": "A React weather app fetching real API data, with search history, unit conversion, geolocation, responsive cards, and error handling â€” deployed on Vercel.",
+                "desc": "A React weather app fetching real API data, with search history, unit conversion, geolocation, responsive cards, and error handling — deployed on Vercel.",
                 "skills": [
                   "API integration with fetch/axios",
                   "useEffect for data fetching patterns",
@@ -656,6 +670,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 02: Frontend Mastery with React!",
+        "whatToPost": [
+          "Share your React components",
+          "Post about React hooks and state management",
+          "Showcase a React project"
+        ],
+        "suggestedHashtags": [
+          "#React",
+          "#100DaysOfCode",
+          "#Frontend",
+          "#WebDev"
+        ]
       }
     },
     {
@@ -663,7 +691,7 @@
       "badge": "badge-advanced",
       "badgeLabel": "Backend",
       "title": "Backend Engineering with Node.js",
-      "duration": "Months 5â€“6",
+      "duration": "Months 5–6",
       "modules": [
         {
           "icon": "server",
@@ -684,19 +712,19 @@
             },
             {
               "icon": "file-text",
-              "name": "Express.js Guide â€” Routing & Middleware",
+              "name": "Express.js Guide — Routing & Middleware",
               "meta": "expressjs.com · Official Express documentation",
               "url": "https://expressjs.com/en/guide/routing.html"
             },
             {
               "icon": "graduation-cap",
-              "name": "The Odin Project â€” NodeJS Path",
+              "name": "The Odin Project — NodeJS Path",
               "meta": "theodinproject.com · Full backend curriculum with projects",
               "url": "https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs"
             },
             {
               "icon": "play",
-              "name": "Net Ninja â€” Node.js Crash Course",
+              "name": "Net Ninja — Node.js Crash Course",
               "meta": "YouTube · 8hrs · Complete beginner to production",
               "url": "https://www.youtube.com/watch?v=Oe421EPiBEA"
             }
@@ -704,7 +732,7 @@
           "projects": {
             "general": {
               "title": "REST API with JWT Auth",
-              "desc": "A full REST API with user registration, JWT authentication, CRUD endpoints, rate limiting, CORS configuration, and comprehensive error handling â€” documented with Swagger.",
+              "desc": "A full REST API with user registration, JWT authentication, CRUD endpoints, rate limiting, CORS configuration, and comprehensive error handling — documented with Swagger.",
               "skills": [
                 "Express REST API architecture",
                 "JWT auth with refresh tokens",
@@ -805,13 +833,13 @@
             },
             {
               "icon": "shield",
-              "name": "OWASP Top 10 â€” Web Application Security",
+              "name": "OWASP Top 10 — Web Application Security",
               "meta": "owasp.org · The standard for web security risks",
               "url": "https://owasp.org/www-project-top-ten/"
             },
             {
               "icon": "check-circle",
-              "name": "Helmet.js â€” Express Security Middleware",
+              "name": "Helmet.js — Express Security Middleware",
               "meta": "helmetjs.github.io · Security headers for Node.js apps",
               "url": "https://helmetjs.github.io"
             }
@@ -819,7 +847,7 @@
           "projects": {
             "general": {
               "title": "REST API with JWT Auth",
-              "desc": "A full REST API with user registration, JWT authentication, CRUD endpoints, rate limiting, CORS configuration, and comprehensive error handling â€” documented with Swagger.",
+              "desc": "A full REST API with user registration, JWT authentication, CRUD endpoints, rate limiting, CORS configuration, and comprehensive error handling — documented with Swagger.",
               "skills": [
                 "Express REST API architecture",
                 "JWT auth with refresh tokens",
@@ -985,6 +1013,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 03: Backend Engineering with Node.js!",
+        "whatToPost": [
+          "Share your Express API projects",
+          "Post about authentication implementations",
+          "Showcase security best practices"
+        ],
+        "suggestedHashtags": [
+          "#NodeJS",
+          "#Express",
+          "#100DaysOfCode",
+          "#Backend"
+        ]
       }
     },
     {
@@ -992,7 +1034,7 @@
       "badge": "badge-specialist",
       "badgeLabel": "Databases",
       "title": "Database Design & Management",
-      "duration": "Months 7â€“8",
+      "duration": "Months 7–8",
       "modules": [
         {
           "icon": "database",
@@ -1013,13 +1055,13 @@
             },
             {
               "icon": "code",
-              "name": "SQLBolt â€” Interactive SQL Exercises",
+              "name": "SQLBolt — Interactive SQL Exercises",
               "meta": "sqlbolt.com · Learn SQL through interactive lessons",
               "url": "https://sqlbolt.com"
             },
             {
               "icon": "terminal",
-              "name": "LeetCode â€” SQL Practice Problems",
+              "name": "LeetCode — SQL Practice Problems",
               "meta": "leetcode.com · 50+ SQL problems from easy to hard",
               "url": "https://leetcode.com/problemset/database/"
             }
@@ -1121,7 +1163,7 @@
           "resources": [
             {
               "icon": "graduation-cap",
-              "name": "MongoDB University â€” Free Courses",
+              "name": "MongoDB University — Free Courses",
               "meta": "university.mongodb.com · Official free MongoDB courses",
               "url": "https://university.mongodb.com"
             },
@@ -1305,6 +1347,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 04: Database Design & Management!",
+        "whatToPost": [
+          "Share your database schemas",
+          "Post about SQL vs NoSQL decisions",
+          "Showcase ORM implementations"
+        ],
+        "suggestedHashtags": [
+          "#SQL",
+          "#MongoDB",
+          "#100DaysOfCode",
+          "#Databases"
+        ]
       }
     },
     {
@@ -1312,7 +1368,7 @@
       "badge": "badge-practice",
       "badgeLabel": "DevOps",
       "title": "DevOps & Cloud Infrastructure",
-      "duration": "Months 9â€“10",
+      "duration": "Months 9–10",
       "modules": [
         {
           "icon": "cloud",
@@ -1333,13 +1389,13 @@
             },
             {
               "icon": "play",
-              "name": "Play with Docker â€” Browser-Based Labs",
+              "name": "Play with Docker — Browser-Based Labs",
               "meta": "play-with-docker.com · Free hands-on Docker playground",
               "url": "https://labs.play-with-docker.com"
             },
             {
               "icon": "terminal",
-              "name": "Katacoda â€” Docker Tutorials",
+              "name": "Katacoda — Docker Tutorials",
               "meta": "katacoda.com · Interactive Docker learning scenarios",
               "url": "https://www.katacoda.com"
             }
@@ -1625,6 +1681,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 05: DevOps & Cloud Infrastructure!",
+        "whatToPost": [
+          "Share your Docker configurations",
+          "Post about CI/CD pipeline setup",
+          "Showcase cloud deployment"
+        ],
+        "suggestedHashtags": [
+          "#Docker",
+          "#DevOps",
+          "#100DaysOfCode",
+          "#Cloud"
+        ]
       }
     },
     {
@@ -1632,16 +1702,16 @@
       "badge": "badge-mastery",
       "badgeLabel": "Testing",
       "title": "Testing & Code Quality",
-      "duration": "Months 11â€“12",
+      "duration": "Months 11–12",
       "modules": [
         {
           "icon": "test-tube",
           "accentClass": "a2",
           "title": "Unit & Integration Testing",
           "topics": [
-            "Jest â€” unit testing & mocking fundamentals",
-            "Vitest â€” modern, Vite-native test runner",
-            "React Testing Library â€” component testing",
+            "Jest — unit testing & mocking fundamentals",
+            "Vitest — modern, Vite-native test runner",
+            "React Testing Library — component testing",
             "API testing with supertest"
           ],
           "resources": [
@@ -1653,13 +1723,13 @@
             },
             {
               "icon": "check-circle",
-              "name": "React Testing Library â€” Docs",
+              "name": "React Testing Library — Docs",
               "meta": "testing-library.com · Test React components as users interact",
               "url": "https://testing-library.com/docs/react-testing-library/intro/"
             },
             {
               "icon": "book",
-              "name": "Kent C. Dodds â€” Testing Best Practices",
+              "name": "Kent C. Dodds — Testing Best Practices",
               "meta": "kentcdodds.com · Common mistakes & patterns",
               "url": "https://kentcdodds.com/blog/common-mistakes-with-react-testing-library"
             }
@@ -1667,7 +1737,7 @@
           "projects": {
             "general": {
               "title": "Fully Tested Full-Stack App",
-              "desc": "Take a prior project and add comprehensive testing â€” unit tests with Jest/Vitest, component tests with RTL, E2E tests with Playwright, and a Lighthouse performance audit.",
+              "desc": "Take a prior project and add comprehensive testing — unit tests with Jest/Vitest, component tests with RTL, E2E tests with Playwright, and a Lighthouse performance audit.",
               "skills": [
                 "90%+ unit test coverage",
                 "React component tests (RTL)",
@@ -1689,7 +1759,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "Testing Best Practices Repository",
-                "desc": "A public GitHub repository showcasing testing patterns â€” unit, integration, E2E, and performance tests with CI integration, documentation, and a README guide for testing strategies.",
+                "desc": "A public GitHub repository showcasing testing patterns — unit, integration, E2E, and performance tests with CI integration, documentation, and a README guide for testing strategies.",
                 "skills": [
                   "Testing patterns reference repo",
                   "Unit, integration, E2E examples",
@@ -1754,8 +1824,8 @@
           "accentClass": "a2",
           "title": "E2E & Performance Testing",
           "topics": [
-            "Cypress â€” browser-based E2E testing",
-            "Playwright â€” cross-browser automation",
+            "Cypress — browser-based E2E testing",
+            "Playwright — cross-browser automation",
             "Lighthouse performance auditing",
             "Load testing fundamentals"
           ],
@@ -1782,7 +1852,7 @@
           "projects": {
             "general": {
               "title": "Fully Tested Full-Stack App",
-              "desc": "Take a prior project and add comprehensive testing â€” unit tests with Jest/Vitest, component tests with RTL, E2E tests with Playwright, and a Lighthouse performance audit.",
+              "desc": "Take a prior project and add comprehensive testing — unit tests with Jest/Vitest, component tests with RTL, E2E tests with Playwright, and a Lighthouse performance audit.",
               "skills": [
                 "90%+ unit test coverage",
                 "React component tests (RTL)",
@@ -1804,7 +1874,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "Testing Best Practices Repository",
-                "desc": "A public GitHub repository showcasing testing patterns â€” unit, integration, E2E, and performance tests with CI integration, documentation, and a README guide for testing strategies.",
+                "desc": "A public GitHub repository showcasing testing patterns — unit, integration, E2E, and performance tests with CI integration, documentation, and a README guide for testing strategies.",
                 "skills": [
                   "Testing patterns reference repo",
                   "Unit, integration, E2E examples",
@@ -1949,6 +2019,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 06: Testing & Code Quality!",
+        "whatToPost": [
+          "Share your testing strategies",
+          "Post about test coverage improvements",
+          "Showcase E2E testing setup"
+        ],
+        "suggestedHashtags": [
+          "#Testing",
+          "#100DaysOfCode",
+          "#Quality",
+          "#WebDev"
+        ]
       }
     },
     {
@@ -1956,14 +2040,14 @@
       "badge": "badge-career",
       "badgeLabel": "Capstone",
       "title": "Capstone Projects & Portfolio",
-      "duration": "Months 13â€“14",
+      "duration": "Months 13–14",
       "modules": [
         {
           "icon": "briefcase",
           "accentClass": "a2",
           "title": "Portfolio Projects",
           "topics": [
-            "Build 3â€“5 full-stack applications from scratch",
+            "Build 3–5 full-stack applications from scratch",
             "Deploy live with custom domains",
             "Document projects on GitHub with README best practices",
             "Architecture diagrams & technical writing"
@@ -1971,13 +2055,13 @@
           "resources": [
             {
               "icon": "file-text",
-              "name": "GitHub â€” README Best Practices",
+              "name": "GitHub — README Best Practices",
               "meta": "docs.github.com · Official guide to great READMEs",
               "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes"
             },
             {
               "icon": "globe",
-              "name": "GitHub Pages â€” Free Portfolio Hosting",
+              "name": "GitHub Pages — Free Portfolio Hosting",
               "meta": "github.com · Deploy static sites from your repo",
               "url": "https://github.com/marketplace/actions/github-pages-action"
             },
@@ -2013,7 +2097,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "Open-Source Portfolio Showcase",
-                "desc": "A public GitHub repository and live portfolio site showcasing all Phase 1â€“6 projects with live demo links, architecture diagrams, test coverage badges, and CI status badges.",
+                "desc": "A public GitHub repository and live portfolio site showcasing all Phase 1–6 projects with live demo links, architecture diagrams, test coverage badges, and CI status badges.",
                 "skills": [
                   "Portfolio site with live demo links",
                   "Architecture diagrams per project",
@@ -2086,19 +2170,19 @@
           "resources": [
             {
               "icon": "star",
-              "name": "First Timers Only â€” Getting Started with OSS",
+              "name": "First Timers Only — Getting Started with OSS",
               "meta": "firsttimersonly.com · Friendly guide for first-time contributors",
               "url": "https://www.firsttimersonly.com"
             },
             {
               "icon": "check-circle",
-              "name": "First Contributions â€” Your First OSS PR",
+              "name": "First Contributions — Your First OSS PR",
               "meta": "github.com · Step-by-step guide to your first pull request",
               "url": "https://github.com/firstcontributions/first-contributions"
             },
             {
               "icon": "book",
-              "name": "GitHub â€” How to Contribute to Open Source",
+              "name": "GitHub — How to Contribute to Open Source",
               "meta": "opensource.guide · The definitive open-source contribution guide",
               "url": "https://opensource.guide/how-to-contribute/"
             }
@@ -2128,7 +2212,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "Open-Source Portfolio Showcase",
-                "desc": "A public GitHub repository and live portfolio site showcasing all Phase 1â€“6 projects with live demo links, architecture diagrams, test coverage badges, and CI status badges.",
+                "desc": "A public GitHub repository and live portfolio site showcasing all Phase 1–6 projects with live demo links, architecture diagrams, test coverage badges, and CI status badges.",
                 "skills": [
                   "Portfolio site with live demo links",
                   "Architecture diagrams per project",
@@ -2273,6 +2357,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 07: Capstone Projects & Portfolio!",
+        "whatToPost": [
+          "Share your capstone project demo",
+          "Post about open-source contributions",
+          "Showcase your portfolio"
+        ],
+        "suggestedHashtags": [
+          "#Capstone",
+          "#Portfolio",
+          "#100DaysOfCode",
+          "#FullStack"
+        ]
       }
     },
     {
@@ -2280,7 +2378,7 @@
       "badge": "badge-career",
       "badgeLabel": "Career",
       "title": "Career Prep & Job Search",
-      "duration": "Months 15â€“16",
+      "duration": "Months 15–16",
       "modules": [
         {
           "icon": "graduation-cap",
@@ -2295,19 +2393,19 @@
           "resources": [
             {
               "icon": "terminal",
-              "name": "LeetCode â€” Coding Practice Platform",
+              "name": "LeetCode — Coding Practice Platform",
               "meta": "leetcode.com · 2000+ problems, company-tagged questions",
               "url": "https://leetcode.com"
             },
             {
               "icon": "file-text",
-              "name": "Blind 75 â€” Curated LeetCode Problems",
+              "name": "Blind 75 — Curated LeetCode Problems",
               "meta": "teamblind.com · The essential 75 problems for tech interviews",
               "url": "https://www.teamblind.com/post/Blind-75-LeetCode-Questions"
             },
             {
               "icon": "play",
-              "name": "interviewing.io â€” Mock Technical Interviews",
+              "name": "interviewing.io — Mock Technical Interviews",
               "meta": "interviewing.io · Practice with real engineers, some free",
               "url": "https://interviewing.io"
             }
@@ -2315,7 +2413,7 @@
           "projects": {
             "general": {
               "title": "Full-Stack Engineer Career Launch",
-              "desc": "Complete career launch package â€” polished portfolio site, resume with quantified projects, 30 LeetCode problems solved, 3 mock interviews completed, and applications to 20+ roles.",
+              "desc": "Complete career launch package — polished portfolio site, resume with quantified projects, 30 LeetCode problems solved, 3 mock interviews completed, and applications to 20+ roles.",
               "skills": [
                 "Portfolio site deployed on Vercel",
                 "Developer resume with project links",
@@ -2336,7 +2434,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "16-Month Full-Stack Engineering Portfolio",
-                "desc": "Your definitive portfolio â€” a live site showcasing all 8 phases, with live demos, source code links, architecture diagrams, test badges, and a blog documenting your 16-month journey.",
+                "desc": "Your definitive portfolio — a live site showcasing all 8 phases, with live demos, source code links, architecture diagrams, test badges, and a blog documenting your 16-month journey.",
                 "skills": [
                   "Portfolio site with all projects",
                   "Live demo links for each project",
@@ -2409,19 +2507,19 @@
           "resources": [
             {
               "icon": "dollar-sign",
-              "name": "Levels.fyi â€” Salary Data by Company",
+              "name": "Levels.fyi — Salary Data by Company",
               "meta": "levels.fyi · Real compensation data, know your worth",
               "url": "https://www.levels.fyi"
             },
             {
               "icon": "book",
-              "name": "Haseeb Qureshi â€” How to Get Your First Job",
+              "name": "Haseeb Qureshi — How to Get Your First Job",
               "meta": "haseebq.com · Timeless job search advice for developers",
               "url": "https://www.haseebq.com/my-decisive-moment-my-first-job-as-a-programmer/"
             },
             {
               "icon": "file-text",
-              "name": "Tech Interview Handbook â€” Yangshun Tay",
+              "name": "Tech Interview Handbook — Yangshun Tay",
               "meta": "techinterviewhandbook.org · Complete interview prep guide",
               "url": "https://www.techinterviewhandbook.org"
             }
@@ -2429,7 +2527,7 @@
           "projects": {
             "general": {
               "title": "Full-Stack Engineer Career Launch",
-              "desc": "Complete career launch package â€” polished portfolio site, resume with quantified projects, 30 LeetCode problems solved, 3 mock interviews completed, and applications to 20+ roles.",
+              "desc": "Complete career launch package — polished portfolio site, resume with quantified projects, 30 LeetCode problems solved, 3 mock interviews completed, and applications to 20+ roles.",
               "skills": [
                 "Portfolio site deployed on Vercel",
                 "Developer resume with project links",
@@ -2450,7 +2548,7 @@
                 "name": "Healthcare",
                 "tagline": "Telemedicine platforms, patient management, health records",
                 "title": "16-Month Full-Stack Engineering Portfolio",
-                "desc": "Your definitive portfolio â€” a live site showcasing all 8 phases, with live demos, source code links, architecture diagrams, test badges, and a blog documenting your 16-month journey.",
+                "desc": "Your definitive portfolio — a live site showcasing all 8 phases, with live demos, source code links, architecture diagrams, test badges, and a blog documenting your 16-month journey.",
                 "skills": [
                   "Portfolio site with all projects",
                   "Live demo links for each project",
@@ -2592,6 +2690,20 @@
               "Chart.js"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 08: Career Prep & Job Search!",
+        "whatToPost": [
+          "Share your interview prep strategies",
+          "Post about your job search journey",
+          "Talk about networking and community"
+        ],
+        "suggestedHashtags": [
+          "#CareerLaunch",
+          "#100DaysOfCode",
+          "#JobSearch",
+          "#FullStack"
         ]
       }
     }

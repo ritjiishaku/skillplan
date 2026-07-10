@@ -338,6 +338,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 01: Network & System Foundations!",
+        "whatToPost": [
+          "Share your Linux setup and configurations",
+          "Post about networking concepts learned",
+          "Showcase system hardening techniques"
+        ],
+        "suggestedHashtags": [
+          "#Linux",
+          "#Networking",
+          "#100DaysOfCode",
+          "#Security"
+        ]
       }
     },
     {
@@ -665,6 +679,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 02: Web Security & Vulnerabilities!",
+        "whatToPost": [
+          "Share your security testing results",
+          "Post about common vulnerabilities (OWASP Top 10)",
+          "Showcase secure coding practices"
+        ],
+        "suggestedHashtags": [
+          "#WebSecurity",
+          "#OWASP",
+          "#100DaysOfCode",
+          "#InfoSec"
         ]
       }
     },
@@ -994,6 +1022,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 03: Cryptography & Identity!",
+        "whatToPost": [
+          "Share cryptography implementations",
+          "Post about encryption best practices",
+          "Showcase IAM setups"
+        ],
+        "suggestedHashtags": [
+          "#Cryptography",
+          "#Encryption",
+          "#100DaysOfCode",
+          "#Security"
         ]
       }
     },
@@ -1325,6 +1367,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 04: Ethical Hacking & Pen Testing!",
+        "whatToPost": [
+          "Share your penetration testing projects",
+          "Post about exploitation techniques (ethically)",
+          "Showcase Kali Linux tools"
+        ],
+        "suggestedHashtags": [
+          "#PenTesting",
+          "#EthicalHacking",
+          "#100DaysOfCode",
+          "#Security"
+        ]
       }
     },
     {
@@ -1649,6 +1705,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 05: Threat Intelligence & SOC!",
+        "whatToPost": [
+          "Share threat intelligence findings",
+          "Post about SIEM setup and monitoring",
+          "Showcase security operations workflows"
+        ],
+        "suggestedHashtags": [
+          "#ThreatIntel",
+          "#SOC",
+          "#100DaysOfCode",
+          "#Security"
         ]
       }
     },
@@ -1976,6 +2046,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 06: Incident Response & Forensics!",
+        "whatToPost": [
+          "Share incident response procedures",
+          "Post about digital forensics techniques",
+          "Showcase investigation methodologies"
+        ],
+        "suggestedHashtags": [
+          "#IncidentResponse",
+          "#Forensics",
+          "#100DaysOfCode",
+          "#Security"
+        ]
       }
     },
     {
@@ -2302,6 +2386,20 @@
             ]
           }
         ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 07: GRC & Cloud Security!",
+        "whatToPost": [
+          "Share compliance frameworks learned",
+          "Post about cloud security configurations",
+          "Showcase risk assessment approaches"
+        ],
+        "suggestedHashtags": [
+          "#GRC",
+          "#CloudSecurity",
+          "#100DaysOfCode",
+          "#Compliance"
+        ]
       }
     },
     {
@@ -2625,6 +2723,20 @@
               "Docker"
             ]
           }
+        ]
+      },
+      "socialMediaGuide": {
+        "milestonePost": "Completed Phase 08: Career Launch!",
+        "whatToPost": [
+          "Share your security portfolio",
+          "Post about certifications pursued",
+          "Talk about your cybersecurity career journey"
+        ],
+        "suggestedHashtags": [
+          "#CareerLaunch",
+          "#SecurityPortfolio",
+          "#100DaysOfCode",
+          "#InfoSec"
         ]
       }
     }

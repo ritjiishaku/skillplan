@@ -1,0 +1,450 @@
+{
+  "platforms": {
+    "twitter": {
+      "name": "Twitter / X",
+      "icon": "twitter",
+      "bestFor": [
+        "Quick learning updates",
+        "Networking with developers",
+        "Joining tech communities",
+        "Sharing code snippets",
+        "Real-time discussions"
+      ],
+      "characterLimit": 280,
+      "contentTypes": [
+        "Text posts",
+        "Code snippets",
+        "Screenshots",
+        "Threads for tutorials",
+        "Polls"
+      ],
+      "hashtags": {
+        "ai": ["#AI", "#MachineLearning", "#Python", "#100DaysOfCode", "#LLM", "#Automation"],
+        "fullstack": ["#FullStack", "#WebDev", "#JavaScript", "#NodeJS", "#React", "#100DaysOfCode"],
+        "frontend": ["#Frontend", "#React", "#JavaScript", "#WebDev", "#CSS", "#100DaysOfCode"],
+        "backend": ["#Backend", "#API", "#NodeJS", "#Python", "#Database", "#100DaysOfCode"],
+        "cybersecurity": ["#CyberSecurity", "#InfoSec", "#EthicalHacking", "#Security", "#100DaysOfCode"],
+        "data-engineering": ["#DataEngineering", "#BigData", "#Python", "#SQL", "#DataPipeline", "#100DaysOfCode"],
+        "cloud-devops": ["#DevOps", "#CloudComputing", "#AWS", "#Docker", "#Kubernetes", "#100DaysOfCode"],
+        "fintech": ["#FinTech", "#Blockchain", "#DeFi", "#AlgorithmicTrading", "#100DaysOfCode"],
+        "growth": ["#GrowthEngineering", "#Analytics", "#Marketing", "#SEO", "#100DaysOfCode"],
+        "green-tech": ["#ClimateTech", "#GreenTech", "#Sustainability", "#CleanEnergy", "#100DaysOfCode"]
+      },
+      "tips": [
+        "Post consistently (2-3 times per week minimum)",
+        "Use threads for longer explanations",
+        "Engage with others in your niche",
+        "Share both wins and struggles",
+        "Tag relevant communities and people"
+      ]
+    },
+    "linkedin": {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "bestFor": [
+        "Professional branding",
+        "Job opportunities",
+        "Long-form content",
+        "Industry connections",
+        "Career growth"
+      ],
+      "characterLimit": 3000,
+      "contentTypes": [
+        "Long-form posts",
+        "Articles",
+        "Project showcases",
+        "Career updates",
+        "Industry insights"
+      ],
+      "hashtags": {
+        "ai": ["#ArtificialIntelligence", "#MachineLearning", "#TechCareers", "#SoftwareEngineering", "#Innovation"],
+        "fullstack": ["#FullStackDeveloper", "#WebDevelopment", "#SoftwareEngineering", "#TechCareers", "#JavaScript"],
+        "frontend": ["#FrontendDeveloper", "#ReactDeveloper", "#WebDevelopment", "#UI", "#UX"],
+        "backend": ["#BackendDeveloper", "#SoftwareEngineering", "#API", "#CloudComputing", "#TechCareers"],
+        "cybersecurity": ["#CyberSecurity", "#InformationSecurity", "#TechCareers", "#RiskManagement", "#Compliance"],
+        "data-engineering": ["#DataEngineering", "#BigData", "#Analytics", "#TechCareers", "#DataScience"],
+        "cloud-devops": ["#DevOps", "#CloudArchitecture", "#AWS", "#Azure", "#TechCareers"],
+        "fintech": ["#FinTech", "#FinancialServices", "#Innovation", "#TechCareers", "#DigitalTransformation"],
+        "growth": ["#GrowthMarketing", "#DigitalMarketing", "#Analytics", "#TechCareers", "#Innovation"],
+        "green-tech": ["#CleanTech", "#Sustainability", "#ClimateAction", "#GreenInnovation", "#TechForGood"]
+      },
+      "tips": [
+        "Write longer, storytelling posts",
+        "Include lessons learned and insights",
+        "Use line breaks for readability",
+        "Add a call-to-action at the end",
+        "Share industry perspectives"
+      ]
+    },
+    "github": {
+      "name": "GitHub",
+      "icon": "github",
+      "bestFor": [
+        "Portfolio showcase",
+        "Code quality demonstration",
+        "Open source contributions",
+        "Project documentation",
+        "Collaboration evidence"
+      ],
+      "contentTypes": [
+        "Repositories with READMEs",
+        "Contribution graphs",
+        "Gists and code snippets",
+        "Project documentation",
+        "Issue discussions"
+      ],
+      "tips": [
+        "Write detailed README files",
+        "Include screenshots and demos",
+        "Use consistent commit messages",
+        "Add useful comments to code",
+        "Create multiple small projects"
+      ]
+    },
+    "devto": {
+      "name": "Dev.to",
+      "icon": "devto",
+      "bestFor": [
+        "Technical articles",
+        "Tutorials and guides",
+        "Code walkthroughs",
+        "Community discussions",
+        "Knowledge sharing"
+      ],
+      "characterLimit": null,
+      "contentTypes": [
+        "Markdown articles",
+        "Code tutorials",
+        "Project walkthroughs",
+        "Discussion posts",
+        "Series of related articles"
+      ],
+      "tips": [
+        "Use clear, descriptive titles",
+        "Add code blocks with syntax highlighting",
+        "Include images and diagrams",
+        "Tag your articles properly",
+        "Engage with comments"
+      ]
+    },
+    "youtube": {
+      "name": "YouTube",
+      "icon": "youtube",
+      "bestFor": [
+        "Video tutorials",
+        "Project walkthroughs",
+        "Screen recordings",
+        "Concept explanations",
+        "Long-form content"
+      ],
+      "contentTypes": [
+        "Tutorial videos",
+        "Project demos",
+        "Screen recordings",
+        "Talking head videos",
+        "Live coding sessions"
+      ],
+      "tips": [
+        "Start with screen recordings",
+        "Add clear audio narration",
+        "Include timestamps",
+        "Write detailed descriptions",
+        "Create playlists for series"
+      ]
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "icon": "tiktok",
+      "bestFor": [
+        "Quick tips and tricks",
+        "Day-in-the-life content",
+        "Behind-the-scenes",
+        "Trending topics",
+        "Short-form learning"
+      ],
+      "characterLimit": null,
+      "contentTypes": [
+        "Short videos (15-60 seconds)",
+        "Quick tutorials",
+        "Code reveals",
+        "Day-in-the-life",
+        "Trending formats"
+      ],
+      "tips": [
+        "Keep videos short and punchy",
+        "Use trending sounds",
+        "Add captions for accessibility",
+        "Hook viewers in first 3 seconds",
+        "Post consistently"
+      ]
+    }
+  },
+  "stages": {
+    "beginner": {
+      "label": "Getting Started",
+      "description": "First 1-2 phases of your learning journey",
+      "whatToPost": [
+        "Learning journey announcement",
+        "Day 1 kickoff post",
+        "First resource recommendations",
+        "Initial setup and environment configuration",
+        "First 'Hello World' moment"
+      ],
+      "frequency": "2-3 times per week",
+      "bestPlatforms": ["twitter", "linkedin"],
+      "tips": [
+        "Be authentic about being a beginner",
+        "Share your 'why' - why you chose this path",
+        "Celebrate small wins",
+        "Ask questions and engage with the community",
+        "Don't compare yourself to experts"
+      ],
+      "assetsNeeded": [
+        "Screenshot of your development environment",
+        "Photo of your setup/workspace",
+        "Screenshot of first successful code execution"
+      ]
+    },
+    "intermediate": {
+      "label": "Building Momentum",
+      "description": "Phases 3-5 of your learning journey",
+      "whatToPost": [
+        "Weekly progress updates",
+        "Code snippets and explanations",
+        "Mini-project showcases",
+        "Concept breakdowns",
+        "Debugging stories and solutions",
+        "Resource recommendations"
+      ],
+      "frequency": "3-4 times per week",
+      "bestPlatforms": ["twitter", "linkedin", "devto", "github"],
+      "tips": [
+        "Explain concepts in your own words",
+        "Show your problem-solving process",
+        "Share both code and explanations",
+        "Document your projects on GitHub",
+        "Start building a portfolio"
+      ],
+      "assetsNeeded": [
+        "Code snippets with syntax highlighting",
+        "Screenshots of working applications",
+        "Architecture diagrams",
+        "GIFs or videos of project demos"
+      ]
+    },
+    "advanced": {
+      "label": "Deepening Expertise",
+      "description": "Phases 6-7 of your learning journey",
+      "whatToPost": [
+        "Complex project walkthroughs",
+        "Technical deep-dives",
+        "Architecture decisions explained",
+        "Industry insights and opinions",
+        "Mentoring beginners",
+        "Comparing technologies"
+      ],
+      "frequency": "4-5 times per week",
+      "bestPlatforms": ["twitter", "linkedin", "devto", "github", "youtube"],
+      "tips": [
+        "Share your unique perspective",
+        "Write detailed technical articles",
+        "Contribute to open source",
+        "Mentor others in the community",
+        "Build a recognizable personal brand"
+      ],
+      "assetsNeeded": [
+        "Detailed project documentation",
+        "Architecture diagrams",
+        "Performance benchmarks",
+        "Comparison charts",
+        "Video walkthroughs"
+      ]
+    },
+    "project": {
+      "label": "Project Completion",
+      "description": "Phase 8 - Capstone and portfolio projects",
+      "whatToPost": [
+        "Full project showcase",
+        "Before/after comparisons",
+        "Lessons learned posts",
+        "Portfolio highlight",
+        "Job application tips",
+        "Career transition story"
+      ],
+      "frequency": "5+ times per week",
+      "bestPlatforms": ["twitter", "linkedin", "github", "devto", "youtube"],
+      "tips": [
+        "Tell the full story of your project",
+        "Include challenges and how you overcame them",
+        "Show the final product with demos",
+        "Share your career goals",
+        "Connect with potential employers"
+      ],
+      "assetsNeeded": [
+        "Professional project screenshots",
+        "Demo video or GIF",
+        "Architecture documentation",
+        "Live demo link",
+        "GitHub repository with README"
+      ]
+    }
+  },
+  "roadmapSpecific": {
+    "ai": {
+      "recommendedPlatforms": ["twitter", "linkedin", "github"],
+      "uniqueAngles": [
+        "Share AI model outputs and experiments",
+        "Explain complex AI concepts simply",
+        "Show real-world automation use cases",
+        "Discuss ethical AI considerations"
+      ],
+      "nicheHashtags": {
+        "healthcare": ["#HealthTech", "#MedTech", "#ClinicalAI", "#HealthcareAI"],
+        "fintech": ["#FinTech", "#AlgorithmicTrading", "#QuantFinance", "#AITrading"],
+        "climate": ["#ClimateTech", "#GreenAI", "#Sustainability", "#CarbonTracking"]
+      },
+      "postIdeas": [
+        "AI tool you built or used",
+        "Comparison of AI models",
+        "Automation workflow demo",
+        "AI ethics discussion",
+        "Learning path insights"
+      ]
+    },
+    "fullstack": {
+      "recommendedPlatforms": ["twitter", "linkedin", "github"],
+      "uniqueAngles": [
+        "Full-stack project showcases",
+        "Frontend-backend integration tips",
+        "Deployment workflows",
+        "Database design decisions"
+      ],
+      "postIdeas": [
+        "Full-stack project demo",
+        "API design best practices",
+        "Deployment pipeline setup",
+        "Performance optimization tips"
+      ]
+    },
+    "frontend": {
+      "recommendedPlatforms": ["twitter", "devto", "github", "tiktok"],
+      "uniqueAngles": [
+        "UI/UX design implementation",
+        "Component architecture",
+        "Performance optimization",
+        "Responsive design tips"
+      ],
+      "postIdeas": [
+        "Component showcase",
+        "CSS trick or technique",
+        "Responsive design before/after",
+        "Performance optimization results"
+      ]
+    },
+    "backend": {
+      "recommendedPlatforms": ["twitter", "linkedin", "github", "devto"],
+      "uniqueAngles": [
+        "API design and architecture",
+        "Database optimization",
+        "Security best practices",
+        "Scalability patterns"
+      ],
+      "postIdeas": [
+        "API endpoint showcase",
+        "Database query optimization",
+        "Security tip",
+        "Architecture decision"
+      ]
+    },
+    "cybersecurity": {
+      "recommendedPlatforms": ["twitter", "linkedin"],
+      "uniqueAngles": [
+        "Security awareness tips",
+        "Vulnerability explanations",
+        "Career advice in security",
+        "Industry trends"
+      ],
+      "postIdeas": [
+        "Security tip of the day",
+        "Common vulnerability explained",
+        "Career path insights",
+        "Industry news analysis"
+      ]
+    },
+    "data-engineering": {
+      "recommendedPlatforms": ["twitter", "linkedin", "github"],
+      "uniqueAngles": [
+        "Data pipeline architecture",
+        "ETL workflow optimization",
+        "Data quality insights",
+        "Tool comparisons"
+      ],
+      "postIdeas": [
+        "Pipeline architecture diagram",
+        "Tool comparison",
+        "Data quality tip",
+        "Performance benchmark"
+      ]
+    },
+    "cloud-devops": {
+      "recommendedPlatforms": ["twitter", "linkedin", "github"],
+      "uniqueAngles": [
+        "Infrastructure as Code",
+        "CI/CD pipeline design",
+        "Cost optimization",
+        "Cloud architecture decisions"
+      ],
+      "postIdeas": [
+        "Infrastructure setup demo",
+        "CI/CD pipeline walkthrough",
+        "Cost optimization tip",
+        "Architecture diagram"
+      ]
+    },
+    "fintech": {
+      "recommendedPlatforms": ["linkedin", "twitter"],
+      "uniqueAngles": [
+        "Financial algorithm explanations",
+        "Regulatory compliance insights",
+        "Market analysis tools",
+        "Risk management approaches"
+      ],
+      "postIdeas": [
+        "Algorithm explanation",
+        "Compliance tip",
+        "Market analysis demo",
+        "Risk assessment tool"
+      ]
+    },
+    "growth": {
+      "recommendedPlatforms": ["twitter", "linkedin"],
+      "uniqueAngles": [
+        "A/B testing insights",
+        "Analytics implementation",
+        "SEO optimization tips",
+        "Growth metrics analysis"
+      ],
+      "postIdeas": [
+        "A/B test results",
+        "Analytics dashboard showcase",
+        "SEO tip",
+        "Growth metric analysis"
+      ]
+    },
+    "green-tech": {
+      "recommendedPlatforms": ["linkedin", "twitter"],
+      "uniqueAngles": [
+        "Environmental impact metrics",
+        "Sustainability solutions",
+        "Carbon tracking tools",
+        "Climate data analysis"
+      ],
+      "postIdeas": [
+        "Environmental impact visualization",
+        "Sustainability solution demo",
+        "Carbon tracking tool",
+        "Climate data insight"
+      ]
+    }
+  }
+}
