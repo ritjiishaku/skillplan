@@ -79,7 +79,7 @@ export const ROADMAP_REQUIREMENTS = {
     degree: 'not-required',
     degreeNote: 'Skills-first field. Competitive, so certs can help you stand out. Strong projects and published work matter most.',
     certs: [
-      { name: 'AWS Machine Learning Specialty (Retired March 2026)', cost: '$300', priority: 'medium', url: 'https://aws.amazon.com/certification/certified-machine-learning-specialty/' },
+      { name: 'AWS Certified AI Practitioner', cost: '$100', priority: 'medium', url: 'https://aws.amazon.com/certification/certified-ai-practitioner/' },
       { name: 'Google Professional ML Engineer', cost: '$200', priority: 'medium', url: 'https://cloud.google.com/learn/certification/machine-learning-engineer' },
     ],
     portfolio: 'critical',

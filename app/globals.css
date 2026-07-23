@@ -2767,11 +2767,16 @@ footer {
 }
 
 .wef-ranking-text {
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   font-weight: 600;
   color: #22c55e;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+}
+
+.wef-ranking-context {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: #86efac;
+  opacity: 0.8;
 }
 
 .wef-alt-badge {
@@ -2786,13 +2791,6 @@ footer {
 
 .wef-ranking-details {
   margin-bottom: 12px;
-}
-
-.wef-role-name {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--text);
-  margin: 0 0 4px;
 }
 
 .wef-demand {

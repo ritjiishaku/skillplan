@@ -73,16 +73,16 @@ export default function RoadmapPage({ data, roadmapId }) {
             <div className="wef-ranking-header">
               <div className="wef-ranking-badge">
                 <span className="wef-ranking-number">#{wef.wefRank}</span>
-                <span className="wef-ranking-text">WEF Fastest Growing Role by 2030</span>
+                <span className="wef-ranking-text">{wef.wefRole}</span>
               </div>
+              <span className="wef-ranking-context">WEF Fastest Growing Role by 2030</span>
               {wef.altRank && (
                 <div className="wef-ranking-alt">
-                  <span className="wef-alt-badge">#{wef.altRank} {wef.altRole}</span>
+                  <span className="wef-alt-badge">Also #{wef.altRank} {wef.altRole}</span>
                 </div>
               )}
             </div>
             <div className="wef-ranking-details">
-              <p className="wef-role-name">{wef.wefRole}</p>
               <p className="wef-demand">{wef.skillDemand}</p>
               <p className="wef-note">{wef.note}</p>
             </div>

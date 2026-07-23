@@ -38,10 +38,39 @@ export async function generateMetadata({ params }) {
   const { roadmapId } = await params;
   if (!ROADMAP_IDS.includes(roadmapId)) return {};
   const title = titleMap[roadmapId] || roadmapId;
+
+  let resources = '100+';
+  try {
+    const importer = dataImports[roadmapId];
+    if (importer) {
+      const mod = await importer();
+      const data = mod.default || mod;
+      if (data?.meta?.resources) resources = data.meta.resources;
+    }
+  } catch {}
+
+  const description = `Free, skills-first ${title} roadmap. 8 phases, ${resources} free resources, milestone projects, progress tracking. No degree needed.`;
+  const url = `https://ritji.xyz/${roadmapId}`;
+
   return {
     title: `${title} — Skillplan`,
-    description: `Free, skills-first ${title} roadmap. 8+ phases, 100+ curated free resources, milestone projects, and progress tracking. No degree needed. No paywalls.`,
-    alternates: { canonical: `https://ritji.xyz/${roadmapId}` },
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${title} — Skillplan`,
+      description,
+      url,
+      siteName: 'Skillplan',
+      images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+      locale: 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${title} — Skillplan`,
+      description,
+      images: ['/og-image.png'],
+    },
   };
 }
 
